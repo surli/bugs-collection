@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "code4craft/webmagic",
+  "bugCommit": "https://github.com/code4craft/webmagic/compare/45bf2b6fd743...5215a492ccfe",
+  "failingModule": "/root/workspace/code4craft/webmagic/209977991/webmagic-core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.mockito.exceptions.verification.NeverWantedButInvoked"
+  ],
+  "totalNumberRunningTests": 31,
+  "failing-test-cases": [
+    {
+      "className": "us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest",
+      "failingMethods": [
+        "us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest#test_no_duplicate_removed_for_post_request"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "failureDetail": "\nduplicateRemover.isDuplicate(\u003cany\u003e, \u003cany\u003e);\nNever wanted here:\n-\u003e at us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest.test_no_duplicate_removed_for_post_request(DuplicateRemovedSchedulerTest.java:37)\nBut invoked here:\n-\u003e at us.codecraft.webmagic.scheduler.DuplicateRemovedScheduler.push(DuplicateRemovedScheduler.java:35)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
