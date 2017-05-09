@@ -1,0 +1,348 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building metafacture.core 5.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ metafacture-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ metafacture-core ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/culturegraph/metafacture-core/190361961' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/culturegraph/metafacture-core/190361961
+[INFO] Storing buildNumber: ce9c6c4e37ad3d9dfe88af98c62e733969e8f809 at timestamp: 1494360734771
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/culturegraph/metafacture-core/190361961' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/culturegraph/metafacture-core/190361961
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-source) @ metafacture-core ---
+[INFO] Source directory: /root/workspace/culturegraph/metafacture-core/190361961/src/main/antlr3 added.
+[INFO] Source directory: /root/workspace/culturegraph/metafacture-core/190361961/target/generated-sources/antlr3 added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.2:antlr (generate-parser) @ metafacture-core ---
+[INFO] ANTLR: Processing source directory /root/workspace/culturegraph/metafacture-core/190361961/src/main/antlr3
+Grammar /root/workspace/culturegraph/metafacture-core/190361961/src/main/antlr3/org/culturegraph/mf/flux/parser/Flux.g is up to date - build skipped
+Grammar /root/workspace/culturegraph/metafacture-core/190361961/src/main/antlr3/org/culturegraph/mf/flux/parser/FlowBuilder.g is up to date - build skipped
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ metafacture-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ metafacture-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 337 source files to /root/workspace/culturegraph/metafacture-core/190361961/target/classes
+[INFO] /root/workspace/culturegraph/metafacture-core/190361961/src/main/java/org/culturegraph/mf/commons/reflection/ConfigurableClass.java: /root/workspace/culturegraph/metafacture-core/190361961/src/main/java/org/culturegraph/mf/commons/reflection/ConfigurableClass.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/culturegraph/metafacture-core/190361961/src/main/java/org/culturegraph/mf/commons/reflection/ConfigurableClass.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ metafacture-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 31 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ metafacture-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ metafacture-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 15.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 80.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 909.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.culturegraph.mf.linkeddata.OreAggregationAdderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 sec - in org.culturegraph.mf.linkeddata.OreAggregationAdderTest
+Running org.culturegraph.mf.triples.StreamToTriplesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.culturegraph.mf.triples.StreamToTriplesTest
+Running org.culturegraph.mf.triples.AbstractTripleSortTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.culturegraph.mf.triples.AbstractTripleSortTest
+Running org.culturegraph.mf.triples.TripleObjectRetrieverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.culturegraph.mf.triples.TripleObjectRetrieverTest
+Running org.culturegraph.mf.triples.TripleObjectWriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.culturegraph.mf.triples.TripleObjectWriterTest
+Running org.culturegraph.mf.triples.TripleReaderWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.culturegraph.mf.triples.TripleReaderWriterTest
+Running org.culturegraph.mf.triples.TripleCollectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.culturegraph.mf.triples.TripleCollectTest
+Running org.culturegraph.mf.triples.TripleFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.triples.TripleFilterTest
+Running org.culturegraph.mf.monitoring.StreamTimerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec - in org.culturegraph.mf.monitoring.StreamTimerTest
+Running org.culturegraph.mf.monitoring.StreamLoggerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.monitoring.StreamLoggerTest
+Running org.culturegraph.mf.monitoring.ObjectTimerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec - in org.culturegraph.mf.monitoring.ObjectTimerTest
+Running org.culturegraph.mf.elasticsearch.JsonToElasticsearchBulkTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.culturegraph.mf.elasticsearch.JsonToElasticsearchBulkTest
+Running org.culturegraph.mf.flowcontrol.ObjectExceptionCatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.flowcontrol.ObjectExceptionCatcherTest
+Running org.culturegraph.mf.flowcontrol.StreamBufferTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.flowcontrol.StreamBufferTest
+Running org.culturegraph.mf.flowcontrol.CloseSuppressorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.flowcontrol.CloseSuppressorTest
+Running org.culturegraph.mf.flowcontrol.StreamDeferrerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.flowcontrol.StreamDeferrerTest
+Running org.culturegraph.mf.csv.CsvDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.culturegraph.mf.csv.CsvDecoderTest
+Running org.culturegraph.mf.formeta.parser.FormetaParserTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.culturegraph.mf.formeta.parser.FormetaParserTest
+Running org.culturegraph.mf.formeta.FormetaDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.formeta.FormetaDecoderTest
+Running org.culturegraph.mf.formeta.formatter.ConciseFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.formeta.formatter.ConciseFormatterTest
+Running org.culturegraph.mf.formeta.formatter.MultilineFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.formeta.formatter.MultilineFormatterTest
+Running org.culturegraph.mf.formeta.formatter.AbstactFormatterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.formeta.formatter.AbstactFormatterTest
+Running org.culturegraph.mf.formeta.formatter.VerboseFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.formeta.formatter.VerboseFormatterTest
+Running org.culturegraph.mf.formeta.FormetaEncoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.formeta.FormetaEncoderTest
+Running org.culturegraph.mf.formeta.FormetaRecordsReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.culturegraph.mf.formeta.FormetaRecordsReaderTest
+Running org.culturegraph.mf.xml.XmlElementSplitterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.culturegraph.mf.xml.XmlElementSplitterTest
+Running org.culturegraph.mf.xml.XmlFilenameWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.culturegraph.mf.xml.XmlFilenameWriterTest
+Running org.culturegraph.mf.xml.CGXmlHandlerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.xml.CGXmlHandlerTest
+Running org.culturegraph.mf.xml.GenericXMLHandlerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.xml.GenericXMLHandlerTest
+Running org.culturegraph.mf.xml.SimpleXmlEncoderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.xml.SimpleXmlEncoderTest
+Running org.culturegraph.mf.flux.FluxGrammarTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.culturegraph.mf.flux.FluxGrammarTest
+Running org.culturegraph.mf.flux.FluxProgrammTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.culturegraph.mf.flux.FluxProgrammTest
+Running org.culturegraph.mf.javaintegration.MapToStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.javaintegration.MapToStreamTest
+Running org.culturegraph.mf.javaintegration.pojo.PojoDecoderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.culturegraph.mf.javaintegration.pojo.PojoDecoderTest
+Running org.culturegraph.mf.javaintegration.pojo.PojoEncoderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.culturegraph.mf.javaintegration.pojo.PojoEncoderTest
+Running org.culturegraph.mf.test.MetamorphTestCaseTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 sec - in org.culturegraph.mf.test.MetamorphTestCaseTest
+Running org.culturegraph.mf.test.FrameworkTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.162 sec - in org.culturegraph.mf.test.FrameworkTest
+Running org.culturegraph.mf.test.TestCaseRunnerMetamorphTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.culturegraph.mf.test.TestCaseRunnerMetamorphTest
+Running org.culturegraph.mf.test.validators.StreamValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.culturegraph.mf.test.validators.StreamValidatorTest
+Running org.culturegraph.mf.test.validators.WellformednessCheckerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.test.validators.WellformednessCheckerTest
+Running org.culturegraph.mf.mangling.NullFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.mangling.NullFilterTest
+Running org.culturegraph.mf.mangling.EntityPathTrackerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.mangling.EntityPathTrackerTest
+Running org.culturegraph.mf.mangling.LiteralToObjectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.mangling.LiteralToObjectTest
+Running org.culturegraph.mf.mangling.ObjectToLiteralTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.mangling.ObjectToLiteralTest
+Running org.culturegraph.mf.mangling.RecordToEntityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.mangling.RecordToEntityTest
+Running org.culturegraph.mf.mangling.StreamEventDiscarderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.mangling.StreamEventDiscarderTest
+Running org.culturegraph.mf.mangling.StreamFlattenerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.mangling.StreamFlattenerTest
+Running org.culturegraph.mf.mangling.RecordIdChangerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.mangling.RecordIdChangerTest
+Running org.culturegraph.mf.mangling.DuplicateObjectFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.mangling.DuplicateObjectFilterTest
+Running org.culturegraph.mf.plumbing.StreamBatchMergerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.plumbing.StreamBatchMergerTest
+Running org.culturegraph.mf.plumbing.IdentityStreamPipeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.plumbing.IdentityStreamPipeTest
+Running org.culturegraph.mf.plumbing.StreamMergerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.plumbing.StreamMergerTest
+Running org.culturegraph.mf.plumbing.StreamTeeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.plumbing.StreamTeeTest
+Running org.culturegraph.mf.commons.RequireTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.commons.RequireTest
+Running org.culturegraph.mf.commons.types.NamedValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.commons.types.NamedValueTest
+Running org.culturegraph.mf.commons.types.ListMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.commons.types.ListMapTest
+Running org.culturegraph.mf.commons.TimeUtilTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.commons.TimeUtilTest
+Running org.culturegraph.mf.commons.ResourceUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.commons.ResourceUtilTest
+Running org.culturegraph.mf.commons.XmlUtilTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in org.culturegraph.mf.commons.XmlUtilTest
+escape_shouldEscapeSurrogatePairsAsSingleEntity(org.culturegraph.mf.commons.XmlUtilTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Smile: &#[12852]1;> but was:<Smile: &#[55357;&#5684]1;>
+	at org.culturegraph.mf.commons.XmlUtilTest.escape_shouldEscapeSurrogatePairsAsSingleEntity(XmlUtilTest.java:64)
+
+Running org.culturegraph.mf.commons.StringUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.commons.StringUtilTest
+Running org.culturegraph.mf.commons.tries.WildcardTrieTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.commons.tries.WildcardTrieTest
+Running org.culturegraph.mf.commons.tries.SetReplaceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.commons.tries.SetReplaceTest
+Running org.culturegraph.mf.commons.tries.CharMapTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.culturegraph.mf.commons.tries.CharMapTest
+Running org.culturegraph.mf.commons.tries.SimpleTrieTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.commons.tries.SimpleTrieTest
+Running org.culturegraph.mf.commons.tries.SimpleRegexTrieTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.commons.tries.SimpleRegexTrieTest
+Running org.culturegraph.mf.commons.tries.SetMatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.commons.tries.SetMatchTest
+Running org.culturegraph.mf.strings.StringFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.strings.StringFilterTest
+Running org.culturegraph.mf.strings.StringMatcherTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.strings.StringMatcherTest
+Running org.culturegraph.mf.strings.StreamUnicodeNormalizerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.culturegraph.mf.strings.StreamUnicodeNormalizerTest
+Running org.culturegraph.mf.strings.RegexDecoderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.strings.RegexDecoderTest
+Running org.culturegraph.mf.strings.UnicodeNormalizerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.strings.UnicodeNormalizerTest
+Running org.culturegraph.mf.strings.LineSplitterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.strings.LineSplitterTest
+Running org.culturegraph.mf.framework.helpers.DefaultSenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.culturegraph.mf.framework.helpers.DefaultSenderTest
+Running org.culturegraph.mf.metamorph.functions.ISBNTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.metamorph.functions.ISBNTest
+Running org.culturegraph.mf.metamorph.functions.TestVariousFunctions
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec - in org.culturegraph.mf.metamorph.functions.TestVariousFunctions
+Running org.culturegraph.mf.metamorph.functions.NormalizeUTF8Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.metamorph.functions.NormalizeUTF8Test
+Running org.culturegraph.mf.metamorph.functions.SplitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.culturegraph.mf.metamorph.functions.SplitTest
+Running org.culturegraph.mf.metamorph.functions.ScriptTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.culturegraph.mf.metamorph.functions.ScriptTest
+Running org.culturegraph.mf.metamorph.functions.UniqueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.culturegraph.mf.metamorph.functions.UniqueTest
+Running org.culturegraph.mf.metamorph.functions.SwitchNameValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.culturegraph.mf.metamorph.functions.SwitchNameValueTest
+Running org.culturegraph.mf.metamorph.functions.TestFunctionBasics
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.culturegraph.mf.metamorph.functions.TestFunctionBasics
+Running org.culturegraph.mf.metamorph.functions.LookupTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.culturegraph.mf.metamorph.functions.LookupTest
+Running org.culturegraph.mf.metamorph.functions.DateFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.culturegraph.mf.metamorph.functions.DateFormatTest
+Running org.culturegraph.mf.metamorph.functions.RegexpTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.culturegraph.mf.metamorph.functions.RegexpTest
+Running org.culturegraph.mf.metamorph.functions.StringOperationsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.metamorph.functions.StringOperationsTest
+Running org.culturegraph.mf.metamorph.xml.DomLoaderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.029 sec - in org.culturegraph.mf.metamorph.xml.DomLoaderTest
+Running org.culturegraph.mf.metamorph.TestMetamorphMacros
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.culturegraph.mf.metamorph.TestMetamorphMacros
+Running org.culturegraph.mf.metamorph.maps.FileMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.culturegraph.mf.metamorph.maps.FileMapTest
+Running org.culturegraph.mf.metamorph.maps.JavaMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.culturegraph.mf.metamorph.maps.JavaMapTest
+Running org.culturegraph.mf.metamorph.collectors.EntityTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec - in org.culturegraph.mf.metamorph.collectors.EntityTest
+Running org.culturegraph.mf.metamorph.collectors.EqualsFilterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.culturegraph.mf.metamorph.collectors.EqualsFilterTest
+Running org.culturegraph.mf.metamorph.collectors.SquareTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.culturegraph.mf.metamorph.collectors.SquareTest
+Running org.culturegraph.mf.metamorph.collectors.AllTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.culturegraph.mf.metamorph.collectors.AllTest
+Running org.culturegraph.mf.metamorph.collectors.AnyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.culturegraph.mf.metamorph.collectors.AnyTest
+Running org.culturegraph.mf.metamorph.collectors.ConcatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.culturegraph.mf.metamorph.collectors.ConcatTest
+Running org.culturegraph.mf.metamorph.collectors.NoneTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.culturegraph.mf.metamorph.collectors.NoneTest
+Running org.culturegraph.mf.metamorph.collectors.TestCollectorIf
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.culturegraph.mf.metamorph.collectors.TestCollectorIf
+Running org.culturegraph.mf.metamorph.collectors.CombineTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.culturegraph.mf.metamorph.collectors.CombineTest
+Running org.culturegraph.mf.metamorph.collectors.RangeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.culturegraph.mf.metamorph.collectors.RangeTest
+Running org.culturegraph.mf.metamorph.collectors.ChooseTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.culturegraph.mf.metamorph.collectors.ChooseTest
+Running org.culturegraph.mf.metamorph.collectors.TuplesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.culturegraph.mf.metamorph.collectors.TuplesTest
+Running org.culturegraph.mf.metamorph.collectors.TestCollectorBasics
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.culturegraph.mf.metamorph.collectors.TestCollectorBasics
+Running org.culturegraph.mf.metamorph.collectors.GroupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.culturegraph.mf.metamorph.collectors.GroupTest
+Running org.culturegraph.mf.metamorph.MetamorphTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.culturegraph.mf.metamorph.MetamorphTest
+Running org.culturegraph.mf.metamorph.SplitterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.culturegraph.mf.metamorph.SplitterTest
+Running org.culturegraph.mf.metamorph.TestMetamorphBasics
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.culturegraph.mf.metamorph.TestMetamorphBasics
+Running org.culturegraph.mf.biblio.marc21.MarcXmlHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.biblio.marc21.MarcXmlHandlerTest
+Running org.culturegraph.mf.biblio.marc21.Marc21EncoderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.culturegraph.mf.biblio.marc21.Marc21EncoderTest
+Running org.culturegraph.mf.biblio.marc21.Marc21DecoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.culturegraph.mf.biblio.marc21.Marc21DecoderTest
+Running org.culturegraph.mf.biblio.AlephMabXmlHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.biblio.AlephMabXmlHandlerTest
+Running org.culturegraph.mf.biblio.iso2709.Iso646ByteBufferTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.culturegraph.mf.biblio.iso2709.Iso646ByteBufferTest
+Running org.culturegraph.mf.biblio.iso2709.LabelTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.biblio.iso2709.LabelTest
+Running org.culturegraph.mf.biblio.iso2709.RecordTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.culturegraph.mf.biblio.iso2709.RecordTest
+Running org.culturegraph.mf.biblio.iso2709.DirectoryEntryTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.biblio.iso2709.DirectoryEntryTest
+Running org.culturegraph.mf.biblio.iso2709.RecordFormatTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.biblio.iso2709.RecordFormatTest
+Running org.culturegraph.mf.biblio.iso2709.RecordBuilderTest
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.culturegraph.mf.biblio.iso2709.RecordBuilderTest
+Running org.culturegraph.mf.biblio.AseqDecoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.biblio.AseqDecoderTest
+Running org.culturegraph.mf.biblio.MabDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.biblio.MabDecoderTest
+Running org.culturegraph.mf.biblio.pica.PicaEncoderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.biblio.pica.PicaEncoderTest
+Running org.culturegraph.mf.biblio.pica.PicaMultiscriptRemodelerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.culturegraph.mf.biblio.pica.PicaMultiscriptRemodelerTest
+Running org.culturegraph.mf.biblio.pica.PicaDecoderTest
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.culturegraph.mf.biblio.pica.PicaDecoderTest
+Running org.culturegraph.mf.json.JsonEncoderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.json.JsonEncoderTest
+Running org.culturegraph.mf.statistics.HistogramTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.culturegraph.mf.statistics.HistogramTest
+Running org.culturegraph.mf.statistics.CooccurrenceMetricCalculatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.culturegraph.mf.statistics.CooccurrenceMetricCalculatorTest
+Running org.culturegraph.mf.statistics.UniformSamplerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.culturegraph.mf.statistics.UniformSamplerTest
+Running org.culturegraph.mf.io.ObjectFileWriterCompressionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in org.culturegraph.mf.io.ObjectFileWriterCompressionTest
+Running org.culturegraph.mf.io.ObjectFileWriterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in org.culturegraph.mf.io.ObjectFileWriterTest
+Running org.culturegraph.mf.io.FileOpenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.culturegraph.mf.io.FileOpenerTest
+Running org.culturegraph.mf.io.RecordReaderTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.culturegraph.mf.io.RecordReaderTest
+Running org.culturegraph.mf.io.ObjectStdoutWriterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.culturegraph.mf.io.ObjectStdoutWriterTest
+Running org.culturegraph.mf.io.FileOpenerCompressionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.culturegraph.mf.io.FileOpenerCompressionTest
+
+Results :
+
+Failed tests: 
+  XmlUtilTest.escape_shouldEscapeSurrogatePairsAsSingleEntity:64 expected:<Smile: &#[12852]1;> but was:<Smile: &#[55357;&#5684]1;>
+
+Tests run: 774, Failures: 1, Errors: 0, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.431 s
+[INFO] Finished at: 2017-05-09T22:12:23+02:00
+[INFO] Final Memory: 30M/2162M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project metafacture-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/culturegraph/metafacture-core/190361961/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
