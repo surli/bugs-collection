@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/26abc94386b9...f6a5928cf5f7",
+  "failingModule": "/root/workspace/google/error-prone/211456623/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2040,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.RestrictedApiCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.RestrictedApiCheckerTest#testAllowAllDefintionsInFile"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 11. All errors:\n[/Testcase.java:11: error: [RestrictedApi] test\n     restrictedMethod();\n                     ^\n    (see foo)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#shouldNotDetectMethodsOnAbstractClass"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 5. All errors:\n[/Test.java:5: error: [JUnit4TestNotRun] Test method will not be run; please add @Test annotation\n  public void testDoSomething() {}\n              ^\n    (see http://errorprone.info/bugpattern/JUnit4TestNotRun)\n  Did you mean \u0027@Test\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
