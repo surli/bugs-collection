@@ -1,0 +1,109 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest', failingMethods=[com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest#privateScopedClassesGetLeftAlone, com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest#privateClassesGetLeftAlone], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </in/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 2 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 7 COMPILATION_UNIT->CLASS(Test)->CLASS(Blah)->CLASS(Bleh)->METHOD(<init>)
+  Node contents: <private <init>() {
+}>.
+  
+
+> Extra node in actual tree.
+  Line 11 COMPILATION_UNIT->CLASS(Test)->CLASS(Blah)->METHOD(<init>)
+  Node contents: <private <init>() {
+}>.
+  
+
+
+Expected Source: 
+================
+
+final class Test {
+  private static class Blah {
+    static class Bleh {
+      static void bleh() {}
+    }
+  }
+  private Test() {}
+}
+
+Actual Source:
+=================
+
+final class Test {
+  private static class Blah {
+    static class Bleh {
+      static void bleh() {}
+    
+
+private Bleh() {}
+}
+  
+
+private Blah() {}
+}
+  private Test() {}
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </in/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 6 COMPILATION_UNIT->CLASS(Test)->CLASS(Blah)->METHOD(<init>)
+  Node contents: <private <init>() {
+}>.
+  
+
+
+Expected Source: 
+================
+
+final class Test {
+  private static class Blah {
+    static void blah() {}
+  }
+  private Test() {}
+}
+
+Actual Source:
+=================
+
+final class Test {
+  private static class Blah {
+    static void blah() {}
+  
+
+private Blah() {}
+}
+  private Test() {}
+}', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Tue May 09 22:12:21 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/207191589/check_api/src/main/java, /root/./workspace/google/error-prone/207191589/check_api/src/main/java, ./workspace/google/error-prone/207191589/test_helpers/src/main/java, /root/./workspace/google/error-prone/207191589/test_helpers/src/main/java, ./workspace/google/error-prone/207191589/core/src/main/java, /root/./workspace/google/error-prone/207191589/core/src/main/java, ./workspace/google/error-prone/207191589/annotation/src/main/java, /root/./workspace/google/error-prone/207191589/annotation/src/main/java, ./workspace/google/error-prone/207191589/annotations/src/main/java, /root/./workspace/google/error-prone/207191589/annotations/src/main/java, ./workspace/google/error-prone/207191589/docgen/src/main/java, /root/./workspace/google/error-prone/207191589/docgen/src/main/java, ./workspace/google/error-prone/207191589/docgen_processor/src/main/java, /root/./workspace/google/error-prone/207191589/docgen_processor/src/main/java, ./workspace/google/error-prone/207191589/ant/src/main/java, /root/./workspace/google/error-prone/207191589/ant/src/main/java, ./workspace/google/error-prone/207191589/refaster/src/main/java, /root/./workspace/google/error-prone/207191589/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@40e4ea87', projectTests=[com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
