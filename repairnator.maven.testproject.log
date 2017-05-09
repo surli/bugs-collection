@@ -77,26 +77,20 @@
 [INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-core ---
 [WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
 [INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom (3 KB at 7.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom (3 KB at 105.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar (67 KB at 1275.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running us.codecraft.webmagic.HtmlTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.17 sec - in us.codecraft.webmagic.HtmlTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.175 sec - in us.codecraft.webmagic.HtmlTest
 Running us.codecraft.webmagic.utils.UrlUtilsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in us.codecraft.webmagic.utils.UrlUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in us.codecraft.webmagic.utils.UrlUtilsTest
 Running us.codecraft.webmagic.proxy.ProxyTest
-17-05-09 22:03:48,065 INFO  us.codecraft.webmagic.proxy.SimpleProxyPool(SimpleProxyPool.java:174) ## proxy pool size>>>>4
+17-05-09 22:04:22,298 INFO  us.codecraft.webmagic.proxy.SimpleProxyPool(SimpleProxyPool.java:174) ## proxy pool size>>>>4
 0.0.0.1:0
 0.0.0.2:0
-fetch web page use proxy: 0.0.0.1:0
 0.0.0.3:0
+fetch web page use proxy: 0.0.0.1:0
 fetch web page use proxy: 0.0.0.2:0
 0.0.0.4:0
 fetch web page use proxy: 0.0.0.3:0
@@ -121,45 +115,35 @@ host:         0.0.0.2 >>     0ms >> success: 100.00% >> borrow: 2
 host:         0.0.0.3 >>     0ms >> success: 100.00% >> borrow: 2
 host:         0.0.0.4 >>     0ms >> success: 100.00% >> borrow: 2
 
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.094 sec - in us.codecraft.webmagic.proxy.ProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.092 sec - in us.codecraft.webmagic.proxy.ProxyTest
 Running us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec <<< FAILURE! - in us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest
-test_no_duplicate_removed_for_post_request(us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest)  Time elapsed: 0.185 sec  <<< FAILURE!
-org.mockito.exceptions.verification.NeverWantedButInvoked: 
-duplicateRemover.isDuplicate(<any>, <any>);
-Never wanted here:
--> at us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest.test_no_duplicate_removed_for_post_request(DuplicateRemovedSchedulerTest.java:37)
-But invoked here:
--> at us.codecraft.webmagic.scheduler.DuplicateRemovedScheduler.push(DuplicateRemovedScheduler.java:35)
-
-	at us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest.test_no_duplicate_removed_for_post_request(DuplicateRemovedSchedulerTest.java:37)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest
 Running us.codecraft.webmagic.scheduler.PrioritySchedulerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in us.codecraft.webmagic.scheduler.PrioritySchedulerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in us.codecraft.webmagic.scheduler.PrioritySchedulerTest
 Running us.codecraft.webmagic.ResultItemsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in us.codecraft.webmagic.ResultItemsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in us.codecraft.webmagic.ResultItemsTest
 Running us.codecraft.webmagic.RequestTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in us.codecraft.webmagic.RequestTest
 Running us.codecraft.webmagic.selector.ExtractorsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in us.codecraft.webmagic.selector.ExtractorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in us.codecraft.webmagic.selector.ExtractorsTest
 Running us.codecraft.webmagic.selector.RegexSelectorTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in us.codecraft.webmagic.selector.RegexSelectorTest
 Running us.codecraft.webmagic.selector.SelectorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in us.codecraft.webmagic.selector.SelectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in us.codecraft.webmagic.selector.SelectorTest
 Running us.codecraft.webmagic.selector.JsonTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in us.codecraft.webmagic.selector.JsonTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in us.codecraft.webmagic.selector.JsonTest
 Running us.codecraft.webmagic.selector.JsonPathSelectorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in us.codecraft.webmagic.selector.JsonPathSelectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in us.codecraft.webmagic.selector.JsonPathSelectorTest
 Running us.codecraft.webmagic.SpiderTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec - in us.codecraft.webmagic.SpiderTest
 Running us.codecraft.webmagic.example.GithubRepoPageProcessorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.245 sec - in us.codecraft.webmagic.example.GithubRepoPageProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 sec - in us.codecraft.webmagic.example.GithubRepoPageProcessorTest
 Running us.codecraft.webmagic.pipeline.FilePipelineTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in us.codecraft.webmagic.pipeline.FilePipelineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in us.codecraft.webmagic.pipeline.FilePipelineTest
 Running us.codecraft.webmagic.downloader.HttpClientDownloaderTest
-17-05-09 22:03:54,665 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://www.oschina.net/>
-17-05-09 22:03:54,673 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://localhost:13421/404
-17-05-09 22:03:54,736 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:109) ## download page http://localhost:13421/404 error
+17-05-09 22:04:28,906 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://www.oschina.net/>
+17-05-09 22:04:28,914 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://localhost:13421/404
+17-05-09 22:04:28,974 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:109) ## download page http://localhost:13421/404 error
 org.apache.http.conn.HttpHostConnectException: Connect to localhost:13421 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
@@ -207,8 +191,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 35 more
-17-05-09 22:03:54,749 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://localhost:13421/404
-17-05-09 22:03:54,750 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:109) ## download page http://localhost:13421/404 error
+17-05-09 22:04:28,987 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://localhost:13421/404
+17-05-09 22:04:28,988 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:109) ## download page http://localhost:13421/404 error
 org.apache.http.conn.HttpHostConnectException: Connect to localhost:13421 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
@@ -256,52 +240,262 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 35 more
-17-05-09 22:03:55,176 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page https://www.baidu.com/
-17-05-09 22:03:56,549 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:202) ## Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.078 sec - in us.codecraft.webmagic.downloader.HttpClientDownloaderTest
+17-05-09 22:04:29,427 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page https://www.baidu.com/
+17-05-09 22:04:31,060 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:202) ## Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.338 sec - in us.codecraft.webmagic.downloader.HttpClientDownloaderTest
 
 Results :
 
-Failed tests: 
-  DuplicateRemovedSchedulerTest.test_no_duplicate_removed_for_post_request:37 
-duplicateRemover.isDuplicate(<any>, <any>);
-Never wanted here:
--> at us.codecraft.webmagic.scheduler.DuplicateRemovedSchedulerTest.test_no_duplicate_removed_for_post_request(DuplicateRemovedSchedulerTest.java:37)
-But invoked here:
--> at us.codecraft.webmagic.scheduler.DuplicateRemovedScheduler.push(DuplicateRemovedScheduler.java:35)
+
+
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webmagic-extension 0.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ webmagic-extension ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webmagic-extension ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webmagic-extension ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webmagic-extension ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webmagic-extension ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-extension ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-extension/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running us.codecraft.webmagic.configurable.ConfigurablePageProcessorTest
+17-05-09 22:04:31,861 INFO  us.codecraft.webmagic.Spider(Spider.java:306) ## Spider github.com started!
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.256 sec - in us.codecraft.webmagic.configurable.ConfigurablePageProcessorTest
+Running us.codecraft.webmagic.formatter.DateFormatterTest
+Tue Sep 10 22:11:00 CEST 2013
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in us.codecraft.webmagic.formatter.DateFormatterTest
+Running us.codecraft.webmagic.utils.IPUtilsTest
+172.17.0.4
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in us.codecraft.webmagic.utils.IPUtilsTest
+Running us.codecraft.webmagic.model.ModelPageProcessorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in us.codecraft.webmagic.model.ModelPageProcessorTest
+Running us.codecraft.webmagic.model.GithubRepoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in us.codecraft.webmagic.model.GithubRepoTest
+Running us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemoverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.036 sec - in us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemoverTest
+Running us.codecraft.webmagic.scheduler.RedisSchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in us.codecraft.webmagic.scheduler.RedisSchedulerTest
+Running us.codecraft.webmagic.scheduler.RedisPrioritySchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in us.codecraft.webmagic.scheduler.RedisPrioritySchedulerTest
+Running us.codecraft.webmagic.monitor.SeedUrlWithPortTest
+17-05-09 22:04:39,118 INFO  us.codecraft.webmagic.Spider(Spider.java:306) ## Spider www.hndpf.org:8889 started!
+17-05-09 22:04:39,124 INFO  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:83) ## downloading page http://www.hndpf.org:8889/
+17-05-09 22:04:40,436 WARN  us.codecraft.webmagic.downloader.HttpClientDownloader(HttpClientDownloader.java:202) ## Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+get page: http://www.hndpf.org:8889/
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.558 sec - in us.codecraft.webmagic.monitor.SeedUrlWithPortTest
+Running us.codecraft.webmagic.monitor.SpiderMonitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in us.codecraft.webmagic.monitor.SpiderMonitorTest
+Running us.codecraft.webmagic.downloader.FileCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in us.codecraft.webmagic.downloader.FileCacheTest
+
+Results :
 
 
 
 
-Tests run: 31, Failures: 1, Errors: 0, Skipped: 3
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webmagic-scripts 0.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ webmagic-scripts ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webmagic-scripts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webmagic-scripts ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webmagic-scripts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/code4craft/webmagic/209977991/webmagic-scripts/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webmagic-scripts ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-scripts ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-scripts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running us.codecraft.webmagic.scripts.ScriptProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in us.codecraft.webmagic.scripts.ScriptProcessorTest
+
+Results :
+
+
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webmagic-selenium 0.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ webmagic-selenium ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webmagic-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/code4craft/webmagic/209977991/webmagic-selenium/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webmagic-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webmagic-selenium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webmagic-selenium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-selenium ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-selenium/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running us.codecraft.webmagic.downloader.SeleniumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in us.codecraft.webmagic.downloader.SeleniumTest
+Running us.codecraft.webmagic.downloader.selenium.WebDriverPoolTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in us.codecraft.webmagic.downloader.selenium.WebDriverPoolTest
+Running us.codecraft.webmagic.downloader.selenium.SeleniumDownloaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.003 sec - in us.codecraft.webmagic.downloader.selenium.SeleniumDownloaderTest
+
+Results :
+
+
+
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 4
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webmagic-saxon 0.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ webmagic-saxon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webmagic-saxon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/code4craft/webmagic/209977991/webmagic-saxon/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webmagic-saxon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webmagic-saxon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/code4craft/webmagic/209977991/webmagic-saxon/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webmagic-saxon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-saxon ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-saxon/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running us.codecraft.webmagic.selector.XpathSelectorTest
+眉山：扎实推进农业农村工作 促农持续增收 
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.528 sec - in us.codecraft.webmagic.selector.XpathSelectorTest
+
+Results :
+
+
+
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webmagic-samples 0.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ webmagic-samples ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webmagic-samples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webmagic-samples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webmagic-samples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/code4craft/webmagic/209977991/webmagic-samples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webmagic-samples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ webmagic-samples ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /root/workspace/code4craft/webmagic/209977991/webmagic-samples/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running us.codecraft.webmagic.SpiderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.003 sec - in us.codecraft.webmagic.SpiderTest
+Running us.codecraft.webmagic.processor.SinablogProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in us.codecraft.webmagic.processor.SinablogProcessorTest
+Running us.codecraft.webmagic.samples.scheduler.DelayQueueSchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in us.codecraft.webmagic.samples.scheduler.DelayQueueSchedulerTest
+
+Results :
+
+
+
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] webmagic-parent .................................... SUCCESS [  0.285 s]
-[INFO] webmagic-core ...................................... FAILURE [ 11.002 s]
-[INFO] webmagic-extension ................................. SKIPPED
-[INFO] webmagic-scripts ................................... SKIPPED
-[INFO] webmagic-selenium .................................. SKIPPED
-[INFO] webmagic-saxon ..................................... SKIPPED
-[INFO] webmagic-samples ................................... SKIPPED
+[INFO] webmagic-parent .................................... SUCCESS [  0.295 s]
+[INFO] webmagic-core ...................................... SUCCESS [ 10.617 s]
+[INFO] webmagic-extension ................................. SUCCESS [ 14.554 s]
+[INFO] webmagic-scripts ................................... SUCCESS [  0.332 s]
+[INFO] webmagic-selenium .................................. SUCCESS [  0.803 s]
+[INFO] webmagic-saxon ..................................... SUCCESS [  0.784 s]
+[INFO] webmagic-samples ................................... SUCCESS [  0.614 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11.418 s
-[INFO] Finished at: 2017-05-09T22:03:56+02:00
-[INFO] Final Memory: 24M/1534M
+[INFO] Total time: 28.127 s
+[INFO] Finished at: 2017-05-09T22:04:48+02:00
+[INFO] Final Memory: 21M/1124M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project webmagic-core: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/code4craft/webmagic/209977991/webmagic-core/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :webmagic-core
