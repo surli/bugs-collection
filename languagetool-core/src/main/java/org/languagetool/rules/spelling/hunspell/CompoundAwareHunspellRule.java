@@ -1,0 +1,157 @@
+/* LanguageTool, a natural language style checker 
+ * Copyright (C) 2012 Daniel Naber (http://www.danielnaber.de)
+ * 
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301
+ * USA
+ */
+package org.languagetool.rules.spelling.hunspell;
+
+import org.languagetool.Language;
+import org.languagetool.rules.spelling.morfologik.MorfologikMultiSpeller;
+import org.languagetool.tokenizers.CompoundWordTokenizer;
+import org.languagetool.tools.StringTools;
+
+import java.io.IOException;
+import java.util.*;
+
+/**
+ * A spell checker that combines Hunspell und Morfologik spell checking
+ * to support compound words and offer fast suggestions for some misspelled
+ * compound words.
+ */
+public abstract class CompoundAwareHunspellRule extends HunspellRule {
+
+  private static final int MAX_SUGGESTIONS = 20;
+  
+  private final CompoundWordTokenizer wordSplitter;
+  private final MorfologikMultiSpeller morfoSpeller;
+
+  protected abstract void filterForLanguage(List<String> suggestions);
+
+  public CompoundAwareHunspellRule(ResourceBundle messages, Language language, CompoundWordTokenizer wordSplitter, MorfologikMultiSpeller morfoSpeller) {
+    super(messages, language);
+    this.wordSplitter = wordSplitter;
+    this.morfoSpeller = morfoSpeller;
+  }
+
+  /**
+   * As a hunspell-based approach is too slow, we use Morfologik to create suggestions. As this
+   * won't work for compounds not in the dictionary, we split the word and also get suggestions
+   * on the compound parts. In the end, all candidates are filtered against Hunspell again (which
+   * supports compounds).
+   */
+  @Override
+  public List<String> getSuggestions(String word) throws IOException {
+    if (needsInit) {
+      init();
+    }
+    List<String> candidates = getCandidates(word);
+    List<String> suggestions = getCorrectWords(candidates);
+
+    List<String> noSplitSuggestions = morfoSpeller.getSuggestions(word);  // after getCorrectWords() so spelling.txt is considered
+    if (StringTools.startsWithUppercase(word) && !StringTools.isAllUppercase(word)) {
+      // almost all words can be uppercase because they can appear at the start of a sentence:
+      List<String> noSplitLowercaseSuggestions = morfoSpeller.getSuggestions(word.toLowerCase());
+      int pos = noSplitSuggestions.isEmpty() ? 0 : 1;  // first item comes from getSuggestion() above, if any
+      for (String suggestion : noSplitLowercaseSuggestions) {
+        noSplitSuggestions.add(pos, StringTools.uppercaseFirstChar(suggestion));
+        // we don't know about the quality of the results here, so mix both lists together,
+        // taking elements from both lists on a rotating basis:
+        pos = Math.min(pos + 2, noSplitSuggestions.size());
+      }
+    }
+    suggestions.addAll(0, noSplitSuggestions);
+
+    filterDupes(suggestions);
+    filterForLanguage(suggestions);
+    List<String> sortedSuggestions = sortSuggestionByQuality(word, suggestions);
+    return sortedSuggestions.subList(0, Math.min(MAX_SUGGESTIONS, sortedSuggestions.size()));
+  }
+
+  protected List<String> getCandidates(String word) {
+    return wordSplitter.tokenize(word);
+  }
+
+  protected List<String> getCandidates(List<String> parts) {
+    int partCount = 0;
+    List<String> candidates = new ArrayList<>();
+    for (String part : parts) {
+      if (hunspellDict.misspelled(part)) {
+        // assume noun, so use uppercase:
+        boolean doUpperCase = partCount > 0 && !StringTools.startsWithUppercase(part);
+        List<String> suggestions = morfoSpeller.getSuggestions(doUpperCase ? StringTools.uppercaseFirstChar(part) : part);
+        if (suggestions.size() == 0) {
+          suggestions = morfoSpeller.getSuggestions(doUpperCase ? StringTools.lowercaseFirstChar(part) : part);
+        }
+        for (String suggestion : suggestions) {
+          List<String> partsCopy = new ArrayList<>(parts);
+          if (partCount > 0 && parts.get(partCount).startsWith("-") && parts.get(partCount).length() > 1) {
+            partsCopy.set(partCount, "-" + StringTools.uppercaseFirstChar(suggestion.substring(1)));
+          } else if (partCount > 0 && !parts.get(partCount-1).endsWith("-")) {
+            partsCopy.set(partCount, suggestion.toLowerCase());
+          } else {
+            partsCopy.set(partCount, suggestion);
+          }
+          String candidate = String.join("", partsCopy);
+          if (!isMisspelled(candidate)) {
+            candidates.add(candidate);
+          }
+        }
+      }
+      // TODO: what if there's no misspelled parts like for Arbeitamt = Arbeit+Amt ??
+      // -> morfologik must be extended to return similar words even for known words
+      partCount++;
+    }
+    return candidates;
+  }
+
+  protected List<String> sortSuggestionByQuality(String misspelling, List<String> suggestions) {
+    return suggestions;
+  }
+
+  private void filterDupes(List<String> words) {
+    Set<String> seen = new HashSet<>();
+    Iterator<String> iterator = words.iterator();
+    while (iterator.hasNext()) {
+      String word = iterator.next();
+      if (seen.contains(word)) {
+        iterator.remove();
+      }
+      seen.add(word);
+    }
+  }
+
+  // avoid over-accepting words, as the Morfologik approach above might construct
+  // compound words with parts that are correct but the compound is not correct (e.g. "Arbeit + Amt = Arbeitamt"):
+  private List<String> getCorrectWords(List<String> wordsOrPhrases) {
+    List<String> result = new ArrayList<>();
+    for (String wordOrPhrase : wordsOrPhrases) {
+      // this might be a phrase like "aufgrund dessen", so it needs to be split: 
+      String[] words = tokenizeText(wordOrPhrase);
+      boolean wordIsOkay = true;
+      for (String word : words) {
+        if (hunspellDict.misspelled(word)) {
+          wordIsOkay = false;
+          break;
+        }
+      }
+      if (wordIsOkay) {
+        result.add(wordOrPhrase);
+      }
+    }
+    return result;
+  }
+
+}

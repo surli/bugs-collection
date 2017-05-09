@@ -1,0 +1,45 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/8efbe2b86943...9d872617a6af",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/208873022/languagetool-language-modules/de",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 390,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.de.GermanSpellerRuleTest",
+      "failingMethods": [
+        "org.languagetool.rules.de.GermanSpellerRuleTest#testGetSuggestionsFromSpellingTxt",
+        "org.languagetool.rules.de.GermanSpellerRuleTest#testGetSuggestions",
+        "org.languagetool.rules.de.GermanSpellerRuleTest#testMorfologikSpeller"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \"[konfliktbereiten, konfliktbereite, konfliktbereiter, konfliktbereitem, konfliktbereites, konfliktbereit]\"\n     but: was \"[konfliktbereite, konfliktbereitem, konfliktbereiten, konfliktbereiter, konfliktbereites, konfliktbereit]\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Not found: \u0027Einzahlungsschein\u0027 in: []",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "testing a potential bug in Morfologik",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
