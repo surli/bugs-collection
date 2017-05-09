@@ -60,9 +60,10 @@ public class ArrayTypeInterpreter extends BaseTypeInterpreter {
 				builderModel = new JCodeModel();
 				result.setCodeModel(builderModel);
 			}
-			
+			TypeDeclaration arrayContentsType = arrayType.items();
+
 			//Lets process the array base class first
-			RamlInterpretationResult childResult = PojoBuilderFactory.getInterpreterForType(arrayType.items()).interpret(document, arrayType.items(), builderModel, config);
+			RamlInterpretationResult childResult = PojoBuilderFactory.getInterpreterForType(arrayContentsType).interpret(document, arrayContentsType, builderModel, config);
 			Class<?> container = List.class;
 			if (arrayType.uniqueItems() != null && arrayType.uniqueItems() ) {
 				container = Set.class;
