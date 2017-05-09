@@ -1,0 +1,66 @@
+nopolinfo #0
+location: FailureLocation{className='org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest', failingMethods=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithoutCallbackSucceeds], erroringMethods=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsSucceeded, org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsFailed], failures=[FailureType{failureName='org.mockito.exceptions.verification.junit.ArgumentsAreDifferent', failureDetail='
+Argument(s) are different! Wanted:
+restTemplate.exchange(
+    endpoint/spring-command-bus-connector/command,
+    POST,
+    <DispatchMessage{commandIdentifier='62b60c75-a71d-4528-b715-e73ff6943bed', serializedMetaData=[], payloadType='java.lang.String', payloadRevision='null', serializedPayload=[], commandName='java.lang.String', expectReply=false},{}>,
+    Failed to match expected ParameterizedTypeReference [ParameterizedTypeReference<org.axonframework.springcloud.commandhandling.SpringHttpReplyMessage<R>>]
+);
+-> at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest.testSendWithoutCallbackSucceeds(SpringHttpCommandBusConnectorTest.java:116)
+Actual invocation has different arguments:
+restTemplate.exchange(
+    /spring-command-bus-connector/command,
+    POST,
+    <DispatchMessage{commandIdentifier='62b60c75-a71d-4528-b715-e73ff6943bed', serializedMetaData=[], payloadType='java.lang.String', payloadRevision='null', serializedPayload=[], commandName='java.lang.String', expectReply=false},{}>,
+    ParameterizedTypeReference<org.axonframework.springcloud.commandhandling.SpringHttpReplyMessage<R>>
+);
+-> at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnector.doSend(SpringHttpCommandBusConnector.java:76)
+', isError=false}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=1, nbErrors=2}
+status: NOPATCH
+dateEnd: Tue May 09 20:33:46 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/AxonFramework/AxonFramework/207142809/core/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/core/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/spring/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/spring/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/spring-boot-autoconfigure/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/spring-boot-autoconfigure/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/test/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/test/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-jgroups/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-jgroups/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-springcloud/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-springcloud/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/mongo/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/mongo/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/amqp/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/amqp/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/metrics/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/metrics/src/main/java], projectClasspath='[Ljava.net.URL;@6b85300e', projectTests=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: IGNORE_ERRORING
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest', failingMethods=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithoutCallbackSucceeds], erroringMethods=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsSucceeded, org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsFailed], failures=[FailureType{failureName='org.mockito.exceptions.verification.junit.ArgumentsAreDifferent', failureDetail='
+Argument(s) are different! Wanted:
+restTemplate.exchange(
+    endpoint/spring-command-bus-connector/command,
+    POST,
+    <DispatchMessage{commandIdentifier='62b60c75-a71d-4528-b715-e73ff6943bed', serializedMetaData=[], payloadType='java.lang.String', payloadRevision='null', serializedPayload=[], commandName='java.lang.String', expectReply=false},{}>,
+    Failed to match expected ParameterizedTypeReference [ParameterizedTypeReference<org.axonframework.springcloud.commandhandling.SpringHttpReplyMessage<R>>]
+);
+-> at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest.testSendWithoutCallbackSucceeds(SpringHttpCommandBusConnectorTest.java:116)
+Actual invocation has different arguments:
+restTemplate.exchange(
+    /spring-command-bus-connector/command,
+    POST,
+    <DispatchMessage{commandIdentifier='62b60c75-a71d-4528-b715-e73ff6943bed', serializedMetaData=[], payloadType='java.lang.String', payloadRevision='null', serializedPayload=[], commandName='java.lang.String', expectReply=false},{}>,
+    ParameterizedTypeReference<org.axonframework.springcloud.commandhandling.SpringHttpReplyMessage<R>>
+);
+-> at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnector.doSend(SpringHttpCommandBusConnector.java:76)
+', isError=false}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=1, nbErrors=2}
+status: NOPATCH
+dateEnd: Tue May 09 20:33:48 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/AxonFramework/AxonFramework/207142809/core/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/core/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/spring/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/spring/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/spring-boot-autoconfigure/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/spring-boot-autoconfigure/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/test/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/test/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-jgroups/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-jgroups/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-springcloud/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-springcloud/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/mongo/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/mongo/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/amqp/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/amqp/src/main/java, ./workspace/AxonFramework/AxonFramework/207142809/metrics/src/main/java, /root/./workspace/AxonFramework/AxonFramework/207142809/metrics/src/main/java], projectClasspath='[Ljava.net.URL;@4ab550d5', projectTests=[org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: IGNORE_FAILING
+----------
+
+
+
