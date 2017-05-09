@@ -1,0 +1,40 @@
+Apache OpenNLP ${pom.version}
+===============================
+
+Requirements
+------------
+Java 1.8 is required to run OpenNLP
+Maven 3.3.9 is required for building it
+
+Building from the Source Distribution
+-------------------------------------
+
+To build everything execute the following command in the root folder:
+    mvn clean install
+
+The results of the build will be placed  in:
+    opennlp-distr/target/apache-opennlp-[version]-bin.tar-gz (or .zip)
+
+What is new in Apache OpenNLP ${pom.version}
+---------------------------------------
+
+This release introduces many new features, improvements and bug fixes. The API
+has been improved for a better consistency and 1.4 deprecated methods were
+removed. Now Java 1.8 is required.
+
+Additionally the release contains the following noteworthy changes:
+
+- Name Finder evaluation can now show a confusion matrix
+- The default evaluation output contains more details
+- Added a Language Model CLI tool
+- Add Moses format support
+- More refactoring and cleanup, specially in Machine Learning package and Dictionary
+- Removed deprecated trainers from UIMA integration
+- Fixed potential localization issues and added maven plugin to prevent it (ForbiddenAPI)
+- Fixed issues with the BRAT corpus reader
+- Deprecated GIS class, will be removed in a future 1.8.x release
+
+A detailed list of the issues related to this release can be found in the release
+notes.
+
+
