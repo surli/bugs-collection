@@ -1,0 +1,511 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 51,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/e303522dfe27...d1269eb817a5",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/206553160/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "Wanted but not invoked",
+    "java.lang.RuntimeException",
+    "java.lang.AssertionError",
+    "org.mockito.exceptions.verification.VerificationInOrderFailure",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 4953,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest#executeCommandWhenFailed",
+        "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest#validateSucceeds",
+        "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest#executeCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest#executeCommandWhenFailed",
+        "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest#executeCommand",
+        "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest#validateSucceeds"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest#testQueryFailsIfWrongPassword",
+        "org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest#testQueryFailsIfPeerExists"
+      ],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest#testQuerySuccess"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "java.nio.channels.UnresolvedAddressException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: exception with message a string containing \"SERVER_ALREADY_EXISTS_IN_ANOTHER_CLUSTER\"      but: message was \"java.nio.channels.UnresolvedAddressException\" Stacktrace was: java.lang.RuntimeException: java.nio.channels.UnresolvedAddressException  at org.ovirt.engine.core.bll.utils.GlusterUtil.connect(GlusterUtil.java:185)  at org.ovirt.engine.core.bll.utils.GlusterUtil.getPeers(GlusterUtil.java:167)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery.executeQueryCommand(GetGlusterServersForImportQuery.java:47)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest.testQueryFailsIfPeerExists(GetGlusterServersForImportQueryTest.java:102)  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at java.lang.reflect.Method.invoke(Method.java:498)  at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)  at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)  at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)  at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)  at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)  at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)  at org.junit.rules.RunRules.evaluate(RunRules.java:20)  at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)  at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)  at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)  at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)  at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)  at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)  at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)  at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)  at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)  at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)  at org.junit.rules.RunRules.evaluate(RunRules.java:20)  at org.junit.runners.ParentRunner.run(ParentRunner.java:363)  at org.junit.runners.Suite.runChild(Suite.java:128)  at org.junit.runners.Suite.runChild(Suite.java:27)  at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)  at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)  at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)  at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)  at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)  at org.junit.runners.ParentRunner.run(ParentRunner.java:363)  at org.junit.runner.JUnitCore.run(JUnitCore.java:137)  at org.junit.runner.JUnitCore.run(JUnitCore.java:115)  at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:62)  at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:139)  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at java.lang.reflect.Method.invoke(Method.java:498)  at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)  at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)  at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)  at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)  at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) Caused by: java.nio.channels.UnresolvedAddressException  at sun.nio.ch.Net.checkAddress(Net.java:101)  at sun.nio.ch.UnixAsynchronousSocketChannelImpl.implConnect(UnixAsynchronousSocketChannelImpl.java:301)  at sun.nio.ch.AsynchronousSocketChannelImpl.connect(AsynchronousSocketChannelImpl.java:209)  at org.apache.sshd.common.io.nio2.Nio2Connector.connect(Nio2Connector.java:46)  at org.apache.sshd.SshClient.connect(SshClient.java:337)  at org.apache.sshd.SshClient.connect(SshClient.java:323)  at org.apache.sshd.SshClient.connect(SshClient.java:313)  at org.ovirt.engine.core.uutils.ssh.SSHClient.connect(SSHClient.java:302)  at org.ovirt.engine.core.bll.utils.EngineSSHClient.connect(EngineSSHClient.java:54)  at org.ovirt.engine.core.bll.utils.GlusterUtil.connect(GlusterUtil.java:182)  at org.ovirt.engine.core.bll.utils.GlusterUtil.getPeers(GlusterUtil.java:167)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery.executeQueryCommand(GetGlusterServersForImportQuery.java:47)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540.executeQueryCommand$accessor$zFyTjy1w(Unknown Source)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540$auxiliary$H2beYwGP.call(Unknown Source)  at org.mockito.internal.creation.bytebuddy.InterceptedInvocation$SuperMethod$FromCallable.invoke(InterceptedInvocation.java:195)  at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:131)  at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:43)  at org.mockito.Answers.answer(Answers.java:100)  at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:97)  at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:32)  at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:36)  at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:41)  at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:102)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540.executeQueryCommand(Unknown Source)  ... 45 more ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: exception with message a string containing \"SSH_AUTHENTICATION_FAILED\"      but: message was \"java.nio.channels.UnresolvedAddressException\" Stacktrace was: java.lang.RuntimeException: java.nio.channels.UnresolvedAddressException  at org.ovirt.engine.core.bll.utils.GlusterUtil.connect(GlusterUtil.java:185)  at org.ovirt.engine.core.bll.utils.GlusterUtil.getPeers(GlusterUtil.java:167)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery.executeQueryCommand(GetGlusterServersForImportQuery.java:47)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQueryTest.testQueryFailsIfWrongPassword(GetGlusterServersForImportQueryTest.java:109)  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at java.lang.reflect.Method.invoke(Method.java:498)  at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)  at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)  at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)  at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)  at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)  at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)  at org.junit.rules.RunRules.evaluate(RunRules.java:20)  at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)  at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)  at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)  at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)  at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)  at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)  at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)  at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)  at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)  at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)  at org.junit.rules.RunRules.evaluate(RunRules.java:20)  at org.junit.runners.ParentRunner.run(ParentRunner.java:363)  at org.junit.runners.Suite.runChild(Suite.java:128)  at org.junit.runners.Suite.runChild(Suite.java:27)  at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)  at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)  at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)  at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)  at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)  at org.junit.runners.ParentRunner.run(ParentRunner.java:363)  at org.junit.runner.JUnitCore.run(JUnitCore.java:137)  at org.junit.runner.JUnitCore.run(JUnitCore.java:115)  at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:62)  at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:139)  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at java.lang.reflect.Method.invoke(Method.java:498)  at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)  at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)  at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)  at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)  at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) Caused by: java.nio.channels.UnresolvedAddressException  at sun.nio.ch.Net.checkAddress(Net.java:101)  at sun.nio.ch.UnixAsynchronousSocketChannelImpl.implConnect(UnixAsynchronousSocketChannelImpl.java:301)  at sun.nio.ch.AsynchronousSocketChannelImpl.connect(AsynchronousSocketChannelImpl.java:209)  at org.apache.sshd.common.io.nio2.Nio2Connector.connect(Nio2Connector.java:46)  at org.apache.sshd.SshClient.connect(SshClient.java:337)  at org.apache.sshd.SshClient.connect(SshClient.java:323)  at org.apache.sshd.SshClient.connect(SshClient.java:313)  at org.ovirt.engine.core.uutils.ssh.SSHClient.connect(SSHClient.java:302)  at org.ovirt.engine.core.bll.utils.EngineSSHClient.connect(EngineSSHClient.java:54)  at org.ovirt.engine.core.bll.utils.GlusterUtil.connect(GlusterUtil.java:182)  at org.ovirt.engine.core.bll.utils.GlusterUtil.getPeers(GlusterUtil.java:167)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery.executeQueryCommand(GetGlusterServersForImportQuery.java:47)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540.executeQueryCommand$accessor$zFyTjy1w(Unknown Source)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540$auxiliary$H2beYwGP.call(Unknown Source)  at org.mockito.internal.creation.bytebuddy.InterceptedInvocation$SuperMethod$FromCallable.invoke(InterceptedInvocation.java:195)  at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:131)  at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:43)  at org.mockito.Answers.answer(Answers.java:100)  at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:97)  at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:32)  at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:36)  at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:41)  at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:102)  at org.ovirt.engine.core.bll.gluster.GetGlusterServersForImportQuery$MockitoMock$1562878540.executeQueryCommand(Unknown Source)  ... 45 more ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterSyncJobTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterSyncJobTest#testRefreshHeavyWeight",
+        "org.ovirt.engine.core.bll.gluster.GlusterSyncJobTest#testRefreshLightWeight"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.VerificationInOrderFailure",
+          "failureDetail": " Verification in order failure Wanted but not invoked: glusterUtil.getUpServer(     ae956031-6be2-43d6-bb8f-5191c9253314 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterSyncJobTest.verifyMocksForLightWeight(GlusterSyncJobTest.java:292) Wanted anywhere AFTER following interaction: vdsDao.getAllForCluster(     ae956031-6be2-43d6-bb8f-5191c9253314 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterSyncJob.refreshClusterData(GlusterSyncJob.java:114) ",
+          "isError": false
+        },
+        {
+          "failureName": "org.mockito.exceptions.verification.VerificationInOrderFailure",
+          "failureDetail": " Verification in order failure Wanted but not invoked: glusterUtil.getRandomUpServer(     ae956031-6be2-43d6-bb8f-5191c9253314 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterSyncJobTest.verifyMocksForHeavyWeight(GlusterSyncJobTest.java:497) Wanted anywhere AFTER following interaction: clusterDao.getAll(); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterSyncJob.refreshHeavyWeightData(GlusterSyncJob.java:878) ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#testUpdateWhenNoTasks",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#testUpdateWhenNoCompletedTasks",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#testUpdateWhenAbortedTasks",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#updateTasksInCluster",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#testCreateTasksStartedFromCLI",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#cleanOrphanTasks",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#testCreateTasksStartedFromCLIWithErrors",
+        "org.ovirt.engine.core.bll.gluster.GlusterTasksSyncJobTest#cleanOrphanTasksWhenNoVolume"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeProfileInfoQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeProfileInfoQueryTest#testExecuteQueryCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest#testRefreshGlusterServicesNoChanges",
+        "org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest#testRefreshGlusterServicesWhenVdsmVerbFails",
+        "org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest#testRefreshGlusterServicesWithChanges"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked",
+          "failureDetail": " Wanted but not invoked: glusterUtil.getAllUpServers(     376294c1-7fec-4ec8-9696-cee588ff3f62 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest.verifyCommonCalls(GlusterServiceSyncJobTest.java:248) Actually, there were zero interactions with this mock. ",
+          "isError": false
+        },
+        {
+          "failureName": "Wanted but not invoked",
+          "failureDetail": " Wanted but not invoked: glusterUtil.getAllUpServers(     376294c1-7fec-4ec8-9696-cee588ff3f62 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest.verifyCommonCalls(GlusterServiceSyncJobTest.java:248) Actually, there were zero interactions with this mock. ",
+          "isError": false
+        },
+        {
+          "failureName": "Wanted but not invoked",
+          "failureDetail": " Wanted but not invoked: glusterUtil.getAllUpServers(     376294c1-7fec-4ec8-9696-cee588ff3f62 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterServiceSyncJobTest.verifyCommonCalls(GlusterServiceSyncJobTest.java:248) Actually, there were zero interactions with this mock. ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenHookMissingInAllServers",
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenNewHooksFound",
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenDBInSyncWithServers",
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenHookMissingAndContentConflict",
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenHookMissingInOneServer",
+        "org.ovirt.engine.core.bll.gluster.GlusterHookSyncJobTest#syncHooksWhenHookContentConflictInOneServer"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 6
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeRebalanceStatusQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeRebalanceStatusQueryTest#testQueryForStatusDetails"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.StorageDeviceSyncJobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.StorageDeviceSyncJobTest#testRefreshStorageDevices"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeOptionsInfoQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeOptionsInfoQueryTest#testExecuteQueryCommnad"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.RemoveVdsCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.RemoveVdsCommandTest#validateFailsWhenGlusterMultipleHostHasVolumesWithForce",
+        "org.ovirt.engine.core.bll.RemoveVdsCommandTest#validateSucceedsWithForceOption",
+        "org.ovirt.engine.core.bll.RemoveVdsCommandTest#validateFailsWhenGlusterHostHasVolumes"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSuccessForGlusterServerWhenUpServerExists",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenGlusterServerHasPeersThatExistInDB",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateFailsForGlusterServerWhenNoUpServer",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateFailsWhenGlusterServerHasPeers",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenHasPeersThrowsException",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenGlusterServerHasNoPeers"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 6
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandFailsWithClusterIdForStart",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandFailsWithClusterIdForStop",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandByClusterIdForRestart",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#validateSucceedsWithStopActionTypeAndClusterId",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandByClusterIdForStop",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandFailsWithClusterIdForRestart",
+        "org.ovirt.engine.core.bll.gluster.ManageGlusterServiceCommandTest#testExecuteCommandByClusterIdForStart"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 7
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeAdvancedDetailsQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeAdvancedDetailsQueryTest#testQueryForNullBrickId"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeRemoveBricksStatusQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetGlusterVolumeRemoveBricksStatusQueryTest#testQueryForStatusDetails"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetAddedGlusterServersQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetAddedGlusterServersQueryTest#testExecuteQueryCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterSnapshotSyncJobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterSnapshotSyncJobTest#testSyncSnapshotConfigs",
+        "org.ovirt.engine.core.bll.gluster.GlusterSnapshotSyncJobTest#testSyncSnapshotsList"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testDiscoverGeoRepData",
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testRefreshStatus",
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testDiscoverGeoRepDataWithConfig",
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testDiscoverGeoRepDataWhenNoSessions",
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testRefreshStatusNoSessions"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "java.util.concurrent.ExecutionException: java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "java.util.concurrent.ExecutionException: java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    }
+  ]
+}
