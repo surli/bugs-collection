@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/4b0d94ab2caf...12962719baf8",
+  "failingModule": "/root/workspace/geotools/geotools/209425243/modules/library/referencing",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 420,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.referencing.factory.URN_ParserTest",
+      "failingMethods": [
+        "org.geotools.referencing.factory.URN_ParserTest#testAutoLatLon",
+        "org.geotools.referencing.factory.URN_ParserTest#testOgcCRS84NoVersion",
+        "org.geotools.referencing.factory.URN_ParserTest#testAutoNoVersion",
+        "org.geotools.referencing.factory.URN_ParserTest#testOgcCRS84",
+        "org.geotools.referencing.factory.URN_ParserTest#testAuto"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[AUTO]\u003e but was:\u003c[OGC]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[AUTO]\u003e but was:\u003c[OGC]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[CRS]\u003e but was:\u003c[OGC]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[CRS]\u003e but was:\u003c[OGC]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[AUTO]\u003e but was:\u003c[OGC]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}
