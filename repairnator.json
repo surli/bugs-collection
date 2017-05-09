@@ -1,0 +1,97 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "HubSpot/Singularity",
+  "bugCommit": "https://github.com/HubSpot/Singularity/commit/bf5fd42a1f81",
+  "failingModule": "/root/workspace/HubSpot/Singularity/208763104/SingularityService",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.IllegalStateException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 195,
+  "failing-test-cases": [
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularitySchedulerTest",
+      "failingMethods": [
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testBounce"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.hubspot.singularity.SingularityHistoryTest",
+      "failingMethods": [
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskSearchQueryInZkOnly",
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskSearchQueryBlended"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c3\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.HistoryPersisterTest",
+      "failingMethods": [
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testTaskAgePurging",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testTaskCountPurging"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c10\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityHealthchecksTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testHealthchecksTimeout",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testStartupTimeout"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "Optional.get() cannot be called on an absent value",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "Optional.get() cannot be called on an absent value",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
