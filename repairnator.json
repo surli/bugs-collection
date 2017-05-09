@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 14,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/095791bce76e...1baf79980ad5",
+  "failingModule": "/root/workspace/geotools/geotools/206568666/modules/plugin/jdbc/jdbc-postgis",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "junit.framework.AssertionFailedError",
+    "junit.framework.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 5725,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.data.postgis.PostgisFilterToSQLTest",
+      "failingMethods": [
+        "org.geotools.data.postgis.PostgisFilterToSQLTest#testEncodeBBOX3D",
+        "org.geotools.data.postgis.PostgisFilterToSQLTest#testBBOX3DCapabilities"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "failureDetail": "expected:\u003c...here testgeometry \u0026\u0026[\u0026 st_makeline(st_makepoint(2.0,1.0,0.0), st_makepoint(3.0,2.0,1.0]))\u003e but was:\u003c...here testgeometry \u0026\u0026[ st_geomfromtext(\u0027polygon ((2 1, 2 2, 3 2, 3 1, 2 1))\u0027, st_srid(\"testgeometry\")) and st_intersects(testgeometry, st_geomfromtext(\u0027polygon ((2 1, 2 2, 3 2, 3 1, 2 1))\u0027, st_srid(\"testgeometry\")]))\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "expected:\u003cBBOX3D [property\u003d, envelope\u003dReferencedEnvelope3D[2.0 : 3.0, 1.0 : 2.0, 0.0 : 1.0]]\u003e but was:\u003cFilter.INCLUDE\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
