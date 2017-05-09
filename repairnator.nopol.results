@@ -1,0 +1,262 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ArgumentParameterSwapTest', failingMethods=[com.google.errorprone.bugpatterns.ArgumentParameterSwapTest#i490, com.google.errorprone.bugpatterns.ArgumentParameterSwapTest#betterLocalVariable, com.google.errorprone.bugpatterns.ArgumentParameterSwapTest#parameterizedTypes], erroringMethods=[], failures=[FailureType{failureName='skipped', failureDetail='skipped', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='An unhandled exception was thrown by the Error Prone static analysis plugin.
+     Please report this at https://github.com/google/error-prone/issues/new and include the following:
+  
+     error-prone version: unknown version
+     Stack Trace:
+     java.lang.ClassCastException: com.sun.tools.javac.code.Type$ForAll cannot be cast to com.sun.tools.javac.code.Type$MethodType
+   at com.google.errorprone.bugpatterns.AbstractArgumentParameterChecker.isSubtypeHandleCompletionFailures(AbstractArgumentParameterChecker.java:217)
+   at com.google.errorprone.bugpatterns.AbstractArgumentParameterChecker.lambda$findReplacements$1(AbstractArgumentParameterChecker.java:191)
+   at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+   at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+   at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+   at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+   at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+   at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+   at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+   at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:479)
+   at java.util.stream.ReferencePipeline.max(ReferencePipeline.java:515)
+   at com.google.errorprone.bugpatterns.AbstractArgumentParameterChecker.findReplacements(AbstractArgumentParameterChecker.java:198)
+   at com.google.errorprone.bugpatterns.AbstractArgumentParameterChecker.matchNewClass(AbstractArgumentParameterChecker.java:135)
+   at com.google.errorprone.bugpatterns.ArgumentParameterSwap.matchNewClass(ArgumentParameterSwap.java:42)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitNewClass(ErrorProneScanner.java:997)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitNewClass(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCNewClass.accept(JCTree.java:1675)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:469)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitReturn(ErrorProneScanner.java:1066)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitReturn(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1518)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:575)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:996)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+   at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:943)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:868)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+   at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:635)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:778)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+   at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:144)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:650)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:561)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:52)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:68)
+   at com.google.errorprone.scanner.ErrorProneScannerTransformer.apply(ErrorProneScannerTransformer.java:43)
+   at com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:145)
+   at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1277)
+   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1226)
+   at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:840)
+   at com.sun.tools.javac.api.JavacTaskImpl$1.call(JavacTaskImpl.java:97)
+   at com.sun.tools.javac.api.JavacTaskImpl$1.call(JavacTaskImpl.java:93)
+   at com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:128)
+   at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:93)
+   at com.google.errorprone.BaseErrorProneCompiler.run(BaseErrorProneCompiler.java:268)
+   at com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:290)
+   at com.google.errorprone.CompilationTestHelper.doTest(CompilationTestHelper.java:251)
+   at com.google.errorprone.bugpatterns.ArgumentParameterSwapTest.i490(ArgumentParameterSwapTest.java:320)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   at java.lang.reflect.Method.invoke(Method.java:498)
+   at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+   at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+   at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+   at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+   at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+   at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:327)
+   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:91)
+   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:60)
+   at org.junit.runners.ParentRunner$3.run(ParentRunner.java:292)
+   at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:73)
+   at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:290)
+   at org.junit.runners.ParentRunner.access$000(ParentRunner.java:60)
+   at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:270)
+   at org.junit.runners.ParentRunner.run(ParentRunner.java:374)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+   at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+   at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+   at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)', isError=false}, FailureType{failureName='skipped', failureDetail='skipped', isError=false}], nbFailures=3, nbErrors=0}
+status: NOPATCH
+dateEnd: Tue May 09 18:41:05 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/206473407/check_api/src/main/java, /root/./workspace/google/error-prone/206473407/check_api/src/main/java, ./workspace/google/error-prone/206473407/test_helpers/src/main/java, /root/./workspace/google/error-prone/206473407/test_helpers/src/main/java, ./workspace/google/error-prone/206473407/core/src/main/java, /root/./workspace/google/error-prone/206473407/core/src/main/java, ./workspace/google/error-prone/206473407/annotation/src/main/java, /root/./workspace/google/error-prone/206473407/annotation/src/main/java, ./workspace/google/error-prone/206473407/annotations/src/main/java, /root/./workspace/google/error-prone/206473407/annotations/src/main/java, ./workspace/google/error-prone/206473407/docgen/src/main/java, /root/./workspace/google/error-prone/206473407/docgen/src/main/java, ./workspace/google/error-prone/206473407/docgen_processor/src/main/java, /root/./workspace/google/error-prone/206473407/docgen_processor/src/main/java, ./workspace/google/error-prone/206473407/ant/src/main/java, /root/./workspace/google/error-prone/206473407/ant/src/main/java, ./workspace/google/error-prone/206473407/refaster/src/main/java, /root/./workspace/google/error-prone/206473407/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@58783f6c', projectTests=[com.google.errorprone.bugpatterns.ArgumentParameterSwapTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.LiteralClassNameTest', failingMethods=[com.google.errorprone.bugpatterns.LiteralClassNameTest#arrays], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='An unhandled exception was thrown by the Error Prone static analysis plugin.
+     Please report this at https://github.com/google/error-prone/issues/new and include the following:
+  
+     error-prone version: unknown version
+     Stack Trace:
+     com.google.common.util.concurrent.UncheckedExecutionException: java.lang.IllegalArgumentException: Cannot convert array types, please build them using getType()
+   at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2217)
+   at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+   at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158)
+   at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+   at com.google.errorprone.VisitorState.getTypeFromString(VisitorState.java:179)
+   at com.google.errorprone.bugpatterns.LiteralClassName.matchMethodInvocation(LiteralClassName.java:64)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethodInvocation(ErrorProneScanner.java:952)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethodInvocation(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1614)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+   at com.sun.source.util.TreeScanner.visitVariable(TreeScanner.java:223)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:1201)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCVariableDecl.accept(JCTree.java:938)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:575)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:996)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+   at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:943)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:868)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+   at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:635)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:778)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:71)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)
+   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+   at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:144)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:650)
+   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:144)
+   at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:561)
+   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:52)
+   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:68)
+   at com.google.errorprone.scanner.ErrorProneScannerTransformer.apply(ErrorProneScannerTransformer.java:43)
+   at com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:145)
+   at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1277)
+   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1226)
+   at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:840)
+   at com.sun.tools.javac.api.JavacTaskImpl$1.call(JavacTaskImpl.java:97)
+   at com.sun.tools.javac.api.JavacTaskImpl$1.call(JavacTaskImpl.java:93)
+   at com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:128)
+   at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:93)
+   at com.google.errorprone.BaseErrorProneCompiler.run(BaseErrorProneCompiler.java:268)
+   at com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:290)
+   at com.google.errorprone.CompilationTestHelper.doTest(CompilationTestHelper.java:251)
+   at com.google.errorprone.bugpatterns.LiteralClassNameTest.arrays(LiteralClassNameTest.java:88)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   at java.lang.reflect.Method.invoke(Method.java:498)
+   at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+   at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+   at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+   at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+   at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:327)
+   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:91)
+   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:60)
+   at org.junit.runners.ParentRunner$3.run(ParentRunner.java:292)
+   at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:73)
+   at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:290)
+   at org.junit.runners.ParentRunner.access$000(ParentRunner.java:60)
+   at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:270)
+   at org.junit.runners.ParentRunner.run(ParentRunner.java:374)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+   at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+   at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+   at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+   at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+  Caused by: java.lang.IllegalArgumentException: Cannot convert array types, please build them using getType()
+   at com.google.errorprone.VisitorState.validateTypeStr(VisitorState.java:347)
+   at com.google.errorprone.VisitorState.getTypeFromStringInternal(VisitorState.java:186)
+   at com.google.errorprone.VisitorState.access$000(VisitorState.java:57)
+   at com.google.errorprone.VisitorState$2.load(VisitorState.java:114)
+   at com.google.errorprone.VisitorState$2.load(VisitorState.java:111)
+   at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+   at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+   at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+   at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+   ... 91 more', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Tue May 09 18:41:18 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/206473407/check_api/src/main/java, /root/./workspace/google/error-prone/206473407/check_api/src/main/java, ./workspace/google/error-prone/206473407/test_helpers/src/main/java, /root/./workspace/google/error-prone/206473407/test_helpers/src/main/java, ./workspace/google/error-prone/206473407/core/src/main/java, /root/./workspace/google/error-prone/206473407/core/src/main/java, ./workspace/google/error-prone/206473407/annotation/src/main/java, /root/./workspace/google/error-prone/206473407/annotation/src/main/java, ./workspace/google/error-prone/206473407/annotations/src/main/java, /root/./workspace/google/error-prone/206473407/annotations/src/main/java, ./workspace/google/error-prone/206473407/docgen/src/main/java, /root/./workspace/google/error-prone/206473407/docgen/src/main/java, ./workspace/google/error-prone/206473407/docgen_processor/src/main/java, /root/./workspace/google/error-prone/206473407/docgen_processor/src/main/java, ./workspace/google/error-prone/206473407/ant/src/main/java, /root/./workspace/google/error-prone/206473407/ant/src/main/java, ./workspace/google/error-prone/206473407/refaster/src/main/java, /root/./workspace/google/error-prone/206473407/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@4a7c72af', projectTests=[com.google.errorprone.bugpatterns.LiteralClassNameTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ReturnValueIgnoredTest', failingMethods=[com.google.errorprone.bugpatterns.ReturnValueIgnoredTest#stream], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 4 matching . All errors:
+[]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Tue May 09 18:41:31 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/206473407/check_api/src/main/java, /root/./workspace/google/error-prone/206473407/check_api/src/main/java, ./workspace/google/error-prone/206473407/test_helpers/src/main/java, /root/./workspace/google/error-prone/206473407/test_helpers/src/main/java, ./workspace/google/error-prone/206473407/core/src/main/java, /root/./workspace/google/error-prone/206473407/core/src/main/java, ./workspace/google/error-prone/206473407/annotation/src/main/java, /root/./workspace/google/error-prone/206473407/annotation/src/main/java, ./workspace/google/error-prone/206473407/annotations/src/main/java, /root/./workspace/google/error-prone/206473407/annotations/src/main/java, ./workspace/google/error-prone/206473407/docgen/src/main/java, /root/./workspace/google/error-prone/206473407/docgen/src/main/java, ./workspace/google/error-prone/206473407/docgen_processor/src/main/java, /root/./workspace/google/error-prone/206473407/docgen_processor/src/main/java, ./workspace/google/error-prone/206473407/ant/src/main/java, /root/./workspace/google/error-prone/206473407/ant/src/main/java, ./workspace/google/error-prone/206473407/refaster/src/main/java, /root/./workspace/google/error-prone/206473407/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@7a1b4074', projectTests=[com.google.errorprone.bugpatterns.ReturnValueIgnoredTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
