@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/e84b7cc6fba3...5bdbd5624d8d",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/206552431/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "Wanted but not invoked"
+  ],
+  "totalNumberRunningTests": 4953,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest#testRefreshStatus"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked",
+          "failureDetail": " Wanted but not invoked: geoRepDao.saveOrUpdateDetailsInBatch(     \u003cany List\u003e ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJobTest.testRefreshStatus(GlusterGeoRepSyncJobTest.java:135)  However, there was exactly 1 interaction with this mock: geoRepDao.getGeoRepSessionsInCluster(     cc111111-1111-1111-1111-111111111111 ); -\u003e at org.ovirt.engine.core.bll.gluster.GlusterGeoRepSyncJob.refreshGeoRepSessionStatusInCluster(GlusterGeoRepSyncJob.java:76)  ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
