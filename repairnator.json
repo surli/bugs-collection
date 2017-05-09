@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/24489fb72542...5acdd7effa1c",
+  "failingModule": "/root/workspace/google/error-prone/206050964/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "com.google.errorprone.ErrorProneError",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2056,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.FallThroughTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.FallThroughTest#commentInBlock"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 7. All errors:\n[/Test.java:7: error: [FallThrough] Switch case may fall through\n      case 1: {\n      ^\n    (see http://errorprone.info/bugpattern/FallThrough)\n  Did you mean to remove this line?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.TypeParameterShadowingTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#lambdaParameterDesugaring"
+      ],
+      "failures": [
+        {
+          "failureName": "com.google.errorprone.ErrorProneError",
+          "failureDetail": "\n/in/A.java:3: TypeParameterShadowing: An exception was thrown by Error Prone: Invalid range: [96..-1)\n  abstract class B\u003cT\u003e {\n  ^\n",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
