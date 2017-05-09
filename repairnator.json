@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "AxonFramework/AxonFramework",
+  "bugCommit": "https://github.com/AxonFramework/AxonFramework/compare/0403842b7963...e2302fc3e5b7",
+  "failingModule": "/root/workspace/AxonFramework/AxonFramework/207142809/distributed-commandbus-springcloud",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 914,
+  "failing-test-cases": [
+    {
+      "className": "org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest",
+      "failingMethods": [
+        "org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithoutCallbackSucceeds"
+      ],
+      "erroringMethods": [
+        "org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsSucceeded",
+        "org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest#testSendWithCallbackSucceedsAndReturnsFailed"
+      ],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "failureDetail": "\nArgument(s) are different! Wanted:\nrestTemplate.exchange(\n    endpoint/spring-command-bus-connector/command,\n    POST,\n    \u003cDispatchMessage{commandIdentifier\u003d\u002762b60c75-a71d-4528-b715-e73ff6943bed\u0027, serializedMetaData\u003d[], payloadType\u003d\u0027java.lang.String\u0027, payloadRevision\u003d\u0027null\u0027, serializedPayload\u003d[], commandName\u003d\u0027java.lang.String\u0027, expectReply\u003dfalse},{}\u003e,\n    Failed to match expected ParameterizedTypeReference [ParameterizedTypeReference\u003corg.axonframework.springcloud.commandhandling.SpringHttpReplyMessage\u003cR\u003e\u003e]\n);\n-\u003e at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnectorTest.testSendWithoutCallbackSucceeds(SpringHttpCommandBusConnectorTest.java:116)\nActual invocation has different arguments:\nrestTemplate.exchange(\n    /spring-command-bus-connector/command,\n    POST,\n    \u003cDispatchMessage{commandIdentifier\u003d\u002762b60c75-a71d-4528-b715-e73ff6943bed\u0027, serializedMetaData\u003d[], payloadType\u003d\u0027java.lang.String\u0027, payloadRevision\u003d\u0027null\u0027, serializedPayload\u003d[], commandName\u003d\u0027java.lang.String\u0027, expectReply\u003dfalse},{}\u003e,\n    ParameterizedTypeReference\u003corg.axonframework.springcloud.commandhandling.SpringHttpReplyMessage\u003cR\u003e\u003e\n);\n-\u003e at org.axonframework.springcloud.commandhandling.SpringHttpCommandBusConnector.doSend(SpringHttpCommandBusConnector.java:76)\n",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 2
+    }
+  ]
+}
