@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 14,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/1baf79980ad5...9558721a752c",
+  "failingModule": "/root/workspace/geotools/geotools/207295301/modules/library/render",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 4940,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.renderer.crs.ProjectionHandlerTest",
+      "failingMethods": [
+        "org.geotools.renderer.crs.ProjectionHandlerTest#testQueryWrappingED50LatLon"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cReferencedEnvelope[-90.0 : 45.0, 170.0 : 180.0]\u003e but was:\u003cReferencedEnvelope[170.0 : 180.0, -90.0 : 45.0]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
