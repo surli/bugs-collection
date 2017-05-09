@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/4f1e140f1a92...bf8560b2aed7",
+  "failingModule": "/root/workspace/google/error-prone/207191589/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2070,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest#privateScopedClassesGetLeftAlone",
+        "com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest#privateClassesGetLeftAlone"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/in/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 2 unmatched nodes in the actual tree. \n\n\u003e Extra node in actual tree.\n  Line 7 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eCLASS(Blah)-\u003eCLASS(Bleh)-\u003eMETHOD(\u003cinit\u003e)\n  Node contents: \u003cprivate \u003cinit\u003e() {\n}\u003e.\n  \n\n\u003e Extra node in actual tree.\n  Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eCLASS(Blah)-\u003eMETHOD(\u003cinit\u003e)\n  Node contents: \u003cprivate \u003cinit\u003e() {\n}\u003e.\n  \n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nfinal class Test {\n  private static class Blah {\n    static class Bleh {\n      static void bleh() {}\n    }\n  }\n  private Test() {}\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nfinal class Test {\n  private static class Blah {\n    static class Bleh {\n      static void bleh() {}\n    \n\nprivate Bleh() {}\n}\n  \n\nprivate Blah() {}\n}\n  private Test() {}\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/in/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 1 unmatched nodes in the actual tree. \n\n\u003e Extra node in actual tree.\n  Line 6 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eCLASS(Blah)-\u003eMETHOD(\u003cinit\u003e)\n  Node contents: \u003cprivate \u003cinit\u003e() {\n}\u003e.\n  \n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nfinal class Test {\n  private static class Blah {\n    static void blah() {}\n  }\n  private Test() {}\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nfinal class Test {\n  private static class Blah {\n    static void blah() {}\n  \n\nprivate Blah() {}\n}\n  private Test() {}\n}",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
