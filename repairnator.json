@@ -1,0 +1,45 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "graphhopper/graphhopper",
+  "bugCommit": "https://github.com/graphhopper/graphhopper/compare/7c75607295c9...fd809c42de82",
+  "failingModule": "/root/workspace/graphhopper/graphhopper/206263544/reader-gtfs",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.experimental.theories.internal.ParameterizedAssertionError"
+  ],
+  "totalNumberRunningTests": 1315,
+  "failing-test-cases": [
+    {
+      "className": "com.graphhopper.gtfs.fare.FareTest",
+      "failingMethods": [
+        "com.graphhopper.gtfs.fare.FareTest#buyMoreThanOneTicketIfTripIsLongerThanAllowedOnOne",
+        "com.graphhopper.gtfs.fare.FareTest#canGoAllTheWayOnOneTicket",
+        "com.graphhopper.gtfs.fare.FareTest#withNoTransfersAndNoAlternativesBuyOneTicketForEachSegment"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Never found parameters that satisfied method assumptions.  Violated assumptions: [org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Never found parameters that satisfied method assumptions.  Violated assumptions: [org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: We have a transfer: got: \u003c1\u003e, expected: a value greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: We have a transfer: got: \u003c1\u003e, expected: a value greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: We have a transfer: got: \u003c1\u003e, expected: a value greater than \u003c1\u003e, org.junit.AssumptionViolatedException: Fare allows the number of transfers we need for our trip.: got: \u003c0\u003e, expected: a value equal to or greater than \u003c2\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c4\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c2\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e, org.junit.AssumptionViolatedException: Only one fare.: got: \u003c7\u003e, expected: \u003c1\u003e]",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.experimental.theories.internal.ParameterizedAssertionError",
+          "failureDetail": "withNoTransfersAndNoAlternativesBuyOneTicketForEachSegment(\"{plustransfer_fare\u003dcom.conveyal.gtfs.model.Fare@12028586, simple_fare\u003dcom.conveyal.gtfs.model.Fare@17776a8}\" \u003cfrom withTransfersOrWithout\u003e, \"com.graphhopper.gtfs.fare.Trip@69a10787\" \u003cfrom shortTripWithTwoSegments\u003e)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
