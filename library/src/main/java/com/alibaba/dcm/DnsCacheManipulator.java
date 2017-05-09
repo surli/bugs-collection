@@ -84,14 +84,14 @@ public class DnsCacheManipulator {
     /**
      * Load dns config from properties file {@code dns-cache.properties} on classpath, then set to dns cache.
      * <p/>
-     * {@code dns-cache.properties} can be reset/customized by {@code JVM -D option} {@code dcm.config.file}
+     * {@code dns-cache.properties} can be reset/customized by {@code JVM -D option} {@code dcm.config.filename}
      *
      * @throws DnsCacheManipulatorException Operation fail
      * @see DnsCacheManipulator#setDnsCache(java.util.Properties)
      * @see DnsCacheManipulator#loadDnsCacheConfig(java.lang.String)
      */
     public static void loadDnsCacheConfig() {
-        final String DCM_CONFIG_FILE_NAME_KEY = "dcm.config.file";
+        final String DCM_CONFIG_FILE_NAME_KEY = "dcm.config.filename";
         final String dcmConfigFileName = System.getProperty(DCM_CONFIG_FILE_NAME_KEY, "dns-cache.properties");
         loadDnsCacheConfig(dcmConfigFileName);
     }
