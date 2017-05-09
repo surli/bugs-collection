@@ -81,6 +81,7 @@ import com.google.errorprone.bugpatterns.InfiniteRecursion;
 import com.google.errorprone.bugpatterns.InputStreamSlowMultibyteRead;
 import com.google.errorprone.bugpatterns.InsecureCipherMode;
 import com.google.errorprone.bugpatterns.InvalidPatternSyntax;
+import com.google.errorprone.bugpatterns.InvalidTimeZoneID;
 import com.google.errorprone.bugpatterns.IsInstanceOfClass;
 import com.google.errorprone.bugpatterns.IterableAndIterator;
 import com.google.errorprone.bugpatterns.JMockTestWithoutRunWithOrRuleAnnotation;
@@ -204,6 +205,7 @@ import com.google.errorprone.bugpatterns.inject.QualifierOnMethodWithoutProvides
 import com.google.errorprone.bugpatterns.inject.QualifierWithTypeUse;
 import com.google.errorprone.bugpatterns.inject.ScopeAnnotationOnInterfaceOrAbstractClass;
 import com.google.errorprone.bugpatterns.inject.ScopeOrQualifierAnnotationRetention;
+import com.google.errorprone.bugpatterns.inject.dagger.AndroidInjectionBeforeSuper;
 import com.google.errorprone.bugpatterns.inject.dagger.EmptySetMultibindingContributions;
 import com.google.errorprone.bugpatterns.inject.dagger.MultibindsInsteadOfMultibindings;
 import com.google.errorprone.bugpatterns.inject.dagger.PrivateConstructorForNoninstantiableModule;
@@ -218,7 +220,6 @@ import com.google.errorprone.bugpatterns.inject.guice.OverridesJavaxInjectableMe
 import com.google.errorprone.bugpatterns.inject.guice.ProvidesMethodOutsideOfModule;
 import com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLocking;
 import com.google.errorprone.bugpatterns.threadsafety.GuardedByChecker;
-import com.google.errorprone.bugpatterns.threadsafety.GuardedByValidator;
 import com.google.errorprone.bugpatterns.threadsafety.ImmutableAnnotationChecker;
 import com.google.errorprone.bugpatterns.threadsafety.ImmutableChecker;
 import com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumChecker;
@@ -266,6 +267,7 @@ public class BuiltInCheckerSuppliers {
   /** A list of all checks with severity ERROR that are on by default. */
   public static final ImmutableSet<BugCheckerInfo> ENABLED_ERRORS =
       getSuppliers(
+          AndroidInjectionBeforeSuper.class,
           ArrayEquals.class,
           ArrayHashCode.class,
           ArrayToString.class,
@@ -296,7 +298,6 @@ public class BuiltInCheckerSuppliers {
           GetClassOnAnnotation.class,
           GetClassOnClass.class,
           GuardedByChecker.class,
-          GuardedByValidator.class,
           GuavaSelfEquals.class,
           HashtableContains.class,
           IdentityBinaryExpression.class,
@@ -307,6 +308,7 @@ public class BuiltInCheckerSuppliers {
           InfiniteRecursion.class,
           InjectOnFinalField.class,
           InvalidPatternSyntax.class,
+          InvalidTimeZoneID.class,
           IsInstanceOfClass.class,
           IsLoggableTagLength.class,
           JavaxInjectOnAbstractMethod.class,
