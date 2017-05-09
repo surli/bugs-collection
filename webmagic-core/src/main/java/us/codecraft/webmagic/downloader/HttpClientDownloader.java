@@ -162,37 +162,42 @@ public class HttpClientDownloader extends AbstractDownloader {
         String method = request.getMethod();
         if (method == null || method.equalsIgnoreCase(HttpConstant.Method.GET)) {
             //default get
-            RequestBuilder requestBuilder=RequestBuilder.get();
-            if (request.getParams() != null) {
-                for (Map.Entry<String, String> entry : request.getParams().entrySet()) {
-                    requestBuilder.addParameter(entry.getKey(), entry.getValue());
-                }
-            }
-            return requestBuilder;
+            return addQueryParams(RequestBuilder.get(),request.getParams());
         } else if (method.equalsIgnoreCase(HttpConstant.Method.POST)) {
-            RequestBuilder requestBuilder = RequestBuilder.post();
-            NameValuePair[] nameValuePair = (NameValuePair[]) request.getExtra("nameValuePair");
-            List<NameValuePair> allNameValuePair=new ArrayList<NameValuePair>();
-            if (nameValuePair != null && nameValuePair.length > 0) {
-                allNameValuePair= Arrays.asList(nameValuePair);
-            }
-            if (request.getParams() != null) {
-                for (String key : request.getParams().keySet()) {
-                    allNameValuePair.add(new BasicNameValuePair(key, request.getParams().get(key)));
-                }
-            }
-            requestBuilder.setEntity(new UrlEncodedFormEntity(allNameValuePair, Charset.forName("utf8")));
-            return requestBuilder;
+            return addFormParams(RequestBuilder.post(), (NameValuePair[]) request.getExtra("nameValuePair"), request.getParams());
         } else if (method.equalsIgnoreCase(HttpConstant.Method.HEAD)) {
-            return RequestBuilder.head();
+            return addQueryParams(RequestBuilder.head(),request.getParams());
         } else if (method.equalsIgnoreCase(HttpConstant.Method.PUT)) {
-            return RequestBuilder.put();
+            return addFormParams(RequestBuilder.put(), (NameValuePair[]) request.getExtra("nameValuePair"), request.getParams());
         } else if (method.equalsIgnoreCase(HttpConstant.Method.DELETE)) {
-            return RequestBuilder.delete();
+            return addQueryParams(RequestBuilder.delete(),request.getParams());
         } else if (method.equalsIgnoreCase(HttpConstant.Method.TRACE)) {
-            return RequestBuilder.trace();
+            return addQueryParams(RequestBuilder.trace(),request.getParams());
         }
         throw new IllegalArgumentException("Illegal HTTP Method " + method);
+    }
+
+    private RequestBuilder addFormParams(RequestBuilder requestBuilder, NameValuePair[] nameValuePair, Map<String, String> params) {
+        List<NameValuePair> allNameValuePair=new ArrayList<NameValuePair>();
+        if (nameValuePair != null && nameValuePair.length > 0) {
+            allNameValuePair= Arrays.asList(nameValuePair);
+        }
+        if (params != null) {
+            for (String key : params.keySet()) {
+                allNameValuePair.add(new BasicNameValuePair(key, params.get(key)));
+            }
+        }
+        requestBuilder.setEntity(new UrlEncodedFormEntity(allNameValuePair, Charset.forName("utf8")));
+        return requestBuilder;
+    }
+
+    private RequestBuilder addQueryParams(RequestBuilder requestBuilder, Map<String, String> params) {
+        if (params != null) {
+            for (Map.Entry<String, String> entry : params.entrySet()) {
+                requestBuilder.addParameter(entry.getKey(), entry.getValue());
+            }
+        }
+        return requestBuilder;
     }
 
     protected Page handleResponse(Request request, String charset, HttpResponse httpResponse, Task task) throws IOException {
