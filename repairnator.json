@@ -1,0 +1,62 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/cd8a538fdd06...3d3fdf3f79e8",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/206553808/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 4953,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.CommitRemoveGlusterVolumeBricksCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.CommitRemoveGlusterVolumeBricksCommandTest#testExecuteCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateFailsWhenGlusterServerHasPeers"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.GetAddedGlusterServersQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.GetAddedGlusterServersQueryTest#testExecuteQueryCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
