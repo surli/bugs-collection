@@ -1,0 +1,60 @@
+{
+  "totalNumberSkippingTests": 11,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "CloudSlang/cloud-slang",
+  "bugCommit": "https://github.com/CloudSlang/cloud-slang/compare/96e34b37c9ef...8a85de5bd5d3",
+  "failingModule": "/root/workspace/CloudSlang/cloud-slang/211429549/cloudslang-compiler",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError:",
+    "java.lang.AssertionError",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 772,
+  "failing-test-cases": [
+    {
+      "className": "io.cloudslang.lang.compiler.CharValidationsPreCompileErrorsTest",
+      "failingMethods": [
+        "io.cloudslang.lang.compiler.CharValidationsPreCompileErrorsTest#testStepInputNameMissingColon",
+        "io.cloudslang.lang.compiler.CharValidationsPreCompileErrorsTest#testStepInputName"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.cloudslang.lang.compiler.CompileForLoopsFlowTest",
+      "failingMethods": [
+        "io.cloudslang.lang.compiler.CompileForLoopsFlowTest#testPreCompileLoopStepModifiers",
+        "io.cloudslang.lang.compiler.CompileForLoopsFlowTest#testPreCompileLoopWithMapWithCustomNavigationFlow"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "Remove when support for maps in loops is added",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c[io.cloudslang.lang.entities.bindings.Argument@76c6b12c[name\u003dstep_input_01,value\u003d${ x },functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@79a7f553[name\u003dstep_input_02,value\u003d,functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@2a85e4f4[name\u003dstep_input_03,value\u003d${ step_input_03_value },functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@3b3fa4c0[name\u003dstep_input_04,value\u003d********,functionDependencies\u003d[],systemPropertyDependencies\u003d[]]]\u003e but was:\u003c[io.cloudslang.lang.entities.bindings.Argument@78333d5a[name\u003dstep_input_01,value\u003d${ x },functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@3ef85262[name\u003dstep_input_02,value\u003d\u003cnull\u003e,functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@3b5fa30d[name\u003dstep_input_03,value\u003d${ step_input_03_value },functionDependencies\u003d[],systemPropertyDependencies\u003d[]], io.cloudslang.lang.entities.bindings.Argument@7d800902[name\u003dstep_input_04,value\u003d********,functionDependencies\u003d[],systemPropertyDependencies\u003d[]]]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
