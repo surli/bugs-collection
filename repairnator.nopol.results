@@ -1,0 +1,26 @@
+nopolinfo #0
+location: FailureLocation{className='org.axonframework.commandhandling.model.AnnotatedAggregateTest', failingMethods=[org.axonframework.commandhandling.model.AnnotatedAggregateTest#testApplyingEventInHandlerPublishesInRightOrder], erroringMethods=[], failures=[FailureType{failureName='org.mockito.exceptions.verification.VerificationInOrderFailure', failureDetail='
+Verification in order failure
+Wanted but not invoked:
+eventStore.publish();
+-> at org.axonframework.commandhandling.model.AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder(AnnotatedAggregateTest.java:47)
+Wanted anywhere AFTER following interaction:
+eventStore.publish(
+    org.axonframework.eventhandling.GenericEventMessage@189fb01b
+);
+-> at org.axonframework.commandhandling.model.inspection.AnnotatedAggregate.publishOnEventBus(AnnotatedAggregate.java:209)
+', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Wed May 10 17:10:25 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/AxonFramework/AxonFramework/213813684/core/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/core/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/spring/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/spring/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/spring-boot-autoconfigure/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/spring-boot-autoconfigure/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/test/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/test/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/distributed-commandbus-jgroups/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/distributed-commandbus-jgroups/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/distributed-commandbus-springcloud/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/distributed-commandbus-springcloud/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/mongo/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/mongo/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/amqp/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/amqp/src/main/java, ./workspace/AxonFramework/AxonFramework/213813684/metrics/src/main/java, /root/./workspace/AxonFramework/AxonFramework/213813684/metrics/src/main/java], projectClasspath='[Ljava.net.URL;@27dc79f7', projectTests=[org.axonframework.commandhandling.model.AnnotatedAggregateTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
