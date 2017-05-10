@@ -1,0 +1,69 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "INL/BlackLab",
+  "bugCommit": "https://github.com/INL/BlackLab/compare/411506112a32...fce81daf4f0e",
+  "failingModule": "/root/workspace/INL/BlackLab/212113775/core",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.RuntimeException",
+    "org.junit.ComparisonFailure",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 183,
+  "failing-test-cases": [
+    {
+      "className": "nl.inl.blacklab.search.TestQueryRewrite",
+      "failingMethods": [
+        "nl.inl.blacklab.search.TestQueryRewrite#testRewriteRepetitionWord",
+        "nl.inl.blacklab.search.TestQueryRewrite#testRewriteProblematicNegativeClauses"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cREP([OR(TERM(contents%word@i:the)]), 2, 2)\u003e but was:\u003cREP([TERM(contents%word@i:the]), 2, 2)\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOR(POSFILTER(EXPAND([OR(TERM(contents%pos@i:vrb)]), L, 1, 1), TERM(co...\u003e but was:\u003cOR(POSFILTER(EXPAND([TERM(contents%pos@i:vrb]), L, 1, 1), TERM(co...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "nl.inl.blacklab.search.TestSearches",
+      "failingMethods": [
+        "nl.inl.blacklab.search.TestSearches#testAnd"
+      ],
+      "erroringMethods": [
+        "nl.inl.blacklab.search.TestSearches#testNfaMatching",
+        "nl.inl.blacklab.search.TestSearches#testRepetitionNoResults"
+      ],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Query has no clauses",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Can\u0027t find contents#fiid for doc 1",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 2
+    }
+  ]
+}

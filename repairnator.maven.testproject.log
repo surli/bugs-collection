@@ -1,0 +1,362 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 3 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 3 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] BlackLab Corpus Search
+[INFO] BlackLab
+[INFO] BlackLab Server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BlackLab Corpus Search 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BlackLab 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ blacklab ---
+[INFO] Storing buildNumber: 2017-05-10 09:22:42 at timestamp: 1494400962320
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /root/workspace/INL/BlackLab/212113775/core && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/INL/BlackLab/212113775/core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- ph-javacc-maven-plugin:2.8.0:javacc (javacc) @ blacklab ---
+[INFO] Skipping - all parsers are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ blacklab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/INL/BlackLab/212113775/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ blacklab ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ blacklab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/INL/BlackLab/212113775/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ blacklab ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ blacklab ---
+[INFO] Surefire report directory: /root/workspace/INL/BlackLab/212113775/core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 20.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 364.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running nl.inl.util.TestStringUtil
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+Running nl.inl.util.TestXmlUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running nl.inl.util.TestFileUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirUtf8
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirFixedBlock
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirZip
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running nl.inl.blacklab.filter.TestTranscribeGermanAccentsFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running nl.inl.blacklab.filter.TestRemoveAllAccentsFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.filter.TestTranscribeGermanAccentsSynonymFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running nl.inl.blacklab.analysis.TestBLDutchAnalyzer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running nl.inl.blacklab.analysis.TestBLDutchTokenFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.analysis.TestBLDutchTokenizer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.forwardindex.TestForwardIndexPosIncr
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running nl.inl.blacklab.forwardindex.TestForwardIndexDelete
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running nl.inl.blacklab.forwardindex.TestTermsV3
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running nl.inl.blacklab.perdocument.TestDocResults
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running nl.inl.blacklab.index.complex.TestComplexFieldUtil
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running nl.inl.blacklab.index.TestHookableSaxParser
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running nl.inl.blacklab.highlight.TestXmlHighlighter
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running nl.inl.blacklab.search.lucene.TestSpansRepetition
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running nl.inl.blacklab.search.lucene.TestSpansNot
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running nl.inl.blacklab.search.lucene.TestSpansSequence
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running nl.inl.blacklab.search.lucene.TestSpansInBuckets
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running nl.inl.blacklab.search.lucene.TestSpansExpansion
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.search.lucene.TestSpansNGrams
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.search.lucene.TestSpansPositionFilter
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running nl.inl.blacklab.search.lucene.TestSpanQueryAnd
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running nl.inl.blacklab.search.lucene.TestSpansTags
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running nl.inl.blacklab.search.lucene.TestSpansExpandToNGram
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running nl.inl.blacklab.search.lucene.TestSpansAnd
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running nl.inl.blacklab.search.lucene.TestSpansInBucketsConsecutive
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.search.lucene.TestSpansTagsOld
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running nl.inl.blacklab.search.lucene.TestPerDocumentSortedSpans
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running nl.inl.blacklab.search.lucene.TestSpansUnique
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running nl.inl.blacklab.search.lucene.TestSpansInBucketsPerStartPoint
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running nl.inl.blacklab.search.TestTextPatternRegex
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running nl.inl.blacklab.search.TestKwic
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running nl.inl.blacklab.search.TestHits
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running nl.inl.blacklab.search.fimatch.TestNfa
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running nl.inl.blacklab.search.fimatch.TestNfaFromQuery
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running nl.inl.blacklab.search.TestTextPatternSequence
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running nl.inl.blacklab.search.TestTextPatternWildcard
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.search.TestConcordance
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running nl.inl.blacklab.search.grouping.TestHitPropertySerialize
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running nl.inl.blacklab.search.grouping.TestHitProperties
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 sec
+Running nl.inl.blacklab.search.grouping.TestResultsGrouper
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.859 sec
+Running nl.inl.blacklab.search.TestHitsSample
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running nl.inl.blacklab.search.TestQueryRewrite
+Tests run: 25, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec <<< FAILURE!
+testRewriteRepetitionWord(nl.inl.blacklab.search.TestQueryRewrite)  Time elapsed: 0.029 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<REP([OR(TERM(contents%word@i:the)]), 2, 2)> but was:<REP([TERM(contents%word@i:the]), 2, 2)>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at nl.inl.blacklab.search.TestQueryRewrite.assertRewrite(TestQueryRewrite.java:70)
+	at nl.inl.blacklab.search.TestQueryRewrite.testRewriteRepetitionWord(TestQueryRewrite.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testRewriteProblematicNegativeClauses(nl.inl.blacklab.search.TestQueryRewrite)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<OR(POSFILTER(EXPAND([OR(TERM(contents%pos@i:vrb)]), L, 1, 1), TERM(co...> but was:<OR(POSFILTER(EXPAND([TERM(contents%pos@i:vrb]), L, 1, 1), TERM(co...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at nl.inl.blacklab.search.TestQueryRewrite.assertRewriteResult(TestQueryRewrite.java:80)
+	at nl.inl.blacklab.search.TestQueryRewrite.testRewriteProblematicNegativeClauses(TestQueryRewrite.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running nl.inl.blacklab.search.TestSearches
+Tests run: 14, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 0.213 sec <<< FAILURE!
+testRepetitionNoResults(nl.inl.blacklab.search.TestSearches)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.RuntimeException: Query has no clauses
+	at nl.inl.blacklab.search.lucene.SpanQueryAndNot.getRealField(SpanQueryAndNot.java:287)
+	at nl.inl.blacklab.search.lucene.BLSpanQueryAbstract.determineBaseFieldName(BLSpanQueryAbstract.java:70)
+	at nl.inl.blacklab.search.lucene.BLSpanQueryAbstract.<init>(BLSpanQueryAbstract.java:55)
+	at nl.inl.blacklab.search.lucene.SpanQueryNot.<init>(SpanQueryNot.java:46)
+	at nl.inl.blacklab.search.lucene.BLSpanQuery.inverted(BLSpanQuery.java:113)
+	at nl.inl.blacklab.search.lucene.SpanQueryAndNot.inverted(SpanQueryAndNot.java:70)
+	at nl.inl.blacklab.search.lucene.BLSpanOrQuery.rewrite(BLSpanOrQuery.java:157)
+	at nl.inl.blacklab.search.lucene.SpanQueryRepetition.rewrite(SpanQueryRepetition.java:68)
+	at nl.inl.blacklab.search.lucene.SpanQuerySequence.combine(SpanQuerySequence.java:311)
+	at nl.inl.blacklab.search.lucene.SpanQuerySequence.makeAlternatives(SpanQuerySequence.java:305)
+	at nl.inl.blacklab.search.lucene.SpanQuerySequence.rewrite(SpanQuerySequence.java:255)
+	at nl.inl.blacklab.search.HitsImpl.<init>(HitsImpl.java:293)
+	at nl.inl.blacklab.search.Hits.fromSpanQuery(Hits.java:127)
+	at nl.inl.blacklab.search.Searcher.find(Searcher.java:722)
+	at nl.inl.blacklab.search.Searcher.find(Searcher.java:728)
+	at nl.inl.blacklab.TestIndex.find(TestIndex.java:147)
+	at nl.inl.blacklab.TestIndex.findConc(TestIndex.java:122)
+	at nl.inl.blacklab.search.TestSearches.testRepetitionNoResults(TestSearches.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testNfaMatching(nl.inl.blacklab.search.TestSearches)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.RuntimeException: Can't find contents#fiid for doc 1
+	at nl.inl.blacklab.search.lucene.DocIntFieldGetter.getFieldValue(DocIntFieldGetter.java:88)
+	at nl.inl.blacklab.search.lucene.SpansFiSeq.nextDoc(SpansFiSeq.java:116)
+	at nl.inl.blacklab.search.HitsImpl.ensureHitsRead(HitsImpl.java:493)
+	at nl.inl.blacklab.search.HitsImpl$1.hasNext(HitsImpl.java:812)
+	at nl.inl.blacklab.TestIndex.getConcordances(TestIndex.java:181)
+	at nl.inl.blacklab.TestIndex.findConc(TestIndex.java:123)
+	at nl.inl.blacklab.search.TestSearches.testNfaMatching(TestSearches.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+
+Results :
+
+Failed tests:   testRewriteRepetitionWord(nl.inl.blacklab.search.TestQueryRewrite): expected:<REP([OR(TERM(contents%word@i:the)]), 2, 2)> but was:<REP([TERM(contents%word@i:the]), 2, 2)>
+  testRewriteProblematicNegativeClauses(nl.inl.blacklab.search.TestQueryRewrite): expected:<OR(POSFILTER(EXPAND([OR(TERM(contents%pos@i:vrb)]), L, 1, 1), TERM(co...> but was:<OR(POSFILTER(EXPAND([TERM(contents%pos@i:vrb]), L, 1, 1), TERM(co...>
+
+Tests in error: 
+  testRepetitionNoResults(nl.inl.blacklab.search.TestSearches): Query has no clauses
+  testNfaMatching(nl.inl.blacklab.search.TestSearches): Can't find contents#fiid for doc 1
+
+Tests run: 183, Failures: 2, Errors: 2, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] BlackLab Corpus Search ............................. SUCCESS [  0.004 s]
+[INFO] BlackLab ........................................... FAILURE [  8.350 s]
+[INFO] BlackLab Server .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.553 s
+[INFO] Finished at: 2017-05-10T09:22:49+02:00
+[INFO] Final Memory: 22M/725M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project blacklab: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/INL/BlackLab/212113775/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :blacklab
