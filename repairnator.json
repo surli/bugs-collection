@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/15ec400366be...ac1573c2e209",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/216366264/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 4988,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.UpdateClusterCommandTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.UpdateClusterCommandTest#memoryOptimizationLowerThenZeroWithoutKsmOrBallooning"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003ctrue\u003e      but: was \u003cfalse\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
