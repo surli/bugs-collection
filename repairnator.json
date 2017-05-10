@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/d11dc1f15d00...3f743cd3365b",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/212487687/languagetool-standalone",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 792,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.WordListValidatorTest",
+      "failingMethods": [
+        "org.languagetool.rules.WordListValidatorTest#testWordListValidity"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Word \u0027Entrecôte/S\u0027 from de/hunspell/spelling.txt doesn\u0027t match regex: [0-9a-zA-ZöäüÖÄÜßëçèéêáàóòÈÉÁÀÓÒãñíîşŒ€ūαΑβΒγΓδΔεΕζΖηΗθΘιΙκΚλΛμΜνΝξΞοΟπΠρΡσΣτΤυΥφΦχΧψΨωΩάΆέΈίΊήΉύΎϊϋΰΐœţŚśōżúï·./-]+ - please fix the word or add the character to org.languagetool.rules.WordListValidatorTest if it\u0027s valid",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
