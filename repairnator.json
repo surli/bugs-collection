@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "docker-java/docker-java",
+  "bugCommit": "https://github.com/docker-java/docker-java/compare/0a3ac8d071b2...57a610926de0",
+  "failingModule": "/root/workspace/docker-java/docker-java/210956489",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 261,
+  "failing-test-cases": [
+    {
+      "className": "com.github.dockerjava.netty.NettyDockerCmdExecFactoryConfigTest",
+      "failingMethods": [
+        "com.github.dockerjava.netty.NettyDockerCmdExecFactoryConfigTest#testNettyDockerCmdExecFactoryConfigWithApiVersion"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [/v1.23/version] but found [/version]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
