@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AxonFramework/AxonFramework",
+  "bugCommit": "https://github.com/AxonFramework/AxonFramework/compare/fb07614055d3...a938c17033cb",
+  "failingModule": "/root/workspace/AxonFramework/AxonFramework/213813684/core",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.mockito.exceptions.verification.VerificationInOrderFailure"
+  ],
+  "totalNumberRunningTests": 647,
+  "failing-test-cases": [
+    {
+      "className": "org.axonframework.commandhandling.model.AnnotatedAggregateTest",
+      "failingMethods": [
+        "org.axonframework.commandhandling.model.AnnotatedAggregateTest#testApplyingEventInHandlerPublishesInRightOrder"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.VerificationInOrderFailure",
+          "failureDetail": "\nVerification in order failure\nWanted but not invoked:\neventStore.publish();\n-\u003e at org.axonframework.commandhandling.model.AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder(AnnotatedAggregateTest.java:47)\nWanted anywhere AFTER following interaction:\neventStore.publish(\n    org.axonframework.eventhandling.GenericEventMessage@189fb01b\n);\n-\u003e at org.axonframework.commandhandling.model.inspection.AnnotatedAggregate.publishOnEventBus(AnnotatedAggregate.java:209)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

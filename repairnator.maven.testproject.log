@@ -1,0 +1,925 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.axonframework:axon-integrationtests:jar:3.0.3-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for com.oracle:ojdbc7:jar should not point at files within the project directory, ${project.basedir}/src/test/binary/ojdbc7.jar will be unresolvable by dependent projects @ org.axonframework:axon-integrationtests:[unknown-version], /root/workspace/AxonFramework/AxonFramework/213813684/integrationtests/pom.xml, line 148, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Axon Framework
+[INFO] Axon Framework core
+[INFO] Axon Framework Distributed CommandBus JGroups
+[INFO] Axon Framework Spring Support
+[INFO] Axon AMQP
+[INFO] Axon Framework Spring Boot Support
+[INFO] Axon Framework Test Fixtures
+[INFO] Axon Framework Distributed CommandBus Spring Cloud
+[INFO] Axon MongoDB Components
+[INFO] Axon Integration tests
+[INFO] Axon Metrics
+[INFO] Spring Boot Starter module for Axon Framework
+[INFO] Spring Boot Starter module for Axon with JGroups Distributed Command Bus
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axon Framework 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axon Framework core 3.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ axon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ axon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ axon-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 458 source files to /root/workspace/AxonFramework/AxonFramework/213813684/core/target/classes
+[INFO] /root/workspace/AxonFramework/AxonFramework/213813684/core/src/main/java/org/axonframework/serialization/json/JacksonSerializer.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/AxonFramework/AxonFramework/213813684/core/src/main/java/org/axonframework/serialization/json/JacksonSerializer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ axon-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ axon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ axon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ axon-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 4.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 42.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 449.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.axonframework.eventhandling.AbstractEventBusTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in org.axonframework.eventhandling.AbstractEventBusTest
+Running org.axonframework.eventhandling.SimpleEventHandlerInvokerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.axonframework.eventhandling.SimpleEventHandlerInvokerTest
+Running org.axonframework.eventhandling.scheduling.quartz.QuartzEventSchedulerTest
+2017-05-10 17:09:29,054 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2017-05-10 17:09:29,058 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2017-05-10 17:09:29,079 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-05-10 17:09:29,081 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2017-05-10 17:09:29,083 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2017-05-10 17:09:29,084 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-05-10 17:09:29,084 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2017-05-10 17:09:29,084 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2017-05-10 17:09:29,085 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2017-05-10 17:09:29,147 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2017-05-10 17:09:29,148 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2017-05-10 17:09:29,150 [DefaultQuartzScheduler_Worker-1] INFO  FireEventJob                    - Job successfully executed. Scheduled Event [StubEvent] has been published.
+2017-05-10 17:09:29,561 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2017-05-10 17:09:29,565 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2017-05-10 17:09:29,565 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2017-05-10 17:09:29,567 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-05-10 17:09:29,568 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2017-05-10 17:09:29,568 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2017-05-10 17:09:29,568 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-05-10 17:09:29,568 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2017-05-10 17:09:29,568 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2017-05-10 17:09:29,568 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2017-05-10 17:09:29,613 [DefaultQuartzScheduler_Worker-1] INFO  FireEventJob                    - Job successfully executed. Scheduled Event [StubEvent] has been published.
+2017-05-10 17:09:29,614 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2017-05-10 17:09:29,614 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2017-05-10 17:09:30,114 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2017-05-10 17:09:30,118 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2017-05-10 17:09:30,118 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2017-05-10 17:09:30,120 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-05-10 17:09:30,121 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2017-05-10 17:09:30,121 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2017-05-10 17:09:30,121 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-05-10 17:09:30,121 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2017-05-10 17:09:30,121 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2017-05-10 17:09:30,121 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2017-05-10 17:09:30,128 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2017-05-10 17:09:30,128 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2017-05-10 17:09:30,620 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.598 sec - in org.axonframework.eventhandling.scheduling.quartz.QuartzEventSchedulerTest
+Running org.axonframework.eventhandling.scheduling.java.SimpleEventSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in org.axonframework.eventhandling.scheduling.java.SimpleEventSchedulerTest
+Running org.axonframework.eventhandling.DirectEventProcessingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.axonframework.eventhandling.DirectEventProcessingStrategyTest
+Running org.axonframework.eventhandling.async.SequentialPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventhandling.async.SequentialPolicyTest
+Running org.axonframework.eventhandling.async.AsynchronousEventProcessingStrategyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.eventhandling.async.AsynchronousEventProcessingStrategyTest
+Running org.axonframework.eventhandling.async.AsynchronousEventProcessorConcurrencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.166 sec - in org.axonframework.eventhandling.async.AsynchronousEventProcessorConcurrencyTest
+Running org.axonframework.eventhandling.async.SequentialPerAggregatePolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.eventhandling.async.SequentialPerAggregatePolicyTest
+Running org.axonframework.eventhandling.async.FullConcurrencyPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.eventhandling.async.FullConcurrencyPolicyTest
+Running org.axonframework.eventhandling.AnnotatedParameterResolverFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.eventhandling.AnnotatedParameterResolverFactoryTest
+Running org.axonframework.eventhandling.saga.metamodel.DefaultSagaMetaModelFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.axonframework.eventhandling.saga.metamodel.DefaultSagaMetaModelFactoryTest
+Running org.axonframework.eventhandling.saga.AnnotatedSagaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.axonframework.eventhandling.saga.AnnotatedSagaTest
+Running org.axonframework.eventhandling.saga.AssociationValuesImplTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.eventhandling.saga.AssociationValuesImplTest
+Running org.axonframework.eventhandling.saga.SimpleResourceInjectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.axonframework.eventhandling.saga.SimpleResourceInjectorTest
+Running org.axonframework.eventhandling.saga.AnnotatedSagaManagerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in org.axonframework.eventhandling.saga.AnnotatedSagaManagerTest
+Running org.axonframework.eventhandling.saga.SagaManagerTest
+2017-05-10 17:09:39,293 [main] ERROR AbstractSagaManager             - An exception occurred while a Saga [Saga$$EnhancerByMockitoWithCGLIB$$98c32cd2] was handling an Event [Object]:
+org.axonframework.common.MockException: Mock
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.axonframework.eventhandling.saga.SagaManagerTest
+Running org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest
+2017-05-10 17:09:39,416 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-05-10 17:09:39,427 [main] INFO  DefaultTestContextBootstrapper  - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-05-10 17:09:39,428 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c711375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@57cf54e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b03b9fe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@37d4349f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@434a63ab]
+2017-05-10 17:09:39,509 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/saga-repository-test.xml]
+2017-05-10 17:09:39,819 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:39,853 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@272113c4: startup date [Wed May 10 17:09:39 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:39,986 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:39,993 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:40,316 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:40,356 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:40,387 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:40,477 [main] INFO  Version                         - HHH000412: Hibernate Core {5.1.0.Final}
+2017-05-10 17:09:40,479 [main] INFO  Environment                     - HHH000206: hibernate.properties not found
+2017-05-10 17:09:40,480 [main] INFO  Environment                     - HHH000021: Bytecode provider name : javassist
+2017-05-10 17:09:40,519 [main] INFO  Version                         - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-10 17:09:41,141 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:41,611 [main] INFO  Version                         - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-10 17:09:42,096 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: AssociationValueEntry
+2017-05-10 17:09:42,098 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: AssociationValueEntry
+2017-05-10 17:09:42,104 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: CustomDomainEventEntry
+2017-05-10 17:09:42,105 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: CustomDomainEventEntry
+2017-05-10 17:09:42,111 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: CustomSnapshotEventEntry
+2017-05-10 17:09:42,112 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: CustomSnapshotEventEntry
+2017-05-10 17:09:42,116 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: DomainEventEntry
+2017-05-10 17:09:42,117 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: DomainEventEntry
+2017-05-10 17:09:42,123 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: JpaAggregate
+2017-05-10 17:09:42,124 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: JpaAggregate
+2017-05-10 17:09:42,128 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: SagaEntry
+2017-05-10 17:09:42,129 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: SagaEntry
+2017-05-10 17:09:42,132 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: SnapshotEventEntry
+2017-05-10 17:09:42,133 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: SnapshotEventEntry
+2017-05-10 17:09:42,139 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: StubAggregate
+2017-05-10 17:09:42,140 [main] INFO  ractorJdbcDatabaseMetaDataImpl  - HHH000262: Table not found: StubAggregate
+2017-05-10 17:09:42,343 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:42,632 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@19b206ee, testMethod = testEndSaga@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@63d5874f]; rollback [true]
+2017-05-10 17:09:42,762 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:43,053 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@19b206ee, testMethod = testEndSaga@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:43,054 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@272113c4: startup date [Wed May 10 17:09:39 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,055 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,057 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/saga-repository-test.xml]
+2017-05-10 17:09:43,082 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:43,099 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@5e9bbd9d: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,109 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:43,111 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:43,130 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:43,135 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,135 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:43,172 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:43,354 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,387 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@78e68401, testMethod = testAddingAnInactiveSagaDoesntStoreIt@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@26be9a6]; rollback [true]
+2017-05-10 17:09:43,390 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:43,425 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@78e68401, testMethod = testAddingAnInactiveSagaDoesntStoreIt@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:43,425 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@5e9bbd9d: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,426 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,427 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/saga-repository-test.xml]
+2017-05-10 17:09:43,452 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:43,476 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@355ce6a6: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,488 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:43,490 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:43,511 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:43,516 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,516 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:43,548 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:43,713 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,746 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@42d9e8d2, testMethod = testLoadSaga_AssociationValueRemoved@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3b57dba4]; rollback [true]
+2017-05-10 17:09:43,751 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:43,795 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@42d9e8d2, testMethod = testLoadSaga_AssociationValueRemoved@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:43,796 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@355ce6a6: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,796 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,797 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/saga-repository-test.xml]
+2017-05-10 17:09:43,815 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:43,831 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@333398f: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:43,839 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:43,840 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:43,857 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:43,861 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:43,861 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:43,893 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:44,022 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:44,055 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@59a09be, testMethod = testAddAndLoadSaga_ByAssociationValue@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@766b6d02]; rollback [true]
+2017-05-10 17:09:44,061 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:44,113 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@59a09be, testMethod = testAddAndLoadSaga_ByAssociationValue@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:44,113 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@333398f: startup date [Wed May 10 17:09:43 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:44,113 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:44,115 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/saga-repository-test.xml]
+2017-05-10 17:09:44,137 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:44,156 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@63db743d: startup date [Wed May 10 17:09:44 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:44,167 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:44,169 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:44,199 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:44,208 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:44,208 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:44,244 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:44,416 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:44,454 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@fcd0e8d, testMethod = testAddAndLoadSaga_ByIdentifier@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@45796b2a]; rollback [true]
+2017-05-10 17:09:44,457 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:44,493 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@79d82f66 testClass = JpaSagaStoreTest, testInstance = org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest@fcd0e8d, testMethod = testAddAndLoadSaga_ByIdentifier@JpaSagaStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2daf06fc testClass = JpaSagaStoreTest, locations = '{classpath:/META-INF/spring/saga-repository-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:44,493 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@63db743d: startup date [Wed May 10 17:09:44 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:44,494 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.194 sec - in org.axonframework.eventhandling.saga.repository.jpa.JpaSagaStoreTest
+Running org.axonframework.eventhandling.saga.repository.AnnotatedSagaRepositoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.eventhandling.saga.repository.AnnotatedSagaRepositoryTest
+Running org.axonframework.eventhandling.saga.repository.jdbc.JdbcSagaStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in org.axonframework.eventhandling.saga.repository.jdbc.JdbcSagaStoreTest
+Running org.axonframework.eventhandling.saga.repository.AssociationValueMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.axonframework.eventhandling.saga.repository.AssociationValueMapTest
+Running org.axonframework.eventhandling.saga.repository.CachingSagaStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 sec - in org.axonframework.eventhandling.saga.repository.CachingSagaStoreTest
+Running org.axonframework.eventhandling.saga.repository.LockingSagaRepositoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.axonframework.eventhandling.saga.repository.LockingSagaRepositoryTest
+Running org.axonframework.eventhandling.TimestampParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.eventhandling.TimestampParameterResolverFactoryTest
+Running org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest
+2017-05-10 17:09:45,145 [main] INFO  AbstractContextLoader           - Could not detect default resource locations for test class [org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest]: no resource found for suffixes {-context.xml}.
+2017-05-10 17:09:45,148 [main] INFO  ctDelegatingSmartContextLoader  - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@3c64339f declaringClass = 'org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2017-05-10 17:09:45,151 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-05-10 17:09:45,152 [main] INFO  DefaultTestContextBootstrapper  - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-05-10 17:09:45,152 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@351d93bd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61c5fd78, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42503099, org.springframework.test.context.transaction.TransactionalTestExecutionListener@39dda56f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60844992]
+2017-05-10 17:09:45,165 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@6df37f7a: startup date [Wed May 10 17:09:45 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:45,211 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:45,236 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:45,256 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-10 17:09:45,256 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-10 17:09:45,292 [main] WARN  connections                     - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-10 17:09:45,293 [main] INFO  connections                     - HHH10001005: using driver [null] at URL [jdbc:hsqldb:mem:testdb]
+2017-05-10 17:09:45,294 [main] INFO  connections                     - HHH10001001: Connection properties: {}
+2017-05-10 17:09:45,294 [main] INFO  connections                     - HHH10001003: Autocommit mode: false
+2017-05-10 17:09:45,296 [main] INFO  rManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-10 17:09:45,367 [main] INFO  SchemaCreatorImpl               - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5855b0ed'
+2017-05-10 17:09:45,372 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-10 17:09:45,427 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@31082efa, testMethod = testStealToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@8ef1d58]; rollback [true]
+2017-05-10 17:09:45,454 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:45,461 [main] WARN  JpaTokenStore                   - Releasing claim of token stealing/0 failed. It was not owned by 793@spirals-vortex.lille.inria.fr
+2017-05-10 17:09:45,465 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@31082efa, testMethod = testStealToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:45,486 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@18e8eb59, testMethod = testClaimTokenConcurrently@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@8ef1d58]; rollback [true]
+2017-05-10 17:09:45,491 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@18e8eb59, testMethod = testClaimTokenConcurrently@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:45,493 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@7402c49f, testMethod = testClaimAndUpdateToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@8ef1d58]; rollback [true]
+2017-05-10 17:09:45,503 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@11d1735e testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@7402c49f, testMethod = testClaimAndUpdateToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2db461b5 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 sec - in org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest
+Running org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest
+2017-05-10 17:09:45,508 [main] INFO  AbstractContextLoader           - Could not detect default resource locations for test class [org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest]: no resource found for suffixes {-context.xml}.
+2017-05-10 17:09:45,509 [main] INFO  ctDelegatingSmartContextLoader  - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@fd14789 declaringClass = 'org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2017-05-10 17:09:45,511 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-05-10 17:09:45,511 [main] INFO  DefaultTestContextBootstrapper  - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-05-10 17:09:45,511 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@ce19c86, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68479e8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e951fb1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b317e7d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1bb4c431]
+2017-05-10 17:09:45,513 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@295d54d6: startup date [Wed May 10 17:09:45 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:45,521 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:45,612 [main] WARN  JdbcTokenStore                  - Releasing claim of token stealing/0 failed. It was owned by another node.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest
+Running org.axonframework.eventhandling.ConcludesBatchParameterResolverFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.eventhandling.ConcludesBatchParameterResolverFactoryTest
+Running org.axonframework.eventhandling.GenericEventMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.eventhandling.GenericEventMessageTest
+Running org.axonframework.eventhandling.SimpleEventBusTest
+2017-05-10 17:09:45,707 [main] INFO  AbstractEventBus                - EventProcessor [Mock for Consumer, hashCode: 1874622547] not added. It was already subscribed
+2017-05-10 17:09:45,708 [main] INFO  AbstractEventBus                - EventListener Mock for Consumer, hashCode: 1933551964 not removed. It was already unsubscribed
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.eventhandling.SimpleEventBusTest
+Running org.axonframework.eventhandling.TrackingEventProcessorTest
+2017-05-10 17:09:45,741 [Thread-22] WARN  TrackingEventProcessor          - Error occurred. Starting retry mode.
+org.axonframework.common.MockException: Mock
+2017-05-10 17:09:45,744 [Thread-22] WARN  TrackingEventProcessor          - Releasing claim on token and preparing for retry in 1s
+2017-05-10 17:09:45,761 [Thread-26] WARN  TrackingEventProcessor          - Error occurred. Starting retry mode.
+org.axonframework.common.MockException: Mock
+2017-05-10 17:09:45,764 [Thread-26] WARN  TrackingEventProcessor          - Releasing claim on token and preparing for retry in 1s
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in org.axonframework.eventhandling.TrackingEventProcessorTest
+Running org.axonframework.monitoring.MultiMessageMonitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.axonframework.monitoring.MultiMessageMonitorTest
+Running org.axonframework.config.EventHandlingConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.axonframework.config.EventHandlingConfigurationTest
+Running org.axonframework.config.ConfigurationResourceInjectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.config.ConfigurationResourceInjectorTest
+Running org.axonframework.config.ConfigurationParameterResolverFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.axonframework.config.ConfigurationParameterResolverFactoryTest
+Running org.axonframework.config.DefaultConfigurerTest
+2017-05-10 17:09:45,979 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:46,032 [main] WARN  connections                     - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-10 17:09:46,033 [main] INFO  connections                     - HHH10001005: using driver [null] at URL [jdbc:hsqldb:mem:axontest]
+2017-05-10 17:09:46,033 [main] INFO  connections                     - HHH10001001: Connection properties: {}
+2017-05-10 17:09:46,033 [main] INFO  connections                     - HHH10001003: Autocommit mode: false
+2017-05-10 17:09:46,033 [main] INFO  rManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-10 17:09:46,053 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:46,147 [main] WARN  ExceptionHandlerLoggedImpl      - GenerationTarget encountered exception accepting command : Unable to execute command [drop sequence hibernate_sequence]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [drop sequence hibernate_sequence]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:245)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at org.axonframework.config.DefaultConfigurerTest.defaultConfigurationWithJpaRepository(DefaultConfigurerTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: HIBERNATE_SEQUENCE in statement [drop sequence hibernate_sequence]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.execute(Unknown Source)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 38 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: HIBERNATE_SEQUENCE
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.StatementSchema.getResult(Unknown Source)
+	at org.hsqldb.StatementSchema.execute(Unknown Source)
+	at org.hsqldb.Session.executeCompiledStatement(Unknown Source)
+	at org.hsqldb.Session.executeDirectStatement(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 41 more
+2017-05-10 17:09:46,156 [main] INFO  SchemaCreatorImpl               - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5855b0ed'
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 sec - in org.axonframework.config.DefaultConfigurerTest
+Running org.axonframework.serialization.SerializedMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.axonframework.serialization.SerializedMessageTest
+Running org.axonframework.serialization.MavenArtifactRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.MavenArtifactRevisionResolverTest
+Running org.axonframework.serialization.SerialVersionUIDRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.serialization.SerialVersionUIDRevisionResolverTest
+Running org.axonframework.serialization.LazyDeserializingObjectTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.serialization.LazyDeserializingObjectTest
+Running org.axonframework.serialization.ChainedConverterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.serialization.ChainedConverterTest
+Running org.axonframework.serialization.upcasting.GenericUpcasterChainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.serialization.upcasting.GenericUpcasterChainTest
+Running org.axonframework.serialization.upcasting.event.EventUpcasterChainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.axonframework.serialization.upcasting.event.EventUpcasterChainTest
+Running org.axonframework.serialization.upcasting.event.AbstractSingleEventUpcasterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.axonframework.serialization.upcasting.event.AbstractSingleEventUpcasterTest
+Running org.axonframework.serialization.json.MetaDataDeserializerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in org.axonframework.serialization.json.MetaDataDeserializerTest
+Running org.axonframework.serialization.json.JsonNodeToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.axonframework.serialization.json.JsonNodeToByteArrayConverterTest
+Running org.axonframework.serialization.json.JacksonSerializerTest
+{"value":"first","time":1494428986.657000000,"nested":{"value":"nested","time":1494428986.657000000,"nested":null}}
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in org.axonframework.serialization.json.JacksonSerializerTest
+Running org.axonframework.serialization.json.ByteArrayToJsonNodeConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.json.ByteArrayToJsonNodeConverterTest
+Running org.axonframework.serialization.SerializationAwareTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.serialization.SerializationAwareTest
+Running org.axonframework.serialization.converters.InputStreamToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.InputStreamToByteArrayConverterTest
+Running org.axonframework.serialization.converters.StringToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.StringToByteArrayConverterTest
+Running org.axonframework.serialization.converters.ByteArrayToStringConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.ByteArrayToStringConverterTest
+Running org.axonframework.serialization.FixedValueRevisionResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.FixedValueRevisionResolverTest
+Running org.axonframework.serialization.SerializedMetaDataValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.SerializedMetaDataValueTest
+Running org.axonframework.serialization.JavaSerializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.JavaSerializerTest
+Running org.axonframework.serialization.xml.XomToStringConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.axonframework.serialization.xml.XomToStringConverterTest
+Running org.axonframework.serialization.xml.InputStreamToDom4jConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.serialization.xml.InputStreamToDom4jConverterTest
+Running org.axonframework.serialization.xml.Dom4JToByteArrayConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.serialization.xml.Dom4JToByteArrayConverterTest
+Running org.axonframework.serialization.xml.XStreamSerializerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.axonframework.serialization.xml.XStreamSerializerTest
+Running org.axonframework.serialization.xml.InputStreamToXomConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.xml.InputStreamToXomConverterTest
+Running org.axonframework.serialization.AnnotationRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.AnnotationRevisionResolverTest
+Running org.axonframework.messaging.GenericMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.messaging.GenericMessageTest
+Running org.axonframework.messaging.unitofwork.UnitOfWorkNestingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.messaging.unitofwork.UnitOfWorkNestingTest
+Running org.axonframework.messaging.unitofwork.RollbackConfigurationTypeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.unitofwork.RollbackConfigurationTypeTest
+Running org.axonframework.messaging.unitofwork.CurrentUnitOfWorkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.unitofwork.CurrentUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.BatchingUnitOfWorkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.messaging.unitofwork.BatchingUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.AbstractUnitOfWorkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.axonframework.messaging.unitofwork.AbstractUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.ExecutionResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.unitofwork.ExecutionResultTest
+Running org.axonframework.messaging.correlation.SimpleCorrelationDataProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.correlation.SimpleCorrelationDataProviderTest
+Running org.axonframework.messaging.correlation.MetaDataValueTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.messaging.correlation.MetaDataValueTest
+Running org.axonframework.messaging.annotation.HandlerComparatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.messaging.annotation.HandlerComparatorTest
+Running org.axonframework.messaging.annotation.SimpleResourceParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.annotation.SimpleResourceParameterResolverFactoryTest
+Running org.axonframework.messaging.annotation.MultiParameterResolverFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.messaging.annotation.MultiParameterResolverFactoryTest
+Running org.axonframework.messaging.annotation.MessageIdentifierParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.annotation.MessageIdentifierParameterResolverFactoryTest
+Running org.axonframework.messaging.DefaultInterceptorChainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.messaging.DefaultInterceptorChainTest
+Running org.axonframework.messaging.interceptors.CorrelationDataInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.messaging.interceptors.CorrelationDataInterceptorTest
+Running org.axonframework.messaging.interceptors.LoggingInterceptorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.axonframework.messaging.interceptors.LoggingInterceptorTest
+Running org.axonframework.messaging.interceptors.TransactionManagingInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.interceptors.TransactionManagingInterceptorTest
+Running org.axonframework.messaging.interceptors.BeanValidationInterceptorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in org.axonframework.messaging.interceptors.BeanValidationInterceptorTest
+Running org.axonframework.eventsourcing.CachingEventSourcingRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.axonframework.eventsourcing.CachingEventSourcingRepositoryTest
+Running org.axonframework.eventsourcing.CachingRepositoryWithNestedUnitOfWorkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.axonframework.eventsourcing.CachingRepositoryWithNestedUnitOfWorkTest
+Running org.axonframework.eventsourcing.DomainEventStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventsourcing.DomainEventStreamTest
+Running org.axonframework.eventsourcing.AggregateSnapshotterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.axonframework.eventsourcing.AggregateSnapshotterTest
+Running org.axonframework.eventsourcing.GenericAggregateFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventsourcing.GenericAggregateFactoryTest
+Running org.axonframework.eventsourcing.EventCountSnapshotTriggerDefinitionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.eventsourcing.EventCountSnapshotTriggerDefinitionTest
+Running org.axonframework.eventsourcing.NoSnapshotTriggerDefinitionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventsourcing.NoSnapshotTriggerDefinitionTest
+Running org.axonframework.eventsourcing.EventSourcingRepositoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.eventsourcing.EventSourcingRepositoryTest
+Running org.axonframework.eventsourcing.EventSourcingRepositoryIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.axonframework.eventsourcing.EventSourcingRepositoryIntegrationTest
+Running org.axonframework.eventsourcing.AbstractSnapshotterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.axonframework.eventsourcing.AbstractSnapshotterTest
+Running org.axonframework.eventsourcing.GenericDomainEventMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventsourcing.GenericDomainEventMessageTest
+Running org.axonframework.eventsourcing.eventstore.jpa.SQLStateResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventsourcing.eventstore.jpa.SQLStateResolverTest
+Running org.axonframework.eventsourcing.eventstore.jpa.DomainEventEntryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.eventsourcing.eventstore.jpa.DomainEventEntryTest
+Running org.axonframework.eventsourcing.eventstore.jpa.SQLErrorCodesResolverTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.axonframework.eventsourcing.eventstore.jpa.SQLErrorCodesResolverTest
+Running org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest
+2017-05-10 17:09:47,374 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-05-10 17:09:47,375 [main] INFO  DefaultTestContextBootstrapper  - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-05-10 17:09:47,375 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3487947c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@77226121, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3117ac8d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@760c777d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ea039b4]
+2017-05-10 17:09:47,376 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:47,393 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@1aef7428: startup date [Wed May 10 17:09:47 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:47,402 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:47,403 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:47,419 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:47,424 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:47,425 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:47,462 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:47,627 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:47,628 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:47,686 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@7771c4e, testMethod = testStoreTwoExactSameSnapshots@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@62f305bc]; rollback [true]
+2017-05-10 17:09:47,693 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:47,712 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@7771c4e, testMethod = testStoreTwoExactSameSnapshots@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:47,714 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@1c382179, testMethod = testStoreEventsWithCustomEntity@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@62f305bc]; rollback [true]
+2017-05-10 17:09:47,754 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@1c382179, testMethod = testStoreEventsWithCustomEntity@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:47,754 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@1aef7428: startup date [Wed May 10 17:09:47 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:47,754 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:47,756 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:47,824 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@2db6ba81: startup date [Wed May 10 17:09:47 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:47,833 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:47,834 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:47,852 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:47,857 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:47,857 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:47,894 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:47,996 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:47,996 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,017 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@22ed2886, testMethod = testStoreAndLoadEventsFromDatastore@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@30e15628]; rollback [true]
+2017-05-10 17:09:48,028 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:48,035 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@22ed2886, testMethod = testStoreAndLoadEventsFromDatastore@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,037 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@3163e03b, testMethod = testUnknownSerializedTypeCausesException@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@30e15628]; rollback [true]
+2017-05-10 17:09:48,045 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@3163e03b, testMethod = testUnknownSerializedTypeCausesException@JpaEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,047 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@45c28c49, testMethod = testLoad_LargeAmountOfEvents@BatchingEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@30e15628]; rollback [true]
+2017-05-10 17:09:48,461 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@45c28c49, testMethod = testLoad_LargeAmountOfEvents@BatchingEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,465 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@537a8915, testMethod = testStoreDuplicateEventWithoutExceptionResolver@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@30e15628]; rollback [true]
+2017-05-10 17:09:48,472 [main] WARN  SqlExceptionHelper              - SQL Error: -104, SQLState: 23505
+2017-05-10 17:09:48,473 [main] ERROR SqlExceptionHelper              - integrity constraint violation: unique constraint or index violation; UKDG43IA27YPO1JOVW2X64VBWV8 table: DOMAINEVENTENTRY
+2017-05-10 17:09:48,476 [main] INFO  AbstractBatchImpl               - HHH000010: On release of batch it still contained JDBC statements
+2017-05-10 17:09:48,477 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@537a8915, testMethod = testStoreDuplicateEventWithoutExceptionResolver@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,477 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@2db6ba81: startup date [Wed May 10 17:09:47 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,478 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,479 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:48,494 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@7c93e69: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,501 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:48,501 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:48,516 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:48,522 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,522 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:48,558 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:48,655 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:48,656 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,675 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@4806fbf7, testMethod = testStoreDuplicateEventWithExceptionTranslator@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5a941fb4]; rollback [true]
+2017-05-10 17:09:48,681 [main] WARN  SqlExceptionHelper              - SQL Error: -104, SQLState: 23505
+2017-05-10 17:09:48,681 [main] ERROR SqlExceptionHelper              - integrity constraint violation: unique constraint or index violation; UKDG43IA27YPO1JOVW2X64VBWV8 table: DOMAINEVENTENTRY
+2017-05-10 17:09:48,681 [main] INFO  AbstractBatchImpl               - HHH000010: On release of batch it still contained JDBC statements
+2017-05-10 17:09:48,682 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@4806fbf7, testMethod = testStoreDuplicateEventWithExceptionTranslator@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,682 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@7c93e69: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,682 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,683 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:48,695 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@112a50a1: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,706 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:48,707 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:48,724 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:48,728 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,728 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:48,770 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:48,858 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:48,858 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,875 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@530a46f4, testMethod = testStoreAndLoadEventsWithUpcaster@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7d836c4a]; rollback [true]
+2017-05-10 17:09:48,885 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:48,894 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@530a46f4, testMethod = testStoreAndLoadEventsWithUpcaster@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:48,894 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@112a50a1: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,895 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,895 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:48,909 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@5325674a: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:48,916 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:48,917 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:48,936 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:48,940 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:48,940 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:48,971 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:49,061 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:49,061 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:49,083 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@319ea996, testMethod = testUniqueKeyConstraintOnEventIdentifier@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3533d790]; rollback [true]
+2017-05-10 17:09:49,088 [main] WARN  SqlExceptionHelper              - SQL Error: -104, SQLState: 23505
+2017-05-10 17:09:49,088 [main] ERROR SqlExceptionHelper              - integrity constraint violation: unique constraint or index violation; UK_K5LT6D2792AMNLOO7Q91NJP0V table: DOMAINEVENTENTRY
+2017-05-10 17:09:49,088 [main] INFO  AbstractBatchImpl               - HHH000010: On release of batch it still contained JDBC statements
+2017-05-10 17:09:49,089 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@319ea996, testMethod = testUniqueKeyConstraintOnEventIdentifier@AbstractEventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,089 [main] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@5325674a: startup date [Wed May 10 17:09:48 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:49,089 [main] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:49,090 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:49,104 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@25093079: startup date [Wed May 10 17:09:49 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:49,113 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:49,114 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:49,131 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:49,136 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:49,136 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:49,159 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:49,233 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:49,233 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:49,249 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@43fdef43, testMethod = testLoadNonExistent@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,251 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:49,257 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@43fdef43, testMethod = testLoadNonExistent@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,259 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@31d8352e, testMethod = testLoadPartialStreamOfTrackedEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,314 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@31d8352e, testMethod = testLoadPartialStreamOfTrackedEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,316 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@52a23575, testMethod = testStoreAndLoadEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,330 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@52a23575, testMethod = testStoreAndLoadEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,333 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@58dea0a7, testMethod = testReturnedEventMessageBehavior@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,339 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@58dea0a7, testMethod = testReturnedEventMessageBehavior@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,341 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@3df7e309, testMethod = testReadPartialStream@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,351 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@3df7e309, testMethod = testReadPartialStream@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,353 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@52f71d2, testMethod = testLoadTrackedEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,390 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@52f71d2, testMethod = testLoadTrackedEvents@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,392 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@5ec25b61, testMethod = testStoreAndLoadEventsArray@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,398 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@5ec25b61, testMethod = testStoreAndLoadEventsArray@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,399 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@506654fa, testMethod = testStoreAndLoadApplicationEvent@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,412 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@506654fa, testMethod = testStoreAndLoadApplicationEvent@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:49,414 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@321c01c2, testMethod = testStoreAndLoadSnapshot@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@350ede1]; rollback [true]
+2017-05-10 17:09:49,426 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@7dfca9e6 testClass = JpaEventStorageEngineTest, testInstance = org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest@321c01c2, testMethod = testStoreAndLoadSnapshot@EventStorageEngineTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41c88e00 testClass = JpaEventStorageEngineTest, locations = '{classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.056 sec - in org.axonframework.eventsourcing.eventstore.jpa.JpaEventStorageEngineTest
+Running org.axonframework.eventsourcing.eventstore.jdbc.JdbcEventStorageEngineTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in org.axonframework.eventsourcing.eventstore.jdbc.JdbcEventStorageEngineTest
+Running org.axonframework.eventsourcing.eventstore.EventUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.eventsourcing.eventstore.EventUtilsTest
+Running org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest
+2017-05-10 17:09:49,880 [main] WARN  EmbeddedEventStore              - Error reading snapshot. Reconstructing aggregate from entire event stream. Caused by: org.axonframework.common.MockException Mock
+2017-05-10 17:09:50,255 [Thread-74] WARN  EmbeddedEventStore              - An event processor fell behind the tail end of the event store cache. This usually indicates a badly performing event processor.
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 sec - in org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest
+Running org.axonframework.eventsourcing.eventstore.inmemory.InMemoryEventStorageEngineTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.eventsourcing.eventstore.inmemory.InMemoryEventStorageEngineTest
+Running org.axonframework.eventsourcing.eventstore.TrackingTokenSerializationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.axonframework.eventsourcing.eventstore.TrackingTokenSerializationTest
+Running org.axonframework.eventsourcing.eventstore.TrackingTokenParameterResolverFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventsourcing.eventstore.TrackingTokenParameterResolverFactoryTest
+Running org.axonframework.eventsourcing.eventstore.GapAwareTrackingTokenTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.eventsourcing.eventstore.GapAwareTrackingTokenTest
+Running org.axonframework.common.AssertTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.AssertTest
+Running org.axonframework.common.AxonThreadFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.common.AxonThreadFactoryTest
+Running org.axonframework.common.caching.NoCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.common.caching.NoCacheTest
+Running org.axonframework.common.caching.WeakReferenceCacheTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 sec - in org.axonframework.common.caching.WeakReferenceCacheTest
+Running org.axonframework.common.property.UniformPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.property.UniformPropertyAccessStrategyTest
+Running org.axonframework.common.property.BeanPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.property.BeanPropertyAccessStrategyTest
+Running org.axonframework.common.property.PropertyAccessStrategyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.property.PropertyAccessStrategyTest
+Running org.axonframework.common.property.DirectPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.property.DirectPropertyAccessStrategyTest
+Running org.axonframework.common.lock.PessimisticLockFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.123 sec - in org.axonframework.common.lock.PessimisticLockFactoryTest
+Running org.axonframework.common.lock.LockFactoryTest
+Completed in 21ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.axonframework.common.lock.LockFactoryTest
+Running org.axonframework.common.jdbc.ConnectionWrapperFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.axonframework.common.jdbc.ConnectionWrapperFactoryTest
+Running org.axonframework.common.annotation.AnnotationUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.common.annotation.AnnotationUtilsTest
+Running org.axonframework.common.ReflectionUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.common.ReflectionUtilsTest
+Running org.axonframework.commandhandling.AggregateAnnotationCommandHandlerTest
+2017-05-10 17:09:53,233 [main] INFO  LoggingCallback                 - Command executed successfully: org.axonframework.commandhandling.AggregateAnnotationCommandHandlerTest$CreateCommand
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec - in org.axonframework.commandhandling.AggregateAnnotationCommandHandlerTest
+Running org.axonframework.commandhandling.AsynchronousCommandBusTest
+2017-05-10 17:09:53,418 [main] INFO  LoggingCallback                 - Command executed successfully: java.lang.Object
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.commandhandling.AsynchronousCommandBusTest
+Running org.axonframework.commandhandling.distributed.DistributedCommandBusTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.axonframework.commandhandling.distributed.DistributedCommandBusTest
+Running org.axonframework.commandhandling.distributed.AnnotationRoutingStrategyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.axonframework.commandhandling.distributed.AnnotationRoutingStrategyTest
+Running org.axonframework.commandhandling.distributed.CommandCallbackRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.commandhandling.distributed.CommandCallbackRepositoryTest
+Running org.axonframework.commandhandling.distributed.commandfilter.CommandFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.axonframework.commandhandling.distributed.commandfilter.CommandFilterTest
+Running org.axonframework.commandhandling.model.AnnotatedAggregateTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec <<< FAILURE! - in org.axonframework.commandhandling.model.AnnotatedAggregateTest
+testApplyingEventInHandlerPublishesInRightOrder(org.axonframework.commandhandling.model.AnnotatedAggregateTest)  Time elapsed: 0.023 sec  <<< FAILURE!
+org.mockito.exceptions.verification.VerificationInOrderFailure: 
+
+Verification in order failure
+Wanted but not invoked:
+eventStore.publish();
+-> at org.axonframework.commandhandling.model.AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder(AnnotatedAggregateTest.java:47)
+Wanted anywhere AFTER following interaction:
+eventStore.publish(
+    org.axonframework.eventhandling.GenericEventMessage@189fb01b
+);
+-> at org.axonframework.commandhandling.model.inspection.AnnotatedAggregate.publishOnEventBus(AnnotatedAggregate.java:209)
+
+	at org.axonframework.commandhandling.model.AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder(AnnotatedAggregateTest.java:47)
+
+Running org.axonframework.commandhandling.model.LockingRepositoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.axonframework.commandhandling.model.LockingRepositoryTest
+Running org.axonframework.commandhandling.model.ModelInspectorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.axonframework.commandhandling.model.ModelInspectorTest
+Running org.axonframework.commandhandling.model.EventSourcingRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.axonframework.commandhandling.model.EventSourcingRepositoryTest
+Running org.axonframework.commandhandling.model.AbstractRepositoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.commandhandling.model.AbstractRepositoryTest
+Running org.axonframework.commandhandling.model.GenericJpaRepositoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.axonframework.commandhandling.model.GenericJpaRepositoryTest
+Running org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest
+2017-05-10 17:09:53,610 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-05-10 17:09:53,610 [main] INFO  DefaultTestContextBootstrapper  - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-05-10 17:09:53,610 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@193710c3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@eb23b9c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@314407dd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f19430f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e89e527]
+2017-05-10 17:09:53,611 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/jpa-repository-context.xml]
+2017-05-10 17:09:53,618 [main] INFO  XmlBeanDefinitionReader         - Loading XML bean definitions from class path resource [META-INF/spring/db-context.xml]
+2017-05-10 17:09:53,629 [main] INFO  GenericApplicationContext       - Refreshing org.springframework.context.support.GenericApplicationContext@41f84bb1: startup date [Wed May 10 17:09:53 CEST 2017]; root of context hierarchy
+2017-05-10 17:09:53,642 [main] INFO  PropertyPlaceholderConfigurer   - Loading properties file from class path resource [hsqldb.database.properties]
+2017-05-10 17:09:53,643 [main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-10 17:09:53,659 [main] INFO  DriverManagerDataSource         - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2017-05-10 17:09:53,663 [main] INFO  tainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:53,663 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: eventStore
+	...]
+2017-05-10 17:09:53,694 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-05-10 17:09:53,781 [main] WARN  EntityManagerFactoryRegistry    - HHH000436: Entity manager factory name (eventStore) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2017-05-10 17:09:53,781 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:09:53,826 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@487f025, testMethod = testUpdateAnAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@41c05747]; rollback [true]
+2017-05-10 17:09:53,831 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@487f025, testMethod = testUpdateAnAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:53,833 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@4f0381cd, testMethod = testStoreAndLoadNewAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@41c05747]; rollback [true]
+2017-05-10 17:09:53,834 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-10 17:09:53,836 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@4f0381cd, testMethod = testStoreAndLoadNewAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-05-10 17:09:53,838 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@3e866323, testMethod = testDeleteAnAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@41c05747]; rollback [true]
+2017-05-10 17:09:53,843 [main] INFO  TransactionContext              - Rolled back transaction for test context [DefaultTestContext@2b3e2039 testClass = JpaRepositoryIntegrationTest, testInstance = org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest@3e866323, testMethod = testDeleteAnAggregate@JpaRepositoryIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6f749a1f testClass = JpaRepositoryIntegrationTest, locations = '{classpath:/META-INF/spring/jpa-repository-context.xml, classpath:/META-INF/spring/db-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec - in org.axonframework.commandhandling.model.JpaRepositoryIntegrationTest
+Running org.axonframework.commandhandling.GenericCommandMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.commandhandling.GenericCommandMessageTest
+Running org.axonframework.commandhandling.CommandHandlingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.commandhandling.CommandHandlingTest
+Running org.axonframework.commandhandling.disruptor.CommandHandlerInvokerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.axonframework.commandhandling.disruptor.CommandHandlerInvokerTest
+Running org.axonframework.commandhandling.disruptor.DisruptorRepositoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.axonframework.commandhandling.disruptor.DisruptorRepositoryTest
+Running org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest
+2017-05-10 17:09:55,978 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,003 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,020 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,036 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,053 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,068 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,079 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,093 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,108 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:56,131 [pool-11-thread-3] INFO  DisruptorCommandBus             - Reset notification for 5de37115-c231-4e9c-9356-29a8e4278aff received. The aggregate is removed from the blacklist
+2017-05-10 17:09:57,425 [Thread-103] INFO  DisruptorCommandBus             - An error occurred while handling a command [org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest$ErrorCommand].
+org.axonframework.common.MockException: This is a failing event. EventStore refuses to store that
+2017-05-10 17:09:57,428 [Thread-99] INFO  DisruptorCommandBus             - Reset notification for b3a997f4-de60-4b26-9b77-03078514e988 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:57,425 [Thread-101] INFO  DisruptorCommandBus             - An error occurred while handling a command [org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest$ErrorCommand].
+org.axonframework.common.MockException: This is a failing event. EventStore refuses to store that
+2017-05-10 17:09:57,428 [Thread-99] INFO  DisruptorCommandBus             - Reset notification for 6936362c-ca6a-4f2c-87c7-85778c7972b5 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,711 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,726 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,735 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,740 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,746 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,755 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,761 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,767 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,773 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:09:59,779 [pool-13-thread-4] INFO  DisruptorCommandBus             - Reset notification for 4757540f-67d2-4673-953a-57ce040a31c0 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,275 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,279 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,282 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,285 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,288 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,294 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,297 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,301 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,304 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:06,307 [pool-16-thread-3] INFO  DisruptorCommandBus             - Reset notification for 27c47817-7e84-41a5-9278-a49b86e32f78 received. The aggregate is removed from the blacklist
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.662 sec - in org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest
+Running org.axonframework.commandhandling.disruptor.DisruptorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.commandhandling.disruptor.DisruptorConfigurationTest
+Running org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest_MultiThreaded
+2017-05-10 17:10:07,618 [Thread-121] INFO  DisruptorCommandBus             - Reset notification for 4acca830-9923-45a7-beea-a6d62e274a45 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,620 [Thread-121] INFO  DisruptorCommandBus             - Reset notification for 3b99c8e1-2a2c-488b-bbf6-49a6c10159a9 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,621 [Thread-119] INFO  DisruptorCommandBus             - Reset notification for 2acb6767-7f51-4af5-a039-aa69af9e5837 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,621 [Thread-121] INFO  DisruptorCommandBus             - Reset notification for bd8770d2-8237-4415-a00a-d874854c6bab received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,623 [Thread-119] INFO  DisruptorCommandBus             - Reset notification for fcefa70e-9ca1-450d-ba41-1d79fa7cb80d received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,624 [Thread-120] INFO  DisruptorCommandBus             - Reset notification for 68405636-d47f-499d-b18d-8d94df5c250a received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,627 [Thread-119] INFO  DisruptorCommandBus             - Reset notification for 44c027a7-37d6-4f76-8b41-fd6ffc3bb6ac received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,627 [Thread-121] INFO  DisruptorCommandBus             - Reset notification for 683bccd3-1921-4044-956d-0ef3c0aa3606 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,627 [Thread-121] INFO  DisruptorCommandBus             - Reset notification for 75580bf6-590a-47fe-8c90-1a4b8285c2e8 received. The aggregate is removed from the blacklist
+2017-05-10 17:10:07,628 [Thread-120] INFO  DisruptorCommandBus             - Reset notification for efe50494-e53d-40ba-ada2-cecd0c61535e received. The aggregate is removed from the blacklist
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.111 sec - in org.axonframework.commandhandling.disruptor.DisruptorCommandBusTest_MultiThreaded
+Running org.axonframework.commandhandling.callbacks.FutureCallbackTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.axonframework.commandhandling.callbacks.FutureCallbackTest
+Running org.axonframework.commandhandling.callbacks.VoidCallbackTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.axonframework.commandhandling.callbacks.VoidCallbackTest
+Running org.axonframework.commandhandling.SimpleCommandBusTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.commandhandling.SimpleCommandBusTest
+Running org.axonframework.commandhandling.conflictresolution.DefaultConflictResolverTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.axonframework.commandhandling.conflictresolution.DefaultConflictResolverTest
+Running org.axonframework.commandhandling.conflictresolution.ConflictsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.commandhandling.conflictresolution.ConflictsTest
+Running org.axonframework.commandhandling.conflictresolution.ConflictResolutionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.commandhandling.conflictresolution.ConflictResolutionTest
+Running org.axonframework.commandhandling.conflictresolution.ConflictResolutionIntegrationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.axonframework.commandhandling.conflictresolution.ConflictResolutionIntegrationTest
+Running org.axonframework.commandhandling.AnnotationCommandTargetResolverTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.commandhandling.AnnotationCommandTargetResolverTest
+Running org.axonframework.commandhandling.CurrentUnitOfWorkParameterResolverFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.commandhandling.CurrentUnitOfWorkParameterResolverFactoryTest
+Running org.axonframework.commandhandling.AnnotationCommandHandlerAdapterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.axonframework.commandhandling.AnnotationCommandHandlerAdapterTest
+Running org.axonframework.commandhandling.gateway.DefaultCommandGatewayTest
+2017-05-10 17:10:08,841 [main] WARN  DefaultCommandGateway           - Command 'java.lang.String' resulted in java.lang.RuntimeException(java.lang.RuntimeException)
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.axonframework.commandhandling.gateway.DefaultCommandGatewayTest
+Running org.axonframework.commandhandling.gateway.CommandGatewayFactoryTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in org.axonframework.commandhandling.gateway.CommandGatewayFactoryTest
+2017-05-10 17:10:08,996 [Thread-21] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@295d54d6: startup date [Wed May 10 17:09:45 CEST 2017]; root of context hierarchy
+2017-05-10 17:10:08,998 [Thread-57] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@25093079: startup date [Wed May 10 17:09:49 CEST 2017]; root of context hierarchy
+2017-05-10 17:10:08,996 [Thread-20] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@6df37f7a: startup date [Wed May 10 17:09:45 CEST 2017]; root of context hierarchy
+2017-05-10 17:10:08,996 [Thread-86] INFO  GenericApplicationContext       - Closing org.springframework.context.support.GenericApplicationContext@41f84bb1: startup date [Wed May 10 17:09:53 CEST 2017]; root of context hierarchy
+2017-05-10 17:10:09,006 [Thread-57] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:10:09,006 [Thread-20] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-10 17:10:09,008 [Thread-86] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'eventStore'
+2017-05-10 17:10:09,008 [Thread-20] INFO  pperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2017-05-10 17:10:09,036 [Thread-20] INFO  connections                     - HHH10001008: Cleaning up connection pool [jdbc:hsqldb:mem:testdb]
+
+Results :
+
+Failed tests: 
+  AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder:47 
+Verification in order failure
+Wanted but not invoked:
+eventStore.publish();
+-> at org.axonframework.commandhandling.model.AnnotatedAggregateTest.testApplyingEventInHandlerPublishesInRightOrder(AnnotatedAggregateTest.java:47)
+Wanted anywhere AFTER following interaction:
+eventStore.publish(
+    org.axonframework.eventhandling.GenericEventMessage@189fb01b
+);
+-> at org.axonframework.commandhandling.model.inspection.AnnotatedAggregate.publishOnEventBus(AnnotatedAggregate.java:209)
+
+
+Tests run: 647, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Axon Framework ..................................... SUCCESS [  0.003 s]
+[INFO] Axon Framework core ................................ FAILURE [ 49.472 s]
+[INFO] Axon Framework Distributed CommandBus JGroups ...... SKIPPED
+[INFO] Axon Framework Spring Support ...................... SKIPPED
+[INFO] Axon AMQP .......................................... SKIPPED
+[INFO] Axon Framework Spring Boot Support ................. SKIPPED
+[INFO] Axon Framework Test Fixtures ....................... SKIPPED
+[INFO] Axon Framework Distributed CommandBus Spring Cloud . SKIPPED
+[INFO] Axon MongoDB Components ............................ SKIPPED
+[INFO] Axon Integration tests ............................. SKIPPED
+[INFO] Axon Metrics ....................................... SKIPPED
+[INFO] Spring Boot Starter module for Axon Framework ...... SKIPPED
+[INFO] Spring Boot Starter module for Axon with JGroups Distributed Command Bus SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.488 s
+[INFO] Finished at: 2017-05-10T17:10:09+02:00
+[INFO] Final Memory: 48M/1376M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project axon-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/AxonFramework/AxonFramework/213813684/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :axon-core
