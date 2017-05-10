@@ -1,0 +1,40 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "fabric8io/docker-maven-plugin",
+  "bugCommit": "https://github.com/fabric8io/docker-maven-plugin/compare/d6d2cbe0a4c8...c185afdf97ce",
+  "failingModule": "/root/workspace/fabric8io/docker-maven-plugin/211257514",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.ClassCastException"
+  ],
+  "totalNumberRunningTests": 296,
+  "failing-test-cases": [
+    {
+      "className": "io.fabric8.maven.docker.access.KeyStoreUtilTest",
+      "failingMethods": [
+        "io.fabric8.maven.docker.access.KeyStoreUtilTest#loadInvalidPrivateKey"
+      ],
+      "erroringMethods": [
+        "io.fabric8.maven.docker.access.KeyStoreUtilTest#loadPrivateKeyPKCS8"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: (an instance of java.security.GeneralSecurityException and exception with message a string containing \"Cannot generate private key\")      but: an instance of java.security.GeneralSecurityException \u003cjava.lang.NullPointerException\u003e is a java.lang.NullPointerException Stacktrace was: java.lang.NullPointerException  at io.fabric8.maven.docker.access.KeyStoreUtil.loadPrivateKey(KeyStoreUtil.java:46)  at io.fabric8.maven.docker.access.KeyStoreUtilTest.loadInvalidPrivateKey(KeyStoreUtilTest.java:49) ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.ClassCastException",
+          "failureDetail": "org.bouncycastle.asn1.pkcs.PrivateKeyInfo cannot be cast to org.bouncycastle.openssl.PEMKeyPair",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building docker-maven-plugin 0.20-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 12 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:resources (default-resources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 6 resources
+[INFO] Copying file assemblies/hawt-app.xml
+[INFO] Copying file assemblies/artifact.xml
+[INFO] Copying file assemblies/rootWar.xml
+[INFO] Copying file assemblies/project.xml
+[INFO] Copying file assemblies/artifact-with-dependencies.xml
+[INFO] Copying file META-INF/plexus/components.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:copy-resources (copy-plexus-resources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 1 resource
+[INFO] Copying file components.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:copy-resources (copy-asciidoc) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 45 resources
+[INFO] Copying file inc/_docker-remove.adoc
+[INFO] Copying file inc/_docker-volume-create.adoc
+[INFO] Copying file inc/build/_overview.adoc
+[INFO] Copying file inc/build/_healthcheck.adoc
+[INFO] Copying file inc/build/_configuration.adoc
+[INFO] Copying file inc/build/_assembly.adoc
+[INFO] Copying file inc/build/_buildargs.adoc
+[INFO] Copying file inc/push/_overview.adoc
+[INFO] Copying file inc/push/_configuration.adoc
+[INFO] Copying file inc/start/_overview.adoc
+[INFO] Copying file inc/start/_restart.adoc
+[INFO] Copying file inc/start/_configuration.adoc
+[INFO] Copying file inc/start/_port-mapping.adoc
+[INFO] Copying file inc/start/_depends-on.adoc
+[INFO] Copying file inc/start/_network.adoc
+[INFO] Copying file inc/start/_links.adoc
+[INFO] Copying file inc/start/_logging.adoc
+[INFO] Copying file inc/start/_wait.adoc
+[INFO] Copying file inc/start/_volumes.adoc
+[INFO] Copying file inc/_docker-logs.adoc
+[INFO] Copying file inc/image/_configuration.adoc
+[INFO] Copying file inc/image/_example.adoc
+[INFO] Copying file inc/_docker-watch.adoc
+[INFO] Copying file inc/_docker-build.adoc
+[INFO] Copying file inc/_docker-source.adoc
+[INFO] Copying file inc/_docker-start.adoc
+[INFO] Copying file inc/_introduction.adoc
+[INFO] Copying file inc/_docker-volume-remove.adoc
+[INFO] Copying file inc/_global-configuration.adoc
+[INFO] Copying file inc/_docker-push.adoc
+[INFO] Copying file inc/_authentication.adoc
+[INFO] Copying file inc/_docker-stop.adoc
+[INFO] Copying file inc/_links.adoc
+[INFO] Copying file inc/watch/_overview.adoc
+[INFO] Copying file inc/watch/_configuration.adoc
+[INFO] Copying file inc/_image-configuration.adoc
+[INFO] Copying file inc/_installation.adoc
+[INFO] Copying file inc/_external-configuration.adoc
+[INFO] Copying file inc/_goals.adoc
+[INFO] Copying file inc/_registry.adoc
+[INFO] Copying file inc/external/_docker_compose.adoc
+[INFO] Copying file inc/external/_property_configuration.adoc
+[INFO] Copying file inc/misc/_env.adoc
+[INFO] Copying file inc/misc/_startup.adoc
+[INFO] Copying file index.adoc
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ docker-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 135 source files to /root/workspace/fabric8io/docker-maven-plugin/211257514/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] /root/workspace/fabric8io/docker-maven-plugin/211257514/src/main/java/io/fabric8/maven/docker/config/handler/property/PropertyConfigHandler.java:[152,17] ignorePermissions(java.lang.Boolean) in io.fabric8.maven.docker.config.AssemblyConfiguration.Builder has been deprecated
+[INFO] /root/workspace/fabric8io/docker-maven-plugin/211257514/src/main/java/io/fabric8/maven/docker/AbstractDockerMojo.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/fabric8io/docker-maven-plugin/211257514/src/main/java/io/fabric8/maven/docker/AbstractDockerMojo.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 12 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 12 mojo descriptors.
+[INFO] 
+[INFO] --- plexus-component-metadata:1.6:generate-metadata (default) @ docker-maven-plugin ---
+[INFO] Discovered 5 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:testResources (default-testResources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 19 resources
+[INFO] Copying file integration/busybox-image.tar.gz
+[INFO] Copying file integration/busybox-test.tar
+[INFO] Copying file docker/Dockerfile_udp.test
+[INFO] Copying file docker/Dockerfile.test
+[INFO] Copying file docker/containerCreateConfigAll.json
+[INFO] Copying file docker/Dockerfile_tcp.test
+[INFO] Copying file docker/containerHostConfigAll.json
+[INFO] Copying file docker/Dockerfile_optimised.test
+[INFO] Copying file io/fabric8/maven/docker/util/openshift_simple_config.yaml
+[INFO] Copying file io/fabric8/maven/docker/util/openshift_nologin_config.yaml
+[INFO] Copying file io/fabric8/maven/docker/util/Dockerfile_from_simple
+[INFO] Copying file io/fabric8/maven/docker/access/test-environment.props
+[INFO] Copying file io/fabric8/maven/docker/access/certpath/key.pem
+[INFO] Copying file io/fabric8/maven/docker/access/certpath/ca.pem
+[INFO] Copying file io/fabric8/maven/docker/access/certpath/cert.pem
+[INFO] Copying file io/fabric8/maven/docker/access/keys/invalid.pem
+[INFO] Copying file io/fabric8/maven/docker/access/keys/pkcs8.pem
+[INFO] Copying file io/fabric8/maven/docker/access/keys/pkcs1.pem
+[INFO] Copying file compose/docker-compose.yml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ docker-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ docker-maven-plugin ---
+[INFO] Surefire report directory: /root/workspace/fabric8io/docker-maven-plugin/211257514/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 31.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 340.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.fabric8.maven.docker.assembly.DockerAssemblyConfigurationSourceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.703 sec
+Running io.fabric8.maven.docker.assembly.MappingTrackArchiverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.153 sec
+Running io.fabric8.maven.docker.assembly.DockerAssemblyManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 sec
+Running io.fabric8.maven.docker.assembly.DockerFileBuilderTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Running io.fabric8.maven.docker.config.UlimitConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.fabric8.maven.docker.config.BuildImageConfigurationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running io.fabric8.maven.docker.config.ConfigHelperTest
+[warn] DOCKER> None of the resolved images [test] match the configured filter 'bla
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running io.fabric8.maven.docker.config.NetworkingConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.fabric8.maven.docker.config.ImageConfigResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running io.fabric8.maven.docker.config.HealthCheckConfigTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running io.fabric8.maven.docker.config.CleanupModeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec
+Running io.fabric8.maven.docker.config.handler.compose.DockerComposeConfigHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running io.fabric8.maven.docker.model.ContainerDetailsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running io.fabric8.maven.docker.model.ContainerListElementTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running io.fabric8.maven.docker.service.QueryServiceAutoPullTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running io.fabric8.maven.docker.service.MojoExecutionServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec
+Running io.fabric8.maven.docker.service.VolumeServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+Running io.fabric8.maven.docker.service.BuildServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec
+Running io.fabric8.maven.docker.service.ContainerTrackerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running io.fabric8.maven.docker.service.LoadImageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec
+Running io.fabric8.maven.docker.service.RunServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.696 sec
+Running io.fabric8.maven.docker.util.StartOrderResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running io.fabric8.maven.docker.util.DockerFileUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running io.fabric8.maven.docker.util.ImageNameTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running io.fabric8.maven.docker.util.AuthConfigFactoryTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.693 sec
+Running io.fabric8.maven.docker.util.WaitUtilTest
+Created HTTP server at port 22332
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.713 sec
+Running io.fabric8.maven.docker.util.ImageNameFormatterTest
+java.lang.IllegalArgumentException: No image name format element '%z' known
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.32 sec
+Running io.fabric8.maven.docker.util.PomLabelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running io.fabric8.maven.docker.util.AutoPullModeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.fabric8.maven.docker.util.AuthConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.fabric8.maven.docker.util.TimestampTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec
+Running io.fabric8.maven.docker.util.AnsiLoggerTest
+[info] T>Yet another Test emphasis
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.fabric8.maven.docker.util.EnvUtilTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec
+Running io.fabric8.maven.docker.UrlBuilderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running io.fabric8.maven.docker.access.PortMappingTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.013 sec
+Running io.fabric8.maven.docker.access.DockerConnectionDetectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running io.fabric8.maven.docker.access.hc.DockerAccessWithHcClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+Running io.fabric8.maven.docker.access.ContainerHostConfigTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec
+Running io.fabric8.maven.docker.access.ContainerCreateConfigTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running io.fabric8.maven.docker.access.BuildConfigTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.fabric8.maven.docker.access.KeyStoreUtilTest
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.307 sec <<< FAILURE!
+loadInvalidPrivateKey(io.fabric8.maven.docker.access.KeyStoreUtilTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: (an instance of java.security.GeneralSecurityException and exception with message a string containing "Cannot generate private key")
+     but: an instance of java.security.GeneralSecurityException <java.lang.NullPointerException> is a java.lang.NullPointerException
+Stacktrace was: java.lang.NullPointerException
+	at io.fabric8.maven.docker.access.KeyStoreUtil.loadPrivateKey(KeyStoreUtil.java:46)
+	at io.fabric8.maven.docker.access.KeyStoreUtilTest.loadInvalidPrivateKey(KeyStoreUtilTest.java:49)
+
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.junit.rules.ExpectedException.handleException(ExpectedException.java:252)
+	at org.junit.rules.ExpectedException.access$000(ExpectedException.java:106)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:241)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+loadPrivateKeyPKCS8(io.fabric8.maven.docker.access.KeyStoreUtilTest)  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.ClassCastException: org.bouncycastle.asn1.pkcs.PrivateKeyInfo cannot be cast to org.bouncycastle.openssl.PEMKeyPair
+	at io.fabric8.maven.docker.access.KeyStoreUtil.loadPEM(KeyStoreUtil.java:52)
+	at io.fabric8.maven.docker.access.KeyStoreUtil.loadPrivateKey(KeyStoreUtil.java:45)
+	at io.fabric8.maven.docker.access.KeyStoreUtilTest.loadPrivateKeyPKCS8(KeyStoreUtilTest.java:41)
+
+Running io.fabric8.maven.docker.access.ecr.EcrExtendedAuthTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec
+Running io.fabric8.maven.docker.access.ecr.AwsSigner4RequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running io.fabric8.maven.docker.access.log.LogRequestorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 sec
+Running io.fabric8.maven.docker.access.PortMappingPropertyWriteHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec
+Running io.fabric8.maven.docker.log.DefaultLogCallbackTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec
+
+Results :
+
+Failed tests:   loadInvalidPrivateKey(io.fabric8.maven.docker.access.KeyStoreUtilTest): (..)
+
+Tests in error: 
+  loadPrivateKeyPKCS8(io.fabric8.maven.docker.access.KeyStoreUtilTest): org.bouncycastle.asn1.pkcs.PrivateKeyInfo cannot be cast to org.bouncycastle.openssl.PEMKeyPair
+
+Tests run: 296, Failures: 1, Errors: 1, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 54.900 s
+[INFO] Finished at: 2017-05-10T09:21:54+02:00
+[INFO] Final Memory: 56M/2860M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project docker-maven-plugin: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/fabric8io/docker-maven-plugin/211257514/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
