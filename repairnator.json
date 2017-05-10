@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/01467e92d4c2...e451ae3e8823",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/215845753/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 4988,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.RunVmCommandTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.RunVmCommandTest#testFindBestMatchForEmulateMachineKeepsCurrent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cpc-i440fx-[rhel7.3.0]\u003e but was:\u003cpc-i440fx-[2.1]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
