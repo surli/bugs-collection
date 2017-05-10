@@ -80,7 +80,7 @@
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 135 source files to /root/workspace/fabric8io/docker-maven-plugin/212712633/target/classes
 [WARNING] bootstrap class path not set in conjunction with -source 1.7
-[WARNING] /root/workspace/fabric8io/docker-maven-plugin/212712633/src/main/java/io/fabric8/maven/docker/config/handler/property/PropertyConfigHandler.java:[152,17] ignorePermissions(java.lang.Boolean) in io.fabric8.maven.docker.config.AssemblyConfiguration.Builder has been deprecated
+[WARNING] /root/workspace/fabric8io/docker-maven-plugin/212712633/src/main/java/io/fabric8/maven/docker/config/handler/property/PropertyConfigHandler.java:[162,17] ignorePermissions(java.lang.Boolean) in io.fabric8.maven.docker.config.AssemblyConfiguration.Builder has been deprecated
 [INFO] /root/workspace/fabric8io/docker-maven-plugin/212712633/src/main/java/io/fabric8/maven/docker/service/ContainerTracker.java: Some input files use unchecked or unsafe operations.
 [INFO] /root/workspace/fabric8io/docker-maven-plugin/212712633/src/main/java/io/fabric8/maven/docker/service/ContainerTracker.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
@@ -126,139 +126,117 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ docker-maven-plugin ---
 [INFO] Surefire report directory: /root/workspace/fabric8io/docker-maven-plugin/212712633/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 31.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 313.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.fabric8.maven.docker.assembly.DockerAssemblyConfigurationSourceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.555 sec
 Running io.fabric8.maven.docker.assembly.MappingTrackArchiverTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.15 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.114 sec
 Running io.fabric8.maven.docker.assembly.DockerAssemblyManagerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 sec
 Running io.fabric8.maven.docker.assembly.DockerFileBuilderTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec
 Running io.fabric8.maven.docker.config.UlimitConfigTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 Running io.fabric8.maven.docker.config.BuildImageConfigurationTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
 Running io.fabric8.maven.docker.config.ConfigHelperTest
 [warn] DOCKER> None of the resolved images [test] match the configured filter 'bla
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running io.fabric8.maven.docker.config.NetworkingConfigTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running io.fabric8.maven.docker.config.ImageConfigResolverTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running io.fabric8.maven.docker.config.HealthCheckConfigTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running io.fabric8.maven.docker.config.CleanupModeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec <<< FAILURE!
-testNoBuildConfig(io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest)  Time elapsed: 0.007 sec  <<< FAILURE!
-java.lang.AssertionError: expected null, but was:<io.fabric8.maven.docker.config.BuildImageConfiguration@548a102f>
-	at io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest.testNoBuildConfig(PropertyConfigHandlerTest.java:181)
-
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec
 Running io.fabric8.maven.docker.config.handler.compose.DockerComposeConfigHandlerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec
 Running io.fabric8.maven.docker.model.ContainerDetailsTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
 Running io.fabric8.maven.docker.model.ContainerListElementTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running io.fabric8.maven.docker.service.QueryServiceAutoPullTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
 Running io.fabric8.maven.docker.service.MojoExecutionServiceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec
 Running io.fabric8.maven.docker.service.VolumeServiceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec
 Running io.fabric8.maven.docker.service.BuildServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec
 Running io.fabric8.maven.docker.service.ContainerTrackerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
 Running io.fabric8.maven.docker.service.LoadImageTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
 Running io.fabric8.maven.docker.service.RunServiceTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.709 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.73 sec
 Running io.fabric8.maven.docker.util.StartOrderResolverTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
 Running io.fabric8.maven.docker.util.DockerFileUtilTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running io.fabric8.maven.docker.util.ImageNameTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running io.fabric8.maven.docker.util.AuthConfigFactoryTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec
 Running io.fabric8.maven.docker.util.WaitUtilTest
 Created HTTP server at port 22332
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.69 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.624 sec
 Running io.fabric8.maven.docker.util.ImageNameFormatterTest
 java.lang.IllegalArgumentException: No image name format element '%z' known
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.258 sec
 Running io.fabric8.maven.docker.util.PomLabelTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
 Running io.fabric8.maven.docker.util.AutoPullModeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running io.fabric8.maven.docker.util.AuthConfigTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running io.fabric8.maven.docker.util.TimestampTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
 Running io.fabric8.maven.docker.util.AnsiLoggerTest
 [info] T>Yet another Test emphasis
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running io.fabric8.maven.docker.util.EnvUtilTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
 Running io.fabric8.maven.docker.UrlBuilderTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running io.fabric8.maven.docker.access.PortMappingTest
 Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.007 sec
 Running io.fabric8.maven.docker.access.DockerConnectionDetectorTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running io.fabric8.maven.docker.access.hc.DockerAccessWithHcClientTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
 Running io.fabric8.maven.docker.access.ContainerHostConfigTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
 Running io.fabric8.maven.docker.access.ContainerCreateConfigTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running io.fabric8.maven.docker.access.BuildConfigTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running io.fabric8.maven.docker.access.KeyStoreUtilTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 sec
 Running io.fabric8.maven.docker.access.ecr.EcrExtendedAuthTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec
 Running io.fabric8.maven.docker.access.ecr.AwsSigner4RequestTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running io.fabric8.maven.docker.access.log.LogRequestorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec
 Running io.fabric8.maven.docker.access.PortMappingPropertyWriteHelperTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
 Running io.fabric8.maven.docker.log.DefaultLogCallbackTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.037 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.022 sec
 
 Results :
 
-Failed tests:   testNoBuildConfig(io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest): expected null, but was:<io.fabric8.maven.docker.config.BuildImageConfiguration@548a102f>
-
-Tests run: 297, Failures: 1, Errors: 0, Skipped: 3
+Tests run: 297, Failures: 0, Errors: 0, Skipped: 3
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 54.259 s
-[INFO] Finished at: 2017-05-10T09:22:36+02:00
-[INFO] Final Memory: 54M/2764M
+[INFO] Total time: 48.683 s
+[INFO] Finished at: 2017-05-10T09:24:07+02:00
+[INFO] Final Memory: 45M/1887M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project docker-maven-plugin: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/fabric8io/docker-maven-plugin/212712633/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
