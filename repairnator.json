@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/httpclient",
+  "bugCommit": "https://github.com/apache/httpclient/compare/26cfea101f69...8a54c1b8f750",
+  "failingModule": "/root/workspace/apache/httpclient/212432232/httpclient5",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 680,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.hc.client5.http.auth.TestAuthChallenge",
+      "failingMethods": [
+        "org.apache.hc.client5.http.auth.TestAuthChallenge#testAuthChallengeWithValue",
+        "org.apache.hc.client5.http.auth.TestAuthChallenge#testAuthChallengeWithParams"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[]Basic [blah\u003dthis, bl...\u003e but was:\u003c[TARGET ]Basic [blah\u003dthis, bl...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[]Basic blah\u003e but was:\u003c[TARGET ]Basic blah\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
