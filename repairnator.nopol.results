@@ -1,0 +1,330 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest', failingMethods=[com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withOneNullArgument, com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectCheckerWithPenalty_findsSwap_withSwappedMatchingPair, com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withSwappedMatchingPairWithMethod, com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_commentsOnlyOnSwappedPair_withThreeArguments, com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withSwappedMatchingPair, com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectCheckerWithPenalty_noSwap_withNamedPair], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 6 matching target(/*first=*/second, /*second=*/first). All errors:
+[/Test.java:6: error: [ArgumentSelectionDefectWithPenaltyThreshold] Run the ArgumentSelectionDefectChecker checker with the penalty threshold heuristic
+     target(second, first);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithPenaltyThreshold)
+  Did you mean 'target(first, second);'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching target(/*first=*/getSecond(), /*second=*/first). All errors:
+[/Test.java:7: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance
+     target(getSecond(), first);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)
+  Did you mean 'target(first, getSecond());'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 6 matching target(/*first=*/second, /*second=*/first, third). All errors:
+[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance
+     target(second, first, third);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)
+  Did you mean 'target(first, second, third);'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 4. All errors:
+[/Test.java:4: error: [ArgumentSelectionDefectWithNameInCommentsHeuristic] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance
+     target(/*first=*/second, /*second=*/first);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithNameInCommentsHeuristic)
+  Did you mean 'target(/*first=*/first, /*second=*/second);'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 6 matching target(/*first=*/second, /*second=*/first). All errors:
+[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance
+     target(second, first);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)
+  Did you mean 'target(first, second);'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 6 matching target(/*first=*/second, /*second=*/null). All errors:
+[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance
+     target(second, null);
+           ^
+    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)
+  Did you mean 'target(null, second);'?]', isError=false}], nbFailures=6, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:57:42 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/224127920/check_api/src/main/java, /root/./workspace/google/error-prone/224127920/check_api/src/main/java, ./workspace/google/error-prone/224127920/test_helpers/src/main/java, /root/./workspace/google/error-prone/224127920/test_helpers/src/main/java, ./workspace/google/error-prone/224127920/core/src/main/java, /root/./workspace/google/error-prone/224127920/core/src/main/java, ./workspace/google/error-prone/224127920/annotation/src/main/java, /root/./workspace/google/error-prone/224127920/annotation/src/main/java, ./workspace/google/error-prone/224127920/annotations/src/main/java, /root/./workspace/google/error-prone/224127920/annotations/src/main/java, ./workspace/google/error-prone/224127920/docgen/src/main/java, /root/./workspace/google/error-prone/224127920/docgen/src/main/java, ./workspace/google/error-prone/224127920/docgen_processor/src/main/java, /root/./workspace/google/error-prone/224127920/docgen_processor/src/main/java, ./workspace/google/error-prone/224127920/ant/src/main/java, /root/./workspace/google/error-prone/224127920/ant/src/main/java, ./workspace/google/error-prone/224127920/refaster/src/main/java, /root/./workspace/google/error-prone/224127920/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@1e392345', projectTests=[com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest', failingMethods=[com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest#completes_noUnassignedVars_priorCaseDoesntExit, com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest#completes_noUnassignedVars_priorCaseExits], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 unmatched nodes in the expected tree. 
+
+> Extra node in expected tree.
+  Line 10 COMPILATION_UNIT->CLASS(Test)->METHOD(m)->BLOCK(non-static)->SWITCH->CASE->EXPRESSION_STATEMENT
+  Node contents: <System.out.println("Test");>.
+  
+
+Found 1 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 9 COMPILATION_UNIT->CLASS(Test)->METHOD(m)->BLOCK(non-static)->SWITCH->CASE
+  Node contents: <default:     System.out.println("Test");
+>.
+  
+
+
+Expected Source: 
+================
+
+class Test {
+  enum Case { ONE, TWO, THREE }
+  boolean m(Case c) {
+    switch (c) {
+      case ONE:
+      case TWO:
+        return true;
+      case THREE:
+        // This is a comment
+        System.out.println("Test");
+    }
+    return false;
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  enum Case { ONE, TWO, THREE }
+  boolean m(Case c) {
+    switch (c) {
+      case ONE:
+      case TWO:
+        return true;
+      case THREE:
+      default:
+        // This is a comment
+        System.out.println("Test");
+    }
+    return false;
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 10 COMPILATION_UNIT->CLASS(Test)->METHOD(m)->BLOCK(non-static)->SWITCH->CASE
+  Node contents: <default:     throw new AssertionError(c);
+>.
+  
+
+
+Expected Source: 
+================
+
+class Test {
+  enum Case { ONE, TWO, THREE }
+  boolean m(Case c) {
+    switch (c) {
+      case ONE:
+      case TWO:
+        break;
+      case THREE:
+        return true;
+    }
+    return false;
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  enum Case { ONE, TWO, THREE }
+  boolean m(Case c) {
+    switch (c) {
+      case ONE:
+      case TWO:
+        break;
+      case THREE:
+        return true;
+      default:
+        throw new AssertionError(c);
+    }
+    return false;
+  }
+}', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:57:52 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/224127920/check_api/src/main/java, /root/./workspace/google/error-prone/224127920/check_api/src/main/java, ./workspace/google/error-prone/224127920/test_helpers/src/main/java, /root/./workspace/google/error-prone/224127920/test_helpers/src/main/java, ./workspace/google/error-prone/224127920/core/src/main/java, /root/./workspace/google/error-prone/224127920/core/src/main/java, ./workspace/google/error-prone/224127920/annotation/src/main/java, /root/./workspace/google/error-prone/224127920/annotation/src/main/java, ./workspace/google/error-prone/224127920/annotations/src/main/java, /root/./workspace/google/error-prone/224127920/annotations/src/main/java, ./workspace/google/error-prone/224127920/docgen/src/main/java, /root/./workspace/google/error-prone/224127920/docgen/src/main/java, ./workspace/google/error-prone/224127920/docgen_processor/src/main/java, /root/./workspace/google/error-prone/224127920/docgen_processor/src/main/java, ./workspace/google/error-prone/224127920/ant/src/main/java, /root/./workspace/google/error-prone/224127920/ant/src/main/java, ./workspace/google/error-prone/224127920/refaster/src/main/java, /root/./workspace/google/error-prone/224127920/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@3b764e66', projectTests=[com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest', failingMethods=[com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest#nameInCommentHeuristic_returnsTrue_wherePreceedingCommentWithEqualsMatchesFormalParameter, com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest#nameInCommentHeuristic_returnsTrue_wherePreceedingCommentHasEqualsSpacesAndExtraText], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 5 matching true. All errors:
+[/Test.java:5: error: [NameInCommentHeuristicChecker] false
+     target(/*first=*/ first);
+           ^
+    (see http://errorprone.info/bugpattern/NameInCommentHeuristicChecker)]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 5 matching true. All errors:
+[/Test.java:5: error: [NameInCommentHeuristicChecker] false
+     target(/*note first = */ first);
+           ^
+    (see http://errorprone.info/bugpattern/NameInCommentHeuristicChecker)]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:58:01 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/224127920/check_api/src/main/java, /root/./workspace/google/error-prone/224127920/check_api/src/main/java, ./workspace/google/error-prone/224127920/test_helpers/src/main/java, /root/./workspace/google/error-prone/224127920/test_helpers/src/main/java, ./workspace/google/error-prone/224127920/core/src/main/java, /root/./workspace/google/error-prone/224127920/core/src/main/java, ./workspace/google/error-prone/224127920/annotation/src/main/java, /root/./workspace/google/error-prone/224127920/annotation/src/main/java, ./workspace/google/error-prone/224127920/annotations/src/main/java, /root/./workspace/google/error-prone/224127920/annotations/src/main/java, ./workspace/google/error-prone/224127920/docgen/src/main/java, /root/./workspace/google/error-prone/224127920/docgen/src/main/java, ./workspace/google/error-prone/224127920/docgen_processor/src/main/java, /root/./workspace/google/error-prone/224127920/docgen_processor/src/main/java, ./workspace/google/error-prone/224127920/ant/src/main/java, /root/./workspace/google/error-prone/224127920/ant/src/main/java, ./workspace/google/error-prone/224127920/refaster/src/main/java, /root/./workspace/google/error-prone/224127920/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@6e530ccc', projectTests=[com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest', failingMethods=[com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest#testNegativeCase], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 89. All errors:
+[/com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:89: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.
+    s.submit(() -> null);
+            ^
+    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)
+  Did you mean '@SuppressWarnings("unused")'?, Note: /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java uses unchecked or unsafe operations., Note: Recompile with -Xlint:unchecked for details.]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:58:11 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/224127920/check_api/src/main/java, /root/./workspace/google/error-prone/224127920/check_api/src/main/java, ./workspace/google/error-prone/224127920/test_helpers/src/main/java, /root/./workspace/google/error-prone/224127920/test_helpers/src/main/java, ./workspace/google/error-prone/224127920/core/src/main/java, /root/./workspace/google/error-prone/224127920/core/src/main/java, ./workspace/google/error-prone/224127920/annotation/src/main/java, /root/./workspace/google/error-prone/224127920/annotation/src/main/java, ./workspace/google/error-prone/224127920/annotations/src/main/java, /root/./workspace/google/error-prone/224127920/annotations/src/main/java, ./workspace/google/error-prone/224127920/docgen/src/main/java, /root/./workspace/google/error-prone/224127920/docgen/src/main/java, ./workspace/google/error-prone/224127920/docgen_processor/src/main/java, /root/./workspace/google/error-prone/224127920/docgen_processor/src/main/java, ./workspace/google/error-prone/224127920/ant/src/main/java, /root/./workspace/google/error-prone/224127920/ant/src/main/java, ./workspace/google/error-prone/224127920/refaster/src/main/java, /root/./workspace/google/error-prone/224127920/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@3bbd0a50', projectTests=[com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='com.google.errorprone.bugpatterns.DefaultCharsetTest', failingMethods=[com.google.errorprone.bugpatterns.DefaultCharsetTest#scannerDefaultCharset], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 5 unmatched nodes in the expected tree. 
+
+> Extra node in expected tree.
+  Line 6 COMPILATION_UNIT->IMPORT(non-static)
+  Node contents: <import java.util.Scanner;>.
+  
+
+> Extra node in expected tree.
+  Line 9 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->NEW_CLASS->METHOD_INVOCATION
+  Node contents: <UTF_8.name()>.
+  
+
+> Extra node in expected tree.
+  Line 10 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->NEW_CLASS->METHOD_INVOCATION
+  Node contents: <UTF_8.name()>.
+  
+
+> Extra node in expected tree.
+  Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->NEW_CLASS->METHOD_INVOCATION
+  Node contents: <UTF_8.name()>.
+  
+
+> Extra node in expected tree.
+  Line 12 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->NEW_CLASS->METHOD_INVOCATION
+  Node contents: <UTF_8.name()>.
+  
+
+Found 4 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(static)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(non-static)
+  Expected import to be <static> but was <non-static>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Scanner)
+  Expected member identifier to be <UTF_8> but was <Scanner>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)->MEMBER_SELECT(StandardCharsets)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Scanner)->MEMBER_SELECT(util)
+  Expected member identifier to be <StandardCharsets> but was <util>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)->MEMBER_SELECT(StandardCharsets)->MEMBER_SELECT(charset)->MEMBER_SELECT(charset)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Scanner)->MEMBER_SELECT(util)->IDENTIFIER(java)->IDENTIFIER(java)
+  Expected node kind to be <MEMBER_SELECT> but was <IDENTIFIER>.
+
+
+Expected Source: 
+================
+
+import static java.nio.charset.StandardCharsets.UTF_8;
+import java.io.File;
+import java.io.InputStream;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Path;
+import java.util.Scanner;
+class Test {
+  void f() throws Exception {
+    new Scanner((InputStream) null, UTF_8.name());
+    new Scanner((File) null, UTF_8.name());
+    new Scanner((Path) null, UTF_8.name());
+    new Scanner((ReadableByteChannel) null, UTF_8.name());
+  }
+}
+
+Actual Source:
+=================
+
+import java.util.Scanner;
+import java.io.File;
+import java.io.InputStream;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Path;
+class Test {
+  void f() throws Exception {
+    new Scanner((InputStream) null);
+    new Scanner((File) null);
+    new Scanner((Path) null);
+    new Scanner((ReadableByteChannel) null);
+  }
+}', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:58:20 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/224127920/check_api/src/main/java, /root/./workspace/google/error-prone/224127920/check_api/src/main/java, ./workspace/google/error-prone/224127920/test_helpers/src/main/java, /root/./workspace/google/error-prone/224127920/test_helpers/src/main/java, ./workspace/google/error-prone/224127920/core/src/main/java, /root/./workspace/google/error-prone/224127920/core/src/main/java, ./workspace/google/error-prone/224127920/annotation/src/main/java, /root/./workspace/google/error-prone/224127920/annotation/src/main/java, ./workspace/google/error-prone/224127920/annotations/src/main/java, /root/./workspace/google/error-prone/224127920/annotations/src/main/java, ./workspace/google/error-prone/224127920/docgen/src/main/java, /root/./workspace/google/error-prone/224127920/docgen/src/main/java, ./workspace/google/error-prone/224127920/docgen_processor/src/main/java, /root/./workspace/google/error-prone/224127920/docgen_processor/src/main/java, ./workspace/google/error-prone/224127920/ant/src/main/java, /root/./workspace/google/error-prone/224127920/ant/src/main/java, ./workspace/google/error-prone/224127920/refaster/src/main/java, /root/./workspace/google/error-prone/224127920/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@1250d9c', projectTests=[com.google.errorprone.bugpatterns.DefaultCharsetTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
