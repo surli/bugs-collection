@@ -1,0 +1,138 @@
+{
+  "totalNumberSkippingTests": 15,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/b10649ec9fab...e9cb35ea75e5",
+  "failingModule": "/root/workspace/google/error-prone/224127920/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 12,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2146,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest#completes_noUnassignedVars_priorCaseDoesntExit",
+        "com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest#completes_noUnassignedVars_priorCaseExits"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 1 unmatched nodes in the expected tree. \n\n\u003e Extra node in expected tree.\n  Line 10 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(m)-\u003eBLOCK(non-static)-\u003eSWITCH-\u003eCASE-\u003eEXPRESSION_STATEMENT\n  Node contents: \u003cSystem.out.println(\"Test\");\u003e.\n  \n\nFound 1 unmatched nodes in the actual tree. \n\n\u003e Extra node in actual tree.\n  Line 9 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(m)-\u003eBLOCK(non-static)-\u003eSWITCH-\u003eCASE\n  Node contents: \u003cdefault:     System.out.println(\"Test\");\n\u003e.\n  \n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nclass Test {\n  enum Case { ONE, TWO, THREE }\n  boolean m(Case c) {\n    switch (c) {\n      case ONE:\n      case TWO:\n        return true;\n      case THREE:\n        // This is a comment\n        System.out.println(\"Test\");\n    }\n    return false;\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nclass Test {\n  enum Case { ONE, TWO, THREE }\n  boolean m(Case c) {\n    switch (c) {\n      case ONE:\n      case TWO:\n        return true;\n      case THREE:\n      default:\n        // This is a comment\n        System.out.println(\"Test\");\n    }\n    return false;\n  }\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 1 unmatched nodes in the actual tree. \n\n\u003e Extra node in actual tree.\n  Line 10 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(m)-\u003eBLOCK(non-static)-\u003eSWITCH-\u003eCASE\n  Node contents: \u003cdefault:     throw new AssertionError(c);\n\u003e.\n  \n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nclass Test {\n  enum Case { ONE, TWO, THREE }\n  boolean m(Case c) {\n    switch (c) {\n      case ONE:\n      case TWO:\n        break;\n      case THREE:\n        return true;\n    }\n    return false;\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nclass Test {\n  enum Case { ONE, TWO, THREE }\n  boolean m(Case c) {\n    switch (c) {\n      case ONE:\n      case TWO:\n        break;\n      case THREE:\n        return true;\n      default:\n        throw new AssertionError(c);\n    }\n    return false;\n  }\n}",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withOneNullArgument",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectCheckerWithPenalty_findsSwap_withSwappedMatchingPair",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withSwappedMatchingPairWithMethod",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_commentsOnlyOnSwappedPair_withThreeArguments",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectChecker_findsSwap_withSwappedMatchingPair",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.ArgumentSelectionDefectCheckerTest#argumentSelectionDefectCheckerWithPenalty_noSwap_withNamedPair"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 6 matching target(/*first\u003d*/second, /*second\u003d*/first). All errors:\n[/Test.java:6: error: [ArgumentSelectionDefectWithPenaltyThreshold] Run the ArgumentSelectionDefectChecker checker with the penalty threshold heuristic\n     target(second, first);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithPenaltyThreshold)\n  Did you mean \u0027target(first, second);\u0027?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching target(/*first\u003d*/getSecond(), /*second\u003d*/first). All errors:\n[/Test.java:7: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance\n     target(getSecond(), first);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)\n  Did you mean \u0027target(first, getSecond());\u0027?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 6 matching target(/*first\u003d*/second, /*second\u003d*/first, third). All errors:\n[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance\n     target(second, first, third);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)\n  Did you mean \u0027target(first, second, third);\u0027?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 4. All errors:\n[/Test.java:4: error: [ArgumentSelectionDefectWithNameInCommentsHeuristic] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance\n     target(/*first\u003d*/second, /*second\u003d*/first);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithNameInCommentsHeuristic)\n  Did you mean \u0027target(/*first\u003d*/first, /*second\u003d*/second);\u0027?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 6 matching target(/*first\u003d*/second, /*second\u003d*/first). All errors:\n[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance\n     target(second, first);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)\n  Did you mean \u0027target(first, second);\u0027?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 6 matching target(/*first\u003d*/second, /*second\u003d*/null). All errors:\n[/Test.java:6: error: [ArgumentSelectionDefectWithStringEquality] Run the ArgumentSelectionDefectChecker checker using string equality for edit distance\n     target(second, null);\n           ^\n    (see http://errorprone.info/bugpattern/ArgumentSelectionDefectWithStringEquality)\n  Did you mean \u0027target(null, second);\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest#testNegativeCase"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 89. All errors:\n[/com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:89: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.\n    s.submit(() -\u003e null);\n            ^\n    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)\n  Did you mean \u0027@SuppressWarnings(\"unused\")\u0027?, Note: /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java uses unchecked or unsafe operations., Note: Recompile with -Xlint:unchecked for details.]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest#nameInCommentHeuristic_returnsTrue_wherePreceedingCommentWithEqualsMatchesFormalParameter",
+        "com.google.errorprone.bugpatterns.argumentselectiondefects.NameInCommentHeuristicTest#nameInCommentHeuristic_returnsTrue_wherePreceedingCommentHasEqualsSpacesAndExtraText"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 5 matching true. All errors:\n[/Test.java:5: error: [NameInCommentHeuristicChecker] false\n     target(/*first\u003d*/ first);\n           ^\n    (see http://errorprone.info/bugpattern/NameInCommentHeuristicChecker)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 5 matching true. All errors:\n[/Test.java:5: error: [NameInCommentHeuristicChecker] false\n     target(/*note first \u003d */ first);\n           ^\n    (see http://errorprone.info/bugpattern/NameInCommentHeuristicChecker)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.DefaultCharsetTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.DefaultCharsetTest#scannerDefaultCharset"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 5 unmatched nodes in the expected tree. \n\n\u003e Extra node in expected tree.\n  Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)\n  Node contents: \u003cimport java.util.Scanner;\u003e.\n  \n\n\u003e Extra node in expected tree.\n  Line 9 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eNEW_CLASS-\u003eMETHOD_INVOCATION\n  Node contents: \u003cUTF_8.name()\u003e.\n  \n\n\u003e Extra node in expected tree.\n  Line 10 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eNEW_CLASS-\u003eMETHOD_INVOCATION\n  Node contents: \u003cUTF_8.name()\u003e.\n  \n\n\u003e Extra node in expected tree.\n  Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eNEW_CLASS-\u003eMETHOD_INVOCATION\n  Node contents: \u003cUTF_8.name()\u003e.\n  \n\n\u003e Extra node in expected tree.\n  Line 12 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eNEW_CLASS-\u003eMETHOD_INVOCATION\n  Node contents: \u003cUTF_8.name()\u003e.\n  \n\nFound 4 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)\n  Expected import to be \u003cstatic\u003e but was \u003cnon-static\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Scanner)\n  Expected member identifier to be \u003cUTF_8\u003e but was \u003cScanner\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)-\u003eMEMBER_SELECT(StandardCharsets)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Scanner)-\u003eMEMBER_SELECT(util)\n  Expected member identifier to be \u003cStandardCharsets\u003e but was \u003cutil\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)-\u003eMEMBER_SELECT(StandardCharsets)-\u003eMEMBER_SELECT(charset)-\u003eMEMBER_SELECT(charset)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Scanner)-\u003eMEMBER_SELECT(util)-\u003eIDENTIFIER(java)-\u003eIDENTIFIER(java)\n  Expected node kind to be \u003cMEMBER_SELECT\u003e but was \u003cIDENTIFIER\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport static java.nio.charset.StandardCharsets.UTF_8;\nimport java.io.File;\nimport java.io.InputStream;\nimport java.nio.channels.ReadableByteChannel;\nimport java.nio.file.Path;\nimport java.util.Scanner;\nclass Test {\n  void f() throws Exception {\n    new Scanner((InputStream) null, UTF_8.name());\n    new Scanner((File) null, UTF_8.name());\n    new Scanner((Path) null, UTF_8.name());\n    new Scanner((ReadableByteChannel) null, UTF_8.name());\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport java.util.Scanner;\nimport java.io.File;\nimport java.io.InputStream;\nimport java.nio.channels.ReadableByteChannel;\nimport java.nio.file.Path;\nclass Test {\n  void f() throws Exception {\n    new Scanner((InputStream) null);\n    new Scanner((File) null);\n    new Scanner((Path) null);\n    new Scanner((ReadableByteChannel) null);\n  }\n}",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
