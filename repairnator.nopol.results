@@ -1,0 +1,70 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.JUnit4TestNotRunTest', failingMethods=[com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsExpectAsIdentifier, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsVerifyAsIdentifier, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedVerify, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsAssertAsIdentifier, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedAssert, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedCheck, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsCheckAsIdentifier, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedExpect, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsFailAsIdentifier, com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedFail], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 8 matching @Test. All errors:
+[]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching @Test. All errors:
+[]', isError=false}], nbFailures=10, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 16:20:52 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/196717342/check_api/src/main/java, /root/./workspace/google/error-prone/196717342/check_api/src/main/java, ./workspace/google/error-prone/196717342/test_helpers/src/main/java, /root/./workspace/google/error-prone/196717342/test_helpers/src/main/java, ./workspace/google/error-prone/196717342/core/src/main/java, /root/./workspace/google/error-prone/196717342/core/src/main/java, ./workspace/google/error-prone/196717342/annotation/src/main/java, /root/./workspace/google/error-prone/196717342/annotation/src/main/java, ./workspace/google/error-prone/196717342/annotations/src/main/java, /root/./workspace/google/error-prone/196717342/annotations/src/main/java, ./workspace/google/error-prone/196717342/docgen/src/main/java, /root/./workspace/google/error-prone/196717342/docgen/src/main/java, ./workspace/google/error-prone/196717342/docgen_processor/src/main/java, /root/./workspace/google/error-prone/196717342/docgen_processor/src/main/java, ./workspace/google/error-prone/196717342/ant/src/main/java, /root/./workspace/google/error-prone/196717342/ant/src/main/java, ./workspace/google/error-prone/196717342/refaster/src/main/java, /root/./workspace/google/error-prone/196717342/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@610db97e', projectTests=[com.google.errorprone.bugpatterns.JUnit4TestNotRunTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest', failingMethods=[com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest#suppressedAtBothMethods, com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest#suppressedAtMethod], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 7. All errors:
+[/A.java:7: warning: [AmbiguousMethodReference] This method's reference is ambiguous, its name and functional interface type are the same as: c(A, D)
+  B c(D d) {
+    ^
+    (see http://errorprone.info/bugpattern/AmbiguousMethodReference)]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 7. All errors:
+[/A.java:7: warning: [AmbiguousMethodReference] This method's reference is ambiguous, its name and functional interface type are the same as: c(A, D)
+  B c(D d) {
+    ^
+    (see http://errorprone.info/bugpattern/AmbiguousMethodReference)]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 16:21:05 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/196717342/check_api/src/main/java, /root/./workspace/google/error-prone/196717342/check_api/src/main/java, ./workspace/google/error-prone/196717342/test_helpers/src/main/java, /root/./workspace/google/error-prone/196717342/test_helpers/src/main/java, ./workspace/google/error-prone/196717342/core/src/main/java, /root/./workspace/google/error-prone/196717342/core/src/main/java, ./workspace/google/error-prone/196717342/annotation/src/main/java, /root/./workspace/google/error-prone/196717342/annotation/src/main/java, ./workspace/google/error-prone/196717342/annotations/src/main/java, /root/./workspace/google/error-prone/196717342/annotations/src/main/java, ./workspace/google/error-prone/196717342/docgen/src/main/java, /root/./workspace/google/error-prone/196717342/docgen/src/main/java, ./workspace/google/error-prone/196717342/docgen_processor/src/main/java, /root/./workspace/google/error-prone/196717342/docgen_processor/src/main/java, ./workspace/google/error-prone/196717342/ant/src/main/java, /root/./workspace/google/error-prone/196717342/ant/src/main/java, ./workspace/google/error-prone/196717342/refaster/src/main/java, /root/./workspace/google/error-prone/196717342/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@73ff7a54', projectTests=[com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ForOverrideCheckerTest', failingMethods=[com.google.errorprone.bugpatterns.ForOverrideCheckerTest#testUserCanCallSuperFromOverridden], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 5. All errors:
+[/test/Test.java:5: error: [ForOverride] Method annotated @ForOverride must not be invoked directly (except by the declaring class, test.ExtendMe)
+    return super.overrideMe();
+                           ^
+    (see http://errorprone.info/bugpattern/ForOverride)]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 16:21:17 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/196717342/check_api/src/main/java, /root/./workspace/google/error-prone/196717342/check_api/src/main/java, ./workspace/google/error-prone/196717342/test_helpers/src/main/java, /root/./workspace/google/error-prone/196717342/test_helpers/src/main/java, ./workspace/google/error-prone/196717342/core/src/main/java, /root/./workspace/google/error-prone/196717342/core/src/main/java, ./workspace/google/error-prone/196717342/annotation/src/main/java, /root/./workspace/google/error-prone/196717342/annotation/src/main/java, ./workspace/google/error-prone/196717342/annotations/src/main/java, /root/./workspace/google/error-prone/196717342/annotations/src/main/java, ./workspace/google/error-prone/196717342/docgen/src/main/java, /root/./workspace/google/error-prone/196717342/docgen/src/main/java, ./workspace/google/error-prone/196717342/docgen_processor/src/main/java, /root/./workspace/google/error-prone/196717342/docgen_processor/src/main/java, ./workspace/google/error-prone/196717342/ant/src/main/java, /root/./workspace/google/error-prone/196717342/ant/src/main/java, ./workspace/google/error-prone/196717342/refaster/src/main/java, /root/./workspace/google/error-prone/196717342/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@7828111d', projectTests=[com.google.errorprone.bugpatterns.ForOverrideCheckerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
