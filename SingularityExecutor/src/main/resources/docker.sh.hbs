@@ -1,0 +1,178 @@
+#!/bin/bash
+#
+# This script was automatically generated.
+# Task ID: {{{ runContext.taskId }}}
+#
+
+set -e
+
+STOP_TIME={{{ stopTimeout }}} # Max time to wait for container to stop before killing
+
+CONTAINER_NAME="{{{ prefix }}}{{{ runContext.taskId }}}"
+
+CURRENT_DIR=`pwd`
+
+function check_contianer_running {
+  status=`sudo -E -H -u {{{ runContext.user }}} docker inspect -f \{{.State.Running}} $1`
+  if [ "$status" = "false" ] ; then
+    echo "container is no longer running..."
+    running=0
+  else
+    running=1
+  fi
+}
+
+function setup_signals {
+  cid="$1"; shift
+  handler="$1"; shift
+  for sig; do
+    trap "$handler '$cid' '$sig'" "$sig"
+  done
+}
+
+function handle_signal {
+  echo "Received $2"
+  echo "Stopping via sudo -E -H -u {{{ runContext.user }}} docker stop -t $STOP_TIME $1"
+  sudo -E -H -u {{{ runContext.user }}} docker stop -t $STOP_TIME "$1"
+  exit_code=`sudo -E -H -u {{{ runContext.user }}} docker wait "$cid"`
+  echo "Attempting to remove container"
+  sudo -E -H -u {{{ runContext.user }}} docker rm $1
+  exit "$exit_code"
+}
+
+# Outputs the path of the deepest cgroup the current process is in.
+# The output of:
+#   cat /proc/self/cgroup
+# will look like:
+# --------------------
+# 8:net_cls:/
+# 7:memory:/test_cgroup/mesos/4e59173b-e2a7-47a6-bcb8-455b637faa5f
+# 6:freezer:/test_cgroup/mesos/4e59173b-e2a7-47a6-bcb8-455b637faa5f
+# 5:devices:/
+# 4:cpuset:/
+# 3:cpuacct:/test_cgroup/mesos/4e59173b-e2a7-47a6-bcb8-455b637faa5f
+# 2:cpu:/test_cgroup/mesos/4e59173b-e2a7-47a6-bcb8-455b637faa5f
+# 1:blkio:/test_cgroup
+# --------------------
+# This function will return the deepest cgroup path in that output.
+# For this example, it would return:
+#   /test_cgroup/mesos/4e59173b-e2a7-47a6-bcb8-455b637faa5f
+function get_deepest_cgroup {
+   local cgroups=$(</proc/self/cgroup)
+   local max_depth=0
+   local max_path="/"
+
+   for cgroup_spec in $cgroups; do
+     local cg_path=$(echo $cgroup_spec | cut -d: -f3)
+     if [ "$cg_path" == "/" ]; then
+       local depth=0
+     else
+       local depth=$(echo -ne "$cg_path" | tr '/' "\n" | wc -l)
+     fi
+
+     if [ "$depth" -gt "$max_depth" ]; then
+       local max_depth="$depth"
+       local max_path="$cg_path"
+     fi
+   done
+   echo "$max_path"
+}
+
+DOCKER_IMAGE={{{ envContext.dockerInfo.image }}}
+
+# load env vars
+touch docker.env
+{{#each envContext.env}}
+{{#ifHasNewLines value}}
+{{{name}}}={{{bashEscaped value}}}
+{{else}}
+{{{name}}}={{{bashEscaped value}}}
+echo "{{{name}}}={{{value}}}" >> docker.env
+{{/ifHasNewLines}}
+{{/each}}
+
+# Create log directory for logrotate runs
+if [[ ! -d {{{ runContext.logDir }}} ]]; then
+  echo "Creating log directory ({{{ runContext.logDir }}})..."
+  mkdir -p {{{ runContext.logDir }}}
+  sudo chown -R {{{ runContext.user }}} {{{ runContext.logDir }}}
+fi
+
+# load artifact's profile.d
+if [[ -d .profile.d ]]; then
+  for FILE in $(ls .profile.d/*); do
+    echo $FILE >> docker.env
+  done
+else
+  echo "No deploy-specific profile.d"
+fi
+
+# set up port mappings
+DOCKER_PORTS=()
+{{#each envContext.dockerInfo.portMappingsList}}DOCKER_PORTS+=( -p {{{ hostPort }}}:{{{ containerPort }}} )
+{{/each}}
+
+# set up attached volumes
+DOCKER_VOLUMES=()
+DOCKER_VOLUMES+=( -v "$CURRENT_DIR:/mnt/mesos/sandbox" )
+echo "MESOS_SANDBOX=/mnt/mesos/sandbox" >> docker.env
+echo "LOG_HOME=/mnt/mesos/sandbox/logs" >> docker.env
+echo "MESOS_TASK_ID={{{bashEscaped runContext.taskId}}}" >> docker.env
+{{#each envContext.containerVolumes}}
+{{#if mode}}raw_mode{{@index}}={{{ mode }}}{{/if}}
+DOCKER_VOLUMES+=( -v "{{#if hostPath}}{{{ hostPath }}}:{{{ containerPath }}}{{else}}{{{ containerPath }}}:{{{ containerPath }}}{{/if}}{{#if mode}}:${raw_mode{{@index}},,}{{/if}}" )
+{{/each}}
+
+# set up network config
+{{#if envContext.dockerInfo.network}}
+raw_network={{envContext.dockerInfo.network}}
+DOCKER_NETWORK="--net=${raw_network,,}"
+{{else}}
+DOCKER_NETWORK="--net=host"
+{{/if}}
+
+PARENT_CGROUP=$(get_deepest_cgroup)
+
+DOCKER_OPTIONS="--name=$CONTAINER_NAME --cgroup-parent=$PARENT_CGROUP $DOCKER_NETWORK --env-file=docker.env ${DOCKER_VOLUMES[@]} ${DOCKER_PORTS[@]}"
+
+{{#unless envContext.dockerWorkdirOverriden }}
+DOCKER_OPTIONS="$DOCKER_OPTIONS -w /mnt/mesos/sandbox/{{{ runContext.taskAppDirectory }}}"
+{{/unless}}
+
+{{#if privileged}}
+DOCKER_OPTIONS="$DOCKER_OPTIONS --privileged"
+{{/if}}
+
+{{#each envContext.dockerParameters}}
+DOCKER_OPTIONS="$DOCKER_OPTIONS {{this}}"
+{{/each}}
+
+echo "Ensuring {{{ runContext.taskAppDirectory }}} is owned by {{{ runContext.user }}}"
+mkdir -p {{{ runContext.taskAppDirectory }}}
+sudo chown -R {{{ runContext.user }}} {{{ runContext.taskAppDirectory }}}
+
+{{#if runContext.useFileAttributes}}
+touch {{{ runContext.logFile }}}
+sudo chown {{{ runContext.user }}} {{{ runContext.logFile }}}
+setfattr -n user.logstart -v "$(($(date +%s%N)/1000000))" {{{ runContext.logFile }}}
+{{/if}}
+
+# Start up the container
+echo -e "Creating continer with: sudo -E -H -u {{{ runContext.user }}} docker create $DOCKER_OPTIONS {{#each envContext.env}}{{#ifHasNewLines value}}-e {{{name}}}={{#escapeNewLinesAndQuotes value}}{{/escapeNewLinesAndQuotes}}{{/ifHasNewLines}}{{/each}} $DOCKER_IMAGE {{{ runContext.cmd }}}"
+cid=`sudo -E -H -u {{{ runContext.user }}} docker create $DOCKER_OPTIONS {{#each envContext.env}}{{#ifHasNewLines value}}-e {{{name}}}={{#escapeNewLinesAndQuotes value}}{{/escapeNewLinesAndQuotes}}{{/ifHasNewLines}}{{/each}} $DOCKER_IMAGE {{{runContext.cmd }}}`
+sudo -E -H -u {{{ runContext.user }}} docker start -a $cid >> {{{ runContext.logFile }}} 2>&1 &
+running=1
+
+setup_signals "$cid" "handle_signal" SIGINT SIGTERM
+
+while true; do
+  if [ "$running" = "1" ]; then
+    sleep 10
+    check_contianer_running "$cid"
+  else
+    break
+  fi
+done
+
+exit_code=`sudo -E -H -u {{{ runContext.user }}} docker wait "$cid"`
+exit "$exit_code"
