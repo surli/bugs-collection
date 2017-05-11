@@ -17,10 +17,23 @@ package net.javacrumbs.jsonunit.test.moshi;
 
 import net.javacrumbs.jsonunit.test.base.AbstractJsonAssertTest;
 import net.javacrumbs.jsonunit.test.base.JsonTestUtils;
+import org.junit.Ignore;
 
 public class MoshiJsonAssertTest extends AbstractJsonAssertTest {
 
     protected Object readValue(String value) {
         return JsonTestUtils.readByMoshi(value);
+    }
+
+    @Override
+    @Ignore
+    public void testDifferentNumericTypes() {
+        // https://github.com/square/moshi/issues/192
+    }
+
+    @Override
+    @Ignore
+    public void testNotEqualWhenToleranceNotSet() {
+        // https://github.com/square/moshi/issues/192
     }
 }

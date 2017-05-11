@@ -15,6 +15,7 @@
  */
 package net.javacrumbs.jsonunit.core.internal;
 
+import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
 
 import java.io.IOException;
@@ -30,7 +31,7 @@ import java.util.Map;
 import static net.javacrumbs.jsonunit.core.internal.Utils.closeQuietly;
 
 /**
- * Deserializes node using org.json.JSONObject
+ * Deserializes node using Moshi
  */
 class MoshiNodeFactory extends AbstractNodeFactory {
     private static final Moshi moshi = new Moshi.Builder().build();
@@ -48,7 +49,11 @@ class MoshiNodeFactory extends AbstractNodeFactory {
     @Override
     protected Node readValue(String source, String label, boolean lenient) {
         try {
-            return newNode(moshi.adapter(Object.class).lenient().fromJson(source));
+            JsonAdapter<Object> adapter = moshi.adapter(Object.class);
+            if (lenient) {
+                adapter = adapter.lenient();
+            }
+            return newNode(adapter.fromJson(source));
         } catch (IOException e) {
             throw new IllegalArgumentException("Can not parse " + label + " value.", e);
         }
@@ -134,12 +139,13 @@ class MoshiNodeFactory extends AbstractNodeFactory {
 
         @Override
         public BigDecimal decimalValue() {
-            return new BigDecimal(value.toString());
+            // Workaround for Moshi bug https://github.com/square/moshi/issues/192
+            return new BigDecimal(value.toString()).stripTrailingZeros();
         }
 
         @Override
         public String toString() {
-            return value.toString();
+            return decimalValue().toString();
         }
     }
 
@@ -236,7 +242,7 @@ class MoshiNodeFactory extends AbstractNodeFactory {
         }
     }
 
-    private static final class ObjectNode extends NodeSkeleton {
+    private static final class ObjectNode extends NodeSkeleton implements Iterable<Node.KeyValue> {
         private final Map<String, Object> jsonObject;
 
         private ObjectNode(Map<String, Object> jsonObject) {
@@ -265,6 +271,10 @@ class MoshiNodeFactory extends AbstractNodeFactory {
             };
         }
 
+        public Iterator<KeyValue> iterator() {
+            return fields();
+        }
+
         public Node get(String key) {
             if (jsonObject.containsKey(key)) {
                 return newNode(jsonObject.get(key));
@@ -279,7 +289,14 @@ class MoshiNodeFactory extends AbstractNodeFactory {
 
         @Override
         public String toString() {
-            return moshi.adapter(Object.class).toJson(jsonObject);
+            // custom serialization to be able to serialize ints as ints https://github.com/square/moshi/issues/192
+            StringBuilder builder = new StringBuilder();
+            builder.append('{');
+            for (KeyValue kv: this) {
+                builder.append('"').append(kv.getKey()).append("\":").append(kv.getValue());
+            }
+            builder.append('}');
+            return builder.toString();
         }
     }
 
