@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "phoenixnap/springmvc-raml-plugin",
+  "bugCommit": "https://github.com/phoenixnap/springmvc-raml-plugin/compare/9ab40ab144f7...69c690cce3da",
+  "failingModule": "/root/workspace/phoenixnap/springmvc-raml-plugin/223898069/springmvc-raml-parser",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 197,
+  "failing-test-cases": [
+    {
+      "className": "com.phoenixnap.oss.ramlapisync.raml.interpreters.RamlInterpreterTest",
+      "failingMethods": [
+        "com.phoenixnap.oss.ramlapisync.raml.interpreters.RamlInterpreterTest#checkJSR303"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: a string containing \"FEE(\\\"fee\\\")\"      but: was \"public enum EnumChecks {      ONE(\"one\"),     TWO(\"two\"),     THREE(\"three\"),     VALUE_WITH_UNDERSCORE(\"value_with_underscore\"),     VALUE_WITH_SPACE(\"value with space\"),     TESTFEE(\"testfee\");     private final java.lang.String value;     private final static java.util.Map\u003cjava.lang.String, com.gen.foo.EnumChecks\u003e VALUE_CACHE \u003d new java.util.HashMap\u003cjava.lang.String, com.gen.foo.EnumChecks\u003e();      static {         for (com.gen.foo.EnumChecks c: values()) {             VALUE_CACHE.put(c.value, c);         }     }      private EnumChecks(java.lang.String value) {         this.value \u003d value;     }      public java.lang.String value() {         return this.value;     }      public static com.gen.foo.EnumChecks fromValue(java.lang.String value) {         return VALUE_CACHE.get(value);     }      @java.lang.Override     public java.lang.String toString() {         return this.value;     }  } \"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
