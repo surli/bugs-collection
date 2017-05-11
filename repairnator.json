@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "mpatric/mp3agic",
+  "bugCommit": "https://github.com/mpatric/mp3agic/compare/0a7bd59a4f6f...3bd2057dc363",
+  "failingModule": "/root/workspace/mpatric/mp3agic/217607645",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 353,
+  "failing-test-cases": [
+    {
+      "className": "com.mpatric.mp3agic.ID3WrapperTest",
+      "failingMethods": [
+        "com.mpatric.mp3agic.ID3WrapperTest#getGenreDescriptionReturnsV2TagsGenreDescriptionBeforeV1TagsGenreDescription",
+        "com.mpatric.mp3agic.ID3WrapperTest#getGenreReturnsV2TagsGenreBeforeV1TagsGenre"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cV[2] GenreDescription\u003e but was:\u003cV[1] GenreDescription\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c20\u003e but was:\u003c10\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
