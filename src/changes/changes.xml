@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <title>ThreeTen-Extra - Changes</title>
+    <author>Stephen Colebourne</author>
+  </properties>
+
+  <body>
+    <!-- types are add, fix, remove, update -->
+    <release version="1.1" date="SNAPSHOT" description="v1.1">
+      <action dev="jodastephen" type="add" >
+        Add PeriodDuration, combining Period and Duration.
+        See #74.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Extend formats parsed by Interval, allowing end instant to have offset inferred from start instant.
+        See #75.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Extend formats parsed by Interval, allowing years, months, weeks and days.
+        See #70.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Seconds temporal amount class.
+        See #73.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Temporals.parseFirstMatching().
+        This allows text to be parsed against a number of different formats.
+        See #56.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add LocalDateRange, a range of dates, matching style of Google Guava's Range.
+        Enhance Interval to match.
+        See #53.
+      </action>
+      <action dev="jodastephen" type="update" >
+        Add leap second at end of 2016.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Allow Interval to parse offset date-time.
+        Fixes #66, #67.
+      </action>
+      <action dev="jodastephen" type="fix" >
+        Fix Symmetry010 week calculations.
+        Fixes #61.
+      </action>
+    </release>
+    <release version="1.0" date="2016-06-13" description="v1.0">
+      <action dev="jodastephen" type="add" >
+        Add PackedFields.
+        Provide packed integer representations of dates and times
+        Fixes #57.
+      </action>
+      <action dev="jodastephen" type="fix" >
+        Clarify YearQuarter docs.
+        Fixes #58.
+      </action>
+      <action dev="jodastephen" type="fix" >
+        Add isBefore/isAfter to Interval.
+        Fixes #48.
+      </action>
+      <action dev="steve-o" type="add">
+        Extend Interval to parse more formats.
+        Fixes #50.
+      </action>
+      <action dev="raupachz" type="add">
+        Add Hours and Minutes classes.
+        Fixes #52, #14.
+      </action>
+      <action dev="raupachz" type="add">
+        Add YearWeek class, handling the ISO week-based-year.
+        Fixes #36, #38.
+      </action>
+      <action dev="catull" type="add">
+        Add Symmetry calendar systems.
+        Fixes #42, #43.
+      </action>
+      <action dev="catull" type="add">
+        Add International Fixed calendar system.
+        Fixes #31.
+      </action>
+      <action dev="jodastephen" type="fix" >
+        Make YearQuarter.parse case insensitive.
+      </action>
+      <action dev="jodastephen" type="fix" >
+        Make YearQuarter.toString output '+' for large years.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add British Cutover calendar system.
+        Models British Julian-Gregorian cutover on 1752-09-14 (ISO).
+        Fixes #29.
+      </action>
+    </release>
+    <release version="0.9" date="2014-12-09" description="v0.9">
+      <action dev="jodastephen" type="add" >
+        Add Interval class.
+        Fixes #2.
+      </action>
+      <action dev="Clockwork-Muse" type="add" >
+        Add Accounting calendar system.
+        Fixes #27.
+      </action>
+      <action dev="Clockwork-Muse" type="add" >
+        Add Discordian calendar system.
+        Fixes #23.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Temporals helper methods to convert TimeUnit to/from ChronoUnit.
+        Fixes #22.
+      </action>
+      <action dev="Clockwork-Muse" type="add" >
+        Add Pax calendar system.
+        Fixes #17.
+      </action>
+      <action dev="Clockwork-Muse" type="fix" >
+        Fix handling of with(era).
+        Fixes #18 / #20.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Ethiopic calendar system.
+        Fixes #11.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Julian calendar system.
+        Fixes #10.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Weeks class.
+        Fixes #3.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Extend conversion between amount types.
+        Handle conversions in from(TemporalAmount) using Temporals.convertAmount(...).
+        Fixes #7.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Temporals.convertAmount(...).
+        Allows an amount in one unit to be converted to an amount in a different unit.
+        Fixes #6.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Months.ofYears(int).
+        Support weeks in Months.from(TemporalAmount).
+        Support weeks in Months.parse(CharSequence).
+        Fixes #5.
+      </action>
+      <action dev="jodastephen" type="add" >
+        Add Days.ofWeeks(int).
+        Support weeks in Days.from(TemporalAmount).
+        Support weeks in Days.parse(CharSequence).
+        Fixes #4.
+      </action>
+    </release>
+    <release version="0.8" date="2014-02-10" description="v0.8">
+      <action dev="jodastephen" type="add" >
+        First modernized version.
+      </action>
+    </release>
+  </body>
+</document>
