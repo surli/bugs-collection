@@ -1,0 +1,80 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "JavaMoney/jsr354-api",
+  "bugCommit": "https://github.com/JavaMoney/jsr354-api/compare/f35a9dc2a936...a27ead17dba3",
+  "failingModule": "/root/workspace/JavaMoney/jsr354-api/210771432",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 6,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 191,
+  "failing-test-cases": [
+    {
+      "className": "javax.money.convert.MonetaryConversionsDynamicServiceProviderTest",
+      "failingMethods": [
+        "javax.money.convert.MonetaryConversionsDynamicServiceProviderTest#testMonetaryConversionsSingletonSpi"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [2] but found [1]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "javax.money.format.MonetaryFormatsDynamicServiceProviderTest",
+      "failingMethods": [
+        "javax.money.format.MonetaryFormatsDynamicServiceProviderTest#testMonetaryFormatsSingletonSpi"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "javax.money.MonetaryDynamicServiceProviderTest",
+      "failingMethods": [
+        "javax.money.MonetaryDynamicServiceProviderTest#testMonetaryAmountsSingletonSpi",
+        "javax.money.MonetaryDynamicServiceProviderTest#testMonetaryAmountsSingletonQuerySpi",
+        "javax.money.MonetaryDynamicServiceProviderTest#testMonetaryCurrenciesSingletonSpi",
+        "javax.money.MonetaryDynamicServiceProviderTest#testMonetaryRoundingsSingletonSpi"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [false] but found [true]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [false] but found [true]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    }
+  ]
+}
