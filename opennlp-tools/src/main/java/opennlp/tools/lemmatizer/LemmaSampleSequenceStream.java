@@ -41,15 +41,15 @@ public class LemmaSampleSequenceStream implements SequenceStream {
     LemmaSample sample = samples.read();
 
     if (sample != null) {
-      String sentence[] = sample.getTokens();
-      String tags[] = sample.getTags();
-      String preds[] = sample.getLemmas();
-      Event[] events = new Event[sentence.length];
+      String[] tokens = sample.getTokens();
+      String[] tags = sample.getTags();
+      String[] lemmas = LemmatizerME.encodeLemmas(tokens, sample.getLemmas());
+      Event[] events = new Event[tokens.length];
 
-      for (int i = 0; i < sentence.length; i++) {
+      for (int i = 0; i < tokens.length; i++) {
         // it is safe to pass the tags as previous tags because
         // the context generator does not look for non predicted tags
-        String[] context = contextGenerator.getContext(i, sentence, tags, preds);
+        String[] context = contextGenerator.getContext(i, tokens, tags, lemmas);
 
         events[i] = new Event(tags[i], context);
       }

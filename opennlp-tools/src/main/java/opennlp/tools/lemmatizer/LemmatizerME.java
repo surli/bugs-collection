@@ -114,7 +114,7 @@ public class LemmatizerME implements Lemmatizer {
    * @param preds the predicted lemma classes
    * @return the array of decoded lemmas
    */
-  public String[] decodeLemmas(String[] toks, String[] preds) {
+  public static String[] decodeLemmas(String[] toks, String[] preds) {
     List<String> lemmas = new ArrayList<>();
     for (int i = 0; i < toks.length; i++) {
       String lemma = StringUtil.decodeShortestEditScript(toks[i].toLowerCase(), preds[i]);
@@ -125,6 +125,18 @@ public class LemmatizerME implements Lemmatizer {
       lemmas.add(lemma);
     }
     return lemmas.toArray(new String[lemmas.size()]);
+  }
+
+  public static String[] encodeLemmas(String[] toks, String[] lemmas) {
+    List<String> sesList = new ArrayList<>();
+    for (int i = 0; i < toks.length; i++) {
+      String ses = StringUtil.getShortestEditScript(toks[i], lemmas[i]);
+      if (ses.length() == 0) {
+        ses = "_";
+      }
+      sesList.add(ses);
+    }
+    return sesList.toArray(new String[sesList.size()]);
   }
 
   public Sequence[] topKSequences(String[] sentence, String[] tags) {
