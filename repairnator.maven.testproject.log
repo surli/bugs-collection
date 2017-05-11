@@ -1,0 +1,1746 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] killbill
+[INFO] killbill-api
+[INFO] killbill-util
+[INFO] killbill-tenant
+[INFO] killbill-account
+[INFO] killbill-catalog
+[INFO] killbill-currency
+[INFO] killbill-subscription
+[INFO] killbill-entitlement
+[INFO] killbill-usage
+[INFO] killbill-invoice
+[INFO] killbill-junction
+[INFO] killbill-overdue
+[INFO] killbill-payment
+[INFO] killbill-beatrix
+[INFO] killbill-jaxrs
+[INFO] killbill-profiles
+[INFO] killbill-profiles-killbill
+[INFO] killbill-profiles-killpay
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-api 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-internal-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-internal-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-internal-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-internal-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 114 source files to /root/workspace/killbill/killbill/218272088/api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-internal-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-internal-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-internal-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-util 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9.1:add-source (default) @ killbill-util ---
+[INFO] Source directory: /root/workspace/killbill/killbill/218272088/util/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- templating-maven-plugin:1.0-alpha-3:filter-sources (generate-verion-class) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Source directory: /root/workspace/killbill/killbill/218272088/util/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-util ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 225 source files to /root/workspace/killbill/killbill/218272088/util/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218272088/util/src/main/java/org/killbill/billing/util/security/shiro/realm/KillBillJndiLdapRealm.java:[38,34] [deprecation] JndiLdapRealm in org.apache.shiro.realm.ldap has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/util/src/main/java/org/killbill/billing/util/security/shiro/realm/KillBillJndiLdapRealm.java:[59,43] [deprecation] JndiLdapRealm in org.apache.shiro.realm.ldap has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-util ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 107 source files to /root/workspace/killbill/killbill/218272088/util/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218272088/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[195,30] [deprecation] MySQLDataSource in org.mariadb.jdbc has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[195,79] [deprecation] MySQLDataSource in org.mariadb.jdbc has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[196,17] [deprecation] setURL(String) in MariaDbDataSource has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-util ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/util/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.pom (4 KB at 13.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom (3 KB at 96.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.pom (2 KB at 42.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom (12 KB at 509.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.jar (55 KB at 1564.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.jar (33 KB at 229.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.13/surefire-testng-utils-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.13/surefire-testng-utils-2.13.jar (29 KB at 935.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.13/surefire-grouper-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.13/surefire-grouper-2.13.jar (37 KB at 288.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.758 sec
+
+Results :
+
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-tenant 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-tenant ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-tenant ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-tenant ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-tenant ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /root/workspace/killbill/killbill/218272088/tenant/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-tenant ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/tenant/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-tenant ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /root/workspace/killbill/killbill/218272088/tenant/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-tenant ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/tenant/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 sec
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-account 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-account ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-account ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-account ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-account ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/killbill/killbill/218272088/account/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-account ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/account/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-account ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/killbill/killbill/218272088/account/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-account ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/account/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.459 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-catalog 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-catalog ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-catalog ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-catalog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-catalog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 66 source files to /root/workspace/killbill/killbill/218272088/catalog/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218272088/catalog/src/main/java/org/killbill/billing/catalog/api/user/DefaultCatalogUserApi.java:[162,108] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-catalog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-catalog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /root/workspace/killbill/killbill/218272088/catalog/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218272088/catalog/src/test/java/org/killbill/billing/catalog/TestCatalogUpdater.java:[58,94] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-catalog ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/catalog/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.538 sec
+
+Results :
+
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-currency 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-currency ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-currency ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-currency ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/currency/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-currency ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/killbill/killbill/218272088/currency/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-currency ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/currency/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-currency ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-currency ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-subscription 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-subscription ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-subscription ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-subscription ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-subscription ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /root/workspace/killbill/killbill/218272088/subscription/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-subscription ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-subscription ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /root/workspace/killbill/killbill/218272088/subscription/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-subscription ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/subscription/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.746 sec
+
+Results :
+
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-entitlement 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-entitlement ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-entitlement ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-entitlement ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-entitlement ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 41 source files to /root/workspace/killbill/killbill/218272088/entitlement/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-entitlement ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-entitlement ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /root/workspace/killbill/killbill/218272088/entitlement/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-entitlement ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/entitlement/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.097 sec
+
+Results :
+
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-usage 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-usage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-usage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-usage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-usage ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/killbill/killbill/218272088/usage/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-usage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/usage/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-usage ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/killbill/killbill/218272088/usage/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-usage ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/usage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-invoice 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-invoice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-invoice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-invoice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-invoice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 95 source files to /root/workspace/killbill/killbill/218272088/invoice/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-invoice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-invoice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 62 source files to /root/workspace/killbill/killbill/218272088/invoice/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-invoice ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/invoice/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+<html>
+    <head>
+        <style type="text/css">
+            #header td { width: 250px; }
+            #header .company_info { width: 450px; }
+            #header .label { text-align: right; font-weight: bold; }
+            #header .label_value { padding-left: 10px; }
+
+            #invoice_items { margin-top: 50px; }
+            #invoice_items th { border-bottom: solid 2px black; }
+            #invoice_items td { width: 250px; }
+            #invoice_items td.amount { width: 125px; }
+            #invoice_items td.network { width: 350px; }
+            #invoice_items .amount { text-align: right; }
+            #invoice_items .label { text-align: right; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <table id="header">
+            <tr>
+                <td class="company_info"/>
+                <td />
+                <td><h1>INVOICE</h1></td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="http://static.foo.com/www/0/main/gfx/front/logo.png"/></td>
+            </tr>
+            <tr>
+                <td class="company_info" />
+                <td class="label">Date:</td>
+                <td class="label_value">May 11, 2017</td>
+            </tr>
+            <tr>
+                <td class="company_info" />
+                <td class="label">Invoice #</td>
+                <td class="label_value">234</td>
+            </tr>
+            <tr>
+                <td class="company_info">USA</td>
+                <td colspan="2" />
+            </tr>
+            <tr>
+                <td class="company_info">http://killbilling.org</td>
+                <td colspan="2" />
+            </tr>
+        </table>
+
+        <table id="invoice_items">
+            <tr>
+                <th class="network">Weapon</td>
+                <th>Description</td>
+                <th>Service Period</td>
+                <th>Amount</td>
+            </tr>
+            
+            <tr>
+                <td class="network">0d167d40-e41e-497b-a416-9c5d3dad0fc6 (fixed price)</td>
+                <td>3238dd22-2a6e-4cda-8f02-4538c5d3771c</td>
+                <td>May 11, 2017</td>
+                <td class="amount">BRL1,499.95</td>
+            </tr>
+            
+            <tr>
+                <td colspan="4" height="50px"></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">New Charges</td>
+                <td class="amount"><strong>R$1,499.95</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">Payment                    
+                </td>
+                <td class="amount"><strong>R$0.00</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">Balance</td>
+                <td class="amount"><strong>R$1,499.95</strong></td>
+            </tr>
+        </table>
+            </body>
+</html>
+
+Tests run: 299, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.469 sec
+
+Results :
+
+Tests run: 299, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-junction 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-junction ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-junction ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-junction ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/junction/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-junction ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /root/workspace/killbill/killbill/218272088/junction/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-junction ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-junction ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/killbill/killbill/218272088/junction/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-junction ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/junction/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.929 sec
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-overdue 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-overdue ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-overdue ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-overdue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-overdue ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to /root/workspace/killbill/killbill/218272088/overdue/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-overdue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-overdue ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /root/workspace/killbill/killbill/218272088/overdue/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-overdue ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/overdue/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.323 sec
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-payment 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-payment ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-payment ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-payment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-payment ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 123 source files to /root/workspace/killbill/killbill/218272088/payment/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-payment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-payment ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /root/workspace/killbill/killbill/218272088/payment/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-payment ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/payment/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+digraph Payment {
+    subgraph cluster_0 {
+        label="BIG_BANG";
+        node_0 [label=BIG_BANG_INIT];
+        node_0 -> node_0 [label=<OP_DUMMY<SUB>|S</SUB>> color=green];
+    }
+    subgraph cluster_1 {
+        label="AUTHORIZE";
+        node_1 [color=grey style=filled label=AUTH_INIT];
+        node_2 [label=AUTH_PENDING];
+        node_3 [color=grey style=filled label=AUTH_SUCCESS];
+        node_4 [color=grey style=filled label=AUTH_FAILED];
+        node_5 [color=grey style=filled label=AUTH_ERRORED];
+        node_1 -> node_3 [label=<OP_AUTHORIZE<SUB>|S</SUB>> color=green];
+        node_1 -> node_4 [label=<OP_AUTHORIZE<SUB>|F</SUB>> color=red];
+        node_1 -> node_2 [label=<OP_AUTHORIZE<SUB>|P</SUB>> color=black];
+        node_2 -> node_3 [label=<OP_AUTHORIZE<SUB>|S</SUB>> color=green];
+        node_2 -> node_4 [label=<OP_AUTHORIZE<SUB>|F</SUB>> color=red];
+        node_2 -> node_5 [label=<OP_AUTHORIZE<SUB>|E</SUB>> color=red];
+        node_1 -> node_5 [label=<OP_AUTHORIZE<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_2 {
+        label="CAPTURE";
+        node_6 [color=grey style=filled label=CAPTURE_INIT];
+        node_7 [label=CAPTURE_PENDING];
+        node_8 [color=grey style=filled label=CAPTURE_SUCCESS];
+        node_9 [color=grey style=filled label=CAPTURE_FAILED];
+        node_10 [color=grey style=filled label=CAPTURE_ERRORED];
+        node_6 -> node_8 [label=<OP_CAPTURE<SUB>|S</SUB>> color=green];
+        node_6 -> node_9 [label=<OP_CAPTURE<SUB>|F</SUB>> color=red];
+        node_6 -> node_7 [label=<OP_CAPTURE<SUB>|P</SUB>> color=black];
+        node_7 -> node_8 [label=<OP_CAPTURE<SUB>|S</SUB>> color=green];
+        node_7 -> node_9 [label=<OP_CAPTURE<SUB>|F</SUB>> color=red];
+        node_7 -> node_10 [label=<OP_CAPTURE<SUB>|E</SUB>> color=red];
+        node_6 -> node_10 [label=<OP_CAPTURE<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_3 {
+        label="PURCHASE";
+        node_11 [color=grey style=filled label=PURCHASE_INIT];
+        node_12 [label=PURCHASE_PENDING];
+        node_13 [color=grey style=filled label=PURCHASE_SUCCESS];
+        node_14 [color=grey style=filled label=PURCHASE_FAILED];
+        node_15 [color=grey style=filled label=PURCHASE_ERRORED];
+        node_11 -> node_13 [label=<OP_PURCHASE<SUB>|S</SUB>> color=green];
+        node_11 -> node_14 [label=<OP_PURCHASE<SUB>|F</SUB>> color=red];
+        node_11 -> node_12 [label=<OP_PURCHASE<SUB>|P</SUB>> color=black];
+        node_12 -> node_13 [label=<OP_PURCHASE<SUB>|S</SUB>> color=green];
+        node_12 -> node_14 [label=<OP_PURCHASE<SUB>|F</SUB>> color=red];
+        node_12 -> node_15 [label=<OP_PURCHASE<SUB>|E</SUB>> color=red];
+        node_11 -> node_15 [label=<OP_PURCHASE<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_4 {
+        label="REFUND";
+        node_16 [color=grey style=filled label=REFUND_INIT];
+        node_17 [label=REFUND_PENDING];
+        node_18 [color=grey style=filled label=REFUND_SUCCESS];
+        node_19 [color=grey style=filled label=REFUND_FAILED];
+        node_20 [color=grey style=filled label=REFUND_ERRORED];
+        node_16 -> node_18 [label=<OP_REFUND<SUB>|S</SUB>> color=green];
+        node_16 -> node_19 [label=<OP_REFUND<SUB>|F</SUB>> color=red];
+        node_16 -> node_17 [label=<OP_REFUND<SUB>|P</SUB>> color=black];
+        node_17 -> node_18 [label=<OP_REFUND<SUB>|S</SUB>> color=green];
+        node_17 -> node_19 [label=<OP_REFUND<SUB>|F</SUB>> color=red];
+        node_17 -> node_20 [label=<OP_REFUND<SUB>|E</SUB>> color=red];
+        node_16 -> node_20 [label=<OP_REFUND<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_5 {
+        label="CREDIT";
+        node_21 [color=grey style=filled label=CREDIT_INIT];
+        node_22 [label=CREDIT_PENDING];
+        node_23 [color=grey style=filled label=CREDIT_SUCCESS];
+        node_24 [color=grey style=filled label=CREDIT_FAILED];
+        node_25 [color=grey style=filled label=CREDIT_ERRORED];
+        node_21 -> node_23 [label=<OP_CREDIT<SUB>|S</SUB>> color=green];
+        node_21 -> node_24 [label=<OP_CREDIT<SUB>|F</SUB>> color=red];
+        node_21 -> node_22 [label=<OP_CREDIT<SUB>|P</SUB>> color=black];
+        node_22 -> node_23 [label=<OP_CREDIT<SUB>|S</SUB>> color=green];
+        node_22 -> node_24 [label=<OP_CREDIT<SUB>|F</SUB>> color=red];
+        node_22 -> node_25 [label=<OP_CREDIT<SUB>|E</SUB>> color=red];
+        node_21 -> node_25 [label=<OP_CREDIT<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_6 {
+        label="VOID";
+        node_26 [color=grey style=filled label=VOID_INIT];
+        node_27 [label=VOID_PENDING];
+        node_28 [color=grey style=filled label=VOID_SUCCESS];
+        node_29 [color=grey style=filled label=VOID_FAILED];
+        node_30 [color=grey style=filled label=VOID_ERRORED];
+        node_26 -> node_28 [label=<OP_VOID<SUB>|S</SUB>> color=green];
+        node_26 -> node_29 [label=<OP_VOID<SUB>|F</SUB>> color=red];
+        node_26 -> node_27 [label=<OP_VOID<SUB>|P</SUB>> color=black];
+        node_27 -> node_28 [label=<OP_VOID<SUB>|S</SUB>> color=green];
+        node_27 -> node_29 [label=<OP_VOID<SUB>|F</SUB>> color=red];
+        node_27 -> node_30 [label=<OP_VOID<SUB>|E</SUB>> color=red];
+        node_26 -> node_30 [label=<OP_VOID<SUB>|E</SUB>> color=red];
+    }
+    subgraph cluster_7 {
+        label="CHARGEBACK";
+        node_31 [color=grey style=filled label=CHARGEBACK_INIT];
+        node_32 [color=grey style=filled label=CHARGEBACK_SUCCESS];
+        node_33 [color=grey style=filled label=CHARGEBACK_FAILED];
+        node_34 [color=grey style=filled label=CHARGEBACK_ERRORED];
+        node_31 -> node_32 [label=<OP_CHARGEBACK<SUB>|S</SUB>> color=green];
+        node_31 -> node_33 [label=<OP_CHARGEBACK<SUB>|F</SUB>> color=red];
+        node_31 -> node_34 [label=<OP_CHARGEBACK<SUB>|E</SUB>> color=red];
+    }
+    node_0 -> node_1 [style=dotted];
+    node_0 -> node_11 [style=dotted];
+    node_0 -> node_21 [style=dotted];
+    node_3 -> node_6 [style=dotted];
+    node_3 -> node_26 [style=dotted];
+    node_8 -> node_16 [style=dotted];
+    node_8 -> node_6 [style=dotted];
+    node_8 -> node_31 [style=dotted];
+    node_18 -> node_16 [style=dotted];
+    node_18 -> node_31 [style=dotted];
+    node_13 -> node_16 [style=dotted];
+    node_13 -> node_31 [style=dotted];
+    node_32 -> node_31 [style=dotted];
+    node_33 -> node_16 [style=dotted];
+}
+
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.266 sec
+
+Results :
+
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-beatrix 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-beatrix ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-beatrix ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-beatrix ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-beatrix ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/killbill/killbill/218272088/beatrix/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-beatrix ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-beatrix ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 49 source files to /root/workspace/killbill/killbill/218272088/beatrix/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-beatrix ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/beatrix/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.154 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-jaxrs 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-jaxrs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-jaxrs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-jaxrs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 117 source files to /root/workspace/killbill/killbill/218272088/jaxrs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218272088/jaxrs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-jaxrs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /root/workspace/killbill/killbill/218272088/jaxrs/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-jaxrs ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/jaxrs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.556 sec
+
+Results :
+
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-profiles 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-profiles ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-profiles ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-profiles-killbill 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-profiles-killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-profiles-killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-profiles-killbill ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-profiles-killbill ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /root/workspace/killbill/killbill/218272088/profiles/killbill/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-profiles-killbill ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-profiles-killbill ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 45 source files to /root/workspace/killbill/killbill/218272088/profiles/killbill/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/KillbillClient.java:[115,22] [deprecation] createPaymentMethod(PaymentMethod,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/KillbillClient.java:[116,29] [deprecation] getAccount(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/KillbillClient.java:[135,29] [deprecation] createAccount(Account,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestJaxrsBase.java:[218,22] [deprecation] createTenant(Tenant,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountTimeline.java:[84,46] [deprecation] getInvoicesForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountTimeline.java:[89,22] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountTimeline.java:[92,52] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountTimeline.java:[97,22] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountTimeline.java:[104,22] [deprecation] createInvoicePaymentChargeback(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[44,26] [deprecation] createAccount(Account,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[57,22] [deprecation] createTenant(Tenant,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[60,42] [deprecation] getAccount(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[71,22] [deprecation] createTenant(Tenant,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[74,42] [deprecation] getAccount(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[77,40] [deprecation] getAccount(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/server/security/TestTenantFilter.java:[81,40] [deprecation] getAccount(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[44,63] [deprecation] getPaymentMethodByKey(String,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[46,63] [deprecation] getPaymentMethod(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[49,63] [deprecation] getPaymentMethodByKey(String,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[56,42] [deprecation] searchPaymentMethodsByKey(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[57,42] [deprecation] searchPaymentMethodsByKeyAndPlugin(String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[68,62] [deprecation] getPaymentMethod(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[71,42] [deprecation] searchPaymentMethodsByKey(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[72,42] [deprecation] searchPaymentMethodsByKeyAndPlugin(String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[92,63] [deprecation] getPaymentMethods() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[95,44] [deprecation] getPaymentMethods(Long,Long) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[117,63] [deprecation] createPaymentMethodCustomField(UUID,CustomField,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[126,65] [deprecation] getPaymentMethodCustomFields(UUID,AuditLevel) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[135,22] [deprecation] deletePaymentMethodCustomFields(UUID,Iterable<UUID>,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[136,63] [deprecation] getPaymentMethodCustomFields(UUID,AuditLevel) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[141,59] [deprecation] searchPaymentMethodsByKey(String,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentMethod.java:[145,59] [deprecation] searchPaymentMethodsByKeyAndPlugin(String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[52,26] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[111,42] [deprecation] addRoleDefinition(RoleDefinition,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[116,33] [deprecation] addUserRoles(UserRoles,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[125,26] [deprecation] addRoleDefinition(RoleDefinition,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[134,26] [deprecation] addUserRoles(UserRoles,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[151,42] [deprecation] addRoleDefinition(RoleDefinition,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[154,33] [deprecation] addUserRoles(UserRoles,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[159,49] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[163,22] [deprecation] updateUserPassword(String,String,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[167,37] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[174,33] [deprecation] addRoleDefinition(RoleDefinition,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[177,22] [deprecation] updateUserRoles(String,List<String>,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[178,37] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[182,22] [deprecation] invalidateUser(String,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[184,26] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[195,42] [deprecation] addRoleDefinition(RoleDefinition,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[198,33] [deprecation] addUserRoles(UserRoles,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[208,26] [deprecation] uploadXMLCatalog(String,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestSecurity.java:[222,29] [deprecation] getPermissions() in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[69,59] [deprecation] getPayment(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[85,61] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[104,61] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[116,46] [deprecation] getInvoice(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[132,61] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[144,46] [deprecation] getInvoice(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[159,61] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[205,26] [deprecation] createInvoicePaymentRefund(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[211,57] [deprecation] createInvoicePayment(InvoicePayment,boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[215,58] [deprecation] getInvoicePaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[221,46] [deprecation] getPayments(Long,Long) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[270,70] [deprecation] getInvoicePaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[277,62] [deprecation] getPaymentMethod(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[302,59] [deprecation] getPayment(UUID,boolean) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestInvoicePayment.java:[311,50] [deprecation] getInvoice(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestExceptions.java:[40,60] [deprecation] getInvoicePaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestExceptions.java:[46,26] [deprecation] createInvoicePaymentChargeback(InvoicePaymentTransaction,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPaymentGateway.java:[67,48] [deprecation] processNotification(String,String,Map<String,String>,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAdmin.java:[77,54] [deprecation] getPayment(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAdmin.java:[87,54] [deprecation] getPayment(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAdmin.java:[203,26] [deprecation] doPut(String,Object,Multimap<String,String>) in KillBillHttpClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[42,61] [deprecation] getEmailsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[46,22] [deprecation] addEmailToAccount(AccountEmail,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[49,62] [deprecation] getEmailsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[55,22] [deprecation] addEmailToAccount(AccountEmail,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[58,61] [deprecation] getEmailsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[66,22] [deprecation] removeEmailFromAccount(AccountEmail,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[69,62] [deprecation] getEmailsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[75,22] [deprecation] addEmailToAccount(AccountEmail,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestAccountEmail.java:[76,42] [deprecation] getEmailsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[55,43] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[59,36] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[72,46] [deprecation] getInvoicesForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[80,49] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[90,33] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[101,26] [deprecation] createCredit(Credit,Boolean,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestCredit.java:[109,33] [deprecation] getCredit(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestTenantKV.java:[56,51] [deprecation] registerPluginConfigurationForTenant(String,String,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestTenantKV.java:[59,51] [deprecation] getPluginConfigurationForTenant(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestTenantKV.java:[63,22] [deprecation] unregisterPluginConfigurationForTenant(String,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestTenantKV.java:[64,51] [deprecation] getPluginConfigurationForTenant(String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[69,22] [deprecation] createTenant(Tenant,String,String,String) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[84,48] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[108,47] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[111,49] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[121,49] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[134,47] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218272088/profiles/killbill/src/test/java/org/killbill/billing/jaxrs/TestPerTenantConfig.java:[137,49] [deprecation] getPaymentsForAccount(UUID) in KillBillClient has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-profiles-killbill ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218272088/profiles/killbill/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+11:41:55.553 [main   ] [31mWARN [0;39m [36mo.k.b.p.c.DefaultKillbillConfigSource[0;39m - System property java.security.egd has not been set, this may cause some requests to hang because of a lack of entropy. You should probably set it to 'file:/dev/./urandom' 
+11:41:55.563 [main   ] [34mINFO [0;39m [36mo.k.b.p.t.PlatformDBTestingHelper[0;39m - Using MySQL as the embedded database 
+11:41:56.081 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:56.083 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:56.084 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:56.084 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:56.085 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:56.086 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:56.086 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:56.086 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:56.087 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:56.087 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:56.087 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:56.160 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:56.160 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:56.161 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:56.161 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:56.161 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:56.161 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:56.161 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:56.162 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:56.162 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:56.162 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:56.162 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.269 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.270 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.271 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.287 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.287 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.287 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.287 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.287 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.288 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.288 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.288 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.288 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.288 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.510 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.510 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithPathLikeUrlAndNonRoot 
+11:41:57.510 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithPathLikeUrlAndNonRoot SUCCESS (0 s.) 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithPathLikeUrlAndRoot 
+11:41:57.567 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.568 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.569 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithPathLikeUrlAndRoot SUCCESS (0 s.) 
+11:41:57.569 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.569 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.569 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithoutPathLikeUrlAndNonRoot 
+11:41:57.569 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.570 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.571 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithoutPathLikeUrlAndNonRoot SUCCESS (0 s.) 
+11:41:57.571 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.571 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.571 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithoutPathLikeUrlAndRoot 
+11:41:57.571 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.572 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.572 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.jaxrs.TestBuildResponse:testUriBuilderWithoutPathLikeUrlAndRoot SUCCESS (0 s.) 
+11:41:57.572 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:57.574 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:57.575 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:57.575 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:57.575 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:57.575 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:57.575 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:57.576 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:57.577 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:57.577 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:57.577 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.638 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.639 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.639 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.639 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.639 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.640 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.640 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.640 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.640 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.641 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.641 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.641 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.641 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.641 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.642 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.642 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.642 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.642 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.644 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.644 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestConfigMagicObfuscator:testKey 
+11:41:57.644 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestConfigMagicObfuscator:testKey SUCCESS (0 s.) 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestConfigMagicObfuscator:testPassword 
+11:41:57.649 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestConfigMagicObfuscator:testPassword SUCCESS (0 s.) 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.dao.TestEmbeddedDBFactory:testJdbcParser 
+11:41:57.650 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.652 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.user] on [org.killbill.commons.jdbi.guice.DaoConfig#getUsername()] 
+11:41:57.652 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.password] on [org.killbill.commons.jdbi.guice.DaoConfig#getPassword()] 
+11:41:57.652 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [jdbc:mysql://127.0.0.1:3306/killbill] for [org.killbill.dao.url] on [org.killbill.commons.jdbi.guice.DaoConfig#getJdbcUrl()] 
+11:41:57.653 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.dao.maxActive] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxActive()] 
+11:41:57.653 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.connectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionTimeout()] 
+11:41:57.653 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [60m] for [org.killbill.dao.idleMaxAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleMaxAge()] 
+11:41:57.653 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [0m] for [org.killbill.dao.maxConnectionAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxConnectionAge()] 
+11:41:57.653 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.dao.idleConnectionTestPeriod] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleConnectionTestPeriod()] 
+11:41:57.654 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.connectionInitSql] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionInitSql()] 
+11:41:57.654 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [500] for [org.killbill.dao.prepStmtCacheSize] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSize()] 
+11:41:57.654 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [2048] for [org.killbill.dao.prepStmtCacheSqlLimit] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSqlLimit()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [1] for [org.killbill.dao.minIdle] on [org.killbill.commons.jdbi.guice.DaoConfig#getMinIdle()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.cachePrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isPreparedStatementsCacheEnabled()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.useServerPrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isServerSidePreparedStatementsEnabled()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.dataSourceClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDataSourceClassName()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.driverClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDriverClassName()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [4.0] for [org.killbill.dao.mysqlServerVersion] on [org.killbill.commons.jdbi.guice.DaoConfig#getMySQLServerVersion()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [DEBUG] for [org.killbill.dao.logLevel] on [org.killbill.commons.jdbi.guice.DaoConfig#getLogLevel()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [HIKARICP] for [org.killbill.dao.poolingType] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionPoolingType()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.healthCheckConnectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckConnectionTimeout()] 
+11:41:57.655 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [50ms] for [org.killbill.dao.healthCheckExpected99thPercentile] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckExpected99thPercentile()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.user] on [org.killbill.commons.jdbi.guice.DaoConfig#getUsername()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.password] on [org.killbill.commons.jdbi.guice.DaoConfig#getPassword()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [jdbc:h2:file:killbill;MODE=MYSQL;DB_CLOSE_DELAY=-1;MVCC=true;DB_CLOSE_ON_EXIT=FALSE] for [org.killbill.dao.url] on [org.killbill.commons.jdbi.guice.DaoConfig#getJdbcUrl()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.dao.maxActive] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxActive()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.connectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionTimeout()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [60m] for [org.killbill.dao.idleMaxAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleMaxAge()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [0m] for [org.killbill.dao.maxConnectionAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxConnectionAge()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.dao.idleConnectionTestPeriod] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleConnectionTestPeriod()] 
+11:41:57.667 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.connectionInitSql] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionInitSql()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [500] for [org.killbill.dao.prepStmtCacheSize] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSize()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [2048] for [org.killbill.dao.prepStmtCacheSqlLimit] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSqlLimit()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [1] for [org.killbill.dao.minIdle] on [org.killbill.commons.jdbi.guice.DaoConfig#getMinIdle()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.cachePrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isPreparedStatementsCacheEnabled()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.useServerPrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isServerSidePreparedStatementsEnabled()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.dataSourceClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDataSourceClassName()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.driverClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDriverClassName()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [4.0] for [org.killbill.dao.mysqlServerVersion] on [org.killbill.commons.jdbi.guice.DaoConfig#getMySQLServerVersion()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [DEBUG] for [org.killbill.dao.logLevel] on [org.killbill.commons.jdbi.guice.DaoConfig#getLogLevel()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [HIKARICP] for [org.killbill.dao.poolingType] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionPoolingType()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.healthCheckConnectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckConnectionTimeout()] 
+11:41:57.668 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [50ms] for [org.killbill.dao.healthCheckExpected99thPercentile] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckExpected99thPercentile()] 
+11:41:57.688 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.user] on [org.killbill.commons.jdbi.guice.DaoConfig#getUsername()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.password] on [org.killbill.commons.jdbi.guice.DaoConfig#getPassword()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [jdbc:postgresql://127.0.0.1:5432/killbill] for [org.killbill.dao.url] on [org.killbill.commons.jdbi.guice.DaoConfig#getJdbcUrl()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.dao.maxActive] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxActive()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.connectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionTimeout()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [60m] for [org.killbill.dao.idleMaxAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleMaxAge()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [0m] for [org.killbill.dao.maxConnectionAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxConnectionAge()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.dao.idleConnectionTestPeriod] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleConnectionTestPeriod()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.connectionInitSql] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionInitSql()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [500] for [org.killbill.dao.prepStmtCacheSize] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSize()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [2048] for [org.killbill.dao.prepStmtCacheSqlLimit] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSqlLimit()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [1] for [org.killbill.dao.minIdle] on [org.killbill.commons.jdbi.guice.DaoConfig#getMinIdle()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.cachePrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isPreparedStatementsCacheEnabled()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.useServerPrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isServerSidePreparedStatementsEnabled()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.dataSourceClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDataSourceClassName()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.driverClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDriverClassName()] 
+11:41:57.689 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [4.0] for [org.killbill.dao.mysqlServerVersion] on [org.killbill.commons.jdbi.guice.DaoConfig#getMySQLServerVersion()] 
+11:41:57.690 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [DEBUG] for [org.killbill.dao.logLevel] on [org.killbill.commons.jdbi.guice.DaoConfig#getLogLevel()] 
+11:41:57.690 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [HIKARICP] for [org.killbill.dao.poolingType] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionPoolingType()] 
+11:41:57.690 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.healthCheckConnectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckConnectionTimeout()] 
+11:41:57.690 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [50ms] for [org.killbill.dao.healthCheckExpected99thPercentile] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckExpected99thPercentile()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.user] on [org.killbill.commons.jdbi.guice.DaoConfig#getUsername()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [root] for [org.killbill.dao.password] on [org.killbill.commons.jdbi.guice.DaoConfig#getPassword()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [jdbc:derby://localhost:1527/killbill;collation=TERRITORY_BASED:PRIMARY] for [org.killbill.dao.url] on [org.killbill.commons.jdbi.guice.DaoConfig#getJdbcUrl()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.dao.maxActive] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxActive()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.connectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionTimeout()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [60m] for [org.killbill.dao.idleMaxAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleMaxAge()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [0m] for [org.killbill.dao.maxConnectionAge] on [org.killbill.commons.jdbi.guice.DaoConfig#getMaxConnectionAge()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.dao.idleConnectionTestPeriod] on [org.killbill.commons.jdbi.guice.DaoConfig#getIdleConnectionTestPeriod()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.connectionInitSql] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionInitSql()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [500] for [org.killbill.dao.prepStmtCacheSize] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSize()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [2048] for [org.killbill.dao.prepStmtCacheSqlLimit] on [org.killbill.commons.jdbi.guice.DaoConfig#getPreparedStatementsCacheSqlLimit()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [1] for [org.killbill.dao.minIdle] on [org.killbill.commons.jdbi.guice.DaoConfig#getMinIdle()] 
+11:41:57.691 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.cachePrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isPreparedStatementsCacheEnabled()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [true] for [org.killbill.dao.useServerPrepStmts] on [org.killbill.commons.jdbi.guice.DaoConfig#isServerSidePreparedStatementsEnabled()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.dataSourceClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDataSourceClassName()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning null default value for [org.killbill.dao.driverClassName] on [org.killbill.commons.jdbi.guice.DaoConfig#getDriverClassName()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [4.0] for [org.killbill.dao.mysqlServerVersion] on [org.killbill.commons.jdbi.guice.DaoConfig#getMySQLServerVersion()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [DEBUG] for [org.killbill.dao.logLevel] on [org.killbill.commons.jdbi.guice.DaoConfig#getLogLevel()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [HIKARICP] for [org.killbill.dao.poolingType] on [org.killbill.commons.jdbi.guice.DaoConfig#getConnectionPoolingType()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10s] for [org.killbill.dao.healthCheckConnectionTimeout] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckConnectionTimeout()] 
+11:41:57.692 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [50ms] for [org.killbill.dao.healthCheckExpected99thPercentile] on [org.killbill.commons.jdbi.guice.DaoConfig#getHealthCheckExpected99thPercentile()] 
+11:41:57.693 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.693 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.dao.TestEmbeddedDBFactory:testJdbcParser SUCCESS (0 s.) 
+11:41:57.693 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:57.695 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:57.696 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.752 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.753 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.754 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.755 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.755 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.755 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.756 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.756 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvert 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvert SUCCESS (0 s.) 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.757 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvertCcNumberAtStartNonCcNumberAtEnd 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvertCcNumberAtStartNonCcNumberAtEnd SUCCESS (0 s.) 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvertMultiple 
+11:41:57.758 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testConvertMultiple SUCCESS (0 s.) 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLotsOfCcNumbers 
+11:41:57.759 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.760 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.760 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLotsOfCcNumbers SUCCESS (0 s.) 
+11:41:57.760 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLotsOfNonCcNumbers 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLotsOfNonCcNumbers SUCCESS (0 s.) 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLuhnBad 
+11:41:57.761 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLuhnBad SUCCESS (0 s.) 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLuhnGood 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testLuhnGood SUCCESS (0 s.) 
+11:41:57.762 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testQueryParametersAreObfuscated 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testQueryParametersAreObfuscated SUCCESS (0 s.) 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testStripSeparatorsDashes 
+11:41:57.763 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testStripSeparatorsDashes SUCCESS (0 s.) 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testStripSeparatorsSpaces 
+11:41:57.764 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.765 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.765 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestLuhnMaskingObfuscator:testStripSeparatorsSpaces SUCCESS (0 s.) 
+11:41:57.765 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.766 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:57.766 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:57.766 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:57.767 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:57.768 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:57.768 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:57.768 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:57.768 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:57.768 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.828 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.829 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.830 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.831 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.831 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.832 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.832 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateConfidentialData 
+11:41:57.832 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.832 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.832 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateConfidentialData SUCCESS (0 s.) 
+11:41:57.833 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.833 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.833 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateWithMultiplePatterns 
+11:41:57.833 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateWithMultiplePatterns SUCCESS (0 s.) 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateWithOnePattern 
+11:41:57.834 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.835 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.835 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestObfuscator:testObfuscateWithOnePattern SUCCESS (0 s.) 
+11:41:57.835 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:57.836 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:57.837 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:57.838 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:57.838 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:57.838 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:57.838 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.889 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.890 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.891 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.891 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.891 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.891 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.891 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.892 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.892 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestObfuscatorConverter:testLogNonSensitiveData 
+11:41:57.892 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.893 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.893 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestObfuscatorConverter:testLogNonSensitiveData SUCCESS (0 s.) 
+11:41:57.893 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.894 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.894 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestObfuscatorConverter:testLogSensitiveData 
+11:41:57.894 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.895 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.895 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestObfuscatorConverter:testLogSensitiveData SUCCESS (0 s.) 
+11:41:57.895 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.notificationq.main.claimed] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxEntriesClaimed()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.notificationq.main.queue.mode] on [org.killbill.notificationq.api.NotificationQueueConfig#getPersistentQueueMode()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.notificationq.main.sleep] on [org.killbill.notificationq.api.NotificationQueueConfig#getPollingSleepTimeMs()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.notification.off] on [org.killbill.notificationq.api.NotificationQueueConfig#isProcessingOff()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.notificationq.${instanceName}.claim.time] on [org.killbill.notificationq.api.NotificationQueueConfig#getClaimedTime()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [10] for [org.killbill.notificationq.${instanceName}.notification.nbThreads] on [org.killbill.notificationq.api.NotificationQueueConfig#geMaxDispatchThreads()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [100] for [org.killbill.notificationq.${instanceName}.queue.capacity] on [org.killbill.notificationq.api.NotificationQueueConfig#getEventQueueCapacity()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications] for [org.killbill.notificationq.${instanceName}.tableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getTableName()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [notifications_history] for [org.killbill.notificationq.${instanceName}.historyTableName] on [org.killbill.notificationq.api.NotificationQueueConfig#getHistoryTableName()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.notificationq.${instanceName}.inMemory] on [org.killbill.notificationq.api.NotificationQueueConfig#isInMemory()] 
+11:41:57.896 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.notificationq.${instanceName}.max.failure.retry] on [org.killbill.notificationq.api.NotificationQueueConfig#getMaxFailureRetries()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.claimed] on [org.killbill.bus.api.PersistentBusConfig#getMaxEntriesClaimed()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [STICKY_POLLING] for [org.killbill.persistent.bus.main.queue.mode] on [org.killbill.bus.api.PersistentBusConfig#getPersistentQueueMode()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [100] for [org.killbill.persistent.bus.main.sleep] on [org.killbill.bus.api.PersistentBusConfig#getPollingSleepTimeMs()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.off] on [org.killbill.bus.api.PersistentBusConfig#isProcessingOff()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [5m] for [org.killbill.persistent.bus.${instanceName}.claim.time] on [org.killbill.bus.api.PersistentBusConfig#getClaimedTime()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning value [1] for [org.killbill.persistent.bus.main.nbThreads] on [org.killbill.bus.api.PersistentBusConfig#geMaxDispatchThreads()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [30000] for [org.killbill.persistent.bus.${instanceName}.queue.capacity] on [org.killbill.bus.api.PersistentBusConfig#getEventQueueCapacity()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events] for [org.killbill.persistent.bus.${instanceName}.tableName] on [org.killbill.bus.api.PersistentBusConfig#getTableName()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [bus_events_history] for [org.killbill.persistent.bus.${instanceName}.historyTableName] on [org.killbill.bus.api.PersistentBusConfig#getHistoryTableName()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [false] for [org.killbill.persistent.bus.${instanceName}.inMemory] on [org.killbill.bus.api.PersistentBusConfig#isInMemory()] 
+11:41:57.897 [main   ] [34mINFO [0;39m [36mo.s.c.ConfigurationObjectFactory[0;39m - Assigning default value [3] for [org.killbill.persistent.bus.${instanceName}.max.failure.retry] on [org.killbill.bus.api.PersistentBusConfig#getMaxFailureRetries()] 
+11:41:57.949 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.entitlement.EntitlementService 
+11:41:57.949 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.invoice.api.InvoiceService 
+11:41:57.949 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.overdue.OverdueService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.config.ConfigKillbillService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.nodes.KillbillNodesService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.account.api.AccountService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.server.ServerService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.subscription.api.SubscriptionBaseService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.jaxrs.JaxrsService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.payment.api.PaymentService 
+11:41:57.950 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.catalog.api.CatalogService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.platform.api.OSGIService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.beatrix.bus.api.BeatrixService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.currency.api.CurrencyService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.tenant.api.TenantService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.lifecycle.api.ExternalBusService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.security.api.SecurityService 
+11:41:57.951 [main   ] [31mWARN [0;39m [36mo.k.b.l.DefaultLifecycle      [0;39m - Failed to inject org.killbill.billing.util.broadcast.BroadcastService 
+11:41:57.953 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.953 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testAdyen 
+11:41:57.953 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testAdyen SUCCESS (0 s.) 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testCyberSource 
+11:41:57.956 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.962 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.962 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testCyberSource SUCCESS (0 s.) 
+11:41:57.962 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.963 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.963 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testJSON 
+11:41:57.963 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testJSON !!! FAILURE !!! (0 s.) 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testLitle 
+11:41:57.969 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testLitle SUCCESS (0 s.) 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testPayU 
+11:41:57.971 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testPayU SUCCESS (0 s.) 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testPluginProperties 
+11:41:57.972 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.973 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.973 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testPluginProperties SUCCESS (0 s.) 
+11:41:57.973 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.973 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.974 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testProfilingHeaderIsNotObfuscated 
+11:41:57.974 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testProfilingHeaderIsNotObfuscated SUCCESS (0 s.) 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *** Starting test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testWithQuotedNewLines 
+11:41:57.977 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.978 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+11:41:57.978 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - ***   Ending test org.killbill.billing.server.log.obfuscators.TestPatternObfuscator:testWithQuotedNewLines SUCCESS (0 s.) 
+11:41:57.978 [main   ] [34mINFO [0;39m [36mKillbillTestSuite             [0;39m - *************************************************************************************************** 
+Tests run: 30, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.924 sec <<< FAILURE!
+testJSON(org.killbill.billing.server.log.obfuscators.TestPatternObfuscator)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: {
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : 111,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : 111 },
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+} expected [{
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : ***,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : ****},
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+}] but found [{
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : 111,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : 111 },
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.killbill.billing.server.log.obfuscators.TestPatternObfuscator.verify(TestPatternObfuscator.java:305)
+	at org.killbill.billing.server.log.obfuscators.TestPatternObfuscator.verify(TestPatternObfuscator.java:300)
+	at org.killbill.billing.server.log.obfuscators.TestPatternObfuscator.testJSON(TestPatternObfuscator.java:179)
+
+
+Results :
+
+Failed tests: 
+  TestPatternObfuscator.testJSON:179->verify:300->verify:305 {
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : 111,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : 111 },
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+} expected [{
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : ***,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : ****},
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+}] but found [{
+  "card": {
+    "id": "card_483etw4er9fg4vF3sQdrt3FG",
+    "object": "card",
+    "banknumber": ****************,
+    "cvv" : 111,
+    "cvv": ***,
+    "cvv": *****,
+    "data": {"cvv" : 111 },
+    "last4": "0000",
+    "brand": "Visa",
+    "funding": "credit",
+    "exp_month": 6,
+    "exp_year": 2019,
+    "fingerprint": "HOh74kZU387WlUvy",
+    "country": "US",
+    "name": ***********,
+    "address_line1": null,
+    "address_line2": null,
+    "address_city": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_country": null,
+    "dynamic_last4": "4242",
+    "customer": null,
+    "type": "Visa"}
+}]
+
+Tests run: 30, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] killbill ........................................... SUCCESS [  0.303 s]
+[INFO] killbill-api ....................................... SUCCESS [  2.292 s]
+[INFO] killbill-util ...................................... SUCCESS [ 32.228 s]
+[INFO] killbill-tenant .................................... SUCCESS [  3.114 s]
+[INFO] killbill-account ................................... SUCCESS [  5.864 s]
+[INFO] killbill-catalog ................................... SUCCESS [ 11.363 s]
+[INFO] killbill-currency .................................. SUCCESS [  1.201 s]
+[INFO] killbill-subscription .............................. SUCCESS [ 18.523 s]
+[INFO] killbill-entitlement ............................... SUCCESS [ 10.257 s]
+[INFO] killbill-usage ..................................... SUCCESS [  2.875 s]
+[INFO] killbill-invoice ................................... SUCCESS [ 13.879 s]
+[INFO] killbill-junction .................................. SUCCESS [  5.803 s]
+[INFO] killbill-overdue ................................... SUCCESS [  6.935 s]
+[INFO] killbill-payment ................................... SUCCESS [ 14.526 s]
+[INFO] killbill-beatrix ................................... SUCCESS [  6.099 s]
+[INFO] killbill-jaxrs ..................................... SUCCESS [  8.266 s]
+[INFO] killbill-profiles .................................. SUCCESS [  0.002 s]
+[INFO] killbill-profiles-killbill ......................... FAILURE [  7.833 s]
+[INFO] killbill-profiles-killpay .......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:32 min
+[INFO] Finished at: 2017-05-11T13:41:58+02:00
+[INFO] Final Memory: 39M/1576M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.13:test (default-test) on project killbill-profiles-killbill: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/killbill/killbill/218272088/profiles/killbill/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :killbill-profiles-killbill

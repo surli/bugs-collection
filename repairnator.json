@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "killbill/killbill",
+  "bugCommit": "https://github.com/killbill/killbill/compare/df756ed3ab93...b18e0a2778ea",
+  "failingModule": "/root/workspace/killbill/killbill/218272088/profiles/killbill",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 712,
+  "failing-test-cases": [
+    {
+      "className": "org.killbill.billing.server.log.obfuscators.TestPatternObfuscator",
+      "failingMethods": [
+        "org.killbill.billing.server.log.obfuscators.TestPatternObfuscator#testJSON"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "{   \"card\": {     \"id\": \"card_483etw4er9fg4vF3sQdrt3FG\",     \"object\": \"card\",     \"banknumber\": ****************,     \"cvv\" : 111,     \"cvv\": ***,     \"cvv\": *****,     \"data\": {\"cvv\" : 111 },     \"last4\": \"0000\",     \"brand\": \"Visa\",     \"funding\": \"credit\",     \"exp_month\": 6,     \"exp_year\": 2019,     \"fingerprint\": \"HOh74kZU387WlUvy\",     \"country\": \"US\",     \"name\": ***********,     \"address_line1\": null,     \"address_line2\": null,     \"address_city\": null,     \"address_state\": null,     \"address_zip\": null,     \"address_country\": null,     \"dynamic_last4\": \"4242\",     \"customer\": null,     \"type\": \"Visa\"} } expected [{   \"card\": {     \"id\": \"card_483etw4er9fg4vF3sQdrt3FG\",     \"object\": \"card\",     \"banknumber\": ****************,     \"cvv\" : ***,     \"cvv\": ***,     \"cvv\": *****,     \"data\": {\"cvv\" : ****},     \"last4\": \"0000\",     \"brand\": \"Visa\",     \"funding\": \"credit\",     \"exp_month\": 6,     \"exp_year\": 2019,     \"fingerprint\": \"HOh74kZU387WlUvy\",     \"country\": \"US\",     \"name\": ***********,     \"address_line1\": null,     \"address_line2\": null,     \"address_city\": null,     \"address_state\": null,     \"address_zip\": null,     \"address_country\": null,     \"dynamic_last4\": \"4242\",     \"customer\": null,     \"type\": \"Visa\"} }] but found [{   \"card\": {     \"id\": \"card_483etw4er9fg4vF3sQdrt3FG\",     \"object\": \"card\",     \"banknumber\": ****************,     \"cvv\" : 111,     \"cvv\": ***,     \"cvv\": *****,     \"data\": {\"cvv\" : 111 },     \"last4\": \"0000\",     \"brand\": \"Visa\",     \"funding\": \"credit\",     \"exp_month\": 6,     \"exp_year\": 2019,     \"fingerprint\": \"HOh74kZU387WlUvy\",     \"country\": \"US\",     \"name\": ***********,     \"address_line1\": null,     \"address_line2\": null,     \"address_city\": null,     \"address_state\": null,     \"address_zip\": null,     \"address_country\": null,     \"dynamic_last4\": \"4242\",     \"customer\": null,     \"type\": \"Visa\"} }]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
