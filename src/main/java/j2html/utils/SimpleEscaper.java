@@ -2,11 +2,14 @@ package j2html.utils;
 
 public class SimpleEscaper {
 
-    public static String escape(String string) {
+    public static String escape(String s) {
+        if (s == null) {
+            return null;
+        }
         StringBuilder escapedText = new StringBuilder();
         char currentChar;
-        for (int i = 0; i < string.length(); i++) {
-            currentChar = string.charAt(i);
+        for (int i = 0; i < s.length(); i++) {
+            currentChar = s.charAt(i);
             switch (currentChar) {
                 case '<':
                     escapedText.append("&lt;");
@@ -22,9 +25,6 @@ public class SimpleEscaper {
                     break;
                 case '\'':
                     escapedText.append("&#x27;");
-                    break;
-                case '/':
-                    escapedText.append("&#x2F;");
                     break;
                 default:
                     escapedText.append(currentChar);
