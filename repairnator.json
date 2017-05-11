@@ -1,0 +1,124 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/3974a3cccc61...9e7e37d4320a",
+  "failingModule": "/root/workspace/google/error-prone/196717342/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 13,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1893,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest#suppressedAtBothMethods",
+        "com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest#suppressedAtMethod"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 7. All errors:\n[/A.java:7: warning: [AmbiguousMethodReference] This method\u0027s reference is ambiguous, its name and functional interface type are the same as: c(A, D)\n  B c(D d) {\n    ^\n    (see http://errorprone.info/bugpattern/AmbiguousMethodReference)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 7. All errors:\n[/A.java:7: warning: [AmbiguousMethodReference] This method\u0027s reference is ambiguous, its name and functional interface type are the same as: c(A, D)\n  B c(D d) {\n    ^\n    (see http://errorprone.info/bugpattern/AmbiguousMethodReference)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.ForOverrideCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.ForOverrideCheckerTest#testUserCanCallSuperFromOverridden"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 5. All errors:\n[/test/Test.java:5: error: [ForOverride] Method annotated @ForOverride must not be invoked directly (except by the declaring class, test.ExtendMe)\n    return super.overrideMe();\n                           ^\n    (see http://errorprone.info/bugpattern/ForOverride)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsExpectAsIdentifier",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsVerifyAsIdentifier",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedVerify",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsAssertAsIdentifier",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedAssert",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedCheck",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsCheckAsIdentifier",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedExpect",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsFailAsIdentifier",
+        "com.google.errorprone.bugpatterns.JUnit4TestNotRunTest#testContainsQualifiedFail"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 8 matching @Test. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching @Test. All errors:\n[]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 10,
+      "nbErrors": 0
+    }
+  ]
+}
