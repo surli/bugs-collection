@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-cloud/spring-cloud-aws",
+  "bugCommit": "https://github.com/spring-cloud/spring-cloud-aws/compare/5af126069195...b2d1f58e2d3a",
+  "failingModule": "/root/workspace/spring-cloud/spring-cloud-aws/227118162/spring-cloud-aws-messaging",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 508,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.cloud.aws.messaging.listener.MessageListenerContainerTest",
+      "failingMethods": [
+        "org.springframework.cloud.aws.messaging.listener.MessageListenerContainerTest#receiveMessageRequests_withDestinationResolverThrowingException_shouldLogWarningAndNotCreateRequest"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...me \u0027testQueue\u0027 as it[]does not exist.\u003e but was:\u003c...me \u0027testQueue\u0027 as it[ ]does not exist.\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
