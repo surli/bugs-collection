@@ -1,0 +1,55 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "alibaba/fastjson",
+  "bugCommit": "https://github.com/alibaba/fastjson/compare/c5c48345eb44538d80408d1cb252394e63af1040...ffd59d00a5cc398304b80f5b4acc1c3531506a43",
+  "failingModule": "/root/workspace/alibaba/fastjson/225129373",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "com.alibaba.fastjson.JSONException",
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 3758,
+  "failing-test-cases": [
+    {
+      "className": "com.alibaba.json.bvt.issue_1100.Issue1150",
+      "failingMethods": [
+        "com.alibaba.json.bvt.issue_1100.Issue1150#test_for_issue"
+      ],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.issue_1100.Issue1150#test_for_issue_array"
+      ],
+      "failures": [
+        {
+          "failureName": "com.alibaba.fastjson.JSONException",
+          "failureDetail": "[B cannot be cast to [Lcom.alibaba.json.bvt.issue_1100.Issue1150$Item;",
+          "isError": true
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Expected: \u003cnull\u003e but was: []",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.alibaba.json.bvt.parser.number.NumberEmtpyObjectTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.parser.number.NumberEmtpyObjectTest#test_for_emptyObj"
+      ],
+      "failures": [
+        {
+          "failureName": "com.alibaba.fastjson.JSONException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
