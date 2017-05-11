@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+    xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+    xmlns:t="urn:import:org.ovirt.engine.ui.common.widget.dialog.tab"
+    xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:with field='constants' type='org.ovirt.engine.ui.webadmin.ApplicationConstants' />
+
+    <d:SimpleDialogPanel header="{constants.configurePopupTitle}" height="600px" width="1060px">
+        <d:content>
+            <t:DialogTabPanel height="100%" width="100%">
+                <t:tab>
+                    <t:DialogTab ui:field="rolesTab">
+                        <t:content>
+                            <g:SimplePanel ui:field="rolesTabPanel" />
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+                <t:tab>
+                    <t:DialogTab ui:field="systemPermissionsTab">
+                        <t:content>
+                            <g:SimplePanel ui:field="systemPermissionTabPanel" />
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+                <t:tab>
+                    <t:DialogTab ui:field="clusterPoliciesTab">
+                        <t:content>
+                            <g:SimplePanel ui:field="clusterPoliciesTabPanel" />
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+                <t:tab>
+                    <t:DialogTab ui:field="instanceTypesTab">
+                        <t:content>
+                            <g:SimplePanel ui:field="instanceTypesTabPanel" />
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+                <t:tab>
+                    <t:DialogTab ui:field="macPoolsTab">
+                        <t:content>
+                            <g:SimplePanel ui:field="macPoolsTabPanel" />
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+            </t:DialogTabPanel>
+        </d:content>
+
+        <d:footerButton>
+            <d:SimpleDialogButton ui:field="closeButton" />
+        </d:footerButton>
+    </d:SimpleDialogPanel>
+
+</ui:UiBinder>
