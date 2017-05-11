@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/029413a6e381...9bb4f3b63f07",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/226899905",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 1978,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.jsontype.TestSubtypes",
+      "failingMethods": [
+        "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testSubclassLimits"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Should have hit `InvalidTypeIdException`, not `com.fasterxml.jackson.databind.JsonMappingException`: com.fasterxml.jackson.databind.JsonMappingException: Class com.fasterxml.jackson.databind.jsontype.TestSubtypes$TheBomb not subtype of [simple type, class java.util.Date] (through reference chain: com.fasterxml.jackson.databind.jsontype.TestSubtypes$DateWrapper[\"value\"])",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
