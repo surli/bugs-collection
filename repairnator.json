@@ -1,0 +1,101 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "rest-assured/rest-assured",
+  "bugCommit": "https://github.com/rest-assured/rest-assured/compare/b94b61492d02...3b56edef299d",
+  "failingModule": "/root/workspace/rest-assured/rest-assured/226732957/modules/spring-mock-mvc",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 9,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 379,
+  "failing-test-cases": [
+    {
+      "className": "io.restassured.module.mockmvc.LoggingIfValidationFailsTest",
+      "failingMethods": [
+        "io.restassured.module.mockmvc.LoggingIfValidationFailsTest#logging_of_both_request_and_response_validation_works_when_test_fails"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\\n200\\nContent-Type: application/json;charset\u003dUTF-8\\n\\n{\\n    \\\"id\\\": 1,\\n    \\\"content\\\": \\\"Hello, Johan!\\\"\\n}\\n\"      but: was \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\\n200\\nContent-Type: application/json;charset\u003dUTF-8\\n\\n{\\n    \\\"id\\\": 1,\\n    \\\"content\\\": \\\"Hello, Johan!\\\"\\n}\\n\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.restassured.module.mockmvc.MockMvcRequestSpecificationMergingTest",
+      "failingMethods": [
+        "io.restassured.module.mockmvc.MockMvcRequestSpecificationMergingTest#logging_is_overwritten_when_defined_in_specification",
+        "io.restassured.module.mockmvc.MockMvcRequestSpecificationMergingTest#logging_is_not_overwritten_when_not_defined_in_specification"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...Path params: \u003cnone\u003e []Multiparts:  \u003cnone\u003e ...\u003e but was:\u003c...Path params: \u003cnone\u003e [ ]Multiparts:  \u003cnone\u003e ...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e\u003e Cookies:  \u003cnone\u003e []Multiparts:  \u003cnone\u003e ...\u003e but was:\u003c...e\u003e Cookies:  \u003cnone\u003e [ ]Multiparts:  \u003cnone\u003e ...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.restassured.module.mockmvc.RequestLoggingTest",
+      "failingMethods": [
+        "io.restassured.module.mockmvc.RequestLoggingTest#logging_query_param_works",
+        "io.restassured.module.mockmvc.RequestLoggingTest#logging_form_param_works",
+        "io.restassured.module.mockmvc.RequestLoggingTest#logging_if_request_validation_fails_works",
+        "io.restassured.module.mockmvc.RequestLoggingTest#can_supply_string_as_body_for_post",
+        "io.restassured.module.mockmvc.RequestLoggingTest#base_path_is_prepended_to_path_when_logging",
+        "io.restassured.module.mockmvc.RequestLoggingTest#logging_param_works"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tGET\\nRequest URI:\\thttp://localhost:8080/greeting?name\u003dJohan\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\tname\u003dJohan\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"      but: was \"Request method:\\tGET\\nRequest URI:\\thttp://localhost:8080/greeting?name\u003dJohan\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\tname\u003dJohan\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\tname\u003dJohan\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"      but: was \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\tname\u003dJohan\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"      but: was \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"      but: was \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/greetingPost\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\tContent-Type\u003dapplication/x-www-form-urlencoded;charset\u003dISO-8859-1\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tGET\\nRequest URI:\\thttp://localhost:8080/my-path/greetingPath?name\u003dJohan\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"      but: was \"Request method:\\tGET\\nRequest URI:\\thttp://localhost:8080/my-path/greetingPath?name\u003dJohan\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\tname\u003dJohan\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\t\\t\\t\u003cnone\u003e\\n\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/stringBody\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\na string\\n\"      but: was \"Request method:\\tPOST\\nRequest URI:\\thttp://localhost:8080/stringBody\\nProxy:\\t\\t\\t\u003cnone\u003e\\nRequest params:\\t\u003cnone\u003e\\nQuery params:\\t\u003cnone\u003e\\nForm params:\\t\u003cnone\u003e\\nPath params:\\t\u003cnone\u003e\\nHeaders:\\t\\t\u003cnone\u003e\\nCookies:\\t\\t\u003cnone\u003e\\n\\nMultiparts:\\t\\t\u003cnone\u003e\\nBody:\\na string\\n\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    }
+  ]
+}
