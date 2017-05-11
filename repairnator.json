@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/ce96268a2c63...90a792107506",
+  "failingModule": "/root/workspace/google/error-prone/218631193/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2126,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.MutableConstantFieldTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.MutableConstantFieldTest#staticFinalMapInitializedInDeclarationWithImmutableBiMapOf_suggestsFix"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 5 matching static final ImmutableMap\u003cString, String\u003e FOO \u003d. All errors:\n[/Test.java:5: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)\n  static final Map\u003cString, String\u003e FOO \u003d ImmutableBiMap.of();\n                  ^\n    (see http://errorprone.info/bugpattern/MutableConstantField)\n  Did you mean \u0027static final ImmutableBiMap\u003cString, String\u003e FOO \u003d ImmutableBiMap.of();\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest#testNegativeCase"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 80. All errors:\n[/com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:80: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.\n    t.fork();\n          ^\n    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)\n  Did you mean \u0027@SuppressWarnings(\"unused\")\u0027?, /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:84: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.\n    t.fork();\n          ^\n    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)\n  Did you mean \u0027@SuppressWarnings(\"unused\")\u0027?, Note: /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java uses unchecked or unsafe operations., Note: Recompile with -Xlint:unchecked for details.]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
