@@ -1,0 +1,46 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.MutableConstantFieldTest', failingMethods=[com.google.errorprone.bugpatterns.MutableConstantFieldTest#staticFinalMapInitializedInDeclarationWithImmutableBiMapOf_suggestsFix], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 5 matching static final ImmutableMap<String, String> FOO =. All errors:
+[/Test.java:5: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  static final Map<String, String> FOO = ImmutableBiMap.of();
+                  ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'static final ImmutableBiMap<String, String> FOO = ImmutableBiMap.of();'?]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:33:01 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/218631193/check_api/src/main/java, /root/./workspace/google/error-prone/218631193/check_api/src/main/java, ./workspace/google/error-prone/218631193/test_helpers/src/main/java, /root/./workspace/google/error-prone/218631193/test_helpers/src/main/java, ./workspace/google/error-prone/218631193/core/src/main/java, /root/./workspace/google/error-prone/218631193/core/src/main/java, ./workspace/google/error-prone/218631193/annotation/src/main/java, /root/./workspace/google/error-prone/218631193/annotation/src/main/java, ./workspace/google/error-prone/218631193/annotations/src/main/java, /root/./workspace/google/error-prone/218631193/annotations/src/main/java, ./workspace/google/error-prone/218631193/docgen/src/main/java, /root/./workspace/google/error-prone/218631193/docgen/src/main/java, ./workspace/google/error-prone/218631193/docgen_processor/src/main/java, /root/./workspace/google/error-prone/218631193/docgen_processor/src/main/java, ./workspace/google/error-prone/218631193/ant/src/main/java, /root/./workspace/google/error-prone/218631193/ant/src/main/java, ./workspace/google/error-prone/218631193/refaster/src/main/java, /root/./workspace/google/error-prone/218631193/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@3fabf088', projectTests=[com.google.errorprone.bugpatterns.MutableConstantFieldTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest', failingMethods=[com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest#testNegativeCase], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 80. All errors:
+[/com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:80: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.
+    t.fork();
+          ^
+    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)
+  Did you mean '@SuppressWarnings("unused")'?, /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java:84: error: [FutureReturnValueIgnored] Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.
+    t.fork();
+          ^
+    (see http://errorprone.info/bugpattern/FutureReturnValueIgnored)
+  Did you mean '@SuppressWarnings("unused")'?, Note: /com/google/errorprone/bugpatterns/FutureReturnValueIgnoredNegativeCases.java uses unchecked or unsafe operations., Note: Recompile with -Xlint:unchecked for details.]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:33:14 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/218631193/check_api/src/main/java, /root/./workspace/google/error-prone/218631193/check_api/src/main/java, ./workspace/google/error-prone/218631193/test_helpers/src/main/java, /root/./workspace/google/error-prone/218631193/test_helpers/src/main/java, ./workspace/google/error-prone/218631193/core/src/main/java, /root/./workspace/google/error-prone/218631193/core/src/main/java, ./workspace/google/error-prone/218631193/annotation/src/main/java, /root/./workspace/google/error-prone/218631193/annotation/src/main/java, ./workspace/google/error-prone/218631193/annotations/src/main/java, /root/./workspace/google/error-prone/218631193/annotations/src/main/java, ./workspace/google/error-prone/218631193/docgen/src/main/java, /root/./workspace/google/error-prone/218631193/docgen/src/main/java, ./workspace/google/error-prone/218631193/docgen_processor/src/main/java, /root/./workspace/google/error-prone/218631193/docgen_processor/src/main/java, ./workspace/google/error-prone/218631193/ant/src/main/java, /root/./workspace/google/error-prone/218631193/ant/src/main/java, ./workspace/google/error-prone/218631193/refaster/src/main/java, /root/./workspace/google/error-prone/218631193/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@46eb2260', projectTests=[com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
