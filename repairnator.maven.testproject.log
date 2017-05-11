@@ -34,18 +34,12 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-common ---
 [INFO] Surefire report directory: /root/workspace/hypercube1024/firefly/219553435/firefly-common/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 114.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 693.4 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running test.utils.TestVerifyUtils
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running test.utils.lang.pool.TestAsyncPool
 o -> 0
 o2 -> 0
@@ -172,53 +166,31 @@ loop num -> 97
 loop num -> 98
 loop num -> 99
 get o: 1| created object size: 8
-get o: 2| created object size: 8
 get o: 4| created object size: 8
 get o: 5| created object size: 8
-get o: 7| created object size: 8
-get o: 8| created object size: 8
-com.firefly.utils.exception.CommonRuntimeException: test create pooled object: 3 exception
 com.firefly.utils.exception.CommonRuntimeException: test create pooled object: 6 exception
-get o: 2| created object size: 6
-get o: 1| created object size: 6
-get o: 4| created object size: 6
-get o: 5| created object size: 6
-get o: 7| created object size: 6
+get o: 7| created object size: 7
+get o: 8| created object size: 7
+get o: 2| created object size: 8
+com.firefly.utils.exception.CommonRuntimeException: test create pooled object: 3 exception
 get o: 8| created object size: 6
-get o: 2| created object size: 6
-get o: 5| created object size: 6
-get o: 1| created object size: 6
-get o: 4| created object size: 6
 get o: 7| created object size: 6
-get o: 8| created object size: 6
-get o: 2| created object size: 6
-get o: 5| created object size: 6
 get o: 1| created object size: 6
+get o: 2| created object size: 6
 get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
 get o: 7| created object size: 6
-get o: 8| created object size: 6
-get o: 2| created object size: 6
-get o: 5| created object size: 6
-get o: 4| created object size: 6
 get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
 get o: 7| created object size: 6
-get o: 8| created object size: 6
-get o: 1| created object size: 6
-get o: 5| created object size: 6
-get o: 2| created object size: 6
-get o: 4| created object size: 6
-get o: 7| created object size: 6
-get o: 8| created object size: 6
 get o: 1| created object size: 6
 get o: 2| created object size: 6
 get o: 4| created object size: 6
 get o: 5| created object size: 6
-get o: 7| created object size: 6
-get o: 8| created object size: 6
-get o: 1| created object size: 6
-get o: 2| created object size: 6
-get o: 5| created object size: 6
-get o: 4| created object size: 6
 get o: 8| created object size: 6
 get o: 7| created object size: 6
 get o: 1| created object size: 6
@@ -235,49 +207,71 @@ get o: 8| created object size: 6
 get o: 7| created object size: 6
 get o: 1| created object size: 6
 get o: 2| created object size: 6
-get o: 5| created object size: 6
 get o: 4| created object size: 6
+get o: 5| created object size: 6
 get o: 8| created object size: 6
 get o: 7| created object size: 6
 get o: 1| created object size: 6
 get o: 2| created object size: 6
+get o: 4| created object size: 6
 get o: 5| created object size: 6
 get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 7| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
 get o: 4| created object size: 6
 get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 8| created object size: 6
 get o: 2| created object size: 6
 get o: 5| created object size: 6
 get o: 1| created object size: 6
-get o: 8| created object size: 6
 get o: 7| created object size: 6
 get o: 4| created object size: 6
-get o: 1| created object size: 6
+get o: 8| created object size: 6
 get o: 2| created object size: 6
 get o: 5| created object size: 6
-get o: 8| created object size: 6
-get o: 4| created object size: 6
+get o: 1| created object size: 6
 get o: 7| created object size: 6
-get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
 get o: 2| created object size: 6
 get o: 1| created object size: 6
-get o: 4| created object size: 6
 get o: 7| created object size: 6
-get o: 8| created object size: 6
 get o: 5| created object size: 6
-get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
 get o: 2| created object size: 6
-get o: 4| created object size: 6
-get o: 7| created object size: 6
-get o: 8| created object size: 6
-get o: 5| created object size: 6
 get o: 1| created object size: 6
+get o: 7| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
 6
-destory obj - [2]
-destory obj - [4]
 destory obj - [7]
-destory obj - [8]
-destory obj - [5]
+destory obj - [4]
 destory obj - [1]
+destory obj - [5]
+destory obj - [8]
+destory obj - [2]
 destory obj - [0]
 destory obj - [1]
 destory obj - [2]
@@ -394,152 +388,123 @@ get o: 5| created object size: 8
 get o: 6| created object size: 8
 get o: 7| created object size: 8
 get o: 8| created object size: 8
-destory obj - [1]
+get o: 1| created object size: 8
 get o: 2| created object size: 8
-get o: 3| created object size: 8
 get o: 4| created object size: 8
-get o: 5| created object size: 8
-get o: 6| created object size: 8
+get o: 3| created object size: 8
 get o: 7| created object size: 8
 get o: 8| created object size: 8
-get o: 9| created object size: 8
+get o: 5| created object size: 8
+get o: 6| created object size: 8
+destory obj - [1]
+get o: 2| created object size: 7
+get o: 4| created object size: 8
 get o: 3| created object size: 8
+get o: 7| created object size: 8
+get o: 5| created object size: 8
+get o: 8| created object size: 8
+get o: 6| created object size: 8
 destory obj - [2]
 get o: 4| created object size: 8
-get o: 5| created object size: 8
-get o: 6| created object size: 8
-get o: 7| created object size: 8
-get o: 8| created object size: 8
 get o: 9| created object size: 8
+get o: 5| created object size: 8
 destory obj - [3]
-get o: 10| created object size: 7
-get o: 5| created object size: 8
-get o: 4| created object size: 8
-get o: 8| created object size: 8
+get o: 7| created object size: 7
 get o: 6| created object size: 8
-get o: 7| created object size: 8
-get o: 11| created object size: 8
-get o: 9| created object size: 8
 get o: 8| created object size: 8
-get o: 5| created object size: 8
+get o: 10| created object size: 8
 destory obj - [4]
-get o: 6| created object size: 8
-get o: 10| created object size: 8
+get o: 9| created object size: 8
+get o: 5| created object size: 8
 get o: 7| created object size: 8
 get o: 11| created object size: 8
-get o: 9| created object size: 8
 get o: 8| created object size: 8
+get o: 6| created object size: 8
+get o: 10| created object size: 8
 get o: 12| created object size: 8
+get o: 9| created object size: 8
 destory obj - [5]
-get o: 6| created object size: 8
-get o: 10| created object size: 8
 get o: 7| created object size: 8
 get o: 11| created object size: 8
-get o: 13| created object size: 8
-get o: 9| created object size: 8
-get o: 12| created object size: 8
 get o: 8| created object size: 8
+get o: 6| created object size: 8
+get o: 10| created object size: 8
+get o: 12| created object size: 8
+get o: 13| created object size: 8
+get o: 11| created object size: 8
+get o: 7| created object size: 8
+get o: 8| created object size: 8
+get o: 9| created object size: 8
 destory obj - [6]
 get o: 10| created object size: 8
-get o: 7| created object size: 8
-get o: 11| created object size: 8
-get o: 13| created object size: 8
-get o: 9| created object size: 8
 get o: 12| created object size: 8
+get o: 13| created object size: 8
+destory obj - [7]
+get o: 11| created object size: 8
+get o: 9| created object size: 8
 get o: 8| created object size: 8
 get o: 14| created object size: 8
 get o: 10| created object size: 8
-destory obj - [7]
-get o: 11| created object size: 8
+get o: 12| created object size: 8
+get o: 15| created object size: 8
 get o: 13| created object size: 8
+get o: 11| created object size: 8
 get o: 9| created object size: 8
-get o: 12| created object size: 8
 destory obj - [8]
-get o: 15| created object size: 8
 get o: 14| created object size: 8
 get o: 10| created object size: 8
-get o: 11| created object size: 8
+get o: 12| created object size: 8
+get o: 15| created object size: 8
 get o: 13| created object size: 8
+get o: 11| created object size: 8
 destory obj - [9]
-get o: 12| created object size: 8
 get o: 16| created object size: 8
-get o: 15| created object size: 8
-get o: 14| created object size: 8
-get o: 10| created object size: 8
-get o: 11| created object size: 8
-get o: 17| created object size: 8
-get o: 13| created object size: 8
-get o: 12| created object size: 8
-get o: 16| created object size: 8
-get o: 15| created object size: 8
 get o: 14| created object size: 8
 destory obj - [10]
-get o: 11| created object size: 8
-get o: 17| created object size: 8
-get o: 13| created object size: 8
 get o: 12| created object size: 8
-get o: 16| created object size: 8
 get o: 15| created object size: 8
-get o: 18| created object size: 8
-get o: 14| created object size: 8
-destory obj - [11]
-get o: 17| created object size: 8
 get o: 13| created object size: 8
-destory obj - [12]
+get o: 11| created object size: 8
 get o: 16| created object size: 8
-get o: 15| created object size: 8
-get o: 18| created object size: 8
+get o: 17| created object size: 8
 get o: 14| created object size: 8
+get o: 18| created object size: 8
+get o: 12| created object size: 8
+get o: 15| created object size: 8
+get o: 13| created object size: 8
+destory obj - [11]
+get o: 16| created object size: 8
+get o: 17| created object size: 8
+get o: 14| created object size: 8
+get o: 18| created object size: 8
+destory obj - [12]
+get o: 15| created object size: 8
+get o: 13| created object size: 8
+get o: 19| created object size: 8
+get o: 16| created object size: 8
+get o: 17| created object size: 8
+get o: 14| created object size: 8
+get o: 18| created object size: 8
+get o: 20| created object size: 8
+destory obj - [13]
+get o: 15| created object size: 8
 get o: 19| created object size: 8
 get o: 17| created object size: 8
-destory obj - [13]
-get o: 20| created object size: 8
 get o: 16| created object size: 8
-get o: 15| created object size: 8
-get o: 18| created object size: 8
 get o: 14| created object size: 8
 get o: 21| created object size: 8
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.539 sec <<< FAILURE!
-testInvalid(test.utils.lang.pool.TestAsyncPool)  Time elapsed: 1.652 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: is <8>
-     but: was <7>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:956)
-	at org.junit.Assert.assertThat(Assert.java:923)
-	at test.utils.lang.pool.TestAsyncPool.testInvalid(TestAsyncPool.java:142)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+8
+destory obj - [18]
+destory obj - [20]
+destory obj - [15]
+destory obj - [19]
+destory obj - [17]
+destory obj - [16]
+destory obj - [14]
+destory obj - [21]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.604 sec
 Running test.utils.lang.TestQuotedStringTokenizer
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running test.utils.lang.TestCollectionTools
 {0=Foo [id=0, information=test0], 1=Foo [id=1, information=test1], 2=Foo [id=2, information=test2], 3=Foo [id=3, information=test3], 4=Foo [id=4, information=test4]}
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
@@ -556,15 +521,15 @@ Utf8StringBuilderInvalidUtfTest[] (CeBaE1BdB9Cf83CeBcCeB5EdA080656469746564)
 Utf8StringBuilderInvalidUtfTest[] (Da07)
 Utf8StringBuilderInvalidUtfTest[] (D807)
 Utf8StringBuilderInvalidUtfTest[] (EdA087)
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running test.utils.lang.URIUtilsTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running test.utils.lang.Utf8StringBuilderTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running test.utils.lang.TestTypeUtils
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running test.utils.lang.Utf8StringBufferTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running test.utils.TestStringUtils
 [500-]
 [500-]
@@ -577,28 +542,28 @@ Running test.utils.TestStringUtils
 [hello]
 [hello, world]
 [hello, world]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running test.utils.classproxy.TestClassProxyFactoryUsingJavassist
-com.firefly.utils.ClassProxy876b09d07c3e47d8a91c0110079cfd4b
+com.firefly.utils.ClassProxye960819afd894e79a6468560c5cf061f
 intercept method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
 intercept method 1 end...
 intercept method 1: testInt|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
 intercept method 1 end...
-com.firefly.utils.ClassProxy8d0965756515490ba6915bb74c6ba9ca
-intercept method 2: hello|com.firefly.utils.ClassProxy876b09d07c3e47d8a91c0110079cfd4b
+com.firefly.utils.ClassProxyd870f1189f3544f0bf33a951b4d13277
+intercept method 2: hello|com.firefly.utils.ClassProxye960819afd894e79a6468560c5cf061f
 intercept method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
 intercept method 1 end...
 intercept method 2 end...
 intercept method 1: testInt|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
 intercept method 1 end...
-com.firefly.utils.ClassProxy2944f3bdec414ba0a4187e7a5c936745
+com.firefly.utils.ClassProxy69154eadea4e4c7f97f4ecb87209c5aa
 filter method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
 filter method 1 end...
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec
 Running test.utils.concurrent.TestAtomics
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running test.utils.TestConvertUtils
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running test.utils.codec.TestHuffmanCodec
 { =HuffmanCode [frequency=2, length=3, bits=001, getBytes()=[4]], 一=HuffmanCode [frequency=1, length=5, bits=11100, getBytes()=[7]], !=HuffmanCode [frequency=1, length=4, bits=0110, getBytes()=[6]], d=HuffmanCode [frequency=1, length=4, bits=0001, getBytes()=[8]], e=HuffmanCode [frequency=1, length=5, bits=11110, getBytes()=[15]], h=HuffmanCode [frequency=1, length=4, bits=0111, getBytes()=[14]], 测=HuffmanCode [frequency=2, length=3, bits=100, getBytes()=[1]], l=HuffmanCode [frequency=3, length=3, bits=110, getBytes()=[3]], o=HuffmanCode [frequency=2, length=3, bits=010, getBytes()=[2]], r=HuffmanCode [frequency=1, length=5, bits=11111, getBytes()=[31]], 试=HuffmanCode [frequency=2, length=3, bits=101, getBytes()=[5]], w=HuffmanCode [frequency=1, length=4, bits=0000, getBytes()=[]], 些=HuffmanCode [frequency=1, length=5, bits=11101, getBytes()=[23]]}
 str length: 31
@@ -607,7 +572,7 @@ fe3611f487c6f4dc14
 {1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 16, 20, 26, 28, 29, 30, 31, 32, 33, 34, 39, 41, 42, 46, 47, 50, 52, 53, 54, 55, 58, 59, 60, 62, 63, 66, 68}
 {1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 16, 20, 26, 28, 29, 30, 31, 32, 33, 34, 39, 41, 42, 46, 47, 50, 52, 53, 54, 55, 58, 59, 60, 62, 63, 66, 68}
 hello world! 测试一些测试
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running test.utils.codec.TestNumberProcessUtils
 3 integer: -1058344797
 3 long: 3236622499
@@ -621,15 +586,15 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running test.utils.TestCompilerUtils
 hello
 hello
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.597 sec
 Running test.utils.pattern.TestPattern
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running test.utils.json.parser.TestParser
 {"age":0,"contact1":null,"contact2":null,"date":null,"height":null,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com","number":0,"type":null,"weight":0.0}
 {"date1":"2016-02-04 14:38:18","date2":null}
-2017-05-11 13:26:18
+2017-05-11 13:27:08
 DateFormatObject [dateDefault=null, dateFieldDefaultFormat=null, dateFieldFormat1=null, dateFieldTimestamp=null, dateMethodFormat=null, dateArray=null, dateList=null, dateMap=null]
-{"dateArray":["2015-01-25 14:53:12","2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateDefault":"2015-01-25 14:53:12","dateFieldDefaultFormat":"2015-01-25 14:53:12","dateFieldFormat1":"2015/01/25 14:53:12","dateFieldTimestamp":1422193992621,"dateList":["2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateMap":{"mapdate1":"2015-01-25 14:53:12"},"dateMethodFormat":"2015/01/25","title":"testDateFormat"}
+{"dateArray":["2015-01-25 14:53:12","2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateDefault":"2015-01-25 14:53:12","dateFieldDefaultFormat":"2015-01-25 14:53:12","dateFieldFormat1":"2015/01/25 14:53:12","dateFieldTimestamp":1422193992987,"dateList":["2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateMap":{"mapdate1":"2015-01-25 14:53:12"},"dateMethodFormat":"2015/01/25","title":"testDateFormat"}
 DateFormatObject [dateDefault=Sun Jan 25 14:53:12 CET 2015, dateFieldDefaultFormat=Sun Jan 25 14:53:12 CET 2015, dateFieldFormat1=Sun Jan 25 14:53:12 CET 2015, dateFieldTimestamp=Sun Jan 25 14:53:12 CET 2015, dateMethodFormat=Sun Jan 25 00:00:00 CET 2015, dateArray=[Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015], dateList=[Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015], dateMap={mapdate1=Sun Jan 25 14:53:12 CET 2015}]
 SpecialPropertyObject [iPhone=null, iPad=null, iOS=null, iText=false, aPhone=null, aPad=null, aOS=null, aText=false]
 {"aOS":"aOS","aPad":"aPad","aPhone":"aPhone","aText":true,"iOS":"iOS","iPad":"iPad","iPhone":"iPhone","iText":true}
@@ -638,43 +603,43 @@ SpecialPropertyObject [iPhone=iPhone, iPad=iPad, iOS=iOS, iText=true, aPhone=aPh
 {"bigDecimal":-3.34,"bigInteger":-4,"book":null,"id":null,"sex":" ","symbol":null,"user":null}
 {"age":0,"contact1":null,"contact2":null,"date":null,"height":null,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com\u0001\u0000\u000f\u0010\u001f","number":0,"type":null,"weight":0.0}
 {"age":0,"contact1":null,"contact2":null,"date":0,"height":0.0,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com\u0001\u0000\u000f\u0010\u001f","number":0,"type":0,"weight":0.0}
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.693 sec
 Running test.utils.json.reader.TestReader
 dds"fseee
 d
 ddfd
 d
 ddfd
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running test.utils.json.compiler.TestCompiler
 id
 name
 types
 users
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running test.utils.TestReflectUtils
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 sec
 Running test.utils.io.TestBufferUtils
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.024 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.03 sec
 Running test.utils.io.TestFileUtils
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running test.utils.collection.TestWeakReferenceConcurrentHashMap
-405771
-405770
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.495 sec
+409888
+409887
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.577 sec
 Running test.utils.collection.TestLazyList
-Tests run: 115, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.034 sec
+Tests run: 115, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.059 sec
 Running test.utils.collection.TestConsistentHash
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running test.utils.collection.TestConcurrentLinkedHashMap
 16|15|28
 16|15|28
 32
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running test.utils.collection.MultiMapTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running test.utils.collection.TestHashedArrayTree
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running test.utils.log.LogParserTest
 initialize log FileLog{level=INFO, path='D:/log/', name='firefly-common', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
 initialize log FileLog{level=TRACE, path='D:/log/', name='test-TRACE', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
@@ -699,7 +664,7 @@ initialize log FileLog{level=WARN, path='D:/log/', name='test-WARN', consoleOutp
 initialize log FileLog{level=ERROR, path='D:/log/', name='test-ERROR', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
 initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='test-illegal', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
 initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo.bar', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
 Running test.utils.log.LogTest
 initialize log FileLog{level=INFO, path='D:/log/', name='firefly-common', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
 initialize log FileLog{level=TRACE, path='D:/log/', name='test-TRACE', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
@@ -713,60 +678,671 @@ initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo', co
 initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo.bar', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
 initialize log FileLog{level=INFO, path='D:/log/', name='test.max.size', consoleOutput=false, fileOutput=true, maxFileSize=300, charset=UTF-8}
 initialize log FileLog{level=INFO, path='D:/log/', name='test.gbk', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=GBK}
-TRACE 2017-05-11 13:26:20	trace log
+TRACE 2017-05-11 13:27:11	trace log
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-TRACE.2017-05-11.txt and the size is 0
-DEBUG 2017-05-11 13:26:20	debug log
-INFO 2017-05-11 13:26:20	info log
-WARN 2017-05-11 13:26:20	warn log
-ERROR 2017-05-11 13:26:20	error log
-DEBUG 2017-05-11 13:26:20	debug log
+DEBUG 2017-05-11 13:27:11	debug log
+INFO 2017-05-11 13:27:11	info log
+WARN 2017-05-11 13:27:11	warn log
+ERROR 2017-05-11 13:27:11	error log
+DEBUG 2017-05-11 13:27:11	debug log
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-DEBUG.2017-05-11.txt and the size is 0
-INFO 2017-05-11 13:26:20	info log
-WARN 2017-05-11 13:26:20	warn log
-ERROR 2017-05-11 13:26:20	error log
+INFO 2017-05-11 13:27:11	info log
+WARN 2017-05-11 13:27:11	warn log
+ERROR 2017-05-11 13:27:11	error log
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-INFO.2017-05-11.txt and the size is 0
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-WARN.2017-05-11.txt and the size is 0
-ERROR 2017-05-11 13:26:20	error log
+ERROR 2017-05-11 13:27:11	error log
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-ERROR.2017-05-11.txt and the size is 0
-INFO 2017-05-11 13:26:20	testFoo
+INFO 2017-05-11 13:27:11	testFoo
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test.utils.log.foo.2017-05-11.txt and the size is 0
-INFO 2017-05-11 13:26:20	testBar
+INFO 2017-05-11 13:27:11	testBar
 get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test.utils.log.foo.bar.2017-05-11.txt and the size is 0
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.013 sec
 
 Results :
 
-Failed tests:   testInvalid(test.utils.lang.pool.TestAsyncPool): (..)
+Tests run: 309, Failures: 0, Errors: 0, Skipped: 5
 
-Tests run: 309, Failures: 1, Errors: 0, Skipped: 5
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly-slf4j 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/hypercube1024/firefly/219553435/firefly-slf4j/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/hypercube1024/firefly/219553435/firefly-slf4j/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-slf4j ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly-nettool 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly-nettool ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/hypercube1024/firefly/219553435/firefly-nettool/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly-nettool ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly-nettool ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly-nettool ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-nettool ---
+[INFO] Surefire report directory: /root/workspace/hypercube1024/firefly/219553435/firefly-nettool/target/surefire-reports
 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.net.tcp.codec.CharParserTest
+initialize log FileLog{level=DEBUG, path='D:/log/', name='firefly-system', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+测试
+测试的字
+测试的字符
+测试的字符串
+complete -> 测试的字符串
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec
+Running test.net.tcp.codec.DelimiterParserTest
+哈哈哈
+dfsfs
+email
+hello world
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.net.tcp.TestSimpleTcpServerAndClient
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-nettool/D:/log/firefly-system.2017-05-11.txt and the size is 0
+server receives message -> hello world0!
+server receives message -> hello world1!
+server receives message -> hello world2!
+server receives message -> hello world3!
+client receives message -> response message [hello world0!]
+server receives message -> hello world4!
+client receives message -> response message [hello world1!]
+client receives message -> response message [hello world2!]
+server receives message -> quit
+client receives message -> response message [hello world3!]
+client receives message -> response message [hello world4!]
+client receives message -> bye!
+server receives message -> hello world0!
+client receives message -> response message [hello world0!]
+server receives message -> hello world1!
+server receives message -> hello world2!
+server receives message -> hello world3!
+server receives message -> hello world4!
+server receives message -> hello world5!
+server receives message -> hello world6!
+server receives message -> hello world7!
+server receives message -> hello world8!
+server receives message -> hello world9!
+server receives message -> hello world10!
+server receives message -> hello world11!
+client receives message -> response message [hello world1!]
+server receives message -> hello world12!
+server receives message -> hello world13!
+client receives message -> response message [hello world2!]
+server receives message -> hello world14!
+server receives message -> hello world15!
+server receives message -> hello world16!
+server receives message -> hello world17!
+server receives message -> hello world18!
+server receives message -> hello world19!
+server receives message -> quit
+client receives message -> response message [hello world3!]
+client receives message -> response message [hello world4!]
+client receives message -> response message [hello world5!]
+client receives message -> response message [hello world6!]
+client receives message -> response message [hello world7!]
+client receives message -> response message [hello world8!]
+client receives message -> response message [hello world9!]
+client receives message -> response message [hello world10!]
+client receives message -> response message [hello world11!]
+client receives message -> response message [hello world12!]
+client receives message -> response message [hello world13!]
+client receives message -> response message [hello world14!]
+client receives message -> response message [hello world15!]
+client receives message -> response message [hello world16!]
+client receives message -> response message [hello world17!]
+client receives message -> response message [hello world18!]
+client receives message -> response message [hello world19!]
+client receives message -> bye!
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.911 sec
+Running test.net.tcp.TestFilePartition
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.net.buffer.TestIOBufferPool
+buffer: 1024, direct: true
+buffer: 2048, direct: true
+buffer: 3072, direct: true
+buffer: 4096, direct: true
+buffer: 5120, direct: true
+buffer: 6144, direct: true
+buffer: 7168, direct: true
+buffer: 8192, direct: true
+buffer: 16384, direct: true
+buffer: 16384, direct: true
+buffer: 1024, direct: false
+buffer: 2048, direct: false
+buffer: 3072, direct: false
+buffer: 4096, direct: false
+buffer: 5120, direct: false
+buffer: 6144, direct: false
+buffer: 7168, direct: false
+buffer: 8192, direct: false
+buffer: 16384, direct: false
+buffer: 16384, direct: false
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.net.buffer.TestReceiveBufferSizePredictor
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly-db 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly-db ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/hypercube1024/firefly/219553435/firefly-db/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly-db ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-db ---
+[INFO] Surefire report directory: /root/workspace/hypercube1024/firefly/219553435/firefly-db/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.db.TestAnnotation
+initialize log FileLog{level=DEBUG, path='D:/log/', name='firefly-system', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-monitor', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-db/D:/log/firefly-system.2017-05-11.txt and the size is 0
+User [id=12, name=ptTest, password=ptTestPwd, otherInfo=testOtherInfo]
+[User [id=1, name=test1, password=test_pwd1, otherInfo=null], User [id=2, name=test2, password=test_pwd2, otherInfo=null], User [id=3, name=test3, password=test_pwd3, otherInfo=null], User [id=4, name=test4, password=test_pwd4, otherInfo=null], User [id=5, name=test5, password=test_pwd5, otherInfo=null], User [id=6, name=test6, password=test_pwd6, otherInfo=null], User [id=7, name=test7, password=test_pwd7, otherInfo=null], User [id=8, name=test8, password=test_pwd8, otherInfo=null], User [id=9, name=test9, password=test_pwd9, otherInfo=null], User [id=10, name=test10, password=test_pwd10, otherInfo=null]]
+SQLMapper [sql=insert into  `test`.`user`  (`pt_password`, `pt_name`) values (?, ?), propertyMap={password=0, name=1}]
+SQLMapper [sql=select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ?, propertyMap=null]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.894 sec
+Running test.db.TestTransactionalJdbcHelper
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+User [id=2, name=orange, password=pwd transaction 1, otherInfo=null]
+User [id=1, name=apple, password=pwd transaction 0, otherInfo=null]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly ---
+[INFO] Surefire report directory: /root/workspace/hypercube1024/firefly/219553435/firefly/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.http.router.TestMatcher
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-system', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-monitor', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec
+Running test.http.router.handler.body.TestHTTPBodyHandler
+http://localhost:57696
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly/D:/log/firefly-system.2017-05-11.txt and the size is 0
+http://localhost:32871
+data len: 6228922
+receive big data size: -1
+http://localhost:53657
+data len: 6228922
+test post data
+server received data
+receive big data size: 6228922
+http://localhost:3265
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.926 sec
+Running test.http.router.handler.body.TestMultiPartContentProvider
+http://localhost:15770
+multipart/form-data; boundary=FireflyHttpClientBoundary1nk9s0jjat8b52rm
+-1
+http://localhost:11224
+/root/workspace/hypercube1024/firefly/219553435/firefly/target/test-classes/poem.txt
+8706
+http://localhost:12199
+hello multi part1
+hello multi part2
+server received multi part data
+Content-Type: multipart/form-data; boundary=FireflyHttpClientBoundarybz6i8f3eo27jqva9
+Host: localhost
+Transfer-Encoding: chunked
+
+
+闲暇时的遐想
+文/〔俄罗斯〕弗·伊·克里别里
+译/陈淑贤
+
+我一直企盼幸福，却感到这非常遥远，它又如此特殊，可望而不可即，几乎无法获得。
+殊不知幸福就在我身边，在我背后，它悄然无声，不事张扬。原来，我做的工作，度过的时日，与周围人的和谐共处——幸福就在其中。
+日复一日，年复一年，流年似水，只有到了回首时才顿悟：这就是幸福，幸福本来就一直与我相伴相随！
+人，实质上分为两类：第一类感觉自己是债权人，第二类则感觉自己是债务人。
+债权人杞人忧天，总是怨天尤人，认为所有的人——儿女、双亲、同事乃至人民——都在某些方面对不起他、亏欠他，造成他生活的不幸，葬送他的个人前程。
+债务人则经受着另外一种更高的境界，令人羡慕的痛苦：无法偿还亏欠生活、亏欠人民的深情厚谊。
+我更像债务人。我既不求功名，也不盼利禄，我感到幸福的是能够做一点有益处的事情。
+人在很多方面依赖大自然，依赖天气状况。寒冷、阴雨，人对此无能为力，只有等待大自然状态的好转，继续生活。
+雅库特老人说得好：“寒冷、阴雨——很好！这些过后将出现太阳，将会暖洋洋！”
+寻找幸福——微妙而离奇。
+生活中一味追求功成名就，结果徒劳无益。应该老老实实地生活，接受大自然本身的馈赠。
+我们常常在遥远的某个地方寻找幸福，我们匆忙追逐转瞬即逝的光束。
+其实幸福就在身旁，在日常生活之中——达到力所能及的目标，称心的工作，家庭的和谐，亲人的安全无恙。
+不过，永久的、一成不变的幸福是没有的，幸福有时上升，过一段时间又会下降。下降时或平稳或急骤，甚至会严重跌伤。对这种升降只需耐心度过，好像忍耐恶劣天气或命中注定的其他不测一样。
+最后，临终时你有权说：“我是幸福的。”
+当有人问萧伯纳是否幸福时，他回答说，他幸福是因为没有时间考虑这一点。他的幸福在于工作，在于创作。
+幸福各式各样，也可划分阶段，犹如昼夜时间一样。如果一切都按大自然规定的那样：适时、适度、无忧、无虑，那么，可以认为，人幸福地度过了一生。
+
+
+致小白屈菜
+华兹华斯
+
+紫罗兰、百合花、金凤花和雏菊，
+让它们依附赞美而活；
+只要日落降临，
+夜来香便纵享荣耀；
+
+只要紫罗兰存在，
+即会在故事中占有一席之地；
+
+只有一种花儿永归我有，
+这便是小白屈菜。
+
+在灌木抽出嫩叶之前，
+在画眉忆起筑巢之前，
+你伴随着半声轻唤，枯萎凋零。
+
+犹如无忧无虑的浪子，
+展现光泽亮丽的胸膛。
+
+当我们只感到一丝温暖，
+或冰冷如初，
+讲述与太阳有关的故事。
+
+安逸即是你的美德，
+那是真挚的谦逊精神！
+
+对周围的环境毫不在意，
+你只是展露出快乐的笑脸。
+
+在荒野之上，在丛林之中，
+在小路边，在每一处，
+无论环境多么恶劣，
+这于你已是称心满意。
+
+不幸降临于这黄色的花儿，
+犹如落入火海的婴孩！
+
+无论我们是否愿见，
+映入眼帘的是金凤花，
+以及其它态度高傲的花儿，
+他们就和世俗之人一般，
+夺走本应属于你的赞赏，
+渺小的，恭顺的白屈菜啊！
+
+它是喜悦与欢愉的先知，
+预言报复于尘土的罪恶，
+它是势力群体的使者，
+宣告随之而来的欢乐。
+
+服务于我之本心，
+艰苦即是再无艰苦，
+我将理所当然放生高歌，
+为我所爱唱一曲歌颂礼赞！
+
+
+新月集
+泰戈尔
+
+家庭
+
+我独自在横跨过田地的路上行走，夕阳像一个守财奴似的，正藏起它的最后的金子。
+白昼更加深沉地陷入黑暗之中，那已经收割了的孤独的田地，默默地躺在那里。
+天空里突然升起了一个男孩童的尖锐的歌声。他穿过看不见的黑暗，留下他的歌声的辙痕跨过黄昏的静谧。
+他的乡村的家坐落在荒凉的边上，在甘蔗田的后面，躲藏在香蕉树，瘦长的槟榔树，椰子树和深绿色的贾克果树的阴影里。
+我在星光下独自走着的路上停留了一会，我看见黑沉沉的大地展开在我的面前，用她的手臂拥抱着无量数的家庭，
+在那些家庭里有着摇篮和床铺，母亲们的心和夜晚的灯，还有年轻轻的生命，
+他们满心快乐，却浑然不知这样的快乐对于世界的价值。
+
+玩具
+
+孩子 你真是快活呀 一早晨坐在泥土里 耍着折下来的小树枝儿。
+我微笑地看你在那里耍着那根折下来的小树枝儿。
+我正忙着算帐 一小时一小时在那里加叠数字。
+也许你在看我 想道：”这种好没趣的游戏 竟把你的一早晨的好时间浪费掉了！”
+孩子 我忘了聚精会神玩耍树枝与泥饼的方法了。
+我寻求贵重的玩具 收集金块与银块。
+你呢 无论找到什么便去做你的快乐的游戏 我呢 却把我的时间与力气都浪费在那些我永不能得到的东西上。
+我在我的脆薄的独木船里挣扎着要航过欲望之海 竟忘了我也是在那里做游戏了。
+
+金色花
+
+假如我变了一朵金色花 只是为了好玩 长在那棵树的高枝上 笑哈哈地在风中摇摆 又在新生的树叶上跳舞 妈妈 你会认识我么？
+你要是叫道：”孩子 你在哪里呀？”我暗暗地在那里匿笑 却一声儿不响。
+我要悄悄地开放花瓣儿 看着你工作。
+当你沐浴后 湿发披在两肩 穿过金色花的林荫 走到你做祷告的小庭院时 你会嗅到这花的香气 却不知道这香气是从我身上来的。
+当你吃过中饭 坐在窗前读<<罗摩衍那>> 那棵树的阴影落在你的头发与膝上时 我便要投我的小小影子在你的书页上 正投在你所读的地方。
+但是你会猜得出这就是你的小孩子的小影子么？
+当你黄昏时拿了灯到牛棚里去 我便要突然地再落到地上来 又成了你的孩子 求你讲个故事给我听。
+"你到哪里去了 你这坏孩子？”
+“我不告诉你 妈妈。”这就是你同我那时所要说的话了。
+
+第一次的茉莉花
+
+呵 这些茉莉花 这些白的茉莉花！
+我仿佛记得我第一次双手满捧着这些茉莉花 这些白的茉莉花的时候。
+我喜爱那日光 那天空 那绿色的大地;
+我听见那河水淙淙的流声 在黑漆的午夜里传过来;
+秋天的夕阳 在荒原上大路转角处迎我 如新妇揭起她的面纱迎接好的爱人。
+但我想起孩提时第一次捧在手里的白茉莉 心里充满着甜蜜的回忆。
+我生平有过许多快活的日子 在节日宴会的晚上 我曾跟着说笑话的人大笑。
+在灰暗的雨天的早晨 我吟哦过许多飘逸的诗篇。
+我颈上戴过爱人手织的醉花的花圈 作为晚装。
+但我想起孩提时第一次捧在手里的白茉莉 心里充满着甜蜜的回忆。
+
+同情
+
+如果我只是一只小狗 而不是你的小孩 亲爱的妈妈 当我想吃你的盘里的东西时 你要向我说"不"么？
+你要赶开我 对我说道："滚开 你这淘气的小狗"么？
+那么 走罢 妈妈 走罢！当你叫唤我的时候 我就永不到你那里去 也永不要你再喂我吃东西了。
+如果我只是一只绿色的小鹦鹉 而不是你的小孩 亲爱的妈妈 你要把我紧紧地锁住 怕我飞走么？
+你要对我摇你的手 说道："怎样的一个不知感恩的贱鸟呀！整夜地尽在咬它的链子"么？
+那末 走罢 妈妈 走罢！我要跑到树林里去;我就永不再让你抱我在你的臂里了。
+
+
+赠品
+
+我要送些东西给你 我的孩子 因为我们同是漂泊在世界的溪流中的。
+我们的生命将被分开 我们的爱也将被忘记。
+但我却没有那样傻 希望能用我的赠品来买你的心。
+你的生命正是青春 你的道路也长着呢 你一口气饮尽了我们带给你的爱 便回身离开我们跑了。
+你有你的游戏 有你的游伴。如果你没有时间同我们在一起 如果你想不到我们 那有什么害处呢？
+我们呢 自然的 在老年时 会有许多闲暇的时间 去计算那过去的日子 把我们手里永久失了的东西 在心里爱抚着。
+河流唱着歌很快地流去 冲破所有的堤防。但是山峰却留在那里 忆念着 满怀依依之情。
+
+server received poetry
+http://localhost:25089
+multipart/form-data; boundary=FireflyHttpClientBoundary86edjowa6u6rv55p
+--FireflyHttpClientBoundary86edjowa6u6rv55p
+Content-Disposition: form-data; name="test1"
+Content-Type: text/plain;charset=UTF-8
+
+hello multi part1
+--FireflyHttpClientBoundary86edjowa6u6rv55p
+Content-Disposition: form-data; name="test2"
+Content-Type: text/plain;charset=UTF-8
+
+hello multi part2
+--FireflyHttpClientBoundary86edjowa6u6rv55p--
+
+351
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 sec
+Running test.http.router.handler.error.TestErrorHandler
+http://localhost:19758
+hello world! end message
+<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1> 404 Not Found </h1><p>The resource /hello is not found</p><hr/><footer><em>powered by Firefly 4.0.23</em></footer></body></html>
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+Running test.http.router.handler.session.TestLocalHTTPSessionHandler
+http://localhost:6146
+the path param -> foo
+200
+[Cookie [name=jsessionid, value=8c734bc9-7b3c-4a46-8f90-baffaeaeaad5, comment=null, domain=null, maxAge=-1, path=/, secure=false, version=0, isHttpOnly=false]]
+create session success
+session value is bar
+session value is bar
+session value is bar
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 sec
+Running test.http.router.handler.template.TestTemplate
+http://localhost:44721
+Name: Item 1
+Price: $19.99
+    Feature: New!
+    Feature: Awesome!
+Name: Item 2
+Price: $29.99
+    Feature: Old.
+    Feature: Ugly.
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+Running test.http.router.handler.file.TestStaticFileHandler
+http://localhost:34992
+/root/workspace/hypercube1024/firefly/219553435/firefly/target/test-classes
+firefly1718172397j2kbxe9p
+hello
+ic file
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+Running test.http.router.TestPathUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.http.TestHTTPServerAndClient
+server receives message -> hello world0!
+server receives message -> hello world1!
+server receives message -> hello world2!
+server receives message -> hello world3!
+client receives message -> response message [hello world0!]
+client receives message -> response message [hello world1!]
+client receives message -> response message [hello world2!]
+client receives message -> response message [hello world3!]
+server receives message -> hello world4!
+client receives message -> response message [hello world4!]
+server receives message -> quit test
+client receives message -> bye!
+server receives message -> hello world1!
+server receives message -> hello world0!
+server receives message -> hello world2!
+server receives message -> hello world3!
+client receives message -> response message [hello world3!]
+server receives message -> hello world5!
+server receives message -> hello world6!
+client receives message -> response message [hello world6!]
+server receives message -> hello world7!
+server receives message -> hello world8!
+client receives message -> response message [hello world8!]
+server receives message -> hello world9!
+server receives message -> hello world4!
+server receives message -> hello world10!
+client receives message -> response message [hello world10!]
+server receives message -> hello world11!
+client receives message -> response message [hello world11!]
+server receives message -> hello world12!
+server receives message -> hello world13!
+server receives message -> hello world14!
+server receives message -> quit test
+client receives message -> response message [hello world0!]
+client receives message -> response message [hello world9!]
+client receives message -> response message [hello world7!]
+client receives message -> response message [hello world2!]
+client receives message -> response message [hello world5!]
+client receives message -> response message [hello world12!]
+client receives message -> response message [hello world1!]
+client receives message -> response message [hello world4!]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 sec
+Running test.codec.http2.frame.DataGenerateParseTest
+client receives message -> bye!
+client receives message -> response message [hello world14!]
+client receives message -> response message [hello world13!]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running test.codec.http2.frame.ContinuationParseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.frame.GoAwayGenerateParseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.frame.PriorityGenerateParseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.frame.PushPromiseGenerateParseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running test.codec.http2.frame.PingGenerateParseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.frame.HeadersGenerateParseTest
+false
+firefly-trailer: end
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.frame.WindowUpdateGenerateParseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.frame.ResetGenerateParseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.frame.SettingsGenerateParseTest
+buffer size: 1
+before1:	00000c04000000000000010000100000040000FfFf
+Settings: AAEAABAAAAQAAP__
+after:	00010000100000040000FfFf
+SettingsFrame@782663d3,reply=false:{1=4096, 4=65535}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Running test.codec.http2.hpack.HpackEncoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.hpack.TestNBitInteger
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.hpack.TestHuffman
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.hpack.HpackDecoderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running test.codec.http2.hpack.HpackContextTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running test.codec.http2.hpack.HpackTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running test.codec.http2.model.QuotedQualityCSVTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running test.codec.http2.model.HostPortTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running test.codec.http2.model.HttpURIParseTest
+Tests run: 186, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.041 sec
+Running test.codec.http2.model.CookieTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.model.HttpStatusCodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.model.QuotedCSVTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.model.MimeTypesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.model.UrlEncodedInvalidEncodingTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running test.codec.http2.model.HttpURITest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.codec.http2.model.InclusiveByteRangeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.model.HttpFieldsTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running test.codec.http2.model.TestHttpField
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.model.MultiPartInputStreamTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running test.codec.http2.encode.URLEncodedTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running test.codec.http2.encode.HttpGeneratorClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.encode.UrlEncodedUtf8Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.codec.http2.encode.HttpGeneratorServerHTTPTest
+Tests run: 336, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Running test.codec.http2.encode.HttpGeneratorServerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.codec.http2.decode.HTTP2DecoderTest
+on preface: false
+on settings: SettingsFrame@22ff4249,reply=false:{1=4096, 4=65535}
+on new stream: 5
+on new stread headers: POST{u=http://localhost:8080/data,HTTP/2.0,h=3,cl=72}
+data size:22
+data size:50
+out data: 6
+on preface: false
+on settings: SettingsFrame@2d1ef81a,reply=false:{1=4096, 4=65535}
+on new stream: 5
+on new stread headers: GET{u=http://localhost:8080/index,HTTP/2.0,h=2,cl=-1}
+out data: 2
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running test.codec.http2.decode.HttpParserTest
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running test.ioc.TestConstructorsIoc
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running test.ioc.TestAnnotationIoc
+init the method inject2
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running test.ioc.TestMixIoc
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running test.ioc.TestXmlIoc
+init person service
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec
+
+Results :
+
+Tests run: 890, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly-example 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly-example ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly-example ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-example ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Firefly Framework .................................. SUCCESS [  0.001 s]
-[INFO] firefly-common ..................................... FAILURE [ 10.466 s]
-[INFO] firefly-slf4j ...................................... SKIPPED
-[INFO] firefly-nettool .................................... SKIPPED
-[INFO] firefly-db ......................................... SKIPPED
-[INFO] firefly ............................................ SKIPPED
-[INFO] firefly-example .................................... SKIPPED
+[INFO] Firefly Framework .................................. SUCCESS [  0.003 s]
+[INFO] firefly-common ..................................... SUCCESS [ 12.386 s]
+[INFO] firefly-slf4j ...................................... SUCCESS [  0.091 s]
+[INFO] firefly-nettool .................................... SUCCESS [  1.786 s]
+[INFO] firefly-db ......................................... SUCCESS [  1.409 s]
+[INFO] firefly ............................................ SUCCESS [  4.860 s]
+[INFO] firefly-example .................................... SUCCESS [  0.352 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.612 s
-[INFO] Finished at: 2017-05-11T13:26:22+02:00
-[INFO] Final Memory: 21M/1562M
+[INFO] Total time: 21.157 s
+[INFO] Finished at: 2017-05-11T13:27:21+02:00
+[INFO] Final Memory: 17M/1963M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project firefly-common: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/hypercube1024/firefly/219553435/firefly-common/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :firefly-common
