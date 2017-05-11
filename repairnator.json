@@ -1,0 +1,509 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "lukas-krecan/JsonUnit",
+  "bugCommit": "https://github.com/lukas-krecan/JsonUnit/compare/f042ae64eacb...9ae151324b16",
+  "failingModule": "/root/workspace/lukas-krecan/JsonUnit/220654062/tests/test-moshi",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 77,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1576,
+  "failing-test-cases": [
+    {
+      "className": "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest",
+      "failingMethods": [
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testSimpleDifferent",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testIgnoreObjectErrorInSibling",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testDifferentNumericValue",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testEqualsNodeFail",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfQuotationMarksMissingOnActualKeys",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfArrayContentIsDifferentOnObjectArrays",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#strictStructureEqualsShouldFailOnNull",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testComplexErrors",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfIgnoringValuesButTypesAreDifferentInArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldReportOnDifferentValuesWhenIgnoringOrder",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testNullFail",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfOneValueIsMissing",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testAssertPartArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfArrayContentIsDifferent",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfIfExpectedIsLongerAndOrderIsIgnoredAndTheItemsDoNotMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfIgnoringValuesButTypesAreDifferent",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#strictStructureEqualsShouldFailOnDifferentType",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfFirstElementsDoNotMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testAssertPartComplex",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfIfExpectedIsLongerAndOrderIsIgnored",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfExpectsMoreArrayItemsAndDifferentValues",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testNotEqualWhenToleranceNotSet",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfFirstElementsAreDifferent",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testAssertPartOkNumber",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testDifferentArrayType",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testDifferentArrayValue",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldFailIfArrayContentIsDifferentMoreThaOneDifference",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#shouldReportOnDifferentValuesWhenIgnoringOrderActualsSame",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testAssertPart",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testDifferentNumericTypes",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testComparisonWhenOverTolerance",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testDifferentType",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonAssertTest#testArrayDifferent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... node \"\". Expected 1[], got 1.1, differenc...\u003e but was:\u003c... node \"\". Expected 1[.0], got 1.1, differenc...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...1].test\". Expected 2[, got 4]. \u003e but was:\u003c...1].test\". Expected 2[.0, got 4.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[JSON documents are different: Different value found in node \"test\". Expected 1, got 1.0. ]\u003e but was:\u003c[Exception expected]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 1[, got 2]. \u003e but was:\u003c...e \"test\". Expected 1[.0, got 2.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...test[2]\". Expected 3[, got 5]. \u003e but was:\u003c...test[2]\". Expected 3[.0, got 5.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c.... Expected 3, got 2.[] \u003e but was:\u003c.... Expected 3, got 2.[0.] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ected \u0027null\u0027, got \u00271[]\u0027. \u003e but was:\u003c...ected \u0027null\u0027, got \u00271[.0]\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...test.b\". Expected \u00272[]\u0027, got \u0027\"2\"\u0027. \u003e but was:\u003c...test.b\". Expected \u00272[.0]\u0027, got \u0027\"2\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...st[1].b\". Expected 2[, got 1]. \u003e but was:\u003c...st[1].b\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... \"test\". Expected \u00273[]\u0027, got \u0027\"3\"\u0027. \u003e but was:\u003c... \"test\". Expected \u00273[.0]\u0027, got \u0027\"3\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...[2].key\". Expected 1[, got 4]. \u003e but was:\u003c...[2].key\". Expected 1[.0, got 4.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... \"test\". Expected \u00271[]\u0027, got \u0027\"something\"\u0027...\u003e but was:\u003c... \"test\". Expected \u00271[.0]\u0027, got \u0027\"something\"\u0027...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...sibling\". Expected 1[, got 2]. \u003e but was:\u003c...sibling\". Expected 1[.0, got 2.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t[1].b\". Expected \u00272[]\u0027, got \u0027\"2\"\u0027. \u003e but was:\u003c...t[1].b\". Expected \u00272[.0]\u0027, got \u0027\"2\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... node \"\". Expected 1[, got 2]. \u003e but was:\u003c... node \"\". Expected 1[.0, got 2.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t. Missing values [5[, 6, 7, 8]] \u003e but was:\u003c...t. Missing values [5[.0, 6.0, 7.0, 8.0]] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...test[2]\". Expected 3[, got 5]. \u003e but was:\u003c...test[2]\". Expected 3[.0, got 5.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[JSON documents are different: Different value found in node \"\". Expected 1, got 1.0. ]\u003e but was:\u003c[Exception expected]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...[0].key\". Expected 3[, got 4]. \u003e but was:\u003c...[0].key\". Expected 3[.0, got 4.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 1[, got 2]. \u003e but was:\u003c...e \"test\". Expected 1[.0, got 2.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...st[1].b\". Expected 2[, got 1]. \u003e but was:\u003c...st[1].b\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...test[0]\". Expected 1[, got 5. Different value found in node \"test[1]\". Expected \u00272\u0027, got \u0027false\u0027. Different keys found in node \"test[2]\". Expected [child], got [child, child2].  Extra: \"test[2].child2\" Different value found in node \"test[2].child.value1\". Expected 1, got 5]. Different value fo...\u003e but was:\u003c...test[0]\". Expected 1[.0, got 5.0. Different value found in node \"test[1]\". Expected \u00272.0\u0027, got \u0027false\u0027. Different keys found in node \"test[2]\". Expected [child], got [child, child2].  Extra: \"test[2].child2\" Different value found in node \"test[2].child.value1\". Expected 1.0, got 5.0]. Different value fo...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t. Missing values [9[]] \u003e but was:\u003c...t. Missing values [9[.0]] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...[0].key\". Expected 2[, got 1]. \u003e but was:\u003c...[0].key\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t. Missing values [9[]] \u003e but was:\u003c...t. Missing values [9[.0]] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"test.value\". Expected 1, got 1.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...test[2]\". Expected 1[, got 4]. \u003e but was:\u003c...test[2]\". Expected 1[.0, got 4.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...est[1]\". Expected \u00272[]\u0027, got \u0027false\u0027. \u003e but was:\u003c...est[1]\". Expected \u00272[.0]\u0027, got \u0027false\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t.value\". Expected 2[, got 1]. \u003e but was:\u003c...t.value\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t.value\". Expected 2[, got 1]. \u003e but was:\u003c...t.value\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t. Missing values [1[, 2], extra values [4, 5]] \u003e but was:\u003c...t. Missing values [1[.0, 2.0], extra values [4.0, 5.0]] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... Expected \u0027{\"test\":3[]}\u0027, got \u0027null\u0027. \u003e but was:\u003c... Expected \u0027{\"test\":3[.0]}\u0027, got \u0027null\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 33,
+      "nbErrors": 0
+    },
+    {
+      "className": "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest",
+      "failingMethods": [
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#jsonPartMatchesShouldReturnNiceException",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testGenericsIntAndString",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#jsonPartMatchesShouldReturnNiceExceptionForArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#shouldNotFailOnEmptyInput",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testDifferentValue",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#jsonEqualsResourceShouldReturnReasonWhenDiffers",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testDifferentPartValue",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testJsonPartMatches",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testAbsent",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testJsonPartMatchesArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiJsonMatchersTest#testEquals"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003e)      but: was \u003c[1[, 2, 3]]\u003e\u003e but was:\u003c...\u003e)      but: was \u003c[1[.0, 2.0, 3.0]]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: node \"test\" (a collection containing \u003c1\u003e and a collection containing \u003c2\u003e and a collection containing \u003c3\u003e)      but: was \u003c[1.0, 2.0, 3.0]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: node \"test\" is \u003c1\u003e      but: was \u003c1.0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... Expected \u0027{\"test\":1[]}\u0027, got \u0027\"\"\u0027. \u003e but was:\u003c... Expected \u0027{\"test\":1[.0]}\u0027, got \u0027\"\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...t: Node \"test\" is \"1[]\".\u003e but was:\u003c...t: Node \"test\" is \"1[.0]\".\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: 1 in \"test\"      but: JSON documents are different: Different value found in node \"test\". Expected 1, got 1.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: a string containing \"\\n     but: JSON documents are different:\\nDifferent value found in node \\\"test\\\". Expected 1, got 2.\\n\"      but: was \" Expected: java.io.BufferedReader@2fc14f68      but: JSON documents are different: Different value found in node \"test\". Expected 1.0, got 2.0. \"",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003c2\u003e      but: was \u003c1[]\u003e\u003e but was:\u003c...\u003c2\u003e      but: was \u003c1[.0]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: 1 in \"test\"      but: JSON documents are different: Different value found in node \"test\". Expected 1, got 1.0. ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 11,
+      "nbErrors": 0
+    },
+    {
+      "className": "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest",
+      "failingMethods": [
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertNode",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#negativeArrayIndexShouldCountBackwardsAndReportFailure",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#equalsShouldFailOnStringAndANumber",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#floatValueShouldFailIfDoesNotMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertPathArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#arrayShouldMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testDeprecation",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testEqualsToArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertPathArrayOk",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#isStringShouldFailIfItIsNotAString",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testMoreNodes",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertDifferentType",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#isStringEqualToShouldFailIfItIsNotAString",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#objectMatcherShouldFailIfNotFound",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testMessage",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testNotEqualsToToArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#objectShouldMatchToMap",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#negativeArrayIndexShouldCountBackwards",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#intValueShouldFailIfDoesNotMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#arrayMatcherShouldFailIfNotFound",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertPath",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#anyBooleanShouldFailOnObject",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#anyNumberShouldFailOnObject",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertNodeInExpectOnly",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#intValueShouldMatch",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertString",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testArray",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#arrayThatContainsShouldFailOnMissingNode",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testAssertReader",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#comparisonShouldFailOnDifferentType",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testLongPaths",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#testOkNumber",
+        "net.javacrumbs.jsonunit.test.moshi.MoshiFluentAssertTest#anyStringShouldFailOnObject"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...boolean, got \u0027{\"a\":1[]}\u0027. \u003e but was:\u003c...boolean, got \u0027{\"a\":1[.0]}\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e actual value is \u00271[]\u0027.\u003e but was:\u003c...e actual value is \u00271[.0]\u0027.\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... found in node \"test[2\". Expected 2, got 1]. \u003e but was:\u003c... found in node \"test[1\". Expected 2, got 2.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003c2\u003e      but: was \u003c1[]\u003e\u003e but was:\u003c...\u003c2\u003e      but: was \u003c1[.0]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Node \"test\" does not match. Expected: a collection containing map containing [\"value\"-\u003e\u003c1\u003e]      but: map was [\u003cvalue\u003d1.0\u003e], map was [\u003cvalue\u003d2.0\u003e], map was [\u003cvalue\u003d3.0\u003e]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"[0]\". Expected 1, got 1.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Node \"test\" does not match. Expected: \u003c1\u003e      but: was \u003c1.0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"test\". Expected 1, got 1.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"test[0]\". Expected 1, got 1.0. Different value found in node \"test[1]\". Expected 2, got 2.0. Different value found in node \"test[2]\". Expected 3, got 3.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... \"test\". Expected \u00271[]\u0027, got \u0027\"1\"\u0027. \u003e but was:\u003c... \"test\". Expected \u00271[.0]\u0027, got \u0027\"1\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... \"test\". Expected \u00271[]\u0027, got \u0027\"1\"\u0027. \u003e but was:\u003c... \"test\". Expected \u00271[.0]\u0027, got \u0027\"1\"\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e actual value is \u00271[]\u0027.\u003e but was:\u003c...e actual value is \u00271[.0]\u0027.\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c.... Expected 2, got 1.[] \u003e but was:\u003c.... Expected 2, got 1.[0.] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003c4\u003e      but: was \u003c1[\u003e, was \u003c2\u003e, was \u003c3]\u003e\u003e but was:\u003c...\u003c4\u003e      but: was \u003c1[.0\u003e, was \u003c2.0\u003e, was \u003c3.0]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c.... Expected 4, got 1.[ , JSON documents are different: Different value found in node \"value\". Expected 4, got 2. , JSON documents are different: Different value found in node \"value\". Expected 4, got 3]. \u003e but was:\u003c.... Expected 4, got 1.[0. , JSON documents are different: Different value found in node \"value\". Expected 4, got 2.0. , JSON documents are different: Different value found in node \"value\". Expected 4, got 3.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"test1\". Expected 2, got 2.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... string, got \u0027{\"a\":1[]}\u0027. \u003e but was:\u003c... string, got \u0027{\"a\":1[.0]}\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003c2\u003e      but: was \u003c1[]\u003e\u003e but was:\u003c...\u003c2\u003e      but: was \u003c1[.0]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ot.test\". Expected 2[, got 1]. \u003e but was:\u003c...ot.test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... number, got \u0027{\"a\":1[]}\u0027. \u003e but was:\u003c... number, got \u0027{\"a\":1[.0]}\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\" is \u0027[{\"id\":36[}, {\"id\":37}, {\"id\":38]}]\u0027, expected to con...\u003e but was:\u003c...\"test\" is \u0027[{\"id\":36[.0}, {\"id\":37.0}, {\"id\":38.0]}]\u0027, expected to con...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"root.test[1]\". Expected 2, got 2.0. ",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c.... Expected 3, got 1.[] \u003e but was:\u003c.... Expected 3, got 1.[0.] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Node \"test\" does not match. Expected: a collection containing \u003c1\u003e      but: was \u003c1.0\u003e, was \u003c2.0\u003e, was \u003c3.0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...pected \u0027\"1\"\u0027, got \u00271[]\u0027. \u003e but was:\u003c...pected \u0027\"1\"\u0027, got \u00271[.0]\u0027. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e \"test\". Expected 2[, got 1]. \u003e but was:\u003c...e \"test\". Expected 2[.0, got 1.0]. \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "JSON documents are different: Different value found in node \"root.test[-1]\". Expected 3, got 3.0. ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 33,
+      "nbErrors": 0
+    }
+  ]
+}
