@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/httpcore",
+  "bugCommit": "https://github.com/apache/httpcore/compare/454679da528b...5b5c1a03d82e",
+  "failingModule": "/root/workspace/apache/httpcore/222382291/httpcore5-testing",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1080,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.hc.core5.testing.nio.Http2IntegrationTest",
+      "failingMethods": [
+        "org.apache.hc.core5.testing.nio.Http2IntegrationTest#testSimpleHead[HTTPS]",
+        "org.apache.hc.core5.testing.nio.Http2IntegrationTest#testSimpleHead[HTTP]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected null, but was:\u003cHi there\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected null, but was:\u003cHi there\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
