@@ -1,0 +1,34 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 17000
+  adminConnectors:
+    - type: http
+      port: 17001
+
+elasticsearch:
+  hosts:
+  - ${ELASTICSEARCH_HOST}
+  cluster: ${ELASTICSEARCH_CLUSTER_NAME}
+  tableNamePrefix: ${ELASTICSEARCH_TABLE_NAME_PREFIX}
+
+hbase:
+  secure : false
+  tableName: ${HBASE_TABLE_NAME}
+  hbaseZookeeperQuorum: ${HBASE_ZOOKEEPER_QUORUM}
+  hbaseZookeeperClientPort: ${HBASE_ZOOKEEPER_CLIENT_PORT}
+
+cluster:
+  name: foxtrot
+  discovery:
+    type: foxtrot_simple
+    disableMulticast: true
+    members: ["localhost:5701"]
+
+logging:
+  level: INFO
+
+deletionconfig:
+  active: true
+  interval: 86400
+  initialdelay: 60
