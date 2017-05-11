@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/a681795597b8...562b6665a33d",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/220891351",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2081,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests",
+      "failingMethods": [
+        "org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests#doesNotRegisterJacksonSpecificComponentsIfJacksonNotPresent",
+        "org.springframework.data.web.config.EnableSpringDataWebSupportIntegrationTests#doesNotRegisterHateoasSpecificComponentsIfHateoasNotPresent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting\n \u003c[\"org.springframework.context.annotation.internalConfigurationAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalAutowiredAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalRequiredAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalCommonAnnotationProcessor\",\n    \"org.springframework.context.event.internalEventListenerProcessor\",\n    \"org.springframework.context.event.internalEventListenerFactory\",\n    \"enableSpringDataWebSupportIntegrationTests.SampleConfig\",\n    \"org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration\",\n    \"requestMappingHandlerMapping\",\n    \"mvcPathMatcher\",\n    \"mvcUrlPathHelper\",\n    \"mvcContentNegotiationManager\",\n    \"viewControllerHandlerMapping\",\n    \"beanNameHandlerMapping\",\n    \"resourceHandlerMapping\",\n    \"mvcResourceUrlProvider\",\n    \"defaultServletHandlerMapping\",\n    \"requestMappingHandlerAdapter\",\n    \"mvcConversionService\",\n    \"mvcValidator\",\n    \"mvcUriComponentsContributor\",\n    \"httpRequestHandlerAdapter\",\n    \"simpleControllerHandlerAdapter\",\n    \"handlerExceptionResolver\",\n    \"mvcViewResolver\",\n    \"org.springframework.data.web.config.HateoasAwareSpringDataWebConfiguration\",\n    \"pageableResolver\",\n    \"sortResolver\",\n    \"pagedResourcesAssembler\",\n    \"pagedResourcesAssemblerArgumentResolver\",\n    \"org.springframework.data.web.config.SampleMixin\",\n    \"sampleBean\",\n    \"org.springframework.data.web.config.SpringDataJacksonConfiguration\",\n    \"jacksonGeoModule\",\n    \"org.springframework.data.web.config.QuerydslWebConfiguration\",\n    \"querydslPredicateArgumentResolver\",\n    \"querydslBindingsFactory\",\n    \"controller\"]\u003e\nnot to contain\n \u003c[\"jacksonGeoModule\"]\u003e\nbut found\n \u003c[\"jacksonGeoModule\"]\u003e\n",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting\n \u003c[\"org.springframework.context.annotation.internalConfigurationAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalAutowiredAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalRequiredAnnotationProcessor\",\n    \"org.springframework.context.annotation.internalCommonAnnotationProcessor\",\n    \"org.springframework.context.event.internalEventListenerProcessor\",\n    \"org.springframework.context.event.internalEventListenerFactory\",\n    \"enableSpringDataWebSupportIntegrationTests.SampleConfig\",\n    \"org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration\",\n    \"requestMappingHandlerMapping\",\n    \"mvcPathMatcher\",\n    \"mvcUrlPathHelper\",\n    \"mvcContentNegotiationManager\",\n    \"viewControllerHandlerMapping\",\n    \"beanNameHandlerMapping\",\n    \"resourceHandlerMapping\",\n    \"mvcResourceUrlProvider\",\n    \"defaultServletHandlerMapping\",\n    \"requestMappingHandlerAdapter\",\n    \"mvcConversionService\",\n    \"mvcValidator\",\n    \"mvcUriComponentsContributor\",\n    \"httpRequestHandlerAdapter\",\n    \"simpleControllerHandlerAdapter\",\n    \"handlerExceptionResolver\",\n    \"mvcViewResolver\",\n    \"org.springframework.data.web.config.HateoasAwareSpringDataWebConfiguration\",\n    \"pageableResolver\",\n    \"sortResolver\",\n    \"pagedResourcesAssembler\",\n    \"pagedResourcesAssemblerArgumentResolver\",\n    \"org.springframework.data.web.config.SampleMixin\",\n    \"sampleBean\",\n    \"org.springframework.data.web.config.SpringDataJacksonConfiguration\",\n    \"jacksonGeoModule\",\n    \"org.springframework.data.web.config.QuerydslWebConfiguration\",\n    \"querydslPredicateArgumentResolver\",\n    \"querydslBindingsFactory\",\n    \"controller\"]\u003e\nnot to contain\n \u003c[\"pagedResourcesAssembler\", \"pagedResourcesAssemblerArgumentResolver\"]\u003e\nbut found\n \u003c[\"pagedResourcesAssembler\", \"pagedResourcesAssemblerArgumentResolver\"]\u003e\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
