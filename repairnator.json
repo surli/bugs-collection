@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 7,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/05f40a0d1920...a614b8694f12",
+  "failingModule": "/root/workspace/geotools/geotools/226352709/modules/library/main",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 2185,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.styling.SLDStyleTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.styling.SLDStyleTest#testParseRasterSymbolizer"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.geotools.styling.visitor.DuplicatingStyleVisitorTest",
+      "failingMethods": [
+        "org.geotools.styling.visitor.DuplicatingStyleVisitorTest#testRasterSymbolizerWithOverlapBehavior"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "expected:\u003cnull\u003e but was:\u003cAVERAGE\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
