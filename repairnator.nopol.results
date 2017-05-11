@@ -1,0 +1,80 @@
+nopolinfo #0
+location: FailureLocation{className='j2html.attributes.AttributeTest', failingMethods=[j2html.attributes.AttributeTest#testRender], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail=' Expected: is " href=\"http://example.com\""      but: was " href=\"http:&#x2F;&#x2F;example.com\""', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:48:23 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/tipsy/j2html/216093255/src/main/java, /root/./workspace/tipsy/j2html/216093255/src/main/java], projectClasspath='[Ljava.net.URL;@3f36b447', projectTests=[j2html.attributes.AttributeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 40
+nbAngelicValues: 26
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='j2html.tags.ConvenienceMethodTest', failingMethods=[j2html.tags.ConvenienceMethodTest#testAllConvenienceMethods], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail=' Expected: is "<a href=\"http://example.com\"></a>"      but: was "<a href=\"http:&#x2F;&#x2F;example.com\"></a>"', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:48:53 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/tipsy/j2html/216093255/src/main/java, /root/./workspace/tipsy/j2html/216093255/src/main/java], projectClasspath='[Ljava.net.URL;@140d1230', projectTests=[j2html.tags.ConvenienceMethodTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 56
+nbAngelicValues: 24
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='j2html.tags.TagCreatorTest', failingMethods=[j2html.tags.TagCreatorTest#testAllTags], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail=' Expected: is "&lt;script&gt; and &quot;&lt;/script&gt;&quot;"      but: was "&lt;script&gt; and &quot;&lt;&#x2F;script&gt;&quot;"', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:49:16 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/tipsy/j2html/216093255/src/main/java, /root/./workspace/tipsy/j2html/216093255/src/main/java], projectClasspath='[Ljava.net.URL;@66273da0', projectTests=[j2html.tags.TagCreatorTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 58
+nbAngelicValues: 18
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='j2html.tags.ComplexRenderTest', failingMethods=[j2html.tags.ComplexRenderTest#testComplexRender], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail=' Expected: is "<!DOCTYPE html><html><head><title>Test</title></head><body><header><h1>Test Header <a href=\"http://example.com\">with link</a>.</h1></header><main><h2>Test Form</h2><div><input type=\"email\" name=\"email\" placeholder=\"Email\"><input type=\"password\" name=\"password\" placeholder=\"Password\"><button type=\"submit\">Login</button></div></main><footer class=\"footer\" id=\"id\">Test Footer</footer><script src=\"/testScript.js\"></script></body></html>"      but: was "<!DOCTYPE html><html><head><title>Test</title></head><body><header><h1>Test Header <a href=\"http:&#x2F;&#x2F;example.com\">with link</a>.</h1></header><main><h2>Test Form</h2><div><input type=\"email\" name=\"email\" placeholder=\"Email\"><input type=\"password\" name=\"password\" placeholder=\"Password\"><button type=\"submit\">Login</button></div></main><footer class=\"footer\" id=\"id\">Test Footer</footer><script src=\"&#x2F;testScript.js\"></script></body></html>"', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:49:52 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/tipsy/j2html/216093255/src/main/java, /root/./workspace/tipsy/j2html/216093255/src/main/java], projectClasspath='[Ljava.net.URL;@e4e1ef5', projectTests=[j2html.tags.ComplexRenderTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 73
+nbAngelicValues: 31
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='j2html.tags.TagTest', failingMethods=[j2html.tags.TagTest#testRender], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail=' Expected: is "<a href=\"http://example.com\"></a>"      but: was "<a href=\"http:&#x2F;&#x2F;example.com\"></a>"', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 11 10:50:23 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/tipsy/j2html/216093255/src/main/java, /root/./workspace/tipsy/j2html/216093255/src/main/java], projectClasspath='[Ljava.net.URL;@521bb1a4', projectTests=[j2html.tags.TagTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 59
+nbAngelicValues: 35
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
