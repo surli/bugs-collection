@@ -1,0 +1,101 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "AxonFramework/AxonFramework",
+  "bugCommit": "https://github.com/AxonFramework/AxonFramework/compare/e7ef5e35a727...e3445906faf1",
+  "failingModule": "/root/workspace/AxonFramework/AxonFramework/218809938/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "java.lang.IllegalStateException",
+    "junit.framework.AssertionFailedError",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 654,
+  "failing-test-cases": [
+    {
+      "className": "org.axonframework.eventsourcing.EventSourcingRepositoryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.axonframework.eventsourcing.EventSourcingRepositoryTest#testLoadAndSaveAggregate",
+        "org.axonframework.eventsourcing.EventSourcingRepositoryTest#testLoadWithConflictingChanges"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "The UnitOfWork is not the current Unit of Work",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "The UnitOfWork is in an incompatible phase: ROLLBACK",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest",
+      "failingMethods": [
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testLoadEventsAfterPublishingInSameUnitOfWork",
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testLoadWithSnapshot",
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testLoadEventsWithOffsetAfterPublishingInSameUnitOfWork",
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testEventsAppendedInvisibleUntilUnitOfWorkIsCommitted",
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testExistingEventIsPassedToReader",
+        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testLoadWithoutSnapshot"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c10\u003e but was:\u003c2\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c110\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c80\u003e but was:\u003c1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.axonframework.eventhandling.TrackingEventProcessorTest",
+      "failingMethods": [
+        "org.axonframework.eventhandling.TrackingEventProcessorTest#testContinueAfterPause"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Expected 4 invocations on event listener by now",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
