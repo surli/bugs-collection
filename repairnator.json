@@ -1,0 +1,111 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "cdk/cdk",
+  "bugCommit": "https://github.com/cdk/cdk/compare/baffeee14f3d...10a0417678c2",
+  "failingModule": "/root/workspace/cdk/cdk/227131774/storage/io",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 10,
+  "error-types": [
+    "java.lang.AssertionError:",
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 12067,
+  "failing-test-cases": [
+    {
+      "className": "org.openscience.cdk.io.MDLV2000ReaderTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testReading0DStereochemistryWithHydrogen",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#radicalsReflectedInHydrogenCount",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testReadValence",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#bismuth_ion_valence",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#e_butene_2D",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#e_butene_3D"
+      ],
+      "erroringMethods": [
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testMassNumber"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003cANTI_CLOCKWISE\u003e\n     but: was \u003cCLOCKWISE\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c8\u003e\n     but: was \u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c4\u003e\n     but: was \u003c3\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c3\u003e\n     but: was \u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.openscience.cdk.io.MDLV2000WriterTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000WriterTest#testAtomParity"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.openscience.cdk.io.MDLV2000AtomBlockTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c11",
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c14",
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c13"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c11\u003e\n     but: was null",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c13\u003e\n     but: was null",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c14\u003e\n     but: was null",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
