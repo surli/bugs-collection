@@ -1,0 +1,96 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "tipsy/j2html",
+  "bugCommit": "https://github.com/tipsy/j2html/compare/6903bcbe4d8c...71433418fae7",
+  "failingModule": "/root/workspace/tipsy/j2html/216093255",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 12,
+  "failing-test-cases": [
+    {
+      "className": "j2html.attributes.AttributeTest",
+      "failingMethods": [
+        "j2html.attributes.AttributeTest#testRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \" href\u003d\\\"http://example.com\\\"\"      but: was \" href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.ConvenienceMethodTest",
+      "failingMethods": [
+        "j2html.tags.ConvenienceMethodTest#testAllConvenienceMethods"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003ca href\u003d\\\"http://example.com\\\"\u003e\u003c/a\u003e\"      but: was \"\u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003e\u003c/a\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.TagCreatorTest",
+      "failingMethods": [
+        "j2html.tags.TagCreatorTest#testAllTags"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u0026lt;script\u0026gt; and \u0026quot;\u0026lt;/script\u0026gt;\u0026quot;\"      but: was \"\u0026lt;script\u0026gt; and \u0026quot;\u0026lt;\u0026#x2F;script\u0026gt;\u0026quot;\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.ComplexRenderTest",
+      "failingMethods": [
+        "j2html.tags.ComplexRenderTest#testComplexRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eTest\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003cheader\u003e\u003ch1\u003eTest Header \u003ca href\u003d\\\"http://example.com\\\"\u003ewith link\u003c/a\u003e.\u003c/h1\u003e\u003c/header\u003e\u003cmain\u003e\u003ch2\u003eTest Form\u003c/h2\u003e\u003cdiv\u003e\u003cinput type\u003d\\\"email\\\" name\u003d\\\"email\\\" placeholder\u003d\\\"Email\\\"\u003e\u003cinput type\u003d\\\"password\\\" name\u003d\\\"password\\\" placeholder\u003d\\\"Password\\\"\u003e\u003cbutton type\u003d\\\"submit\\\"\u003eLogin\u003c/button\u003e\u003c/div\u003e\u003c/main\u003e\u003cfooter class\u003d\\\"footer\\\" id\u003d\\\"id\\\"\u003eTest Footer\u003c/footer\u003e\u003cscript src\u003d\\\"/testScript.js\\\"\u003e\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e\"      but: was \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eTest\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003cheader\u003e\u003ch1\u003eTest Header \u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003ewith link\u003c/a\u003e.\u003c/h1\u003e\u003c/header\u003e\u003cmain\u003e\u003ch2\u003eTest Form\u003c/h2\u003e\u003cdiv\u003e\u003cinput type\u003d\\\"email\\\" name\u003d\\\"email\\\" placeholder\u003d\\\"Email\\\"\u003e\u003cinput type\u003d\\\"password\\\" name\u003d\\\"password\\\" placeholder\u003d\\\"Password\\\"\u003e\u003cbutton type\u003d\\\"submit\\\"\u003eLogin\u003c/button\u003e\u003c/div\u003e\u003c/main\u003e\u003cfooter class\u003d\\\"footer\\\" id\u003d\\\"id\\\"\u003eTest Footer\u003c/footer\u003e\u003cscript src\u003d\\\"\u0026#x2F;testScript.js\\\"\u003e\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.TagTest",
+      "failingMethods": [
+        "j2html.tags.TagTest#testRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003ca href\u003d\\\"http://example.com\\\"\u003e\u003c/a\u003e\"      but: was \"\u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003e\u003c/a\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
