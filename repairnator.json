@@ -1,0 +1,122 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 6,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/9a01113125f9...89287be8dd99",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/220079224/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 4990,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.RemoveVdsCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.RemoveVdsCommandTest#removeWhenMultipleHosts",
+        "org.ovirt.engine.core.bll.RemoveVdsCommandTest#removeLastHost"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsOnEmptyClusterEvenWhenGlusterServerHasPeers",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSuccessForGlusterServerWhenUpServerExists",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenGlusterServerHasPeersThatExistInDB",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateFailsForGlusterServerWhenNoUpServer",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateFailsWhenGlusterServerHasPeers",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenHasPeersThrowsException",
+        "org.ovirt.engine.core.bll.hostdeploy.AddVdsCommandTest#validateSucceedsWhenGlusterServerHasNoPeers"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 7,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest#executeCommandWhenFailed",
+        "org.ovirt.engine.core.bll.gluster.EnableGlusterHookCommandTest#executeCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest#executeCommandWhenFailed",
+        "org.ovirt.engine.core.bll.gluster.DisableGlusterHookCommandTest#executeCommand"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}

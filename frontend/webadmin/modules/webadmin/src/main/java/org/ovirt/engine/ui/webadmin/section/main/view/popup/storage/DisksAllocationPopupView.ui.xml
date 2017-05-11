@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+    xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+    xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic"
+    xmlns:w="urn:import:org.ovirt.engine.ui.common.widget.uicommon.storage"
+    xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:with field='resources' type='org.ovirt.engine.ui.common.CommonApplicationResources' />
+
+    <ui:style>
+        .container {
+            width: 100%;
+        }
+    </ui:style>
+
+    <d:SimpleDialogPanel width="575px" height="410px">
+        <d:content>
+            <b:Container addStyleNames="{style.container}">
+                <b:Row>
+                    <b:Column size="SM_12">
+                        <w:DisksAllocationView ui:field="disksAllocationView" listWidth="100%" showSource="true" usePatternFly="true" />
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="SM_12">
+                        <ge:StringEntityModelTextAreaLabelEditor ui:field="dynamicWarningLabel" usePatternFly="true" />
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="SM_12">
+                        <b:Alert type="WARNING" ui:field="warningMessage" visible="false" />
+                    </b:Column>
+                </b:Row>
+            </b:Container>
+        </d:content>
+    </d:SimpleDialogPanel>
+</ui:UiBinder>
