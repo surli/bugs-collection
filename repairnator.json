@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 71,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/1cfc4188f5fa...b6a210914be2",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/224060715/backend/manager/modules/restapi/jaxrs",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "Wanted but not invoked"
+  ],
+  "totalNumberRunningTests": 7061,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.api.restapi.resource.BackendVmSessionsResourceTest",
+      "failingMethods": [
+        "org.ovirt.engine.api.restapi.resource.BackendVmSessionsResourceTest#testList"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked",
+          "failureDetail": " Wanted but not invoked: backend.runQuery(     GetDbUserByUserNameAndDomain,     \u003cParameters equals\u003e ); -\u003e at org.ovirt.engine.api.restapi.resource.AbstractBackendBaseTest.lambda$setUpGetEntityExpectations$0(AbstractBackendBaseTest.java:264)  However, there was exactly 1 interaction with this mock: backend.runQuery(     GetVmByVmId,     IdQueryParameters:{refresh\u003d\u0027false\u0027, filtered\u003d\u0027false\u0027} ); -\u003e at org.ovirt.engine.api.restapi.resource.BackendResource.runQuery(BackendResource.java:82)  ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
