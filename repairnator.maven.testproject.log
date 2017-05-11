@@ -1,0 +1,772 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Firefly Framework
+[INFO] firefly-common
+[INFO] firefly-slf4j
+[INFO] firefly-nettool
+[INFO] firefly-db
+[INFO] firefly
+[INFO] firefly-example
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Firefly Framework 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building firefly-common 4.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ firefly-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/hypercube1024/firefly/219553435/firefly-common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ firefly-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ firefly-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ firefly-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ firefly-common ---
+[INFO] Surefire report directory: /root/workspace/hypercube1024/firefly/219553435/firefly-common/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 114.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 693.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.utils.TestVerifyUtils
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running test.utils.lang.pool.TestAsyncPool
+o -> 0
+o2 -> 0
+0|false
+1|false
+2|false
+3|false
+4|false
+5|false
+6|false
+7|false
+8|false
+9|false
+-------------------
+0|false
+1|false
+2|false
+3|false
+4|false
+5|false
+6|false
+7|false
+8|false
+9|false
+failure1
+loop num -> 0
+loop num -> 1
+loop num -> 2
+loop num -> 3
+loop num -> 4
+loop num -> 5
+loop num -> 6
+loop num -> 7
+loop num -> 8
+loop num -> 9
+loop num -> 10
+loop num -> 11
+loop num -> 12
+loop num -> 13
+loop num -> 14
+loop num -> 15
+loop num -> 16
+loop num -> 17
+loop num -> 18
+loop num -> 19
+loop num -> 20
+loop num -> 21
+loop num -> 22
+loop num -> 23
+loop num -> 24
+loop num -> 25
+loop num -> 26
+loop num -> 27
+loop num -> 28
+loop num -> 29
+loop num -> 30
+loop num -> 31
+loop num -> 32
+loop num -> 33
+loop num -> 34
+loop num -> 35
+loop num -> 36
+loop num -> 37
+loop num -> 38
+loop num -> 39
+loop num -> 40
+loop num -> 41
+loop num -> 42
+loop num -> 43
+loop num -> 44
+loop num -> 45
+loop num -> 46
+loop num -> 47
+loop num -> 48
+loop num -> 49
+loop num -> 50
+loop num -> 51
+loop num -> 52
+loop num -> 53
+loop num -> 54
+loop num -> 55
+loop num -> 56
+loop num -> 57
+loop num -> 58
+loop num -> 59
+loop num -> 60
+loop num -> 61
+loop num -> 62
+loop num -> 63
+loop num -> 64
+loop num -> 65
+loop num -> 66
+loop num -> 67
+loop num -> 68
+loop num -> 69
+loop num -> 70
+loop num -> 71
+loop num -> 72
+loop num -> 73
+loop num -> 74
+loop num -> 75
+loop num -> 76
+loop num -> 77
+loop num -> 78
+loop num -> 79
+loop num -> 80
+loop num -> 81
+loop num -> 82
+loop num -> 83
+loop num -> 84
+loop num -> 85
+loop num -> 86
+loop num -> 87
+loop num -> 88
+loop num -> 89
+loop num -> 90
+loop num -> 91
+loop num -> 92
+loop num -> 93
+loop num -> 94
+loop num -> 95
+loop num -> 96
+loop num -> 97
+loop num -> 98
+loop num -> 99
+get o: 1| created object size: 8
+get o: 2| created object size: 8
+get o: 4| created object size: 8
+get o: 5| created object size: 8
+get o: 7| created object size: 8
+get o: 8| created object size: 8
+com.firefly.utils.exception.CommonRuntimeException: test create pooled object: 3 exception
+com.firefly.utils.exception.CommonRuntimeException: test create pooled object: 6 exception
+get o: 2| created object size: 6
+get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 1| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 1| created object size: 6
+get o: 5| created object size: 6
+get o: 2| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 4| created object size: 6
+get o: 5| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 4| created object size: 6
+get o: 8| created object size: 6
+get o: 7| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+get o: 8| created object size: 6
+get o: 7| created object size: 6
+get o: 4| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 5| created object size: 6
+get o: 8| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 5| created object size: 6
+get o: 2| created object size: 6
+get o: 1| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+get o: 2| created object size: 6
+get o: 4| created object size: 6
+get o: 7| created object size: 6
+get o: 8| created object size: 6
+get o: 5| created object size: 6
+get o: 1| created object size: 6
+6
+destory obj - [2]
+destory obj - [4]
+destory obj - [7]
+destory obj - [8]
+destory obj - [5]
+destory obj - [1]
+destory obj - [0]
+destory obj - [1]
+destory obj - [2]
+4
+destory obj - [3]
+destory obj - [4]
+destory obj - [5]
+destory obj - [6]
+loop num -> 0
+loop num -> 1
+loop num -> 2
+loop num -> 3
+loop num -> 4
+loop num -> 5
+loop num -> 6
+loop num -> 7
+loop num -> 8
+loop num -> 9
+loop num -> 10
+loop num -> 11
+loop num -> 12
+loop num -> 13
+loop num -> 14
+loop num -> 15
+loop num -> 16
+loop num -> 17
+loop num -> 18
+loop num -> 19
+loop num -> 20
+loop num -> 21
+loop num -> 22
+loop num -> 23
+loop num -> 24
+loop num -> 25
+loop num -> 26
+loop num -> 27
+loop num -> 28
+loop num -> 29
+loop num -> 30
+loop num -> 31
+loop num -> 32
+loop num -> 33
+loop num -> 34
+loop num -> 35
+loop num -> 36
+loop num -> 37
+loop num -> 38
+loop num -> 39
+loop num -> 40
+loop num -> 41
+loop num -> 42
+loop num -> 43
+loop num -> 44
+loop num -> 45
+loop num -> 46
+loop num -> 47
+loop num -> 48
+loop num -> 49
+loop num -> 50
+loop num -> 51
+loop num -> 52
+loop num -> 53
+loop num -> 54
+loop num -> 55
+loop num -> 56
+loop num -> 57
+loop num -> 58
+loop num -> 59
+loop num -> 60
+loop num -> 61
+loop num -> 62
+loop num -> 63
+loop num -> 64
+loop num -> 65
+loop num -> 66
+loop num -> 67
+loop num -> 68
+loop num -> 69
+loop num -> 70
+loop num -> 71
+loop num -> 72
+loop num -> 73
+loop num -> 74
+loop num -> 75
+loop num -> 76
+loop num -> 77
+loop num -> 78
+loop num -> 79
+loop num -> 80
+loop num -> 81
+loop num -> 82
+loop num -> 83
+loop num -> 84
+loop num -> 85
+loop num -> 86
+loop num -> 87
+loop num -> 88
+loop num -> 89
+loop num -> 90
+loop num -> 91
+loop num -> 92
+loop num -> 93
+loop num -> 94
+loop num -> 95
+loop num -> 96
+loop num -> 97
+loop num -> 98
+loop num -> 99
+get o: 1| created object size: 8
+get o: 2| created object size: 8
+get o: 3| created object size: 8
+get o: 4| created object size: 8
+get o: 5| created object size: 8
+get o: 6| created object size: 8
+get o: 7| created object size: 8
+get o: 8| created object size: 8
+destory obj - [1]
+get o: 2| created object size: 8
+get o: 3| created object size: 8
+get o: 4| created object size: 8
+get o: 5| created object size: 8
+get o: 6| created object size: 8
+get o: 7| created object size: 8
+get o: 8| created object size: 8
+get o: 9| created object size: 8
+get o: 3| created object size: 8
+destory obj - [2]
+get o: 4| created object size: 8
+get o: 5| created object size: 8
+get o: 6| created object size: 8
+get o: 7| created object size: 8
+get o: 8| created object size: 8
+get o: 9| created object size: 8
+destory obj - [3]
+get o: 10| created object size: 7
+get o: 5| created object size: 8
+get o: 4| created object size: 8
+get o: 8| created object size: 8
+get o: 6| created object size: 8
+get o: 7| created object size: 8
+get o: 11| created object size: 8
+get o: 9| created object size: 8
+get o: 8| created object size: 8
+get o: 5| created object size: 8
+destory obj - [4]
+get o: 6| created object size: 8
+get o: 10| created object size: 8
+get o: 7| created object size: 8
+get o: 11| created object size: 8
+get o: 9| created object size: 8
+get o: 8| created object size: 8
+get o: 12| created object size: 8
+destory obj - [5]
+get o: 6| created object size: 8
+get o: 10| created object size: 8
+get o: 7| created object size: 8
+get o: 11| created object size: 8
+get o: 13| created object size: 8
+get o: 9| created object size: 8
+get o: 12| created object size: 8
+get o: 8| created object size: 8
+destory obj - [6]
+get o: 10| created object size: 8
+get o: 7| created object size: 8
+get o: 11| created object size: 8
+get o: 13| created object size: 8
+get o: 9| created object size: 8
+get o: 12| created object size: 8
+get o: 8| created object size: 8
+get o: 14| created object size: 8
+get o: 10| created object size: 8
+destory obj - [7]
+get o: 11| created object size: 8
+get o: 13| created object size: 8
+get o: 9| created object size: 8
+get o: 12| created object size: 8
+destory obj - [8]
+get o: 15| created object size: 8
+get o: 14| created object size: 8
+get o: 10| created object size: 8
+get o: 11| created object size: 8
+get o: 13| created object size: 8
+destory obj - [9]
+get o: 12| created object size: 8
+get o: 16| created object size: 8
+get o: 15| created object size: 8
+get o: 14| created object size: 8
+get o: 10| created object size: 8
+get o: 11| created object size: 8
+get o: 17| created object size: 8
+get o: 13| created object size: 8
+get o: 12| created object size: 8
+get o: 16| created object size: 8
+get o: 15| created object size: 8
+get o: 14| created object size: 8
+destory obj - [10]
+get o: 11| created object size: 8
+get o: 17| created object size: 8
+get o: 13| created object size: 8
+get o: 12| created object size: 8
+get o: 16| created object size: 8
+get o: 15| created object size: 8
+get o: 18| created object size: 8
+get o: 14| created object size: 8
+destory obj - [11]
+get o: 17| created object size: 8
+get o: 13| created object size: 8
+destory obj - [12]
+get o: 16| created object size: 8
+get o: 15| created object size: 8
+get o: 18| created object size: 8
+get o: 14| created object size: 8
+get o: 19| created object size: 8
+get o: 17| created object size: 8
+destory obj - [13]
+get o: 20| created object size: 8
+get o: 16| created object size: 8
+get o: 15| created object size: 8
+get o: 18| created object size: 8
+get o: 14| created object size: 8
+get o: 21| created object size: 8
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.539 sec <<< FAILURE!
+testInvalid(test.utils.lang.pool.TestAsyncPool)  Time elapsed: 1.652 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is <8>
+     but: was <7>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at test.utils.lang.pool.TestAsyncPool.testInvalid(TestAsyncPool.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running test.utils.lang.TestQuotedStringTokenizer
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running test.utils.lang.TestCollectionTools
+{0=Foo [id=0, information=test0], 1=Foo [id=1, information=test1], 2=Foo [id=2, information=test2], 3=Foo [id=3, information=test3], 4=Foo [id=4, information=test4]}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.utils.lang.Utf8StringBuilderInvalidUtfTest
+Utf8StringBuilderInvalidUtfTest[] (C0Af)
+Utf8StringBuilderInvalidUtfTest[] (EdA080)
+Utf8StringBuilderInvalidUtfTest[] (F08080Af)
+Utf8StringBuilderInvalidUtfTest[] (F8808080Af)
+Utf8StringBuilderInvalidUtfTest[] (E080Af)
+Utf8StringBuilderInvalidUtfTest[] (F4908080)
+Utf8StringBuilderInvalidUtfTest[] (FbBfBfBfBf)
+Utf8StringBuilderInvalidUtfTest[] (10FfFf)
+Utf8StringBuilderInvalidUtfTest[] (CeBaE1BdB9Cf83CeBcCeB5EdA080656469746564)
+Utf8StringBuilderInvalidUtfTest[] (Da07)
+Utf8StringBuilderInvalidUtfTest[] (D807)
+Utf8StringBuilderInvalidUtfTest[] (EdA087)
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running test.utils.lang.URIUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running test.utils.lang.Utf8StringBuilderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.utils.lang.TestTypeUtils
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running test.utils.lang.Utf8StringBufferTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.utils.TestStringUtils
+[500-]
+[500-]
+[500-]
+[500-]
+[500-]
+[hello, world#%test, eee]
+[hello]
+[hello]
+[hello]
+[hello, world]
+[hello, world]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running test.utils.classproxy.TestClassProxyFactoryUsingJavassist
+com.firefly.utils.ClassProxy876b09d07c3e47d8a91c0110079cfd4b
+intercept method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
+intercept method 1 end...
+intercept method 1: testInt|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
+intercept method 1 end...
+com.firefly.utils.ClassProxy8d0965756515490ba6915bb74c6ba9ca
+intercept method 2: hello|com.firefly.utils.ClassProxy876b09d07c3e47d8a91c0110079cfd4b
+intercept method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
+intercept method 1 end...
+intercept method 2 end...
+intercept method 1: testInt|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
+intercept method 1 end...
+com.firefly.utils.ClassProxy2944f3bdec414ba0a4187e7a5c936745
+filter method 1: hello|test.utils.classproxy.TestClassProxyFactoryUsingJavassist.Fee
+filter method 1 end...
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Running test.utils.concurrent.TestAtomics
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.utils.TestConvertUtils
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running test.utils.codec.TestHuffmanCodec
+{ =HuffmanCode [frequency=2, length=3, bits=001, getBytes()=[4]], 一=HuffmanCode [frequency=1, length=5, bits=11100, getBytes()=[7]], !=HuffmanCode [frequency=1, length=4, bits=0110, getBytes()=[6]], d=HuffmanCode [frequency=1, length=4, bits=0001, getBytes()=[8]], e=HuffmanCode [frequency=1, length=5, bits=11110, getBytes()=[15]], h=HuffmanCode [frequency=1, length=4, bits=0111, getBytes()=[14]], 测=HuffmanCode [frequency=2, length=3, bits=100, getBytes()=[1]], l=HuffmanCode [frequency=3, length=3, bits=110, getBytes()=[3]], o=HuffmanCode [frequency=2, length=3, bits=010, getBytes()=[2]], r=HuffmanCode [frequency=1, length=5, bits=11111, getBytes()=[31]], 试=HuffmanCode [frequency=2, length=3, bits=101, getBytes()=[5]], w=HuffmanCode [frequency=1, length=4, bits=0000, getBytes()=[]], 些=HuffmanCode [frequency=1, length=5, bits=11101, getBytes()=[23]]}
+str length: 31
+encode length: 9| bit length: 69
+fe3611f487c6f4dc14
+{1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 16, 20, 26, 28, 29, 30, 31, 32, 33, 34, 39, 41, 42, 46, 47, 50, 52, 53, 54, 55, 58, 59, 60, 62, 63, 66, 68}
+{1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 16, 20, 26, 28, 29, 30, 31, 32, 33, 34, 39, 41, 42, 46, 47, 50, 52, 53, 54, 55, 58, 59, 60, 62, 63, 66, 68}
+hello world! 测试一些测试
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running test.utils.codec.TestNumberProcessUtils
+3 integer: -1058344797
+3 long: 3236622499
+byte: -64
+integer: 192
+short: 67
+integer: 49386
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.utils.codec.TestByteArrayUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.utils.TestCompilerUtils
+hello
+hello
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec
+Running test.utils.pattern.TestPattern
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running test.utils.json.parser.TestParser
+{"age":0,"contact1":null,"contact2":null,"date":null,"height":null,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com","number":0,"type":null,"weight":0.0}
+{"date1":"2016-02-04 14:38:18","date2":null}
+2017-05-11 13:26:18
+DateFormatObject [dateDefault=null, dateFieldDefaultFormat=null, dateFieldFormat1=null, dateFieldTimestamp=null, dateMethodFormat=null, dateArray=null, dateList=null, dateMap=null]
+{"dateArray":["2015-01-25 14:53:12","2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateDefault":"2015-01-25 14:53:12","dateFieldDefaultFormat":"2015-01-25 14:53:12","dateFieldFormat1":"2015/01/25 14:53:12","dateFieldTimestamp":1422193992621,"dateList":["2015-01-25 14:53:12","2015-01-25 14:53:12"],"dateMap":{"mapdate1":"2015-01-25 14:53:12"},"dateMethodFormat":"2015/01/25","title":"testDateFormat"}
+DateFormatObject [dateDefault=Sun Jan 25 14:53:12 CET 2015, dateFieldDefaultFormat=Sun Jan 25 14:53:12 CET 2015, dateFieldFormat1=Sun Jan 25 14:53:12 CET 2015, dateFieldTimestamp=Sun Jan 25 14:53:12 CET 2015, dateMethodFormat=Sun Jan 25 00:00:00 CET 2015, dateArray=[Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015], dateList=[Sun Jan 25 14:53:12 CET 2015, Sun Jan 25 14:53:12 CET 2015], dateMap={mapdate1=Sun Jan 25 14:53:12 CET 2015}]
+SpecialPropertyObject [iPhone=null, iPad=null, iOS=null, iText=false, aPhone=null, aPad=null, aOS=null, aText=false]
+{"aOS":"aOS","aPad":"aPad","aPhone":"aPhone","aText":true,"iOS":"iOS","iPad":"iPad","iPhone":"iPhone","iText":true}
+SpecialPropertyObject [iPhone=iPhone, iPad=iPad, iOS=iOS, iText=true, aPhone=aPhone, aPad=aPad, aOS=aOS, aText=true]
+{"author":null,"id":331,"price":10.0,"publishingId":0,"simpleObjs":null}
+{"bigDecimal":-3.34,"bigInteger":-4,"book":null,"id":null,"sex":" ","symbol":null,"user":null}
+{"age":0,"contact1":null,"contact2":null,"date":null,"height":null,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com\u0001\u0000\u000f\u0010\u001f","number":0,"type":null,"weight":0.0}
+{"age":0,"contact1":null,"contact2":null,"date":0,"height":0.0,"id":0,"name":"PengtaoQiu\nAlvin\nhttp:\/\/fireflysource.com\u0001\u0000\u000f\u0010\u001f","number":0,"type":0,"weight":0.0}
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec
+Running test.utils.json.reader.TestReader
+dds"fseee
+d
+ddfd
+d
+ddfd
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running test.utils.json.compiler.TestCompiler
+id
+name
+types
+users
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running test.utils.TestReflectUtils
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+Running test.utils.io.TestBufferUtils
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.024 sec
+Running test.utils.io.TestFileUtils
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running test.utils.collection.TestWeakReferenceConcurrentHashMap
+405771
+405770
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.495 sec
+Running test.utils.collection.TestLazyList
+Tests run: 115, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.034 sec
+Running test.utils.collection.TestConsistentHash
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.utils.collection.TestConcurrentLinkedHashMap
+16|15|28
+16|15|28
+32
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running test.utils.collection.MultiMapTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.utils.collection.TestHashedArrayTree
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running test.utils.log.LogParserTest
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-common', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=TRACE, path='D:/log/', name='test-TRACE', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=DEBUG, path='D:/log/', name='test-DEBUG', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=ERROR, path='D:/log/', name='test-ERROR', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=WARN, path='D:/log/', name='test-WARN', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test-INFO', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='test-console', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='firefly-system', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo.bar', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.max.size', consoleOutput=false, fileOutput=true, maxFileSize=300, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.gbk', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=GBK}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='firefly-system', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='test-console', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=DEBUG, path='D:/log/', name='test-DEBUG', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test-INFO', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-common', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=TRACE, path='D:/log/', name='test-TRACE', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=WARN, path='D:/log/', name='test-WARN', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=ERROR, path='D:/log/', name='test-ERROR', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='test-illegal', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo.bar', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running test.utils.log.LogTest
+initialize log FileLog{level=INFO, path='D:/log/', name='firefly-common', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=TRACE, path='D:/log/', name='test-TRACE', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=DEBUG, path='D:/log/', name='test-DEBUG', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=ERROR, path='D:/log/', name='test-ERROR', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=WARN, path='D:/log/', name='test-WARN', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test-INFO', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='test-console', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='/root/workspace/hypercube1024/firefly/219553435/firefly-common/logs', name='firefly-system', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.utils.log.foo.bar', consoleOutput=true, fileOutput=true, maxFileSize=209715200, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.max.size', consoleOutput=false, fileOutput=true, maxFileSize=300, charset=UTF-8}
+initialize log FileLog{level=INFO, path='D:/log/', name='test.gbk', consoleOutput=false, fileOutput=true, maxFileSize=209715200, charset=GBK}
+TRACE 2017-05-11 13:26:20	trace log
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-TRACE.2017-05-11.txt and the size is 0
+DEBUG 2017-05-11 13:26:20	debug log
+INFO 2017-05-11 13:26:20	info log
+WARN 2017-05-11 13:26:20	warn log
+ERROR 2017-05-11 13:26:20	error log
+DEBUG 2017-05-11 13:26:20	debug log
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-DEBUG.2017-05-11.txt and the size is 0
+INFO 2017-05-11 13:26:20	info log
+WARN 2017-05-11 13:26:20	warn log
+ERROR 2017-05-11 13:26:20	error log
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-INFO.2017-05-11.txt and the size is 0
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-WARN.2017-05-11.txt and the size is 0
+ERROR 2017-05-11 13:26:20	error log
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test-ERROR.2017-05-11.txt and the size is 0
+INFO 2017-05-11 13:26:20	testFoo
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test.utils.log.foo.2017-05-11.txt and the size is 0
+INFO 2017-05-11 13:26:20	testBar
+get new log buffer, the file path is /root/workspace/hypercube1024/firefly/219553435/firefly-common/D:/log/test.utils.log.foo.bar.2017-05-11.txt and the size is 0
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.013 sec
+
+Results :
+
+Failed tests:   testInvalid(test.utils.lang.pool.TestAsyncPool): (..)
+
+Tests run: 309, Failures: 1, Errors: 0, Skipped: 5
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Firefly Framework .................................. SUCCESS [  0.001 s]
+[INFO] firefly-common ..................................... FAILURE [ 10.466 s]
+[INFO] firefly-slf4j ...................................... SKIPPED
+[INFO] firefly-nettool .................................... SKIPPED
+[INFO] firefly-db ......................................... SKIPPED
+[INFO] firefly ............................................ SKIPPED
+[INFO] firefly-example .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.612 s
+[INFO] Finished at: 2017-05-11T13:26:22+02:00
+[INFO] Final Memory: 21M/1562M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project firefly-common: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/hypercube1024/firefly/219553435/firefly-common/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :firefly-common
