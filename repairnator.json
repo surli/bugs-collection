@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 18,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/27c364a17dc7...654a2164b070",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/226477624/languagetool-standalone",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 797,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.RuleTest",
+      "failingMethods": [
+        "org.languagetool.rules.RuleTest#testJavaRules"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not get the expected rule match for the incorrect example sentence:\nText: quente como uma fornalha\nRule: PT_REDUNDANCY_REPLACE\nMatches: [] expected:\u003c1\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
