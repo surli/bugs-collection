@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/6b9782b5a492...28ec8a47d381",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/221825856",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 1574,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest",
+      "failingMethods": [
+        "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest#testIssue1599"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Expected an exception with one of substrings ([Illegal type]): got one with message \"N/A\n at [Source: {\"id\": 124,\n \"obj\":[ \"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl\",\n  {\n    \"transletBytecodes\" : [ \"AAIAZQ\u003d\u003d\" ],\n    \"transletName\" : \"a.b\",\n    \"outputProperties\" : { }\n  }\n ]\n}; line: 6, column: 26] (through reference chain: com.fasterxml.jackson.databind.interop.Bean1599[\"obj\"]-\u003ecom.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl[\"outputProperties\"])\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
