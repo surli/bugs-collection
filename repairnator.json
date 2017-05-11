@@ -1,0 +1,63 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 4,
+  "repo": "HubSpot/Singularity",
+  "bugCommit": "https://github.com/HubSpot/Singularity/compare/67babeb3b1eb...b93f68d63cc1",
+  "failingModule": "/root/workspace/HubSpot/Singularity/219846113/SingularityService",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.UnsupportedOperationException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 205,
+  "failing-test-cases": [
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularitySchedulerTest",
+      "failingMethods": [
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRemovedRequestData"
+      ],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testJobRescheduledWhenItFinishesDuringDecommission"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityMachineStatesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testDecommissioning",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testFrozenSlaveCanBeDecommissioned",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testEmptyDecommissioning"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
