@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 the original author or authors.
+ * Copyright 2013-2017 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.Import;
@@ -78,14 +79,11 @@ public @interface EnableSpringDataWebSupport {
 	 * https://jira.springsource.org/browse/SPR-10565).
 	 * 
 	 * @author Oliver Gierke
+	 * @author Jens Schauder
 	 */
 	static class SpringDataWebConfigurationImportSelector implements ImportSelector, ResourceLoaderAware {
 
-		// Don't make final to allow test cases faking this to false
-		private static boolean HATEOAS_PRESENT = ClassUtils.isPresent("org.springframework.hateoas.Link", null);
-		private static boolean JACKSON_PRESENT = ClassUtils.isPresent("com.fasterxml.jackson.databind.ObjectMapper", null);
-
-		private ResourceLoader resourceLoader;
+		private Optional<ClassLoader> resourceLoader = Optional.empty();
 
 		/* 
 		 * (non-Javadoc)
@@ -93,7 +91,7 @@ public @interface EnableSpringDataWebSupport {
 		 */
 		@Override
 		public void setResourceLoader(ResourceLoader resourceLoader) {
-			this.resourceLoader = resourceLoader;
+			this.resourceLoader = Optional.of(resourceLoader).map(ResourceLoader::getClassLoader);
 		}
 
 		/* 
@@ -105,13 +103,15 @@ public @interface EnableSpringDataWebSupport {
 
 			List<String> imports = new ArrayList<>();
 
-			imports.add(HATEOAS_PRESENT ? HateoasAwareSpringDataWebConfiguration.class.getName()
-					: SpringDataWebConfiguration.class.getName());
+			imports.add(resourceLoader//
+					.filter(it -> ClassUtils.isPresent("org.springframework.hateoas.Link", it))//
+					.map(it -> HateoasAwareSpringDataWebConfiguration.class.getName())//
+					.orElseGet(() -> SpringDataWebConfiguration.class.getName()));
 
-			if (JACKSON_PRESENT) {
-				imports.addAll(
-						SpringFactoriesLoader.loadFactoryNames(SpringDataJacksonModules.class, resourceLoader.getClassLoader()));
-			}
+			resourceLoader//
+					.filter(it -> ClassUtils.isPresent("com.fasterxml.jackson.databind.ObjectMapper", it))//
+					.map(it -> SpringFactoriesLoader.loadFactoryNames(SpringDataJacksonModules.class, it))//
+					.ifPresent(it -> imports.addAll(it));
 
 			return imports.toArray(new String[imports.size()]);
 		}
