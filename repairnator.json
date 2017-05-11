@@ -1,0 +1,66 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/9e7e37d4320a...06569874d5fd",
+  "failingModule": "/root/workspace/google/error-prone/199115933/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1979,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.util.ReachabilityTest",
+      "failingMethods": [
+        "com.google.errorprone.util.ReachabilityTest#test[17]",
+        "com.google.errorprone.util.ReachabilityTest#test[14]",
+        "com.google.errorprone.util.ReachabilityTest#test[24]",
+        "com.google.errorprone.util.ReachabilityTest#test[12]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 9. All errors:\n[/in/Test.java:9: error: [FirstCaseFallsThrough] \n      default:\n      ^\n    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 10. All errors:\n[/in/Test.java:10: error: [FirstCaseFallsThrough] \n      default:\n      ^\n    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 10. All errors:\n[/in/Test.java:10: error: [FirstCaseFallsThrough] \n      default:\n      ^\n    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 16. All errors:\n[/in/Test.java:16: error: [FirstCaseFallsThrough] \n      default:\n      ^\n    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.util.ASTHelpersTest",
+      "failingMethods": [
+        "com.google.errorprone.util.ASTHelpersTest#constValue"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 5 matching Boolean(false). All errors:\n[/Test.java:3: error: [ConstChecker] Integer(42)\n  static final int A \u003d 42;\n                   ^\n    (see http://errorprone.info/bugpattern/ConstChecker), /Test.java:5: error: [ConstChecker] Integer(0)\n  static final boolean B \u003d false;\n                       ^\n    (see http://errorprone.info/bugpattern/ConstChecker)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
