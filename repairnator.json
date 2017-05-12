@@ -1,0 +1,84 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "jpush/jpush-api-java-client",
+  "bugCommit": "https://github.com/jpush/jpush-api-java-client/compare/cde676d4a2d8...bdf97ed5ed79",
+  "failingModule": "/root/workspace/jpush/jpush-api-java-client/218725112",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 8,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 72,
+  "failing-test-cases": [
+    {
+      "className": "cn.jpush.api.push.model.notification.NotificationTest",
+      "failingMethods": [
+        "cn.jpush.api.push.model.notification.NotificationTest#testShortcut_android",
+        "cn.jpush.api.push.model.notification.NotificationTest#testExtras_jsonValue",
+        "cn.jpush.api.push.model.notification.NotificationTest#testAlert_android"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"android\":{\"alert\":\"alert\",\"extras\":{\"key\":{\"v_key\":\"v_value\"}}}}\u003e but was:\u003c{\"android\":{\"alert\":\"alert\",\"extras\":{\"key\":{\"v_key\":\"v_value\"}},\"alert_type\":0}}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"android\":{\"alert\":\"alert\",\"title\":\"title\"}}\u003e but was:\u003c{\"android\":{\"alert\":\"alert\",\"title\":\"title\",\"alert_type\":0}}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"android\":{\"alert\":\"alert\"}}\u003e but was:\u003c{\"android\":{\"alert\":\"alert\",\"alert_type\":0}}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    },
+    {
+      "className": "cn.jpush.api.push.model.notification.AndroidNotificationTest",
+      "failingMethods": [
+        "cn.jpush.api.push.model.notification.AndroidNotificationTest#testNoParams",
+        "cn.jpush.api.push.model.notification.AndroidNotificationTest#testTitle",
+        "cn.jpush.api.push.model.notification.AndroidNotificationTest#testExtra",
+        "cn.jpush.api.push.model.notification.AndroidNotificationTest#testExtra_nullvalue",
+        "cn.jpush.api.push.model.notification.AndroidNotificationTest#testQuickAlert"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"extras\":{\"key1\":\"value1\",\"key2\":222}}\u003e but was:\u003c{\"extras\":{\"key1\":\"value1\",\"key2\":222},\"alert_type\":0}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"title\":\"title\"}\u003e but was:\u003c{\"title\":\"title\",\"alert_type\":0}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"extras\":{\"key1\":\"value1\"}}\u003e but was:\u003c{\"extras\":{\"key1\":\"value1\"},\"alert_type\":0}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{\"alert\":\"alert\"}\u003e but was:\u003c{\"alert\":\"alert\",\"alert_type\":0}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c{}\u003e but was:\u003c{\"alert_type\":0}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}

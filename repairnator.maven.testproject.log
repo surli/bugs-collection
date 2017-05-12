@@ -1,0 +1,148 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JPush API Java Client 3.2.18-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ jpush-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jpush-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jpush-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 38 source files to /root/workspace/jpush/jpush-api-java-client/218725112/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jpush-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jpush-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jpush-client ---
+[INFO] Surefire report directory: /root/workspace/jpush/jpush-api-java-client/218725112/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running cn.jpush.api.push.model.PushPayloadTest
+Size: 1324
+Size: 4555
+Size: 4555
+Size: 247
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in cn.jpush.api.push.model.PushPayloadTest
+Running cn.jpush.api.push.model.MessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.push.model.MessageTest
+Running cn.jpush.api.push.model.OptionsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.push.model.OptionsTest
+Running cn.jpush.api.push.model.notification.WinphoneNotificationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.push.model.notification.WinphoneNotificationTest
+Running cn.jpush.api.push.model.notification.AndroidNotificationTest
+17/05/12 18:01:35 DEBUG notification.PlatformNotification: Extra value is null, throw away it.
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE! - in cn.jpush.api.push.model.notification.AndroidNotificationTest
+testExtra(cn.jpush.api.push.model.notification.AndroidNotificationTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"extras":{"key1":"value1","key2":222}}> but was:<{"extras":{"key1":"value1","key2":222},"alert_type":0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.AndroidNotificationTest.testExtra(AndroidNotificationTest.java:47)
+
+testTitle(cn.jpush.api.push.model.notification.AndroidNotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"title":"title"}> but was:<{"title":"title","alert_type":0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.AndroidNotificationTest.testTitle(AndroidNotificationTest.java:34)
+
+testExtra_nullvalue(cn.jpush.api.push.model.notification.AndroidNotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"extras":{"key1":"value1"}}> but was:<{"extras":{"key1":"value1"},"alert_type":0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.AndroidNotificationTest.testExtra_nullvalue(AndroidNotificationTest.java:61)
+
+testQuickAlert(cn.jpush.api.push.model.notification.AndroidNotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"alert":"alert"}> but was:<{"alert":"alert","alert_type":0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.AndroidNotificationTest.testQuickAlert(AndroidNotificationTest.java:26)
+
+testNoParams(cn.jpush.api.push.model.notification.AndroidNotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{}> but was:<{"alert_type":0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.AndroidNotificationTest.testNoParams(AndroidNotificationTest.java:18)
+
+Running cn.jpush.api.push.model.notification.IosNotificationTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.push.model.notification.IosNotificationTest
+Running cn.jpush.api.push.model.notification.NotificationTest
+17/05/12 18:01:35 WARN notification.PlatformNotification: Null extras param. Throw away it.
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec <<< FAILURE! - in cn.jpush.api.push.model.notification.NotificationTest
+testExtras_jsonValue(cn.jpush.api.push.model.notification.NotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"android":{"alert":"alert","extras":{"key":{"v_key":"v_value"}}}}> but was:<{"android":{"alert":"alert","extras":{"key":{"v_key":"v_value"}},"alert_type":0}}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.NotificationTest.testExtras_jsonValue(NotificationTest.java:110)
+
+testShortcut_android(cn.jpush.api.push.model.notification.NotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"android":{"alert":"alert","title":"title"}}> but was:<{"android":{"alert":"alert","title":"title","alert_type":0}}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.NotificationTest.testShortcut_android(NotificationTest.java:125)
+
+testAlert_android(cn.jpush.api.push.model.notification.NotificationTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<{"android":{"alert":"alert"}}> but was:<{"android":{"alert":"alert","alert_type":0}}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at cn.jpush.api.push.model.notification.NotificationTest.testAlert_android(NotificationTest.java:47)
+
+Running cn.jpush.api.push.model.audience.AudienceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.push.model.audience.AudienceTest
+Running cn.jpush.api.push.model.audience.AudienceTargetTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in cn.jpush.api.push.model.audience.AudienceTargetTest
+Running cn.jpush.api.schedule.model.TriggerPayloadTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in cn.jpush.api.schedule.model.TriggerPayloadTest
+Running cn.jpush.api.schedule.model.SchedulePayloadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in cn.jpush.api.schedule.model.SchedulePayloadTest
+
+Results :
+
+Failed tests: 
+  AndroidNotificationTest.testExtra:47 expected:<{"extras":{"key1":"value1","key2":222}}> but was:<{"extras":{"key1":"value1","key2":222},"alert_type":0}>
+  AndroidNotificationTest.testTitle:34 expected:<{"title":"title"}> but was:<{"title":"title","alert_type":0}>
+  AndroidNotificationTest.testExtra_nullvalue:61 expected:<{"extras":{"key1":"value1"}}> but was:<{"extras":{"key1":"value1"},"alert_type":0}>
+  AndroidNotificationTest.testQuickAlert:26 expected:<{"alert":"alert"}> but was:<{"alert":"alert","alert_type":0}>
+  AndroidNotificationTest.testNoParams:18 expected:<{}> but was:<{"alert_type":0}>
+  NotificationTest.testExtras_jsonValue:110 expected:<{"android":{"alert":"alert","extras":{"key":{"v_key":"v_value"}}}}> but was:<{"android":{"alert":"alert","extras":{"key":{"v_key":"v_value"}},"alert_type":0}}>
+  NotificationTest.testShortcut_android:125 expected:<{"android":{"alert":"alert","title":"title"}}> but was:<{"android":{"alert":"alert","title":"title","alert_type":0}}>
+  NotificationTest.testAlert_android:47 expected:<{"android":{"alert":"alert"}}> but was:<{"android":{"alert":"alert","alert_type":0}}>
+
+Tests run: 72, Failures: 8, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.496 s
+[INFO] Finished at: 2017-05-12T18:01:35+02:00
+[INFO] Final Memory: 17M/1214M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jpush-client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/jpush/jpush-api-java-client/218725112/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
