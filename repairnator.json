@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "asciidoctor/asciidoctor-maven-plugin",
+  "bugCommit": "https://github.com/asciidoctor/asciidoctor-maven-plugin/compare/276cb8a6af6a...a22b48fa09b8",
+  "failingModule": "/root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "Condition not satisfied"
+  ],
+  "totalNumberRunningTests": 64,
+  "failing-test-cases": [
+    {
+      "className": "org.asciidoctor.maven.test.AsciidoctorMojoTest",
+      "failingMethods": [
+        "org.asciidoctor.maven.test.AsciidoctorMojoTest#should skip processing when source directory does no exist"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "Condition not satisfied",
+          "failureDetail": "Condition not satisfied:  newOut.toString().contains(\"sourceDirectory ${mojo.sourceDirectory} does not exist. Skip processing\") |      |          |                           |    | |      |          false                       |    bb1fb2d7-3913-4dd0-aead-592c8d84e23e |      |                                      org.asciidoctor.maven.AsciidoctorMojo@6fd0b8ab |      [info] sourceDirectory does not exist. Skip processing [info] sourceDirectory does not exist. Skip processing ",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
