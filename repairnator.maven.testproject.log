@@ -1,0 +1,359 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] SLF4J
+[INFO] SLF4J API Module
+[INFO] SLF4J Simple Binding
+[INFO] SLF4J NOP Binding
+[INFO] SLF4J JDK14 Binding
+[INFO] SLF4J LOG4J-12 Binding
+[INFO] SLF4J JCL Binding
+[INFO] SLF4J Android Binding
+[INFO] SLF4J Extensions Module
+[INFO] JCL 1.2 implemented over SLF4J
+[INFO] Log4j Implemented Over SLF4J
+[INFO] JUL to SLF4J bridge
+[INFO] OSGi LogService implemented over SLF4J
+[INFO] SLF4J Integration tests
+[INFO] SLF4J Site
+[INFO] SLF4J Migrator
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SLF4J 1.7.25-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ slf4j-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SLF4J API Module 1.7.25-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ slf4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ slf4j-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ slf4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /root/workspace/qos-ch/slf4j/205803285/slf4j-api/target/classes
+[INFO] /root/workspace/qos-ch/slf4j/205803285/slf4j-api/src/main/java/org/slf4j/helpers/BasicMarker.java: /root/workspace/qos-ch/slf4j/205803285/slf4j-api/src/main/java/org/slf4j/helpers/BasicMarker.java uses or overrides a deprecated API.
+[INFO] /root/workspace/qos-ch/slf4j/205803285/slf4j-api/src/main/java/org/slf4j/helpers/BasicMarker.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.3:run (default) @ slf4j-api ---
+[INFO] Executing tasks
+     [echo] Removing slf4j-api's dummy StaticLoggerBinder and StaticMarkerBinder
+   [delete] Deleting directory /root/workspace/qos-ch/slf4j/205803285/slf4j-api/target/classes/org/slf4j/impl
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ slf4j-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/qos-ch/slf4j/205803285/slf4j-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ slf4j-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ slf4j-api ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 11.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 21.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 463.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.slf4j.NoBindingTest
+Running org.slf4j.helpers.SubstitutableLoggerTest
+Running org.slf4j.helpers.BasicMDCAdapterTest
+Running org.slf4j.helpers.MessageFormatterPerfTest
+Running org.slf4j.helpers.SubstituteLoggerFactoryTest
+Running org.slf4j.helpers.BubbleSortTest
+Running org.slf4j.helpers.MessageFormatterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.018 sec - in org.slf4j.helpers.MessageFormatterPerfTest
+org.slf4j.helpers.MessageFormatterPerfTest skipped
+Running org.slf4j.BasicMarkerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.slf4j.NoBindingTest
+testMDC(org.slf4j.NoBindingTest)  Time elapsed: 0.004 sec
+testLogger(org.slf4j.NoBindingTest)  Time elapsed: 0.007 sec
+testMarker(org.slf4j.NoBindingTest)  Time elapsed: 0.003 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.slf4j.helpers.BasicMDCAdapterTest
+testMDCDoesntGetValuesFromChildThread(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0.003 sec
+testGetCopyOfContextMapFromMDC(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0 sec
+testClearingMDC(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0 sec
+testMDCChildThreadCanOverwriteParentThread(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0.001 sec
+testMDCInheritsValuesFromParentThread(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0.001 sec
+testOverwritingAKeyInMDC(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0 sec
+testSettingAndGettingWithMDC(org.slf4j.helpers.BasicMDCAdapterTest)  Time elapsed: 0 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.slf4j.helpers.SubstituteLoggerFactoryTest
+testFactory(org.slf4j.helpers.SubstituteLoggerFactoryTest)  Time elapsed: 0.002 sec
+testLoggers(org.slf4j.helpers.SubstituteLoggerFactoryTest)  Time elapsed: 0 sec
+testLoggerNameList(org.slf4j.helpers.SubstituteLoggerFactoryTest)  Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.slf4j.helpers.SubstitutableLoggerTest
+testDelegate(org.slf4j.helpers.SubstitutableLoggerTest)  Time elapsed: 0.015 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.slf4j.BasicMarkerTest
+testSelfRecursion(org.slf4j.BasicMarkerTest)  Time elapsed: 0.001 sec
+testPrimitive(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testPrimitiveByName(org.slf4j.BasicMarkerTest)  Time elapsed: 0.001 sec
+testComposite(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testMultiComposite(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testHomonyms(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testCompositeByName(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testAddRemove(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testMultiCompositeByName(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testMultiAdd(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+testIndirectRecursion(org.slf4j.BasicMarkerTest)  Time elapsed: 0 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.slf4j.helpers.BubbleSortTest
+testEmpty(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0.002 sec
+testSmoke(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0 sec
+testWithSameEntry(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0 sec
+testInverted(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0 sec
+testRandom(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0.002 sec
+testSorted(org.slf4j.helpers.BubbleSortTest)  Time elapsed: 0 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.slf4j.helpers.MessageFormatterTest
+testNull(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0.002 sec
+testArrayFormat(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+testMultiDimensionalArrayValues(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0.002 sec
+testArrayThrowable(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+verifyOneParameterIsHandledCorrectly(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+testArrayValues(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+testExceptionIn_toString(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0.003 sec
+testCyclicArrays(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+testTwoParameters(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+nullParametersShouldBeHandledWithoutBarfing(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0 sec
+testNullArray(org.slf4j.helpers.MessageFormatterTest)  Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SLF4J Simple Binding 1.7.25-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ slf4j-simple ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ slf4j-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ slf4j-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ slf4j-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ slf4j-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ slf4j-simple ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.slf4j.InvocationTest
+Running org.slf4j.DetectLoggerNameMismatchTest
+Running org.slf4j.helpers.SimpleLoggerMultithreadedInitializationTest
+Running org.slf4j.impl.SimpleLoggerTest
+THREAD_COUNT=116
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in org.slf4j.DetectLoggerNameMismatchTest
+testPassIfMatch(org.slf4j.DetectLoggerNameMismatchTest)  Time elapsed: 0.013 sec
+verifyLoggerDefinedInBaseWithOverridenGetClassMethod(org.slf4j.DetectLoggerNameMismatchTest)  Time elapsed: 0 sec
+testTriggerWholeMessage(org.slf4j.DetectLoggerNameMismatchTest)  Time elapsed: 0.001 sec
+testNoTriggerWithoutProperty(org.slf4j.DetectLoggerNameMismatchTest)  Time elapsed: 0 sec
+testTriggerWithProperty(org.slf4j.DetectLoggerNameMismatchTest)  Time elapsed: 0 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in org.slf4j.impl.SimpleLoggerTest
+loggerNameWithNoDots_WithLevel(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0.009 sec
+offLevel(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0 sec
+checkUseOfCachedOutputStream(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0.001 sec
+checkUseOfLastSystemStreamReference(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0.001 sec
+loggerNameWithOneDotShouldInheritFromParent(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0 sec
+loggerNameWithOneDot_NoSetLevel(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0 sec
+loggerNameWithNoDots_WithNoSetLevel(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0 sec
+emptyLoggerName(org.slf4j.impl.SimpleLoggerTest)  Time elapsed: 0 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.slf4j.InvocationTest
+testMDC(org.slf4j.InvocationTest)  Time elapsed: 0.006 sec
+testNull(org.slf4j.InvocationTest)  Time elapsed: 0.011 sec
+testNullParameter_BUG78(org.slf4j.InvocationTest)  Time elapsed: 0.002 sec
+test1(org.slf4j.InvocationTest)  Time elapsed: 0.001 sec
+test2(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+testMarker(org.slf4j.InvocationTest)  Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in org.slf4j.helpers.SimpleLoggerMultithreadedInitializationTest
+multiThreadedInitialization(org.slf4j.helpers.SimpleLoggerMultithreadedInitializationTest)  Time elapsed: 0.28 sec
+
+Results :
+
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SLF4J NOP Binding 1.7.25-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ slf4j-nop ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ slf4j-nop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ slf4j-nop ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ slf4j-nop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/qos-ch/slf4j/205803285/slf4j-nop/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ slf4j-nop ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ slf4j-nop ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.slf4j.InvocationTest
+Running org.slf4j.impl.MultithreadedInitializationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.slf4j.InvocationTest
+testMDC(org.slf4j.InvocationTest)  Time elapsed: 0.003 sec
+testNull(org.slf4j.InvocationTest)  Time elapsed: 0.009 sec
+test1(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+test2(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+testMDCCloseable(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+testMarker(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+THREAD_COUNT=116
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.slf4j.impl.MultithreadedInitializationTest
+multiThreadedInitialization(org.slf4j.impl.MultithreadedInitializationTest)  Time elapsed: 0.072 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SLF4J JDK14 Binding 1.7.25-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ slf4j-jdk14 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ slf4j-jdk14 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ slf4j-jdk14 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ slf4j-jdk14 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/qos-ch/slf4j/205803285/slf4j-jdk14/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ slf4j-jdk14 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ slf4j-jdk14 ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.slf4j.InvocationTest
+Running org.slf4j.issue.LoggerSerializationTest
+Running org.slf4j.helpers.JDK14MultithreadedInitializationTest
+Running org.slf4j.impl.JDK14AdapterLoggerNameTest
+Running org.slf4j.impl.PerfTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.015 sec - in org.slf4j.impl.PerfTest
+org.slf4j.impl.PerfTest skipped
+THREAD_COUNT=116
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.slf4j.impl.JDK14AdapterLoggerNameTest
+testLoggerNameUsingSlf4j(org.slf4j.impl.JDK14AdapterLoggerNameTest)  Time elapsed: 0.007 sec
+testLoggerNameUsingJdkLogging(org.slf4j.impl.JDK14AdapterLoggerNameTest)  Time elapsed: 0 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.slf4j.InvocationTest
+verifyMessageFormatting(org.slf4j.InvocationTest)  Time elapsed: 0.028 sec
+testMDC(org.slf4j.InvocationTest)  Time elapsed: 0.002 sec
+testNull(org.slf4j.InvocationTest)  Time elapsed: 0.004 sec
+test1(org.slf4j.InvocationTest)  Time elapsed: 0 sec
+testMarker(org.slf4j.InvocationTest)  Time elapsed: 0.009 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in org.slf4j.issue.LoggerSerializationTest
+testCanLoggerBeSerialized(org.slf4j.issue.LoggerSerializationTest)  Time elapsed: 0.074 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.294 sec <<< FAILURE! - in org.slf4j.helpers.JDK14MultithreadedInitializationTest
+multiThreadedInitialization(org.slf4j.helpers.JDK14MultithreadedInitializationTest)  Time elapsed: 0.212 sec  <<< FAILURE!
+java.lang.AssertionError: 7425 < 7406+16
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.slf4j.helpers.MultithreadedInitializationTest.multiThreadedInitialization(MultithreadedInitializationTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+
+Results :
+
+Failed tests: 
+  JDK14MultithreadedInitializationTest>MultithreadedInitializationTest.multiThreadedInitialization:46 7425 < 7406+16
+
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] SLF4J .............................................. SUCCESS [  0.137 s]
+[INFO] SLF4J API Module ................................... SUCCESS [  2.548 s]
+[INFO] SLF4J Simple Binding ............................... SUCCESS [  0.599 s]
+[INFO] SLF4J NOP Binding .................................. SUCCESS [  0.345 s]
+[INFO] SLF4J JDK14 Binding ................................ FAILURE [  0.582 s]
+[INFO] SLF4J LOG4J-12 Binding ............................. SKIPPED
+[INFO] SLF4J JCL Binding .................................. SKIPPED
+[INFO] SLF4J Android Binding .............................. SKIPPED
+[INFO] SLF4J Extensions Module ............................ SKIPPED
+[INFO] JCL 1.2 implemented over SLF4J ..................... SKIPPED
+[INFO] Log4j Implemented Over SLF4J ....................... SKIPPED
+[INFO] JUL to SLF4J bridge ................................ SKIPPED
+[INFO] OSGi LogService implemented over SLF4J ............. SKIPPED
+[INFO] SLF4J Integration tests ............................ SKIPPED
+[INFO] SLF4J Site ......................................... SKIPPED
+[INFO] SLF4J Migrator ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.526 s
+[INFO] Finished at: 2017-05-12T16:09:44+02:00
+[INFO] Final Memory: 29M/1574M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project slf4j-jdk14: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/qos-ch/slf4j/205803285/slf4j-jdk14/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :slf4j-jdk14
