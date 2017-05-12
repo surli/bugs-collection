@@ -1,0 +1,54 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/8ac436dfab18...b7cb36765391",
+  "failingModule": "/root/workspace/geotools/geotools/223040093/modules/plugin/imagemosaic",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 6059,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.gce.imagemosaic.ImageMosaicEgrTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.ImageMosaicEgrTest#testLeftRightOnTopRaster",
+        "org.geotools.gce.imagemosaic.ImageMosaicEgrTest#testLeftRightOnTopVector"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 2147483647 different pixels, against a threshold of 300\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 2147483647 different pixels, against a threshold of 300\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.geotools.gce.imagemosaic.ImageMosaicReaderTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.ImageMosaicReaderTest#testFilteredGranuleFootprint"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c9.242876557335812\u003e but was:\u003c6.346174908474391\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
