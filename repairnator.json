@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 14,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/21705ef38a86...e0548e416d31",
+  "failingModule": "/root/workspace/geotools/geotools/222940027/modules/library/xml",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 5320,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.xml.handlers.xsi.ElementTypeHandlerTest",
+      "failingMethods": [
+        "org.geotools.xml.handlers.xsi.ElementTypeHandlerTest#refAndType",
+        "org.geotools.xml.handlers.xsi.ElementTypeHandlerTest#refAndName"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[Schema element declaration cannot have both \u0027ref\u0027 and \u0027name\u0027 attributes (ref\u003d\"test:another-element\", name\u003d\"some-name\")]\u003e but was:\u003c[Elements cannot have both a \u0027ref\u0027 and a \u0027name\u0027 + \u0027type\u0027 attribute]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[Schema element declaration cannot have both \u0027ref\u0027 and \u0027type\u0027 attributes (ref\u003d\"test:another-element\", type\u003d\"some-type\")]\u003e but was:\u003c[Elements cannot have both a \u0027ref\u0027 and a \u0027name\u0027 + \u0027type\u0027 attribute]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
