@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "airlift/airlift",
+  "bugCommit": "https://github.com/airlift/airlift/compare/4768f6c1b1fa...3ff7bcaf3acf",
+  "failingModule": "/root/workspace/airlift/airlift/205359194/http-server",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1944,
+  "failing-test-cases": [
+    {
+      "className": "io.airlift.http.server.TestHttpServerProvider",
+      "failingMethods": [
+        "io.airlift.http.server.TestHttpServerProvider#testStop"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cio.airlift.http.client.RuntimeIOException: Server refused connection: http://172.17.0.3:45321/?sleep\u003d50000\u003e to be an instance of \u003cjava.io.UncheckedIOException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
