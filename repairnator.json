@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "tipsy/j2html",
+  "bugCommit": "https://github.com/tipsy/j2html/compare/7409772c20fb...30bfe4ea7f02",
+  "failingModule": "/root/workspace/tipsy/j2html/221439769",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 14,
+  "failing-test-cases": [
+    {
+      "className": "j2html.tags.InlineStaticResourceTest",
+      "failingMethods": [
+        "j2html.tags.InlineStaticResourceTest#testExceptionForBadPath",
+        "j2html.tags.InlineStaticResourceTest#testAllTags"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.RuntimeException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003cstyle\u003ebody{background:#daa520;margin-bottom:10px;margin-left:10px;margin-right:10px;margin-top:10px}\u003c/style\u003e\"      but: was \"\u003cscript\u003ealert(\u0027Unable to read file. File: \\\"src/test/files/test.css\\\", Type: \\\"CSS_MIN\\\"\u0027)\u003c/script\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
