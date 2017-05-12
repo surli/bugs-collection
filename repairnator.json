@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AsyncHttpClient/async-http-client",
+  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/18150e4e040e...f4786f3ac769",
+  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/223950658/extras/rxjava",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.mockito.exceptions.verification.NoInteractionsWanted",
+    "org.mockito.exceptions.verification.VerificationInOrderFailure"
+  ],
+  "totalNumberRunningTests": 527,
+  "failing-test-cases": [
+    {
+      "className": "org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest",
+      "failingMethods": [
+        "org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest#testSuccessfulCompletionWithProgress",
+        "org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest#testSuccessfulCompletion"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NoInteractionsWanted",
+          "failureDetail": "\nNo interactions wanted here:\n-\u003e at org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest.testSuccessfulCompletion(AsyncHttpSingleTest.java:100)\nBut found this interaction on mock \u0027Mock for AsyncHandler, hashCode: 1193471756\u0027:\n-\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)\n***\nFor your reference, here is the list of all invocations ([?] - means unverified).\n1. -\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onStatusReceived(AbstractSingleSubscriberBridge.java:51)\n2. -\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onHeadersReceived(AbstractSingleSubscriberBridge.java:56)\n3. -\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onBodyPartReceived(AbstractSingleSubscriberBridge.java:46)\n4. [?]-\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.mockito.exceptions.verification.VerificationInOrderFailure",
+          "failureDetail": "\nNo interactions wanted here:\n-\u003e at org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest.testSuccessfulCompletionWithProgress(AsyncHttpSingleTest.java:156)\nBut found this interaction on mock \u0027Mock for ProgressAsyncHandler, hashCode: 1848125895\u0027:\n-\u003e at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
