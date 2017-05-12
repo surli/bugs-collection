@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/commons-lang",
+  "bugCommit": "https://github.com/apache/commons-lang/compare/859224ffadb7...314b6b56bec4",
+  "failingModule": "/root/workspace/apache/commons-lang/224267188",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 4012,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.commons.lang3.reflect.MethodUtilsTest",
+      "failingMethods": [
+        "org.apache.commons.lang3.reflect.MethodUtilsTest#testGetMethodsWithAnnotationSearchSupersButNotIgnoreAccess",
+        "org.apache.commons.lang3.reflect.MethodUtilsTest#testGetMethodsWithAnnotationSearchSupersAndIgnoreAccess"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[PublicChild.publicAnnotatedMethod]\u003e but was:\u003c[Foo.doIt]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[PublicChild]\u003e but was:\u003c[Foo]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
