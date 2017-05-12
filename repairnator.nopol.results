@@ -1,0 +1,31 @@
+nopolinfo #0
+location: FailureLocation{className='org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest', failingMethods=[org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest#testSuccessfulCompletionWithProgress, org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest#testSuccessfulCompletion], erroringMethods=[], failures=[FailureType{failureName='org.mockito.exceptions.verification.NoInteractionsWanted', failureDetail='
+No interactions wanted here:
+-> at org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest.testSuccessfulCompletion(AsyncHttpSingleTest.java:100)
+But found this interaction on mock 'Mock for AsyncHandler, hashCode: 1193471756':
+-> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)
+***
+For your reference, here is the list of all invocations ([?] - means unverified).
+1. -> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onStatusReceived(AbstractSingleSubscriberBridge.java:51)
+2. -> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onHeadersReceived(AbstractSingleSubscriberBridge.java:56)
+3. -> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onBodyPartReceived(AbstractSingleSubscriberBridge.java:46)
+4. [?]-> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)
+', isError=false}, FailureType{failureName='org.mockito.exceptions.verification.VerificationInOrderFailure', failureDetail='
+No interactions wanted here:
+-> at org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest.testSuccessfulCompletionWithProgress(AsyncHttpSingleTest.java:156)
+But found this interaction on mock 'Mock for ProgressAsyncHandler, hashCode: 1848125895':
+-> at org.asynchttpclient.extras.rxjava.single.AbstractSingleSubscriberBridge.onThrowable(AbstractSingleSubscriberBridge.java:88)', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Fri May 12 13:19:21 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/AsyncHttpClient/async-http-client/223950658/netty-utils/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/netty-utils/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/client/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/client/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/guava/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/guava/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/jdeferred/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/jdeferred/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/registry/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/registry/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/rxjava/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/rxjava/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/rxjava2/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/rxjava2/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/extras/simple/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/extras/simple/src/main/java, ./workspace/AsyncHttpClient/async-http-client/223950658/example/src/main/java, /root/./workspace/AsyncHttpClient/async-http-client/223950658/example/src/main/java], projectClasspath='[Ljava.net.URL;@7bdf6bb7', projectTests=[org.asynchttpclient.extras.rxjava.single.AsyncHttpSingleTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
