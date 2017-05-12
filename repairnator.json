@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/3ede64f9829e...805c70fbfac2",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/221232069",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1236,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.web.PagedResourcesAssemblerUnitTests",
+      "failingMethods": [
+        "org.springframework.data.web.PagedResourcesAssemblerUnitTests#selfLinkContainsCoordinatesForCurrentPage"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: a string ending with \"?page\u003d0\u0026size\u003d1\"\n     but: was \"http://localhost\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
