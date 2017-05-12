@@ -17,7 +17,6 @@
 package com.google.errorprone.util;
 
 import static com.google.common.base.MoreObjects.firstNonNull;
-import static com.google.common.base.Preconditions.checkState;
 import static com.google.common.collect.Iterables.getLast;
 import static com.google.errorprone.util.ASTHelpers.getSymbol;
 import static java.util.Objects.requireNonNull;
@@ -78,9 +77,6 @@ public class Reachability {
     boolean scan(List<? extends StatementTree> trees) {
       boolean completes = true;
       for (StatementTree tree : trees) {
-        // javac has already rejected any unreachable statements, so all statements
-        // except the final one should complete
-        checkState(completes);
         completes = scan(tree);
       }
       return completes;
@@ -93,15 +89,19 @@ public class Reachability {
     /* A break statement cannot complete normally. */
     @Override
     public Boolean visitBreak(BreakTree tree, Void unused) {
-      breaks.add(requireNonNull(((JCTree.JCBreak) tree).target));
+      breaks.add(skipLabel(requireNonNull(((JCTree.JCBreak) tree).target)));
       return false;
     }
 
     /* A continue statement cannot complete normally. */
     @Override
     public Boolean visitContinue(ContinueTree tree, Void unused) {
-      continues.add(requireNonNull(((JCTree.JCContinue) tree).target));
+      continues.add(skipLabel(requireNonNull(((JCTree.JCContinue) tree).target)));
       return false;
+    }
+
+    private Tree skipLabel(JCTree tree) {
+      return tree.hasTag(JCTree.Tag.LABELLED) ? ((JCTree.JCLabeledStatement) tree).body : tree;
     }
 
     @Override
