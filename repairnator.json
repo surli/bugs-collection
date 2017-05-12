@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/b64c7736015d...60d459cedcf0",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/221918095",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1716,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest",
+      "failingMethods": [
+        "com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest#testIssue1607"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "failureDetail": "expected:\u003c{\"alwaysClass\":[1],\"alwaysProp\":2}\u003e but was:\u003c{\"alwaysClass\":[{\"id\":1,\"value\":13}],\"alwaysProp\":2}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
