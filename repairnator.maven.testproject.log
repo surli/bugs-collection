@@ -37,12 +37,6 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ asciidoctor-maven-plugin ---
 [INFO] Surefire report directory: /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 40.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 439.7 KB/sec)
 
 -------------------------------------------------------
  T E S T S
@@ -50,8 +44,9 @@
 Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Using 'UTF-8' encoding to copy filtered resources.
 [info] ignoreDelta true
-[info] Copying 11 resources
+[info] Copying 13 resources
 [info] Copying file issue-78/images/halliburton_lab.jpg
+[info] Copying file sample2.bar
 [info] Copying file ruby.png
 [info] Copying file relative-path-treatment/HelloWorld.groovy
 [info] Copying file relative-path-treatment/level-1-1/asciidoctor-icon.jpg
@@ -59,6 +54,7 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Copying file relative-path-treatment/level-1-1/level-2-2/HelloWorld3.groovy
 [info] Copying file relative-path-treatment/level-1-1/HelloWorld2.groovy
 [info] Copying file relative-path-treatment/level-1-1/level-2-1/HelloWorld3.groovy
+[info] Copying file sample1.foo
 [info] Copying file sample.ext
 [info] Copying file includes/asciidoctor-icon.jpg
 [info] Copying file includes/groovy-include.groovy
@@ -69,8 +65,9 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/sample.asciidoc
 [info] Using 'UTF-8' encoding to copy filtered resources.
 [info] ignoreDelta true
-[info] Copying 11 resources
+[info] Copying 13 resources
 [info] Copying file issue-78/images/halliburton_lab.jpg
+[info] Copying file sample2.bar
 [info] Copying file ruby.png
 [info] Copying file relative-path-treatment/HelloWorld.groovy
 [info] Copying file relative-path-treatment/level-1-1/asciidoctor-icon.jpg
@@ -78,14 +75,16 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Copying file relative-path-treatment/level-1-1/level-2-2/HelloWorld3.groovy
 [info] Copying file relative-path-treatment/level-1-1/HelloWorld2.groovy
 [info] Copying file relative-path-treatment/level-1-1/level-2-1/HelloWorld3.groovy
+[info] Copying file sample1.foo
 [info] Copying file sample.ext
 [info] Copying file includes/asciidoctor-icon.jpg
 [info] Copying file includes/groovy-include.groovy
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/sample-with-doc-info.asciidoc
 [info] Using 'UTF-8' encoding to copy filtered resources.
 [info] ignoreDelta true
-[info] Copying 11 resources
+[info] Copying 13 resources
 [info] Copying file issue-78/images/halliburton_lab.jpg
+[info] Copying file sample2.bar
 [info] Copying file ruby.png
 [info] Copying file relative-path-treatment/HelloWorld.groovy
 [info] Copying file relative-path-treatment/level-1-1/asciidoctor-icon.jpg
@@ -93,6 +92,7 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Copying file relative-path-treatment/level-1-1/level-2-2/HelloWorld3.groovy
 [info] Copying file relative-path-treatment/level-1-1/HelloWorld2.groovy
 [info] Copying file relative-path-treatment/level-1-1/level-2-1/HelloWorld3.groovy
+[info] Copying file sample1.foo
 [info] Copying file sample.ext
 [info] Copying file includes/asciidoctor-icon.jpg
 [info] Copying file includes/groovy-include.groovy
@@ -500,7 +500,7 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] Copying file includes/groovy-include.groovy
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/sample.asciidoc
 [info] Using 'UTF-8' encoding to copy filtered resources.
-[info] skip non existing resourceDirectory ./a853dc7e-ab78-41b8-bd64-03e5dbffe116
+[info] skip non existing resourceDirectory ./054d3bde-8c52-48c8-bc89-a66c54a11f25
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/issue-78/image-test.adoc
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/issue-78/main.adoc
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/sample-embedded.adoc
@@ -567,19 +567,7 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoTest
 [info] ignoreDelta true
 [info] Copying 0 resource
 [info] Rendered /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/test-classes/src/asciidoctor/sample.ext
-Tests run: 41, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.693 sec <<< FAILURE!
-should skip processing when source directory does no exist(org.asciidoctor.maven.test.AsciidoctorMojoTest)  Time elapsed: 0.227 sec  <<< FAILURE!
-Condition not satisfied:
-
-newOut.toString().contains("sourceDirectory ${mojo.sourceDirectory} does not exist. Skip processing")
-|      |          |                           |    |
-|      |          false                       |    bb1fb2d7-3913-4dd0-aead-592c8d84e23e
-|      |                                      org.asciidoctor.maven.AsciidoctorMojo@6fd0b8ab
-|      [info] sourceDirectory does not exist. Skip processing
-[info] sourceDirectory does not exist. Skip processing
-
-	at org.asciidoctor.maven.test.AsciidoctorMojoTest.should skip processing when source directory does no exist(AsciidoctorMojoTest.groovy:989)
-
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.286 sec
 Running org.asciidoctor.maven.test.AsciidoctorMojoExtensionsTest
 [info] Using 'UTF-8' encoding to copy filtered resources.
 [info] ignoreDelta true
@@ -600,34 +588,22 @@ Running org.asciidoctor.maven.test.AsciidoctorMojoExtensionsTest
 FailingPreprocessor(Preprocessor) initialized
 Processing FailingPreprocessor
 Processing: blocks found: 0
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.626 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.398 sec
 Running org.asciidoctor.maven.test.AsciidoctorHttpMojoTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.617 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.222 sec
 Running org.asciidoctor.maven.test.AsciidoctorRefreshMojoTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.641 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.428 sec
 Running org.asciidoctor.maven.test.AsciidoctorZipMojoTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.12 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.376 sec
 
 Results :
 
-Failed tests:   should skip processing when source directory does no exist(org.asciidoctor.maven.test.AsciidoctorMojoTest): Condition not satisfied:(..)
-
-Tests run: 64, Failures: 1, Errors: 0, Skipped: 1
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 51.832 s
-[INFO] Finished at: 2017-05-12T13:14:16+02:00
-[INFO] Final Memory: 39M/1192M
+[INFO] Total time: 46.859 s
+[INFO] Finished at: 2017-05-12T13:15:22+02:00
+[INFO] Final Memory: 39M/1341M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project asciidoctor-maven-plugin: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/asciidoctor/asciidoctor-maven-plugin/221616053/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
