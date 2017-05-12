@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 13,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/dbdd50a896a9...23c76e95766a",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/222591465/languagetool-language-modules/de",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 395,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.de.AgreementRuleTest",
+      "failingMethods": [
+        "org.languagetool.rules.de.AgreementRuleTest#testDetNounRule"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Found unexpected match in sentence \u0027Unter diesen rief das großen Unmut hervor.\u0027: [DE_AGREEMENT:18-34:Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen bezüglich Kasus, Numerus oder Genus. Beispiel: \u0027mein kleiner Haus\u0027 statt \u0027mein kleines Haus\u0027] expected:\u003c0\u003e but was:\u003c1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
