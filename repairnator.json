@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AsyncHttpClient/async-http-client",
+  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/f6fa174e1048...556ddddcc2cf",
+  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/225977399/client",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 506,
+  "failing-test-cases": [
+    {
+      "className": "org.asynchttpclient.reactivestreams.ReactiveStreamsTest",
+      "failingMethods": [
+        "org.asynchttpclient.reactivestreams.ReactiveStreamsTest#testConnectionDoesNotGetClosed"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " expected [[B@45404d5] but found [[B@6cae2e4d]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.netty.handler.NettyReactiveStreamsTest",
+      "failingMethods": [
+        "org.asynchttpclient.netty.handler.NettyReactiveStreamsTest#testConnectionDoesNotGetClosed"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " expected [[B@45404d5] but found [[B@29138d3a]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
