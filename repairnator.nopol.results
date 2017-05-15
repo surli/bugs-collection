@@ -1,0 +1,832 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ClassNewInstanceTest', failingMethods=[com.google.errorprone.bugpatterns.ClassNewInstanceTest#mixedMulticatch, com.google.errorprone.bugpatterns.ClassNewInstanceTest#inCatchRepeated, com.google.errorprone.bugpatterns.ClassNewInstanceTest#catchAndThrows, com.google.errorprone.bugpatterns.ClassNewInstanceTest#existingRoeCase, com.google.errorprone.bugpatterns.ClassNewInstanceTest#additionalCatchClause, com.google.errorprone.bugpatterns.ClassNewInstanceTest#throwsException, com.google.errorprone.bugpatterns.ClassNewInstanceTest#withFinally, com.google.errorprone.bugpatterns.ClassNewInstanceTest#differentHandles, com.google.errorprone.bugpatterns.ClassNewInstanceTest#positiveUnion, com.google.errorprone.bugpatterns.ClassNewInstanceTest#freshVar, com.google.errorprone.bugpatterns.ClassNewInstanceTest#throwsIndividual, com.google.errorprone.bugpatterns.ClassNewInstanceTest#positiveROE, com.google.errorprone.bugpatterns.ClassNewInstanceTest#catchesDoesntThrow, com.google.errorprone.bugpatterns.ClassNewInstanceTest#throwsROE, com.google.errorprone.bugpatterns.ClassNewInstanceTest#positive, com.google.errorprone.bugpatterns.ClassNewInstanceTest#inCatch, com.google.errorprone.bugpatterns.ClassNewInstanceTest#mergeWhitespace, com.google.errorprone.bugpatterns.ClassNewInstanceTest#overlap], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 2 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 9 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 8 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  Object f()
+      throws InstantiationException, IllegalAccessException, InvocationTargetException,
+          NoSuchMethodException {
+    try {
+      return getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException ex) {
+      return getClass().getDeclaredConstructor().newInstance();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  Object f() throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+    try {
+      return getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException ex) {
+      return getClass().getConstructor().newInstance();
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  void f()
+      throws InstantiationException, IllegalAccessException, InvocationTargetException,
+          NoSuchMethodException {
+    getClass().getDeclaredConstructor().newInstance();
+  }
+}
+
+Actual Source:
+=================
+
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  void f() throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+    getClass().getConstructor().newInstance();
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e0) {
+      e0.printStackTrace();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e0) {
+      e0.printStackTrace();
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f(Exception e) {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (InstantiationException e1) {
+      // one
+    } catch (IllegalAccessException e1) {
+      // two
+    } catch (ReflectiveOperationException e1) {
+      throw new LinkageError(e1.getMessage(), e1);
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f(Exception e) {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (InstantiationException e1) {
+      // one
+    } catch (IllegalAccessException e1) {
+      // two
+    }catch (ReflectiveOperationException e1) { throw new LinkageError(e1.getMessage(), e1); }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (InstantiationException e) {
+      // InstantiationException
+    } catch (ReflectiveOperationException | NullPointerException e) {
+      throw new AssertionError(e);
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (InstantiationException e) {
+      // InstantiationException
+    } catch (ReflectiveOperationException | NullPointerException e) {
+      throw new AssertionError(e);
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() throws ReflectiveOperationException {
+    getClass().getDeclaredConstructor().newInstance();
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() throws ReflectiveOperationException {
+    getClass().getConstructor().newInstance();
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 2 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)->METHOD_INVOCATION->MEMBER_SELECT(getClass)->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)->METHOD_INVOCATION->MEMBER_SELECT(getClass)->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() throws Exception {
+    getClass().getDeclaredConstructor().newInstance().getClass().getDeclaredConstructor().newInstance();
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() throws Exception {
+    getClass().getConstructor().newInstance().getClass().getConstructor().newInstance();
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->RETURN->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  Object f() {
+    try {
+      return getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException ex) {
+      // Suppress exception.
+    } catch (ExceptionInInitializerError ex) {
+      // Suppress exception.
+    } catch (SecurityException ex) {
+      // Suppress exception.
+    }
+    return null;
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  Object f() {
+    try {
+      return getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException ex) {
+      // Suppress exception.
+    }  catch (ExceptionInInitializerError ex) {
+      // Suppress exception.
+    } catch (SecurityException ex) {
+      // Suppress exception.
+    }
+    return null;
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() throws Exception {
+    getClass().getDeclaredConstructor().newInstance();
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() throws Exception {
+    getClass().getConstructor().newInstance();
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      // uh oh
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      // uh oh
+    } 
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      e.printStackTrace();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      e.printStackTrace();
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() throws Exception {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } finally {}
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() throws Exception {
+    try {
+      getClass().getConstructor().newInstance();
+    } finally {}
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+import java.io.IOException;
+class Test {
+  void f() throws IOException {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {}
+  }
+}
+
+Actual Source:
+=================
+
+import java.io.IOException;
+class Test {
+  void f() throws IOException {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {}
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (InstantiationException e1) {
+      e1.printStackTrace();
+    } catch (IllegalAccessException e2) {
+      e2.printStackTrace();
+    } catch (ReflectiveOperationException e2) {
+      throw new LinkageError(e2.getMessage(), e2);
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (InstantiationException e1) {
+      e1.printStackTrace();
+    } catch (IllegalAccessException e2) {
+      e2.printStackTrace();
+    }catch (ReflectiveOperationException e2) { throw new LinkageError(e2.getMessage(), e2); }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      e.printStackTrace();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      e.printStackTrace();
+    } 
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 3 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 9 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 8 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 10 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  void f()
+      throws InstantiationException, IllegalAccessException, InvocationTargetException,
+          NoSuchMethodException {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (InstantiationException e) {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      getClass().getDeclaredConstructor().newInstance();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+
+import java.lang.reflect.InvocationTargetException;
+class Test {
+  void f() throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (InstantiationException e) {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      getClass().getConstructor().newInstance();
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 2 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->CATCH->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() throws Exception {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      getClass().getDeclaredConstructor().newInstance();
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() throws Exception {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (ReflectiveOperationException e) {
+      getClass().getConstructor().newInstance();
+    }
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getDeclaredConstructor)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->TRY->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(newInstance)->METHOD_INVOCATION->MEMBER_SELECT(getConstructor)
+  Expected member identifier to be <getDeclaredConstructor> but was <getConstructor>.
+
+
+Expected Source: 
+================
+
+class Test {
+  void f() {
+    try {
+      getClass().getDeclaredConstructor().newInstance();
+    } catch (InstantiationException e) {
+    } catch (ReflectiveOperationException e) {
+      // ¯\_(ツ)_/¯
+    }
+  }
+}
+
+Actual Source:
+=================
+
+class Test {
+  void f() {
+    try {
+      getClass().getConstructor().newInstance();
+    } catch (InstantiationException e) {
+    } catch (ReflectiveOperationException e) {
+      // ¯\_(ツ)_/¯
+    }
+  }
+}', isError=false}], nbFailures=18, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:36:24 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/203045766/check_api/src/main/java, /root/./workspace/google/error-prone/203045766/check_api/src/main/java, ./workspace/google/error-prone/203045766/test_helpers/src/main/java, /root/./workspace/google/error-prone/203045766/test_helpers/src/main/java, ./workspace/google/error-prone/203045766/core/src/main/java, /root/./workspace/google/error-prone/203045766/core/src/main/java, ./workspace/google/error-prone/203045766/annotation/src/main/java, /root/./workspace/google/error-prone/203045766/annotation/src/main/java, ./workspace/google/error-prone/203045766/annotations/src/main/java, /root/./workspace/google/error-prone/203045766/annotations/src/main/java, ./workspace/google/error-prone/203045766/docgen/src/main/java, /root/./workspace/google/error-prone/203045766/docgen/src/main/java, ./workspace/google/error-prone/203045766/docgen_processor/src/main/java, /root/./workspace/google/error-prone/203045766/docgen_processor/src/main/java, ./workspace/google/error-prone/203045766/ant/src/main/java, /root/./workspace/google/error-prone/203045766/ant/src/main/java, ./workspace/google/error-prone/203045766/refaster/src/main/java, /root/./workspace/google/error-prone/203045766/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@512d92b', projectTests=[com.google.errorprone.bugpatterns.ClassNewInstanceTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ClassCanBeStaticTest', failingMethods=[com.google.errorprone.bugpatterns.ClassCanBeStaticTest#nestedInAnonymous, com.google.errorprone.bugpatterns.ClassCanBeStaticTest#nestedInLocal], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 4. All errors:
+[/A.java:4: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+      class Inner {
+      ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'static class Inner {'?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 4. All errors:
+[/A.java:4: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+      class Inner {
+      ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'static class Inner {'?]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:36:44 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/203045766/check_api/src/main/java, /root/./workspace/google/error-prone/203045766/check_api/src/main/java, ./workspace/google/error-prone/203045766/test_helpers/src/main/java, /root/./workspace/google/error-prone/203045766/test_helpers/src/main/java, ./workspace/google/error-prone/203045766/core/src/main/java, /root/./workspace/google/error-prone/203045766/core/src/main/java, ./workspace/google/error-prone/203045766/annotation/src/main/java, /root/./workspace/google/error-prone/203045766/annotation/src/main/java, ./workspace/google/error-prone/203045766/annotations/src/main/java, /root/./workspace/google/error-prone/203045766/annotations/src/main/java, ./workspace/google/error-prone/203045766/docgen/src/main/java, /root/./workspace/google/error-prone/203045766/docgen/src/main/java, ./workspace/google/error-prone/203045766/docgen_processor/src/main/java, /root/./workspace/google/error-prone/203045766/docgen_processor/src/main/java, ./workspace/google/error-prone/203045766/ant/src/main/java, /root/./workspace/google/error-prone/203045766/ant/src/main/java, ./workspace/google/error-prone/203045766/refaster/src/main/java, /root/./workspace/google/error-prone/203045766/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@1e749235', projectTests=[com.google.errorprone.bugpatterns.ClassCanBeStaticTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
