@@ -149,6 +149,7 @@ import com.google.errorprone.bugpatterns.StringEquality;
 import com.google.errorprone.bugpatterns.SuppressWarningsDeprecated;
 import com.google.errorprone.bugpatterns.TestExceptionChecker;
 import com.google.errorprone.bugpatterns.ThrowIfUncheckedKnownChecked;
+import com.google.errorprone.bugpatterns.ThrowNull;
 import com.google.errorprone.bugpatterns.ThrowsUncheckedException;
 import com.google.errorprone.bugpatterns.TruthConstantAsserts;
 import com.google.errorprone.bugpatterns.TruthSelfEquals;
@@ -308,6 +309,7 @@ public class BuiltInCheckerSuppliers {
           JUnitAssertSameCheck.class,
           LiteByteStringUtf8.class,
           MislabeledAndroidString.class,
+          MissingCasesInEnumSwitch.class,
           MisusedWeekYear.class,
           MockitoCast.class,
           MockitoUsage.class,
@@ -340,6 +342,7 @@ public class BuiltInCheckerSuppliers {
           StringBuilderInitWithChar.class,
           SuppressWarningsDeprecated.class,
           ThrowIfUncheckedKnownChecked.class,
+          ThrowNull.class,
           TruthSelfEquals.class,
           TryFailThrowable.class,
           TypeParameterQualifier.class,
@@ -376,7 +379,6 @@ public class BuiltInCheckerSuppliers {
           IterableAndIterator.class,
           JUnit3FloatingPointComparisonWithoutDelta.class,
           JUnitAmbiguousTestClass.class,
-          MissingCasesInEnumSwitch.class,
           MissingFail.class,
           MissingOverride.class,
           NarrowingCompoundAssignment.class,
