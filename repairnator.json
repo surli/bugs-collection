@@ -1,0 +1,88 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/bc0a51eca11e...91ef4d3baecc",
+  "failingModule": "/root/workspace/google/error-prone/202511779/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2019,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.util.ReachabilityTest",
+      "failingMethods": [
+        "com.google.errorprone.util.ReachabilityTest#test[31]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 8. All errors:\n[/in/Test.java:8: error: [FirstCaseFallsThrough] \n      default:\n      ^\n    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.FallThroughTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.FallThroughTest#commentInBlock"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 8. All errors:\n[/Test.java:8: error: [FallThrough] Switch case may fall through\n      case 2:\n      ^\n    (see http://errorprone.info/bugpattern/FallThrough)\n  Did you mean to remove this line?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.TypeParameterShadowingTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorUnderneathStuff",
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorWithNestedTypeParameterDeclaration",
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorMultipleVars",
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#renameTypeVar",
+        "com.google.errorprone.bugpatterns.TypeParameterShadowingTest#renameRecursiveBound"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cfoo/bar/Test.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 4 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(identity)-\u003eIDENTIFIER(T2)\n  Actual node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(identity)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(identity)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T2)\n  Actual node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(identity)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2\u003e void something(T2 t) { T2 other \u003d t;}\n  \u003cT2\u003e T2 identity(T2 t) { return t; }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2\u003e void something(T t) { T other \u003d t;}\n  \u003cT2\u003e T identity(T t) { return t; }\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cfoo/bar/Test.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 2 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2\u003e void something(T2 t) { T2 other \u003d t;}\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2\u003e void something(T t) { T other \u003d t;}\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cfoo/bar/Test.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 5 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T3)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT3\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(var)-\u003eIDENTIFIER(T3)\n  Actual node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(var)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT3\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 7 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(innerVar)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T3)\n  Actual node: Line 7 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(innerVar)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT3\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eCLASS(MethodInner)-\u003eMETHOD(doSomethingElse)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T3)\n  Actual node: Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eCLASS(MethodInner)-\u003eMETHOD(doSomethingElse)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT3\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eCLASS(MethodInner)-\u003eMETHOD(doSomethingElse)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eIDENTIFIER(T3)\n  Actual node: Line 11 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eCLASS(MethodInner)-\u003eMETHOD(doSomethingElse)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT3\u003e but was \u003cT\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT3,T2\u003e void something(T3 t) { \n    T3 var \u003d t;\n    @SuppressWarnings(\"TypeParameterShadowing\")\n    class MethodInnerWithGeneric\u003cT\u003e {}\n    MethodInnerWithGeneric\u003cT3\u003e innerVar \u003d null;\n    class MethodInner {\n       @SuppressWarnings(\"TypeParameterShadowing\")\n       \u003cT\u003e void doSomething() {}\n       void doSomethingElse(T3 t) { this.\u003cT3\u003edoSomething(); }\n    }\n    MethodInner myInner \u003d null;\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT3,T2\u003e void something(T t) { \n    T var \u003d t;\n    @SuppressWarnings(\"TypeParameterShadowing\")\n    class MethodInnerWithGeneric\u003cT\u003e {}\n    MethodInnerWithGeneric\u003cT\u003e innerVar \u003d null;\n    class MethodInner {\n       @SuppressWarnings(\"TypeParameterShadowing\")\n       \u003cT\u003e void doSomething() {}\n       void doSomethingElse(T t) { this.\u003cT\u003edoSomething(); }\n    }\n    MethodInner myInner \u003d null;\n  }\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cfoo/bar/Test.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 3 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eTYPE_PARAMETER(T2)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eTYPE_PARAMETER(T2)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2 extends Comparable\u003cT2\u003e\u003e void something(T2 t) { T2 other \u003d t;}\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT\u003e {\n  \u003cT2 extends Comparable\u003cT\u003e\u003e void something(T t) { T other \u003d t;}\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cfoo/bar/Test.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 5 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T2)\n  Actual node: Line 3 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eVARIABLE(t)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T2)\n  Actual node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(other)-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(ts)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T2)\n  Actual node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(ts)-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(ts)-\u003eNEW_CLASS-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T2)\n  Actual node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(ts)-\u003eNEW_CLASS-\u003ePARAMETERIZED_TYPE-\u003eIDENTIFIER(T)\n  Expected identifier to be \u003cT2\u003e but was \u003cT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 6 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(d)-\u003eIDENTIFIER(D2)\n  Actual node: Line 6 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(something)-\u003eBLOCK(non-static)-\u003eVARIABLE(d)-\u003eIDENTIFIER(D)\n  Expected identifier to be \u003cD2\u003e but was \u003cD\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT,D\u003e {\n  \u003cT2,D2\u003e void something(T2 t) { \n    T2 other \u003d t;\n    java.util.List\u003cT2\u003e ts \u003d new java.util.ArrayList\u003cT2\u003e();\n    D2 d \u003d null; \n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\npackage foo.bar;\nclass Test\u003cT,D\u003e {\n  \u003cT2,D2\u003e void something(T t) { \n    T other \u003d t;\n    java.util.List\u003cT\u003e ts \u003d new java.util.ArrayList\u003cT\u003e();\n    D d \u003d null; \n  }\n}",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}
