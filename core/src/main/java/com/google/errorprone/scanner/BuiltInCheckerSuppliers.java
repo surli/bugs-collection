@@ -92,6 +92,7 @@ import com.google.errorprone.bugpatterns.JUnitAmbiguousTestClass;
 import com.google.errorprone.bugpatterns.JUnitAssertSameCheck;
 import com.google.errorprone.bugpatterns.LiteByteStringUtf8;
 import com.google.errorprone.bugpatterns.LongLiteralLowerCaseSuffix;
+import com.google.errorprone.bugpatterns.LoopConditionChecker;
 import com.google.errorprone.bugpatterns.MethodCanBeStatic;
 import com.google.errorprone.bugpatterns.MissingCasesInEnumSwitch;
 import com.google.errorprone.bugpatterns.MissingDefault;
@@ -105,6 +106,7 @@ import com.google.errorprone.bugpatterns.ModifyingCollectionWithItself;
 import com.google.errorprone.bugpatterns.MultiVariableDeclaration;
 import com.google.errorprone.bugpatterns.MultipleTopLevelClasses;
 import com.google.errorprone.bugpatterns.MustBeClosedChecker;
+import com.google.errorprone.bugpatterns.MutableConstantField;
 import com.google.errorprone.bugpatterns.NarrowingCompoundAssignment;
 import com.google.errorprone.bugpatterns.NoAllocationChecker;
 import com.google.errorprone.bugpatterns.NonAtomicVolatileUpdate;
@@ -312,6 +314,7 @@ public class BuiltInCheckerSuppliers {
           JUnit4TestNotRun.class,
           JUnitAssertSameCheck.class,
           LiteByteStringUtf8.class,
+          LoopConditionChecker.class,
           MislabeledAndroidString.class,
           MissingCasesInEnumSwitch.class,
           MisusedWeekYear.class,
@@ -385,6 +388,7 @@ public class BuiltInCheckerSuppliers {
           JUnitAmbiguousTestClass.class,
           MissingFail.class,
           MissingOverride.class,
+          MutableConstantField.class,
           NarrowingCompoundAssignment.class,
           NonAtomicVolatileUpdate.class,
           NonOverridingEquals.class,
