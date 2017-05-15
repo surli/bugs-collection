@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/httpcomponents-core",
+  "bugCommit": "https://github.com/apache/httpcore/compare/3d507fc452e9...2bb3e676026c",
+  "failingModule": "/root/workspace/apache/httpcomponents-core/225128054/httpcore5",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 827,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.hc.core5.concurrent.TestBasicFuture",
+      "failingMethods": [
+        "org.apache.hc.core5.concurrent.TestBasicFuture#testAsyncCancelled",
+        "org.apache.hc.core5.concurrent.TestBasicFuture#testCancelled"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.util.concurrent.CancellationException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "CancellationException expected",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
