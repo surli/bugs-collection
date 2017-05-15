@@ -48,30 +48,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-netty-utils ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 4.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 34.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 34.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 47.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 33.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 351.3 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 220.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 143.0 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 236.8 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.asynchttpclient.netty.util.ByteBufUtilsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.857 sec - in org.asynchttpclient.netty.util.ByteBufUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.544 sec - in org.asynchttpclient.netty.util.ByteBufUtilsTest
 
 Results :
 
@@ -108,183 +90,241 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 490, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 169.761 sec <<< FAILURE! - in TestSuite
-sendByteMessage(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.149 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.sendByteMessage(WebSocketWriteCompleteListenerTest.java:58)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-sendPingMessage(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.076 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.sendPingMessage(WebSocketWriteCompleteListenerTest.java:78)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-sendPongMessage(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.109 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.sendPongMessage(WebSocketWriteCompleteListenerTest.java:98)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-sendTextMessage(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.073 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.sendTextMessage(WebSocketWriteCompleteListenerTest.java:39)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-streamBytes(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.128 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.streamBytes(WebSocketWriteCompleteListenerTest.java:118)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-streamText(org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest)  Time elapsed: 0.124 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.getWebSocket(WebSocketWriteCompleteListenerTest.java:161)
-	at org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest.streamText(WebSocketWriteCompleteListenerTest.java:138)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoWSSText(org.asynchttpclient.ws.ProxyTunnellingTest)  Time elapsed: 0.662 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.ProxyTunnellingTest.runTest(ProxyTunnellingTest.java:116)
-	at org.asynchttpclient.ws.ProxyTunnellingTest.echoWSSText(ProxyTunnellingTest.java:79)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoWSText(org.asynchttpclient.ws.ProxyTunnellingTest)  Time elapsed: 0.069 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.ProxyTunnellingTest.runTest(ProxyTunnellingTest.java:116)
-	at org.asynchttpclient.ws.ProxyTunnellingTest.echoWSText(ProxyTunnellingTest.java:74)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoByte(org.asynchttpclient.ws.ByteMessageTest)  Time elapsed: 0.095 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.ByteMessageTest.echoByte(ByteMessageTest.java:67)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoOnOpenMessagesTest(org.asynchttpclient.ws.ByteMessageTest)  Time elapsed: 0.066 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.ByteMessageTest.echoOnOpenMessagesTest(ByteMessageTest.java:158)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoTwoMessagesTest(org.asynchttpclient.ws.ByteMessageTest)  Time elapsed: 0.089 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.ByteMessageTest.echoTwoMessagesTest(ByteMessageTest.java:112)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoDoubleListenerText(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.055 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.echoDoubleListenerText(TextMessageTest.java:241)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoText(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.069 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.echoText(TextMessageTest.java:182)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoTextAndThenClose(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.058 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.echoTextAndThenClose(TextMessageTest.java:352)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-echoTwoMessagesTest(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.054 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.echoTwoMessagesTest(TextMessageTest.java:279)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-onClose(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.044 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.onClose(TextMessageTest.java:145)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-onEmptyListenerTest(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.022 sec  <<< FAILURE!
-java.lang.AssertionError: null
-	at org.asynchttpclient.ws.TextMessageTest.onEmptyListenerTest(TextMessageTest.java:77)
-
-onOpen(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.06 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.onOpen(TextMessageTest.java:63)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-onTimeoutCloseTest(org.asynchttpclient.ws.TextMessageTest)  Time elapsed: 0.061 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.TextMessageTest.onTimeoutCloseTest(TextMessageTest.java:115)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-testRedirectToWSResource(org.asynchttpclient.ws.RedirectTest)  Time elapsed: 0.127 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.RedirectTest.testRedirectToWSResource(RedirectTest.java:101)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-onCloseWithCode(org.asynchttpclient.ws.CloseCodeReasonMessageTest)  Time elapsed: 0.076 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.CloseCodeReasonMessageTest.onCloseWithCode(CloseCodeReasonMessageTest.java:45)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
-onCloseWithCodeServerClose(org.asynchttpclient.ws.CloseCodeReasonMessageTest)  Time elapsed: 0.065 sec  <<< FAILURE!
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Invalid Status Code 0
-	at org.asynchttpclient.ws.CloseCodeReasonMessageTest.onCloseWithCodeServerClose(CloseCodeReasonMessageTest.java:60)
-Caused by: java.lang.IllegalStateException: Invalid Status Code 0
-
+Tests run: 490, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 174.774 sec - in TestSuite
 
 Results :
 
-Failed tests: 
-  ByteMessageTest.echoByte:67 » Execution java.lang.IllegalStateException: Inval...
-  ByteMessageTest.echoOnOpenMessagesTest:158 » Execution java.lang.IllegalStateE...
-  ByteMessageTest.echoTwoMessagesTest:112 » Execution java.lang.IllegalStateExce...
-  CloseCodeReasonMessageTest.onCloseWithCode:45 » Execution java.lang.IllegalSta...
-  CloseCodeReasonMessageTest.onCloseWithCodeServerClose:60 » Execution java.lang...
-  ProxyTunnellingTest.echoWSSText:79->runTest:116 » Execution java.lang.IllegalS...
-  ProxyTunnellingTest.echoWSText:74->runTest:116 » Execution java.lang.IllegalSt...
-  RedirectTest.testRedirectToWSResource:101 » Execution java.lang.IllegalStateEx...
-  TextMessageTest.echoDoubleListenerText:241 » Execution java.lang.IllegalStateE...
-  TextMessageTest.echoText:182 » Execution java.lang.IllegalStateException: Inva...
-  TextMessageTest.echoTextAndThenClose:352 » Execution java.lang.IllegalStateExc...
-  TextMessageTest.echoTwoMessagesTest:279 » Execution java.lang.IllegalStateExce...
-  TextMessageTest.onClose:145 » Execution java.lang.IllegalStateException: Inval...
-  TextMessageTest.onEmptyListenerTest:77 null
-  TextMessageTest.onOpen:63 » Execution java.lang.IllegalStateException: Invalid...
-  TextMessageTest.onTimeoutCloseTest:115 » Execution java.lang.IllegalStateExcep...
-  WebSocketWriteCompleteListenerTest.sendByteMessage:58->getWebSocket:161 » Execution
-  WebSocketWriteCompleteListenerTest.sendPingMessage:78->getWebSocket:161 » Execution
-  WebSocketWriteCompleteListenerTest.sendPongMessage:98->getWebSocket:161 » Execution
-  WebSocketWriteCompleteListenerTest.sendTextMessage:39->getWebSocket:161 » Execution
-  WebSocketWriteCompleteListenerTest.streamBytes:118->getWebSocket:161 » Execution
-  WebSocketWriteCompleteListenerTest.streamText:138->getWebSocket:161 » Execution
+Tests run: 490, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 490, Failures: 22, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Extras Parent 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Guava Extras 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-extras-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-extras-guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-extras-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-extras-guava ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-extras-guava ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client JDeferred Extras 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-jdeferred ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-jdeferred ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-extras-jdeferred ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/jdeferred/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-extras-jdeferred ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-extras-jdeferred ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/jdeferred/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-extras-jdeferred ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-extras-jdeferred ---
 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.asynchttpclient.extra.AsyncHttpTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 sec - in org.asynchttpclient.extra.AsyncHttpTest
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Registry Extras 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-registry ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-registry ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-extras-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/registry/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-extras-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-extras-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-extras-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-extras-registry ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.644 sec - in TestSuite
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client RxJava Extras 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-extras-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/rxjava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-extras-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-extras-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/rxjava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-extras-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-extras-rxjava ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.171 sec - in TestSuite
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Simple Client 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-simple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-simple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-extras-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/simple/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-extras-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-extras-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/extras/simple/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-extras-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-extras-simple ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.531 sec - in TestSuite
+
+Results :
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Example 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ async-http-client-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/example/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ async-http-client-example ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ async-http-client-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/199372870/example/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ async-http-client-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ async-http-client-example ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Asynchronous Http Client Project ................... SUCCESS [  1.485 s]
-[INFO] Asynchronous Http Client Netty Utils ............... SUCCESS [  5.844 s]
-[INFO] Asynchronous Http Client ........................... FAILURE [02:51 min]
-[INFO] Asynchronous Http Client Extras Parent ............. SKIPPED
-[INFO] Asynchronous Http Client Guava Extras .............. SKIPPED
-[INFO] Asynchronous Http Client JDeferred Extras .......... SKIPPED
-[INFO] Asynchronous Http Client Registry Extras ........... SKIPPED
-[INFO] Asynchronous Http Client RxJava Extras ............. SKIPPED
-[INFO] Asynchronous Http Simple Client .................... SKIPPED
-[INFO] Asynchronous Http Client Example ................... SKIPPED
+[INFO] Asynchronous Http Client Project ................... SUCCESS [  0.926 s]
+[INFO] Asynchronous Http Client Netty Utils ............... SUCCESS [  2.534 s]
+[INFO] Asynchronous Http Client ........................... SUCCESS [02:55 min]
+[INFO] Asynchronous Http Client Extras Parent ............. SUCCESS [  0.011 s]
+[INFO] Asynchronous Http Client Guava Extras .............. SUCCESS [  0.046 s]
+[INFO] Asynchronous Http Client JDeferred Extras .......... SUCCESS [  0.862 s]
+[INFO] Asynchronous Http Client Registry Extras ........... SUCCESS [  1.304 s]
+[INFO] Asynchronous Http Client RxJava Extras ............. SUCCESS [  4.870 s]
+[INFO] Asynchronous Http Simple Client .................... SUCCESS [  3.214 s]
+[INFO] Asynchronous Http Client Example ................... SUCCESS [  0.031 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 02:59 min
-[INFO] Finished at: 2017-05-15T19:24:05+02:00
-[INFO] Final Memory: 21M/642M
+[INFO] Total time: 03:10 min
+[INFO] Finished at: 2017-05-15T19:28:05+02:00
+[INFO] Final Memory: 22M/992M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project async-http-client: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/AsyncHttpClient/async-http-client/199372870/client/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :async-http-client
