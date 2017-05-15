@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/a597fdf778f6...21ae1d5a5eab",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/198641560/languagetool-language-modules/de",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 388,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.de.AgreementRuleTest",
+      "failingMethods": [
+        "org.languagetool.rules.de.AgreementRuleTest#testDetNounRule"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Found unexpected match in sentence \u0027Die Zeitdauer, während der Wissen nützlich bleibt, wird kürzer.\u0027: [DE_AGREEMENT:23-33:Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus (männlich, weiblich, sächlich - Beispiel: \u0027der Fahrrad\u0027 statt \u0027das Fahrrad\u0027).] expected:\u003c0\u003e but was:\u003c1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
