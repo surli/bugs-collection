@@ -1,0 +1,211 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.TypeParameterUnusedInFormalsTest', failingMethods=[com.google.errorprone.bugpatterns.TypeParameterUnusedInFormalsTest#typeAnnotation], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 2. All errors:
+[/Test.java:2: warning: [TypeParameterUnusedInFormals] Declaring a type parameter that is only used in the return type is a misuse of generics: operations on the type parameter are unchecked, it hides unsafe casts at invocations of the method, and it interacts badly with method overload resolution.
+  <T> T f(@A T x) {
+        ^
+    (see http://errorprone.info/bugpattern/TypeParameterUnusedInFormals)]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:31:30 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/201725327/check_api/src/main/java, /root/./workspace/google/error-prone/201725327/check_api/src/main/java, ./workspace/google/error-prone/201725327/test_helpers/src/main/java, /root/./workspace/google/error-prone/201725327/test_helpers/src/main/java, ./workspace/google/error-prone/201725327/core/src/main/java, /root/./workspace/google/error-prone/201725327/core/src/main/java, ./workspace/google/error-prone/201725327/annotation/src/main/java, /root/./workspace/google/error-prone/201725327/annotation/src/main/java, ./workspace/google/error-prone/201725327/annotations/src/main/java, /root/./workspace/google/error-prone/201725327/annotations/src/main/java, ./workspace/google/error-prone/201725327/docgen/src/main/java, /root/./workspace/google/error-prone/201725327/docgen/src/main/java, ./workspace/google/error-prone/201725327/docgen_processor/src/main/java, /root/./workspace/google/error-prone/201725327/docgen_processor/src/main/java, ./workspace/google/error-prone/201725327/ant/src/main/java, /root/./workspace/google/error-prone/201725327/ant/src/main/java, ./workspace/google/error-prone/201725327/refaster/src/main/java, /root/./workspace/google/error-prone/201725327/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@3a7b503d', projectTests=[com.google.errorprone.bugpatterns.TypeParameterUnusedInFormalsTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ExpectedExceptionCheckerTest', failingMethods=[com.google.errorprone.bugpatterns.ExpectedExceptionCheckerTest#isA_hasCauseThat], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/ExceptionTest.java>
+Actual file: <ExceptionTest.java>
+
+Diffs:
+======
+
+Found 2 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 10 COMPILATION_UNIT->IMPORT(non-static)
+  Node contents: <import org.junit.rules.ExpectedException;>.
+  
+
+> Extra node in actual tree.
+  Line 16 COMPILATION_UNIT->CLASS(ExceptionTest)->METHOD(test)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->METHOD_INVOCATION
+  Node contents: <CoreMatchers.isA(IOException.class)>.
+  
+
+Found 21 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)
+  Actual node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(assertThat)
+  Expected member identifier to be <expectThrows> but was <assertThat>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)->MEMBER_SELECT(Assert)
+  Actual node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(assertThat)->MEMBER_SELECT(MatcherAssert)
+  Expected member identifier to be <Assert> but was <MatcherAssert>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)->MEMBER_SELECT(Assert)->MEMBER_SELECT(junit)
+  Actual node: Line 2 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(assertThat)->MEMBER_SELECT(MatcherAssert)->MEMBER_SELECT(hamcrest)
+  Expected member identifier to be <junit> but was <hamcrest>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->IMPORT(non-static)
+  Actual node: Line 3 COMPILATION_UNIT->IMPORT(static)
+  Expected import to be <non-static> but was <static>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)
+  Actual node: Line 3 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)
+  Expected member identifier to be <IOException> but was <expectThrows>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)->MEMBER_SELECT(io)
+  Actual node: Line 3 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)->MEMBER_SELECT(Assert)
+  Expected member identifier to be <io> but was <Assert>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)->MEMBER_SELECT(io)->IDENTIFIER(java)->IDENTIFIER(java)
+  Actual node: Line 3 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(expectThrows)->MEMBER_SELECT(Assert)->MEMBER_SELECT(junit)->MEMBER_SELECT(junit)
+  Expected node kind to be <IDENTIFIER> but was <MEMBER_SELECT>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)
+  Actual node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)
+  Expected member identifier to be <*> but was <IOException>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)->MEMBER_SELECT(file)
+  Actual node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)->MEMBER_SELECT(io)
+  Expected member identifier to be <file> but was <io>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)->MEMBER_SELECT(file)->MEMBER_SELECT(nio)->MEMBER_SELECT(nio)
+  Actual node: Line 5 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(IOException)->MEMBER_SELECT(io)->IDENTIFIER(java)->IDENTIFIER(java)
+  Expected node kind to be <MEMBER_SELECT> but was <IDENTIFIER>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(CoreMatchers)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)
+  Expected member identifier to be <CoreMatchers> but was <*>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(CoreMatchers)->MEMBER_SELECT(hamcrest)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)->MEMBER_SELECT(file)
+  Expected member identifier to be <hamcrest> but was <file>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(CoreMatchers)->MEMBER_SELECT(hamcrest)->IDENTIFIER(org)->IDENTIFIER(org)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(*)->MEMBER_SELECT(file)->MEMBER_SELECT(nio)->MEMBER_SELECT(nio)
+  Expected node kind to be <IDENTIFIER> but was <MEMBER_SELECT>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Rule)
+  Actual node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(CoreMatchers)
+  Expected member identifier to be <Rule> but was <CoreMatchers>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Rule)->MEMBER_SELECT(junit)
+  Actual node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(CoreMatchers)->MEMBER_SELECT(hamcrest)
+  Expected member identifier to be <junit> but was <hamcrest>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 8 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Test)
+  Actual node: Line 8 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Rule)
+  Expected member identifier to be <Test> but was <Rule>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ExpectedException)
+  Actual node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Test)
+  Expected member identifier to be <ExpectedException> but was <Test>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ExpectedException)->MEMBER_SELECT(rules)
+  Actual node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Test)->MEMBER_SELECT(junit)
+  Expected member identifier to be <rules> but was <junit>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ExpectedException)->MEMBER_SELECT(rules)->MEMBER_SELECT(junit)->MEMBER_SELECT(junit)
+  Actual node: Line 9 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Test)->MEMBER_SELECT(junit)->IDENTIFIER(org)->IDENTIFIER(org)
+  Expected node kind to be <MEMBER_SELECT> but was <IDENTIFIER>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 17 COMPILATION_UNIT->CLASS(ExceptionTest)->METHOD(test)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(isInstanceOf)->MEMBER_SELECT(isInstanceOf)
+  Actual node: Line 16 COMPILATION_UNIT->CLASS(ExceptionTest)->METHOD(test)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->IDENTIFIER(assertThat)->IDENTIFIER(assertThat)
+  Expected node kind to be <MEMBER_SELECT> but was <IDENTIFIER>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 17 COMPILATION_UNIT->CLASS(ExceptionTest)->METHOD(test)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(class)->MEMBER_SELECT(class)
+  Actual node: Line 16 COMPILATION_UNIT->CLASS(ExceptionTest)->METHOD(test)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->METHOD_INVOCATION->METHOD_INVOCATION
+  Expected node kind to be <MEMBER_SELECT> but was <METHOD_INVOCATION>.
+
+
+Expected Source: 
+================
+
+import static com.google.common.truth.Truth.assertThat;
+import static org.junit.Assert.expectThrows;
+
+import java.io.IOException;
+import java.nio.file.*;
+import org.hamcrest.CoreMatchers;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+class ExceptionTest {
+  @Rule ExpectedException thrown = ExpectedException.none();
+  @Test
+  public void test() throws Exception {
+    Path p = Paths.get("NOSUCH");
+    IOException thrown =
+        expectThrows(IOException.class, () -> Files.readAllBytes(p));
+    assertThat(thrown).hasCauseThat().isInstanceOf(IOException.class);
+    assertThat(Files.exists(p)).isFalse();
+  }
+}
+
+Actual Source:
+=================
+
+import static com.google.common.truth.Truth.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.expectThrows;
+
+import java.io.IOException;
+import java.nio.file.*;
+import org.hamcrest.CoreMatchers;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+class ExceptionTest {
+  @Rule ExpectedException thrown = ExpectedException.none();
+  @Test
+  public void test() throws Exception {
+    Path p = Paths.get("NOSUCH");
+    IOException thrown = expectThrows(IOException.class, () -> Files.readAllBytes(p));assertThat(thrown.getCause(), CoreMatchers.isA(IOException.class));
+    assertThat(Files.exists(p)).isFalse();
+  }
+}', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:31:45 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/201725327/check_api/src/main/java, /root/./workspace/google/error-prone/201725327/check_api/src/main/java, ./workspace/google/error-prone/201725327/test_helpers/src/main/java, /root/./workspace/google/error-prone/201725327/test_helpers/src/main/java, ./workspace/google/error-prone/201725327/core/src/main/java, /root/./workspace/google/error-prone/201725327/core/src/main/java, ./workspace/google/error-prone/201725327/annotation/src/main/java, /root/./workspace/google/error-prone/201725327/annotation/src/main/java, ./workspace/google/error-prone/201725327/annotations/src/main/java, /root/./workspace/google/error-prone/201725327/annotations/src/main/java, ./workspace/google/error-prone/201725327/docgen/src/main/java, /root/./workspace/google/error-prone/201725327/docgen/src/main/java, ./workspace/google/error-prone/201725327/docgen_processor/src/main/java, /root/./workspace/google/error-prone/201725327/docgen_processor/src/main/java, ./workspace/google/error-prone/201725327/ant/src/main/java, /root/./workspace/google/error-prone/201725327/ant/src/main/java, ./workspace/google/error-prone/201725327/refaster/src/main/java, /root/./workspace/google/error-prone/201725327/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@758d0555', projectTests=[com.google.errorprone.bugpatterns.ExpectedExceptionCheckerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
