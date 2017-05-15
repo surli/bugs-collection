@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/dc7d260a5497...4a4c712fa253",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/204245521/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 4916,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.validator.HostValidatorTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.validator.HostValidatorTest#supportsHostedEngineDeployInVersion36"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: valid ValidationResult      but: was \u003cValidationResult:{messages\u003d\u0027[ACTION_TYPE_FAILED_HOSTED_ENGINE_DEPLOYMENT_UNSUPPORTED]\u0027, variableReplacements\u003d\u0027[$deployAction deploy, $clusterLevel 3.6]\u0027}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

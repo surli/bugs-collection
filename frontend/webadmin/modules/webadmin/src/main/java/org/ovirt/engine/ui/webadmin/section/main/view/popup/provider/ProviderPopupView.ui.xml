@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+    xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor" xmlns:w="urn:import:org.ovirt.engine.ui.common.widget"
+    xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic"
+    xmlns:t="urn:import:org.ovirt.engine.ui.common.widget.dialog.tab"
+    xmlns:p="urn:import:org.ovirt.engine.ui.webadmin.widget.provider"
+    xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:with field='constants' type='org.ovirt.engine.ui.common.CommonApplicationConstants'/>
+    <ui:style type="org.ovirt.engine.ui.webadmin.section.main.view.popup.provider.ProviderPopupView.Style">
+        .contentStyle {
+        }
+
+        .generalTabTopDecorator {
+            background-color: #D3D3D3;
+        }
+
+        .topElement {
+            padding-top: 15px;
+        }
+
+        .testResultImage {
+            float: left;
+            margin-right: 2px;
+        }
+
+        .testResultMessage {
+            font-size: 8pt;
+        }
+
+        .testButton {
+            float: right;
+        }
+
+        .container {
+            width: 100%;
+        }
+    </ui:style>
+
+    <d:SimpleDialogPanel width="760px" height="500px">
+        <d:content>
+            <t:DialogTabPanel ui:field="tabPanel" height="100%">
+                <t:tab>
+                    <t:DialogTab ui:field="generalTab">
+                        <t:content>
+                            <b:Container addStyleNames="{style.container}">
+                                <b:Row addStyleNames="{style.generalTabTopDecorator} {style.topElement}">
+                                    <ge:StringEntityModelTextBoxEditor ui:field="nameEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row addStyleNames="{style.generalTabTopDecorator}">
+                                    <ge:StringEntityModelTextBoxEditor ui:field="descriptionEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row addStyleNames="{style.generalTabTopDecorator}">
+                                    <e:ListModelListBoxEditor ui:field="typeEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row addStyleNames="{style.generalTabTopDecorator}">
+                                    <e:ListModelListBoxEditor ui:field="datacenterEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row addStyleNames="{style.topElement}">
+                                    <ge:ListModelSuggestBoxEditor ui:field="pluginTypeEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:StringEntityModelTextBoxEditor ui:field="urlEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:EntityModelCheckBoxEditor ui:field="readOnlyEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <p:VmwarePropertiesWidget addStyleNames="{style.topElement}" ui:field="vmwarePropertiesWidget" />
+                                <p:KVMPropertiesWidget addStyleNames="{style.topElement}" ui:field="kvmPropertiesWidget" />
+                                <p:XENPropertiesWidget addStyleNames="{style.topElement}" ui:field="xenPropertiesWidget" />
+                                <b:Row>
+                                    <ge:EntityModelCheckBoxEditor ui:field="requiresAuthenticationEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:StringEntityModelTextBoxEditor ui:field="usernameEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:StringEntityModelPasswordBoxEditor ui:field="passwordEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:StringEntityModelTextBoxEditor ui:field="tenantNameEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <ge:StringEntityModelTextBoxEditor ui:field="authUrlEditor" usePatternFly="true" labelColSize="LG_6" widgetColSize="LG_6" />
+                                </b:Row>
+                                <b:Row>
+                                    <b:Column size="LG_10">
+                                        <g:Image ui:field="testResultImage" addStyleNames="{style.testResultImage}" />
+                                        <g:Label ui:field="testResultMessage" addStyleNames="{style.testResultMessage}" />
+                                    </b:Column>
+                                    <b:Column size="LG_2">
+                                        <w:UiCommandButton ui:field="testButton" addStyleNames="{style.testButton}" />
+                                    </b:Column>
+                                </b:Row>
+                            </b:Container>
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+                <t:tab>
+                    <t:DialogTab ui:field="agentConfigurationTab">
+                        <t:content>
+                            <b:Container addStyleNames="{style.container}">
+                                <g:FlowPanel addStyleNames="{style.topElement}">
+                                    <p:NeutronAgentWidget ui:field="neutronAgentWidget" />
+                                </g:FlowPanel>
+                            </b:Container>
+                        </t:content>
+                    </t:DialogTab>
+                </t:tab>
+            </t:DialogTabPanel>
+        </d:content>
+    </d:SimpleDialogPanel>
+
+</ui:UiBinder>
