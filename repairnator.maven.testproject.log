@@ -1,0 +1,172 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Data Solr 2.1.2.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-rules) @ spring-data-solr ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-solr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ spring-data-solr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 202 source files to /root/workspace/spring-projects/spring-data-solr/222109791/target/classes
+[INFO] /root/workspace/spring-projects/spring-data-solr/222109791/src/main/java/org/springframework/data/solr/server/support/HttpSolrClientFactory.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/spring-projects/spring-data-solr/222109791/src/main/java/org/springframework/data/solr/server/support/HttpSolrClientFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/spring-projects/spring-data-solr/222109791/src/main/java/org/springframework/data/solr/repository/query/AbstractSolrQuery.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/spring-projects/spring-data-solr/222109791/src/main/java/org/springframework/data/solr/repository/query/AbstractSolrQuery.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- com.springsource.bundlor.maven:1.0.0.RELEASE:bundlor (bundlor) @ spring-data-solr ---
+Manifest written to '/root/workspace/spring-projects/spring-data-solr/222109791/target/classes/META-INF/MANIFEST.MF'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-solr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 113 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ spring-data-solr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ spring-data-solr ---
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 3.7 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 5.4 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 136.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.solr.HttpSolrClientFactoryTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in org.springframework.data.solr.HttpSolrClientFactoryTests
+Running org.springframework.data.solr.core.DefaultQueryParserTests
+Tests run: 129, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in org.springframework.data.solr.core.DefaultQueryParserTests
+Running org.springframework.data.solr.core.QueryParserBaseTests
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.springframework.data.solr.core.QueryParserBaseTests
+Running org.springframework.data.solr.core.query.SimpleHighlightQueryTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.query.SimpleHighlightQueryTests
+Running org.springframework.data.solr.core.query.SimpleStringCriteriaTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.query.SimpleStringCriteriaTests
+Running org.springframework.data.solr.core.query.HighlightOptionsTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.data.solr.core.query.HighlightOptionsTests
+Running org.springframework.data.solr.core.query.PartialUpdateTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.solr.core.query.PartialUpdateTests
+Running org.springframework.data.solr.core.query.result.SimpleStatsResultTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.solr.core.query.result.SimpleStatsResultTests
+Running org.springframework.data.solr.core.query.result.DelegatingCursorUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.solr.core.query.result.DelegatingCursorUnitTests
+Running org.springframework.data.solr.core.query.CriteriaTests
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.data.solr.core.query.CriteriaTests
+Running org.springframework.data.solr.core.query.SimpleQueryTests
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.solr.core.query.SimpleQueryTests
+Running org.springframework.data.solr.core.query.StatsOptionsTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.query.StatsOptionsTests
+Running org.springframework.data.solr.core.query.FieldWithQueryParametersTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.solr.core.query.FieldWithQueryParametersTests
+Running org.springframework.data.solr.core.query.FacetOptionsTests
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.data.solr.core.query.FacetOptionsTests
+Running org.springframework.data.solr.core.mapping.SimpleSolrPersistentPropertyBoostTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.springframework.data.solr.core.mapping.SimpleSolrPersistentPropertyBoostTests
+Running org.springframework.data.solr.core.mapping.SimpleSolrPersitentPropertyFieldNameTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.data.solr.core.mapping.SimpleSolrPersitentPropertyFieldNameTests
+Running org.springframework.data.solr.core.mapping.SimpleSolrPersistentEntityTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.springframework.data.solr.core.mapping.SimpleSolrPersistentEntityTests
+Running org.springframework.data.solr.core.schema.DefaultSchemaOperationsTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.449 sec - in org.springframework.data.solr.core.schema.DefaultSchemaOperationsTests
+Running org.springframework.data.solr.core.schema.SolrSchmeaResolverUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.springframework.data.solr.core.schema.SolrSchmeaResolverUnitTests
+Running org.springframework.data.solr.core.TermsQueryParserTests
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.data.solr.core.TermsQueryParserTests
+Running org.springframework.data.solr.core.QueryParsersTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.QueryParsersTests
+Running org.springframework.data.solr.core.SolrExceptionTranslatorTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.data.solr.core.SolrExceptionTranslatorTests
+Running org.springframework.data.solr.core.SolrTemplateTests
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec - in org.springframework.data.solr.core.SolrTemplateTests
+Running org.springframework.data.solr.core.ResultHelperTests
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.springframework.data.solr.core.ResultHelperTests
+Running org.springframework.data.solr.core.convert.MappingSolrConverterTests
+Tests run: 78, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec <<< FAILURE! - in org.springframework.data.solr.core.convert.MappingSolrConverterTests
+writeEnumValues(org.springframework.data.solr.core.convert.MappingSolrConverterTests)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "E2"
+     but: was <E2>
+	at org.springframework.data.solr.core.convert.MappingSolrConverterTests.writeEnumValues(MappingSolrConverterTests.java:1072)
+
+Running org.springframework.data.solr.core.convert.UpdateToSolrInputDocumentConverterTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.convert.UpdateToSolrInputDocumentConverterTests
+Running org.springframework.data.solr.core.convert.NumberConvertersTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.convert.NumberConvertersTests
+Running org.springframework.data.solr.core.convert.MappingSolrConvertDocumentObjectBinderCompatibilityTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 sec - in org.springframework.data.solr.core.convert.MappingSolrConvertDocumentObjectBinderCompatibilityTests
+Running org.springframework.data.solr.core.convert.GeoConverterTests
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.solr.core.convert.GeoConverterTests
+Running org.springframework.data.solr.core.convert.SolrJConverterTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.core.convert.SolrJConverterTests
+Running org.springframework.data.solr.core.convert.CustomConversionsTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.data.solr.core.convert.CustomConversionsTests
+Running org.springframework.data.solr.core.convert.DateTimeConvertersTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.data.solr.core.convert.DateTimeConvertersTests
+Running org.springframework.data.solr.core.FunctionQueryFragmentTests
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.springframework.data.solr.core.FunctionQueryFragmentTests
+Running org.springframework.data.solr.SolrRealtimeGetRequestUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.SolrRealtimeGetRequestUnitTests
+Running org.springframework.data.solr.server.support.SolrClientUtilTests
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.springframework.data.solr.server.support.SolrClientUtilTests
+Running org.springframework.data.solr.server.support.MulticoreSolrClientFactoryTests
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.springframework.data.solr.server.support.MulticoreSolrClientFactoryTests
+Running org.springframework.data.solr.repository.support.SolrRepositoryFactoryTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.springframework.data.solr.repository.support.SolrRepositoryFactoryTests
+Running org.springframework.data.solr.repository.support.MappingSolrEntityInformationTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.springframework.data.solr.repository.support.MappingSolrEntityInformationTests
+Running org.springframework.data.solr.repository.query.SolrQueryMethodTests
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.springframework.data.solr.repository.query.SolrQueryMethodTests
+Running org.springframework.data.solr.repository.query.SolrQueryCreatorTests
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.springframework.data.solr.repository.query.SolrQueryCreatorTests
+Running org.springframework.data.solr.repository.query.SolrQueryTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.springframework.data.solr.repository.query.SolrQueryTests
+Running org.springframework.data.solr.repository.query.SolrParameterTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.data.solr.repository.query.SolrParameterTests
+Running org.springframework.data.solr.repository.query.StringBasedSolrQueryTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.data.solr.repository.query.StringBasedSolrQueryTests
+Running org.springframework.data.solr.repository.query.SolrParametersParameterAccessorTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.solr.repository.query.SolrParametersParameterAccessorTests
+Running org.springframework.data.solr.repository.config.SolrRepositoryConfigExtensionUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.solr.repository.config.SolrRepositoryConfigExtensionUnitTests
+Running org.springframework.data.solr.repository.config.EnableSolrRepositoriesWithPredefinedConvertersUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 sec - in org.springframework.data.solr.repository.config.EnableSolrRepositoriesWithPredefinedConvertersUnitTests
+Running org.springframework.data.solr.repository.config.EnableSolrRepositoriesWithPredefinedMappingContextTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec - in org.springframework.data.solr.repository.config.EnableSolrRepositoriesWithPredefinedMappingContextTests
+Running org.springframework.data.solr.repository.SimpleSolrRepositoryTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.data.solr.repository.SimpleSolrRepositoryTests
+
+Results :
+
+Failed tests: 
+  MappingSolrConverterTests.writeEnumValues:1072 
+Expected: "E2"
+     but: was <E2>
+
+Tests run: 911, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.636 s
+[INFO] Finished at: 2017-05-15T10:57:09+02:00
+[INFO] Final Memory: 47M/2432M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project spring-data-solr: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/spring-projects/spring-data-solr/222109791/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
