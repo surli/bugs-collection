@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/786684b6fb39...dfa5b488e466",
+  "failingModule": "/root/workspace/google/error-prone/202856715/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2025,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.EqualsIncompatibleTypeTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.EqualsIncompatibleTypeTest#testPrimitiveBoxingIntoObject"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 3. All errors:\n[/Test.java:3: warning: [EqualsIncompatibleType] Calling equals on incompatible types java.lang.Object and boolean\n     o.equals(b);\n             ^\n    (see http://errorprone.info/bugpattern/EqualsIncompatibleType)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
