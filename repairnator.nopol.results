@@ -1,0 +1,319 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.TypeParameterShadowingTest', failingMethods=[com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorUnderneathStuff, com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorWithNestedTypeParameterDeclaration, com.google.errorprone.bugpatterns.TypeParameterShadowingTest#refactorMultipleVars, com.google.errorprone.bugpatterns.TypeParameterShadowingTest#renameTypeVar, com.google.errorprone.bugpatterns.TypeParameterShadowingTest#renameRecursiveBound], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <foo/bar/Test.java>
+
+Diffs:
+======
+
+Found 4 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(identity)->IDENTIFIER(T2)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(identity)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(identity)->VARIABLE(t)->IDENTIFIER(T2)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(identity)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+
+Expected Source: 
+================
+
+package foo.bar;
+class Test<T> {
+  <T2> void something(T2 t) { T2 other = t;}
+  <T2> T2 identity(T2 t) { return t; }
+}
+
+Actual Source:
+=================
+
+package foo.bar;
+class Test<T> {
+  <T2> void something(T t) { T other = t;}
+  <T2> T identity(T t) { return t; }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <foo/bar/Test.java>
+
+Diffs:
+======
+
+Found 2 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+
+Expected Source: 
+================
+
+package foo.bar;
+class Test<T> {
+  <T2> void something(T2 t) { T2 other = t;}
+}
+
+Actual Source:
+=================
+
+package foo.bar;
+class Test<T> {
+  <T2> void something(T t) { T other = t;}
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <foo/bar/Test.java>
+
+Diffs:
+======
+
+Found 5 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T3)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T3> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(var)->IDENTIFIER(T3)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(var)->IDENTIFIER(T)
+  Expected identifier to be <T3> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(innerVar)->PARAMETERIZED_TYPE->IDENTIFIER(T3)
+  Actual node: Line 7 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(innerVar)->PARAMETERIZED_TYPE->IDENTIFIER(T)
+  Expected identifier to be <T3> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->CLASS(MethodInner)->METHOD(doSomethingElse)->VARIABLE(t)->IDENTIFIER(T3)
+  Actual node: Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->CLASS(MethodInner)->METHOD(doSomethingElse)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T3> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->CLASS(MethodInner)->METHOD(doSomethingElse)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->IDENTIFIER(T3)
+  Actual node: Line 11 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->CLASS(MethodInner)->METHOD(doSomethingElse)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->IDENTIFIER(T)
+  Expected identifier to be <T3> but was <T>.
+
+
+Expected Source: 
+================
+
+package foo.bar;
+class Test<T> {
+  <T3,T2> void something(T3 t) { 
+    T3 var = t;
+    @SuppressWarnings("TypeParameterShadowing")
+    class MethodInnerWithGeneric<T> {}
+    MethodInnerWithGeneric<T3> innerVar = null;
+    class MethodInner {
+       @SuppressWarnings("TypeParameterShadowing")
+       <T> void doSomething() {}
+       void doSomethingElse(T3 t) { this.<T3>doSomething(); }
+    }
+    MethodInner myInner = null;
+  }
+}
+
+Actual Source:
+=================
+
+package foo.bar;
+class Test<T> {
+  <T3,T2> void something(T t) { 
+    T var = t;
+    @SuppressWarnings("TypeParameterShadowing")
+    class MethodInnerWithGeneric<T> {}
+    MethodInnerWithGeneric<T> innerVar = null;
+    class MethodInner {
+       @SuppressWarnings("TypeParameterShadowing")
+       <T> void doSomething() {}
+       void doSomethingElse(T t) { this.<T>doSomething(); }
+    }
+    MethodInner myInner = null;
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <foo/bar/Test.java>
+
+Diffs:
+======
+
+Found 3 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->TYPE_PARAMETER(T2)->PARAMETERIZED_TYPE->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->TYPE_PARAMETER(T2)->PARAMETERIZED_TYPE->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+
+Expected Source: 
+================
+
+package foo.bar;
+class Test<T> {
+  <T2 extends Comparable<T2>> void something(T2 t) { T2 other = t;}
+}
+
+Actual Source:
+=================
+
+package foo.bar;
+class Test<T> {
+  <T2 extends Comparable<T>> void something(T t) { T other = t;}
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <foo/bar/Test.java>
+
+Diffs:
+======
+
+Found 5 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T2)
+  Actual node: Line 3 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->VARIABLE(t)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T2)
+  Actual node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(other)->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(ts)->PARAMETERIZED_TYPE->IDENTIFIER(T2)
+  Actual node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(ts)->PARAMETERIZED_TYPE->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(ts)->NEW_CLASS->PARAMETERIZED_TYPE->IDENTIFIER(T2)
+  Actual node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(ts)->NEW_CLASS->PARAMETERIZED_TYPE->IDENTIFIER(T)
+  Expected identifier to be <T2> but was <T>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(d)->IDENTIFIER(D2)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(something)->BLOCK(non-static)->VARIABLE(d)->IDENTIFIER(D)
+  Expected identifier to be <D2> but was <D>.
+
+
+Expected Source: 
+================
+
+package foo.bar;
+class Test<T,D> {
+  <T2,D2> void something(T2 t) { 
+    T2 other = t;
+    java.util.List<T2> ts = new java.util.ArrayList<T2>();
+    D2 d = null; 
+  }
+}
+
+Actual Source:
+=================
+
+package foo.bar;
+class Test<T,D> {
+  <T2,D2> void something(T t) { 
+    T other = t;
+    java.util.List<T> ts = new java.util.ArrayList<T>();
+    D d = null; 
+  }
+}', isError=false}], nbFailures=5, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:33:29 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/202511779/check_api/src/main/java, /root/./workspace/google/error-prone/202511779/check_api/src/main/java, ./workspace/google/error-prone/202511779/test_helpers/src/main/java, /root/./workspace/google/error-prone/202511779/test_helpers/src/main/java, ./workspace/google/error-prone/202511779/core/src/main/java, /root/./workspace/google/error-prone/202511779/core/src/main/java, ./workspace/google/error-prone/202511779/annotation/src/main/java, /root/./workspace/google/error-prone/202511779/annotation/src/main/java, ./workspace/google/error-prone/202511779/annotations/src/main/java, /root/./workspace/google/error-prone/202511779/annotations/src/main/java, ./workspace/google/error-prone/202511779/docgen/src/main/java, /root/./workspace/google/error-prone/202511779/docgen/src/main/java, ./workspace/google/error-prone/202511779/docgen_processor/src/main/java, /root/./workspace/google/error-prone/202511779/docgen_processor/src/main/java, ./workspace/google/error-prone/202511779/ant/src/main/java, /root/./workspace/google/error-prone/202511779/ant/src/main/java, ./workspace/google/error-prone/202511779/refaster/src/main/java, /root/./workspace/google/error-prone/202511779/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@3a7b503d', projectTests=[com.google.errorprone.bugpatterns.TypeParameterShadowingTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.util.ReachabilityTest', failingMethods=[com.google.errorprone.util.ReachabilityTest#test[31]], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 8. All errors:
+[/in/Test.java:8: error: [FirstCaseFallsThrough] 
+      default:
+      ^
+    (see http://errorprone.info/bugpattern/FirstCaseFallsThrough)]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:33:46 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/202511779/check_api/src/main/java, /root/./workspace/google/error-prone/202511779/check_api/src/main/java, ./workspace/google/error-prone/202511779/test_helpers/src/main/java, /root/./workspace/google/error-prone/202511779/test_helpers/src/main/java, ./workspace/google/error-prone/202511779/core/src/main/java, /root/./workspace/google/error-prone/202511779/core/src/main/java, ./workspace/google/error-prone/202511779/annotation/src/main/java, /root/./workspace/google/error-prone/202511779/annotation/src/main/java, ./workspace/google/error-prone/202511779/annotations/src/main/java, /root/./workspace/google/error-prone/202511779/annotations/src/main/java, ./workspace/google/error-prone/202511779/docgen/src/main/java, /root/./workspace/google/error-prone/202511779/docgen/src/main/java, ./workspace/google/error-prone/202511779/docgen_processor/src/main/java, /root/./workspace/google/error-prone/202511779/docgen_processor/src/main/java, ./workspace/google/error-prone/202511779/ant/src/main/java, /root/./workspace/google/error-prone/202511779/ant/src/main/java, ./workspace/google/error-prone/202511779/refaster/src/main/java, /root/./workspace/google/error-prone/202511779/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@57f83c82', projectTests=[com.google.errorprone.util.ReachabilityTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.google.errorprone.bugpatterns.FallThroughTest', failingMethods=[com.google.errorprone.bugpatterns.FallThroughTest#commentInBlock], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 8. All errors:
+[/Test.java:8: error: [FallThrough] Switch case may fall through
+      case 2:
+      ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+  Did you mean to remove this line?]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon May 15 13:34:02 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/202511779/check_api/src/main/java, /root/./workspace/google/error-prone/202511779/check_api/src/main/java, ./workspace/google/error-prone/202511779/test_helpers/src/main/java, /root/./workspace/google/error-prone/202511779/test_helpers/src/main/java, ./workspace/google/error-prone/202511779/core/src/main/java, /root/./workspace/google/error-prone/202511779/core/src/main/java, ./workspace/google/error-prone/202511779/annotation/src/main/java, /root/./workspace/google/error-prone/202511779/annotation/src/main/java, ./workspace/google/error-prone/202511779/annotations/src/main/java, /root/./workspace/google/error-prone/202511779/annotations/src/main/java, ./workspace/google/error-prone/202511779/docgen/src/main/java, /root/./workspace/google/error-prone/202511779/docgen/src/main/java, ./workspace/google/error-prone/202511779/docgen_processor/src/main/java, /root/./workspace/google/error-prone/202511779/docgen_processor/src/main/java, ./workspace/google/error-prone/202511779/ant/src/main/java, /root/./workspace/google/error-prone/202511779/ant/src/main/java, ./workspace/google/error-prone/202511779/refaster/src/main/java, /root/./workspace/google/error-prone/202511779/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@6074f8f9', projectTests=[com.google.errorprone.bugpatterns.FallThroughTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
