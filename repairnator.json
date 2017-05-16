@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/httpcomponents-core",
+  "bugCommit": "https://github.com/apache/httpcore/compare/91d1978c02f7...154025714bee",
+  "failingModule": "/root/workspace/apache/httpcomponents-core/199729814/httpcore5",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 801,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.hc.core5.http.impl.bootstrap.TestAsyncServerExchangeHandlerRegistry",
+      "failingMethods": [
+        "org.apache.hc.core5.http.impl.bootstrap.TestAsyncServerExchangeHandlerRegistry#testCreateQuery"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003corg.apache.hc.core5.http.nio.support.ImmediateResponseExchangeHandler@3c0a50da\u003e but was:\u003corg.apache.hc.core5.http.nio.support.ImmediateResponseExchangeHandler@646be2c3\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
