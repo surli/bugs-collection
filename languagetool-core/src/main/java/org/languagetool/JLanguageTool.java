@@ -934,10 +934,10 @@ public class JLanguageTool {
       if (sentences.size() != analyzedSentences.size()) {
         throw new IllegalArgumentException("sentences and analyzedSentences do not have the same length : " + sentences.size() + " != " + analyzedSentences.size());
       }
-      this.sentences = sentences;
-      this.analyzedSentences = analyzedSentences;
-      this.paraMode = paraMode;
-      this.annotatedText = annotatedText;
+      this.sentences = Objects.requireNonNull(sentences);
+      this.analyzedSentences = Objects.requireNonNull(analyzedSentences);
+      this.paraMode = Objects.requireNonNull(paraMode);
+      this.annotatedText = Objects.requireNonNull(annotatedText);
       this.charCount = charCount;
       this.lineCount = lineCount;
       this.columnCount = columnCount;
@@ -946,38 +946,42 @@ public class JLanguageTool {
     @Override
     public List<RuleMatch> call() throws Exception {
       List<RuleMatch> ruleMatches = new ArrayList<>();
-      int i = 0;
+      ruleMatches.addAll(getTextLevelRuleMatches());
+      ruleMatches.addAll(getOtherRuleMatches());
+      return ruleMatches;
+    }
+
+    private List<RuleMatch> getTextLevelRuleMatches() throws IOException {
+      List<RuleMatch> ruleMatches = new ArrayList<>();
       for (Rule rule : rules) {
         if (rule instanceof TextLevelRule && !ignoreRule(rule) && paraMode != ParagraphHandling.ONLYNONPARA) {
           RuleMatch[] matches = ((TextLevelRule) rule).match(analyzedSentences);
           List<RuleMatch> adaptedMatches = new ArrayList<>();
           for (RuleMatch match : matches) {
             LineColumnRange range = getLineColumnRange(match);
-            match.setColumn(range.from.column);
-            match.setEndColumn(range.to.column);
-            match.setLine(range.from.line);
-            match.setEndLine(range.to.line);
-            if (annotatedText != null) {
-              int newFromPos = annotatedText.getOriginalTextPositionFor(match.getFromPos());
-              int newToPos = annotatedText.getOriginalTextPositionFor(match.getToPos() - 1) + 1;
-              RuleMatch newMatch = new RuleMatch(match.getRule(), newFromPos, newToPos, match.getMessage(), match.getShortMessage());
-              newMatch.setLine(match.getLine());
-              newMatch.setEndLine(match.getEndLine());
-              if (match.getLine() == 0) {
-                newMatch.setColumn(match.getColumn() + 1);
-              } else {
-                newMatch.setColumn(match.getColumn());
-              }
-              newMatch.setEndColumn(match.getEndColumn());
-              newMatch.setSuggestedReplacements(match.getSuggestedReplacements());
-              adaptedMatches.add(newMatch);
+            int newFromPos = annotatedText.getOriginalTextPositionFor(match.getFromPos());
+            int newToPos = annotatedText.getOriginalTextPositionFor(match.getToPos() - 1) + 1;
+            RuleMatch newMatch = new RuleMatch(match.getRule(), newFromPos, newToPos, match.getMessage(), match.getShortMessage());
+            newMatch.setLine(range.from.line);
+            newMatch.setEndLine(range.to.line);
+            if (match.getLine() == 0) {
+              newMatch.setColumn(range.from.column + 1);
             } else {
-              adaptedMatches.add(match);
+              newMatch.setColumn(range.from.column);
             }
+            newMatch.setEndColumn(range.to.column);
+            newMatch.setSuggestedReplacements(match.getSuggestedReplacements());
+            adaptedMatches.add(newMatch);
           }
           ruleMatches.addAll(adaptedMatches);
         }
       }
+      return ruleMatches;
+    }
+
+    private List<RuleMatch> getOtherRuleMatches() {
+      List<RuleMatch> ruleMatches = new ArrayList<>();
+      int i = 0;
       for (AnalyzedSentence analyzedSentence : analyzedSentences) {
         String sentence = sentences.get(i++);
         try {
