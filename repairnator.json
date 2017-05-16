@@ -1,0 +1,68 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "INRIA/spoon",
+  "bugCommit": "https://github.com/INRIA/spoon/compare/fb9016f48e16...b63ac185bb5c",
+  "failingModule": "/root/workspace/INRIA/spoon/199993301",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "spoon.SpoonException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1030,
+  "failing-test-cases": [
+    {
+      "className": "spoon.test.reference.VariableAccessTest",
+      "failingMethods": [
+        "spoon.test.reference.VariableAccessTest#testReferencesInInitExpression"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "spoon.test.query_function.VariableReferencesTest",
+      "failingMethods": [
+        "spoon.test.query_function.VariableReferencesTest#testVariableReferenceFunction",
+        "spoon.test.query_function.VariableReferencesTest#testLocalVariableReferenceDeclarationFunction",
+        "spoon.test.query_function.VariableReferencesTest#testLocalVariableReferenceFunction"
+      ],
+      "erroringMethods": [
+        "spoon.test.query_function.VariableReferencesTest#testVariableScopeFunction"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Test failed on VariableReferencesModelTest#localVarsInFor",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "CtLocalVariableReference#getDeclaration returned wrong declaration in VariableReferencesModelTest#localVarInNestedClass expected:\u003c23\u003e but was:\u003c25\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "spoon.SpoonException",
+          "failureDetail": "Cannot found index of local variable declaration int field \u003d 10 in statement list {\n    for (int field \u003d 10; field \u003d\u003d 10;) {\n        org.junit.Assert.assertTrue((field \u003d\u003d 10));\n        break;\n    }\n    int field \u003d 11;\n    org.junit.Assert.assertTrue((field \u003d\u003d 11));\n}",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Test failed on VariableReferencesModelTest#localVarsInFor",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 1
+    }
+  ]
+}
