@@ -1,0 +1,270 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building docker-maven-plugin 0.19.0.fuse-000003
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 14 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:resources (default-resources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 6 resources
+[INFO] Copying file assemblies/hawt-app.xml
+[INFO] Copying file assemblies/artifact.xml
+[INFO] Copying file assemblies/rootWar.xml
+[INFO] Copying file assemblies/project.xml
+[INFO] Copying file assemblies/artifact-with-dependencies.xml
+[INFO] Copying file META-INF/plexus/components.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:copy-resources (copy-plexus-resources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 1 resource
+[INFO] Copying file components.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:copy-resources (copy-asciidoc) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 45 resources
+[INFO] Copying file inc/_docker-remove.adoc
+[INFO] Copying file inc/_docker-volume-create.adoc
+[INFO] Copying file inc/build/_overview.adoc
+[INFO] Copying file inc/build/_healthcheck.adoc
+[INFO] Copying file inc/build/_configuration.adoc
+[INFO] Copying file inc/build/_assembly.adoc
+[INFO] Copying file inc/build/_buildargs.adoc
+[INFO] Copying file inc/push/_overview.adoc
+[INFO] Copying file inc/push/_configuration.adoc
+[INFO] Copying file inc/start/_overview.adoc
+[INFO] Copying file inc/start/_restart.adoc
+[INFO] Copying file inc/start/_configuration.adoc
+[INFO] Copying file inc/start/_port-mapping.adoc
+[INFO] Copying file inc/start/_depends-on.adoc
+[INFO] Copying file inc/start/_network.adoc
+[INFO] Copying file inc/start/_links.adoc
+[INFO] Copying file inc/start/_logging.adoc
+[INFO] Copying file inc/start/_wait.adoc
+[INFO] Copying file inc/start/_volumes.adoc
+[INFO] Copying file inc/_docker-logs.adoc
+[INFO] Copying file inc/image/_configuration.adoc
+[INFO] Copying file inc/image/_example.adoc
+[INFO] Copying file inc/_docker-watch.adoc
+[INFO] Copying file inc/_docker-build.adoc
+[INFO] Copying file inc/_docker-source.adoc
+[INFO] Copying file inc/_docker-start.adoc
+[INFO] Copying file inc/_introduction.adoc
+[INFO] Copying file inc/_docker-volume-remove.adoc
+[INFO] Copying file inc/_global-configuration.adoc
+[INFO] Copying file inc/_docker-push.adoc
+[INFO] Copying file inc/_authentication.adoc
+[INFO] Copying file inc/_docker-stop.adoc
+[INFO] Copying file inc/_links.adoc
+[INFO] Copying file inc/watch/_overview.adoc
+[INFO] Copying file inc/watch/_configuration.adoc
+[INFO] Copying file inc/_image-configuration.adoc
+[INFO] Copying file inc/_installation.adoc
+[INFO] Copying file inc/_external-configuration.adoc
+[INFO] Copying file inc/_goals.adoc
+[INFO] Copying file inc/_registry.adoc
+[INFO] Copying file inc/external/_docker_compose.adoc
+[INFO] Copying file inc/external/_property_configuration.adoc
+[INFO] Copying file inc/misc/_env.adoc
+[INFO] Copying file inc/misc/_startup.adoc
+[INFO] Copying file index.adoc
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ docker-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 132 source files to /root/workspace/fabric8io/docker-maven-plugin/199760931/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.space.SisuIndexAPT6' less than -source '1.7'
+[WARNING] /root/workspace/fabric8io/docker-maven-plugin/199760931/src/main/java/io/fabric8/maven/docker/config/handler/property/PropertyConfigHandler.java:[152,17] ignorePermissions(java.lang.Boolean) in io.fabric8.maven.docker.config.AssemblyConfiguration.Builder has been deprecated
+[INFO] /root/workspace/fabric8io/docker-maven-plugin/199760931/src/main/java/io/fabric8/maven/docker/access/ContainerCreateConfig.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/fabric8io/docker-maven-plugin/199760931/src/main/java/io/fabric8/maven/docker/access/ContainerCreateConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 14 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 14 mojo descriptors.
+[INFO] 
+[INFO] --- plexus-component-metadata:1.6:generate-metadata (default) @ docker-maven-plugin ---
+[INFO] Discovered 4 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:testResources (default-testResources) @ docker-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 13 resources
+[INFO] Copying file integration/busybox-image.tar.gz
+[INFO] Copying file integration/busybox-test.tar
+[INFO] Copying file docker/Dockerfile_udp.test
+[INFO] Copying file docker/Dockerfile.test
+[INFO] Copying file docker/containerCreateConfigAll.json
+[INFO] Copying file docker/Dockerfile_tcp.test
+[INFO] Copying file docker/containerHostConfigAll.json
+[INFO] Copying file docker/Dockerfile_optimised.test
+[INFO] Copying file io/fabric8/maven/docker/util/openshift_simple_config.yaml
+[INFO] Copying file io/fabric8/maven/docker/util/openshift_nologin_config.yaml
+[INFO] Copying file io/fabric8/maven/docker/util/Dockerfile_from_simple
+[INFO] Copying file io/fabric8/maven/docker/access/test-environment.props
+[INFO] Copying file compose/docker-compose.yml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ docker-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ docker-maven-plugin ---
+[INFO] Surefire report directory: /root/workspace/fabric8io/docker-maven-plugin/199760931/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 33.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 298.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.fabric8.maven.docker.assembly.DockerAssemblyConfigurationSourceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec
+Running io.fabric8.maven.docker.assembly.MappingTrackArchiverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.145 sec
+Running io.fabric8.maven.docker.assembly.DockerAssemblyManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.453 sec
+Running io.fabric8.maven.docker.assembly.DockerFileBuilderTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec
+Running io.fabric8.maven.docker.config.UlimitConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.fabric8.maven.docker.config.BuildImageConfigurationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running io.fabric8.maven.docker.config.ConfigHelperTest
+[warn] DOCKER> None of the resolved images [test] match the docker.image filter 'bla
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running io.fabric8.maven.docker.config.NetworkingConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running io.fabric8.maven.docker.config.ImageConfigResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running io.fabric8.maven.docker.config.HealthCheckConfigTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running io.fabric8.maven.docker.config.CleanupModeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running io.fabric8.maven.docker.config.handler.property.PropertyConfigHandlerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec
+Running io.fabric8.maven.docker.config.handler.compose.DockerComposeConfigHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec
+Running io.fabric8.maven.docker.model.ContainerDetailsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running io.fabric8.maven.docker.model.ContainerListElementTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running io.fabric8.maven.docker.service.QueryServiceAutoPullTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running io.fabric8.maven.docker.service.MojoExecutionServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 sec
+Running io.fabric8.maven.docker.service.VolumeServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running io.fabric8.maven.docker.service.BuildServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec
+Running io.fabric8.maven.docker.service.ContainerTrackerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running io.fabric8.maven.docker.service.LoadImageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec
+Running io.fabric8.maven.docker.service.RunServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.694 sec
+Running io.fabric8.maven.docker.util.StartOrderResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running io.fabric8.maven.docker.util.DockerFileUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running io.fabric8.maven.docker.util.ImageNameTest
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec <<< FAILURE!
+simple(io.fabric8.maven.docker.util.ImageNameTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: Tag 0 expected:<latest> but was:<null>
+	at io.fabric8.maven.docker.util.ImageNameTest.verifyData(ImageNameTest.java:90)
+	at io.fabric8.maven.docker.util.ImageNameTest.simple(ImageNameTest.java:47)
+
+testMultipleSubComponents(io.fabric8.maven.docker.util.ImageNameTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Tag 0 expected:<latest> but was:<null>
+	at io.fabric8.maven.docker.util.ImageNameTest.verifyData(ImageNameTest.java:90)
+	at io.fabric8.maven.docker.util.ImageNameTest.testMultipleSubComponents(ImageNameTest.java:81)
+
+Running io.fabric8.maven.docker.util.AuthConfigFactoryTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 sec
+Running io.fabric8.maven.docker.util.WaitUtilTest
+Created HTTP server at port 22332
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.724 sec
+Running io.fabric8.maven.docker.util.ImageNameFormatterTest
+java.lang.IllegalArgumentException: No image name format element '%z' known
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 sec
+Running io.fabric8.maven.docker.util.PomLabelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+Running io.fabric8.maven.docker.util.AutoPullModeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running io.fabric8.maven.docker.util.AuthConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.fabric8.maven.docker.util.TimestampTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+Running io.fabric8.maven.docker.util.AnsiLoggerTest
+[info] T>Yet another Test emphasis
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.fabric8.maven.docker.util.EnvUtilTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec
+Running io.fabric8.maven.docker.UrlBuilderTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec <<< FAILURE!
+pullImage(io.fabric8.maven.docker.UrlBuilderTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:</1.0/images/create?fromImage=reg%2Ft1&tag=latest> but was:</1.0/images/create?fromImage=reg%2Ft1>
+	at io.fabric8.maven.docker.UrlBuilderTest.pullImage(UrlBuilderTest.java:109)
+
+Running io.fabric8.maven.docker.access.PortMappingTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.03 sec
+Running io.fabric8.maven.docker.access.DockerConnectionDetectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running io.fabric8.maven.docker.access.hc.DockerAccessWithHcClientTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running io.fabric8.maven.docker.access.ContainerHostConfigTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec
+Running io.fabric8.maven.docker.access.ContainerCreateConfigTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running io.fabric8.maven.docker.access.BuildConfigTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running io.fabric8.maven.docker.access.ecr.EcrExtendedAuthTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 sec
+Running io.fabric8.maven.docker.access.ecr.AwsSigner4RequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running io.fabric8.maven.docker.access.log.LogRequestorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec
+Running io.fabric8.maven.docker.access.PortMappingPropertyWriteHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running io.fabric8.maven.docker.log.DefaultLogCallbackTest
+[callback-test> line 1, callback-test> line 2, callback-test> line 3, callback-test> line 4, callback-test> line 5, callback-test> line 6, callback-test> line 7, callback-test> line 8, callback-test> line 9, callback-test> line 10, callback-test> line 11, callback-test> line 12, callback-test> line 13, callback-test> line 14, callback-test> line 15, callback-test> line 16, callback-test> line 17, callback-test> line 18, callback-test> line 19, callback-test> line 20, callback-test> line 21, callback-test> line 22, callback-test> line 23, callback-test> line 24, callback-test> line 25, callback-test> line 26, callback-test> line 27, callback-test> line 28, callback-test> line 29, callback-test> line 30, callback-test> line 31, callback-test> line 32, callback-test> line 33, callback-test> line 34, callback-test> line 35, callback-test> line 36, callback-test> line 37, callback-test> line 38, callback-test> line 39, callback-test> line 40, callback-test> line 41, callback-test> line 42, callback-test> line 43, callback-test> line 44, callback-test> line 45, callback-test> line 46, callback-test> line 47, callback-test> line 48, callback-test> line 49, callback-test> line 50, callback-test> line 51, callback-test> line 52, callback-test> line 53, callback-test> line 54, callback-test> line 55, callback-test> line 56, callback-test> line 57, callback-test> line 58, callback-test> line 59, callback-test> line 60, callback-test> line 61, callback-test> line 62, callback-test> line 63, callback-test> line 64, callback-test> line 65, callback-test> line 66, callback-test> line 67, callback-test> line 68, callback-test> line 69, callback-test> line 70, callback-test> line 71, callback-test> line 72, callback-test> line 73, callback-test> line 74, callback-test> line 75, callback-test> line 76, callback-test> line 77, callback-test> line 78, callback-test> line 79, callback-test> line 80, callback-test> line 81, callback-test> line 82, callback-test> line 83, callback-test> line 84, callback-test> line 85, callback-test> line 86, callback-test> line 87, callback-test> line 88, callback-test> line 89, callback-test> line 90, callback-test> line 91, callback-test> line 92, callback-test> line 93, callback-test> line 94, callback-test> line 95, callback-test> line 96, callback-test> line 97, callback-test> line 98, callback-test> line 99, callback-test> line 100, callback-test> line 101, callback-test> line 102, callback-test> line 103, callback-test> line 104, callback-test> line 105, callback-test> line 106, callback-test> line 107, callback-test> line 108, callback-test> line 109, callback-test> line 110, callback-test> line 111, callback-test> line 112, callback-test> line 113, callback-test> line 114, callback-test> line 115, callback-test> line 116, callback-test> line 117, callback-test> line 118, callback-test> line 119, callback-test> line 120, callback-test> line 121, callback-test> line 122, callback-test> line 123, callback-test> line 124, callback-test> line 125, callback-test> line 126, callback-test> line 127, callback-test> line 128, callback-test> line 129, callback-test> line 130, callback-test> line 131, callback-test> line 132, callback-test> line 133, callback-test> line 134, callback-test> line 135, callback-test> line 136, callback-test> line 137, callback-test> line 138, callback-test> line 139, callback-test> line 140, callback-test> line 141, callback-test> line 142, callback-test> line 143, callback-test> line 144, callback-test> line 145, callback-test> line 146, callback-test> line 147, callback-test> line 148, callback-test> line 149, callback-test> line 150, callback-test> line 151, callback-test> line 152, callback-test> line 153, callback-test> line 154, callback-test> line 155, callback-test> line 156, callback-test> line 157, callback-test> line 158, callback-test> line 159, callback-test> line 160, callback-test> line 161, callback-test> line 162, callback-test> line 163, callback-test> line 164, callback-test> line 165, callback-test> line 166, callback-test> line 167, callback-test> line 168, callback-test> line 169, callback-test> line 170, callback-test> line 171, callback-test> line 172, callback-test> line 173, callback-test> line 174, callback-test> line 175, callback-test> line 176, callback-test> line 177, callback-test> line 178, callback-test> line 179, callback-test> line 180, callback-test> line 181, callback-test> line 182, callback-test> line 183, callback-test> line 184, callback-test> line 185, callback-test> line 186, callback-test> line 187, callback-test> line 188, callback-test> line 189, callback-test> line 190, callback-test> line 191, callback-test> line 192, callback-test> line 193, callback-test> line 194, callback-test> line 195, callback-test> line 196, callback-test> line 197, callback-test> line 198, callback-test> line 199, callback-test> line 200]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.04 sec
+
+Results :
+
+Failed tests:   simple(io.fabric8.maven.docker.util.ImageNameTest): Tag 0 expected:<latest> but was:<null>
+  testMultipleSubComponents(io.fabric8.maven.docker.util.ImageNameTest): Tag 0 expected:<latest> but was:<null>
+  pullImage(io.fabric8.maven.docker.UrlBuilderTest): expected:</1.0/images/create?fromImage=reg%2Ft1&tag=latest> but was:</1.0/images/create?fromImage=reg%2Ft1>
+
+Tests run: 291, Failures: 3, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.087 s
+[INFO] Finished at: 2017-05-16T12:36:56+02:00
+[INFO] Final Memory: 55M/2642M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project docker-maven-plugin: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/fabric8io/docker-maven-plugin/199760931/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,54 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "fabric8io/docker-maven-plugin",
+  "bugCommit": "https://github.com/fabric8io/docker-maven-plugin/compare/2ce36580fb18...cce7416f868b",
+  "failingModule": "/root/workspace/fabric8io/docker-maven-plugin/199760931",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 291,
+  "failing-test-cases": [
+    {
+      "className": "io.fabric8.maven.docker.UrlBuilderTest",
+      "failingMethods": [
+        "io.fabric8.maven.docker.UrlBuilderTest#pullImage"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/images/create?fromImage\u003dreg%2Ft1\u0026tag\u003dlatest\u003e but was:\u003c/1.0/images/create?fromImage\u003dreg%2Ft1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.fabric8.maven.docker.util.ImageNameTest",
+      "failingMethods": [
+        "io.fabric8.maven.docker.util.ImageNameTest#testMultipleSubComponents",
+        "io.fabric8.maven.docker.util.ImageNameTest#simple"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Tag 0 expected:\u003clatest\u003e but was:\u003cnull\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Tag 0 expected:\u003clatest\u003e but was:\u003cnull\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
