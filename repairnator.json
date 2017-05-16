@@ -1,0 +1,57 @@
+{
+  "totalNumberSkippingTests": 19,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/d20852bdf102...7e4efe07048b",
+  "failingModule": "/root/workspace/geotools/geotools/200302075/modules/plugin/coverage-multidim/netcdf",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.IllegalArgumentException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 6212,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.coverage.io.netcdf.NetCDFMosaicReaderTest",
+      "failingMethods": [
+        "org.geotools.coverage.io.netcdf.NetCDFMosaicReaderTest#testMultiCoverage"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c295.0\u003e but was:\u003c0.0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.geotools.coverage.io.netcdf.NetCDFReaderTest",
+      "failingMethods": [
+        "org.geotools.coverage.io.netcdf.NetCDFReaderTest#IASI"
+      ],
+      "erroringMethods": [
+        "org.geotools.coverage.io.netcdf.NetCDFReaderTest#testGetOriginalEnvelopeDefaultName"
+      ],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "Need to specify the coverageName for a reader related to multiple coverages",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
