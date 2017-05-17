@@ -1,0 +1,63 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "OpenGamma/Strata",
+  "bugCommit": "https://github.com/OpenGamma/Strata/compare/98bf8d6acc13...54b6a44312c2",
+  "failingModule": "/root/workspace/OpenGamma/Strata/189286466/modules/pricer",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 12366,
+  "failing-test-cases": [
+    {
+      "className": "com.opengamma.strata.pricer.credit.SpreadSensitivityCalculatorTest",
+      "failingMethods": [
+        "com.opengamma.strata.pricer.credit.SpreadSensitivityCalculatorTest#(com.opengamma.strata.pricer.credit.SpreadSensitivityCalculatorTest)"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Lists differ at element [0]: ResolvedTradeParameterMetadata{trade\u003dResolvedCdsIndexTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCdsIndex{buySell\u003dBuy, cdsIndexId\u003dOG~AAXX, legalEntityIds\u003d[OG~AA1, OG~AA2, OG~AA3, OG~AA4], paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20} !\u003d EmptyParameterMetadata{} expected [ResolvedTradeParameterMetadata{trade\u003dResolvedCdsIndexTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCdsIndex{buySell\u003dBuy, cdsIndexId\u003dOG~AAXX, legalEntityIds\u003d[OG~AA1, OG~AA2, OG~AA3, OG~AA4], paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20}] but found [EmptyParameterMetadata{}]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Lists differ at element [0]: ResolvedTradeParameterMetadata{trade\u003dResolvedCdsTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCds{buySell\u003dBuy, legalEntityId\u003dOG~ABCD, paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20} !\u003d EmptyParameterMetadata{} expected [ResolvedTradeParameterMetadata{trade\u003dResolvedCdsTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCds{buySell\u003dBuy, legalEntityId\u003dOG~ABCD, paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20}] but found [EmptyParameterMetadata{}]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Lists differ at element [0]: ResolvedTradeParameterMetadata{trade\u003dResolvedCdsTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCds{buySell\u003dBuy, legalEntityId\u003dOG~ABCD, paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20} !\u003d EmptyParameterMetadata{} expected [ResolvedTradeParameterMetadata{trade\u003dResolvedCdsTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCds{buySell\u003dBuy, legalEntityId\u003dOG~ABCD, paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20}] but found [EmptyParameterMetadata{}]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Lists differ at element [0]: ResolvedTradeParameterMetadata{trade\u003dResolvedCdsIndexTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCdsIndex{buySell\u003dBuy, cdsIndexId\u003dOG~AAXX, legalEntityIds\u003d[OG~AA1, OG~AA2, OG~AA3, OG~AA4], paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20} !\u003d EmptyParameterMetadata{} expected [ResolvedTradeParameterMetadata{trade\u003dResolvedCdsIndexTrade{info\u003dTradeInfo{id\u003dnull, counterparty\u003dnull, tradeDate\u003d2013-04-21, tradeTime\u003dnull, zone\u003dnull, settlementDate\u003dnull, attributes\u003d{}}, product\u003dResolvedCdsIndex{buySell\u003dBuy, cdsIndexId\u003dOG~AAXX, legalEntityIds\u003d[OG~AA1, OG~AA2, OG~AA3, OG~AA4], paymentPeriods\u003d[CreditCouponPaymentPeriod{currency\u003dUSD, notional\u003d1.0E7, startDate\u003d2013-04-21, endDate\u003d2013-06-21, unadjustedStartDate\u003d2013-04-21, unadjustedEndDate\u003d2013-06-20, effectiveStartDate\u003d2013-04-20, effectiveEndDate\u003d2013-06-20, paymentDate\u003d2013-06-20, fixedRate\u003d0.005, yearFraction\u003d0.16944444444444445}], protectionEndDate\u003d2013-06-20, dayCount\u003dAct/360, paymentOnDefault\u003dAccruedPremium, protectionStart\u003dBeginning, stepinDateOffset\u003d1 calendar day, settlementDateOffset\u003d3 business days using calendar Sat/Sun}, upfrontFee\u003dnull}, label\u003d2013-06-20}] but found [EmptyParameterMetadata{}]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.opengamma.strata.pricer.credit.IsdaCompliantIndexCurveCalibratorTest",
+      "failingMethods": [
+        "com.opengamma.strata.pricer.credit.IsdaCompliantIndexCurveCalibratorTest#(com.opengamma.strata.pricer.credit.IsdaCompliantIndexCurveCalibratorTest)"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [true] but found [false]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
