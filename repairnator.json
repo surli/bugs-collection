@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 11,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "sakaiproject/sakai",
+  "bugCommit": "https://github.com/sakaiproject/sakai/compare/4a3ea0fbfa69...0add841367d0",
+  "failingModule": "/root/workspace/sakaiproject/sakai/189522654/mailarchive/mailarchive-subetha",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 961,
+  "failing-test-cases": [
+    {
+      "className": "org.sakaiproject.mailarchive.SplitEmailAddressTest",
+      "failingMethods": [
+        "org.sakaiproject.mailarchive.SplitEmailAddressTest#testBATVSubAddress",
+        "org.sakaiproject.mailarchive.SplitEmailAddressTest#testBATVGood"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[]me\u003e but was:\u003c[prvs\u003d2987A7B7C7\u003d]me\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cme[]\u003e but was:\u003cme[+prvs\u003d2987A7B7C7]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
