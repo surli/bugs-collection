@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/d00a75a72946...cc65d0615b59",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/188864115/backend/manager/modules/restapi/types",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 5043,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.api.restapi.types.DiskMapperTest",
+      "failingMethods": [
+        "org.ovirt.engine.api.restapi.types.DiskMapperTest#testInitialSize"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "ActualSizeInBytes doesn\u0027t match the initial size as expected expected:\u003c54321\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
