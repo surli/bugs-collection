@@ -1,0 +1,2015 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spoon Core 5.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ spoon-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/INRIA/spoon/188570626/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/INRIA/spoon/188570626/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 86 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ spoon-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 6.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 32.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 504.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running spoon.testing.FileAssertTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.277 sec - in spoon.testing.FileAssertTest
+Running spoon.testing.AbstractAssertTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.598 sec - in spoon.testing.AbstractAssertTest
+Running spoon.testing.CtPackageAssertTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in spoon.testing.CtPackageAssertTest
+Running spoon.testing.CtElementAssertTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.091 sec - in spoon.testing.CtElementAssertTest
+Running spoon.processing.ProcessingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in spoon.processing.ProcessingTest
+Running spoon.processing.CtGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.641 sec - in spoon.processing.CtGenerationTest
+Running spoon.LauncherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in spoon.LauncherTest
+Running spoon.reflect.ast.CloneTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.44 sec - in spoon.reflect.ast.CloneTest
+Running spoon.reflect.declaration.UnknownDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in spoon.reflect.declaration.UnknownDeclarationTest
+Running spoon.reflect.declaration.CtTypeInformationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in spoon.reflect.declaration.CtTypeInformationTest
+Running spoon.reflect.visitor.CtInheritanceScannerTest
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 sec - in spoon.reflect.visitor.CtInheritanceScannerTest
+Running spoon.reflect.visitor.CtVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.107 sec - in spoon.reflect.visitor.CtVisitorTest
+Running spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 sec - in spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+Running spoon.reflect.visitor.CtScannerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.863 sec - in spoon.reflect.visitor.CtScannerTest
+Running spoon.test.ctElement.MetadataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in spoon.test.ctElement.MetadataTest
+Running spoon.test.ctType.CtTypeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.001 sec - in spoon.test.ctType.CtTypeTest
+Running spoon.test.targeted.TargetedExpressionTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.975 sec - in spoon.test.targeted.TargetedExpressionTest
+Running spoon.test.compilation.CompilationTest
+>> Hello: Bar <<
+>> Hello: FooEx <<
+>> Hello: IBar <<
+>> Hello: SimpleProcessor <<
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.103 sec - in spoon.test.compilation.CompilationTest
+Running spoon.test.ctCase.SwitchCaseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec - in spoon.test.ctCase.SwitchCaseTest
+Running spoon.test.factory.CodeFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.factory.CodeFactoryTest
+Running spoon.test.factory.ConstructorFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in spoon.test.factory.ConstructorFactoryTest
+Running spoon.test.factory.FactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.194 sec - in spoon.test.factory.FactoryTest
+Running spoon.test.factory.AnnotationFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in spoon.test.factory.AnnotationFactoryTest
+Running spoon.test.factory.TypeFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 sec - in spoon.test.factory.TypeFactoryTest
+Running spoon.test.factory.ClassFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.factory.ClassFactoryTest
+Running spoon.test.factory.ExecutableFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in spoon.test.factory.ExecutableFactoryTest
+Running spoon.test.factory.FieldFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 sec - in spoon.test.factory.FieldFactoryTest
+Running spoon.test.jar.JarTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in spoon.test.jar.JarTest
+Running spoon.test.imports.ImportScannerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 sec - in spoon.test.imports.ImportScannerTest
+Running spoon.test.imports.ImportAndExtendWithPackageNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in spoon.test.imports.ImportAndExtendWithPackageNameTest
+Running spoon.test.imports.ImportTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.062 sec - in spoon.test.imports.ImportTest
+Running spoon.test.processing.ProcessingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in spoon.test.processing.ProcessingTest
+Running spoon.test.template.TemplateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.735 sec - in spoon.test.template.TemplateTest
+Running spoon.test.replace.ReplaceParametrizedTest
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.57 sec - in spoon.test.replace.ReplaceParametrizedTest
+Running spoon.test.replace.ReplaceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.264 sec - in spoon.test.replace.ReplaceTest
+Running spoon.test.OutputTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.OutputTypeTest
+Running spoon.test.literal.LiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.014 sec - in spoon.test.literal.LiteralTest
+Running spoon.test.position.PositionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec - in spoon.test.position.PositionTest
+Running spoon.test.casts.CastTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.697 sec - in spoon.test.casts.CastTest
+Running spoon.test.reflect.visitor.ReferenceQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in spoon.test.reflect.visitor.ReferenceQueryTest
+Running spoon.test.generics.GenericsTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.36 sec - in spoon.test.generics.GenericsTest
+Running spoon.test.parameters.ParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 sec - in spoon.test.parameters.ParameterTest
+Running spoon.test.parent.ParentContractTest
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 sec - in spoon.test.parent.ParentContractTest
+Running spoon.test.parent.NullParentTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.178 sec - in spoon.test.parent.NullParentTest
+Running spoon.test.parent.TopLevelTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in spoon.test.parent.TopLevelTypeTest
+Running spoon.test.parent.ParentTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.516 sec - in spoon.test.parent.ParentTest
+Running spoon.test.control.ControlTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec - in spoon.test.control.ControlTest
+Running spoon.test.snippets.SnippetTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.312 sec - in spoon.test.snippets.SnippetTest
+Running spoon.test.model.AnonymousExecutableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in spoon.test.model.AnonymousExecutableTest
+Running spoon.test.model.BlockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec - in spoon.test.model.BlockTest
+Running spoon.test.model.TypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.181 sec - in spoon.test.model.TypeTest
+Running spoon.test.model.SwitchCaseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 sec - in spoon.test.model.SwitchCaseTest
+Running spoon.test.enums.EnumsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec - in spoon.test.enums.EnumsTest
+Running spoon.test.executable.ExecutableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 sec - in spoon.test.executable.ExecutableTest
+Running spoon.test.executable.ExecutableRefTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.124 sec - in spoon.test.executable.ExecutableRefTest
+Running spoon.test.loop.LoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec - in spoon.test.loop.LoopTest
+Running spoon.test.eval.EvalTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.393 sec - in spoon.test.eval.EvalTest
+Running spoon.test.prettyprinter.DefaultPrettyPrinterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.988 sec - in spoon.test.prettyprinter.DefaultPrettyPrinterTest
+Running spoon.test.prettyprinter.QualifiedThisRefTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 sec - in spoon.test.prettyprinter.QualifiedThisRefTest
+Running spoon.test.prettyprinter.LinesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in spoon.test.prettyprinter.LinesTest
+Running spoon.test.prettyprinter.PrinterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.049 sec - in spoon.test.prettyprinter.PrinterTest
+Running spoon.test.initializers.InitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec - in spoon.test.initializers.InitializerTest
+Running spoon.test.field.FieldTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec - in spoon.test.field.FieldTest
+Running spoon.test.comparison.EqualTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 sec - in spoon.test.comparison.EqualTest
+Running spoon.test.condition.ConditionalTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.711 sec - in spoon.test.condition.ConditionalTest
+Running spoon.test.ctBodyHolder.CtBodyHolderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.019 sec - in spoon.test.ctBodyHolder.CtBodyHolderTest
+Running spoon.test.comment.CommentTest
+2017-05-17 16:21:33,863 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCommentsInComment1And2(CommentTest.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:33,886 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCommentsInComment1And2(CommentTest.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,046 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testRemoveComment(CommentTest.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,049 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testRemoveComment(CommentTest.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,217 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCombinedPackageInfoComment(CommentTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,221 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCombinedPackageInfoComment(CommentTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,410 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testInsertNewComment(CommentTest.java:453)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,417 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testInsertNewComment(CommentTest.java:453)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,565 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testInLineComment(CommentTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,570 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testInLineComment(CommentTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,747 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testBlockComment(CommentTest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:34,750 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testBlockComment(CommentTest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:35,042 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCodeFactory(CommentTest.java:505)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:35,045 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCodeFactory(CommentTest.java:505)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:35,205 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // B is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/Comment1.java:11)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCoreFactory(CommentTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2017-05-17 16:21:35,208 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - // try/catch is not added into the AST
+spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/root/workspace/INRIA/spoon/188570626/src/test/java/spoon/test/comment/testclasses/InlineComment.java:72)
+	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:288)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:379)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.buildComment(JDTCommentBuilder.java:132)
+	at spoon.support.compiler.jdt.JDTCommentBuilder.build(JDTCommentBuilder.java:97)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel(JDTBasedSpoonCompiler.java:428)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel(JDTBasedSpoonCompiler.java:375)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:348)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:119)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at spoon.Launcher.buildModel(Launcher.java:700)
+	at spoon.Launcher.run(Launcher.java:651)
+	at spoon.Launcher.run(Launcher.java:106)
+	at spoon.test.comment.CommentTest.getSpoonFactory(CommentTest.java:64)
+	at spoon.test.comment.CommentTest.testCoreFactory(CommentTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.56 sec <<< FAILURE! - in spoon.test.comment.CommentTest
+testCommentsInComment1And2(spoon.test.comment.CommentTest)  Time elapsed: 0.22 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<3>
+	at spoon.test.comment.CommentTest.testCommentsInComment1And2(CommentTest.java:633)
+
+testInLineComment(spoon.test.comment.CommentTest)  Time elapsed: 0.154 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<59> but was:<58>
+	at spoon.test.comment.CommentTest.testInLineComment(CommentTest.java:114)
+
+Running spoon.test.intercession.IntercessionContractTest
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in spoon.test.intercession.IntercessionContractTest
+Running spoon.test.intercession.insertBefore.InsertMethodsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.693 sec - in spoon.test.intercession.insertBefore.InsertMethodsTest
+Running spoon.test.intercession.RemoveTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in spoon.test.intercession.RemoveTest
+Running spoon.test.intercession.IntercessionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.042 sec - in spoon.test.intercession.IntercessionTest
+Running spoon.test.refactoring.RefactoringTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 sec - in spoon.test.refactoring.RefactoringTest
+Running spoon.test.invocations.InvocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in spoon.test.invocations.InvocationTest
+Running spoon.test.constructorcallnewclass.ConstructorCallTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.948 sec - in spoon.test.constructorcallnewclass.ConstructorCallTest
+Running spoon.test.constructorcallnewclass.NewClassTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.773 sec - in spoon.test.constructorcallnewclass.NewClassTest
+Running spoon.test.logging.LogTest
+2017-05-17 16:22:02,289 DEBUG spoon.Launcher - output: spooned
+2017-05-17 16:22:02,289 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/188570626/spooned-classes
+2017-05-17 16:22:02,290 DEBUG spoon.Launcher - source classpath: null
+2017-05-17 16:22:02,290 DEBUG spoon.Launcher - template classpath: []
+2017-05-17 16:22:02,292 INFO spoon.Launcher - Log info
+2017-05-17 16:22:02,293 WARN spoon.Launcher - Log warn
+2017-05-17 16:22:02,293 ERROR spoon.Launcher - Log error
+2017-05-17 16:22:02,294 DEBUG spoon.Launcher - Log debug
+2017-05-17 16:22:02,295 DEBUG spoon.Launcher - output: spooned
+2017-05-17 16:22:02,296 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/188570626/spooned-classes
+2017-05-17 16:22:02,296 DEBUG spoon.Launcher - source classpath: null
+2017-05-17 16:22:02,296 DEBUG spoon.Launcher - template classpath: []
+2017-05-17 16:22:02,296 INFO spoon.Launcher - Log info
+2017-05-17 16:22:02,297 WARN spoon.Launcher - Log warn
+2017-05-17 16:22:02,297 ERROR spoon.Launcher - Log error
+2017-05-17 16:22:02,297 DEBUG spoon.Launcher - Log debug
+2017-05-17 16:22:02,298 INFO spoon.Launcher - Log info
+2017-05-17 16:22:02,298 WARN spoon.Launcher - Log warn
+2017-05-17 16:22:02,299 ERROR spoon.Launcher - Log error
+2017-05-17 16:22:02,299 WARN spoon.Launcher - Log warn
+2017-05-17 16:22:02,300 ERROR spoon.Launcher - Log error
+2017-05-17 16:22:02,301 ERROR spoon.Launcher - Log error
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in spoon.test.logging.LogTest
+Running spoon.test.delete.DeleteTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.133 sec - in spoon.test.delete.DeleteTest
+Running spoon.test.pkg.PackageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.192 sec - in spoon.test.pkg.PackageTest
+Running spoon.test.fieldaccesses.FieldAccessTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.297 sec - in spoon.test.fieldaccesses.FieldAccessTest
+Running spoon.test.arrays.ArraysTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.961 sec - in spoon.test.arrays.ArraysTest
+Running spoon.test.annotation.AnnotationTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.184 sec - in spoon.test.annotation.AnnotationTest
+Running spoon.test.annotation.AnnotationLoopTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec - in spoon.test.annotation.AnnotationLoopTest
+Running spoon.test.annotation.AnnotationValuesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.43 sec - in spoon.test.annotation.AnnotationValuesTest
+Running spoon.test.methodreference.MethodReferenceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.069 sec - in spoon.test.methodreference.MethodReferenceTest
+Running spoon.test.variable.AccessTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.552 sec - in spoon.test.variable.AccessTest
+Running spoon.test.variable.AccessFullyQualifiedFieldTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.615 sec - in spoon.test.variable.AccessFullyQualifiedFieldTest
+Running spoon.test.support.ResourceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in spoon.test.support.ResourceTest
+Running spoon.test.reference.AnnotationFieldReferenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in spoon.test.reference.AnnotationFieldReferenceTest
+Running spoon.test.reference.TypeReferenceTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.21 sec - in spoon.test.reference.TypeReferenceTest
+Running spoon.test.reference.CloneReferenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in spoon.test.reference.CloneReferenceTest
+Running spoon.test.reference.VariableAccessTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.498 sec - in spoon.test.reference.VariableAccessTest
+Running spoon.test.reference.ExecutableReferenceGenericTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.259 sec - in spoon.test.reference.ExecutableReferenceGenericTest
+Running spoon.test.reference.ExecutableReferenceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.775 sec - in spoon.test.reference.ExecutableReferenceTest
+Running spoon.test.sourcePosition.SourcePositionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 sec - in spoon.test.sourcePosition.SourcePositionTest
+Running spoon.test.varargs.VarArgsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in spoon.test.varargs.VarArgsTest
+Running spoon.test.architecture.SpoonArchitectureEnforcerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.942 sec - in spoon.test.architecture.SpoonArchitectureEnforcerTest
+Running spoon.test.ctClass.CtClassTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.684 sec - in spoon.test.ctClass.CtClassTest
+Running spoon.test.constructor.ConstructorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.446 sec - in spoon.test.constructor.ConstructorTest
+Running spoon.test.lambda.LambdaTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.039 sec - in spoon.test.lambda.LambdaTest
+Running spoon.test.main.MainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.512 sec - in spoon.test.main.MainTest
+Running spoon.test.path.PathTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.231 sec - in spoon.test.path.PathTest
+Running spoon.test.limits.utils.InternalTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec - in spoon.test.limits.utils.InternalTest
+Running spoon.test.staticFieldAccess.StaticAccessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 sec - in spoon.test.staticFieldAccess.StaticAccessTest
+Running spoon.test.type.TypeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.295 sec - in spoon.test.type.TypeTest
+Running spoon.test.trycatch.TryCatchTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.885 sec - in spoon.test.trycatch.TryCatchTest
+Running spoon.test.javadoc.JavaDocTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 sec - in spoon.test.javadoc.JavaDocTest
+Running spoon.test.filters.CUFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in spoon.test.filters.CUFilterTest
+Running spoon.test.filters.FilterTest
+2017-05-17 16:23:46,336 INFO spoon.Launcher - Spoon version 5.5.0-SNAPSHOT
+2017-05-17 16:23:46,337 INFO spoon.Launcher - running Spoon...
+2017-05-17 16:23:46,337 INFO spoon.Launcher - start processing...
+2017-05-17 16:23:46,537 INFO spoon.Launcher - end of processing: 
+2017-05-17 16:23:46,537 INFO spoon.Launcher - no errors, no warnings
+2017-05-17 16:23:46,542 INFO spoon.Launcher - Step 1) CtScanner received
+Parameter 1) unnamed package
+2017-05-17 16:23:46,542 INFO spoon.Launcher - Step 1) spoon.reflect.CtModelImpl$CtRootPackage cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) unnamed package
+2017-05-17 16:23:46,542 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon
+2017-05-17 16:23:46,542 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test
+2017-05-17 16:23:46,543 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters
+2017-05-17 16:23:46,543 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,543 INFO spoon.Launcher - Step 2) received
+Parameter 1) public abstract class AbstractTostada implements spoon.test.filters.testclasses.ITostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return new spoon.test.filters.testclasses.Tostada() {
+            @java.lang.Override
+            public void prepare() {
+                super.prepare();
+            }
+
+            @java.lang.Override
+            public spoon.test.filters.testclasses.ITostada make() {
+                return super.make();
+            }
+        };
+    }
+
+    public abstract void prepare();
+}
+2017-05-17 16:23:46,544 INFO spoon.Launcher - Step 3) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,544 INFO spoon.Launcher - Step 4) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,544 INFO spoon.Launcher - Step 5) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2017-05-17 16:23:46,544 INFO spoon.Launcher - Step 6) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step 7) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step 8) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step TailConsumer) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,545 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public AbstractTostada() {
+}
+2017-05-17 16:23:46,546 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,546 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,546 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object#Object()
+2017-05-17 16:23:46,546 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,546 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,547 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,547 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,547 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            super.prepare();
+        }
+
+        @java.lang.Override
+        public spoon.test.filters.testclasses.ITostada make() {
+            return super.make();
+        }
+    };
+}
+2017-05-17 16:23:46,547 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,548 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,548 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,548 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,549 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,549 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,550 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,550 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            super.prepare();
+        }
+
+        @java.lang.Override
+        public spoon.test.filters.testclasses.ITostada make() {
+            return super.make();
+        }
+    };
+}
+2017-05-17 16:23:46,550 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2017-05-17 16:23:46,551 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtNewClassImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2017-05-17 16:23:46,551 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada$1#1()
+2017-05-17 16:23:46,552 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada.1
+2017-05-17 16:23:46,552 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,552 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,553 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,553 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,553 INFO spoon.Launcher - Step 2) received
+Parameter 1)  {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2017-05-17 16:23:46,554 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,554 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,554 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 1() {
+}
+2017-05-17 16:23:46,555 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,556 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,556 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2017-05-17 16:23:46,556 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,556 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,557 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,557 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,557 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    super.prepare();
+}
+2017-05-17 16:23:46,557 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,557 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    super.prepare();
+}
+2017-05-17 16:23:46,558 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2017-05-17 16:23:46,559 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,560 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,561 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2017-05-17 16:23:46,561 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,561 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,562 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,562 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return super.make();
+}
+2017-05-17 16:23:46,563 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,563 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,563 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,563 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,563 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,564 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,564 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,564 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return super.make();
+}
+2017-05-17 16:23:46,566 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return super.make()
+2017-05-17 16:23:46,567 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.make()
+2017-05-17 16:23:46,567 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,567 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,567 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#make()
+2017-05-17 16:23:46,568 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,568 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,568 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,569 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,573 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public abstract void prepare();
+2017-05-17 16:23:46,574 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,574 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Antojito extends spoon.test.filters.testclasses.AbstractTostada {
+    @java.lang.Override
+    public void prepare() {
+        java.lang.System.out.println("Antojito");
+    }
+
+    public void prepare(java.lang.String ingredient) {
+    }
+}
+2017-05-17 16:23:46,574 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,575 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,575 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Antojito() {
+}
+2017-05-17 16:23:46,576 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,576 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,576 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada#AbstractTostada()
+2017-05-17 16:23:46,576 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,577 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,577 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,577 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,577 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    java.lang.System.out.println("Antojito");
+}
+2017-05-17 16:23:46,577 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,578 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,578 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,578 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,579 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,579 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,579 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    java.lang.System.out.println("Antojito");
+}
+2017-05-17 16:23:46,579 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out.println("Antojito")
+2017-05-17 16:23:46,579 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,580 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,581 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2017-05-17 16:23:46,581 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2017-05-17 16:23:46,581 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream#println(java.lang.String)
+2017-05-17 16:23:46,581 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2017-05-17 16:23:46,581 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2017-05-17 16:23:46,582 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,582 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,582 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,582 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) "Antojito"
+2017-05-17 16:23:46,583 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,583 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,583 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void prepare(java.lang.String ingredient) {
+}
+2017-05-17 16:23:46,583 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,584 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtParameterImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String ingredient
+2017-05-17 16:23:46,584 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,584 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,584 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,585 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class FieldAccessFilterTacos extends java.util.ArrayList {
+    private int myfield = 0;
+
+    FieldAccessFilterTacos() {
+        super();
+        this.myfield = 0;
+    }
+
+    public void m() {
+        myfield = super.size();
+        java.lang.Object o = super.get(myfield);
+    }
+}
+2017-05-17 16:23:46,585 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,585 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,585 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtFieldImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) private int myfield = 0;
+2017-05-17 16:23:46,585 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 0
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) FieldAccessFilterTacos() {
+    super();
+    this.myfield = 0;
+}
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    super();
+    this.myfield = 0;
+}
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#ArrayList()
+2017-05-17 16:23:46,586 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtAssignmentImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this.myfield = 0
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,587 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldWriteImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this.myfield
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,588 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 0
+2017-05-17 16:23:46,589 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void m() {
+    myfield = super.size();
+    java.lang.Object o = super.get(myfield);
+}
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    myfield = super.size();
+    java.lang.Object o = super.get(myfield);
+}
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtAssignmentImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield = super.size()
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,590 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldWriteImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,591 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.size()
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,592 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#size()
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object o = super.get(myfield)
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,593 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.get(myfield)
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#get(int)
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,594 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,595 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtInterfaceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,596 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2017-05-17 16:23:46,597 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,597 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,598 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class SubTostada extends spoon.test.filters.testclasses.Tostada {
+    @java.lang.Override
+    public void prepare() {
+        java.lang.System.out.println("SubTostada");
+        super.prepare();
+    }
+}
+2017-05-17 16:23:46,598 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,598 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,598 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public SubTostada() {
+}
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,599 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    java.lang.System.out.println("SubTostada");
+    super.prepare();
+}
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,600 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    java.lang.System.out.println("SubTostada");
+    super.prepare();
+}
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out.println("SubTostada")
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,601 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream#println(java.lang.String)
+2017-05-17 16:23:46,602 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) "SubTostada"
+2017-05-17 16:23:46,603 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,604 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,604 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2017-05-17 16:23:46,604 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,604 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,604 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2017-05-17 16:23:46,605 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,605 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,605 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Tacos implements spoon.test.filters.testclasses.ITostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return null;
+    }
+
+    public void prepare() {
+        final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+        strings.size();
+    }
+}
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 3) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 4) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 5) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 6) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2017-05-17 16:23:46,606 INFO spoon.Launcher - Step 7) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step 8) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step TailConsumer) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Tacos() {
+}
+2017-05-17 16:23:46,607 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,608 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,608 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object#Object()
+2017-05-17 16:23:46,608 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,608 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,608 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return null;
+}
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,609 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return null;
+}
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return null
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) null
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) <nulltype>
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void prepare() {
+    final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+    strings.size();
+}
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,610 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+    strings.size();
+}
+2017-05-17 16:23:46,611 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>()
+2017-05-17 16:23:46,611 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2017-05-17 16:23:46,611 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,611 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,612 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,612 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtConstructorCallImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new java.util.ArrayList<java.lang.String>()
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#ArrayList()
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings.size()
+2017-05-17 16:23:46,613 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtVariableReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#size()
+2017-05-17 16:23:46,614 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Tostada extends spoon.test.filters.testclasses.AbstractTostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return new spoon.test.filters.testclasses.Tostada() {
+            @java.lang.Override
+            public void prepare() {
+                int a = 3;
+                super.prepare();
+            }
+        };
+    }
+
+    @java.lang.Override
+    public void prepare() {
+    }
+}
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Tostada() {
+}
+2017-05-17 16:23:46,615 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada#AbstractTostada()
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,616 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            int a = 3;
+            super.prepare();
+        }
+    };
+}
+2017-05-17 16:23:46,617 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2017-05-17 16:23:46,625 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,626 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            int a = 3;
+            super.prepare();
+        }
+    };
+}
+2017-05-17 16:23:46,626 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2017-05-17 16:23:46,626 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtNewClassImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2017-05-17 16:23:46,626 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada$1#1()
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada.1
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,627 INFO spoon.Launcher - Step 2) received
+Parameter 1)  {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2017-05-17 16:23:46,629 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,629 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,629 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 1() {
+}
+2017-05-17 16:23:46,630 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2017-05-17 16:23:46,630 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2017-05-17 16:23:46,630 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2017-05-17 16:23:46,630 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,631 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,633 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,634 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,634 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    int a = 3;
+    super.prepare();
+}
+2017-05-17 16:23:46,634 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,635 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,636 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,636 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    int a = 3;
+    super.prepare();
+}
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int a = 3
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 3
+2017-05-17 16:23:46,637 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,638 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+}
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2017-05-17 16:23:46,639 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.141 sec - in spoon.test.filters.FilterTest
+Running spoon.test.secondaryclasses.ClassesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.126 sec - in spoon.test.secondaryclasses.ClassesTest
+Running spoon.test.visibility.VisibilityTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 sec - in spoon.test.visibility.VisibilityTest
+Running spoon.test.exceptions.ExceptionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.75 sec - in spoon.test.exceptions.ExceptionTest
+Running spoon.test.properties.PropertiesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in spoon.test.properties.PropertiesTest
+Running spoon.test.signature.SignatureTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.245 sec - in spoon.test.signature.SignatureTest
+Running spoon.test.interfaces.InterfaceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.981 sec - in spoon.test.interfaces.InterfaceTest
+Running spoon.test.method.MethodTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec - in spoon.test.method.MethodTest
+Running spoon.test.visitor.VisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec - in spoon.test.visitor.VisitorTest
+Running spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.406 sec - in spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+Running spoon.test.api.NoClasspathTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 sec - in spoon.test.api.NoClasspathTest
+Running spoon.test.api.APITest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.066 sec - in spoon.test.api.APITest
+Running spoon.test.api.FileSystemFolderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.api.FileSystemFolderTest
+Running spoon.test.serializable.SerializableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.597 sec - in spoon.test.serializable.SerializableTest
+Running spoon.test.strings.StringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in spoon.test.strings.StringTest
+Running spoon.test.strings.StringLiteralTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in spoon.test.strings.StringLiteralTest
+Running spoon.support.compiler.classpath.ComputeClasspathTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.support.compiler.classpath.ComputeClasspathTest
+Running spoon.support.compiler.jdt.JDTBatchCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 sec - in spoon.support.compiler.jdt.JDTBatchCompilerTest
+Running spoon.support.compiler.jdt.JDTBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.support.compiler.jdt.JDTBuilderTest
+Running spoon.support.compiler.jdt.ExtendedStringLiteralTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec - in spoon.support.compiler.jdt.ExtendedStringLiteralTest
+Running spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+
+Results :
+
+Failed tests: 
+  CommentTest.testCommentsInComment1And2:633 expected:<4> but was:<3>
+  CommentTest.testInLineComment:114 expected:<59> but was:<58>
+
+Tests run: 968, Failures: 2, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:33 min
+[INFO] Finished at: 2017-05-17T16:24:18+02:00
+[INFO] Final Memory: 27M/999M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project spoon-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/INRIA/spoon/188570626/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
