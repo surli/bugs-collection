@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "brettwooldridge/HikariCP",
+  "bugCommit": "https://github.com/brettwooldridge/HikariCP/compare/1cf7457168ba...becaae4554f3",
+  "failingModule": "/root/workspace/brettwooldridge/HikariCP/189786780",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 112,
+  "failing-test-cases": [
+    {
+      "className": "com.zaxxer.hikari.pool.TestConnections",
+      "failingMethods": [
+        "com.zaxxer.hikari.pool.TestConnections#testPopulationSlowAcquisition",
+        "com.zaxxer.hikari.pool.TestConnections#testMaximumPoolLimit"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Total connections not as expected expected same:\u003c2\u003e was not:\u003c1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "StubConnection count not as expected expected same:\u003c4\u003e was not:\u003c5\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
