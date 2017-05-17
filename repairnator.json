@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "CloudSlang/cloud-slang",
+  "bugCommit": "https://github.com/CloudSlang/cloud-slang/compare/5d79ba307f66...3c22a56e59ed",
+  "failingModule": "/root/workspace/CloudSlang/cloud-slang/186023662/cloudslang-cli",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.mockito.exceptions.verification.WantedButNotInvoked"
+  ],
+  "totalNumberRunningTests": 853,
+  "failing-test-cases": [
+    {
+      "className": "io.cloudslang.lang.cli.services.SyncTriggerEventListenerTest",
+      "failingMethods": [
+        "io.cloudslang.lang.cli.services.SyncTriggerEventListenerTest#onMavenDependencyBuildEventPrintWithColor",
+        "io.cloudslang.lang.cli.services.SyncTriggerEventListenerTest#onMavenDependencyBuildFinishedEventPrintWithColor"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "failureDetail": "\nWanted but not invoked:\nconsolePrinter.printWithColor(\n    CYAN,\n    \"test message\"\n);\n-\u003e at io.cloudslang.lang.cli.services.SyncTriggerEventListenerTest.onMavenDependencyBuildEventPrintWithColor(SyncTriggerEventListenerTest.java:82)\nActually, there were zero interactions with this mock.\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "failureDetail": "\nWanted but not invoked:\nconsolePrinter.printWithColor(\n    CYAN,\n    \"test message\"\n);\n-\u003e at io.cloudslang.lang.cli.services.SyncTriggerEventListenerTest.onMavenDependencyBuildFinishedEventPrintWithColor(SyncTriggerEventListenerTest.java:92)\nActually, there were zero interactions with this mock.\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
