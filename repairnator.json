@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "brettwooldridge/HikariCP",
+  "bugCommit": "https://github.com/brettwooldridge/HikariCP/compare/45d33c03454a...8f84e1fb125f",
+  "failingModule": "/root/workspace/brettwooldridge/HikariCP/187131111",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 111,
+  "failing-test-cases": [
+    {
+      "className": "com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest",
+      "failingMethods": [
+        "com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest#testSlowConnectionTimeBurstyWork"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Connections were created when there was no waiting consumers expected:\u003c0.0\u003e but was:\u003c13.0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
