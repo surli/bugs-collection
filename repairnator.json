@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "INRIA/spoon",
+  "bugCommit": "https://github.com/INRIA/spoon/compare/bf0652c5a3dd...ac4988af27de",
+  "failingModule": "/root/workspace/INRIA/spoon/189233636",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 970,
+  "failing-test-cases": [
+    {
+      "className": "spoon.test.comment.CommentTest",
+      "failingMethods": [
+        "spoon.test.comment.CommentTest#testInLineComment"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "// last comment at the end of array:new int[]{ // comment before array value\n1 , // comment after array value\n2 , 3 } is not printed",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
