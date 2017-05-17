@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "fabric8io/docker-maven-plugin",
+  "bugCommit": "https://github.com/fabric8io/docker-maven-plugin/compare/e355830b050a...70d49aed2675",
+  "failingModule": "/root/workspace/fabric8io/docker-maven-plugin/188335089",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 276,
+  "failing-test-cases": [
+    {
+      "className": "io.fabric8.maven.docker.UrlBuilderTest",
+      "failingMethods": [
+        "io.fabric8.maven.docker.UrlBuilderTest#containerLogs",
+        "io.fabric8.maven.docker.UrlBuilderTest#buildImage",
+        "io.fabric8.maven.docker.UrlBuilderTest#tagContainer"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/images/t1%3Alatest/tag?force\u003d1\u0026repo\u003dnew\u0026tag\u003dtag1\u003e but was:\u003c/1.0/images/t1%3Alatest/tag?repo\u003dnew\u0026force\u003d1\u0026tag\u003dtag1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/build?dockerfile\u003ddf\u0026nocache\u003d0\u0026rm\u003d1\u0026t\u003dimage1\u003e but was:\u003c/1.0/build?t\u003dimage1\u0026dockerfile\u003ddf\u0026nocache\u003d0\u0026rm\u003d1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/containers/cid/logs?follow\u003d0\u0026stderr\u003d1\u0026stdout\u003d1\u0026timestamps\u003d1\u003e but was:\u003c/1.0/containers/cid/logs?stdout\u003d1\u0026timestamps\u003d1\u0026stderr\u003d1\u0026follow\u003d0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
