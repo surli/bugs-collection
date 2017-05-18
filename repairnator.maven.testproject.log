@@ -1,0 +1,418 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:samples:jar:2.2.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.squareup.retrofit2:samples:[unknown-version], /root/workspace/square/retrofit/192803215/samples/pom.xml, line 65, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Retrofit (Parent)
+[INFO] Retrofit
+[INFO] Adapters
+[INFO] Adapter: Guava
+[INFO] Adapter: Java 8
+[INFO] Adapter: RxJava
+[INFO] Adapter: RxJava 2
+[INFO] Converters
+[INFO] Converter: Gson
+[INFO] Converter: Protocol Buffers
+[INFO] Converter: Jackson
+[INFO] Converter: Wire Protocol Buffers
+[INFO] Converter: SimpleXML
+[INFO] Converter: Java Scalars
+[INFO] Converter: Moshi
+[INFO] Retrofit Mock Adapter
+[INFO] Samples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit (Parent) 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ retrofit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ retrofit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 40 source files to /root/workspace/square/retrofit/192803215/retrofit/target/classes
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit/src/main/java/retrofit2/ServiceMethod.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit/src/main/java/retrofit2/ServiceMethod.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ retrofit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /root/workspace/square/retrofit/192803215/retrofit/target/test-classes
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit/src/test/java/retrofit2/RequestBuilderTest.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit/src/test/java/retrofit2/RequestBuilderTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ retrofit ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/192803215/retrofit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 7.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 76.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 707.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.RequestBuilderTest
+Tests run: 139, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.435 sec
+Running retrofit2.CallTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.111 sec
+Running retrofit2.ResponseTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running retrofit2.ServiceMethodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running retrofit2.ExecutorCallAdapterFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+Running retrofit2.RequestBuilderAndroidTest
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:7' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:pom:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:4' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:pom:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:jar:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:jar:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.624 sec
+Running retrofit2.RetrofitTest
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.083 sec
+Running retrofit2.CallAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 267, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ retrofit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapters 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ retrofit-adapters ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ retrofit-adapters ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: Guava 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ adapter-guava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/guava/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ adapter-guava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/guava/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-guava ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/192803215/retrofit-adapters/guava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.guava.GuavaCallAdapterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 sec
+Running retrofit2.adapter.guava.ListenableFutureTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ adapter-guava ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: Java 8 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-java8 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/java8/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ adapter-java8 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/java8/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/java8/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ adapter-java8 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/java8/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-java8 ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/192803215/retrofit-adapters/java8/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.java8.CompletableFutureTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 sec
+Running retrofit2.adapter.java8.Java8CallAdapterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ adapter-java8 ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: RxJava 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ adapter-rxjava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/target/classes
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/main/java/retrofit2/adapter/rxjava/CallOnSubscribe.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/main/java/retrofit2/adapter/rxjava/CallOnSubscribe.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ adapter-rxjava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/target/test-classes
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/test/java/retrofit2/adapter/rxjava/RxJavaPluginsResetRule.java: /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/test/java/retrofit2/adapter/rxjava/RxJavaPluginsResetRule.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/src/test/java/retrofit2/adapter/rxjava/RxJavaPluginsResetRule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-rxjava ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.rxjava.ObservableTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 sec
+Running retrofit2.adapter.rxjava.CompletableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running retrofit2.adapter.rxjava.SingleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
+Running retrofit2.adapter.rxjava.HttpExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running retrofit2.adapter.rxjava.ObservableWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running retrofit2.adapter.rxjava.ResultTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running retrofit2.adapter.rxjava.RxJavaCallAdapterFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running retrofit2.adapter.rxjava.SingleWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running retrofit2.adapter.rxjava.CompletableWithSchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+
+Results :
+
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ adapter-rxjava ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: RxJava 2 2.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-rxjava2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-rxjava2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ adapter-rxjava2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-rxjava2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ adapter-rxjava2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-rxjava2 ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.rxjava2.MaybeThrowingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.66 sec
+Running retrofit2.adapter.rxjava2.ObservableTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running retrofit2.adapter.rxjava2.CompletableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running retrofit2.adapter.rxjava2.CompletableThrowingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running retrofit2.adapter.rxjava2.FlowableThrowingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running retrofit2.adapter.rxjava2.MaybeWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec <<< FAILURE!
+rawBodyTypeThrows(retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting message:
+ <"Maybe return type must be parameterized as Maybe<Foo> or Maybe<? extends Foo>">
+but was:
+ <"Observable return type must be parameterized as Observable<Foo> or Observable<? extends Foo>">
+	at retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest.rawBodyTypeThrows(RxJava2CallAdapterFactoryTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running retrofit2.adapter.rxjava2.FlowableTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec
+Running retrofit2.adapter.rxjava2.SingleThrowingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.053 sec
+Running retrofit2.adapter.rxjava2.MaybeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running retrofit2.adapter.rxjava2.SingleTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running retrofit2.adapter.rxjava2.HttpExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running retrofit2.adapter.rxjava2.ObservableThrowingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running retrofit2.adapter.rxjava2.ObservableWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running retrofit2.adapter.rxjava2.ResultTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running retrofit2.adapter.rxjava2.FlowableWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running retrofit2.adapter.rxjava2.SingleWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running retrofit2.adapter.rxjava2.CompletableWithSchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+
+Results :
+
+Failed tests:   rawBodyTypeThrows(retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest): (..)
+
+Tests run: 99, Failures: 1, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Retrofit (Parent) .................................. SUCCESS [  1.279 s]
+[INFO] Retrofit ........................................... SUCCESS [01:23 min]
+[INFO] Adapters ........................................... SUCCESS [  0.275 s]
+[INFO] Adapter: Guava ..................................... SUCCESS [  1.798 s]
+[INFO] Adapter: Java 8 .................................... SUCCESS [  1.641 s]
+[INFO] Adapter: RxJava .................................... SUCCESS [  2.288 s]
+[INFO] Adapter: RxJava 2 .................................. FAILURE [  2.403 s]
+[INFO] Converters ......................................... SKIPPED
+[INFO] Converter: Gson .................................... SKIPPED
+[INFO] Converter: Protocol Buffers ........................ SKIPPED
+[INFO] Converter: Jackson ................................. SKIPPED
+[INFO] Converter: Wire Protocol Buffers ................... SKIPPED
+[INFO] Converter: SimpleXML ............................... SKIPPED
+[INFO] Converter: Java Scalars ............................ SKIPPED
+[INFO] Converter: Moshi ................................... SKIPPED
+[INFO] Retrofit Mock Adapter .............................. SKIPPED
+[INFO] Samples ............................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:33 min
+[INFO] Finished at: 2017-05-18T11:19:35+02:00
+[INFO] Final Memory: 43M/1540M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project adapter-rxjava2: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :adapter-rxjava2

@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 4,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/47cc621c7736...5d54332e77c9",
+  "failingModule": "/root/workspace/square/retrofit/192803215/retrofit-adapters/rxjava2",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 432,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava2.RxJava2CallAdapterFactoryTest#rawBodyTypeThrows"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting message:  \u003c\"Maybe return type must be parameterized as Maybe\u003cFoo\u003e or Maybe\u003c? extends Foo\u003e\"\u003e but was:  \u003c\"Observable return type must be parameterized as Observable\u003cFoo\u003e or Observable\u003c? extends Foo\u003e\"\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
