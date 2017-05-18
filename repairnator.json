@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "prometheus/client_java",
+  "bugCommit": "https://github.com/prometheus/client_java/compare/c90bf0a83f19...4bf235ebe2ab",
+  "failingModule": "/root/workspace/prometheus/client_java/190578281/simpleclient",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 68,
+  "failing-test-cases": [
+    {
+      "className": "io.prometheus.client.SummaryTest",
+      "failingMethods": [
+        "io.prometheus.client.SummaryTest#testTimer"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c10.0\u003e but was:\u003c6.241E-6\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.prometheus.client.HistogramTest",
+      "failingMethods": [
+        "io.prometheus.client.HistogramTest#testTimer"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c10.0\u003e but was:\u003c6.187E-6\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
