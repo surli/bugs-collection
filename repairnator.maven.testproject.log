@@ -1,0 +1,593 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dataverse 4.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ dataverse ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (jacoco-initialize) @ dataverse ---
+[INFO] argLine set to -javaagent:/root/./workspace/IQSS/dataverse/194611147/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/IQSS/dataverse/194611147/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dataverse ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ dataverse ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 594 source files to /root/workspace/IQSS/dataverse/194611147/target/classes
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/main/java/edu/harvard/iq/dataverse/DatasetVersion.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/main/java/edu/harvard/iq/dataverse/DatasetVersion.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/main/java/edu/harvard/iq/dataverse/MailServiceBean.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/main/java/edu/harvard/iq/dataverse/MailServiceBean.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dataverse ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ dataverse ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 86 source files to /root/workspace/IQSS/dataverse/194611147/target/test-classes
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/test/java/edu/harvard/iq/dataverse/util/StringUtilTest.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/test/java/edu/harvard/iq/dataverse/util/StringUtilTest.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/test/java/edu/harvard/iq/dataverse/util/MockResponse.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/IQSS/dataverse/194611147/src/test/java/edu/harvard/iq/dataverse/util/MockResponse.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ dataverse ---
+[INFO] Surefire report directory: /root/workspace/IQSS/dataverse/194611147/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 11.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 109.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 1163.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.harvard.iq.dataverse.engine.PermissionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.MoveDataverseCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommandTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateRoleCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.GetPrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateDatasetVersionCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.UpdatePermissionRootCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.GetLatestPublishedDatasetVersionCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateDataverseCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running edu.harvard.iq.dataverse.privateurl.PrivateUrlUtilTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running edu.harvard.iq.dataverse.util.MarkupCheckerTest
+sanitizeBasicHTML
+--------------------------------------
+safeStr: <script>alert('hi')</script>
+sanitized: 
+--------------------------------------
+safeStr: <map name="rtdcCO"></map>
+sanitized: <map name="rtdcCO"></map>
+--------------------------------------
+safeStr: <area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)">
+sanitized: <area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)">
+--------------------------------------
+safeStr: <map name="rtdcCO"><area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)"></map>
+sanitized: <map name="rtdcCO"><area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)"></map>
+--------------------------------------
+safeStr: <p>hello&lt;/</p>
+sanitized: <p>hello&lt;/</p>
+--------------------------------------
+safeStr: <h1>hello</h1>
+sanitized: <h1>hello</h1>
+--------------------------------------
+safeStr: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+sanitized: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+--------------------------------------
+safeStr: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+sanitized: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+Running edu.harvard.iq.dataverse.util.BundleUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.util.xml.XmlPrinterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec
+Running edu.harvard.iq.dataverse.util.xml.XmlValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.util.shapefile.ShapefileHandlerTest
+------------------------------------------------------------
+(1) testCreateZippedNonShapefile
+------------------------------------------------------------
+------------------------------------------------------------
+/tmp/junit7658983702272534384
+------------------------------------------------------------
+fname: /tmp/junit7658983702272534384/not-quite-a-shape.zip
+Passed!
+------------------------------------------------------------
+(2) testZippedTwoShapefiles
+------------------------------------------------------------
+-------------------------------
+Hash: file base names + extensions
+-------------------------------
+
+Key: [shp_dictionary] Ext List: [xls]
+ >>>> Not a shapefile
+
+Key: [notes] Ext List: [__PLACEHOLDER-FOR-BLANK-EXTENSION__]
+ >>>> Not a shapefile
+
+Key: [shape1] Ext List: [shp, shx, dbf, prj, fbn, fbx]
+ >>>> YES, This is a shapefile!
+
+Key: [shape2] Ext List: [shp, shx, dbf, prj, txt, pdf, __PLACEHOLDER-FOR-BLANK-EXTENSION__]
+ >>>> YES, This is a shapefile!
+
+Key: [README] Ext List: [MD]
+ >>>> Not a shapefile
+------------------------------------------------------------
+/tmp/junit2884825339606741788
+------------------------------------------------------------
+fname: /tmp/junit2884825339606741788/two-shapes.zip
+Creating folder: scratch-for-unzip-12345
+
+(1) Basename: shp_dictionary
+Extensions: [xls]
+
+(2) Basename: notes
+Extensions: [__PLACEHOLDER-FOR-BLANK-EXTENSION__]
+
+(3) Basename: shape1
+Extensions: [shp, shx, dbf, prj, fbn, fbx]
+
+(4) Basename: shape2
+Extensions: [shp, shx, dbf, prj, txt, pdf, __PLACEHOLDER-FOR-BLANK-EXTENSION__]
+
+(5) Basename: README
+Extensions: [MD]
+rezipped_filenames: [scratch-for-unzip-12345, notes, shp_dictionary.xls, shape1.zip, shape2.zip, shape2.txt, README.MD, shape2.pdf, shape2]
+Passed!
+------------------------------------------------------------
+(3) testZippedShapefileWithExtraFiles
+------------------------------------------------------------
+Creating folder: scratch-for-unzip-12345
+
+(1) Basename: shape1
+Extensions: [shp, shx, dbf, prj, pdf, cpg, shp.xml]
+
+(2) Basename: README
+Extensions: [md]
+
+(3) Basename: shape_notes
+Extensions: [txt]
+rezipped_filenames: [scratch-for-unzip-12345, shape1.zip, shape_notes.txt, shape1.cpg, shape1.pdf, README.md]
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec <<< FAILURE!
+testZippedShapefileWithExtraFiles(edu.harvard.iq.dataverse.util.shapefile.ShapefileHandlerTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at edu.harvard.iq.dataverse.util.shapefile.ShapefileHandlerTest.testZippedShapefileWithExtraFiles(ShapefileHandlerTest.java:282)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:43)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running edu.harvard.iq.dataverse.util.MailUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running edu.harvard.iq.dataverse.util.BitSetTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running edu.harvard.iq.dataverse.util.StringUtilTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running edu.harvard.iq.dataverse.util.FileUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running edu.harvard.iq.dataverse.util.json.JsonParserTest
+true
+true
+{"alias":"test-ip-group","identifier":"&ip/test-ip-group","id":42,"name":"Test-ip-group","description":"Ip group description","addresses":["1.1.1.1","1:2:3:0:0:0:4:5"],"ranges":[["1:2:3:0:0:0:3:ff","1:2:3:0:0:0:3:5"],["1.2.1.1","1.2.1.10"]]}
+{"alias":"test-ip-group","identifier":"&ip/test-ip-group","id":42,"name":"Test-ip-group","description":"Ip group description","addresses":["1.1.1.1"]}
+{"alias":"test-ip-group","identifier":"&ip/test-ip-group","id":42,"name":"Test-ip-group","description":"Ip group description","addresses":["fe80:0:0:0:22c9:d0ff:fe48:ce61"]}
+fileMetadatas: [edu.harvard.iq.dvn.core.study.FileMetadata[id=null], edu.harvard.iq.dvn.core.study.FileMetadata[id=null]]
+json = {"typeName":"coordinate","multiple":true,"typeClass":"compound","value":[{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"0"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"3"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"10"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"13"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"20"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"23"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"30"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"33"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"40"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"43"}}]}
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec
+Running edu.harvard.iq.dataverse.util.json.JsonUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+Running edu.harvard.iq.dataverse.util.json.DatasetVersionDTOTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running edu.harvard.iq.dataverse.util.json.JsonPrinterTest
+json: {"description":"","label":"","categories":["Data"],"dataFile":{"filename":"","filesize":-1,"originalFormatLabel":"UNKNOWN","rootDataFileId":-1,"tabularTags":["Survey"]}}
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running edu.harvard.iq.dataverse.util.FileSortFieldAndOrderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.util.LruCacheTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.util.JsfHelperTest
+enumValue
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.mydata.SolrQueryFormatterTest
+-------------------------------
+Set group size to 10--it's usually, 1,000
+-------------------------------
+-------------------------------
+List of 10 ids from 1, 10
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10))
+-------------------------------
+-------------------------------
+List of 11 ids from 1, 11
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10)) OR (entityId:(11))
+-------------------------------
+-------------------------------
+List of 21 ids from 1, 21
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10)) OR (entityId:(11 12 13 14 15 16 17 18 19 20)) OR (entityId:(21))
+-------------------------------
+-------------------------------
+List of ids is empty
+-------------------------------
+-------------------------------
+query clause: null
+-------------------------------
+-------------------------------
+List of ids from 1 to 11
+-------------------------------
+-------------------------------
+Set to groups of 3
+-------------------------------
+-------------------------------
+query clause: (parentId:(1 2 3)) OR (parentId:(4 5 6)) OR (parentId:(7 8 9)) OR (parentId:(10 11))
+-------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running edu.harvard.iq.dataverse.mydata.PagerTest
+getNumResults
+-------------------------------
+Test: 102 results, 10 per page, page 1
+-------------------------------
+page list: [1, 2, 3, 4, 5]
+-------------------------------
+Test: 102 results, 10 per page, page 6
+-------------------------------
+page list: [4, 5, 6, 7, 8]
+-------------------------------
+Test: 100 results, 10 per page, page 9
+-------------------------------
+page list: [6, 7, 8, 9, 10]
+-------------------------------
+Test: 100 results, 10 per page, page 10
+-------------------------------
+page list: [6, 7, 8, 9, 10]
+-------------------------------
+Test: 102 results, 10 per page, page 9
+-------------------------------
+page list: [7, 8, 9, 10, 11]
+getNumResults
+-------------------------------
+page list: null
+-------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.EMailValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running edu.harvard.iq.dataverse.authorization.providers.shib.ShibUtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec
+Running edu.harvard.iq.dataverse.authorization.providers.oauth2.OAuth2AuthenticationProviderFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GoogleOAuth2APTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.OrcidOAuth2APTest
+withEmailResponse = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orcid-message xmlns="http://www.orcid.org/ns/orcid">
+    <message-version>1.2</message-version>
+    <orcid-profile type="user">
+        <orcid-identifier>
+            <uri>http://sandbox.orcid.org/0000-0002-3283-0661</uri>
+            <path>0000-0002-3283-0661</path>
+            <host>sandbox.orcid.org</host>
+        </orcid-identifier>
+        <orcid-preferences>
+            <locale>en</locale>
+        </orcid-preferences>
+        <orcid-history>
+            <creation-method>Member-referred</creation-method>
+            <submission-date>2016-10-12T21:59:25.760Z</submission-date>
+            <last-modified-date>2016-10-16T21:11:33.032Z</last-modified-date>
+            <claimed>true</claimed>
+            <verified-email>false</verified-email>
+            <verified-primary-email>false</verified-primary-email>
+        </orcid-history>
+        <orcid-bio>
+            <personal-details>
+                <given-names>Pete K.</given-names>
+                <family-name>Dataversky</family-name>
+            </personal-details>
+            <contact-details>                <email primary="false" current="true" verified="false" visibility="limited" source="0000-0002-3283-0661">pete2@mailinator.com</email>                <email primary="true" current="true" verified="false" visibility="public" source="0000-0002-3283-0661">pete@mailinator.com</email>            </contact-details>        </orcid-bio>
+    </orcid-profile>
+</orcid-message>
+noEmailResponse = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orcid-message xmlns="http://www.orcid.org/ns/orcid">
+    <message-version>1.2</message-version>
+    <orcid-profile type="user">
+        <orcid-identifier>
+            <uri>http://sandbox.orcid.org/0000-0002-3283-0661</uri>
+            <path>0000-0002-3283-0661</path>
+            <host>sandbox.orcid.org</host>
+        </orcid-identifier>
+        <orcid-preferences>
+            <locale>en</locale>
+        </orcid-preferences>
+        <orcid-history>
+            <creation-method>Member-referred</creation-method>
+            <submission-date>2016-10-12T21:59:25.760Z</submission-date>
+            <last-modified-date>2016-10-16T21:11:33.032Z</last-modified-date>
+            <claimed>true</claimed>
+            <verified-email>false</verified-email>
+            <verified-primary-email>false</verified-primary-email>
+        </orcid-history>
+        <orcid-bio>
+            <personal-details>
+                <given-names>Pete K.</given-names>
+                <family-name>Dataversky</family-name>
+            </personal-details>
+                    </orcid-bio>
+    </orcid-profile>
+</orcid-message>
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GitHubOAuth2APTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running edu.harvard.iq.dataverse.authorization.providers.builtin.BuiltinAuthenticationProviderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.181 sec
+Running edu.harvard.iq.dataverse.authorization.AuthUtilTest
+isNonLocalLoginEnabled
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IpAddressRangeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IpAddressTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IPv6AddressTest
+adr = 0:0:0:0:0:0:0:7334
+adr = 0:0:0:0:0:0:0:0
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IPv4AddressTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.IpGroupTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.authorization.groups.impl.explicit.ExplicitGroupTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running edu.harvard.iq.dataverse.authorization.groups.GroupUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.authorization.groups.GroupServiceBeanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running edu.harvard.iq.dataverse.authorization.AuthenticatedUserDisplayInfoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.GlobalIdTest
+testValidDOI
+testInject (weak test)
+testUnknownProtocol
+testBadIdentifierOnePart
+testBadIdentifierTwoParts
+testValidDOI
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running edu.harvard.iq.dataverse.datasetutility.OptionalFileParamsTest
+-------------------------------
+test_01_jsonDescription
+-------------------------------
+-------------------------------
+jsonData: {"description": "A new file"}
+-------------------------------
+-------------------------------
+test_02_jsonDescriptionNumeric
+-------------------------------
+-------------------------------
+jsonData: {"description": 250 }
+-------------------------------
+-------------------------------
+test_03_jsonNull
+-------------------------------
+-------------------------------
+test_04_jsonTagsGood
+-------------------------------
+-------------------------------
+jsonData: {"description": "A new file", "categories": ["dog", "cat", "mouse"]}
+-------------------------------
+-------------------------------
+test_05_jsonTabularTagsGood
+-------------------------------
+-------------------------------
+jsonData: {"dataFileTags": ["Survey", "Event", "Panel"], "description": "A new file"}
+-------------------------------
+-------------------------------
+test_06_jsonTabularTagsBad
+-------------------------------
+-------------------------------
+jsonData: {"dataFileTags": ["Survey", "Event", "xPanel"], "description": "A new file"}
+-------------------------------
+-------------------------------
+errMsg: Not a valid Tabular Data Tag: 
+-------------------------------
+-------------------------------
+test_07_regularInstanceGood
+-------------------------------
+-------------------------------
+test_08_regularInstanceGoodWithNulls
+-------------------------------
+-------------------------------
+test_08_regularInstanceGoodWithNulls
+-------------------------------
+-------------------------------
+jsonData: {"forceReplace": "unused within OptionalFileParams", "oldFileId": "unused within OptionalFileParams", "description": null, "unusedParam1": "haha", "categories": []}
+-------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running edu.harvard.iq.dataverse.api.AbstractApiBeanTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+Running edu.harvard.iq.dataverse.api.dto.FieldDTOTest
+Top
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running edu.harvard.iq.dataverse.api.LazyRefTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.confirmemail.ConfirmEmailUtilTest
+Friendly expiration timestamp / measurement test
+1440 Minutes: 24 hours
+60 Minutes: 1 hour
+30 Minutes: 30 minutes
+90 Minutes: 1.5 hours
+2880 minutes: 48 hours
+150 minutes: 2.5 hours
+165 minutes: 2.75 hours
+1 Minute: 1 minute
+
+
+Grandfathered account timestamp test
+Grandfathered Time (y2k): 2000-01-01 00:00:00.0
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest
+---------------------------
+(1) testDTAformat
+---------------------------
+---------------------------
+(1a) Mock a Legit Stata File (application/x-stata)
+---------------------------
+result 1a: application/x-stata
+---------------------------
+(1b) File is empty string (non-DTA)
+---------------------------
+result 1b: null
+---------------------------
+(1c) File is some random text (non-DTA)
+---------------------------
+result 1c: null
+---------------------------
+(1d) Mock a Legit Stata File with STATA_13_HEADER
+---------------------------
+result 1d: application/x-stata-13
+---------------------------
+(2) testSAVformat
+---------------------------
+---------------------------
+(2a) Mock a Legit SPSS-SAV File (application/x-spss-sav)
+---------------------------
+result 2a: application/x-spss-sav
+---------------------------
+(2b) File is empty string
+---------------------------
+result 2b: null
+---------------------------
+(2c) File is non-SAV string
+---------------------------
+result 2c: null
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running edu.harvard.iq.dataverse.ingest.IngestServiceBeanHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+Running edu.harvard.iq.dataverse.DatasetVersionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running edu.harvard.iq.dataverse.worldmapauth.WorldMapTokenTest
+------------------------------------------------------------
+WorldMapTokenTest!
+------------------------------------------------------------
+------------------------------------------------------------
+testTokenTimes
+------------------------------------------------------------
+time limit seconds: 1800
+time limit seconds (2): 60
+token time limit (minutes): 30
+Did token expire in 10 minutes? (should be no)
+Did token expire? (automatically check current time)
+Did token expire at 30 minutes? (should be no)
+Did token expire in 31 minutes? (should be yes)
+Did token expire in 45 minutes? (should be yes)
+token time limit (minutes): 10 minutes
+Did token expire if null sent? (should be yes)
+Refresh token (but fails b/c sending null automatically expires it
+Did token expire in 5 minutes? (should be no)
+Did token expire? (auto-check current time)
+------------------------------------------------------------
+Get a new Token
+------------------------------------------------------------
+Did token expire? (automatically check current time)
+Manually expire token: setHasExpired(true)
+Did token expire in 1 minute? (should be yes--b/c manually expired)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running edu.harvard.iq.dataverse.search.SearchFilesServiceBeanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.search.IndexUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.search.SolrSearchResultTest
+actual: {"type":"dataverse"}
+expect: {"type":"dataverse"}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running edu.harvard.iq.dataverse.search.SearchUtilTest
+SolrInputDocument(fields: [id=dataset_12345_permission, definitionPointDocId=dataset_12345, definitionPointDvObjectId=12345, discoverableBy=[group_public]])
+sanitizeQuery
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running edu.harvard.iq.dataverse.DataFileServiceBeanTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running edu.harvard.iq.dataverse.passwordreset.PasswordResetDataTest
+newTokenNotExpired
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Failed tests:   testZippedShapefileWithExtraFiles(edu.harvard.iq.dataverse.util.shapefile.ShapefileHandlerTest): expected:<false> but was:<true>
+
+Tests run: 260, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.175 s
+[INFO] Finished at: 2017-05-18T15:07:14+02:00
+[INFO] Final Memory: 59M/1712M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project dataverse: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/IQSS/dataverse/194611147/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
