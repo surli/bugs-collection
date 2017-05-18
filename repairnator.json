@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/opennlp",
+  "bugCommit": "https://github.com/apache/opennlp/compare/76ef2e67546f...8bba18089a1a",
+  "failingModule": "/root/workspace/apache/opennlp/190934620/opennlp-tools",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 421,
+  "failing-test-cases": [
+    {
+      "className": "opennlp.tools.namefind.NameFinderMETest",
+      "failingMethods": [
+        "opennlp.tools.namefind.NameFinderMETest#testOnlyWithNamesTypeOverride"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c[0..2) aType\u003e but was:\u003c[0..2) default\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "opennlp.tools.namefind.NameFinderEventStreamTest",
+      "failingMethods": [
+        "opennlp.tools.namefind.NameFinderEventStreamTest#testOutcomesTypeCantOverride"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[XYZ]-start\u003e but was:\u003c[person]-start\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

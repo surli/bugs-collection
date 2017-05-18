@@ -1,0 +1,43 @@
+Apache OpenNLP ${pom.version}
+===============================
+
+Requirements
+------------
+Java 1.8 is required to run OpenNLP
+Maven 3.3.9 is required for building it
+
+Building from the Source Distribution
+-------------------------------------
+
+To build everything execute the following command in the root folder:
+    mvn clean install
+
+The results of the build will be placed  in:
+    opennlp-distr/target/apache-opennlp-[version]-bin.tar-gz (or .zip)
+
+What is new in Apache OpenNLP ${pom.version}
+---------------------------------------
+
+This release introduces many new features, improvements and bug fixes. The API
+has been improved for a better consistency and 1.4 deprecated methods were
+removed. Now Java 1.8 is required.
+
+Additionally the release contains the following noteworthy changes:
+
+- OpenNLP is up to 50% faster at analyzing content
+- A lot of deprecated code has been removed
+- Code base has been cleaned up
+- There is a new brat annotation service
+- Documentation was improved and extended
+- A Naive Bayesian Classifier implementation was added
+- Morofologik addon is now included
+- Added a language model component
+- Added a CLI to the lemmatizer component.
+- Added a supervised statistical lemmatizer.
+- The lemmatizer component API has been entirely rewritten. The changes in
+  the previously existing Dictionary-based lemmatizer are not backward compatible.
+
+A detailed list of the issues related to this release can be found in the release
+notes.
+
+
