@@ -67,10 +67,7 @@
 [WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/parser/AbstractParserEventStream.java:[80,42] CHUNK in opennlp.tools.parser.ParserEventTypeEnum has been deprecated
 [WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/ml/AbstractSequenceTrainer.java:[34,44] train(opennlp.tools.ml.model.SequenceStream) in opennlp.tools.ml.AbstractSequenceTrainer implements train(opennlp.tools.ml.model.SequenceStream) in opennlp.tools.ml.SequenceTrainer
   return type requires unchecked conversion from opennlp.tools.ml.model.SequenceClassificationModel to opennlp.tools.ml.model.SequenceClassificationModel<java.lang.String>
-[WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/namefind/NameFinderEventStream.java:[53,18] unchecked conversion
-  required: opennlp.tools.util.SequenceCodec<java.lang.String>
-  found:    opennlp.tools.util.SequenceCodec
-[WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/namefind/NameFinderEventStream.java:[70,28] DefaultNameContextGenerator() in opennlp.tools.namefind.DefaultNameContextGenerator has been deprecated
+[WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/namefind/NameFinderEventStream.java:[69,28] DefaultNameContextGenerator() in opennlp.tools.namefind.DefaultNameContextGenerator has been deprecated
 [WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/parser/treeinsert/ParserEventStream.java:[385,38] CHUNK in opennlp.tools.parser.ParserEventTypeEnum has been deprecated
 [WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/parser/treeinsert/ParserEventStream.java:[391,38] TAG in opennlp.tools.parser.ParserEventTypeEnum has been deprecated
 [WARNING] /root/workspace/apache/opennlp/190053099/opennlp-tools/src/main/java/opennlp/tools/parser/treeinsert/ParserEventStream.java:[410,23] HeadRules(java.lang.String) in opennlp.tools.parser.lang.en.HeadRules has been deprecated
@@ -130,12 +127,6 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ opennlp-tools ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 14.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 139.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1888.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
@@ -711,13 +702,13 @@ Performing 100 iterations.
  98:  ... loglikelihood=-664.7479632520184	0.9916936622643077
  99:  ... loglikelihood=-660.0059840616893	0.9919428523963785
 100:  ... loglikelihood=-655.3378345396223	0.9920259157737353
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.57 sec - in opennlp.tools.parser.treeinsert.ParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.506 sec - in opennlp.tools.parser.treeinsert.ParserTest
 Running opennlp.tools.parser.PosSampleStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.parser.PosSampleStreamTest
 Running opennlp.tools.parser.lang.en.HeadRulesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.parser.lang.en.HeadRulesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.parser.lang.en.HeadRulesTest
 Running opennlp.tools.parser.ChunkSampleStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.parser.ChunkSampleStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.parser.ChunkSampleStreamTest
 Running opennlp.tools.parser.chunking.ParserTest
 Indexing events using cutoff of 5
 
@@ -1175,23 +1166,19 @@ Performing 100 iterations.
  98:  ... loglikelihood=-231.9920978615207	0.9873908826382153
  99:  ... loglikelihood=-230.64861556214507	0.9873908826382153
 100:  ... loglikelihood=-229.3259377564174	0.9878758486905916
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.042 sec - in opennlp.tools.parser.chunking.ParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.228 sec - in opennlp.tools.parser.chunking.ParserTest
 Running opennlp.tools.parser.ParseTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.parser.ParseTest
 Running opennlp.tools.parser.ParseSampleStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.parser.ParseSampleStreamTest
 Running opennlp.tools.namefind.NameFinderEventStreamTest
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec <<< FAILURE! - in opennlp.tools.namefind.NameFinderEventStreamTest
-testOutcomesWithType(opennlp.tools.namefind.NameFinderEventStreamTest)  Time elapsed: 0.005 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[XYZ]-start> but was:<[default]-start>
-	at opennlp.tools.namefind.NameFinderEventStreamTest.testOutcomesWithType(NameFinderEventStreamTest.java:108)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in opennlp.tools.namefind.NameFinderEventStreamTest
 Running opennlp.tools.namefind.TokenNameFinderEvaluatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.namefind.TokenNameFinderEvaluatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.namefind.TokenNameFinderEvaluatorTest
 Running opennlp.tools.namefind.NameSampleDataStreamTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in opennlp.tools.namefind.NameSampleDataStreamTest
 Running opennlp.tools.namefind.DictionaryNameFinderTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.namefind.DictionaryNameFinderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.namefind.DictionaryNameFinderTest
 Running opennlp.tools.namefind.NameSampleTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.namefind.NameSampleTest
 Running opennlp.tools.namefind.TokenNameFinderCrossValidatorTest
@@ -1531,7 +1518,7 @@ Performing 70 iterations.
  68:  ... loglikelihood=-2.7161734584014092	1.0
  69:  ... loglikelihood=-2.6758366389701798	1.0
  70:  ... loglikelihood=-2.6366905013260165	1.0
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.555 sec - in opennlp.tools.namefind.TokenNameFinderCrossValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 sec - in opennlp.tools.namefind.TokenNameFinderCrossValidatorTest
 Running opennlp.tools.namefind.NameFinderMETest
 Indexing events using cutoff of 1
 
@@ -2037,11 +2024,11 @@ Performing 70 iterations.
  68:  ... loglikelihood=-0.33316704824397875	1.0
  69:  ... loglikelihood=-0.32837456054257297	1.0
  70:  ... loglikelihood=-0.32371779344983764	1.0
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 sec - in opennlp.tools.namefind.NameFinderMETest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 sec - in opennlp.tools.namefind.NameFinderMETest
 Running opennlp.tools.namefind.DictionaryNameFinderEvaluatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in opennlp.tools.namefind.DictionaryNameFinderEvaluatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.namefind.DictionaryNameFinderEvaluatorTest
 Running opennlp.tools.namefind.RegexNameFinderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.namefind.RegexNameFinderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.namefind.RegexNameFinderTest
 Running opennlp.tools.ml.perceptron.PerceptronPrepAttachTest
 Indexing events using cutoff of 1
 
@@ -2233,7 +2220,7 @@ Performing 100 iterations.
 Stats: (19076/20801) 0.9170712946492957
 ...done.
 Accuracy on PPA devset: (3125/4039) 0.773706362961129
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.62 sec - in opennlp.tools.ml.perceptron.PerceptronPrepAttachTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.383 sec - in opennlp.tools.ml.perceptron.PerceptronPrepAttachTest
 Running opennlp.tools.ml.naivebayes.NaiveBayesPrepAttachTest
 Indexing events using cutoff of 1
 
@@ -2277,7 +2264,7 @@ Computing model parameters...
 Stats: (9931/20790) 0.4776815776815777
 ...done.
 Accuracy on PPA devset: (3209/4039) 0.7945035899975241
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 sec - in opennlp.tools.ml.naivebayes.NaiveBayesPrepAttachTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 sec - in opennlp.tools.ml.naivebayes.NaiveBayesPrepAttachTest
 Running opennlp.tools.ml.naivebayes.NaiveBayesCorrectnessTest
 Indexing events using cutoff of 1
 
@@ -2331,7 +2318,7 @@ done.
 Computing model parameters...
 Stats: (2/4) 0.5
 ...done.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.ml.naivebayes.NaiveBayesCorrectnessTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.ml.naivebayes.NaiveBayesCorrectnessTest
 Running opennlp.tools.ml.naivebayes.NaiveBayesModelReadWriteTest
 Indexing events using cutoff of 1
 
@@ -2359,7 +2346,7 @@ done.
 Computing model parameters...
 Stats: (2/4) 0.5
 ...done.
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in opennlp.tools.ml.naivebayes.NaiveBayesModelReadWriteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in opennlp.tools.ml.naivebayes.NaiveBayesModelReadWriteTest
 Running opennlp.tools.ml.maxent.RealValueModelTest
 Indexing events using cutoff of 1
 
@@ -2658,7 +2645,7 @@ Relative L2-norm of the gradient is smaller than the threshold 1.0E-4.
 Training will stop.
 
 Running time: 0.002s
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in opennlp.tools.ml.maxent.quasinewton.QNMinimizerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in opennlp.tools.ml.maxent.quasinewton.QNMinimizerTest
 Running opennlp.tools.ml.maxent.quasinewton.QNPrepAttachTest
 Indexing events using cutoff of 1
 
@@ -2735,7 +2722,7 @@ Performing 100 iterations with L1Cost=0.0 and L2Cost=1.0
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 3.221s
+Running time: 3.566s
 Accuracy on PPA devset: (3323/4039) 0.8227283981183461
 Indexing events using cutoff of 5
 
@@ -2784,7 +2771,7 @@ Performing 100 iterations with L1Cost=0.1 and L2Cost=0.1
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 0.932s
+Running time: 0.981s
 Accuracy on PPA devset: (3278/4039) 0.8115870264917059
 Indexing events using cutoff of 1
 
@@ -2825,7 +2812,7 @@ Performing 100 iterations with L1Cost=0.25 and L2Cost=1.0
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 1.117s
+Running time: 1.178s
 Accuracy on PPA devset: (3324/4039) 0.8229759841544937
 Indexing events using cutoff of 1
 
@@ -2876,7 +2863,7 @@ Performing 100 iterations with L1Cost=0.1 and L2Cost=0.1
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 1.586s
+Running time: 1.622s
 Accuracy on PPA devset: (3294/4039) 0.8155484030700668
 Indexing events using cutoff of 5
 
@@ -2925,7 +2912,7 @@ Performing 100 iterations with L1Cost=0.1 and L2Cost=0.1
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 1.22s
+Running time: 1.221s
 Accuracy on PPA devset: (3278/4039) 0.8115870264917059
 Indexing events using cutoff of 1
 
@@ -2966,9 +2953,9 @@ Performing 100 iterations with L1Cost=1.0 and L2Cost=0.0
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
-Running time: 1.087s
+Running time: 1.1s
 Accuracy on PPA devset: (3304/4039) 0.8180242634315424
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.331 sec - in opennlp.tools.ml.maxent.quasinewton.QNPrepAttachTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.984 sec - in opennlp.tools.ml.maxent.quasinewton.QNPrepAttachTest
 Running opennlp.tools.ml.maxent.quasinewton.QNTrainerTest
 Indexing events using cutoff of 1
 
@@ -3004,6 +2991,39 @@ Performing 50 iterations with L1Cost=0.1 and L2Cost=0.1
 Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
+Running time: 0.003s
+Indexing events using cutoff of 1
+
+	Computing event counts...  done. 20 events
+	Indexing...  done.
+Sorting and merging events... done. Reduced 20 events to 19.
+Done indexing.
+Computing model parameters ...
+
+Solving convex optimization problem.
+Objective function has 10 variable(s).
+
+Performing 50 iterations with L1Cost=0.1 and L2Cost=0.1
+  1:  	12.936730611489779	0.06681214507436246	0.75
+  2:  	12.686721480230831	0.019325526577549754	0.65
+  3:  	11.605238692963784	0.08524525338971736	0.75
+  4:  	10.633830982837287	0.08370424218120205	0.85
+  5:  	9.758860335603892	0.08228178994433652	0.85
+  6:  	9.17495096611705	0.059833766383204236	0.75
+  7:  	6.134457933610614	0.3313906574253017	0.9
+  8:  	5.160265598227254	0.15880658827991512	0.95
+  9:  	4.602675254089386	0.10805458237060937	0.9
+ 10:  	3.895016327027326	0.1537494800297541	1.0
+ 11:  	3.8092137494722618	0.022028810754831634	1.0
+ 12:  	3.7871434976808187	0.005793912666229542	1.0
+ 13:  	3.7769086228730573	0.002702531555519108	1.0
+ 14:  	3.7684802379101026	0.002231556493559894	1.0
+ 15:  	3.7653341014566504	8.348555000508504E-4	1.0
+ 16:  	3.763916470882793	3.7649529514768783E-4	1.0
+ 17:  	3.7638379298511624	2.0866837040086318E-5	1.0
+Function change rate is smaller than the threshold 1.0E-4.
+Training will stop.
+
 Running time: 0.002s
 Indexing events using cutoff of 1
 
@@ -3012,39 +3032,6 @@ Indexing events using cutoff of 1
 Sorting and merging events... done. Reduced 20 events to 19.
 Done indexing.
 Computing model parameters ...
-
-Solving convex optimization problem.
-Objective function has 10 variable(s).
-
-Performing 50 iterations with L1Cost=0.1 and L2Cost=0.1
-  1:  	12.936730611489779	0.06681214507436246	0.75
-  2:  	12.686721480230831	0.019325526577549754	0.65
-  3:  	11.605238692963784	0.08524525338971736	0.75
-  4:  	10.633830982837287	0.08370424218120205	0.85
-  5:  	9.758860335603892	0.08228178994433652	0.85
-  6:  	9.17495096611705	0.059833766383204236	0.75
-  7:  	6.134457933610614	0.3313906574253017	0.9
-  8:  	5.160265598227254	0.15880658827991512	0.95
-  9:  	4.602675254089386	0.10805458237060937	0.9
- 10:  	3.895016327027326	0.1537494800297541	1.0
- 11:  	3.8092137494722618	0.022028810754831634	1.0
- 12:  	3.7871434976808187	0.005793912666229542	1.0
- 13:  	3.7769086228730573	0.002702531555519108	1.0
- 14:  	3.7684802379101026	0.002231556493559894	1.0
- 15:  	3.7653341014566504	8.348555000508504E-4	1.0
- 16:  	3.763916470882793	3.7649529514768783E-4	1.0
- 17:  	3.7638379298511624	2.0866837040086318E-5	1.0
-Function change rate is smaller than the threshold 1.0E-4.
-Training will stop.
-
-Running time: 0.001s
-Indexing events using cutoff of 1
-
-	Computing event counts...  done. 20 events
-	Indexing...  done.
-Sorting and merging events... done. Reduced 20 events to 19.
-Done indexing.
-Computing model parameters ...
 Running time: 0.001s
 Indexing events using cutoff of 1
 
@@ -3079,7 +3066,7 @@ Function change rate is smaller than the threshold 1.0E-4.
 Training will stop.
 
 Running time: 0.001s
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in opennlp.tools.ml.maxent.quasinewton.QNTrainerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in opennlp.tools.ml.maxent.quasinewton.QNTrainerTest
 Running opennlp.tools.ml.maxent.quasinewton.NegLogLikelihoodTest
 Indexing events using cutoff of 1
 
@@ -3593,7 +3580,7 @@ Performing 100 iterations.
  99:  ... loglikelihood=-2135.9116786189998	0.9690880246142013
 100:  ... loglikelihood=-2130.822966036698	0.9691360992259987
 Accuracy on PPA devset: (3230/4039) 0.7997028967566229
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.634 sec - in opennlp.tools.ml.maxent.MaxentPrepAttachTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.037 sec - in opennlp.tools.ml.maxent.MaxentPrepAttachTest
 Running opennlp.tools.ml.maxent.ScaleDoesntMatterTest
 Indexing events using cutoff of 0
 
@@ -3829,7 +3816,7 @@ classifiy with smallModel: A = 0.997511
 classifiy with largeModel: A = 0.997511
 classifiy with smallModel: B = 0.002489
 classifiy with largeModel: B = 0.002489
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in opennlp.tools.ml.maxent.ScaleDoesntMatterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in opennlp.tools.ml.maxent.ScaleDoesntMatterTest
 Running opennlp.tools.ml.maxent.io.RealValueFileEventStreamTest
 Indexing events using cutoff of 1
 
@@ -3843,11 +3830,11 @@ Indexing events using cutoff of 1
 	Indexing...  done.
 Sorting and merging events... done. Reduced 2 events to 1.
 Done indexing.
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.ml.maxent.io.RealValueFileEventStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.ml.maxent.io.RealValueFileEventStreamTest
 Running opennlp.tools.ml.BeamSearchTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in opennlp.tools.ml.BeamSearchTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in opennlp.tools.ml.BeamSearchTest
 Running opennlp.tools.ml.model.IndexHashTableTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.ml.model.IndexHashTableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.ml.model.IndexHashTableTest
 Running opennlp.tools.ml.TrainerFactoryTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.ml.TrainerFactoryTest
 Running opennlp.tools.cmdline.CLITest
@@ -3933,15 +3920,15 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp DoccatCrossValidator[.leipzig] [-reportOutputFile outputFile] [-misclassified true|false] [-folds num] [-featureGenerators fg] [-tokenizer tokenizer] [-factory factoryName] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
+Usage: opennlp DoccatCrossValidator[.leipzig] [-reportOutputFile outputFile] [-folds num] [-misclassified true|false] [-featureGenerators fg] [-tokenizer tokenizer] [-factory factoryName] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
 
 Arguments description:
 	-reportOutputFile outputFile
 		the path of the fine-grained report file.
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-featureGenerators fg
 		Comma separated feature generator classes. Bag of words is used if not specified.
 	-tokenizer tokenizer
@@ -3957,24 +3944,24 @@ Arguments description:
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
 Usage: opennlp DoccatConverter help|leipzig [help|options...]
-Usage: opennlp DictionaryBuilder -inputFile in -outputFile out [-encoding charsetName]
+Usage: opennlp DictionaryBuilder -outputFile out -inputFile in [-encoding charsetName]
 
 Arguments description:
-	-inputFile in
-		Plain file with one entry per line
 	-outputFile out
 		The dictionary file.
+	-inputFile in
+		Plain file with one entry per line
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
 Usage: opennlp SimpleTokenizer < sentences
 Usage: opennlp TokenizerME model < sentences
-Usage: opennlp TokenizerTrainer[.ad|.pos|.conllx|.namefinder|.parse] [-alphaNumOpt isAlphaNumOpt] [-abbDict path] [-factory factoryName] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
+Usage: opennlp TokenizerTrainer[.ad|.pos|.conllx|.namefinder|.parse] [-abbDict path] [-alphaNumOpt isAlphaNumOpt] [-factory factoryName] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
 
 Arguments description:
-	-alphaNumOpt isAlphaNumOpt
-		Optimization flag to skip alpha numeric tokens for further tokenization
 	-abbDict path
 		abbreviation dictionary in XML format.
+	-alphaNumOpt isAlphaNumOpt
+		Optimization flag to skip alpha numeric tokens for further tokenization
 	-factory factoryName
 		A sub-class of TokenizerFactory where to get implementation and resources.
 	-params paramsFile
@@ -3998,17 +3985,17 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp TokenizerCrossValidator[.ad|.pos|.conllx|.namefinder|.parse] [-misclassified true|false] [-folds num] [-alphaNumOpt isAlphaNumOpt] [-abbDict path] [-factory factoryName] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
+Usage: opennlp TokenizerCrossValidator[.ad|.pos|.conllx|.namefinder|.parse] [-folds num] [-misclassified true|false] [-abbDict path] [-alphaNumOpt isAlphaNumOpt] [-factory factoryName] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
 
 Arguments description:
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
-	-alphaNumOpt isAlphaNumOpt
-		Optimization flag to skip alpha numeric tokens for further tokenization
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-abbDict path
 		abbreviation dictionary in XML format.
+	-alphaNumOpt isAlphaNumOpt
+		Optimization flag to skip alpha numeric tokens for further tokenization
 	-factory factoryName
 		A sub-class of TokenizerFactory where to get implementation and resources.
 	-params paramsFile
@@ -4052,7 +4039,7 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp SentenceDetectorCrossValidator[.ad|.pos|.conllx|.namefinder|.parse] [-eosChars string] [-abbDict path] [-factory factoryName] [-params paramsFile] -lang language [-misclassified true|false] [-folds num] -data sampleData [-encoding charsetName]
+Usage: opennlp SentenceDetectorCrossValidator[.ad|.pos|.conllx|.namefinder|.parse] [-eosChars string] [-abbDict path] [-factory factoryName] [-params paramsFile] -lang language [-folds num] [-misclassified true|false] -data sampleData [-encoding charsetName]
 
 Arguments description:
 	-eosChars string
@@ -4065,25 +4052,25 @@ Arguments description:
 		training parameters file.
 	-lang language
 		language which is being processed.
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-data sampleData
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
 Usage: opennlp SentenceDetectorConverter help|ad|pos|conllx|namefinder|parse [help|options...]
 Usage: opennlp TokenNameFinder model1 model2 ... modelN < sentences
-Usage: opennlp TokenNameFinderTrainer[.evalita|.ad|.conll03|.bionlp2004|.conll02|.muc6|.ontonotes|.brat] [-sequenceCodec codec] [-featuregen featuregenFile] [-nameTypes types] [-factory factoryName] [-resources resourcesDir] [-type modelType] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
+Usage: opennlp TokenNameFinderTrainer[.evalita|.ad|.conll03|.bionlp2004|.conll02|.muc6|.ontonotes|.brat] [-featuregen featuregenFile] [-nameTypes types] [-sequenceCodec codec] [-factory factoryName] [-resources resourcesDir] [-type modelType] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
 
 Arguments description:
-	-sequenceCodec codec
-		sequence codec used to code name spans
 	-featuregen featuregenFile
 		The feature generator descriptor file
 	-nameTypes types
 		name types to use for training
+	-sequenceCodec codec
+		sequence codec used to code name spans
 	-factory factoryName
 		A sub-class of TokenNameFinderFactory
 	-resources resourcesDir
@@ -4115,15 +4102,15 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp TokenNameFinderCrossValidator[.evalita|.ad|.conll03|.bionlp2004|.conll02|.muc6|.ontonotes|.brat] [-sequenceCodec codec] [-featuregen featuregenFile] [-nameTypes types] [-factory factoryName] [-resources resourcesDir] [-type modelType] [-params paramsFile] -lang language [-misclassified true|false] [-folds num] [-detailedF true|false] -data sampleData [-encoding charsetName]
+Usage: opennlp TokenNameFinderCrossValidator[.evalita|.ad|.conll03|.bionlp2004|.conll02|.muc6|.ontonotes|.brat] [-featuregen featuregenFile] [-nameTypes types] [-sequenceCodec codec] [-factory factoryName] [-resources resourcesDir] [-type modelType] [-params paramsFile] -lang language [-folds num] [-misclassified true|false] [-detailedF true|false] -data sampleData [-encoding charsetName]
 
 Arguments description:
-	-sequenceCodec codec
-		sequence codec used to code name spans
 	-featuregen featuregenFile
 		The feature generator descriptor file
 	-nameTypes types
 		name types to use for training
+	-sequenceCodec codec
+		sequence codec used to code name spans
 	-factory factoryName
 		A sub-class of TokenNameFinderFactory
 	-resources resourcesDir
@@ -4134,10 +4121,10 @@ Arguments description:
 		training parameters file.
 	-lang language
 		language which is being processed.
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-detailedF true|false
 		if true will print detailed FMeasure results.
 	-data sampleData
@@ -4145,23 +4132,23 @@ Arguments description:
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
 Usage: opennlp TokenNameFinderConverter help|evalita|ad|conll03|bionlp2004|conll02|muc6|ontonotes|brat [help|options...]
-Usage: opennlp CensusDictionaryCreator [-lang code] -dict dict -censusData censusDict [-encoding charsetName]
+Usage: opennlp CensusDictionaryCreator -dict dict -censusData censusDict [-lang code] [-encoding charsetName]
 
 Arguments description:
-	-lang code
 	-dict dict
 	-censusData censusDict
+	-lang code
 	-encoding charsetName
 Usage: opennlp POSTagger model < sentences
-Usage: opennlp POSTaggerTrainer[.ad|.conllx|.parse|.ontonotes] [-dict dictionaryPath] [-ngram cutoff] [-tagDictCutoff tagDictCutoff] [-factory factoryName] [-type maxent|perceptron|perceptron_sequence] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
+Usage: opennlp POSTaggerTrainer[.ad|.conllx|.parse|.ontonotes] [-dict dictionaryPath] [-tagDictCutoff tagDictCutoff] [-ngram cutoff] [-factory factoryName] [-type maxent|perceptron|perceptron_sequence] [-params paramsFile] -lang language -model modelFile -data sampleData [-encoding charsetName]
 
 Arguments description:
 	-dict dictionaryPath
 		The XML tag dictionary file
-	-ngram cutoff
-		NGram cutoff. If not specified will not create ngram dictionary.
 	-tagDictCutoff tagDictCutoff
 		TagDictionary cutoff. If specified will create/expand a mutable TagDictionary
+	-ngram cutoff
+		NGram cutoff. If not specified will not create ngram dictionary.
 	-factory factoryName
 		A sub-class of POSTaggerFactory where to get implementation and resources.
 	-type maxent|perceptron|perceptron_sequence
@@ -4189,21 +4176,21 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp POSTaggerCrossValidator[.ad|.conllx|.parse|.ontonotes] [-reportOutputFile outputFile] [-misclassified true|false] [-folds num] [-dict dictionaryPath] [-ngram cutoff] [-tagDictCutoff tagDictCutoff] [-factory factoryName] [-type maxent|perceptron|perceptron_sequence] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
+Usage: opennlp POSTaggerCrossValidator[.ad|.conllx|.parse|.ontonotes] [-reportOutputFile outputFile] [-folds num] [-misclassified true|false] [-dict dictionaryPath] [-tagDictCutoff tagDictCutoff] [-ngram cutoff] [-factory factoryName] [-type maxent|perceptron|perceptron_sequence] [-params paramsFile] -lang language -data sampleData [-encoding charsetName]
 
 Arguments description:
 	-reportOutputFile outputFile
 		the path of the fine-grained report file.
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-dict dictionaryPath
 		The XML tag dictionary file
-	-ngram cutoff
-		NGram cutoff. If not specified will not create ngram dictionary.
 	-tagDictCutoff tagDictCutoff
 		TagDictionary cutoff. If specified will create/expand a mutable TagDictionary
+	-ngram cutoff
+		NGram cutoff. If not specified will not create ngram dictionary.
 	-factory factoryName
 		A sub-class of POSTaggerFactory where to get implementation and resources.
 	-type maxent|perceptron|perceptron_sequence
@@ -4275,7 +4262,7 @@ Arguments description:
 		data to be used, usually a file name.
 	-encoding charsetName
 		encoding for reading and writing text, if absent the system default is used.
-Usage: opennlp ChunkerCrossValidator[.ad] [-factory factoryName] [-params paramsFile] -lang language [-misclassified true|false] [-folds num] [-detailedF true|false] -data sampleData [-encoding charsetName]
+Usage: opennlp ChunkerCrossValidator[.ad] [-factory factoryName] [-params paramsFile] -lang language [-folds num] [-misclassified true|false] [-detailedF true|false] -data sampleData [-encoding charsetName]
 
 Arguments description:
 	-factory factoryName
@@ -4284,10 +4271,10 @@ Arguments description:
 		training parameters file.
 	-lang language
 		language which is being processed.
-	-misclassified true|false
-		if true will print false negatives and false positives.
 	-folds num
 		number of folds, default is 10.
+	-misclassified true|false
+		if true will print false negatives and false positives.
 	-detailedF true|false
 		if true will print detailed FMeasure results.
 	-data sampleData
@@ -4361,15 +4348,15 @@ Arguments description:
 		encoding for reading and writing text, if absent the system default is used.
 Usage: opennlp TaggerModelReplacer parser.model tagger.model
 Usage: opennlp EntityLinker model < sentences
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in opennlp.tools.cmdline.CLITest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in opennlp.tools.cmdline.CLITest
 Running opennlp.tools.cmdline.ArgumentParserTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in opennlp.tools.cmdline.ArgumentParserTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in opennlp.tools.cmdline.ArgumentParserTest
 Running opennlp.tools.cmdline.TerminateToolExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.cmdline.TerminateToolExceptionTest
 Running opennlp.tools.lemmatizer.LemmatizerEvaluatorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.lemmatizer.LemmatizerEvaluatorTest
 Running opennlp.tools.lemmatizer.LemmaSampleTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.lemmatizer.LemmaSampleTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.lemmatizer.LemmaSampleTest
 Running opennlp.tools.lemmatizer.LemmatizerMETest
 Indexing events using cutoff of 5
 
@@ -4485,29 +4472,29 @@ Performing 100 iterations.
  98:  ... loglikelihood=-20.432966405912268	0.9979508196721312
  99:  ... loglikelihood=-20.282933934295485	0.9979508196721312
 100:  ... loglikelihood=-20.135617183320655	0.9979508196721312
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in opennlp.tools.lemmatizer.LemmatizerMETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in opennlp.tools.lemmatizer.LemmatizerMETest
 Running opennlp.tools.util.ListHeapTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.ListHeapTest
 Running opennlp.tools.util.ext.ExtensionLoaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.ext.ExtensionLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.ext.ExtensionLoaderTest
 Running opennlp.tools.util.featuregen.StringPatternTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.featuregen.StringPatternTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.featuregen.StringPatternTest
 Running opennlp.tools.util.featuregen.GeneratorFactoryTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in opennlp.tools.util.featuregen.GeneratorFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in opennlp.tools.util.featuregen.GeneratorFactoryTest
 Running opennlp.tools.util.featuregen.CachedFeatureGeneratorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.featuregen.CachedFeatureGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.featuregen.CachedFeatureGeneratorTest
 Running opennlp.tools.util.featuregen.PreviousMapFeatureGeneratorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.featuregen.PreviousMapFeatureGeneratorTest
 Running opennlp.tools.util.featuregen.WindowFeatureGeneratorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.featuregen.WindowFeatureGeneratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.featuregen.WindowFeatureGeneratorTest
 Running opennlp.tools.util.ParagraphStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.ParagraphStreamTest
 Running opennlp.tools.util.SpanTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.util.SpanTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.util.SpanTest
 Running opennlp.tools.util.StringUtilTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.util.StringUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.StringUtilTest
 Running opennlp.tools.util.StringListTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.util.StringListTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.StringListTest
 Running opennlp.tools.util.VersionTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.util.VersionTest
 Running opennlp.tools.util.AbstractEventStreamTest
@@ -4751,7 +4738,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-17.00513711756694	1.0
  99:  ... loglikelihood=-16.874455924979873	1.0
 100:  ... loglikelihood=-16.745903306906172	1.0
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in opennlp.tools.chunker.ChunkerFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in opennlp.tools.chunker.ChunkerFactoryTest
 Running opennlp.tools.chunker.ChunkerDetailedFMeasureListenerTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in opennlp.tools.chunker.ChunkerDetailedFMeasureListenerTest
 Running opennlp.tools.chunker.ChunkerEvaluatorTest
@@ -5096,25 +5083,25 @@ Performing 70 iterations.
  68:  ... loglikelihood=-1.7096342291541087	1.0
  69:  ... loglikelihood=-1.6847584388539802	1.0
  70:  ... loglikelihood=-1.6605984226352053	1.0
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in opennlp.tools.chunker.ChunkerMETest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in opennlp.tools.chunker.ChunkerMETest
 Running opennlp.tools.chunker.ChunkSampleTest
 Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.chunker.ChunkSampleTest
 Running opennlp.tools.dictionary.DictionaryAsSetCaseInsensitiveTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.dictionary.DictionaryAsSetCaseInsensitiveTest
 Running opennlp.tools.dictionary.DictionaryTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in opennlp.tools.dictionary.DictionaryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in opennlp.tools.dictionary.DictionaryTest
 Running opennlp.tools.dictionary.DictionaryAsSetCaseSensitiveTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.dictionary.DictionaryAsSetCaseSensitiveTest
 Running opennlp.tools.formats.EvalitaNameSampleStreamTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.formats.EvalitaNameSampleStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.EvalitaNameSampleStreamTest
 Running opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamTest
 Running opennlp.tools.formats.Conll03NameSampleStreamTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.formats.Conll03NameSampleStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.formats.Conll03NameSampleStreamTest
 Running opennlp.tools.formats.LeipzigDoccatSampleStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.LeipzigDoccatSampleStreamTest
 Running opennlp.tools.formats.Conll02NameSampleStreamTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.Conll02NameSampleStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.formats.Conll02NameSampleStreamTest
 Running opennlp.tools.formats.muc.SgmlParserTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.muc.SgmlParserTest
 Running opennlp.tools.formats.muc.DocumentSplitterStreamTest
@@ -5122,9 +5109,9 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in openn
 Running opennlp.tools.formats.ConllXPOSSampleStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.formats.ConllXPOSSampleStreamTest
 Running opennlp.tools.formats.NameFinderCensus90NameStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.NameFinderCensus90NameStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.formats.NameFinderCensus90NameStreamTest
 Running opennlp.tools.formats.ad.ADPOSSampleStreamTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in opennlp.tools.formats.ad.ADPOSSampleStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in opennlp.tools.formats.ad.ADPOSSampleStreamTest
 Running opennlp.tools.formats.ad.ADNameSampleStreamTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in opennlp.tools.formats.ad.ADNameSampleStreamTest
 Running opennlp.tools.formats.ad.ADSentenceSampleStreamTest
@@ -5152,9 +5139,9 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in o
 Running opennlp.tools.formats.ad.ADChunkSampleStreamTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.formats.ad.ADChunkSampleStreamTest
 Running opennlp.tools.formats.ad.ADTokenSampleStreamTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in opennlp.tools.formats.ad.ADTokenSampleStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in opennlp.tools.formats.ad.ADTokenSampleStreamTest
 Running opennlp.tools.formats.ad.ADParagraphStreamTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.formats.ad.ADParagraphStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.formats.ad.ADParagraphStreamTest
 Running opennlp.tools.formats.brat.BratAnnotationStreamTest
 T1 Person 281 286 Obama
 T2 Person 21 33 Barack Obama
@@ -5205,7 +5192,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in openn
 Running opennlp.tools.stemmer.PorterStemmerTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.stemmer.PorterStemmerTest
 Running opennlp.tools.tokenize.TokenizerEvaluatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.tokenize.TokenizerEvaluatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.tokenize.TokenizerEvaluatorTest
 Running opennlp.tools.tokenize.TokenSampleStreamTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.tokenize.TokenSampleStreamTest
 Running opennlp.tools.tokenize.TokenSampleTest
@@ -5441,7 +5428,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-9.350123646646741	0.9987915407854985
  99:  ... loglikelihood=-9.283911733818757	0.9987915407854985
 100:  ... loglikelihood=-9.219033150132912	0.9987915407854985
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in opennlp.tools.tokenize.TokenizerMETest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in opennlp.tools.tokenize.TokenizerMETest
 Running opennlp.tools.tokenize.TokSpanEventStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.tokenize.TokSpanEventStreamTest
 Running opennlp.tools.tokenize.SimpleTokenizerTest
@@ -5903,11 +5890,11 @@ Performing 100 iterations.
  98:  ... loglikelihood=-29.014514026536308	0.9977614977614978
  99:  ... loglikelihood=-28.889786492453165	0.9977614977614978
 100:  ... loglikelihood=-28.767070119102346	0.9977614977614978
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.56 sec - in opennlp.tools.tokenize.TokenizerFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 sec - in opennlp.tools.tokenize.TokenizerFactoryTest
 Running opennlp.tools.tokenize.DetokenizationDictionaryTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.tokenize.DetokenizationDictionaryTest
 Running opennlp.tools.tokenize.DictionaryDetokenizerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.tokenize.DictionaryDetokenizerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in opennlp.tools.tokenize.DictionaryDetokenizerTest
 Running opennlp.tools.tokenize.TokenizerModelTest
 Indexing events using cutoff of 0
 
@@ -6023,7 +6010,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-0.12975284444556362	1.0
  99:  ... loglikelihood=-0.12844738107601078	1.0
 100:  ... loglikelihood=-0.12716789317023386	1.0
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in opennlp.tools.tokenize.TokenizerModelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in opennlp.tools.tokenize.TokenizerModelTest
 Running opennlp.tools.doccat.DocumentCategorizerNBTest
 Indexing events using cutoff of 0
 
@@ -6039,7 +6026,7 @@ Computing model parameters...
 Stats: (3/6) 0.5
 ...done.
 
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in opennlp.tools.doccat.DocumentCategorizerNBTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in opennlp.tools.doccat.DocumentCategorizerNBTest
 Running opennlp.tools.doccat.DoccatFactoryTest
 Indexing events using cutoff of 5
 
@@ -6269,7 +6256,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-2.023961585838471	1.0
  99:  ... loglikelihood=-2.0006907491130144	1.0
 100:  ... loglikelihood=-1.9779369904036865	1.0
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 sec - in opennlp.tools.doccat.DoccatFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 sec - in opennlp.tools.doccat.DoccatFactoryTest
 Running opennlp.tools.doccat.DocumentSampleTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.doccat.DocumentSampleTest
 Running opennlp.tools.doccat.DocumentCategorizerMETest
@@ -6390,15 +6377,15 @@ Performing 100 iterations.
 
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in opennlp.tools.doccat.DocumentCategorizerMETest
 Running opennlp.tools.languagemodel.LanguageModelEvaluationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.397 sec - in opennlp.tools.languagemodel.LanguageModelEvaluationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.952 sec - in opennlp.tools.languagemodel.LanguageModelEvaluationTest
 Running opennlp.tools.languagemodel.NgramLanguageModelTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in opennlp.tools.languagemodel.NgramLanguageModelTest
 Running opennlp.tools.sentdetect.NewlineSentenceDetectorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.sentdetect.NewlineSentenceDetectorTest
 Running opennlp.tools.sentdetect.DefaultEndOfSentenceScannerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.sentdetect.DefaultEndOfSentenceScannerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.sentdetect.DefaultEndOfSentenceScannerTest
 Running opennlp.tools.sentdetect.SDEventStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.sentdetect.SDEventStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.sentdetect.SDEventStreamTest
 Running opennlp.tools.sentdetect.SentenceDetectorEvaluatorTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.sentdetect.SentenceDetectorEvaluatorTest
 Running opennlp.tools.sentdetect.SentenceDetectorMETest
@@ -6516,7 +6503,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-0.5181440588039937	1.0
  99:  ... loglikelihood=-0.5133693186215296	1.0
 100:  ... loglikelihood=-0.5086851503234061	1.0
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in opennlp.tools.sentdetect.SentenceDetectorMETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in opennlp.tools.sentdetect.SentenceDetectorMETest
 Running opennlp.tools.sentdetect.SentenceSampleTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.sentdetect.SentenceSampleTest
 Running opennlp.tools.sentdetect.SentenceDetectorFactoryTest
@@ -6976,7 +6963,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-1.1268934394928833	1.0
  99:  ... loglikelihood=-1.1175961308173121	1.0
 100:  ... loglikelihood=-1.1084621627621207	1.0
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in opennlp.tools.sentdetect.SentenceDetectorFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in opennlp.tools.sentdetect.SentenceDetectorFactoryTest
 Running opennlp.tools.postag.WordTagSampleStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.postag.WordTagSampleStreamTest
 Running opennlp.tools.postag.POSSampleEventStreamTest
@@ -7210,7 +7197,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-538.6632470617498	0.9327940261356565
  99:  ... loglikelihood=-536.4472017091059	0.9327940261356565
 100:  ... loglikelihood=-534.2659105154509	0.9327940261356565
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.8 sec - in opennlp.tools.postag.POSTaggerFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.802 sec - in opennlp.tools.postag.POSTaggerFactoryTest
 Running opennlp.tools.postag.POSDictionaryTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in opennlp.tools.postag.POSDictionaryTest
 Running opennlp.tools.postag.POSModelTest
@@ -7354,11 +7341,11 @@ Performing 100 iterations.
  98:  ... loglikelihood=-119.5022302502077	0.9993777224642191
  99:  ... loglikelihood=-118.43559417070685	0.9993777224642191
 100:  ... loglikelihood=-117.3887691252101	0.9993777224642191
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 sec - in opennlp.tools.postag.POSModelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 sec - in opennlp.tools.postag.POSModelTest
 Running opennlp.tools.postag.POSSampleTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.postag.POSSampleTest
 Running opennlp.tools.postag.POSEvaluatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.postag.POSEvaluatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in opennlp.tools.postag.POSEvaluatorTest
 Running opennlp.tools.postag.POSTaggerMETest
 Indexing events using cutoff of 5
 
@@ -7474,7 +7461,7 @@ Performing 100 iterations.
  98:  ... loglikelihood=-119.5022302502077	0.9993777224642191
  99:  ... loglikelihood=-118.43559417070685	0.9993777224642191
 100:  ... loglikelihood=-117.3887691252101	0.9993777224642191
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in opennlp.tools.postag.POSTaggerMETest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in opennlp.tools.postag.POSTaggerMETest
 Running opennlp.tools.ngram.NGramUtilsTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in opennlp.tools.ngram.NGramUtilsTest
 Running opennlp.tools.ngram.NGramModelTest
@@ -7482,38 +7469,275 @@ Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in 
 
 Results :
 
-Failed tests: 
-  NameFinderEventStreamTest.testOutcomesWithType:108 expected:<[XYZ]-start> but was:<[default]-start>
+Tests run: 419, Failures: 0, Errors: 0, Skipped: 1
 
-Tests run: 419, Failures: 1, Errors: 0, Skipped: 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache OpenNLP UIMA Annotators 1.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java) @ opennlp-uima ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ opennlp-uima ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ opennlp-uima ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ opennlp-uima ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ opennlp-uima ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ opennlp-uima ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ opennlp-uima ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ opennlp-uima ---
 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running opennlp.uima.util.AnnotationComboIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec - in opennlp.uima.util.AnnotationComboIteratorTest
+Running opennlp.uima.dictionary.DictionaryResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec - in opennlp.uima.dictionary.DictionaryResourceTest
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache OpenNLP Brat Annotator 1.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java) @ opennlp-brat-annotator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ opennlp-brat-annotator ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ opennlp-brat-annotator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ opennlp-brat-annotator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/opennlp/190053099/opennlp-brat-annotator/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ opennlp-brat-annotator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ opennlp-brat-annotator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/opennlp/190053099/opennlp-brat-annotator/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ opennlp-brat-annotator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ opennlp-brat-annotator ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache OpenNLP Morfologik Addon 1.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java) @ opennlp-morfologik-addon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ opennlp-morfologik-addon ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ opennlp-morfologik-addon ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ opennlp-morfologik-addon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/opennlp/190053099/opennlp-morfologik-addon/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ opennlp-morfologik-addon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ opennlp-morfologik-addon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ opennlp-morfologik-addon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ opennlp-morfologik-addon ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running opennlp.morfologik.builder.POSDictionayBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in opennlp.morfologik.builder.POSDictionayBuilderTest
+Running opennlp.morfologik.tagdict.POSTaggerFactoryTest
+Indexing events using cutoff of 5
+
+	Computing event counts...  done. 1607 events
+	Indexing...  done.
+Sorting and merging events... done. Reduced 1607 events to 1492.
+Done indexing.
+Incorporating indexed data for training...  
+done.
+	Number of Event Tokens: 1492
+	    Number of Outcomes: 31
+	  Number of Predicates: 788
+...done.
+Computing model parameters ...
+Performing 100 iterations.
+  1:  ... loglikelihood=-5518.417437607561	0.05289359054138146
+  2:  ... loglikelihood=-3204.516517665232	0.8394523957685127
+  3:  ... loglikelihood=-2257.277328878421	0.879900435594275
+  4:  ... loglikelihood=-1776.1476951107466	0.9047915370255134
+  5:  ... loglikelihood=-1478.886700593219	0.9247044181705041
+  6:  ... loglikelihood=-1273.7029721347947	0.9359054138145613
+  7:  ... loglikelihood=-1122.2381003035246	0.9446172993154948
+  8:  ... loglikelihood=-1005.3110775773118	0.9527069072806472
+  9:  ... loglikelihood=-912.0861008669426	0.9601742377100186
+ 10:  ... loglikelihood=-835.892547814916	0.9663970130678282
+ 11:  ... loglikelihood=-772.3668521638966	0.9682638456751711
+ 12:  ... loglikelihood=-718.5259267914179	0.970130678282514
+ 13:  ... loglikelihood=-672.2601902815067	0.9738643434971997
+ 14:  ... loglikelihood=-632.0359293857784	0.9757311761045426
+ 15:  ... loglikelihood=-596.7113228387325	0.9782202862476664
+ 16:  ... loglikelihood=-565.4184655204763	0.9807093963907902
+ 17:  ... loglikelihood=-537.485499376723	0.9813316739265713
+ 18:  ... loglikelihood=-512.3838930781943	0.9831985065339142
+ 19:  ... loglikelihood=-489.69190796907895	0.9863098942128189
+ 20:  ... loglikelihood=-469.0687366806068	0.9875544492843809
+ 21:  ... loglikelihood=-450.23584029082764	0.9894212818917237
+ 22:  ... loglikelihood=-432.96324390373684	0.9912881144990666
+ 23:  ... loglikelihood=-417.05931412123215	0.9919103920348475
+ 24:  ... loglikelihood=-402.36302497832247	0.9925326695706285
+ 25:  ... loglikelihood=-388.7380310895318	0.9925326695706285
+ 26:  ... loglikelihood=-376.06807253925456	0.9925326695706285
+ 27:  ... loglikelihood=-364.25337424635234	0.9925326695706285
+ 28:  ... loglikelihood=-353.2077969679631	0.9931549471064095
+ 29:  ... loglikelihood=-342.85656269431627	0.9931549471064095
+ 30:  ... loglikelihood=-333.1344234335538	0.9937772246421904
+ 31:  ... loglikelihood=-323.98417545789664	0.9937772246421904
+ 32:  ... loglikelihood=-315.35544504174595	0.9950217797137524
+ 33:  ... loglikelihood=-307.2036892861138	0.9956440572495333
+ 34:  ... loglikelihood=-299.4893686385147	0.9962663347853142
+ 35:  ... loglikelihood=-292.17725745561967	0.9975108898568762
+ 36:  ... loglikelihood=-285.23586630762594	0.9975108898568762
+ 37:  ... loglikelihood=-278.6369553187231	0.9975108898568762
+ 38:  ... loglikelihood=-272.3551221294579	0.9975108898568762
+ 39:  ... loglikelihood=-266.3674513819252	0.9975108898568762
+ 40:  ... loglikelihood=-260.6532152073702	0.998755444928438
+ 41:  ... loglikelihood=-255.1936162150805	0.998755444928438
+ 42:  ... loglikelihood=-249.97156607282915	0.998755444928438
+ 43:  ... loglikelihood=-244.97149403128284	0.998755444928438
+ 44:  ... loglikelihood=-240.17918075182948	0.998755444928438
+ 45:  ... loglikelihood=-235.58161360546345	0.998755444928438
+ 46:  ... loglikelihood=-231.166860262688	0.998755444928438
+ 47:  ... loglikelihood=-226.92395792365267	0.998755444928438
+ 48:  ... loglikelihood=-222.8428159694319	0.998755444928438
+ 49:  ... loglikelihood=-218.91413016914663	0.998755444928438
+ 50:  ... loglikelihood=-215.12930686893384	0.998755444928438
+ 51:  ... loglikelihood=-211.48039582969955	0.998755444928438
+ 52:  ... loglikelihood=-207.96003058068627	0.998755444928438
+ 53:  ... loglikelihood=-204.56137532269318	0.998755444928438
+ 54:  ... loglikelihood=-201.27807755444996	0.998755444928438
+ 55:  ... loglikelihood=-198.10422571292918	0.998755444928438
+ 56:  ... loglikelihood=-195.03431121723895	0.998755444928438
+ 57:  ... loglikelihood=-192.06319438935287	0.998755444928438
+ 58:  ... loglikelihood=-189.1860737958577	0.998755444928438
+ 59:  ... loglikelihood=-186.3984586152424	0.998755444928438
+ 60:  ... loglikelihood=-183.6961436867551	0.998755444928438
+ 61:  ... loglikelihood=-181.07518694092522	0.998755444928438
+ 62:  ... loglikelihood=-178.53188894964546	0.998755444928438
+ 63:  ... loglikelihood=-176.06277436625587	0.998755444928438
+ 64:  ... loglikelihood=-173.6645750541022	0.998755444928438
+ 65:  ... loglikelihood=-171.3342147263028	0.998755444928438
+ 66:  ... loglikelihood=-169.06879494045663	0.998755444928438
+ 67:  ... loglikelihood=-166.86558231028957	0.998755444928438
+ 68:  ... loglikelihood=-164.72199681209844	0.998755444928438
+ 69:  ... loglikelihood=-162.63560107770502	0.998755444928438
+ 70:  ... loglikelihood=-160.6040905777589	0.9993777224642191
+ 71:  ... loglikelihood=-158.62528460979505	0.9993777224642191
+ 72:  ... loglikelihood=-156.69711801478982	0.9993777224642191
+ 73:  ... loglikelihood=-154.81763355410493	0.9993777224642191
+ 74:  ... loglikelihood=-152.98497488593415	0.9993777224642191
+ 75:  ... loglikelihood=-151.19738008671217	0.9993777224642191
+ 76:  ... loglikelihood=-149.4531756685616	0.9993777224642191
+ 77:  ... loglikelihood=-147.75077104882527	0.9993777224642191
+ 78:  ... loglikelihood=-146.08865343214907	0.9993777224642191
+ 79:  ... loglikelihood=-144.46538306948707	0.9993777224642191
+ 80:  ... loglikelihood=-142.87958886189077	0.9993777224642191
+ 81:  ... loglikelihood=-141.32996428004608	0.9993777224642191
+ 82:  ... loglikelihood=-139.815263573301	0.9993777224642191
+ 83:  ... loglikelihood=-138.3342982443851	0.9993777224642191
+ 84:  ... loglikelihood=-136.88593376825864	0.9993777224642191
+ 85:  ... loglikelihood=-135.4690865354943	0.9993777224642191
+ 86:  ... loglikelihood=-134.0827210023976	0.9993777224642191
+ 87:  ... loglikelihood=-132.72584703165057	0.9993777224642191
+ 88:  ... loglikelihood=-131.39751740871998	0.9993777224642191
+ 89:  ... loglikelihood=-130.09682552056537	0.9993777224642191
+ 90:  ... loglikelihood=-128.82290318434545	0.9993777224642191
+ 91:  ... loglikelihood=-127.57491861488725	0.9993777224642191
+ 92:  ... loglikelihood=-126.3520745206332	0.9993777224642191
+ 93:  ... loglikelihood=-125.1536063186458	0.9993777224642191
+ 94:  ... loglikelihood=-123.97878046003461	0.9993777224642191
+ 95:  ... loglikelihood=-122.82689285788433	0.9993777224642191
+ 96:  ... loglikelihood=-121.6972674103976	0.9993777224642191
+ 97:  ... loglikelihood=-120.58925461256568	0.9993777224642191
+ 98:  ... loglikelihood=-119.5022302502077	0.9993777224642191
+ 99:  ... loglikelihood=-118.43559417070685	0.9993777224642191
+100:  ... loglikelihood=-117.3887691252101	0.9993777224642191
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 sec - in opennlp.morfologik.tagdict.POSTaggerFactoryTest
+Running opennlp.morfologik.tagdict.MorfologikTagDictionaryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in opennlp.morfologik.tagdict.MorfologikTagDictionaryTest
+Running opennlp.morfologik.lemmatizer.MorfologikLemmatizerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in opennlp.morfologik.lemmatizer.MorfologikLemmatizerTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache OpenNLP Documentation 1.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java) @ opennlp-docs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ opennlp-docs ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ opennlp-docs ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache OpenNLP Distribution 1.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java) @ opennlp-distr ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ opennlp-distr ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ opennlp-distr ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Apache OpenNLP Reactor ............................. SUCCESS [  0.692 s]
-[INFO] Apache OpenNLP Tools ............................... FAILURE [ 52.581 s]
-[INFO] Apache OpenNLP UIMA Annotators ..................... SKIPPED
-[INFO] Apache OpenNLP Brat Annotator ...................... SKIPPED
-[INFO] Apache OpenNLP Morfologik Addon .................... SKIPPED
-[INFO] Apache OpenNLP Documentation ....................... SKIPPED
-[INFO] Apache OpenNLP Distribution ........................ SKIPPED
+[INFO] Apache OpenNLP Reactor ............................. SUCCESS [  0.748 s]
+[INFO] Apache OpenNLP Tools ............................... SUCCESS [ 54.527 s]
+[INFO] Apache OpenNLP UIMA Annotators ..................... SUCCESS [  1.193 s]
+[INFO] Apache OpenNLP Brat Annotator ...................... SUCCESS [  0.688 s]
+[INFO] Apache OpenNLP Morfologik Addon .................... SUCCESS [  1.347 s]
+[INFO] Apache OpenNLP Documentation ....................... SUCCESS [  0.009 s]
+[INFO] Apache OpenNLP Distribution ........................ SUCCESS [  0.259 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 53.853 s
-[INFO] Finished at: 2017-05-18T10:25:14+02:00
-[INFO] Final Memory: 42M/2337M
+[INFO] Total time: 59.415 s
+[INFO] Finished at: 2017-05-18T10:26:54+02:00
+[INFO] Final Memory: 57M/2609M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project opennlp-tools: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/apache/opennlp/190053099/opennlp-tools/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :opennlp-tools
