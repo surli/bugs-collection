@@ -1,0 +1,101 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/275d07a5f237...cb7eb6183143",
+  "failingModule": "/root/workspace/google/error-prone/190790158/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 1850,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.CheckReturnValueTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.CheckReturnValueTest#testPositiveCases",
+        "com.google.errorprone.bugpatterns.CheckReturnValueTest#ignoreInTestsWithRule"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 5. All errors:\n[/Test.java:5: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    foo.f();\n         ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 59. All errors:\n[/com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:37: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    increment(i);\n             ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:43: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    this.intValue.increment();\n                           ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean \u0027this.intValue \u003d this.intValue.increment();\u0027?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:49: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    value.increment();\n                   ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean \u0027value \u003d value.increment();\u0027?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:54: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    new IntValue(1).increment();\n                             ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:57: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    new IntValue(1).increment();\n                             ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:59: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n    new IntValue(1).increment(); // No error here, last statement in block\n                             ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:113: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n      this.increment();\n                    ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:118: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n     increment();\n              ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?, /com/google/errorprone/bugpatterns/CheckReturnValuePositiveCases.java:137: error: [CheckReturnValue] Ignored return value of method that is annotated with @CheckReturnValue\n      lb1();\n         ^\n    (see http://errorprone.info/bugpattern/CheckReturnValue)\n  Did you mean to remove this line?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualifiedMethod",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#innerClassTypeQualifier",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#testReadWriteLockCopy",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#tryWithResources",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualfiedType",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#testUnheldItselfGuard"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/26834754",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 9 matching . All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/26834754",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.MustBeClosedCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.MustBeClosedCheckerTest#negativeCase"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 80. All errors:\n[/com/google/errorprone/bugpatterns/MustBeClosedCheckerNegativeCases.java:80: error: [MustBeClosedChecker] Constructor must be called within the resource variable initializer of a try-with-resources statement.\n    return new MustBeClosedAnnotatedConstructor();\n           ^\n    (see http://errorprone.info/bugpattern/MustBeClosedChecker), /com/google/errorprone/bugpatterns/MustBeClosedCheckerNegativeCases.java:86: error: [MustBeClosedChecker] mustBeClosedAnnotatedMethod must be called within the resource variable initializer of a try-with-resources statement.\n    return new Foo().mustBeClosedAnnotatedMethod();\n                                                ^\n    (see http://errorprone.info/bugpattern/MustBeClosedChecker)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
