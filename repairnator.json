@@ -1,0 +1,101 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/cb7eb6183143...e049633444b3",
+  "failingModule": "/root/workspace/google/error-prone/193176794/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 1855,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.FinallyTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.FinallyTest#lambda"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 6. All errors:\n[/Test.java:6: warning: [Finally] If you return or throw from a finally, then values returned or thrown from the try-catch block will be ignored. Consider using try-with-resources instead.\n      Runnable r \u003d () -\u003e { return; };\n                           ^\n    (see http://errorprone.info/bugpattern/Finally)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualifiedMethod",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#innerClassTypeQualifier",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#testReadWriteLockCopy",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#tryWithResources",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualfiedType",
+        "com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#lambda"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching should be guarded by \u0027this\u0027,. All errors:\n[]",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/26834754",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/26834754",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest#finalMutableField",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest#annotatedEnumThatImplementsImmutableInterface"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 2. All errors:\n[/Test.java:2: warning: [ImmutableEnumChecker] enums are immutable by default; annotating them with @Immutable is unnecessary\n@Immutable\n^\n    (see http://errorprone.info/bugpattern/ImmutableEnumChecker)\n  Did you mean to remove this line?]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 7 matching enums should only have immutable fields, \u0027Set\u0027 is mutable. All errors:\n[/Test.java:7: warning: [ImmutableEnumChecker] enums should be immutable, \u0027Set\u0027 is mutable\n  final Set\u003cInteger\u003e xs;\n                     ^\n    (see http://errorprone.info/bugpattern/ImmutableEnumChecker)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
