@@ -1,0 +1,62 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest', failingMethods=[com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualifiedMethod, com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#innerClassTypeQualifier, com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#testReadWriteLockCopy, com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#tryWithResources, com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#qualfiedType, com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest#lambda], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching should be guarded by 'this',. All errors:
+[]', isError=false}, FailureType{failureName='skipped', failureDetail='skipped', isError=false}, FailureType{failureName='skipped', failureDetail='skipped', isError=false}, FailureType{failureName='skipped', failureDetail='skipped', isError=false}, FailureType{failureName='skipped', failureDetail='b/26834754', isError=false}, FailureType{failureName='skipped', failureDetail='b/26834754', isError=false}], nbFailures=6, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 18 10:57:01 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/193176794/check_api/src/main/java, /root/./workspace/google/error-prone/193176794/check_api/src/main/java, ./workspace/google/error-prone/193176794/test_helpers/src/main/java, /root/./workspace/google/error-prone/193176794/test_helpers/src/main/java, ./workspace/google/error-prone/193176794/core/src/main/java, /root/./workspace/google/error-prone/193176794/core/src/main/java, ./workspace/google/error-prone/193176794/annotation/src/main/java, /root/./workspace/google/error-prone/193176794/annotation/src/main/java, ./workspace/google/error-prone/193176794/annotations/src/main/java, /root/./workspace/google/error-prone/193176794/annotations/src/main/java, ./workspace/google/error-prone/193176794/docgen/src/main/java, /root/./workspace/google/error-prone/193176794/docgen/src/main/java, ./workspace/google/error-prone/193176794/docgen_processor/src/main/java, /root/./workspace/google/error-prone/193176794/docgen_processor/src/main/java, ./workspace/google/error-prone/193176794/ant/src/main/java, /root/./workspace/google/error-prone/193176794/ant/src/main/java, ./workspace/google/error-prone/193176794/refaster/src/main/java, /root/./workspace/google/error-prone/193176794/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@610db97e', projectTests=[com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest', failingMethods=[com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest#finalMutableField, com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest#annotatedEnumThatImplementsImmutableInterface], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 2. All errors:
+[/Test.java:2: warning: [ImmutableEnumChecker] enums are immutable by default; annotating them with @Immutable is unnecessary
+@Immutable
+^
+    (see http://errorprone.info/bugpattern/ImmutableEnumChecker)
+  Did you mean to remove this line?]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 7 matching enums should only have immutable fields, 'Set' is mutable. All errors:
+[/Test.java:7: warning: [ImmutableEnumChecker] enums should be immutable, 'Set' is mutable
+  final Set<Integer> xs;
+                     ^
+    (see http://errorprone.info/bugpattern/ImmutableEnumChecker)]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 18 10:57:14 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/193176794/check_api/src/main/java, /root/./workspace/google/error-prone/193176794/check_api/src/main/java, ./workspace/google/error-prone/193176794/test_helpers/src/main/java, /root/./workspace/google/error-prone/193176794/test_helpers/src/main/java, ./workspace/google/error-prone/193176794/core/src/main/java, /root/./workspace/google/error-prone/193176794/core/src/main/java, ./workspace/google/error-prone/193176794/annotation/src/main/java, /root/./workspace/google/error-prone/193176794/annotation/src/main/java, ./workspace/google/error-prone/193176794/annotations/src/main/java, /root/./workspace/google/error-prone/193176794/annotations/src/main/java, ./workspace/google/error-prone/193176794/docgen/src/main/java, /root/./workspace/google/error-prone/193176794/docgen/src/main/java, ./workspace/google/error-prone/193176794/docgen_processor/src/main/java, /root/./workspace/google/error-prone/193176794/docgen_processor/src/main/java, ./workspace/google/error-prone/193176794/ant/src/main/java, /root/./workspace/google/error-prone/193176794/ant/src/main/java, ./workspace/google/error-prone/193176794/refaster/src/main/java, /root/./workspace/google/error-prone/193176794/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@25d23478', projectTests=[com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.google.errorprone.bugpatterns.FinallyTest', failingMethods=[com.google.errorprone.bugpatterns.FinallyTest#lambda], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 6. All errors:
+[/Test.java:6: warning: [Finally] If you return or throw from a finally, then values returned or thrown from the try-catch block will be ignored. Consider using try-with-resources instead.
+      Runnable r = () -> { return; };
+                           ^
+    (see http://errorprone.info/bugpattern/Finally)]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Thu May 18 10:57:26 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/193176794/check_api/src/main/java, /root/./workspace/google/error-prone/193176794/check_api/src/main/java, ./workspace/google/error-prone/193176794/test_helpers/src/main/java, /root/./workspace/google/error-prone/193176794/test_helpers/src/main/java, ./workspace/google/error-prone/193176794/core/src/main/java, /root/./workspace/google/error-prone/193176794/core/src/main/java, ./workspace/google/error-prone/193176794/annotation/src/main/java, /root/./workspace/google/error-prone/193176794/annotation/src/main/java, ./workspace/google/error-prone/193176794/annotations/src/main/java, /root/./workspace/google/error-prone/193176794/annotations/src/main/java, ./workspace/google/error-prone/193176794/docgen/src/main/java, /root/./workspace/google/error-prone/193176794/docgen/src/main/java, ./workspace/google/error-prone/193176794/docgen_processor/src/main/java, /root/./workspace/google/error-prone/193176794/docgen_processor/src/main/java, ./workspace/google/error-prone/193176794/ant/src/main/java, /root/./workspace/google/error-prone/193176794/ant/src/main/java, ./workspace/google/error-prone/193176794/refaster/src/main/java, /root/./workspace/google/error-prone/193176794/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@6a225642', projectTests=[com.google.errorprone.bugpatterns.FinallyTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
