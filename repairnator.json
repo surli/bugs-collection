@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 4,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "joel-costigliola/assertj-core",
+  "bugCommit": "https://github.com/joel-costigliola/assertj-core/compare/97cf2e1c9f9a...e1fd58ae4c82",
+  "failingModule": "/root/workspace/joel-costigliola/assertj-core/190735366",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 8654,
+  "failing-test-cases": [
+    {
+      "className": "org.assertj.core.api.throwable.ThrowableAssert_hasCause_Test",
+      "failingMethods": [
+        "org.assertj.core.api.throwable.ThrowableAssert_hasCause_Test#should_fail_if_actual_and_expected_cause_have_different_types"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: (an instance of java.lang.AssertionError and exception with message \"\\nExpecting a cause with type:\\n  \u003c\\\"java.lang.NullPointerException\\\"\u003e\\nbut type was:\\n  \u003c\\\"java.lang.IllegalStateException\\\"\u003e.\")\n     but: exception with message \"\\nExpecting a cause with type:\\n  \u003c\\\"java.lang.NullPointerException\\\"\u003e\\nbut type was:\\n  \u003c\\\"java.lang.IllegalStateException\\\"\u003e.\" message was \"\\nExpecting a cause with type:\\n  \u003c\\\"java.lang.IllegalStateException\\\"\u003e\\nbut type was:\\n  \u003c\\\"java.lang.NullPointerException\\\"\u003e.\"\nStacktrace was: java.lang.AssertionError: \nExpecting a cause with type:\n  \u003c\"java.lang.IllegalStateException\"\u003e\nbut type was:\n  \u003c\"java.lang.NullPointerException\"\u003e.\n at org.assertj.core.internal.Failures.failure(Failures.java:111)\n at org.assertj.core.internal.Throwables.assertHasCause(Throwables.java:86)\n at org.assertj.core.api.AbstractThrowableAssert.hasCause(AbstractThrowableAssert.java:111)\n at org.assertj.core.api.throwable.ThrowableAssert_hasCause_Test.should_fail_if_actual_and_expected_cause_have_different_types(ThrowableAssert_hasCause_Test.java:49)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
