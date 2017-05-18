@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "OpenGamma/Strata",
+  "bugCommit": "https://github.com/OpenGamma/Strata/compare/8af58f0a152e...a8c727e7fe96",
+  "failingModule": "/root/workspace/OpenGamma/Strata/194816777/modules/pricer",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 12923,
+  "failing-test-cases": [
+    {
+      "className": "com.opengamma.strata.pricer.rate.DiscountOvernightIndexRatesTest",
+      "failingMethods": [
+        "com.opengamma.strata.pricer.rate.DiscountOvernightIndexRatesTest#test_periodRate_publication_1"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "Invalid order: Expected \u0027valuationDate\u0027 \u003c\u003d \u0027startDate\u0027, but found: \u00272015-06-03\u0027 \u003e \u00272015-06-02",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
