@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/1b0607d3e4b2...8f9acca2f28f",
+  "failingModule": "/root/workspace/google/error-prone/190471282/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1848,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.formatstring.FormatStringTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.formatstring.FormatStringTest#javaUtilTime"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 6. All errors:\n[/Test.java:6: error: [FormatString] illegal format conversion: \u0027java.lang.Object\u0027 cannot be formatted using \u0027%Y\u0027\n    System.err.printf(\"%tY\",\n                     ^\n    (see http://errorprone.info/bugpattern/FormatString)]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
