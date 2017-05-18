@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/65ad6ec4af21...b70f9eae742e",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/190183181/backend/manager/modules/bll",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 4810,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.bll.scheduling.policyunits.EvenDistributionBalancePolicyUnitTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.bll.scheduling.policyunits.EvenDistributionBalancePolicyUnitTest#testBalanceCpuLoad"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
