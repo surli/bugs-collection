@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 4,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "culturegraph/metafacture-core",
+  "bugCommit": "https://github.com/culturegraph/metafacture-core/compare/34e72188e5f5...88483ee276b4",
+  "failingModule": "/root/workspace/culturegraph/metafacture-core/186625673",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.mockito.exceptions.verification.WantedButNotInvoked"
+  ],
+  "totalNumberRunningTests": 773,
+  "failing-test-cases": [
+    {
+      "className": "org.culturegraph.mf.metamorph.functions.SwitchNameValueTest",
+      "failingMethods": [
+        "org.culturegraph.mf.metamorph.functions.SwitchNameValueTest#issue265_shouldWorkIfLastFunctionInCombineStatement"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "failureDetail": "\nWanted but not invoked:\nreceiver.literal(\"out\", \"val\");\n-\u003e at org.culturegraph.mf.metamorph.functions.SwitchNameValueTest.issue265_shouldWorkIfLastFunctionInCombineStatement(SwitchNameValueTest.java:60)\n\nHowever, there were exactly 2 interactions with this mock:\nreceiver.startRecord(\"1\");\n-\u003e at org.culturegraph.mf.metamorph.Metamorph.startRecord(Metamorph.java:240)\n\nreceiver.endRecord();\n-\u003e at org.culturegraph.mf.metamorph.Metamorph.endRecord(Metamorph.java:251)\n\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.culturegraph.mf.metamorph.functions.SplitTest",
+      "failingMethods": [
+        "org.culturegraph.mf.metamorph.functions.SplitTest#issue265_shouldWorkIfLastFunctionInCombineStatement"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "failureDetail": "\nWanted but not invoked:\nreceiver.literal(\"out\", \"1\");\n-\u003e at org.culturegraph.mf.metamorph.functions.SplitTest.issue265_shouldWorkIfLastFunctionInCombineStatement(SplitTest.java:60)\n\nHowever, there were exactly 2 interactions with this mock:\nreceiver.startRecord(\"1\");\n-\u003e at org.culturegraph.mf.metamorph.Metamorph.startRecord(Metamorph.java:240)\n\nreceiver.endRecord();\n-\u003e at org.culturegraph.mf.metamorph.Metamorph.endRecord(Metamorph.java:251)\n\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
