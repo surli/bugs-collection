@@ -1,0 +1,122 @@
+{
+  "totalNumberSkippingTests": 4,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "oVirt/ovirt-engine",
+  "bugCommit": "https://github.com/oVirt/ovirt-engine/compare/d493c69a466d...38482b4df3c5",
+  "failingModule": "/root/workspace/oVirt/ovirt-engine/192685405/backend/manager/modules/searchbackend",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 16,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1850,
+  "failing-test-cases": [
+    {
+      "className": "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest",
+      "failingMethods": [
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testTemplate",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testStorage",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testVms",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testNetwork",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testTemplateUsersUserName",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testCluster",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testHost",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testDatacenter",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testGroup",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testVolume",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testProvider",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testUser",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testVm",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testQuota",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testDisk",
+        "org.ovirt.engine.core.searchbackend.SyntaxCheckerTest#testEvent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...s_view.id    WHERE  [(storage_domains_with_hosts_view.storage_name IS NULL OR storage_domains_with_hosts_view.storage_name LIKE 111)] ))  ORDER BY vm_nam...\u003e but was:\u003c...s_view.id    WHERE  [storage_domains_with_hosts_view.storage_name LIKE 111] ))  ORDER BY vm_nam...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...gs.vds_id    WHERE  [(vds_with_tags.vds_name IS NULL OR vds_with_tags.vds_name LIKE host1)]  AND not deleted)  ...\u003e but was:\u003c...gs.vds_id    WHERE  [vds_with_tags.vds_name LIKE host1]  AND not deleted)  ...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... ad_groups   WHERE  [(ad_groups.name IS NULL OR ad_groups.name LIKE group1)] )  ORDER BY name AS...\u003e but was:\u003c... ad_groups   WHERE  [ad_groups.name LIKE group1] )  ORDER BY name AS...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...quota_view   WHERE  [(quota_view.storage_pool_name IS NULL OR quota_view.storage_pool_name LIKE pool)] )  ORDER BY quota_n...\u003e but was:\u003c...quota_view   WHERE  [quota_view.storage_pool_name LIKE pool] )  ORDER BY quota_n...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... all_disks   WHERE  [(all_disks.disk_alias IS NULL OR all_disks.disk_alias LIKE vm1)] )  ORDER BY disk_al...\u003e but was:\u003c... all_disks   WHERE  [all_disks.disk_alias LIKE vm1] )  ORDER BY disk_al...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... FROM  vds   WHERE  [(vds.vds_name IS NULL OR vds.vds_name LIKE test1)] )  ORDER BY usage_c...\u003e but was:\u003c... FROM  vds   WHERE  [vds.vds_name LIKE test1] )  ORDER BY usage_c...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...gs.vds_id    WHERE  [(vds_with_tags.vds_name IS NULL OR vds_with_tags.vds_name LIKE host1)] ))  ORDER BY name A...\u003e but was:\u003c...gs.vds_id    WHERE  [vds_with_tags.vds_name LIKE host1] ))  ORDER BY name A...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...s.vm_guid    WHERE  [(vdc_users_with_tags.username IS NULL OR vdc_users_with_tags.username LIKE %)] )  ORDER BY name AS...\u003e but was:\u003c...s.vm_guid    WHERE  [vdc_users_with_tags.username LIKE %] )  ORDER BY name AS...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...s.vm_guid    WHERE  [(vdc_users_with_tags.name IS NULL OR vdc_users_with_tags.name LIKE user1)] )  ORDER BY vm_name...\u003e but was:\u003c...s.vm_guid    WHERE  [vdc_users_with_tags.name LIKE user1] )  ORDER BY vm_name...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...gs.vds_id    WHERE  [(vds_with_tags.vds_name IS NULL OR vds_with_tags.vds_name LIKE fake1)] )  ORDER BY name AS...\u003e but was:\u003c...gs.vds_id    WHERE  [vds_with_tags.vds_name LIKE fake1] )  ORDER BY name AS...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... providers   WHERE  [(providers.name IS NULL OR providers.name LIKE prov1)] )  ORDER BY name AS...\u003e but was:\u003c... providers   WHERE  [providers.name LIKE prov1] )  ORDER BY name AS...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...s_view.id    WHERE  [(storage_domains_with_hosts_view.storage_name IS NULL OR storage_domains_with_hosts_view.storage_name LIKE 111)] ))  ORDER BY name A...\u003e but was:\u003c...s_view.id    WHERE  [storage_domains_with_hosts_view.storage_name LIKE 111] ))  ORDER BY name A...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...e_pool_id    WHERE  [(cluster_storage_domain.name IS NULL OR cluster_storage_domain.name LIKE Default)] )  ORDER BY name AS...\u003e but was:\u003c...e_pool_id    WHERE  [cluster_storage_domain.name LIKE Default] )  ORDER BY name AS...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...work_id    WHERE (  [(network_cluster_view.network_name IS NULL OR network_cluster_view.network_name LIKE cluster1)  AND  (network_view.name IS NULL OR network_view.name LIKE network1)]  ))  ORDER BY stora...\u003e but was:\u003c...work_id    WHERE (  [network_cluster_view.network_name LIKE cluster1  AND  network_view.name LIKE network1]  ))  ORDER BY stora...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...lumes_view   WHERE  [(gluster_volumes_view.vol_name IS NULL OR gluster_volumes_view.vol_name LIKE volume1)] )  ORDER BY vol_nam...\u003e but was:\u003c...lumes_view   WHERE  [gluster_volumes_view.vol_name LIKE volume1] )  ORDER BY vol_nam...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...torage_id    WHERE  [(vds_with_tags.vds_name IS NULL OR vds_with_tags.vds_name LIKE fake1)] )  ORDER BY storage...\u003e but was:\u003c...torage_id    WHERE  [vds_with_tags.vds_name LIKE fake1] )  ORDER BY storage...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 16,
+      "nbErrors": 0
+    }
+  ]
+}
