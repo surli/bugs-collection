@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/c8f9e98d552d...389b88626434",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/191588471",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.mockito.exceptions.verification.NeverWantedButInvoked"
+  ],
+  "totalNumberRunningTests": 2001,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests",
+      "failingMethods": [
+        "org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests#publishesEventsAfterSaveInvocation"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "failureDetail": "\npublisher.publishEvent(\u003cany\u003e);\nNever wanted here:\n-\u003e at org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests.publishesEventsAfterSaveInvocation(EventPublishingRepositoryProxyPostProcessorUnitTests.java:190)\nBut invoked here:\n-\u003e at org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessor$EventPublishingMethod.publishEventsFrom(EventPublishingRepositoryProxyPostProcessor.java:166)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
