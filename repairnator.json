@@ -1,0 +1,62 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "INRIA/spoon",
+  "bugCommit": "https://github.com/INRIA/spoon/compare/df5526538538...7beb903ee2fb",
+  "failingModule": "/root/workspace/INRIA/spoon/191511078",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "spoon.SpoonException",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 987,
+  "failing-test-cases": [
+    {
+      "className": "spoon.test.main.MainTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "spoon.test.main.MainTest#testTest"
+      ],
+      "failures": [
+        {
+          "failureName": "spoon.SpoonException",
+          "failureDetail": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "spoon.test.imports.ImportTest",
+      "failingMethods": [
+        "spoon.test.imports.ImportTest#testNestedAccessPathWithTypedParameter",
+        "spoon.test.imports.ImportTest#testNestedAccessPathWithTypedParameterWithImports"
+      ],
+      "erroringMethods": [
+        "spoon.test.imports.ImportTest#testAccessPath"
+      ],
+      "failures": [
+        {
+          "failureName": "spoon.SpoonException",
+          "failureDetail": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ltimap\u003cK, V\u003e.Wrapped[Collection].WrappedIterator {}\u003e but was:\u003c...ltimap\u003cK, V\u003e.Wrapped[List].WrappedIterator {}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ltimap\u003cK, V\u003e.Wrapped[Collection].WrappedIterator {}\u003e but was:\u003c...ltimap\u003cK, V\u003e.Wrapped[List].WrappedIterator {}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 1
+    }
+  ]
+}
