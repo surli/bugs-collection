@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "brettwooldridge/HikariCP",
+  "bugCommit": "https://github.com/brettwooldridge/HikariCP/compare/2f31939cae57...5c8b359b172f",
+  "failingModule": "/root/workspace/brettwooldridge/HikariCP/201330656",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.Exception"
+  ],
+  "totalNumberRunningTests": 117,
+  "failing-test-cases": [
+    {
+      "className": "com.zaxxer.hikari.metrics.prometheus.PrometheusMetricsTrackerTest",
+      "failingMethods": [
+        "com.zaxxer.hikari.metrics.prometheus.PrometheusMetricsTrackerTest#recordConnectionTimeout"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c3.0\u003e\n     but: was \u003c2.0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.zaxxer.hikari.pool.MetricsTrackerTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.zaxxer.hikari.pool.MetricsTrackerTest#connectionTimeoutIsRecorded"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.sql.SQLTransientConnectionException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
