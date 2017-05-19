@@ -45,6 +45,7 @@ import org.teavm.model.ClassReaderSource;
 import org.teavm.model.ListableClassHolderSource;
 import org.teavm.model.ListableClassReaderSource;
 import org.teavm.model.MethodHolder;
+import org.teavm.model.MethodReader;
 import org.teavm.model.MethodReference;
 import org.teavm.model.MutableClassHolderSource;
 import org.teavm.model.Program;
@@ -56,12 +57,12 @@ import org.teavm.model.optimization.Devirtualization;
 import org.teavm.model.optimization.GlobalValueNumbering;
 import org.teavm.model.optimization.Inlining;
 import org.teavm.model.optimization.LoopInvariantMotion;
-import org.teavm.model.optimization.LoopInversion;
 import org.teavm.model.optimization.MethodOptimization;
+import org.teavm.model.optimization.MethodOptimizationContext;
 import org.teavm.model.optimization.RedundantJumpElimination;
 import org.teavm.model.optimization.UnreachableBasicBlockElimination;
 import org.teavm.model.optimization.UnusedVariableElimination;
-import org.teavm.model.util.ListingBuilder;
+import org.teavm.model.text.ListingBuilder;
 import org.teavm.model.util.MissingItemsProcessor;
 import org.teavm.model.util.ModelUtils;
 import org.teavm.model.util.ProgramUtils;
@@ -443,8 +444,9 @@ public class TeaVM implements TeaVMHost, ServiceRepository {
             ClassHolder cls = classes.get(className);
             for (MethodHolder method : cls.getMethods()) {
                 if (method.getProgram() != null) {
+                    MethodOptimizationContextImpl context = new MethodOptimizationContextImpl(method, classes);
                     inlining.apply(method.getProgram(), classes);
-                    new UnusedVariableElimination().optimize(method, method.getProgram());
+                    new UnusedVariableElimination().optimize(context, method.getProgram());
                 }
             }
             if (wasCancelled()) {
@@ -473,6 +475,7 @@ public class TeaVM implements TeaVMHost, ServiceRepository {
         boolean noCache = method.getAnnotations().get(NoCache.class.getName()) != null;
         Program optimizedProgram = incremental && !noCache && programCache != null
                 ? programCache.get(method.getReference()) : null;
+        MethodOptimizationContextImpl context = new MethodOptimizationContextImpl(method, classSource);
         if (optimizedProgram == null) {
             optimizedProgram = ProgramUtils.copy(method.getProgram());
             if (optimizedProgram.basicBlockCount() > 0) {
@@ -481,7 +484,7 @@ public class TeaVM implements TeaVMHost, ServiceRepository {
                     changed = false;
                     for (MethodOptimization optimization : getOptimizations()) {
                         try {
-                            changed |= optimization.optimize(method, optimizedProgram);
+                            changed |= optimization.optimize(context, optimizedProgram);
                         } catch (Exception | AssertionError e) {
                             ListingBuilder listingBuilder = new ListingBuilder();
                             String listing = listingBuilder.buildListing(optimizedProgram, "");
@@ -505,12 +508,37 @@ public class TeaVM implements TeaVMHost, ServiceRepository {
         method.setProgram(optimizedProgram);
     }
 
+    private class MethodOptimizationContextImpl implements MethodOptimizationContext {
+        private MethodReader method;
+        private ClassReaderSource classSource;
+
+        public MethodOptimizationContextImpl(MethodReader method, ClassReaderSource classSource) {
+            this.method = method;
+            this.classSource = classSource;
+        }
+
+        @Override
+        public MethodReader getMethod() {
+            return method;
+        }
+
+        @Override
+        public DependencyInfo getDependencyInfo() {
+            return dependencyChecker;
+        }
+
+        @Override
+        public ClassReaderSource getClassSource() {
+            return classSource;
+        }
+    }
+
     private List<MethodOptimization> getOptimizations() {
         List<MethodOptimization> optimizations = new ArrayList<>();
         optimizations.add(new RedundantJumpElimination());
         optimizations.add(new ArrayUnwrapMotion());
         if (optimizationLevel.ordinal() >= TeaVMOptimizationLevel.ADVANCED.ordinal()) {
-            optimizations.add(new LoopInversion());
+            //optimizations.add(new LoopInversion());
             optimizations.add(new LoopInvariantMotion());
         }
         optimizations.add(new GlobalValueNumbering(optimizationLevel == TeaVMOptimizationLevel.SIMPLE));

@@ -96,33 +96,33 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-core ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
+[INFO] Copying 31 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-core ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-core ---
 [INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/180935567/core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 34.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 510.7 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
+Running org.teavm.model.analysis.test.NullnessAnalysisTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in org.teavm.model.analysis.test.NullnessAnalysisTest
+Running org.teavm.model.text.ParserTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.teavm.model.text.ParserTest
+Running org.teavm.model.util.test.PhiUpdaterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.teavm.model.util.test.PhiUpdaterTest
 Running org.teavm.cache.ProgramIOTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.teavm.cache.ProgramIOTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.teavm.cache.ProgramIOTest
 Running org.teavm.common.GraphTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in org.teavm.common.GraphTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.teavm.common.GraphTest
 Running org.teavm.vm.PluginLoaderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.teavm.vm.PluginLoaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.teavm.vm.PluginLoaderTest
 
 Results :
 
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
@@ -221,7 +221,7 @@ Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running org.teavm.jso.plugin.AstWriterTest
-Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.teavm.jso.plugin.AstWriterTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec - in org.teavm.jso.plugin.AstWriterTest
 
 Results :
 
@@ -265,11 +265,11 @@ Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running org.teavm.classlib.impl.unicode.UnicodeSupportTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in org.teavm.classlib.impl.unicode.UnicodeSupportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec - in org.teavm.classlib.impl.unicode.UnicodeSupportTest
 Running org.teavm.classlib.impl.Base46Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.teavm.classlib.impl.Base46Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.teavm.classlib.impl.Base46Test
 Running org.teavm.classlib.impl.Base64Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.teavm.classlib.impl.Base64Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.teavm.classlib.impl.Base64Test
 
 Results :
 
@@ -954,1393 +954,265 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.16:test (default-test) @ teavm-tests ---
 [INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/180935567/tests/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 41.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 31.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 897.4 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.teavm.dependency.ClassValueTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.156 sec - in org.teavm.dependency.ClassValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.546 sec - in org.teavm.dependency.ClassValueTest
 Running org.teavm.classlib.java.text.SimpleDateFormatTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.941 sec - in org.teavm.classlib.java.text.SimpleDateFormatTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.3 sec - in org.teavm.classlib.java.text.SimpleDateFormatTest
 Running org.teavm.classlib.java.text.DateFormatTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.189 sec - in org.teavm.classlib.java.text.DateFormatTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.795 sec - in org.teavm.classlib.java.text.DateFormatTest
 Running org.teavm.classlib.java.text.NumberFormatTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.161 sec - in org.teavm.classlib.java.text.NumberFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.841 sec - in org.teavm.classlib.java.text.NumberFormatTest
 Running org.teavm.classlib.java.text.DecimalFormatParseTest
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.634 sec <<< FAILURE! - in org.teavm.classlib.java.text.DecimalFormatParseTest
-parsesPrefixSuffix(org.teavm.classlib.java.text.DecimalFormatParseTest)  Time elapsed: 0.137 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jt_ParseException_getErrorOffset()@injected script:5681
-otcjt_DecimalFormatParseTest_parsesPrefixSuffix()@injected script:4912
-otj_TestEntryPoint_launchTest()@injected script:5732
-otj_TestEntryPoint_lambda$run$0()@injected script:5736
-$$LAMBDA0$$_launch()@injected script:6118
-ott_SimpleTestRunner_run()@injected script:6982
-otj_TestEntryPoint_run()@injected script:5722
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.175 sec - in org.teavm.classlib.java.text.DecimalFormatParseTest
 Running org.teavm.classlib.java.text.DecimalFormatTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.952 sec - in org.teavm.classlib.java.text.DecimalFormatTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.524 sec - in org.teavm.classlib.java.text.DecimalFormatTest
 Running org.teavm.classlib.java.math.BigIntegerNotTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in org.teavm.classlib.java.math.BigIntegerNotTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.197 sec - in org.teavm.classlib.java.math.BigIntegerNotTest
 Running org.teavm.classlib.java.math.BigIntegerAndTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.318 sec - in org.teavm.classlib.java.math.BigIntegerAndTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.875 sec - in org.teavm.classlib.java.math.BigIntegerAndTest
 Running org.teavm.classlib.java.math.BigIntegerToStringTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.597 sec - in org.teavm.classlib.java.math.BigIntegerToStringTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.768 sec - in org.teavm.classlib.java.math.BigIntegerToStringTest
 Running org.teavm.classlib.java.math.BigIntegerModPowTest
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.759 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigIntegerModPowTest
-testModPowException(org.teavm.classlib.java.math.BigIntegerModPowTest)  Time elapsed: 0.034 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:428
-otcjm_BigIntegerModPowTest_testModPowException()@injected script:1834
-otj_TestEntryPoint_launchTest()@injected script:1681
-otj_TestEntryPoint_lambda$run$0()@injected script:1685
-$$LAMBDA0$$_launch()@injected script:2395
-ott_SimpleTestRunner_run()@injected script:3941
-otj_TestEntryPoint_run()@injected script:1671
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testmodInverseException(org.teavm.classlib.java.math.BigIntegerModPowTest)  Time elapsed: 0.031 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerModPowTest_testmodInverseException()@injected script:1407
-otj_TestEntryPoint_launchTest()@injected script:1315
-otj_TestEntryPoint_lambda$run$0()@injected script:1319
-$$LAMBDA0$$_launch()@injected script:1846
-ott_SimpleTestRunner_run()@injected script:3197
-otj_TestEntryPoint_run()@injected script:1305
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testmodInverseNonInvertible(org.teavm.classlib.java.math.BigIntegerModPowTest)  Time elapsed: 0.1 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerModPowTest_testmodInverseNonInvertible()@injected script:1423
-otj_TestEntryPoint_launchTest()@injected script:1315
-otj_TestEntryPoint_lambda$run$0()@injected script:1319
-$$LAMBDA0$$_launch()@injected script:1862
-ott_SimpleTestRunner_run()@injected script:3213
-otj_TestEntryPoint_run()@injected script:1305
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.387 sec - in org.teavm.classlib.java.math.BigIntegerModPowTest
 Running org.teavm.classlib.java.math.BigIntegerOperateBitsTest
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 11.153 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigIntegerOperateBitsTest
-testClearBitException(org.teavm.classlib.java.math.BigIntegerOperateBitsTest)  Time elapsed: 0.033 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testClearBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1116
-otj_TestEntryPoint_lambda$run$0()@injected script:1120
-$$LAMBDA0$$_launch()@injected script:1382
-ott_SimpleTestRunner_run()@injected script:1990
-otj_TestEntryPoint_run()@injected script:1106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testFlipBitException(org.teavm.classlib.java.math.BigIntegerOperateBitsTest)  Time elapsed: 0.022 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testFlipBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1074
-otj_TestEntryPoint_lambda$run$0()@injected script:1078
-$$LAMBDA0$$_launch()@injected script:1340
-ott_SimpleTestRunner_run()@injected script:1948
-otj_TestEntryPoint_run()@injected script:1064
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testSetBitException(org.teavm.classlib.java.math.BigIntegerOperateBitsTest)  Time elapsed: 0.017 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testSetBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1116
-otj_TestEntryPoint_lambda$run$0()@injected script:1120
-$$LAMBDA0$$_launch()@injected script:1382
-ott_SimpleTestRunner_run()@injected script:1990
-otj_TestEntryPoint_run()@injected script:1106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testTestBitException(org.teavm.classlib.java.math.BigIntegerOperateBitsTest)  Time elapsed: 0.07 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:376
-otcjm_BigIntegerOperateBitsTest_testTestBitException()@injected script:575
-otj_TestEntryPoint_launchTest()@injected script:1013
-otj_TestEntryPoint_lambda$run$0()@injected script:1017
-$$LAMBDA0$$_launch()@injected script:1270
-ott_SimpleTestRunner_run()@injected script:1795
-otj_TestEntryPoint_run()@injected script:1003
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.296 sec - in org.teavm.classlib.java.math.BigIntegerOperateBitsTest
 Running org.teavm.classlib.java.math.BigIntegerConstructorsTest
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.782 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigIntegerConstructorsTest
-testConstructorBytesException(org.teavm.classlib.java.math.BigIntegerConstructorsTest)  Time elapsed: 0.045 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:370
-otcjm_BigIntegerConstructorsTest_testConstructorBytesException()@injected script:1849
-otj_TestEntryPoint_launchTest()@injected script:928
-otj_TestEntryPoint_lambda$run$0()@injected script:932
-$$LAMBDA0$$_launch()@injected script:1185
-ott_SimpleTestRunner_run()@injected script:1710
-otj_TestEntryPoint_run()@injected script:918
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstructorSignBytesException1(org.teavm.classlib.java.math.BigIntegerConstructorsTest)  Time elapsed: 0.049 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:373
-otcjm_BigIntegerConstructorsTest_testConstructorSignBytesException1()@injected script:1822
-otj_TestEntryPoint_launchTest()@injected script:895
-otj_TestEntryPoint_lambda$run$0()@injected script:899
-$$LAMBDA0$$_launch()@injected script:1152
-ott_SimpleTestRunner_run()@injected script:1677
-otj_TestEntryPoint_run()@injected script:885
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstructorSignBytesException2(org.teavm.classlib.java.math.BigIntegerConstructorsTest)  Time elapsed: 0.023 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:373
-otcjm_BigIntegerConstructorsTest_testConstructorSignBytesException2()@injected script:1822
-otj_TestEntryPoint_launchTest()@injected script:895
-otj_TestEntryPoint_lambda$run$0()@injected script:899
-$$LAMBDA0$$_launch()@injected script:1152
-ott_SimpleTestRunner_run()@injected script:1677
-otj_TestEntryPoint_run()@injected script:885
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstructorStringException1(org.teavm.classlib.java.math.BigIntegerConstructorsTest)  Time elapsed: 0.442 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:422
-otcjm_BigIntegerConstructorsTest_testConstructorStringException1()@injected script:3041
-otj_TestEntryPoint_launchTest()@injected script:1276
-otj_TestEntryPoint_lambda$run$0()@injected script:1280
-$$LAMBDA0$$_launch()@injected script:1916
-ott_SimpleTestRunner_run()@injected script:2892
-otj_TestEntryPoint_run()@injected script:1266
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.684 sec - in org.teavm.classlib.java.math.BigIntegerConstructorsTest
 Running org.teavm.classlib.java.math.BigIntegerAddTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.972 sec - in org.teavm.classlib.java.math.BigIntegerAddTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.413 sec - in org.teavm.classlib.java.math.BigIntegerAddTest
 Running org.teavm.classlib.java.math.BigIntegerMultiplyTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.936 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigIntegerMultiplyTest
-testPowException(org.teavm.classlib.java.math.BigIntegerMultiplyTest)  Time elapsed: 0.03 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:395
-otcjm_BigIntegerMultiplyTest_testPowException()@injected script:662
-otj_TestEntryPoint_launchTest()@injected script:1249
-otj_TestEntryPoint_lambda$run$0()@injected script:1253
-$$LAMBDA0$$_launch()@injected script:1750
-ott_SimpleTestRunner_run()@injected script:2680
-otj_TestEntryPoint_run()@injected script:1239
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.538 sec - in org.teavm.classlib.java.math.BigIntegerMultiplyTest
 Running org.teavm.classlib.java.math.BigIntegerOrTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.106 sec - in org.teavm.classlib.java.math.BigIntegerOrTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.505 sec - in org.teavm.classlib.java.math.BigIntegerOrTest
 Running org.teavm.classlib.java.math.BigDecimalScaleOperationsTest
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.946 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigDecimalScaleOperationsTest
-testSetScaleException(org.teavm.classlib.java.math.BigDecimalScaleOperationsTest)  Time elapsed: 0.201 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalScaleOperationsTest_testSetScaleException()@injected script:4138
-otj_TestEntryPoint_launchTest()@injected script:2169
-otj_TestEntryPoint_lambda$run$0()@injected script:2173
-$$LAMBDA0$$_launch()@injected script:2907
-ott_SimpleTestRunner_run()@injected script:4104
-otj_TestEntryPoint_run()@injected script:2159
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testMovePointRightException(org.teavm.classlib.java.math.BigDecimalScaleOperationsTest)  Time elapsed: 0.104 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:448
-otcjm_BigDecimalScaleOperationsTest_testMovePointRightException()@injected script:3547
-otj_TestEntryPoint_launchTest()@injected script:1786
-otj_TestEntryPoint_lambda$run$0()@injected script:1790
-$$LAMBDA0$$_launch()@injected script:2524
-ott_SimpleTestRunner_run()@injected script:3513
-otj_TestEntryPoint_run()@injected script:1776
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.042 sec - in org.teavm.classlib.java.math.BigDecimalScaleOperationsTest
 Running org.teavm.classlib.java.math.BigIntegerDivideTest
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 5.224 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigIntegerDivideTest
-testCase1(org.teavm.classlib.java.math.BigIntegerDivideTest)  Time elapsed: 0.017 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase1()@injected script:2240
-otj_TestEntryPoint_launchTest()@injected script:1171
-otj_TestEntryPoint_lambda$run$0()@injected script:1175
-$$LAMBDA0$$_launch()@injected script:1653
-ott_SimpleTestRunner_run()@injected script:2785
-otj_TestEntryPoint_run()@injected script:1161
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testCase2(org.teavm.classlib.java.math.BigIntegerDivideTest)  Time elapsed: 0.02 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase2()@injected script:2237
-otj_TestEntryPoint_launchTest()@injected script:1171
-otj_TestEntryPoint_lambda$run$0()@injected script:1175
-$$LAMBDA0$$_launch()@injected script:1653
-ott_SimpleTestRunner_run()@injected script:2782
-otj_TestEntryPoint_run()@injected script:1161
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testCase15(org.teavm.classlib.java.math.BigIntegerDivideTest)  Time elapsed: 0.045 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase15()@injected script:2202
-otj_TestEntryPoint_launchTest()@injected script:1133
-otj_TestEntryPoint_lambda$run$0()@injected script:1137
-$$LAMBDA0$$_launch()@injected script:1615
-ott_SimpleTestRunner_run()@injected script:2725
-otj_TestEntryPoint_run()@injected script:1123
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testCase22(org.teavm.classlib.java.math.BigIntegerDivideTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase22()@injected script:2219
-otj_TestEntryPoint_launchTest()@injected script:1144
-otj_TestEntryPoint_lambda$run$0()@injected script:1148
-$$LAMBDA0$$_launch()@injected script:1626
-ott_SimpleTestRunner_run()@injected script:2742
-otj_TestEntryPoint_run()@injected script:1134
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.143 sec - in org.teavm.classlib.java.math.BigIntegerDivideTest
 Running org.teavm.classlib.java.math.BigIntegerHashCodeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec - in org.teavm.classlib.java.math.BigIntegerHashCodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.teavm.classlib.java.math.BigIntegerHashCodeTest
 Running org.teavm.classlib.java.math.BigIntegerConvertTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.236 sec - in org.teavm.classlib.java.math.BigIntegerConvertTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.23 sec - in org.teavm.classlib.java.math.BigIntegerConvertTest
 Running org.teavm.classlib.java.math.BigIntegerCompareTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.988 sec - in org.teavm.classlib.java.math.BigIntegerCompareTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.219 sec - in org.teavm.classlib.java.math.BigIntegerCompareTest
 Running org.teavm.classlib.java.math.BigIntegerSubtractTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.474 sec - in org.teavm.classlib.java.math.BigIntegerSubtractTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.516 sec - in org.teavm.classlib.java.math.BigIntegerSubtractTest
 Running org.teavm.classlib.java.math.BigDecimalArithmeticTest
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 19.691 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigDecimalArithmeticTest
-testDivideByZero(org.teavm.classlib.java.math.BigDecimalArithmeticTest)  Time elapsed: 0.104 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:451
-otcjm_BigDecimalArithmeticTest_testDivideByZero()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2116
-otj_TestEntryPoint_lambda$run$0()@injected script:2120
-$$LAMBDA0$$_launch()@injected script:2819
-ott_SimpleTestRunner_run()@injected script:4121
-otj_TestEntryPoint_run()@injected script:2106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testDivideExceptionRM(org.teavm.classlib.java.math.BigDecimalArithmeticTest)  Time elapsed: 0.064 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalArithmeticTest_testDivideExceptionRM()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2256
-otj_TestEntryPoint_lambda$run$0()@injected script:2260
-$$LAMBDA0$$_launch()@injected script:2994
-ott_SimpleTestRunner_run()@injected script:4191
-otj_TestEntryPoint_run()@injected script:2246
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testDivideExceptionInvalidRM(org.teavm.classlib.java.math.BigDecimalArithmeticTest)  Time elapsed: 0.103 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalArithmeticTest_testDivideExceptionInvalidRM()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2256
-otj_TestEntryPoint_lambda$run$0()@injected script:2260
-$$LAMBDA0$$_launch()@injected script:2994
-ott_SimpleTestRunner_run()@injected script:4191
-otj_TestEntryPoint_run()@injected script:2246
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.263 sec - in org.teavm.classlib.java.math.BigDecimalArithmeticTest
 Running org.teavm.classlib.java.math.BigDecimalCompareTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.544 sec - in org.teavm.classlib.java.math.BigDecimalCompareTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.014 sec - in org.teavm.classlib.java.math.BigDecimalCompareTest
 Running org.teavm.classlib.java.math.BigIntegerXorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.267 sec - in org.teavm.classlib.java.math.BigIntegerXorTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.688 sec - in org.teavm.classlib.java.math.BigIntegerXorTest
 Running org.teavm.classlib.java.math.BigDecimalConstructorsTest
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 9.048 sec <<< FAILURE! - in org.teavm.classlib.java.math.BigDecimalConstructorsTest
-testConstrDoubleNaN(org.teavm.classlib.java.math.BigDecimalConstructorsTest)  Time elapsed: 0.049 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoubleNaN()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstrDoublePosInfinity(org.teavm.classlib.java.math.BigDecimalConstructorsTest)  Time elapsed: 0.047 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoublePosInfinity()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstrDoubleNegInfinity(org.teavm.classlib.java.math.BigDecimalConstructorsTest)  Time elapsed: 0.079 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoubleNegInfinity()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-testConstrStringExponentIntegerMin(org.teavm.classlib.java.math.BigDecimalConstructorsTest)  Time elapsed: 0.068 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Throwable_getMessage()@injected script:446
-otcjm_BigDecimalConstructorsTest_testConstrStringExponentIntegerMin()@injected script:3466
-otj_TestEntryPoint_launchTest()@injected script:1701
-otj_TestEntryPoint_lambda$run$0()@injected script:1705
-$$LAMBDA0$$_launch()@injected script:2394
-ott_SimpleTestRunner_run()@injected script:3387
-otj_TestEntryPoint_run()@injected script:1691
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.634 sec - in org.teavm.classlib.java.math.BigDecimalConstructorsTest
 Running org.teavm.classlib.java.math.BigDecimalConvertTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.774 sec - in org.teavm.classlib.java.math.BigDecimalConvertTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.434 sec - in org.teavm.classlib.java.math.BigDecimalConvertTest
 Running org.teavm.classlib.java.nio.FloatBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.658 sec - in org.teavm.classlib.java.nio.FloatBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.153 sec - in org.teavm.classlib.java.nio.FloatBufferTest
 Running org.teavm.classlib.java.nio.LongBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.545 sec - in org.teavm.classlib.java.nio.LongBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.13 sec - in org.teavm.classlib.java.nio.LongBufferTest
 Running org.teavm.classlib.java.nio.charset.UTF8Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.346 sec - in org.teavm.classlib.java.nio.charset.UTF8Test
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.088 sec - in org.teavm.classlib.java.nio.charset.UTF8Test
 Running org.teavm.classlib.java.nio.IntBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.678 sec - in org.teavm.classlib.java.nio.IntBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.858 sec - in org.teavm.classlib.java.nio.IntBufferTest
 Running org.teavm.classlib.java.nio.ShortBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.378 sec - in org.teavm.classlib.java.nio.ShortBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.833 sec - in org.teavm.classlib.java.nio.ShortBufferTest
 Running org.teavm.classlib.java.nio.ByteBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.911 sec - in org.teavm.classlib.java.nio.ByteBufferTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.784 sec - in org.teavm.classlib.java.nio.ByteBufferTest
 Running org.teavm.classlib.java.nio.CharBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.203 sec - in org.teavm.classlib.java.nio.CharBufferTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.373 sec - in org.teavm.classlib.java.nio.CharBufferTest
 Running org.teavm.classlib.java.nio.DoubleBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.692 sec - in org.teavm.classlib.java.nio.DoubleBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.294 sec - in org.teavm.classlib.java.nio.DoubleBufferTest
 Running org.teavm.classlib.java.nio.ByteBufferWrapperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.043 sec - in org.teavm.classlib.java.nio.ByteBufferWrapperTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.807 sec - in org.teavm.classlib.java.nio.ByteBufferWrapperTest
 Running org.teavm.classlib.java.util.ServiceLoaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in org.teavm.classlib.java.util.ServiceLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.teavm.classlib.java.util.ServiceLoaderTest
 Running org.teavm.classlib.java.util.LocaleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.96 sec - in org.teavm.classlib.java.util.LocaleTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.625 sec - in org.teavm.classlib.java.util.LocaleTest
 Running org.teavm.classlib.java.util.LinkedListTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.066 sec - in org.teavm.classlib.java.util.LinkedListTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.577 sec - in org.teavm.classlib.java.util.LinkedListTest
 Running org.teavm.classlib.java.util.StringTokenizerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.074 sec - in org.teavm.classlib.java.util.StringTokenizerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.752 sec - in org.teavm.classlib.java.util.StringTokenizerTest
 Running org.teavm.classlib.java.util.CalendarTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.777 sec - in org.teavm.classlib.java.util.CalendarTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.669 sec - in org.teavm.classlib.java.util.CalendarTest
 Running org.teavm.classlib.java.util.zip.GZIPInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 sec - in org.teavm.classlib.java.util.zip.GZIPInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 sec - in org.teavm.classlib.java.util.zip.GZIPInputStreamTest
 Running org.teavm.classlib.java.util.DateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.teavm.classlib.java.util.DateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec - in org.teavm.classlib.java.util.DateTest
 Running org.teavm.classlib.java.util.VectorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.325 sec - in org.teavm.classlib.java.util.VectorTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.974 sec - in org.teavm.classlib.java.util.VectorTest
 Running org.teavm.classlib.java.util.PriorityQueueTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec - in org.teavm.classlib.java.util.PriorityQueueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec - in org.teavm.classlib.java.util.PriorityQueueTest
 Running org.teavm.classlib.java.util.CurrencyTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.994 sec - in org.teavm.classlib.java.util.CurrencyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.831 sec - in org.teavm.classlib.java.util.CurrencyTest
 Running org.teavm.classlib.java.util.CollectionsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.322 sec - in org.teavm.classlib.java.util.CollectionsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in org.teavm.classlib.java.util.CollectionsTest
 Running org.teavm.classlib.java.util.ArrayListTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.802 sec - in org.teavm.classlib.java.util.ArrayListTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 sec - in org.teavm.classlib.java.util.ArrayListTest
 Running org.teavm.classlib.java.util.TreeMapTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.047 sec - in org.teavm.classlib.java.util.TreeMapTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.532 sec - in org.teavm.classlib.java.util.TreeMapTest
 Running org.teavm.classlib.java.util.ArraysTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.703 sec - in org.teavm.classlib.java.util.ArraysTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.506 sec - in org.teavm.classlib.java.util.ArraysTest
 Running org.teavm.classlib.java.util.regex.SplitTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.322 sec - in org.teavm.classlib.java.util.regex.SplitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.786 sec - in org.teavm.classlib.java.util.regex.SplitTest
 Running org.teavm.classlib.java.util.regex.PatternTest
-Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.375 sec - in org.teavm.classlib.java.util.regex.PatternTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.335 sec - in org.teavm.classlib.java.util.regex.PatternTest
 Running org.teavm.classlib.java.util.regex.ModeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.924 sec - in org.teavm.classlib.java.util.regex.ModeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.658 sec - in org.teavm.classlib.java.util.regex.ModeTest
 Running org.teavm.classlib.java.util.regex.MatcherTest
-Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.974 sec - in org.teavm.classlib.java.util.regex.MatcherTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.192 sec - in org.teavm.classlib.java.util.regex.MatcherTest
 Running org.teavm.classlib.java.util.regex.Matcher2Test
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.683 sec - in org.teavm.classlib.java.util.regex.Matcher2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.674 sec - in org.teavm.classlib.java.util.regex.Matcher2Test
 Running org.teavm.classlib.java.util.regex.Pattern2Test
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.15 sec - in org.teavm.classlib.java.util.regex.Pattern2Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.582 sec - in org.teavm.classlib.java.util.regex.Pattern2Test
 Running org.teavm.classlib.java.util.regex.ReplaceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.407 sec - in org.teavm.classlib.java.util.regex.ReplaceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.483 sec - in org.teavm.classlib.java.util.regex.ReplaceTest
 Running org.teavm.classlib.java.util.regex.PatternErrorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.668 sec - in org.teavm.classlib.java.util.regex.PatternErrorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 sec - in org.teavm.classlib.java.util.regex.PatternErrorTest
 Running org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.815 sec <<< FAILURE! - in org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest
-testCase2(org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest)  Time elapsed: 0.196 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jur_PatternSyntaxException_getIndex()@injected script:7928
-otcjur_PatternSyntaxExceptionTest_testCase2()@injected script:4676
-otj_TestEntryPoint_launchTest()@injected script:7941
-otj_TestEntryPoint_lambda$run$0()@injected script:7945
-$$LAMBDA0$$_launch()@injected script:8856
-ott_SimpleTestRunner_run()@injected script:10555
-otj_TestEntryPoint_run()@injected script:7931
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.801 sec - in org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest
 Running org.teavm.classlib.java.util.TimeZoneTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.682 sec <<< FAILURE! - in org.teavm.classlib.java.util.TimeZoneTest
-testCase(org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest)  Time elapsed: 0.444 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jur_PatternSyntaxException_getIndex()@injected script:7928
-otcjur_PatternSyntaxExceptionTest_testCase()@injected script:4676
-otj_TestEntryPoint_launchTest()@injected script:7941
-otj_TestEntryPoint_lambda$run$0()@injected script:7945
-$$LAMBDA0$$_launch()@injected script:8856
-ott_SimpleTestRunner_run()@injected script:10555
-otj_TestEntryPoint_run()@injected script:7931
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.382 sec - in org.teavm.classlib.java.util.TimeZoneTest
 Running org.teavm.classlib.java.util.BitSetTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.31 sec - in org.teavm.classlib.java.util.BitSetTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.752 sec - in org.teavm.classlib.java.util.BitSetTest
 Running org.teavm.classlib.java.util.ArrayDequeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 sec - in org.teavm.classlib.java.util.ArrayDequeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.677 sec - in org.teavm.classlib.java.util.ArrayDequeTest
 Running org.teavm.classlib.java.util.HashtableTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.848 sec - in org.teavm.classlib.java.util.HashtableTest
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.433 sec - in org.teavm.classlib.java.util.HashtableTest
 Running org.teavm.classlib.java.util.LinkedHashMapTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.02 sec - in org.teavm.classlib.java.util.LinkedHashMapTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.609 sec - in org.teavm.classlib.java.util.LinkedHashMapTest
 Running org.teavm.classlib.java.lang.CharacterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec - in org.teavm.classlib.java.lang.CharacterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 sec - in org.teavm.classlib.java.lang.CharacterTest
 Running org.teavm.classlib.java.lang.ThreadTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 sec - in org.teavm.classlib.java.lang.ThreadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec - in org.teavm.classlib.java.lang.ThreadTest
 Running org.teavm.classlib.java.lang.BooleanTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in org.teavm.classlib.java.lang.BooleanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.teavm.classlib.java.lang.BooleanTest
 Running org.teavm.classlib.java.lang.reflect.ArrayTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec - in org.teavm.classlib.java.lang.reflect.ArrayTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.teavm.classlib.java.lang.reflect.ArrayTest
 Running org.teavm.classlib.java.lang.IntegerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.14 sec - in org.teavm.classlib.java.lang.IntegerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec - in org.teavm.classlib.java.lang.IntegerTest
 Running org.teavm.classlib.java.lang.DoubleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 sec - in org.teavm.classlib.java.lang.DoubleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.654 sec - in org.teavm.classlib.java.lang.DoubleTest
 Running org.teavm.classlib.java.lang.StringBuilderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.732 sec - in org.teavm.classlib.java.lang.StringBuilderTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.316 sec - in org.teavm.classlib.java.lang.StringBuilderTest
 Running org.teavm.classlib.java.lang.StringTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.641 sec - in org.teavm.classlib.java.lang.StringTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.841 sec - in org.teavm.classlib.java.lang.StringTest
 Running org.teavm.classlib.java.lang.LambdaTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 sec - in org.teavm.classlib.java.lang.LambdaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec - in org.teavm.classlib.java.lang.LambdaTest
 Running org.teavm.classlib.java.lang.ClassLoaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.teavm.classlib.java.lang.ClassLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in org.teavm.classlib.java.lang.ClassLoaderTest
 Running org.teavm.classlib.java.lang.MathTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.788 sec - in org.teavm.classlib.java.lang.MathTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 sec - in org.teavm.classlib.java.lang.MathTest
 Running org.teavm.classlib.java.lang.ObjectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.723 sec - in org.teavm.classlib.java.lang.ObjectTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.672 sec - in org.teavm.classlib.java.lang.ObjectTest
 Running org.teavm.classlib.java.lang.EnumTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.teavm.classlib.java.lang.EnumTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in org.teavm.classlib.java.lang.EnumTest
 Running org.teavm.classlib.java.lang.FloatTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.868 sec - in org.teavm.classlib.java.lang.FloatTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.601 sec - in org.teavm.classlib.java.lang.FloatTest
 Running org.teavm.classlib.java.lang.SystemTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.714 sec - in org.teavm.classlib.java.lang.SystemTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.675 sec - in org.teavm.classlib.java.lang.SystemTest
 Running org.teavm.classlib.java.lang.ClassTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.177 sec - in org.teavm.classlib.java.lang.ClassTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.28 sec - in org.teavm.classlib.java.lang.ClassTest
 Running org.teavm.classlib.java.io.BufferedInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.46 sec - in org.teavm.classlib.java.io.BufferedInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.257 sec - in org.teavm.classlib.java.io.BufferedInputStreamTest
 Running org.teavm.classlib.java.io.BufferedReaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 sec - in org.teavm.classlib.java.io.BufferedReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in org.teavm.classlib.java.io.BufferedReaderTest
 Running org.teavm.classlib.java.io.OutputStreamWriterTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.914 sec <<< FAILURE! - in org.teavm.classlib.java.io.OutputStreamWriterTest
-test_close(org.teavm.classlib.java.io.OutputStreamWriterTest)  Time elapsed: 0.037 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Object_getClass()@injected script:741
-jl_Object_toString()@injected script:744
-jl_AbstractStringBuilder_insert4()@injected script:2189
-jl_StringBuilder_insert5()@injected script:2362
-jl_StringBuilder_insert3()@injected script:2392
-jl_AbstractStringBuilder_append5()@injected script:2183
-jl_StringBuilder_append4()@injected script:2354
-ji_PrintStream_println()@injected script:4467
-otcji_OutputStreamWriterTest_test_close()@injected script:4663
-otj_TestEntryPoint_launchTest()@injected script:3772
-otj_TestEntryPoint_lambda$run$0()@injected script:3776
-$$LAMBDA0$$_launch()@injected script:3853
-ott_SimpleTestRunner_run()@injected script:4531
-otj_TestEntryPoint_run()@injected script:3762
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.003 sec - in org.teavm.classlib.java.io.OutputStreamWriterTest
 Running org.teavm.classlib.java.io.PushbackInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 sec - in org.teavm.classlib.java.io.PushbackInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.002 sec - in org.teavm.classlib.java.io.PushbackInputStreamTest
 Running org.teavm.classlib.java.io.InputStreamReaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.693 sec - in org.teavm.classlib.java.io.InputStreamReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.397 sec - in org.teavm.classlib.java.io.InputStreamReaderTest
 Running org.teavm.classlib.java.io.ByteArrayInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.teavm.classlib.java.io.ByteArrayInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.teavm.classlib.java.io.ByteArrayInputStreamTest
 Running org.teavm.tests.JSOTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.468 sec - in org.teavm.tests.JSOTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.779 sec - in org.teavm.tests.JSOTest
 Running org.teavm.vm.VMTest
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.401 sec <<< FAILURE! - in org.teavm.vm.VMTest
-separatesExceptionAndVariable(org.teavm.vm.VMTest)  Time elapsed: 0.017 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Object_getClass()@injected script:329
-otv_VMTest_separatesExceptionAndVariable()@injected script:1511
-otj_TestEntryPoint_launchTest()@injected script:780
-otj_TestEntryPoint_lambda$run$0()@injected script:784
-$$LAMBDA0$$_launch()@injected script:1182
-ott_SimpleTestRunner_run()@injected script:1730
-otj_TestEntryPoint_run()@injected script:770
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
-variableReadInCatchBlock(org.teavm.vm.VMTest)  Time elapsed: 0.023 sec  <<< FAILURE!
-java.lang.AssertionError: null
-undefined
-jl_Object_getClass()@injected script:329
-otv_VMTest_variableReadInCatchBlock()@injected script:1527
-otj_TestEntryPoint_launchTest()@injected script:780
-otj_TestEntryPoint_lambda$run$0()@injected script:784
-$$LAMBDA0$$_launch()@injected script:1182
-ott_SimpleTestRunner_run()@injected script:1740
-otj_TestEntryPoint_run()@injected script:770
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-	at org.teavm.junit.TestRunner.runImpl(TestRunner.java:129)
-	at org.teavm.junit.TestRunner.lambda$run$2(TestRunner.java:88)
-	at org.teavm.junit.TestRunner.lambda$init$0(TestRunner.java:57)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.877 sec - in org.teavm.vm.VMTest
 Running org.teavm.vm.LongTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in org.teavm.vm.LongTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 sec - in org.teavm.vm.LongTest
 Running org.teavm.platform.metadata.MetadataGeneratorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec - in org.teavm.platform.metadata.MetadataGeneratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec - in org.teavm.platform.metadata.MetadataGeneratorTest
 Running org.teavm.jso.test.JavaInvocationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in org.teavm.jso.test.JavaInvocationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.teavm.jso.test.JavaInvocationTest
 Running org.teavm.jso.test.AnnotationsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in org.teavm.jso.test.AnnotationsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec - in org.teavm.jso.test.AnnotationsTest
 Running org.teavm.jso.test.ImplementationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec - in org.teavm.jso.test.ImplementationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.teavm.jso.test.ImplementationTest
 Running org.teavm.jso.test.FunctorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec - in org.teavm.jso.test.FunctorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in org.teavm.jso.test.FunctorTest
 Running org.teavm.jso.test.ConversionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.606 sec - in org.teavm.jso.test.ConversionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.278 sec - in org.teavm.jso.test.ConversionTest
 Running org.teavm.metaprogramming.test.ProxyTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 sec - in org.teavm.metaprogramming.test.ProxyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec - in org.teavm.metaprogramming.test.ProxyTest
 Running org.teavm.metaprogramming.test.MetaprogrammingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.202 sec - in org.teavm.metaprogramming.test.MetaprogrammingTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.596 sec - in org.teavm.metaprogramming.test.MetaprogrammingTest
 
 Results :
 
-Failed tests: 
-  DecimalFormatParseTest.parsesPrefixSuffix null
-undefined
-jt_ParseException_getErrorOffset()@injected script:5681
-otcjt_DecimalFormatParseTest_parsesPrefixSuffix()@injected script:4912
-otj_TestEntryPoint_launchTest()@injected script:5732
-otj_TestEntryPoint_lambda$run$0()@injected script:5736
-$$LAMBDA0$$_launch()@injected script:6118
-ott_SimpleTestRunner_run()@injected script:6982
-otj_TestEntryPoint_run()@injected script:5722
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
+Tests run: 1699, Failures: 0, Errors: 0, Skipped: 0
 
-  BigIntegerModPowTest.testModPowException null
-undefined
-jl_Throwable_getMessage()@injected script:428
-otcjm_BigIntegerModPowTest_testModPowException()@injected script:1834
-otj_TestEntryPoint_launchTest()@injected script:1681
-otj_TestEntryPoint_lambda$run$0()@injected script:1685
-$$LAMBDA0$$_launch()@injected script:2395
-ott_SimpleTestRunner_run()@injected script:3941
-otj_TestEntryPoint_run()@injected script:1671
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerModPowTest.testmodInverseException null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerModPowTest_testmodInverseException()@injected script:1407
-otj_TestEntryPoint_launchTest()@injected script:1315
-otj_TestEntryPoint_lambda$run$0()@injected script:1319
-$$LAMBDA0$$_launch()@injected script:1846
-ott_SimpleTestRunner_run()@injected script:3197
-otj_TestEntryPoint_run()@injected script:1305
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerModPowTest.testmodInverseNonInvertible null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerModPowTest_testmodInverseNonInvertible()@injected script:1423
-otj_TestEntryPoint_launchTest()@injected script:1315
-otj_TestEntryPoint_lambda$run$0()@injected script:1319
-$$LAMBDA0$$_launch()@injected script:1862
-ott_SimpleTestRunner_run()@injected script:3213
-otj_TestEntryPoint_run()@injected script:1305
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerOperateBitsTest.testClearBitException null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testClearBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1116
-otj_TestEntryPoint_lambda$run$0()@injected script:1120
-$$LAMBDA0$$_launch()@injected script:1382
-ott_SimpleTestRunner_run()@injected script:1990
-otj_TestEntryPoint_run()@injected script:1106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerOperateBitsTest.testFlipBitException null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testFlipBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1074
-otj_TestEntryPoint_lambda$run$0()@injected script:1078
-$$LAMBDA0$$_launch()@injected script:1340
-ott_SimpleTestRunner_run()@injected script:1948
-otj_TestEntryPoint_run()@injected script:1064
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerOperateBitsTest.testSetBitException null
-undefined
-jl_Throwable_getMessage()@injected script:385
-otcjm_BigIntegerOperateBitsTest_testSetBitException()@injected script:658
-otj_TestEntryPoint_launchTest()@injected script:1116
-otj_TestEntryPoint_lambda$run$0()@injected script:1120
-$$LAMBDA0$$_launch()@injected script:1382
-ott_SimpleTestRunner_run()@injected script:1990
-otj_TestEntryPoint_run()@injected script:1106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerOperateBitsTest.testTestBitException null
-undefined
-jl_Throwable_getMessage()@injected script:376
-otcjm_BigIntegerOperateBitsTest_testTestBitException()@injected script:575
-otj_TestEntryPoint_launchTest()@injected script:1013
-otj_TestEntryPoint_lambda$run$0()@injected script:1017
-$$LAMBDA0$$_launch()@injected script:1270
-ott_SimpleTestRunner_run()@injected script:1795
-otj_TestEntryPoint_run()@injected script:1003
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerConstructorsTest.testConstructorBytesException null
-undefined
-jl_Throwable_getMessage()@injected script:370
-otcjm_BigIntegerConstructorsTest_testConstructorBytesException()@injected script:1849
-otj_TestEntryPoint_launchTest()@injected script:928
-otj_TestEntryPoint_lambda$run$0()@injected script:932
-$$LAMBDA0$$_launch()@injected script:1185
-ott_SimpleTestRunner_run()@injected script:1710
-otj_TestEntryPoint_run()@injected script:918
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerConstructorsTest.testConstructorSignBytesException1 null
-undefined
-jl_Throwable_getMessage()@injected script:373
-otcjm_BigIntegerConstructorsTest_testConstructorSignBytesException1()@injected script:1822
-otj_TestEntryPoint_launchTest()@injected script:895
-otj_TestEntryPoint_lambda$run$0()@injected script:899
-$$LAMBDA0$$_launch()@injected script:1152
-ott_SimpleTestRunner_run()@injected script:1677
-otj_TestEntryPoint_run()@injected script:885
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerConstructorsTest.testConstructorSignBytesException2 null
-undefined
-jl_Throwable_getMessage()@injected script:373
-otcjm_BigIntegerConstructorsTest_testConstructorSignBytesException2()@injected script:1822
-otj_TestEntryPoint_launchTest()@injected script:895
-otj_TestEntryPoint_lambda$run$0()@injected script:899
-$$LAMBDA0$$_launch()@injected script:1152
-ott_SimpleTestRunner_run()@injected script:1677
-otj_TestEntryPoint_run()@injected script:885
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerConstructorsTest.testConstructorStringException1 null
-undefined
-jl_Throwable_getMessage()@injected script:422
-otcjm_BigIntegerConstructorsTest_testConstructorStringException1()@injected script:3041
-otj_TestEntryPoint_launchTest()@injected script:1276
-otj_TestEntryPoint_lambda$run$0()@injected script:1280
-$$LAMBDA0$$_launch()@injected script:1916
-ott_SimpleTestRunner_run()@injected script:2892
-otj_TestEntryPoint_run()@injected script:1266
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerMultiplyTest.testPowException null
-undefined
-jl_Throwable_getMessage()@injected script:395
-otcjm_BigIntegerMultiplyTest_testPowException()@injected script:662
-otj_TestEntryPoint_launchTest()@injected script:1249
-otj_TestEntryPoint_lambda$run$0()@injected script:1253
-$$LAMBDA0$$_launch()@injected script:1750
-ott_SimpleTestRunner_run()@injected script:2680
-otj_TestEntryPoint_run()@injected script:1239
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalScaleOperationsTest.testSetScaleException null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalScaleOperationsTest_testSetScaleException()@injected script:4138
-otj_TestEntryPoint_launchTest()@injected script:2169
-otj_TestEntryPoint_lambda$run$0()@injected script:2173
-$$LAMBDA0$$_launch()@injected script:2907
-ott_SimpleTestRunner_run()@injected script:4104
-otj_TestEntryPoint_run()@injected script:2159
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalScaleOperationsTest.testMovePointRightException null
-undefined
-jl_Throwable_getMessage()@injected script:448
-otcjm_BigDecimalScaleOperationsTest_testMovePointRightException()@injected script:3547
-otj_TestEntryPoint_launchTest()@injected script:1786
-otj_TestEntryPoint_lambda$run$0()@injected script:1790
-$$LAMBDA0$$_launch()@injected script:2524
-ott_SimpleTestRunner_run()@injected script:3513
-otj_TestEntryPoint_run()@injected script:1776
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerDivideTest.testCase1 null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase1()@injected script:2240
-otj_TestEntryPoint_launchTest()@injected script:1171
-otj_TestEntryPoint_lambda$run$0()@injected script:1175
-$$LAMBDA0$$_launch()@injected script:1653
-ott_SimpleTestRunner_run()@injected script:2785
-otj_TestEntryPoint_run()@injected script:1161
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerDivideTest.testCase2 null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase2()@injected script:2237
-otj_TestEntryPoint_launchTest()@injected script:1171
-otj_TestEntryPoint_lambda$run$0()@injected script:1175
-$$LAMBDA0$$_launch()@injected script:1653
-ott_SimpleTestRunner_run()@injected script:2782
-otj_TestEntryPoint_run()@injected script:1161
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerDivideTest.testCase15 null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase15()@injected script:2202
-otj_TestEntryPoint_launchTest()@injected script:1133
-otj_TestEntryPoint_lambda$run$0()@injected script:1137
-$$LAMBDA0$$_launch()@injected script:1615
-ott_SimpleTestRunner_run()@injected script:2725
-otj_TestEntryPoint_run()@injected script:1123
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigIntegerDivideTest.testCase22 null
-undefined
-jl_Throwable_getMessage()@injected script:402
-otcjm_BigIntegerDivideTest_testCase22()@injected script:2219
-otj_TestEntryPoint_launchTest()@injected script:1144
-otj_TestEntryPoint_lambda$run$0()@injected script:1148
-$$LAMBDA0$$_launch()@injected script:1626
-ott_SimpleTestRunner_run()@injected script:2742
-otj_TestEntryPoint_run()@injected script:1134
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalArithmeticTest.testDivideByZero null
-undefined
-jl_Throwable_getMessage()@injected script:451
-otcjm_BigDecimalArithmeticTest_testDivideByZero()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2116
-otj_TestEntryPoint_lambda$run$0()@injected script:2120
-$$LAMBDA0$$_launch()@injected script:2819
-ott_SimpleTestRunner_run()@injected script:4121
-otj_TestEntryPoint_run()@injected script:2106
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalArithmeticTest.testDivideExceptionRM null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalArithmeticTest_testDivideExceptionRM()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2256
-otj_TestEntryPoint_lambda$run$0()@injected script:2260
-$$LAMBDA0$$_launch()@injected script:2994
-ott_SimpleTestRunner_run()@injected script:4191
-otj_TestEntryPoint_run()@injected script:2246
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalArithmeticTest.testDivideExceptionInvalidRM null
-undefined
-jl_Throwable_getMessage()@injected script:473
-otcjm_BigDecimalArithmeticTest_testDivideExceptionInvalidRM()@injected script:922
-otj_TestEntryPoint_launchTest()@injected script:2256
-otj_TestEntryPoint_lambda$run$0()@injected script:2260
-$$LAMBDA0$$_launch()@injected script:2994
-ott_SimpleTestRunner_run()@injected script:4191
-otj_TestEntryPoint_run()@injected script:2246
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalConstructorsTest.testConstrDoubleNaN null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoubleNaN()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalConstructorsTest.testConstrDoublePosInfinity null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoublePosInfinity()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalConstructorsTest.testConstrDoubleNegInfinity null
-undefined
-jl_Throwable_getMessage()@injected script:434
-otcjm_BigDecimalConstructorsTest_testConstrDoubleNegInfinity()@injected script:3192
-otj_TestEntryPoint_launchTest()@injected script:1511
-otj_TestEntryPoint_lambda$run$0()@injected script:1515
-$$LAMBDA0$$_launch()@injected script:2056
-ott_SimpleTestRunner_run()@injected script:3113
-otj_TestEntryPoint_run()@injected script:1501
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  BigDecimalConstructorsTest.testConstrStringExponentIntegerMin null
-undefined
-jl_Throwable_getMessage()@injected script:446
-otcjm_BigDecimalConstructorsTest_testConstrStringExponentIntegerMin()@injected script:3466
-otj_TestEntryPoint_launchTest()@injected script:1701
-otj_TestEntryPoint_lambda$run$0()@injected script:1705
-$$LAMBDA0$$_launch()@injected script:2394
-ott_SimpleTestRunner_run()@injected script:3387
-otj_TestEntryPoint_run()@injected script:1691
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  PatternSyntaxExceptionTest.testCase2 null
-undefined
-jur_PatternSyntaxException_getIndex()@injected script:7928
-otcjur_PatternSyntaxExceptionTest_testCase2()@injected script:4676
-otj_TestEntryPoint_launchTest()@injected script:7941
-otj_TestEntryPoint_lambda$run$0()@injected script:7945
-$$LAMBDA0$$_launch()@injected script:8856
-ott_SimpleTestRunner_run()@injected script:10555
-otj_TestEntryPoint_run()@injected script:7931
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  PatternSyntaxExceptionTest.testCase null
-undefined
-jur_PatternSyntaxException_getIndex()@injected script:7928
-otcjur_PatternSyntaxExceptionTest_testCase()@injected script:4676
-otj_TestEntryPoint_launchTest()@injected script:7941
-otj_TestEntryPoint_lambda$run$0()@injected script:7945
-$$LAMBDA0$$_launch()@injected script:8856
-ott_SimpleTestRunner_run()@injected script:10555
-otj_TestEntryPoint_run()@injected script:7931
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  OutputStreamWriterTest.test_close null
-undefined
-jl_Object_getClass()@injected script:741
-jl_Object_toString()@injected script:744
-jl_AbstractStringBuilder_insert4()@injected script:2189
-jl_StringBuilder_insert5()@injected script:2362
-jl_StringBuilder_insert3()@injected script:2392
-jl_AbstractStringBuilder_append5()@injected script:2183
-jl_StringBuilder_append4()@injected script:2354
-ji_PrintStream_println()@injected script:4467
-otcji_OutputStreamWriterTest_test_close()@injected script:4663
-otj_TestEntryPoint_launchTest()@injected script:3772
-otj_TestEntryPoint_lambda$run$0()@injected script:3776
-$$LAMBDA0$$_launch()@injected script:3853
-ott_SimpleTestRunner_run()@injected script:4531
-otj_TestEntryPoint_run()@injected script:3762
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  VMTest.separatesExceptionAndVariable null
-undefined
-jl_Object_getClass()@injected script:329
-otv_VMTest_separatesExceptionAndVariable()@injected script:1511
-otj_TestEntryPoint_launchTest()@injected script:780
-otj_TestEntryPoint_lambda$run$0()@injected script:784
-$$LAMBDA0$$_launch()@injected script:1182
-ott_SimpleTestRunner_run()@injected script:1730
-otj_TestEntryPoint_run()@injected script:770
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-  VMTest.variableReadInCatchBlock null
-undefined
-jl_Object_getClass()@injected script:329
-otv_VMTest_variableReadInCatchBlock()@injected script:1527
-otj_TestEntryPoint_launchTest()@injected script:780
-otj_TestEntryPoint_lambda$run$0()@injected script:784
-$$LAMBDA0$$_launch()@injected script:1182
-ott_SimpleTestRunner_run()@injected script:1740
-otj_TestEntryPoint_run()@injected script:770
-@injected script:15
-@injected script:502
-@injected script:489
-$rt_startThread()@injected script:531
-main()@injected script:2
-
-
-Tests run: 281, Failures: 31, Errors: 0, Skipped: 0
-
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM slf4j 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-extras-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-extras-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-extras-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-extras-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/180935567/extras-slf4j/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-extras-slf4j ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-extras-slf4j ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] TeaVM .............................................. SUCCESS [  0.005 s]
-[INFO] TeaVM metaprogramming API .......................... SUCCESS [  2.295 s]
-[INFO] TeaVM interop API .................................. SUCCESS [  0.819 s]
-[INFO] TeaVM core ......................................... SUCCESS [  2.407 s]
-[INFO] TeaVM JavaScript objects ........................... SUCCESS [  0.698 s]
-[INFO] TeaVM JavaScript APIs .............................. SUCCESS [  0.057 s]
-[INFO] TeaVM platform ..................................... SUCCESS [  0.030 s]
-[INFO] TeaVM JavaScript objects - implementation .......... SUCCESS [  0.698 s]
-[INFO] TeaVM Java class library ........................... SUCCESS [  5.849 s]
-[INFO] TeaVM html4j support ............................... SUCCESS [  0.121 s]
+[INFO] TeaVM .............................................. SUCCESS [  0.003 s]
+[INFO] TeaVM metaprogramming API .......................... SUCCESS [  1.422 s]
+[INFO] TeaVM interop API .................................. SUCCESS [  0.703 s]
+[INFO] TeaVM core ......................................... SUCCESS [  1.250 s]
+[INFO] TeaVM JavaScript objects ........................... SUCCESS [  0.288 s]
+[INFO] TeaVM JavaScript APIs .............................. SUCCESS [  0.038 s]
+[INFO] TeaVM platform ..................................... SUCCESS [  0.023 s]
+[INFO] TeaVM JavaScript objects - implementation .......... SUCCESS [  0.569 s]
+[INFO] TeaVM Java class library ........................... SUCCESS [  5.694 s]
+[INFO] TeaVM html4j support ............................... SUCCESS [  0.105 s]
 [INFO] TeaVM samples ...................................... SUCCESS [  0.000 s]
-[INFO] TeaVM tooling core ................................. SUCCESS [  0.013 s]
+[INFO] TeaVM tooling core ................................. SUCCESS [  0.019 s]
 [INFO] TeaVM maven ........................................ SUCCESS [  0.000 s]
-[INFO] TeaVM maven plugin ................................. SUCCESS [  1.936 s]
-[INFO] TeaVM Hello world web application .................. SUCCESS [  1.947 s]
-[INFO] TeaVM performance benchmark ........................ SUCCESS [  8.432 s]
-[INFO] TeaVM Web Storage web application .................. SUCCESS [  0.013 s]
-[INFO] TeaVM HTML5 video web application .................. SUCCESS [  1.126 s]
-[INFO] TeaVM CPS demo ..................................... SUCCESS [  1.199 s]
-[INFO] TeaVM Kotlin web application ....................... SUCCESS [  5.018 s]
-[INFO] TeaVM Scala example ................................ SUCCESS [  5.094 s]
-[INFO] TeaVM CLI .......................................... SUCCESS [  0.015 s]
-[INFO] TeaVM maven web application archetype .............. SUCCESS [  0.108 s]
-[INFO] TeaVM debugging backend for Google Chrome RDP ...... SUCCESS [  0.105 s]
-[INFO] teavm-junit ........................................ SUCCESS [  0.093 s]
-[INFO] TeaVM metaprogramming API implementation ........... SUCCESS [  0.023 s]
-[INFO] TeaVM tests ........................................ FAILURE [06:46 min]
-[INFO] TeaVM slf4j ........................................ SKIPPED
+[INFO] TeaVM maven plugin ................................. SUCCESS [  1.884 s]
+[INFO] TeaVM Hello world web application .................. SUCCESS [  2.321 s]
+[INFO] TeaVM performance benchmark ........................ SUCCESS [  9.158 s]
+[INFO] TeaVM Web Storage web application .................. SUCCESS [  0.036 s]
+[INFO] TeaVM HTML5 video web application .................. SUCCESS [  0.980 s]
+[INFO] TeaVM CPS demo ..................................... SUCCESS [  1.125 s]
+[INFO] TeaVM Kotlin web application ....................... SUCCESS [  3.889 s]
+[INFO] TeaVM Scala example ................................ SUCCESS [  3.933 s]
+[INFO] TeaVM CLI .......................................... SUCCESS [  0.009 s]
+[INFO] TeaVM maven web application archetype .............. SUCCESS [  0.084 s]
+[INFO] TeaVM debugging backend for Google Chrome RDP ...... SUCCESS [  0.062 s]
+[INFO] teavm-junit ........................................ SUCCESS [  0.044 s]
+[INFO] TeaVM metaprogramming API implementation ........... SUCCESS [  0.011 s]
+[INFO] TeaVM tests ........................................ SUCCESS [06:06 min]
+[INFO] TeaVM slf4j ........................................ SUCCESS [  0.020 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 07:26 min
-[INFO] Finished at: 2017-05-19T12:33:21+02:00
-[INFO] Final Memory: 84M/2502M
+[INFO] Total time: 06:41 min
+[INFO] Finished at: 2017-05-19T12:46:04+02:00
+[INFO] Final Memory: 85M/2801M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project teavm-tests: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/konsoletyper/teavm/180935567/tests/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :teavm-tests
