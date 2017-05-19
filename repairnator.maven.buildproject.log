@@ -1,0 +1,967 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Asynchronous Http Client Project
+[INFO] Asynchronous Http Client Extras Parent
+[INFO] Netty/Codec/DNS
+[INFO] Netty/Resolver
+[INFO] Netty/Resolver/DNS
+[INFO] Asynchronous Http Client Netty Utils
+[INFO] Asynchronous Http Client
+[INFO] Asynchronous Http Client Extras Parent
+[INFO] Asynchronous Http Client Guava Extras
+[INFO] Asynchronous Http Client JDeferred Extras
+[INFO] Asynchronous Http Client Registry Extras
+[INFO] Asynchronous Http Client RxJava Extras
+[INFO] Asynchronous Http Simple Client
+[INFO] Asynchronous Http Client Example
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Project 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-project ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (2 KB at 2.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 KB at 284.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (4 KB at 68.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 KB at 344.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (2 KB at 25.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (3 KB at 46.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (3 KB at 25.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (4 KB at 52.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom (3 KB at 38.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (3 KB at 34.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (4 KB at 48.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (2 KB at 32.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (2 KB at 33.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 KB at 206.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2 KB at 34.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (2 KB at 34.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (8 KB at 143.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3 KB at 53.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (3 KB at 37.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 32.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 25.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2 KB at 35.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 269.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 27.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (2 KB at 30.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom (8 KB at 144.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 KB at 422.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (3 KB at 38.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (2 KB at 20.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 50.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 122.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 143.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (3 KB at 38.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.pom (11 KB at 193.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.4.1/enforcer-api-1.4.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.4.1/enforcer-api-1.4.1.pom (3 KB at 51.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.4.1/enforcer-rules-1.4.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.4.1/enforcer-rules-1.4.1.pom (4 KB at 62.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom (8 KB at 128.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom (5 KB at 89.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom (771 B at 13.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom (3 KB at 33.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (8 KB at 122.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing-harness/1.3/maven-plugin-testing-harness-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing-harness/1.3/maven-plugin-testing-harness-1.3.pom (4 KB at 62.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing/1.3/maven-plugin-testing-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing/1.3/maven-plugin-testing-1.3.pom (10 KB at 166.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.pom (4 KB at 58.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom (3 KB at 54.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom (19 KB at 324.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.pom (2 KB at 30.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (3 KB at 46.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 KB at 330.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar (79 KB at 933.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar (13 KB at 79.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar (48 KB at 285.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar (35 KB at 195.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar (66 KB at 301.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar (153 KB at 660.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar (86 KB at 371.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar (30 KB at 107.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (50 KB at 178.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar (324 KB at 1109.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar (22 KB at 74.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (9 KB at 26.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 KB at 65.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 KB at 46.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar (10 KB at 26.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar (174 KB at 474.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar (13 KB at 32.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (12 KB at 28.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar (26 KB at 60.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar (13 KB at 30.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar (41 KB at 93.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar (39 KB at 86.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar (11 KB at 22.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.4.1/enforcer-api-1.4.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 60.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.4.1/enforcer-rules-1.4.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (14 KB at 28.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.4.1/enforcer-api-1.4.1.jar (12 KB at 21.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.jar (240 KB at 455.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.4.1/enforcer-rules-1.4.1.jar (97 KB at 183.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing-harness/1.3/maven-plugin-testing-harness-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar (240 KB at 415.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar (276 KB at 478.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar (12 KB at 20.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-testing/maven-plugin-testing-harness/1.3/maven-plugin-testing-harness-1.3.jar (35 KB at 59.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar (63 KB at 106.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar (57 KB at 90.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar (181 KB at 283.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.jar (240 KB at 338.0 KB/sec)
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-project ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (5 KB at 79.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (7 KB at 95.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (2 KB at 35.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (2 KB at 28.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2 KB at 31.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (2 KB at 22.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (3 KB at 49.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 72.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (2 KB at 28.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1018 B at 18.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.6.3/plexus-archiver-2.6.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.6.3/plexus-archiver-2.6.3.pom (4 KB at 59.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom (4 KB at 58.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.1.3/plexus-io-2.1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.1.3/plexus-io-2.1.3.pom (3 KB at 39.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom (12 KB at 195.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/33/commons-parent-33.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/33/commons-parent-33.pom (52 KB at 751.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 KB at 295.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (6 KB at 96.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (10 KB at 154.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (149 KB at 1898.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.6.3/plexus-archiver-2.6.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 KB at 253.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.1.3/plexus-io-2.1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 KB at 117.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (11 KB at 85.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 KB at 281.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.6.3/plexus-archiver-2.6.3.jar (129 KB at 971.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.1.3/plexus-io-2.1.3.jar (65 KB at 398.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.jar (238 KB at 1255.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar (357 KB at 1352.2 KB/sec)
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-project ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom (3 KB at 43.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (2 KB at 17.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5 KB at 86.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 KB at 386.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 KB at 159.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 KB at 435.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (48 KB at 564.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (114 KB at 1169.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 KB at 177.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (85 KB at 615.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (56 KB at 399.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (86 KB at 504.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 KB at 60.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar (226 KB at 1087.2 KB/sec)
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-project/2.0.26-SNAPSHOT/async-http-client-project-2.0.26-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Extras Parent 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ netty-bp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ netty-bp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ netty-bp ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ netty-bp ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-bp/2.0.26-SNAPSHOT/netty-bp-2.0.26-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Netty/Codec/DNS 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ netty-codec-dns ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ netty-codec-dns ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ netty-codec-dns ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (6 KB at 85.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (4 KB at 56.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.pom (7 KB at 107.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.pom (4 KB at 67.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (5 KB at 87.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 13.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 16.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (3 KB at 49.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3 KB at 49.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5 KB at 91.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom (2 KB at 18.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3 KB at 50.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (7 KB at 110.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 KB at 510.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar (44 KB at 643.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (234 KB at 2287.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar (152 KB at 1354.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar (61 KB at 439.8 KB/sec)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ netty-codec-dns ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom (4 KB at 57.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom (5 KB at 80.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (5 KB at 85.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4 KB at 64.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.pom (865 B at 12.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.5/plexus-compiler-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.5/plexus-compiler-2.5.pom (6 KB at 94.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.pom (690 B at 11.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.pom (769 B at 14.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.5/plexus-compilers-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.5/plexus-compilers-2.5.pom (2 KB at 22.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.5/plexus-compiler-api-2.5.jar (25 KB at 419.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar (37 KB at 432.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 KB at 157.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar (223 KB at 2395.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.5/plexus-compiler-manager-2.5.jar (5 KB at 39.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar (167 KB at 1361.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.5/plexus-compiler-javac-2.5.jar (19 KB at 136.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar (46 KB at 283.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar (131 KB at 710.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar (212 KB at 1143.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar (44 KB at 226.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.jar (350 KB at 1731.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar (118 KB at 453.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.jar (625 KB at 1626.6 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/classes
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/main/java/io/netty/handler/codec/dns/AbstractDnsMessage.java: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/main/java/io/netty/handler/codec/dns/AbstractDnsMessage.java uses or overrides a deprecated API.
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/main/java/io/netty/handler/codec/dns/AbstractDnsMessage.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ netty-codec-dns ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ netty-codec-dns ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/test-classes
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/test/java/io/netty/handler/codec/dns/DnsResponseTest.java: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/test/java/io/netty/handler/codec/dns/DnsResponseTest.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/src/test/java/io/netty/handler/codec/dns/DnsResponseTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ netty-codec-dns ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.18.1/maven-surefire-common-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.18.1/maven-surefire-common-2.18.1.pom (7 KB at 102.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (2 KB at 29.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 KB at 205.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.18.1/surefire-api-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.18.1/surefire-api-2.18.1.pom (3 KB at 39.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.pom (3 KB at 52.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 255.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (41 KB at 649.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.18.1/maven-surefire-common-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.18.1/surefire-api-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 KB at 244.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar (39 KB at 608.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.18.1/surefire-api-2.18.1.jar (145 KB at 2035.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 3586.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.18.1/maven-surefire-common-2.18.1.jar (269 KB at 2290.6 KB/sec)
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ netty-codec-dns ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.pom (5 KB at 78.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.8.1/plexus-archiver-2.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.8.1/plexus-archiver-2.8.1.pom (5 KB at 75.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom (4 KB at 67.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.3.2/plexus-io-2.3.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.3.2/plexus-io-2.3.2.pom (3 KB at 47.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom (12 KB at 199.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom (55 KB at 840.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (2 KB at 25.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.pom (5 KB at 74.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.pom (4 KB at 65.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.jar (23 KB at 306.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.jar (80 KB at 878.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.jar (142 KB at 1109.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar (238 KB at 1660.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar (170 KB at 1052.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar (370 KB at 1454.1 KB/sec)
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/netty-codec-dns-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ netty-codec-dns ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/netty-codec-dns-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ netty-codec-dns ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/netty-codec-dns-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-codec-dns/2.0.26-SNAPSHOT/netty-codec-dns-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-codec-dns/2.0.26-SNAPSHOT/netty-codec-dns-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/codec-dns/target/netty-codec-dns-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-codec-dns/2.0.26-SNAPSHOT/netty-codec-dns-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Netty/Resolver 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ netty-resolver ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ netty-resolver ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ netty-resolver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ netty-resolver ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/classes
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/src/main/java/io/netty/resolver/CompositeNameResolver.java: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/src/main/java/io/netty/resolver/CompositeNameResolver.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/src/main/java/io/netty/resolver/CompositeNameResolver.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ netty-resolver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ netty-resolver ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ netty-resolver ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ netty-resolver ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/netty-resolver-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ netty-resolver ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/netty-resolver-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ netty-resolver ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/netty-resolver-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver/2.0.26-SNAPSHOT/netty-resolver-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver/2.0.26-SNAPSHOT/netty-resolver-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver/target/netty-resolver-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver/2.0.26-SNAPSHOT/netty-resolver-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Netty/Resolver/DNS 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ netty-resolver-dns ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ netty-resolver-dns ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ netty-resolver-dns ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ netty-resolver-dns ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/classes
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/src/main/java/io/netty/resolver/dns/DnsNameResolver.java: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/src/main/java/io/netty/resolver/dns/DnsNameResolver.java uses or overrides a deprecated API.
+[INFO] /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/src/main/java/io/netty/resolver/dns/DnsNameResolver.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ netty-resolver-dns ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ netty-resolver-dns ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ netty-resolver-dns ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ netty-resolver-dns ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/netty-resolver-dns-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ netty-resolver-dns ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/netty-resolver-dns-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ netty-resolver-dns ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/netty-resolver-dns-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver-dns/2.0.26-SNAPSHOT/netty-resolver-dns-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver-dns/2.0.26-SNAPSHOT/netty-resolver-dns-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-bp/resolver-dns/target/netty-resolver-dns-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/netty-resolver-dns/2.0.26-SNAPSHOT/netty-resolver-dns-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Netty Utils 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-netty-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-netty-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-netty-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-netty-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-netty-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-netty-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-netty-utils ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-netty-utils ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/async-http-client-netty-utils-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-netty-utils ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/async-http-client-netty-utils-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-netty-utils ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/async-http-client-netty-utils-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-netty-utils/2.0.26-SNAPSHOT/async-http-client-netty-utils-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-netty-utils/2.0.26-SNAPSHOT/async-http-client-netty-utils-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/netty-utils/target/async-http-client-netty-utils-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-netty-utils/2.0.26-SNAPSHOT/async-http-client-netty-utils-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.43.Final/netty-codec-http-4.0.43.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.43.Final/netty-codec-http-4.0.43.Final.pom (2 KB at 12.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.43.Final/netty-handler-4.0.43.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.43.Final/netty-handler-4.0.43.Final.pom (3 KB at 39.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.43.Final/netty-transport-native-epoll-4.0.43.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.43.Final/netty-transport-native-epoll-4.0.43.Final.pom (9 KB at 148.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8.pom (2 KB at 19.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams-parent/1.0.8/netty-reactive-streams-parent-1.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams-parent/1.0.8/netty-reactive-streams-parent-1.0.8.pom (8 KB at 124.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom (10 KB at 168.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.43.Final/netty-codec-http-4.0.43.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.43.Final/netty-transport-native-epoll-4.0.43.Final-linux-x86_64.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.43.Final/netty-handler-4.0.43.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8.jar (21 KB at 288.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.43.Final/netty-handler-4.0.43.Final.jar (310 KB at 3596.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar (718 KB at 4881.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.43.Final/netty-transport-native-epoll-4.0.43.Final-linux-x86_64.jar (148 KB at 989.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.43.Final/netty-codec-http-4.0.43.Final.jar (448 KB at 1928.3 KB/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 194 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 99 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:test-jar (default) @ async-http-client ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client/2.0.26-SNAPSHOT/async-http-client-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/client/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client/2.0.26-SNAPSHOT/async-http-client-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT-tests.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client/2.0.26-SNAPSHOT/async-http-client-2.0.26-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/client/target/async-http-client-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client/2.0.26-SNAPSHOT/async-http-client-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Extras Parent 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-parent ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-parent/2.0.26-SNAPSHOT/async-http-client-extras-parent-2.0.26-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Guava Extras 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom (6 KB at 92.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom (3 KB at 43.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar (2138 KB at 7222.3 KB/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-extras-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-extras-guava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-extras-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-extras-guava ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-extras-guava ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-extras-guava ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/target/async-http-client-extras-guava-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-guava ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/target/async-http-client-extras-guava-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-guava ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/target/async-http-client-extras-guava-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-guava/2.0.26-SNAPSHOT/async-http-client-extras-guava-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-guava/2.0.26-SNAPSHOT/async-http-client-extras-guava-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/guava/target/async-http-client-extras-guava-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-guava/2.0.26-SNAPSHOT/async-http-client-extras-guava-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client JDeferred Extras 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-core/1.2.4/jdeferred-core-1.2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-core/1.2.4/jdeferred-core-1.2.4.pom (2 KB at 27.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-parent/1.2.4/jdeferred-parent-1.2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-parent/1.2.4/jdeferred-parent-1.2.4.pom (9 KB at 153.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom (3 KB at 48.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom (12 KB at 209.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-core/1.2.4/jdeferred-core-1.2.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jdeferred/jdeferred-core/1.2.4/jdeferred-core-1.2.4.jar (44 KB at 636.0 KB/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-jdeferred ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-jdeferred ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-extras-jdeferred ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-extras-jdeferred ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-extras-jdeferred ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-extras-jdeferred ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-extras-jdeferred ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-extras-jdeferred ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-jdeferred ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-jdeferred ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-jdeferred/2.0.26-SNAPSHOT/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-jdeferred/2.0.26-SNAPSHOT/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/jdeferred/target/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-jdeferred/2.0.26-SNAPSHOT/async-http-client-extras-jdeferred-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Registry Extras 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-registry ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-registry ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-extras-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-extras-registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-extras-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-extras-registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-extras-registry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-extras-registry ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/async-http-client-extras-registry-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-registry ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/async-http-client-extras-registry-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-registry ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/async-http-client-extras-registry-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-registry/2.0.26-SNAPSHOT/async-http-client-extras-registry-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-registry/2.0.26-SNAPSHOT/async-http-client-extras-registry-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/registry/target/async-http-client-extras-registry-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-registry/2.0.26-SNAPSHOT/async-http-client-extras-registry-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client RxJava Extras 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.1/rxjava-1.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.1/rxjava-1.2.1.pom (3 KB at 42.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.1/rxjava-1.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.1/rxjava-1.2.1.jar (1126 KB at 7122.1 KB/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-extras-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-extras-rxjava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-extras-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-extras-rxjava ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-extras-rxjava ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-extras-rxjava ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/async-http-client-extras-rxjava-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-rxjava ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/async-http-client-extras-rxjava-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-rxjava ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/async-http-client-extras-rxjava-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-rxjava/2.0.26-SNAPSHOT/async-http-client-extras-rxjava-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-rxjava/2.0.26-SNAPSHOT/async-http-client-extras-rxjava-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/rxjava/target/async-http-client-extras-rxjava-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-rxjava/2.0.26-SNAPSHOT/async-http-client-extras-rxjava-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Simple Client 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-extras-simple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-extras-simple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-extras-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-extras-simple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-extras-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-extras-simple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-extras-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-extras-simple ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/async-http-client-extras-simple-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-extras-simple ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/async-http-client-extras-simple-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-extras-simple ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/async-http-client-extras-simple-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-simple/2.0.26-SNAPSHOT/async-http-client-extras-simple-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-simple/2.0.26-SNAPSHOT/async-http-client-extras-simple-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/extras/simple/target/async-http-client-extras-simple-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-extras-simple/2.0.26-SNAPSHOT/async-http-client-extras-simple-2.0.26-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asynchronous Http Client Example 2.0.26-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ async-http-client-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ async-http-client-example ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ async-http-client-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/example/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ async-http-client-example ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/AsyncHttpClient/async-http-client/191432233/example/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ async-http-client-example ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/AsyncHttpClient/async-http-client/191432233/example/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ async-http-client-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ async-http-client-example ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ async-http-client-example ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/example/target/async-http-client-example-2.0.26-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar-no-fork (attach-sources) @ async-http-client-example ---
+[INFO] Building jar: /root/workspace/AsyncHttpClient/async-http-client/191432233/example/target/async-http-client-example-2.0.26-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ async-http-client-example ---
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/example/target/async-http-client-example-2.0.26-SNAPSHOT.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-example/2.0.26-SNAPSHOT/async-http-client-example-2.0.26-SNAPSHOT.jar
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/example/pom.xml to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-example/2.0.26-SNAPSHOT/async-http-client-example-2.0.26-SNAPSHOT.pom
+[INFO] Installing /root/workspace/AsyncHttpClient/async-http-client/191432233/example/target/async-http-client-example-2.0.26-SNAPSHOT-sources.jar to /root/./workspace/AsyncHttpClient/async-http-client/191432233/.m2/org/asynchttpclient/async-http-client-example/2.0.26-SNAPSHOT/async-http-client-example-2.0.26-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Asynchronous Http Client Project ................... SUCCESS [  7.173 s]
+[INFO] Asynchronous Http Client Extras Parent ............. SUCCESS [  0.147 s]
+[INFO] Netty/Codec/DNS .................................... SUCCESS [  6.409 s]
+[INFO] Netty/Resolver ..................................... SUCCESS [  0.553 s]
+[INFO] Netty/Resolver/DNS ................................. SUCCESS [  1.322 s]
+[INFO] Asynchronous Http Client Netty Utils ............... SUCCESS [  0.152 s]
+[INFO] Asynchronous Http Client ........................... SUCCESS [  5.217 s]
+[INFO] Asynchronous Http Client Extras Parent ............. SUCCESS [  0.019 s]
+[INFO] Asynchronous Http Client Guava Extras .............. SUCCESS [  0.504 s]
+[INFO] Asynchronous Http Client JDeferred Extras .......... SUCCESS [  0.541 s]
+[INFO] Asynchronous Http Client Registry Extras ........... SUCCESS [  0.230 s]
+[INFO] Asynchronous Http Client RxJava Extras ............. SUCCESS [  0.690 s]
+[INFO] Asynchronous Http Simple Client .................... SUCCESS [  0.164 s]
+[INFO] Asynchronous Http Client Example ................... SUCCESS [  0.071 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 23.728 s
+[INFO] Finished at: 2017-05-19T15:08:33+02:00
+[INFO] Final Memory: 49M/1398M
+[INFO] ------------------------------------------------------------------------
