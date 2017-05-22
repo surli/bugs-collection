@@ -1,0 +1,131 @@
+<style type="text/css">
+/*
+   Note: percent signs must be be masked by duplication (%%) as this template
+   is interpreted by the java template formatter.
+ */
+
+#tailborder {
+    border: 1px solid #bfbfbf;
+}
+
+#tailwrapper {
+    margin: 5px;
+    position:relative;
+}
+
+.tail {
+    font-family: monospace;
+    max-height: 60em;
+    width: 100%%;
+    overflow-y: scroll;
+    font-size: 9pt;
+    white-space: pre;
+    line-height: 1.35em;
+    color: black;
+    background-color: white;
+}
+
+.tail div {
+    margin-bottom:2px;
+}
+
+.ui-menu .ui-menu {
+    z-index: 1;
+}
+
+#focusedView {
+    position: absolute;
+    z-index: -1;
+    top:0;
+}
+
+#focusedView .error {
+    border-left: none;
+}
+
+#amount, #unit {
+    height: 2em;
+}
+
+#amount {
+    width: 4em;
+    text-align: center;
+}
+
+#downloadButton {
+    margin: 0 10px;
+}
+
+#neba-heading {
+    background-color: #f0f0f0;
+    padding:10px;
+    font-size:140%%;
+    margin:1em 0;
+}
+
+#neba-heading a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dashed #000000;
+}
+
+#neba-heading a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+form .buttonGroup {
+    text-align: left;
+}
+
+form .buttonGroup button {
+    padding: 5px;
+}
+
+#showOptions input, #dropdownSettings input {
+    vertical-align: text-bottom;
+}
+
+#dropdownSettings {
+    margin-right: 5px;
+}
+
+#focusOnErrors {
+    display: none;
+}
+
+#numberOfDetectedErrors, .error {
+    color: #883B26;
+    font-weight: bold;
+}
+
+.error {
+    padding: 0.5em;
+    border-left: .2em solid #B23B26;
+}
+</style>
+
+<div id="neba-heading">
+    View the logfiles configured in the
+    <a href="configMgr" title="Open the OSGi configuration console.">OSGi configuration</a>.
+</div>
+
+<!-- buttons top -->
+<form method="GET" enctype="multipart/form-data" action="#">
+    <div class="ui-widget-header ui-corner-top buttonGroup">
+        <button type="button" id="downloadButton" title="Stream all logfiles as a ZIP file, including rotated version.">Download all</button>
+
+        <label for="amount">Tail</label>
+        <input id="amount" value="0.1" type="number" min="0" step="0.1" title="Tail this amount of megabytes of the selected log file"/>
+        <label for="logfile">MB of</label>
+        <select id="logfile">
+            <option value="">Please select</option>
+            %s
+        </select>
+        <span id="dropdownSettings">
+            <input type="checkbox" name="hideRotated" id="hideRotated" checked="checked"/>
+            <label for="hideRotated" title="Hide rotated log file versions in the dropdown"> hide rotated</label>
+        </span>
+        <button id="followButton" title="Automatically scroll to the bottom of the logfile">Follow</button>
+        <button id="focusOnErrors" title="Only show detected errors">Focus on <span id="numberOfDetectedErrors"></span> error(s)</button>
+    </div>
+</form>

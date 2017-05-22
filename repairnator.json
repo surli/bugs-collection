@@ -1,0 +1,187 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 6,
+  "repo": "unic/neba",
+  "bugCommit": "https://github.com/unic/neba/compare/1a22884c6837...4bbb52334d10",
+  "failingModule": "/root/workspace/unic/neba/193667755/core",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 9,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.Exception"
+  ],
+  "totalNumberRunningTests": 561,
+  "failing-test-cases": [
+    {
+      "className": "io.neba.core.resourcemodels.mapping.MappingTest",
+      "failingMethods": [
+        "io.neba.core.resourcemodels.mapping.MappingTest#testMappingConstructorRequiresNonNullMetaData",
+        "io.neba.core.resourcemodels.mapping.MappingTest#testMappingConstructorRequiresNonNullResourcePath"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.neba.core.logviewer.TailSocketTest",
+      "failingMethods": [
+        "io.neba.core.logviewer.TailSocketTest#testConstructorRequiresNonNullLogFiles"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.neba.core.mvc.MvcServletTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "io.neba.core.mvc.MvcServletTest#testDisableMvcRequiresNonNullBundle",
+        "io.neba.core.mvc.MvcServletTest#testEnableMvcRequiresNonNullContext"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "io.neba.core.mvc.NebaViewResolverTest",
+      "failingMethods": [
+        "io.neba.core.mvc.NebaViewResolverTest#testConstructorRequiresNonNullServletResolver"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.neba.core.resourcemodels.registration.LookupResultTest",
+      "failingMethods": [
+        "io.neba.core.resourcemodels.registration.LookupResultTest#testConstructorArgumentResourceTypeMustNotBeNull",
+        "io.neba.core.resourcemodels.registration.LookupResultTest#testConstructorArgumentSourceMustNotBeNull"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.neba.core.resourcemodels.mapping.ModelProcessorTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "io.neba.core.resourcemodels.mapping.ModelProcessorTest#testProcessBeforeMappingRequiresNonNullMetaData",
+        "io.neba.core.resourcemodels.mapping.ModelProcessorTest#testProcessAfterMappingRequiresNonNullMetaData",
+        "io.neba.core.resourcemodels.mapping.ModelProcessorTest#testProcessAfterMappingRequiresNonNullModel",
+        "io.neba.core.resourcemodels.mapping.ModelProcessorTest#testProcessBeforeMappingRequiresNonNullModel"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.IllegalArgumentException\u003e but was\u003cjava.lang.NullPointerException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "io.neba.core.mvc.SlingServletViewTest",
+      "failingMethods": [
+        "io.neba.core.mvc.SlingServletViewTest#testContstructorRequireNonNullResourceType",
+        "io.neba.core.mvc.SlingServletViewTest#testContstructorRequireNonNullServlet"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.neba.core.mvc.BundleSpecificDispatcherServletTest",
+      "failingMethods": [
+        "io.neba.core.mvc.BundleSpecificDispatcherServletTest#testHasHandlerForRequiresNonNullRequest"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
