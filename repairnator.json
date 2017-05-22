@@ -1,0 +1,45 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/dfd864f17571...55f0f3e95e5e",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/195240432",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.StackOverflowError:",
+    "junit.framework.AssertionFailedError",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 1686,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+      "failingMethods": [
+        "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest#testIssue1501"
+      ],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest#testIssue1503",
+        "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest#testIssue1502"
+      ],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Should not pass",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.StackOverflowError:",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 2
+    }
+  ]
+}
