@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/2bb770bcd4cb...4d34006e4d8a",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/195752461",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 1692,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.deser.EnumDeserializationTest",
+      "failingMethods": [
+        "com.fasterxml.jackson.databind.deser.EnumDeserializationTest#testNumbersToEnums"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Expected an exception with one of substrings ([value not one of declared Enum]): got one with message \"Can not deserialize value of type com.fasterxml.jackson.databind.deser.EnumDeserializationTest$TestEnum from number 1: not allowed to deserialize Enum value out of number: disable DeserializationConfig.DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS to allow\n at [Source: \"1\"; line: 1, column: 1]\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.fasterxml.jackson.databind.deser.EnumDefaultReadTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.deser.EnumDefaultReadTest#testWithFailOnNumbersAndReadUnknownAsDefault"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException",
+          "failureDetail": "Can not deserialize value of type com.fasterxml.jackson.databind.deser.EnumDefaultReadTest$SimpleEnumWithDefault from number 0: not allowed to deserialize Enum value out of number: disable DeserializationConfig.DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS to allow\n at [Source: \"0\"; line: 1, column: 1]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
