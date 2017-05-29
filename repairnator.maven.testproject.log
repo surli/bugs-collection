@@ -1,0 +1,137 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HikariCP 2.5.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ HikariCP ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (pre-unit-test) @ HikariCP ---
+[INFO] surefireArgLine set to -javaagent:/root/./workspace/brettwooldridge/HikariCP/190019797/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/brettwooldridge/HikariCP/190019797/target/coverage-reports/jacoco.exec,excludes=**/com/zaxxer/hikari/pool/HikariProxy*:**/com/zaxxer/hikari/metrics/**
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ HikariCP ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/brettwooldridge/HikariCP/190019797/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ HikariCP ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec-maven-plugin:1.5.0:java (default) @ HikariCP ---
+Generating com.zaxxer.hikari.pool.HikariProxyConnection
+Generating com.zaxxer.hikari.pool.HikariProxyStatement
+Generating com.zaxxer.hikari.pool.HikariProxyResultSet
+Generating com.zaxxer.hikari.pool.HikariProxyPreparedStatement
+Generating com.zaxxer.hikari.pool.HikariProxyCallableStatement
+Generating method bodies for com.zaxxer.hikari.proxy.ProxyFactory
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.2.0:manifest (default) @ HikariCP ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ HikariCP ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ HikariCP ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ HikariCP ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 35.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 566.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.zaxxer.hikari.metrics.prometheus.HikariCPCollectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.445 sec - in com.zaxxer.hikari.metrics.prometheus.HikariCPCollectorTest
+Running com.zaxxer.hikari.metrics.prometheus.PrometheusMetricsTrackerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.328 sec - in com.zaxxer.hikari.metrics.prometheus.PrometheusMetricsTrackerTest
+Running com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTrackerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.51 sec - in com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTrackerTest
+Running com.zaxxer.hikari.osgi.OSGiBundleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.122 sec - in com.zaxxer.hikari.osgi.OSGiBundleTest
+Running com.zaxxer.hikari.util.ClockSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in com.zaxxer.hikari.util.ClockSourceTest
+Running com.zaxxer.hikari.util.TomcatConcurrentBagLeakTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 sec - in com.zaxxer.hikari.util.TomcatConcurrentBagLeakTest
+Running com.zaxxer.hikari.db.BasicPoolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.938 sec - in com.zaxxer.hikari.db.BasicPoolTest
+Running com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.233 sec <<< FAILURE! - in com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest
+testSlowConnectionTimeBurstyWork(com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest)  Time elapsed: 3.999 sec  <<< FAILURE!
+java.lang.AssertionError: Task failed
+	at com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest.testPoolSize(ConnectionPoolSizeVsThreadsTest.java:161)
+	at com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest.testSlowConnectionTimeBurstyWork(ConnectionPoolSizeVsThreadsTest.java:77)
+
+Running com.zaxxer.hikari.pool.UnwrapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.237 sec - in com.zaxxer.hikari.pool.UnwrapTest
+Running com.zaxxer.hikari.pool.TestConnections
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.34 sec - in com.zaxxer.hikari.pool.TestConnections
+Running com.zaxxer.hikari.pool.TestPropertySetter
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.226 sec - in com.zaxxer.hikari.pool.TestPropertySetter
+Running com.zaxxer.hikari.pool.StatementTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.042 sec - in com.zaxxer.hikari.pool.StatementTest
+Running com.zaxxer.hikari.pool.IsolationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.898 sec - in com.zaxxer.hikari.pool.IsolationTest
+Running com.zaxxer.hikari.pool.TestJNDI
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.005 sec - in com.zaxxer.hikari.pool.TestJNDI
+Running com.zaxxer.hikari.pool.TestHibernate
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.551 sec - in com.zaxxer.hikari.pool.TestHibernate
+Running com.zaxxer.hikari.pool.ConcurrentCloseConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.717 sec - in com.zaxxer.hikari.pool.ConcurrentCloseConnectionTest
+Running com.zaxxer.hikari.pool.TestFastList
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec - in com.zaxxer.hikari.pool.TestFastList
+Running com.zaxxer.hikari.pool.ExceptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.149 sec - in com.zaxxer.hikari.pool.ExceptionTest
+Running com.zaxxer.hikari.pool.MiscTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.624 sec - in com.zaxxer.hikari.pool.MiscTest
+Running com.zaxxer.hikari.pool.TestValidation
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.99 sec - in com.zaxxer.hikari.pool.TestValidation
+Running com.zaxxer.hikari.pool.ShutdownTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.016 sec - in com.zaxxer.hikari.pool.ShutdownTest
+Running com.zaxxer.hikari.pool.HouseKeeperCleanupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.572 sec - in com.zaxxer.hikari.pool.HouseKeeperCleanupTest
+Running com.zaxxer.hikari.pool.TestConnectionTimeoutRetry
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.943 sec - in com.zaxxer.hikari.pool.TestConnectionTimeoutRetry
+Running com.zaxxer.hikari.pool.JdbcDriverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.887 sec - in com.zaxxer.hikari.pool.JdbcDriverTest
+Running com.zaxxer.hikari.pool.ConnectionStateTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.839 sec - in com.zaxxer.hikari.pool.ConnectionStateTest
+Running com.zaxxer.hikari.pool.TestConcurrentBag
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.685 sec - in com.zaxxer.hikari.pool.TestConcurrentBag
+Running com.zaxxer.hikari.pool.TestProxies
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.439 sec - in com.zaxxer.hikari.pool.TestProxies
+Running com.zaxxer.hikari.pool.TestMBean
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.884 sec - in com.zaxxer.hikari.pool.TestMBean
+Running com.zaxxer.hikari.pool.ConnectionRaceConditionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.718 sec - in com.zaxxer.hikari.pool.ConnectionRaceConditionTest
+Running com.zaxxer.hikari.pool.TestMetrics
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.578 sec - in com.zaxxer.hikari.pool.TestMetrics
+
+Results :
+
+Failed tests: 
+  ConnectionPoolSizeVsThreadsTest.testSlowConnectionTimeBurstyWork:77->testPoolSize:161 Task failed
+
+Tests run: 114, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:18 min
+[INFO] Finished at: 2017-05-29T14:56:06+02:00
+[INFO] Final Memory: 44M/1278M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project HikariCP: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/brettwooldridge/HikariCP/190019797/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
