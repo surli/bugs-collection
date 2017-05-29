@@ -143,8 +143,8 @@ public class ConcurrentBag<T extends IConcurrentBagEntry> implements AutoCloseab
          listener.addBagItem();
 
          timeout = timeUnit.toNanos(timeout);
-         final long start = ClockSource.INSTANCE.currentTime();
          do {
+            final long start = ClockSource.INSTANCE.currentTime();
             T bagEntry = handoffQueue.poll(timeout, NANOSECONDS);
             if (bagEntry == null || bagEntry.compareAndSet(STATE_NOT_IN_USE, STATE_IN_USE)) {
                return bagEntry;
