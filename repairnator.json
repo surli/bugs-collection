@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 15,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/599706489a6a...4994d8528d85",
+  "failingModule": "/root/workspace/google/error-prone/229255500/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2172,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.ErrorProneJavacPluginTest",
+      "failingMethods": [
+        "com.google.errorprone.ErrorProneJavacPluginTest#applyFixes"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Not true that \u003c[class A implements Runnable {,   @Override @Override public void run() {}, }]\u003e contains exactly \u003c[class A implements Runnable {,   @Override public void run() {}, }]\u003e. It is missing \u003c[  @Override public void run() {}]\u003e and has unexpected items \u003c[  @Override @Override public void run() {}]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
