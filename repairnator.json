@@ -1,0 +1,37 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "HubSpot/Singularity",
+  "bugCommit": "https://github.com/HubSpot/Singularity/compare/62af91cd0bd7...6f9e18b0c5d6",
+  "failingModule": "/root/workspace/HubSpot/Singularity/227710496/SingularityService",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 220,
+  "failing-test-cases": [
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityDeploysTest",
+      "failingMethods": [
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testUnpauseOnDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testScaleDownDuringDeploy"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
