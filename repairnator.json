@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/bd8e38d406ff...672d403c28f6",
+  "failingModule": "/root/workspace/square/retrofit/227974117/retrofit-adapters/rxjava",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 344,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.rxjava.ObservableTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava.ObservableTest#responseUnsubscribedDoesNotCallCompleted"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "[Unconsumed events found!]  Expecting empty but was:\u003c[[rx.Notification@6e6c3152 OnCompleted]]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
