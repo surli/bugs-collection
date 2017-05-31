@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 18,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/f555de8bf6a0...5ca4191adc70",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/227447484/languagetool-standalone",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 797,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.WordListValidatorTest",
+      "failingMethods": [
+        "org.languagetool.rules.WordListValidatorTest#testWordListValidity"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Word \u0027Dvořák/S\u0027 from de/hunspell/spelling.txt doesn\u0027t match regex: [0-9a-zA-ZöäüÖÄÜßëçèéêáàóòôÈÉÁÀÓÒãñíîşŒ€ūαΑβΒγΓδΔεΕζΖηΗθΘιΙκΚλΛμΜνΝξΞοΟπΠρΡσΣτΤυΥφΦχΧψΨωΩάΆέΈίΊήΉύΎϊϋΰΐœţŚśōżúï·./-]+ - please fix the word or add the character to org.languagetool.rules.WordListValidatorTest if it\u0027s valid",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
