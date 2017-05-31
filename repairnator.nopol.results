@@ -1,0 +1,21 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest', failingMethods=[com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest#testStringConcat], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Saw unexpected error on line 4. All errors:
+[/Test.java:4: warning: [NarrowingCompoundAssignment] Compound assignments from char to String hide lossy casts
+    a += (char) 0;
+      ^
+    (see http://errorprone.info/bugpattern/NarrowingCompoundAssignment)
+  Did you mean 'a = (java.lang.String) (a + (char) 0);'?]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Wed May 31 10:23:53 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/228489663/check_api/src/main/java, /root/./workspace/google/error-prone/228489663/check_api/src/main/java, ./workspace/google/error-prone/228489663/test_helpers/src/main/java, /root/./workspace/google/error-prone/228489663/test_helpers/src/main/java, ./workspace/google/error-prone/228489663/core/src/main/java, /root/./workspace/google/error-prone/228489663/core/src/main/java, ./workspace/google/error-prone/228489663/annotation/src/main/java, /root/./workspace/google/error-prone/228489663/annotation/src/main/java, ./workspace/google/error-prone/228489663/annotations/src/main/java, /root/./workspace/google/error-prone/228489663/annotations/src/main/java, ./workspace/google/error-prone/228489663/docgen/src/main/java, /root/./workspace/google/error-prone/228489663/docgen/src/main/java, ./workspace/google/error-prone/228489663/docgen_processor/src/main/java, /root/./workspace/google/error-prone/228489663/docgen_processor/src/main/java, ./workspace/google/error-prone/228489663/ant/src/main/java, /root/./workspace/google/error-prone/228489663/ant/src/main/java, ./workspace/google/error-prone/228489663/refaster/src/main/java, /root/./workspace/google/error-prone/228489663/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@159e366', projectTests=[com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
