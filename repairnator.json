@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 13,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/194c3b7cf86f...3300b32d2c8b",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/228783406/languagetool-language-modules/de",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 396,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.de.AgreementRuleTest",
+      "failingMethods": [
+        "org.languagetool.rules.de.AgreementRuleTest#testDetNounRule"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Found unexpected match in sentence \u0027Die Polizei erwischte die Diebin, weil diese Ausweis und Visitenkarte hinterließ.\u0027: [DE_AGREEMENT:39-52:Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus (männlich, weiblich, sächlich - Beispiel: \u0027der Fahrrad\u0027 statt \u0027das Fahrrad\u0027) und Numerus (Einzahl, Mehrzahl - Beispiel: \u0027das Fahrräder\u0027 statt \u0027die Fahrräder\u0027).] expected:\u003c0\u003e but was:\u003c1\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
