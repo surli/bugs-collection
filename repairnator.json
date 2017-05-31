@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 19,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/50928c4c87f2...062c0a4c315c",
+  "failingModule": "/root/workspace/geotools/geotools/226817682/modules/plugin/geopkg",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 6305,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.geopkg.mosaic.GeoPackageReaderTest",
+      "failingMethods": [
+        "org.geotools.geopkg.mosaic.GeoPackageReaderTest#testZoomlevel0"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 347738 different pixels, against a threshold of 250\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.geotools.geopkg.GeoPackageTest",
+      "failingMethods": [
+        "org.geotools.geopkg.GeoPackageTest#testTopLeftTile"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 20378 different pixels, against a threshold of 250\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
