@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 15,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/d41033b827bf...0c3711c97aff",
+  "failingModule": "/root/workspace/google/error-prone/228489663/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2167,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest#testStringConcat"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Saw unexpected error on line 4. All errors:\n[/Test.java:4: warning: [NarrowingCompoundAssignment] Compound assignments from char to String hide lossy casts\n    a +\u003d (char) 0;\n      ^\n    (see http://errorprone.info/bugpattern/NarrowingCompoundAssignment)\n  Did you mean \u0027a \u003d (java.lang.String) (a + (char) 0);\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
