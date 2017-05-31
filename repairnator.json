@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 45,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "owlcs/owlapi",
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/756ab320acc1...32f34cc2826c",
+  "failingModule": "/root/workspace/owlcs/owlapi/228472531/contract",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 6571,
+  "failing-test-cases": [
+    {
+      "className": "org.semanticweb.owlapi.profiles.OWLProfileTestCase",
+      "failingMethods": [
+        "org.semanticweb.owlapi.profiles.OWLProfileTestCase#shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2Profile",
+        "org.semanticweb.owlapi.profiles.OWLProfileTestCase#shouldCreateViolationForOWLDatatypeRestrictionInOWL2Profile"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "[Use of undeclared datatype: \u003curn:datatype#fakedatatype\u003e [DatatypeDefinition(\u003curn:datatype#fakedatatype\u003e xsd:boolean) in OntologyID(OntologyIRI(\u003curn:test#ontology\u003e) VersionIRI(\u003cnull\u003e))]] expected:\u003c2\u003e but was:\u003c1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "[Use of defined datatype in datatype restriction DataRangeRestriction(xsd:integer facetRestriction(langRange \"1\"^^xsd:integer)) [DataPropertyRange(\u003curn:datatype#fakedatatypeproperty\u003e DataRangeRestriction(xsd:integer facetRestriction(langRange \"1\"^^xsd:integer))) in OntologyID(OntologyIRI(\u003curn:test#ontology\u003e) VersionIRI(\u003cnull\u003e))], Facet in datatype restriction does not belong to restricted datatype: langRange in DataRangeRestriction(xsd:integer facetRestriction(langRange \"1\"^^xsd:integer)) [DataPropertyRange(\u003curn:datatype#fakedatatypeproperty\u003e DataRangeRestriction(xsd:integer facetRestriction(langRange \"1\"^^xsd:integer))) in OntologyID(OntologyIRI(\u003curn:test#ontology\u003e) VersionIRI(\u003cnull\u003e))], Use of undeclared datatype: http://www.w3.org/2001/XMLSchema#integer [DatatypeDefinition(xsd:integer xsd:boolean) in OntologyID(OntologyIRI(\u003curn:test#ontology\u003e) VersionIRI(\u003cnull\u003e))]] expected:\u003c4\u003e but was:\u003c3\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
