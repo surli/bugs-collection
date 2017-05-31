@@ -1,0 +1,97 @@
+{
+  "totalNumberSkippingTests": 15,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/0c3711c97aff...599706489a6a",
+  "failingModule": "/root/workspace/google/error-prone/228826878/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 2170,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#mutableEnumMember",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#mutableEnum",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#positive",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#immutableNull",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#customImplementionsOfImplicitlyImmutableAnnotationsMustBeImmutable",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#mutableExtendsAnnotation",
+        "com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest#incompleteClassPath"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/25630186",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/25630189",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "An unhandled exception was thrown by the Error Prone static analysis plugin.\n     Please report this at https://github.com/google/error-prone/issues/new and include the following:\n  \n     error-prone version: unknown version\n     Stack Trace:\n     java.lang.ClassCastException: com.sun.tools.javac.code.Type$BottomType cannot be cast to com.sun.tools.javac.code.Type$ArrayType\n   at com.sun.tools.javac.model.AnnotationProxyMaker$ValueVisitor.visitArray(AnnotationProxyMaker.java:186)\n   at com.sun.tools.javac.code.Attribute$Array.accept(Attribute.java:327)\n   at com.sun.tools.javac.model.AnnotationProxyMaker$ValueVisitor.getValue(AnnotationProxyMaker.java:167)\n   at com.sun.tools.javac.model.AnnotationProxyMaker.generateValue(AnnotationProxyMaker.java:145)\n   at com.sun.tools.javac.model.AnnotationProxyMaker.getAllReflectedValues(AnnotationProxyMaker.java:104)\n   at com.sun.tools.javac.model.AnnotationProxyMaker.generateAnnotation(AnnotationProxyMaker.java:90)\n   at com.sun.tools.javac.model.AnnotationProxyMaker.generateAnnotation(AnnotationProxyMaker.java:81)\n   at com.sun.tools.javac.code.AnnoConstruct.getAnnotation(AnnoConstruct.java:185)\n   at com.google.errorprone.util.ASTHelpers.getAnnotation(ASTHelpers.java:576)\n   at com.google.errorprone.bugpatterns.threadsafety.ImmutableAnalysis.getImmutableAnnotation(ImmutableAnalysis.java:436)\n   at com.google.errorprone.bugpatterns.threadsafety.ImmutableAnalysis.getImmutableAnnotation(ImmutableAnalysis.java:449)\n   at com.google.errorprone.bugpatterns.threadsafety.ImmutableChecker.matchClass(ImmutableChecker.java:69)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:629)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)\n   at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:144)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:650)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:591)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:68)\n   at com.google.errorprone.scanner.ErrorProneScannerTransformer.apply(ErrorProneScannerTransformer.java:43)\n   at com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:145)\n   at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1425)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1374)\n   at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:973)\n   at com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:100)\n   at com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:142)\n   at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:96)\n   at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:90)\n   at com.google.errorprone.BaseErrorProneCompiler.run(BaseErrorProneCompiler.java:137)\n   at com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:289)\n   at com.google.errorprone.CompilationTestHelper.doTest(CompilationTestHelper.java:251)\n   at com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest.incompleteClassPath(ImmutableCheckerTest.java:1336)\n   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n   at java.lang.reflect.Method.invoke(Method.java:498)\n   at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n   at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n   at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n   at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n   at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n   at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n   at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:343)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:102)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:61)\n   at org.junit.runners.ParentRunner$3.run(ParentRunner.java:308)\n   at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:74)\n   at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:306)\n   at org.junit.runners.ParentRunner.access$000(ParentRunner.java:61)\n   at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:286)\n   at org.junit.runners.ParentRunner.run(ParentRunner.java:390)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n   at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n   at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n   at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/25630189",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "b/25630186",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 3 matching . All errors:\n[/threadsafety/Test.java:4: error: [Immutable] @Immutable classes cannot have non-final fields\n  public int x \u003d 0;\n             ^\n    (see http://errorprone.info/bugpattern/Immutable)\n  Did you mean \u0027public final int x \u003d 0;\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 7,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.PredicateIncompatibleTypeTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.PredicateIncompatibleTypeTest#positive",
+        "com.google.errorprone.bugpatterns.PredicateIncompatibleTypeTest#notAPredicate",
+        "com.google.errorprone.bugpatterns.PredicateIncompatibleTypeTest#positive_guavaPredicate"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 5 matching Using Integer::equals as Predicate\u003cString\u003e;. All errors:\n[/Test.java:5: error: [PredicateIncompatibleType] Using String::equals as Predicate\u003cInteger\u003e; the predicate will always return false\n    Predicate\u003cString\u003e p \u003d x::equals;\n                          ^\n    (see http://errorprone.info/bugpattern/PredicateIncompatibleType)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 6 matching Using String::equals as Predicate\u003cInteger\u003e;. All errors:\n[/Test.java:6: error: [PredicateIncompatibleType] Using Integer::equals as Predicate\u003cString\u003e; the predicate will always return false\n    return lx.stream().filter(\"\"::equals);\n                              ^\n    (see http://errorprone.info/bugpattern/PredicateIncompatibleType)]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "An unhandled exception was thrown by the Error Prone static analysis plugin.\n     Please report this at https://github.com/google/error-prone/issues/new and include the following:\n  \n     error-prone version: unknown version\n     Stack Trace:\n     java.lang.NullPointerException\n   at com.sun.tools.javac.code.Types.asSuper(Types.java:1861)\n   at com.google.errorprone.bugpatterns.PredicateIncompatibleType.lambda$predicateType$0(PredicateIncompatibleType.java:66)\n   at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n   at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n   at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n   at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\n   at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\n   at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\n   at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n   at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n   at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\n   at com.google.errorprone.bugpatterns.PredicateIncompatibleType.predicateType(PredicateIncompatibleType.java:69)\n   at com.google.errorprone.bugpatterns.PredicateIncompatibleType.matchMemberReference(PredicateIncompatibleType.java:49)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMemberReference(ErrorProneScanner.java:902)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMemberReference(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:2199)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.visitVariable(TreeScanner.java:223)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:1201)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCVariableDecl.accept(JCTree.java:968)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:575)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:943)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:898)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)\n   at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:635)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)\n   at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:144)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:650)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:591)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:68)\n   at com.google.errorprone.scanner.ErrorProneScannerTransformer.apply(ErrorProneScannerTransformer.java:43)\n   at com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:145)\n   at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1425)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1374)\n   at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:973)\n   at com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:100)\n   at com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:142)\n   at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:96)\n   at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:90)\n   at com.google.errorprone.BaseErrorProneCompiler.run(BaseErrorProneCompiler.java:137)\n   at com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:289)\n   at com.google.errorprone.CompilationTestHelper.doTest(CompilationTestHelper.java:251)\n   at com.google.errorprone.bugpatterns.PredicateIncompatibleTypeTest.notAPredicate(PredicateIncompatibleTypeTest.java:106)\n   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n   at java.lang.reflect.Method.invoke(Method.java:498)\n   at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n   at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n   at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n   at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n   at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:343)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:102)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:61)\n   at org.junit.runners.ParentRunner$3.run(ParentRunner.java:308)\n   at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:74)\n   at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:306)\n   at org.junit.runners.ParentRunner.access$000(ParentRunner.java:61)\n   at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:286)\n   at org.junit.runners.ParentRunner.run(ParentRunner.java:390)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n   at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n   at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n   at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
