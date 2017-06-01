@@ -1,0 +1,974 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:samples:jar:2.3.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.squareup.retrofit2:samples:[unknown-version], /root/workspace/square/retrofit/231764479/samples/pom.xml, line 65, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Retrofit (Parent)
+[INFO] Retrofit
+[INFO] Adapters
+[INFO] Adapter: Guava
+[INFO] Adapter: Java 8
+[INFO] Adapter: RxJava
+[INFO] Adapter: RxJava 2
+[INFO] Converters
+[INFO] Converter: Gson
+[INFO] Converter: Guava
+[INFO] Converter: Protocol Buffers
+[INFO] Converter: Jackson
+[INFO] Converter: Java 8
+[INFO] Converter: Wire Protocol Buffers
+[INFO] Converter: SimpleXML
+[INFO] Converter: Java Scalars
+[INFO] Converter: Moshi
+[INFO] Retrofit Mock Adapter
+[INFO] Samples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit (Parent) 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ retrofit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ retrofit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /root/workspace/square/retrofit/231764479/retrofit/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ retrofit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ retrofit ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/231764479/retrofit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 15.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 133.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.ResponseTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+Running retrofit2.RequestBuilderTest
+Tests run: 149, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.163 sec
+Running retrofit2.RequestBuilderAndroidTest
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:7' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:pom:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:4' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:pom:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:jar:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:jar:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.646 sec
+Running retrofit2.ServiceMethodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running retrofit2.CallTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 sec
+Running retrofit2.CallAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running retrofit2.HttpExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running retrofit2.RetrofitTest
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec
+Running retrofit2.ExecutorCallAdapterFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+
+Results :
+
+Tests run: 279, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ retrofit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapters 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ retrofit-adapters ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ retrofit-adapters ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: Guava 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ adapter-guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ adapter-guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-guava ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/231764479/retrofit-adapters/guava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.guava.GuavaCallAdapterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec
+Running retrofit2.adapter.guava.ListenableFutureTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ adapter-guava ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: Java 8 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-java8 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/java8/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ adapter-java8 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-java8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/java8/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ adapter-java8 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-java8 ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/231764479/retrofit-adapters/java8/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.java8.Java8CallAdapterFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 sec
+Running retrofit2.adapter.java8.CompletableFutureTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ adapter-java8 ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Adapter: RxJava 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ adapter-rxjava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adapter-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/rxjava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ adapter-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adapter-rxjava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231764479/retrofit-adapters/rxjava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ adapter-rxjava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adapter-rxjava ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/231764479/retrofit-adapters/rxjava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.adapter.rxjava.AsyncTest
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.336 sec <<< FAILURE!
+bodyThrowingInOnSafeSubscriberErrorDeliveredToPlugin(retrofit2.adapter.rxjava.AsyncTest)  Time elapsed: 1.009 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at retrofit2.adapter.rxjava.AsyncTest.bodyThrowingInOnSafeSubscriberErrorDeliveredToPlugin(AsyncTest.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest
+Tests run: 9, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE!
+responseThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.006 sec  <<< ERROR!
+rx.exceptions.OnErrorFailedException: Error occurred when trying to propagate error to Observer.onError
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:187)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitError(CallArbiter.java:143)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:43)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.responseThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: rx.exceptions.CompositeException: 2 exceptions occurred. 
+	... 42 more
+Caused by: rx.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+	at rx.exceptions.CompositeException.getCause(CompositeException.java:129)
+	at java.lang.Throwable.printEnclosedStackTrace(Throwable.java:707)
+	at java.lang.Throwable.printStackTrace(Throwable.java:667)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.junit.runner.notification.Failure.getTrace(Failure.java:75)
+	at org.apache.maven.surefire.common.junit4.JUnit4StackTraceWriter.writeTrimmedTraceToString(JUnit4StackTraceWriter.java:69)
+	at org.apache.maven.surefire.booter.ForkingRunListener.encode(ForkingRunListener.java:317)
+	at org.apache.maven.surefire.booter.ForkingRunListener.toString(ForkingRunListener.java:250)
+	at org.apache.maven.surefire.booter.ForkingRunListener.testError(ForkingRunListener.java:127)
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.testFailure(JUnit4RunListener.java:110)
+	at org.junit.runner.notification.SynchronizedRunListener.testFailure(SynchronizedRunListener.java:63)
+	at org.junit.runner.notification.RunNotifier$4.notifyListener(RunNotifier.java:142)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)
+	at org.junit.runner.notification.RunNotifier.fireTestFailures(RunNotifier.java:138)
+	at org.junit.runner.notification.RunNotifier.fireTestFailure(RunNotifier.java:132)
+	at org.junit.internal.runners.model.EachTestNotifier.addFailure(EachTestNotifier.java:23)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:329)
+	... 20 more
+Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:55135, proxy=DIRECT hostAddress=localhost/127.0.0.1:55135 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:67)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:179)
+	at okhttp3.RealCall.execute(RealCall.java:63)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:40)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.responseThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	... 20 more
+Caused by: java.io.EOFException: \n not found: size=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 55 more
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.responseThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:187)
+	... 34 more
+
+resultThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.005 sec  <<< ERROR!
+rx.exceptions.OnErrorFailedException: Error occurred when trying to propagate error to Observer.onError
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:187)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:212)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe$ResultSubscriber.onNext(ResultOnSubscribe.java:45)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe$ResultSubscriber.onNext(ResultOnSubscribe.java:36)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe.call(ResultOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe.call(ResultOnSubscribe.java:25)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.resultThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: rx.exceptions.CompositeException: 2 exceptions occurred. 
+	... 49 more
+Caused by: rx.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+	at rx.exceptions.CompositeException.getCause(CompositeException.java:129)
+	at java.lang.Throwable.printEnclosedStackTrace(Throwable.java:707)
+	at java.lang.Throwable.printStackTrace(Throwable.java:667)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.junit.runner.notification.Failure.getTrace(Failure.java:75)
+	at org.apache.maven.surefire.common.junit4.JUnit4StackTraceWriter.writeTrimmedTraceToString(JUnit4StackTraceWriter.java:69)
+	at org.apache.maven.surefire.booter.ForkingRunListener.encode(ForkingRunListener.java:317)
+	at org.apache.maven.surefire.booter.ForkingRunListener.toString(ForkingRunListener.java:250)
+	at org.apache.maven.surefire.booter.ForkingRunListener.testError(ForkingRunListener.java:127)
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.testFailure(JUnit4RunListener.java:110)
+	at org.junit.runner.notification.SynchronizedRunListener.testFailure(SynchronizedRunListener.java:63)
+	at org.junit.runner.notification.RunNotifier$4.notifyListener(RunNotifier.java:142)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)
+	at org.junit.runner.notification.RunNotifier.fireTestFailures(RunNotifier.java:138)
+	at org.junit.runner.notification.RunNotifier.fireTestFailure(RunNotifier.java:132)
+	at org.junit.internal.runners.model.EachTestNotifier.addFailure(EachTestNotifier.java:23)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:329)
+	... 20 more
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.resultThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	... 20 more
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.resultThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:257)
+	... 34 more
+
+resultThrowingInOnCompletedDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.005 sec  <<< ERROR!
+rx.exceptions.OnCompletedFailedException
+	at rx.observers.SafeSubscriber.onCompleted(SafeSubscriber.java:85)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe$ResultSubscriber.onCompleted(ResultOnSubscribe.java:65)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:130)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe.call(ResultOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.ResultOnSubscribe.call(ResultOnSubscribe.java:25)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.resultThrowingInOnCompletedDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.resultThrowingInOnCompletedDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:230)
+	... 34 more
+
+responseThrowingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.005 sec  <<< ERROR!
+rx.exceptions.OnCompletedFailedException
+	at rx.observers.SafeSubscriber.onCompleted(SafeSubscriber.java:85)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:130)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.responseThrowingInOnCompleteDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.responseThrowingInOnCompleteDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:160)
+	... 34 more
+
+bodyThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.006 sec  <<< ERROR!
+rx.exceptions.OnErrorFailedException: Error occurred when trying to propagate error to Observer.onError
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:187)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:53)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:36)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: rx.exceptions.CompositeException: 2 exceptions occurred. 
+	... 47 more
+Caused by: rx.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+	at rx.exceptions.CompositeException.getCause(CompositeException.java:129)
+	at java.lang.Throwable.printEnclosedStackTrace(Throwable.java:707)
+	at java.lang.Throwable.printStackTrace(Throwable.java:667)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.junit.runner.notification.Failure.getTrace(Failure.java:75)
+	at org.apache.maven.surefire.common.junit4.JUnit4StackTraceWriter.writeTrimmedTraceToString(JUnit4StackTraceWriter.java:69)
+	at org.apache.maven.surefire.booter.ForkingRunListener.encode(ForkingRunListener.java:317)
+	at org.apache.maven.surefire.booter.ForkingRunListener.toString(ForkingRunListener.java:250)
+	at org.apache.maven.surefire.booter.ForkingRunListener.testError(ForkingRunListener.java:127)
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.testFailure(JUnit4RunListener.java:110)
+	at org.junit.runner.notification.SynchronizedRunListener.testFailure(SynchronizedRunListener.java:63)
+	at org.junit.runner.notification.RunNotifier$4.notifyListener(RunNotifier.java:142)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)
+	at org.junit.runner.notification.RunNotifier.fireTestFailures(RunNotifier.java:138)
+	at org.junit.runner.notification.RunNotifier.fireTestFailure(RunNotifier.java:132)
+	at org.junit.internal.runners.model.EachTestNotifier.addFailure(EachTestNotifier.java:23)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:329)
+	... 20 more
+Caused by: retrofit2.adapter.rxjava.HttpException: HTTP 404 Client Error
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:51)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:36)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	... 20 more
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:117)
+	... 34 more
+
+bodyThrowingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)  Time elapsed: 0.004 sec  <<< ERROR!
+rx.exceptions.OnCompletedFailedException
+	at rx.observers.SafeSubscriber.onCompleted(SafeSubscriber.java:85)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onCompleted(BodyOnSubscribe.java:77)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:130)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.subscribe(Observable.java:10352)
+	at rx.Observable.subscribe(Observable.java:10319)
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.bodyThrowingInOnCompleteDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest.bodyThrowingInOnCompleteDeliveredToPlugin(ObservableThrowingSafeSubscriberTest.java:90)
+	... 34 more
+
+Running retrofit2.adapter.rxjava.CompletableWithSchedulerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running retrofit2.adapter.rxjava.RxJavaCallAdapterFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running retrofit2.adapter.rxjava.ObservableWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running retrofit2.adapter.rxjava.CompletableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running retrofit2.adapter.rxjava.SingleWithSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running retrofit2.adapter.rxjava.SingleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.01 sec <<< FAILURE!
+throwingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest)  Time elapsed: 0.005 sec  <<< ERROR!
+rx.exceptions.OnCompletedFailedException: java.lang.RuntimeException
+	at rx.observers.SafeCompletableSubscriber.onCompleted(SafeCompletableSubscriber.java:51)
+	at rx.Completable$10$1.onCompleted(Completable.java:574)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onCompleted(BodyOnSubscribe.java:77)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:130)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.unsafeSubscribe(Observable.java:10256)
+	at rx.Completable$10.call(Completable.java:588)
+	at rx.Completable$10.call(Completable.java:567)
+	at rx.Completable.unsafeSubscribe(Completable.java:2035)
+	at rx.Completable.subscribe(Completable.java:2056)
+	at retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin(CompletableThrowingSafeSubscriberTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin(CompletableThrowingSafeSubscriberTest.java:73)
+	... 34 more
+
+bodyThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest)  Time elapsed: 0.005 sec  <<< ERROR!
+rx.exceptions.OnErrorFailedException: 2 exceptions occurred. 
+	at rx.observers.SafeCompletableSubscriber.onError(SafeCompletableSubscriber.java:67)
+	at rx.Completable$10$1.onError(Completable.java:579)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:53)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:36)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.unsafeSubscribe(Observable.java:10256)
+	at rx.Completable$10.call(Completable.java:588)
+	at rx.Completable$10.call(Completable.java:567)
+	at rx.Completable.unsafeSubscribe(Completable.java:2035)
+	at rx.Completable.subscribe(Completable.java:2056)
+	at retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(CompletableThrowingSafeSubscriberTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: rx.exceptions.CompositeException: 2 exceptions occurred. 
+	... 50 more
+Caused by: rx.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+	at rx.exceptions.CompositeException.getCause(CompositeException.java:129)
+	at java.lang.Throwable.printEnclosedStackTrace(Throwable.java:707)
+	at java.lang.Throwable.printStackTrace(Throwable.java:667)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.junit.runner.notification.Failure.getTrace(Failure.java:75)
+	at org.apache.maven.surefire.common.junit4.JUnit4StackTraceWriter.writeTrimmedTraceToString(JUnit4StackTraceWriter.java:69)
+	at org.apache.maven.surefire.booter.ForkingRunListener.encode(ForkingRunListener.java:317)
+	at org.apache.maven.surefire.booter.ForkingRunListener.toString(ForkingRunListener.java:250)
+	at org.apache.maven.surefire.booter.ForkingRunListener.testError(ForkingRunListener.java:127)
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.testFailure(JUnit4RunListener.java:110)
+	at org.junit.runner.notification.SynchronizedRunListener.testFailure(SynchronizedRunListener.java:63)
+	at org.junit.runner.notification.RunNotifier$4.notifyListener(RunNotifier.java:142)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)
+	at org.junit.runner.notification.RunNotifier.fireTestFailures(RunNotifier.java:138)
+	at org.junit.runner.notification.RunNotifier.fireTestFailure(RunNotifier.java:132)
+	at org.junit.internal.runners.model.EachTestNotifier.addFailure(EachTestNotifier.java:23)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:329)
+	... 20 more
+Caused by: retrofit2.adapter.rxjava.HttpException: HTTP 404 Client Error
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:51)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe$BodySubscriber.onNext(BodyOnSubscribe.java:36)
+	at retrofit2.adapter.rxjava.CallArbiter.deliverResponse(CallArbiter.java:115)
+	at retrofit2.adapter.rxjava.CallArbiter.emitResponse(CallArbiter.java:97)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:46)
+	at retrofit2.adapter.rxjava.CallExecuteOnSubscribe.call(CallExecuteOnSubscribe.java:24)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:33)
+	at retrofit2.adapter.rxjava.BodyOnSubscribe.call(BodyOnSubscribe.java:25)
+	at rx.Observable.unsafeSubscribe(Observable.java:10256)
+	at rx.Completable$10.call(Completable.java:588)
+	at rx.Completable$10.call(Completable.java:567)
+	at rx.Completable.unsafeSubscribe(Completable.java:2035)
+	at rx.Completable.subscribe(Completable.java:2056)
+	at retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(CompletableThrowingSafeSubscriberTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at retrofit2.adapter.rxjava.RxJavaPluginsResetRule$1.evaluate(RxJavaPluginsResetRule.java:30)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at retrofit2.adapter.rxjava.RecordingSubscriber$Rule$1.evaluate(RecordingSubscriber.java:138)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	... 20 more
+Caused by: java.lang.RuntimeException
+	at retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.bodyThrowingInOnErrorDeliveredToPlugin(CompletableThrowingSafeSubscriberTest.java:98)
+	... 34 more
+
+Running retrofit2.adapter.rxjava.SingleThrowingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.023 sec
+Running retrofit2.adapter.rxjava.ObservableTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running retrofit2.adapter.rxjava.ResultTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running retrofit2.adapter.rxjava.CompletableThrowingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running retrofit2.adapter.rxjava.ObservableThrowingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Results :
+
+Failed tests:   bodyThrowingInOnSafeSubscriberErrorDeliveredToPlugin(retrofit2.adapter.rxjava.AsyncTest)
+
+Tests in error: 
+  responseThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest): Error occurred when trying to propagate error to Observer.onError
+  resultThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest): Error occurred when trying to propagate error to Observer.onError
+  resultThrowingInOnCompletedDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)
+  responseThrowingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)
+  bodyThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest): Error occurred when trying to propagate error to Observer.onError
+  bodyThrowingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest)
+  throwingInOnCompleteDeliveredToPlugin(retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest): java.lang.RuntimeException
+  bodyThrowingInOnErrorDeliveredToPlugin(retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest): 2 exceptions occurred. 
+
+Tests run: 78, Failures: 1, Errors: 8, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Retrofit (Parent) .................................. SUCCESS [  0.629 s]
+[INFO] Retrofit ........................................... SUCCESS [ 24.462 s]
+[INFO] Adapters ........................................... SUCCESS [  0.159 s]
+[INFO] Adapter: Guava ..................................... SUCCESS [  0.782 s]
+[INFO] Adapter: Java 8 .................................... SUCCESS [  0.731 s]
+[INFO] Adapter: RxJava .................................... FAILURE [  3.914 s]
+[INFO] Adapter: RxJava 2 .................................. SKIPPED
+[INFO] Converters ......................................... SKIPPED
+[INFO] Converter: Gson .................................... SKIPPED
+[INFO] Converter: Guava ................................... SKIPPED
+[INFO] Converter: Protocol Buffers ........................ SKIPPED
+[INFO] Converter: Jackson ................................. SKIPPED
+[INFO] Converter: Java 8 .................................. SKIPPED
+[INFO] Converter: Wire Protocol Buffers ................... SKIPPED
+[INFO] Converter: SimpleXML ............................... SKIPPED
+[INFO] Converter: Java Scalars ............................ SKIPPED
+[INFO] Converter: Moshi ................................... SKIPPED
+[INFO] Retrofit Mock Adapter .............................. SKIPPED
+[INFO] Samples ............................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.867 s
+[INFO] Finished at: 2017-06-01T11:30:50+02:00
+[INFO] Final Memory: 42M/2234M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project adapter-rxjava: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/square/retrofit/231764479/retrofit-adapters/rxjava/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :adapter-rxjava

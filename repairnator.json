@@ -1,0 +1,98 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 8,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/85593d29acbb...f35914b3010b",
+  "failingModule": "/root/workspace/square/retrofit/231764479/retrofit-adapters/rxjava",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "rx.exceptions.OnCompletedFailedException",
+    "rx.exceptions.OnErrorFailedException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 377,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.rxjava.AsyncTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava.AsyncTest#bodyThrowingInOnSafeSubscriberErrorDeliveredToPlugin"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest#bodyThrowingInOnErrorDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest#throwingInOnCompleteDeliveredToPlugin"
+      ],
+      "failures": [
+        {
+          "failureName": "rx.exceptions.OnCompletedFailedException",
+          "failureDetail": "java.lang.RuntimeException",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnErrorFailedException",
+          "failureDetail": "2 exceptions occurred. ",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#resultThrowingInOnErrorDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#responseThrowingInOnCompleteDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#resultThrowingInOnCompletedDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#responseThrowingInOnErrorDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#bodyThrowingInOnErrorDeliveredToPlugin",
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#bodyThrowingInOnCompleteDeliveredToPlugin"
+      ],
+      "failures": [
+        {
+          "failureName": "rx.exceptions.OnErrorFailedException",
+          "failureDetail": "Error occurred when trying to propagate error to Observer.onError",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnErrorFailedException",
+          "failureDetail": "Error occurred when trying to propagate error to Observer.onError",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnCompletedFailedException",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnCompletedFailedException",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnErrorFailedException",
+          "failureDetail": "Error occurred when trying to propagate error to Observer.onError",
+          "isError": true
+        },
+        {
+          "failureName": "rx.exceptions.OnCompletedFailedException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 6
+    }
+  ]
+}
