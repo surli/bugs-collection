@@ -1,0 +1,237 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:samples:jar:2.3.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.squareup.retrofit2:samples:[unknown-version], /root/workspace/square/retrofit/231243248/samples/pom.xml, line 65, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Retrofit (Parent)
+[INFO] Retrofit
+[INFO] Adapters
+[INFO] Adapter: Guava
+[INFO] Adapter: Java 8
+[INFO] Adapter: RxJava
+[INFO] Adapter: RxJava 2
+[INFO] Converters
+[INFO] Converter: Gson
+[INFO] Converter: Protocol Buffers
+[INFO] Converter: Jackson
+[INFO] Converter: Wire Protocol Buffers
+[INFO] Converter: SimpleXML
+[INFO] Converter: Java Scalars
+[INFO] Converter: Moshi
+[INFO] Retrofit Mock Adapter
+[INFO] Samples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit (Parent) 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Retrofit 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ retrofit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231243248/retrofit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ retrofit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /root/workspace/square/retrofit/231243248/retrofit/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ retrofit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/retrofit/231243248/retrofit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ retrofit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ retrofit ---
+[INFO] Surefire report directory: /root/workspace/square/retrofit/231243248/retrofit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 22.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 185.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running retrofit2.ResponseTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running retrofit2.RequestBuilderTest
+Tests run: 147, Failures: 1, Errors: 1, Skipped: 2, Time elapsed: 0.148 sec <<< FAILURE!
+queryParamMapsConvertedToNullShouldError(retrofit2.RequestBuilderTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <"Unable to create converter for class java.lang.String
+    for method Example.queryPath">
+to contain:
+ <"Query map contained null value for key 'Ignored'"> 
+	at retrofit2.RequestBuilderTest.queryParamMapsConvertedToNullShouldError(RequestBuilderTest.java:2616)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+queryParamsSkippedIfConvertedToNull(retrofit2.RequestBuilderTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
+    for method Example.queryPath
+	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:752)
+	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:738)
+	at retrofit2.ServiceMethod$Builder.build(ServiceMethod.java:169)
+	at retrofit2.Retrofit.loadServiceMethod(Retrofit.java:170)
+	at retrofit2.RequestBuilderTest.buildRequest(RequestBuilderTest.java:2645)
+	at retrofit2.RequestBuilderTest.queryParamsSkippedIfConvertedToNull(RequestBuilderTest.java:2594)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
+  Tried:
+   * retrofit2.BuiltInConverters
+   * retrofit2.helpers.NullObjectConverterFactory
+	at retrofit2.Retrofit.nextResponseBodyConverter(Retrofit.java:351)
+	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
+	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:736)
+	... 33 more
+
+Running retrofit2.RequestBuilderAndroidTest
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:7' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:pom:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.sonatype.oss:oss-parent:pom:4' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:pom:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'org.json:json:jar:20080701' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+[INFO] Unable to find resource 'com.ximpleware:vtd-xml:jar:2.11' in repository sonatype (https://oss.sonatype.org/content/groups/public/)
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.426 sec
+Running retrofit2.ServiceMethodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running retrofit2.CallTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.836 sec
+Running retrofit2.CallAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running retrofit2.HttpExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running retrofit2.RetrofitTest
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.599 sec
+Running retrofit2.ExecutorCallAdapterFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+
+Results :
+
+Failed tests:   queryParamMapsConvertedToNullShouldError(retrofit2.RequestBuilderTest): (..)
+
+Tests in error: 
+  queryParamsSkippedIfConvertedToNull(retrofit2.RequestBuilderTest): Unable to create converter for class java.lang.String(..)
+
+Tests run: 277, Failures: 1, Errors: 1, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Retrofit (Parent) .................................. SUCCESS [  0.575 s]
+[INFO] Retrofit ........................................... FAILURE [ 27.587 s]
+[INFO] Adapters ........................................... SKIPPED
+[INFO] Adapter: Guava ..................................... SKIPPED
+[INFO] Adapter: Java 8 .................................... SKIPPED
+[INFO] Adapter: RxJava .................................... SKIPPED
+[INFO] Adapter: RxJava 2 .................................. SKIPPED
+[INFO] Converters ......................................... SKIPPED
+[INFO] Converter: Gson .................................... SKIPPED
+[INFO] Converter: Protocol Buffers ........................ SKIPPED
+[INFO] Converter: Jackson ................................. SKIPPED
+[INFO] Converter: Wire Protocol Buffers ................... SKIPPED
+[INFO] Converter: SimpleXML ............................... SKIPPED
+[INFO] Converter: Java Scalars ............................ SKIPPED
+[INFO] Converter: Moshi ................................... SKIPPED
+[INFO] Retrofit Mock Adapter .............................. SKIPPED
+[INFO] Samples ............................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 28.365 s
+[INFO] Finished at: 2017-06-01T11:27:01+02:00
+[INFO] Final Memory: 27M/2162M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project retrofit: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/square/retrofit/231243248/retrofit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :retrofit

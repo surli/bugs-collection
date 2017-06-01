@@ -1,0 +1,53 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/commit/8e42a7a215f1",
+  "failingModule": "/root/workspace/square/retrofit/231243248/retrofit",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.IllegalArgumentException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 277,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.RequestBuilderTest",
+      "failingMethods": [
+        "retrofit2.RequestBuilderTest#customMethodWithBody",
+        "retrofit2.RequestBuilderTest#queryParamMapsConvertedToNullShouldError",
+        "retrofit2.RequestBuilderTest#customMethodEmptyBody"
+      ],
+      "erroringMethods": [
+        "retrofit2.RequestBuilderTest#queryParamsSkippedIfConvertedToNull"
+      ],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "https://github.com/square/okhttp/issues/229",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting:  \u003c\"Unable to create converter for class java.lang.String     for method Example.queryPath\"\u003e to contain:  \u003c\"Query map contained null value for key \u0027Ignored\u0027\"\u003e ",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "https://github.com/square/okhttp/issues/229",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "Unable to create converter for class java.lang.String     for method Example.queryPath",
+          "isError": true
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 1
+    }
+  ]
+}
