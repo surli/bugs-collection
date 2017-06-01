@@ -1,0 +1,81 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 3,
+  "repo": "alibaba/fastjson",
+  "bugCommit": "https://github.com/alibaba/fastjson/compare/cf0f68b34ee824e134b45a759c24ad608484efb3...72d6ed5cc3f3759cd6e10e05899d9152c6348492",
+  "failingModule": "/root/workspace/alibaba/fastjson/229894901",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "com.alibaba.fastjson.JSONException",
+    "junit.framework.AssertionFailedError",
+    "java.lang.ClassCastException"
+  ],
+  "totalNumberRunningTests": 3784,
+  "failing-test-cases": [
+    {
+      "className": "com.alibaba.json.bvt.parser.TypeUtilsTest",
+      "failingMethods": [
+        "com.alibaba.json.bvt.parser.TypeUtilsTest#test_error_2"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.alibaba.json.bvt.issue_1100.Issue1188",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.issue_1100.Issue1188#test_for_issue_1188"
+      ],
+      "failures": [
+        {
+          "failureName": "com.alibaba.fastjson.JSONException",
+          "failureDetail": "For input string: \"a1a2\"",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.alibaba.json.bvt.issue_1100.Issue1152",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.issue_1100.Issue1152#test_for_issue"
+      ],
+      "failures": [
+        {
+          "failureName": "com.alibaba.fastjson.JSONException",
+          "failureDetail": "For input string: \"0000-00-00T00:00:00\"",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.alibaba.json.bvt.parser.AETest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.parser.AETest#test_for_ae"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.ClassCastException",
+          "failureDetail": "com.sun.proxy.$Proxy23 cannot be cast to com.alibaba.json.bvtVO.ae.Item",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
