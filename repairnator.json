@@ -1,0 +1,68 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/da751cf4fdb7...e5ac3cbd5799",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/231067344",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2028,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+      "failingMethods": [
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#convertsMapToVavr",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#conversListToVavr",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#unwrapsVavrOption",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#unwrapsVavrCollectionsToJavaOnes",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#unwrapsEmptyVavrOption",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#convertsSetToVavr",
+        "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests#vavrSeqIsASupportedPageableType"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is an instance of java.util.List\n     but: \u003cList(1, 2, 3)\u003e is a io.vavr.collection.List$Cons",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \"string\"\n     but: was \u003cSome(string)\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is null\n     but: was \u003cNone\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: a collection containing \u003cinterface io.vavr.collection.Seq\u003e\n     but: was \u003cinterface org.springframework.data.domain.Page\u003e, was \u003cinterface javaslang.collection.Seq\u003e, was \u003cinterface org.springframework.data.domain.Slice\u003e, was \u003cinterface java.util.List\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 7,
+      "nbErrors": 0
+    }
+  ]
+}
