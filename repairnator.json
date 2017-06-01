@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AsyncHttpClient/async-http-client",
+  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/9f539793e841...8f8c246756ca",
+  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/234037835/client",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 507,
+  "failing-test-cases": [
+    {
+      "className": "org.asynchttpclient.oauth.OAuthSignatureCalculatorTest",
+      "failingMethods": [
+        "org.asynchttpclient.oauth.OAuthSignatureCalculatorTest#testPercentEncodeKeyValues"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "a header value contains a prohibited character \u0027\\f\u0027: OAuth oauth_consumer_key\u003d\"㬅\u0026#12;㝛\", oauth_token\u003d\"㬅\u0026#12;㝛\", oauth_signature_method\u003d\"HMAC-SHA1\", oauth_signature\u003d\"fElLkDxOghF%2BS8i%2FxV3BFiuuLO4%3D\", oauth_timestamp\u003d\"1496343398\", oauth_nonce\u003d\"RIpLBOp4Y0HDyTmDiM5AXQ%3D%3D\", oauth_version\u003d\"1.0\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
