@@ -1,0 +1,80 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AsyncHttpClient/async-http-client",
+  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/942f8051e0af...92c9063986c8",
+  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/231152815/client",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 7,
+  "error-types": [
+    "java.util.concurrent.ExecutionException",
+    "org.asynchttpclient.exception.RemotelyClosedException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 505,
+  "failing-test-cases": [
+    {
+      "className": "org.asynchttpclient.AuthTimeoutTest",
+      "failingMethods": [
+        "org.asynchttpclient.AuthTimeoutTest#digestAuthFutureTimeoutTest",
+        "org.asynchttpclient.AuthTimeoutTest#basicPreemptiveAuthFutureTimeoutTest",
+        "org.asynchttpclient.AuthTimeoutTest#basicAuthTimeoutTest",
+        "org.asynchttpclient.AuthTimeoutTest#basicPreemptiveAuthTimeoutTest",
+        "org.asynchttpclient.AuthTimeoutTest#basicAuthFutureTimeoutTest",
+        "org.asynchttpclient.AuthTimeoutTest#digestAuthTimeoutTest"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "org.asynchttpclient.exception.RemotelyClosedException: Remotely closed",
+          "isError": false
+        },
+        {
+          "failureName": "org.asynchttpclient.exception.RemotelyClosedException",
+          "failureDetail": "Remotely closed",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "org.asynchttpclient.exception.RemotelyClosedException: Remotely closed",
+          "isError": false
+        },
+        {
+          "failureName": "org.asynchttpclient.exception.RemotelyClosedException",
+          "failureDetail": "Remotely closed",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "org.asynchttpclient.exception.RemotelyClosedException: Remotely closed",
+          "isError": false
+        },
+        {
+          "failureName": "org.asynchttpclient.exception.RemotelyClosedException",
+          "failureDetail": "Remotely closed",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.netty.handler.NettyReactiveStreamsTest",
+      "failingMethods": [
+        "org.asynchttpclient.netty.handler.NettyReactiveStreamsTest#testConnectionDoesNotGetClosed"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " expected [[B@43acd79e] but found [[B@1e1b061]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
