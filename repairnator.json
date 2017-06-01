@@ -1,0 +1,57 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "square/javapoet",
+  "bugCommit": "https://github.com/square/javapoet/compare/48378f7b2b49...40dfa0cf36d8",
+  "failingModule": "/root/workspace/square/javapoet/231787280",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "org.junit.ComparisonFailure",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 303,
+  "failing-test-cases": [
+    {
+      "className": "com.squareup.javapoet.JavaFileTest",
+      "failingMethods": [
+        "com.squareup.javapoet.JavaFileTest#conflictingTypeVariableBound",
+        "com.squareup.javapoet.JavaFileTest#conflictingAnnotation",
+        "com.squareup.javapoet.JavaFileTest#conflictingAnnotationReferencedClass",
+        "com.squareup.javapoet.JavaFileTest#classAndSuperclassShareName",
+        "com.squareup.javapoet.JavaFileTest#importStaticDynamic"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...om.squareup.tacos;  [@com.taco.bell.]Taco class Taco { } \u003e but was:\u003c...om.squareup.tacos;  [import com.taco.bell.Taco;  @]Taco class Taco { } \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...om.squareup.tacos;  [class Taco extends com.taco.bell.]Taco { } \u003e but was:\u003c...om.squareup.tacos;  [import com.taco.bell.Taco;  class Taco extends ]Taco { } \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "addStaticImport doesn\u0027t support members with $L",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...om.squareup.tacos;  [class Taco\u003cT extends com.taco.bell.]Taco\u003e { } \u003e but was:\u003c...om.squareup.tacos;  [import com.taco.bell.Taco;  class Taco\u003cT extends ]Taco\u003e { } \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...om.squareup.tacos;  [@MyAnno(com.taco.bell.]Taco.class) class Ta...\u003e but was:\u003c...om.squareup.tacos;  [import com.taco.bell.Taco;  @MyAnno(]Taco.class) class Ta...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}
