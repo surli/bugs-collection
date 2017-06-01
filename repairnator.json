@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/cc0df11320ba...85593d29acbb",
+  "failingModule": "/root/workspace/square/retrofit/231764005/retrofit",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 279,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.RequestBuilderTest",
+      "failingMethods": [
+        "retrofit2.RequestBuilderTest#customMethodWithBody",
+        "retrofit2.RequestBuilderTest#queryParamMapsConvertedToNullShouldError",
+        "retrofit2.RequestBuilderTest#customMethodEmptyBody"
+      ],
+      "erroringMethods": [
+        "retrofit2.RequestBuilderTest#fieldParamMapsConvertedToNullShouldError",
+        "retrofit2.RequestBuilderTest#fieldParamsSkippedIfConvertedToNull"
+      ],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "https://github.com/square/okhttp/issues/229",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "https://github.com/square/okhttp/issues/229",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 2
+    }
+  ]
+}
