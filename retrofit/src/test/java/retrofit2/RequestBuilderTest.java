@@ -2579,10 +2579,9 @@ public final class RequestBuilderTest {
     assertThat(readBody.indexOf("secondParam")).isLessThan(readBody.indexOf("thirdParam"));
   }
 
-
   @Test public void queryParamsSkippedIfConvertedToNull() throws Exception {
     class Example {
-      @POST("/query") Call<String> queryPath(@Query("a") Object a) {
+      @GET("/query") Call<ResponseBody> queryPath(@Query("a") Object a) {
         return null;
       }
     }
@@ -2596,9 +2595,9 @@ public final class RequestBuilderTest {
     assertThat(request.url().toString()).doesNotContain("Ignored");
   }
 
-  @Test public void queryParamMapsConvertedToNullShouldError() throws IOException, InterruptedException {
+  @Test public void queryParamMapsConvertedToNullShouldError() throws Exception {
     class Example {
-      @POST("/query") Call<String> queryPath(@QueryMap HashMap<String, String> a) {
+      @GET("/query") Call<ResponseBody> queryPath(@QueryMap Map<String, String> a) {
         return null;
       }
     }
@@ -2607,13 +2606,54 @@ public final class RequestBuilderTest {
         .baseUrl("http://example.com")
         .addConverterFactory(new NullObjectConverterFactory());
 
-    Map<String, String> queryMap = Collections.singletonMap("Ignored", "Always Null");
+    Map<String, String> queryMap = Collections.singletonMap("kit", "kat");
 
     try {
       buildRequest(Example.class, retrofitBuilder, queryMap);
       fail();
     } catch (IllegalArgumentException e) {
-      assertThat(e).hasMessageContaining("Query map contained null value for key 'Ignored'");
+      assertThat(e).hasMessageContaining(
+          "Query map value 'kat' converted to null by retrofit2.helpers.NullObjectConverterFactory$1 for key 'kit'.");
+    }
+  }
+
+  @Test public void fieldParamsSkippedIfConvertedToNull() throws Exception {
+    class Example {
+      @FormUrlEncoded
+      @POST("/query") Call<ResponseBody> queryPath(@Field("a") Object a) {
+        return null;
+      }
+    }
+
+    Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
+        .baseUrl("http://example.com")
+        .addConverterFactory(new NullObjectConverterFactory());
+
+    Request request = buildRequest(Example.class, retrofitBuilder, "Ignored");
+
+    assertThat(request.url().toString()).doesNotContain("Ignored");
+  }
+
+  @Test public void fieldParamMapsConvertedToNullShouldError() throws Exception {
+    class Example {
+      @FormUrlEncoded
+      @POST("/query") Call<ResponseBody> queryPath(@FieldMap Map<String, String> a) {
+        return null;
+      }
+    }
+
+    Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
+        .baseUrl("http://example.com")
+        .addConverterFactory(new NullObjectConverterFactory());
+
+    Map<String, String> queryMap = Collections.singletonMap("kit", "kat");
+
+    try {
+      buildRequest(Example.class, retrofitBuilder, queryMap);
+      fail();
+    } catch (IllegalArgumentException e) {
+      assertThat(e).hasMessageContaining(
+          "Field map value 'kat' converted to null by retrofit2.helpers.NullObjectConverterFactory$1 for key 'kit'.");
     }
   }
 
