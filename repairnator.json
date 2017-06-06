@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "alibaba/fastjson",
+  "bugCommit": "https://github.com/alibaba/fastjson/compare/dc7e7e0371779e8b2d8e4f94b24da032b0dffbae...8c4fd5b6a0c035ab7d1136e339824d5ee2b5cb29",
+  "failingModule": "/root/workspace/alibaba/fastjson/235569396",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 3792,
+  "failing-test-cases": [
+    {
+      "className": "com.alibaba.json.bvt.serializer.features.WriteNonStringValueAsStringTestMap",
+      "failingMethods": [
+        "com.alibaba.json.bvt.serializer.features.WriteNonStringValueAsStringTestMap#test_0"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c{\"key1\":[\"100.0\",\"key2\":\"100\",\"key3\":\"true\",\"key4\":\"true\",1:\"200\",{}:\"100\"]}\u003e but was:\u003c{\"key1\":[100.0,\"key2\":100,\"key3\":true,\"key4\":true,1:200,{}:100]}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
