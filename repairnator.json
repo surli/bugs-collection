@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "IQSS/dataverse",
+  "bugCommit": "https://github.com/IQSS/dataverse/compare/24d0747f214d...4a3e86927b03",
+  "failingModule": "/root/workspace/IQSS/dataverse/234117933",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 295,
+  "failing-test-cases": [
+    {
+      "className": "edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest",
+      "failingMethods": [
+        "edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest#testDatasetJson2dublincore"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\u003cdcterms:identifier\u003e[http://dx.doi.org/]10.5072/FK2/PCA2E3\u003c/...\u003e but was:\u003c...\u003cdcterms:identifier\u003e[doi:]10.5072/FK2/PCA2E3\u003c/...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
