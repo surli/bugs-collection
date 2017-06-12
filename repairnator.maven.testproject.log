@@ -36,17 +36,15 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ dataverse ---
 [INFO] Surefire report directory: /root/workspace/IQSS/dataverse/234117933/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 40.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 319.1 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running edu.harvard.iq.dataverse.mydata.PagerTest
+getNumResults
+-------------------------------
+page list: null
+-------------------------------
 getNumResults
 -------------------------------
 Test: 102 results, 10 per page, page 1
@@ -68,11 +66,7 @@ page list: [6, 7, 8, 9, 10]
 Test: 102 results, 10 per page, page 9
 -------------------------------
 page list: [7, 8, 9, 10, 11]
-getNumResults
--------------------------------
-page list: null
--------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
 Running edu.harvard.iq.dataverse.mydata.SolrQueryFormatterTest
 -------------------------------
 Set group size to 10--it's usually, 1,000
@@ -110,7 +104,7 @@ Set to groups of 3
 -------------------------------
 query clause: (parentId:(1 2 3)) OR (parentId:(4 5 6)) OR (parentId:(7 8 9)) OR (parentId:(10 11))
 -------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running edu.harvard.iq.dataverse.worldmapauth.WorldMapTokenTest
 ------------------------------------------------------------
 WorldMapTokenTest!
@@ -137,51 +131,13 @@ Get a new Token
 Did token expire? (automatically check current time)
 Manually expire token: setHasExpired(true)
 Did token expire in 1 minute? (should be yes--b/c manually expired)
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
 Running edu.harvard.iq.dataverse.DatasetVersionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running edu.harvard.iq.dataverse.DataFileServiceBeanTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.456 sec <<< FAILURE!
-testDatasetJson2dublincore(edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest)  Time elapsed: 0.455 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...<dcterms:identifier>[http://dx.doi.org/]10.5072/FK2/PCA2E3</...> but was:<...<dcterms:identifier>[doi:]10.5072/FK2/PCA2E3</...>
-	at org.junit.Assert.assertEquals(Assert.java:123)
-	at org.junit.Assert.assertEquals(Assert.java:145)
-	at edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest.testDatasetJson2dublincore(DublinCoreExportUtilTest.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec
 Running edu.harvard.iq.dataverse.export.DDIExporterTest
 exportDataset
 out: 
@@ -269,9 +225,9 @@ out:
   </stdyDscr>
 </codeBook>
 
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec
 Running edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
 Running edu.harvard.iq.dataverse.datasetutility.OptionalFileParamsTest
 -------------------------------
 test_01_jsonDescription
@@ -327,7 +283,7 @@ test_10_emptyString
 -------------------------------
 jsonData: 
 -------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
 Running edu.harvard.iq.dataverse.util.MarkupCheckerTest
 sanitizeBasicHTML
 --------------------------------------
@@ -358,9 +314,9 @@ safeStr: the
 <a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
 sanitized: the 
 <a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
 Running edu.harvard.iq.dataverse.util.FileUtilTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec
 Running edu.harvard.iq.dataverse.util.json.JsonPrinterTest
 json: {"description":"","label":"","categories":["Data"],"dataFile":{"filename":"","filesize":-1,"originalFormatLabel":"UNKNOWN","rootDataFileId":-1,"tabularTags":["Survey"]}}
 json: {
@@ -479,7 +435,7 @@ byBlocks: {
     ]
   }
 }
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
 Running edu.harvard.iq.dataverse.util.json.JsonParserTest
 json = {"typeName":"coordinate","multiple":true,"typeClass":"compound","value":[{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"0"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"3"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"10"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"13"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"20"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"23"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"30"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"33"}},{"lat":{"typeName":"lat","multiple":false,"typeClass":"primitive","value":"40"},"lon":{"typeName":"lon","multiple":false,"typeClass":"primitive","value":"43"}}]}
 true
@@ -488,30 +444,30 @@ true
 {"alias":"test-ip-group","identifier":"&ip/test-ip-group","id":42,"name":"Test-ip-group","description":"Ip group description","addresses":["1.1.1.1"]}
 {"alias":"test-ip-group","identifier":"&ip/test-ip-group","id":42,"name":"Test-ip-group","description":"Ip group description","addresses":["fe80:0:0:0:22c9:d0ff:fe48:ce61"]}
 fileMetadatas: [edu.harvard.iq.dvn.core.study.FileMetadata[id=null], edu.harvard.iq.dvn.core.study.FileMetadata[id=null]]
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec
 Running edu.harvard.iq.dataverse.util.json.JsonUtilTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.harvard.iq.dataverse.util.json.DatasetVersionDTOTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running edu.harvard.iq.dataverse.util.StringUtilTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
 Running edu.harvard.iq.dataverse.util.MailUtilTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running edu.harvard.iq.dataverse.util.JsfHelperTest
 enumValue
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.harvard.iq.dataverse.util.xml.XmlValidatorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.util.xml.XmlPrinterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.harvard.iq.dataverse.util.shapefile.ShapefileHandlerTest
 ------------------------------------------------------------
 (1) testCreateZippedNonShapefile
 ------------------------------------------------------------
 ------------------------------------------------------------
-/tmp/junit1050612106909029370
+/tmp/junit7713897030627836970
 ------------------------------------------------------------
-fname: /tmp/junit1050612106909029370/not-quite-a-shape.zip
+fname: /tmp/junit7713897030627836970/not-quite-a-shape.zip
 Passed!
 ------------------------------------------------------------
 (2) testZippedTwoShapefiles
@@ -535,9 +491,9 @@ Key: [shape2] Ext List: [shp, shx, dbf, prj, txt, pdf, __PLACEHOLDER-FOR-BLANK-E
 Key: [README] Ext List: [MD]
  >>>> Not a shapefile
 ------------------------------------------------------------
-/tmp/junit3112192851341169267
+/tmp/junit2656787702904862902
 ------------------------------------------------------------
-fname: /tmp/junit3112192851341169267/two-shapes.zip
+fname: /tmp/junit2656787702904862902/two-shapes.zip
 Creating folder: scratch-for-unzip-12345
 
 (1) Basename: shp_dictionary
@@ -571,17 +527,17 @@ Extensions: [md]
 Extensions: [txt]
 rezipped_filenames: [README.md, shape_notes.txt, shape1.zip, scratch-for-unzip-12345, shape1.pdf]
 Passed!
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
 Running edu.harvard.iq.dataverse.util.LruCacheTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.harvard.iq.dataverse.util.BitSetTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running edu.harvard.iq.dataverse.util.FileSortFieldAndOrderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.util.BundleUtilTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running edu.harvard.iq.dataverse.privateurl.PrivateUrlUtilTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running edu.harvard.iq.dataverse.confirmemail.ConfirmEmailUtilTest
 Friendly expiration timestamp / measurement test
 1440 Minutes: 24 hours
@@ -599,11 +555,11 @@ Grandfathered Time (y2k): 2000-01-01 00:00:00.0
 
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.harvard.iq.dataverse.authorization.providers.shib.ShibUtilTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec
 Running edu.harvard.iq.dataverse.authorization.providers.builtin.BuiltinAuthenticationProviderTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.722 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.653 sec
 Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GoogleOAuth2APTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.OrcidOAuth2APTest
 withEmailResponse = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <orcid-message xmlns="http://www.orcid.org/ns/orcid">
@@ -661,54 +617,54 @@ noEmailResponse = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
                     </orcid-bio>
     </orcid-profile>
 </orcid-message>
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
 Running edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GitHubOAuth2APTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running edu.harvard.iq.dataverse.authorization.providers.oauth2.OAuth2AuthenticationProviderFactoryTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running edu.harvard.iq.dataverse.authorization.providers.oauth2.OAuth2AuthenticationProviderFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IPv4AddressTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IpAddressTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IpAddressRangeTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.ip.IPv6AddressTest
-adr = 0:0:0:0:0:0:0:0
 adr = 0:0:0:0:0:0:0:7334
+adr = 0:0:0:0:0:0:0:0
 Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.ipaddress.IpGroupTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.harvard.iq.dataverse.authorization.groups.impl.explicit.ExplicitGroupTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running edu.harvard.iq.dataverse.authorization.groups.GroupUtilTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.harvard.iq.dataverse.authorization.groups.GroupServiceBeanTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running edu.harvard.iq.dataverse.authorization.AuthenticatedUserDisplayInfoTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.authorization.AuthUtilTest
 isNonLocalLoginEnabled
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.UpdateDatasetThumbnailCommandTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.MoveDataverseCommandTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.UpdateDatasetThumbnailCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.MoveDataverseCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running edu.harvard.iq.dataverse.engine.command.impl.CreateDatasetVersionCommandTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec
 Running edu.harvard.iq.dataverse.engine.command.impl.UpdatePermissionRootCommandTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.GetLatestPublishedDatasetVersionCommandTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommandTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.CreateDataverseCommandTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.CreateRoleCommandTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running edu.harvard.iq.dataverse.engine.command.impl.GetPrivateUrlCommandTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.GetLatestPublishedDatasetVersionCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateDataverseCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateRoleCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running edu.harvard.iq.dataverse.engine.command.impl.GetPrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommandTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running edu.harvard.iq.dataverse.engine.PermissionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.GlobalIdTest
@@ -718,7 +674,7 @@ testInject (weak test)
 testUnknownProtocol
 testBadIdentifierOnePart
 testBadIdentifierTwoParts
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest
 ---------------------------
 (1) testDTAformat
@@ -754,23 +710,23 @@ result 2b: null
 (2c) File is non-SAV string
 ---------------------------
 result 2c: null
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running edu.harvard.iq.dataverse.ingest.IngestUtilTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 sec
 Running edu.harvard.iq.dataverse.search.IndexUtilTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.search.SearchUtilTest
-SolrInputDocument(fields: [id=dataset_12345_permission, definitionPointDocId=dataset_12345, definitionPointDvObjectId=12345, discoverableBy=[group_public]])
 sanitizeQuery
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+SolrInputDocument(fields: [id=dataset_12345_permission, definitionPointDocId=dataset_12345, definitionPointDvObjectId=12345, discoverableBy=[group_public]])
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running edu.harvard.iq.dataverse.search.SearchFilesServiceBeanTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.search.SolrSearchResultTest
 actual: {"type":"dataverse"}
 expect: {"type":"dataverse"}
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running edu.harvard.iq.dataverse.EMailValidatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running edu.harvard.iq.dataverse.dataset.DatasetUtilTest
 persistDatasetLogoToDiskAndCreateThumbnail
 getThumbnailCandidates
@@ -781,36 +737,24 @@ getThumbnailAsInputStream
 isDatasetLogoPresent
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running edu.harvard.iq.dataverse.api.AbstractApiBeanTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec
 Running edu.harvard.iq.dataverse.api.dto.FieldDTOTest
 Top
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running edu.harvard.iq.dataverse.api.LazyRefTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running edu.harvard.iq.dataverse.passwordreset.PasswordResetDataTest
 newTokenNotExpired
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
-Failed tests:   testDatasetJson2dublincore(edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest): expected:<...<dcterms:identifier>[http://dx.doi.org/]10.5072/FK2/PCA2E3</...> but was:<...<dcterms:identifier>[doi:]10.5072/FK2/PCA2E3</...>
-
-Tests run: 295, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 295, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 20.320 s
-[INFO] Finished at: 2017-06-12T15:01:17+02:00
-[INFO] Final Memory: 60M/1158M
+[INFO] Total time: 18.543 s
+[INFO] Finished at: 2017-06-12T15:02:34+02:00
+[INFO] Final Memory: 56M/1173M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project dataverse: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/IQSS/dataverse/234117933/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
