@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "prometheus/client_java",
+  "bugCommit": "https://github.com/prometheus/client_java/compare/0ea0a30f0709...7a77d9e8bf9b",
+  "failingModule": "/root/workspace/prometheus/client_java/234775998/simpleclient",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 72,
+  "failing-test-cases": [
+    {
+      "className": "io.prometheus.client.CollectorRegistryTest",
+      "failingMethods": [
+        "io.prometheus.client.CollectorRegistryTest#testMetricFamilySamples_filterNames"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c[part_filter_c, s, c, part_filter_a]\u003e but was:\u003c[part_filter_c, c, part_filter_a]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
