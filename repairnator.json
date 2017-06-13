@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "mpatric/mp3agic",
+  "bugCommit": "https://github.com/mpatric/mp3agic/compare/86f7f66e2b9d...62b44b63460f",
+  "failingModule": "/root/workspace/mpatric/mp3agic/226863056",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 475,
+  "failing-test-cases": [
+    {
+      "className": "com.mpatric.mp3agic.ID3v2CommentFrameDataTest",
+      "failingMethods": [
+        "com.mpatric.mp3agic.ID3v2CommentFrameDataTest#convertsFrameDataWithNoDescriptionAndCommentIsUnicodeToBytesAndBack",
+        "com.mpatric.mp3agic.ID3v2CommentFrameDataTest#constructorThrowsErrorWhenEncodingsDoNotMatch"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: java.lang.IllegalArgumentException",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cσου\u003e but was:\u003cnull\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
