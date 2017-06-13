@@ -1,0 +1,78 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "apache/opennlp",
+  "bugCommit": "https://github.com/apache/opennlp/compare/e972869486f8...f418eed3089d",
+  "failingModule": "/root/workspace/apache/opennlp/237163058/opennlp-tools",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.io.IOException",
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 662,
+  "failing-test-cases": [
+    {
+      "className": "opennlp.tools.formats.conllu.ConlluLemmaSampleStreamTest",
+      "failingMethods": [
+        "opennlp.tools.formats.conllu.ConlluLemmaSampleStreamTest#testParseSpanishS300"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[digám+tú+él]\u003e but was:\u003c[_]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "opennlp.tools.formats.conllu.ConlluTokenSampleStreamTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "opennlp.tools.formats.conllu.ConlluTokenSampleStreamTest#testParseContraction",
+        "opennlp.tools.formats.conllu.ConlluTokenSampleStreamTest#testParseSpanishS300"
+      ],
+      "failures": [
+        {
+          "failureName": "java.io.IOException",
+          "failureDetail": "Failed to match token [Digám] in sentence [es-train-001-s300] with text [Digámoslo claramente, la insurgencia se ha pronunciado mucho más claramente respecto al tema de la paz que el Estado, como lo demuestra el fragmento que Bermúdez cita de la respuesta de \"Gabino\" a Piedad Córdoba, en la cual no se plantea ni siquiera \"esperar un mejor gobierno\".]",
+          "isError": true
+        },
+        {
+          "failureName": "java.io.IOException",
+          "failureDetail": "Failed to match token [uma] in sentence [train-s2] with text [Numa reunião entre representantes da Secretaria da Criança do DF ea juíza da Vara de Execuções de Medidas Socioeducativas, Lavínia Tupi Vieira Fonseca, ficou acordado que dos 25 internos, 12 serão internados na Unidade de Planaltina e os outros 13 devem retornar para a Unidade do Recanto das Em\u003cSPLIT\u003eas, antigo Ciago.]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "opennlp.tools.formats.conllu.ConlluPOSSampleStreamTest",
+      "failingMethods": [
+        "opennlp.tools.formats.conllu.ConlluPOSSampleStreamTest#testParseSpanishS300",
+        "opennlp.tools.formats.conllu.ConlluPOSSampleStreamTest#testParseContraction"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cDigámoslo_VERB+PRON+PRON claramente_ADV ,_PUNCT la_DET insurgencia_NOUN se_PRON ha_AUX pronunciado_VERB mucho_PRON más_ADV claramente_ADV respecto_NOUN al_ADP+DET tema_NOUN de_ADP la_DET paz_NOUN que_CCONJ el_DET Estado_NOUN ,_PUNCT como_SCONJ lo_PRON demuestra_VERB el_DET fragmento_NOUN que_SCONJ Bermúdez_PROPN cita_VERB de_ADP la_DET respuesta_NOUN de_ADP \"_PUNCT Gabino_PROPN \"_PUNCT a_ADP Piedad_PROPN Córdoba_PROPN ,_PUNCT en_ADP la_DET cual_PRON no_ADV se_PRON plantea_VERB ni_CCONJ siquiera_ADV \"_PUNCT esperar_VERB un_DET mejor_ADJ gobierno_NOUN \"_PUNCT ._PUNCT\u003e but was:\u003cDigámoslo__ Digám_VERB os_PRON lo_PRON claramente_ADV ,_PUNCT la_DET insurgencia_NOUN se_PRON ha_AUX pronunciado_VERB mucho_PRON más_ADV claramente_ADV respecto_NOUN al__ a_ADP el_DET tema_NOUN de_ADP la_DET paz_NOUN que_CCONJ el_DET Estado_NOUN ,_PUNCT como_SCONJ lo_PRON demuestra_VERB el_DET fragmento_NOUN que_SCONJ Bermúdez_PROPN cita_VERB de_ADP la_DET respuesta_NOUN de_ADP \"_PUNCT Gabino_PROPN \"_PUNCT a_ADP Piedad_PROPN Córdoba_PROPN ,_PUNCT en_ADP la_DET cual_PRON no_ADV se_PRON plantea_VERB ni_CCONJ siquiera_ADV \"_PUNCT esperar_VERB un_DET mejor_ADJ gobierno_NOUN \"_PUNCT ._PUNCT\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cNuma_ADP+DET reunião_NOUN entre_ADP representantes_NOUN da_ADP+DET Secretaria_PROPN da_ADP+DET Criança_PROPN do_ADP+DET DF_PROPN ea_CCONJ juíza_NOUN da_ADP+DET Vara_PROPN de_ADP Execuções_PROPN de_ADP Medidas_PROPN Socioeducativas_PROPN ,_PUNCT Lavínia_PROPN Tupi_PROPN Vieira_PROPN Fonseca_PROPN ,_PUNCT ficou_VERB acordado_ADJ que_CCONJ dos_ADP+DET 25_NUM internos_NOUN ,_PUNCT 12_NUM serão_AUX internados_VERB na_ADP+DET Unidade_PROPN de_ADP Planaltina_PROPN e_CCONJ os_DET outros_DET 13_NUM devem_AUX retornar_VERB para_ADP a_DET Unidade_PROPN do_ADP+DET Recanto_NOUN das_ADP+DET Emas_PROPN ,_PUNCT antigo_ADJ Ciago_PROPN ._PUNCT\u003e but was:\u003cNuma__ Em_ADP uma_DET reunião_NOUN entre_ADP representantes_NOUN da__ de_ADP a_DET Secretaria_PROPN da__ de_ADP a_DET Criança_PROPN do__ de_ADP o_DET DF_PROPN ea_CCONJ juíza_NOUN da__ de_ADP a_DET Vara_PROPN de_ADP Execuções_PROPN de_ADP Medidas_PROPN Socioeducativas_PROPN ,_PUNCT Lavínia_PROPN Tupi_PROPN Vieira_PROPN Fonseca_PROPN ,_PUNCT ficou_VERB acordado_ADJ que_CCONJ dos__ de_ADP os_DET 25_NUM internos_NOUN ,_PUNCT 12_NUM serão_AUX internados_VERB na__ en_ADP a_DET Unidade_PROPN de_ADP Planaltina_PROPN e_CCONJ os_DET outros_DET 13_NUM devem_AUX retornar_VERB para_ADP a_DET Unidade_PROPN do__ de_ADP o_DET Recanto_NOUN das__ de_ADP as_DET Emas_PROPN ,_PUNCT antigo_ADJ Ciago_PROPN ._PUNCT\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
