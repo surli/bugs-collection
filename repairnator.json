@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "IQSS/dataverse",
+  "bugCommit": "https://github.com/IQSS/dataverse/compare/944b31f05632...6a7eee12e403",
+  "failingModule": "/root/workspace/IQSS/dataverse/236532717",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 295,
+  "failing-test-cases": [
+    {
+      "className": "edu.harvard.iq.dataverse.GlobalIdTest",
+      "failingMethods": [
+        "edu.harvard.iq.dataverse.GlobalIdTest#testInject",
+        "edu.harvard.iq.dataverse.GlobalIdTest#testBadIdentifierTwoParts"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[Selectvaluefromdatasetfieldvalue]\u003e but was:\u003c[\u0027Select value from datasetfieldvalue\u0027;]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected test to throw (exception with message a string containing \"Failed to parse identifier: doi:2part/blah\" and an instance of java.lang.IllegalArgumentException)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
