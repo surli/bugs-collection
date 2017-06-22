@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/1ccb089997a2...95b5c275a270",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/189461813/sharding-jdbc-core",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "com.dangdang.ddframe.rdb.sharding.exception.ShardingJdbcException"
+  ],
+  "totalNumberRunningTests": 1077,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.integrate.db.pstatement.ShardingDataBasesOnlyForPStatementWithDMLTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.integrate.db.pstatement.ShardingDataBasesOnlyForPStatementWithDMLTest#assertInsertWithAutoIncrementColumn"
+      ],
+      "failures": [
+        {
+          "failureName": "com.dangdang.ddframe.rdb.sharding.exception.ShardingJdbcException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Parameter \"#3\" is not set; SQL statement: INSERT INTO t_order (`order_id`, `status`, user_id) VALUES (?, ?, ?) [90012-184]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.jdbc.ShardingPreparedStatementTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.jdbc.ShardingPreparedStatementTest#assertAddBatchWithAutoIncrementColumn"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003ctrue\u003e      but: was \u003cfalse\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
