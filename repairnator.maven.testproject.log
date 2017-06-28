@@ -1,0 +1,432 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] PDFBox parent
+[INFO] Apache FontBox
+[INFO] Apache XmpBox
+[INFO] Apache PDFBox
+[INFO] Apache Preflight
+[INFO] Apache Preflight application
+[INFO] Apache PDFBox Debugger
+[INFO] Apache PDFBox tools
+[INFO] Apache PDFBox application
+[INFO] Apache PDFBox Debugger application
+[INFO] Apache PDFBox examples
+[INFO] PDFBox reactor
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building PDFBox parent 2.0.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ pdfbox-parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (check-java-version) @ pdfbox-parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache FontBox 2.0.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ fontbox ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ fontbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 89 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ fontbox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ fontbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ fontbox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ fontbox ---
+[INFO] Surefire report directory: /root/workspace/apache/pdfbox/202350831/fontbox/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 7.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 41.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 551.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.fontbox.cmap.TestCMap
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.fontbox.cmap.TestCMap
+Running org.apache.fontbox.cmap.TestCMapParser
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.fontbox.cmap.TestCMapParser
+Running org.apache.fontbox.cff.Type1FontUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.apache.fontbox.cff.Type1FontUtilTest
+Running org.apache.fontbox.ttf.TestTTFParser
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.apache.fontbox.ttf.TestTTFParser
+Running org.apache.fontbox.ttf.TTFSubsetterTest
+Searching for SimHei font...
+Downloading DejaVuSansMono font...
+Download finished!
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in org.apache.fontbox.ttf.TTFSubsetterTest
+Running org.apache.fontbox.ttf.BufferedRandomAccessFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.fontbox.ttf.BufferedRandomAccessFileTest
+Running org.apache.fontbox.ttf.TestMemoryTTFDataStream
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.fontbox.ttf.TestMemoryTTFDataStream
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (check-java-version) @ fontbox ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache XmpBox 2.0.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ xmpbox ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xmpbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/pdfbox/202350831/xmpbox/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ xmpbox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xmpbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 26 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ xmpbox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ xmpbox ---
+[INFO] Surefire report directory: /root/workspace/apache/pdfbox/202350831/xmpbox/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.xmpbox.SaveMetadataHelperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.xmpbox.SaveMetadataHelperTest
+Running org.apache.xmpbox.TestValidatePermitedMetadata
+Tests run: 167, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in org.apache.xmpbox.TestValidatePermitedMetadata
+Running org.apache.xmpbox.XMPMetaDataTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.xmpbox.XMPMetaDataTest
+Running org.apache.xmpbox.schema.TestExifXmp
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.xmpbox.schema.TestExifXmp
+Running org.apache.xmpbox.schema.PhotoshopSchemaTest
+Tests run: 162, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in org.apache.xmpbox.schema.PhotoshopSchemaTest
+Running org.apache.xmpbox.schema.AdobePDFTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.xmpbox.schema.AdobePDFTest
+Running org.apache.xmpbox.schema.XMPSchemaTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.xmpbox.schema.XMPSchemaTest
+Running org.apache.xmpbox.schema.XMPBasicTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.apache.xmpbox.schema.XMPBasicTest
+Running org.apache.xmpbox.schema.XMPMediaManagementTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.xmpbox.schema.XMPMediaManagementTest
+Running org.apache.xmpbox.schema.PDFAIdentificationOthersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.xmpbox.schema.PDFAIdentificationOthersTest
+Running org.apache.xmpbox.schema.DublinCoreTest
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.apache.xmpbox.schema.DublinCoreTest
+Running org.apache.xmpbox.schema.BasicJobTicketSchemaTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.xmpbox.schema.BasicJobTicketSchemaTest
+Running org.apache.xmpbox.schema.AdobePDFErrorsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.xmpbox.schema.AdobePDFErrorsTest
+Running org.apache.xmpbox.schema.PDFAIdentificationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.xmpbox.schema.PDFAIdentificationTest
+Running org.apache.xmpbox.schema.XmpRightsSchemaTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.xmpbox.schema.XmpRightsSchemaTest
+Running org.apache.xmpbox.parser.DeserializationTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.xmpbox.parser.DeserializationTest
+Running org.apache.xmpbox.DateConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.xmpbox.DateConverterTest
+Running org.apache.xmpbox.DoubleSameTypeSchemaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.xmpbox.DoubleSameTypeSchemaTest
+Running org.apache.xmpbox.type.TestResourceEventType
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.xmpbox.type.TestResourceEventType
+Running org.apache.xmpbox.type.TestDerivedType
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.xmpbox.type.TestDerivedType
+Running org.apache.xmpbox.type.TestAbstractStructuredType
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.xmpbox.type.TestAbstractStructuredType
+Running org.apache.xmpbox.type.TestVersionType
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.xmpbox.type.TestVersionType
+Running org.apache.xmpbox.type.TestJobType
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.xmpbox.type.TestJobType
+Running org.apache.xmpbox.type.TestThumbnailType
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.xmpbox.type.TestThumbnailType
+Running org.apache.xmpbox.type.TestResourceRefType
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in org.apache.xmpbox.type.TestResourceRefType
+Running org.apache.xmpbox.type.AttributeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.xmpbox.type.AttributeTest
+Running org.apache.xmpbox.type.TestLayerType
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.xmpbox.type.TestLayerType
+Running org.apache.xmpbox.type.TestSimpleMetadataProperties
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.xmpbox.type.TestSimpleMetadataProperties
+Running org.apache.xmpbox.TestXMPWithDefinedSchemas
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.xmpbox.TestXMPWithDefinedSchemas
+
+Results :
+
+Tests run: 810, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (check-java-version) @ xmpbox ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache PDFBox 2.0.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ pdfbox ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pdfbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 21 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ pdfbox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pdfbox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 172 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ pdfbox ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 90 source files to /root/workspace/apache/pdfbox/202350831/pdfbox/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /root/workspace/apache/pdfbox/202350831/pdfbox/src/test/java/org/apache/pdfbox/pdmodel/common/TestEmbeddedFiles.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/apache/pdfbox/202350831/pdfbox/src/test/java/org/apache/pdfbox/pdmodel/common/TestEmbeddedFiles.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ pdfbox ---
+[INFO] Surefire report directory: /root/workspace/apache/pdfbox/202350831/pdfbox/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.pdfbox.filter.TestFilters
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.64 sec - in org.apache.pdfbox.filter.TestFilters
+Running org.apache.pdfbox.filter.PredictorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.pdfbox.filter.PredictorTest
+Running org.apache.pdfbox.text.TestTextStripper
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.055 sec - in org.apache.pdfbox.text.TestTextStripper
+Running org.apache.pdfbox.text.BidiTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.pdfbox.text.BidiTest
+Running org.apache.pdfbox.encryption.TestSymmetricKeyEncryption
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.503 sec - in org.apache.pdfbox.encryption.TestSymmetricKeyEncryption
+Running org.apache.pdfbox.encryption.TestPublicKeyEncryption
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec - in org.apache.pdfbox.encryption.TestPublicKeyEncryption
+Running org.apache.pdfbox.util.TestHexUtil
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.util.TestHexUtil
+Running org.apache.pdfbox.util.TestMatrix
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.util.TestMatrix
+Running org.apache.pdfbox.util.TestQuickSort
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.787 sec - in org.apache.pdfbox.util.TestQuickSort
+Running org.apache.pdfbox.util.TestDateUtil
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in org.apache.pdfbox.util.TestDateUtil
+Running org.apache.pdfbox.util.MatrixTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.util.MatrixTest
+Running org.apache.pdfbox.util.TestNumberFormatUtil
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.813 sec - in org.apache.pdfbox.util.TestNumberFormatUtil
+Running org.apache.pdfbox.pdfparser.EndstreamOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdfparser.EndstreamOutputStreamTest
+Running org.apache.pdfbox.pdfparser.TestPDFParser
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.pdfbox.pdfparser.TestPDFParser
+Running org.apache.pdfbox.pdfparser.PDFStreamParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdfparser.PDFStreamParserTest
+Running org.apache.pdfbox.multipdf.PDFMergerUtilityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.962 sec - in org.apache.pdfbox.multipdf.PDFMergerUtilityTest
+Running org.apache.pdfbox.multipdf.PDFCloneUtilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.pdfbox.multipdf.PDFCloneUtilityTest
+Running org.apache.pdfbox.multipdf.TestLayerUtility
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.pdfbox.multipdf.TestLayerUtility
+Running org.apache.pdfbox.multipdf.MergeAnnotationsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.12 sec - in org.apache.pdfbox.multipdf.MergeAnnotationsTest
+Running org.apache.pdfbox.multipdf.PageExtractorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.apache.pdfbox.multipdf.PageExtractorTest
+Running org.apache.pdfbox.multipdf.MergeAcroFormsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 sec - in org.apache.pdfbox.multipdf.MergeAcroFormsTest
+Running org.apache.pdfbox.cos.TestCOSString
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.pdfbox.cos.TestCOSString
+Running org.apache.pdfbox.cos.TestCOSInteger
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.pdfbox.cos.TestCOSInteger
+Running org.apache.pdfbox.cos.PDFDocEncodingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.cos.PDFDocEncodingTest
+Running org.apache.pdfbox.cos.TestCOSUpdateInfo
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.cos.TestCOSUpdateInfo
+Running org.apache.pdfbox.cos.TestCOSFloat
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.apache.pdfbox.cos.TestCOSFloat
+Running org.apache.pdfbox.cos.TestCOSStream
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.pdfbox.cos.TestCOSStream
+Running org.apache.pdfbox.rendering.TestRendering
+JDK: OpenJDK Runtime Environment
+Version: 1.8
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.668 sec - in org.apache.pdfbox.rendering.TestRendering
+Running org.apache.pdfbox.pdmodel.PageLayoutTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.pdfbox.pdmodel.PageLayoutTest
+Running org.apache.pdfbox.pdmodel.TestPDPageTransitions
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.pdfbox.pdmodel.TestPDPageTransitions
+Running org.apache.pdfbox.pdmodel.TestPDDocumentInformation
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.pdfbox.pdmodel.TestPDDocumentInformation
+Running org.apache.pdfbox.pdmodel.TestPDDocumentCatalog
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.apache.pdfbox.pdmodel.TestPDDocumentCatalog
+Running org.apache.pdfbox.pdmodel.TestPDPageTree
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.pdfbox.pdmodel.TestPDPageTree
+Running org.apache.pdfbox.pdmodel.TestFDF
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.TestFDF
+Running org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTest
+Running org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest
+Running org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirectionTest
+Running org.apache.pdfbox.pdmodel.interactive.form.TestListBox
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.pdfbox.pdmodel.interactive.form.TestListBox
+Running org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest
+Running org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec <<< FAILURE! - in org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest
+testOptionsAndNamesNotNumbers(org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest)  Time elapsed: 0.31 sec  <<< FAILURE!
+java.lang.AssertionError: This shall no longer be 2
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers(PDButtonTest.java:176)
+
+Running org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.648 sec - in org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest
+Running org.apache.pdfbox.pdmodel.interactive.form.TestCheckBox
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.form.TestCheckBox
+Running org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest
+Rendering of target/test-output/AlignmentTests-flattened.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
+Rendering of target/test-output/AlignmentTests-flattened-noRef.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.788 sec - in org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest
+Running org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest
+Running org.apache.pdfbox.pdmodel.interactive.form.TestFields
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.pdfbox.pdmodel.interactive.form.TestFields
+Running org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 sec - in org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest
+Running org.apache.pdfbox.pdmodel.interactive.form.PDTextFieldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.interactive.form.PDTextFieldTest
+Running org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceStringTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceStringTest
+Running org.apache.pdfbox.pdmodel.interactive.form.PlainTextTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.form.PlainTextTest
+Running org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.17 sec - in org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest
+Running org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons
+Running org.apache.pdfbox.pdmodel.interactive.form.PDChoiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.form.PDChoiceTest
+Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutlineTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutlineTest
+Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIteratorTest
+Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNodeTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNodeTest
+Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemTest
+Running org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4
+Running org.apache.pdfbox.pdmodel.common.function.type4.TestOperators
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.pdfbox.pdmodel.common.function.type4.TestOperators
+Running org.apache.pdfbox.pdmodel.common.function.type4.TestParser
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.common.function.type4.TestParser
+Running org.apache.pdfbox.pdmodel.common.function.TestFunctions
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.pdfbox.pdmodel.common.function.TestFunctions
+Running org.apache.pdfbox.pdmodel.common.TestEmbeddedFiles
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.common.TestEmbeddedFiles
+Running org.apache.pdfbox.pdmodel.common.PDStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.common.PDStreamTest
+Running org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode
+Running org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode
+Running org.apache.pdfbox.pdmodel.fdf.FDFAnnotationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in org.apache.pdfbox.pdmodel.fdf.FDFAnnotationTest
+Running org.apache.pdfbox.pdmodel.font.TestTTFParser
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.font.TestTTFParser
+Running org.apache.pdfbox.pdmodel.font.TestFontEmbedding
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in org.apache.pdfbox.pdmodel.font.TestFontEmbedding
+Running org.apache.pdfbox.pdmodel.font.PDFontTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.apache.pdfbox.pdmodel.font.PDFontTest
+Running org.apache.pdfbox.pdmodel.font.TestFontEncoding
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.font.TestFontEncoding
+Running org.apache.pdfbox.pdmodel.TestPDDocument
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.pdfbox.pdmodel.TestPDDocument
+Running org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest
+Running org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
+Running org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.253 sec - in org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest
+Running org.apache.pdfbox.pdmodel.graphics.image.CCITTFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.61 sec - in org.apache.pdfbox.pdmodel.graphics.image.CCITTFactoryTest
+Running org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYKTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYKTest
+Running org.apache.pdfbox.pdmodel.graphics.color.PDLabTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.graphics.color.PDLabTest
+Running org.apache.pdfbox.pdmodel.graphics.color.PDICCBasedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.graphics.color.PDICCBasedTest
+Running org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups
+Running org.apache.pdfbox.pdmodel.TestPDPageContentStream
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.pdmodel.TestPDPageContentStream
+Running org.apache.pdfbox.io.TestRandomAccessBuffer
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.pdfbox.io.TestRandomAccessBuffer
+Running org.apache.pdfbox.io.TestRandomAccessOutputStream
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.io.TestRandomAccessOutputStream
+Running org.apache.pdfbox.io.TestIOUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.pdfbox.io.TestIOUtils
+
+Results :
+
+Failed tests: 
+  PDButtonTest.testOptionsAndNamesNotNumbers:176 This shall no longer be 2
+
+Tests run: 385, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] PDFBox parent ...................................... SUCCESS [  1.167 s]
+[INFO] Apache FontBox ..................................... SUCCESS [  3.483 s]
+[INFO] Apache XmpBox ...................................... SUCCESS [  1.806 s]
+[INFO] Apache PDFBox ...................................... FAILURE [ 49.486 s]
+[INFO] Apache Preflight ................................... SKIPPED
+[INFO] Apache Preflight application ....................... SKIPPED
+[INFO] Apache PDFBox Debugger ............................. SKIPPED
+[INFO] Apache PDFBox tools ................................ SKIPPED
+[INFO] Apache PDFBox application .......................... SKIPPED
+[INFO] Apache PDFBox Debugger application ................. SKIPPED
+[INFO] Apache PDFBox examples ............................. SKIPPED
+[INFO] PDFBox reactor ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 57.001 s
+[INFO] Finished at: 2017-06-28T15:43:11+02:00
+[INFO] Final Memory: 27M/1190M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project pdfbox: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apache/pdfbox/202350831/pdfbox/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :pdfbox
