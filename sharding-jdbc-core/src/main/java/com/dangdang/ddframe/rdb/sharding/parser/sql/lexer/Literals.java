@@ -40,7 +40,5 @@ public enum Literals implements Token {
     IDENTIFIER,
     VARIANT,
     HINT,
-    COMMENT,
-    ERROR,
-    EOF
+    COMMENT
 }
