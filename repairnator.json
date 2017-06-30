@@ -1,0 +1,50 @@
+{
+  "totalNumberSkippingTests": 9,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/3a463ac507e6...4c6bc9baeff4",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/208569483/sharding-jdbc-core",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1056,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest#assertParse[assertSelectWithAggregateAndGroupBy]",
+        "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest#assertParse[assertSelectWithAvg]",
+        "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest#assertParse[assertSelectWithCountAndMaxAndMin]",
+        "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest#assertParse[assertSelectWithStartWithAllAndAggregate]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: refEq(AggregationColumn(expression\u003dCOUNT(MAX(*)), aggregationType\u003dCOUNT, alias\u003dOptional.of(c), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d1))      but: was \u003cAggregationColumn(expression\u003dCOUNT ( MAX ( * ) ), aggregationType\u003dCOUNT, alias\u003dOptional.of(c), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d1)\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"SELECT AVG(MAX(date)) date, AVG(DISTINCT time), order_id , COUNT(MAX(date)) AS sharding_gen_1 , SUM(MAX(date)) AS sharding_gen_2 , COUNT(DISTINCT time) AS sharding_gen_3 , SUM(DISTINCT time) AS sharding_gen_4 FROM [Token(order)]\"      but: was \"SELECT AVG(MAX(date)) date, AVG(DISTINCT time), order_id , COUNT ( MAX ( date ) ) AS sharding_gen_1 , SUM ( MAX ( date ) ) AS sharding_gen_2 , COUNT ( DISTINCT time ) AS sharding_gen_3 , SUM ( DISTINCT time ) AS sharding_gen_4 FROM [Token(order)]\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: refEq(AggregationColumn(expression\u003dMAX(date), aggregationType\u003dMAX, alias\u003dOptional.absent(), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d2))      but: was \u003cAggregationColumn(expression\u003dMAX ( date ), aggregationType\u003dMAX, alias\u003dOptional.absent(), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d2)\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: refEq(AggregationColumn(expression\u003dCOUNT(time), aggregationType\u003dCOUNT, alias\u003dOptional.absent(), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d2))      but: was \u003cAggregationColumn(expression\u003dCOUNT ( time ), aggregationType\u003dCOUNT, alias\u003dOptional.absent(), option\u003dOptional.absent(), derivedColumns\u003d[], columnIndex\u003d2)\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    }
+  ]
+}
