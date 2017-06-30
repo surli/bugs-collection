@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 9,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/6b39a563d74e...dd4625da0fdf",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/209663402/sharding-jdbc-core",
+  "hostname": "unknown host",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1056,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parser.mysql.MySQLStatementTest#assertParse[assertInsertNull]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is refEq(ConditionContext(conditions\u003d{Condition.Column(columnName\u003dstate, tableName\u003dorder)\u003dCondition(column\u003dCondition.Column(columnName\u003dstate, tableName\u003dorder), operator\u003d\u003d, values\u003d[], valueIndices\u003d[])}))      but: was \u003cConditionContext(conditions\u003d{Condition.Column(columnName\u003dorder_id, tableName\u003dorder)\u003dCondition(column\u003dCondition.Column(columnName\u003dorder_id, tableName\u003dorder), operator\u003d\u003d, values\u003d[], valueIndices\u003d[]), Condition.Column(columnName\u003dstate, tableName\u003dorder)\u003dCondition(column\u003dCondition.Column(columnName\u003dstate, tableName\u003dorder), operator\u003d\u003d, values\u003d[], valueIndices\u003d[])})\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
