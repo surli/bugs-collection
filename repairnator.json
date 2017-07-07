@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/pdfbox",
+  "bugCommit": "https://github.com/apache/pdfbox/compare/916adcc755cd...548a798ee092",
+  "failingModule": "/root/workspace/apache/pdfbox/213081374/pdfbox",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1215,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.pdfbox.pdmodel.fdf.FDFFieldTest",
+      "failingMethods": [
+        "org.apache.pdfbox.pdmodel.fdf.FDFFieldTest#testTextAsCOSStreamValue",
+        "org.apache.pdfbox.pdmodel.fdf.FDFFieldTest#testCOSStringValue"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cTest value\u003e but was:\u003cCOSDictionary{COSName{Length}:COSInt{10};}COSStream{465519428}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cTest value\u003e but was:\u003cCOSString{Test value}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
