@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 4,
+  "repo": "apache/pdfbox",
+  "bugCommit": "https://github.com/apache/pdfbox/compare/5223f2611b7e...0c45b8bc5076",
+  "failingModule": "/root/workspace/apache/pdfbox/224031290/pdfbox",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 1217,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest#testInlineImage"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.apache.pdfbox.rendering.TestRendering",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.pdfbox.rendering.TestRendering#render[ARCHIVERGB.ai]",
+        "org.apache.pdfbox.rendering.TestRendering#render[HOTRODCMYK.ai]",
+        "org.apache.pdfbox.rendering.TestRendering#render[survey.pdf]"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
