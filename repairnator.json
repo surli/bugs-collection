@@ -1,0 +1,126 @@
+{
+  "totalNumberSkippingTests": 11,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 10,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/cb88c8b27cc0...2c2126af9716",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/229069261/sharding-jdbc-core",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.Exception"
+  ],
+  "totalNumberRunningTests": 1081,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.util.SQLUtilTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.util.SQLUtilTest#assertNoSQL"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.exception.SQLParserException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest#assertDrop",
+        "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest#assertNegativeLimitRowCount",
+        "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest#assertCreate",
+        "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest#assertAlter",
+        "com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest#assertTruncate"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.exception.SQLParserException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.UpdateStatementParserTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.UpdateStatementParserTest#parseWithOr"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest#parseInsertFirstForOracle",
+        "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest#parseInsertAllForOracle"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.exception.SQLParsingUnsupportedException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.parsing.parser.ParserUnsupportedException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.constants.DatabaseTypeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.constants.DatabaseTypeTest#assertValueFromFailure"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.UnsupportedOperationException\u003e but was\u003ccom.dangdang.ddframe.rdb.sharding.exception.DatabaseTypeUnsupportedException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
