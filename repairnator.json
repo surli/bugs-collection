@@ -1,0 +1,1175 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 162,
+  "repo": "CorfuDB/CorfuDB",
+  "bugCommit": "https://github.com/CorfuDB/CorfuDB/commit/175df9378647",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/233070175/test",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.util.concurrent.CancellationException",
+    "java.lang.RuntimeException",
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException",
+    "java.lang.Exception"
+  ],
+  "totalNumberRunningTests": 317,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.concurrent.MapsAsMQsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.concurrent.MapsAsMQsTest#useMapsAsMQs"
+      ],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.UndoTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.UndoTest#ckMultiStreamRollback2",
+        "org.corfudb.runtime.object.transactions.UndoTest#ckRollbackToRightPlace",
+        "org.corfudb.runtime.object.transactions.UndoTest#ckMultiStreamRollback",
+        "org.corfudb.runtime.object.transactions.UndoTest#canUndoAfterNoUndo",
+        "org.corfudb.runtime.object.transactions.UndoTest#canRollbackWithoutUndo",
+        "org.corfudb.runtime.object.transactions.UndoTest#ckCorrectUndo"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "org.corfudb.runtime.concurrent.MultipleNonOverlappingTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.concurrent.MultipleNonOverlappingTest#testStress",
+        "org.corfudb.runtime.concurrent.MultipleNonOverlappingTest#testStress2"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest#snapshotReadableWithConcurrentWrites",
+        "org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest#snapshotReadable"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest#testCorfuSharedCounterConcurrentReads"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.corfudb.runtime.view.QuorumReplicationStreamViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canSeekOnStream",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#streamCanSurviveOverwriteException",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canReadWriteFromStream",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canFindInStream",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canReadWriteFromCachedStream",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canReadWriteFromStreamConcurrent",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canReadWriteFromStreamWithoutBackpointers",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#streamWillHoleFill",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#canDoPreviousOnStream",
+        "org.corfudb.runtime.view.QuorumReplicationStreamViewTest#streamWithHoleFill"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 10
+    },
+    {
+      "className": "org.corfudb.runtime.clients.LogUnitClientTest",
+      "failingMethods": [
+        "org.corfudb.runtime.clients.LogUnitClientTest#holeFillCannotBeOverwritten"
+      ],
+      "erroringMethods": [
+        "org.corfudb.runtime.clients.LogUnitClientTest#valueCanBeAdopted",
+        "org.corfudb.runtime.clients.LogUnitClientTest#canReadWriteRanked",
+        "org.corfudb.runtime.clients.LogUnitClientTest#cannotOutrank",
+        "org.corfudb.runtime.clients.LogUnitClientTest#canReadWrite",
+        "org.corfudb.runtime.clients.LogUnitClientTest#holeFillCannotOverwrite",
+        "org.corfudb.runtime.clients.LogUnitClientTest#CorruptedDataReadThrowsException",
+        "org.corfudb.runtime.clients.LogUnitClientTest#backpointersCanBeWrittenAndRead",
+        "org.corfudb.runtime.clients.LogUnitClientTest#overwriteThrowsException"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting:\n \u003cjava.lang.NullPointerException\u003e\nto be an instance of:\n \u003cjava.util.concurrent.ExecutionException\u003e\nbut was instance of:\n \u003cjava.lang.NullPointerException\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 8
+    },
+    {
+      "className": "org.corfudb.runtime.collections.FGMapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.FGMapTest#sizeIsCorrect",
+        "org.corfudb.runtime.collections.FGMapTest#abortRateIsLowForSimpleTX",
+        "org.corfudb.runtime.collections.FGMapTest#canReadWriteToSingle",
+        "org.corfudb.runtime.collections.FGMapTest#canClear",
+        "org.corfudb.runtime.collections.FGMapTest#loadsFollowedByGetsConcurrent",
+        "org.corfudb.runtime.collections.FGMapTest#canNestTX",
+        "org.corfudb.runtime.collections.FGMapTest#checkClearCalls",
+        "org.corfudb.runtime.collections.FGMapTest#canClearInTX"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "org.corfudb.runtime.concurrent.StreamSeekAtomicityTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.concurrent.StreamSeekAtomicityTest#ckCommitAtomicity3",
+        "org.corfudb.runtime.concurrent.StreamSeekAtomicityTest#ckCommitAtomicity2",
+        "org.corfudb.runtime.concurrent.StreamSeekAtomicityTest#ckCommitAtomicity"
+      ],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.corfudb.runtime.collections.SMRMultiLogunitTest",
+      "failingMethods": [
+        "org.corfudb.runtime.collections.SMRMultiLogunitTest#multiThreadedManyWritesThenRead"
+      ],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.SMRMultiLogunitTest#simpleWriteRead",
+        "org.corfudb.runtime.collections.SMRMultiLogunitTest#manyWritesThenRead",
+        "org.corfudb.runtime.collections.SMRMultiLogunitTest#writeDualRead"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.corfudb.runtime.view.ManagementViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.ManagementViewTest#sequencerFailoverBackpointerCheck",
+        "org.corfudb.runtime.view.ManagementViewTest#ckSequencerFailoverTXResolution1",
+        "org.corfudb.runtime.view.ManagementViewTest#ckSequencerFailoverTXResolution",
+        "org.corfudb.runtime.view.ManagementViewTest#testSequencerFailover"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "org.corfudb.runtime.collections.SMRMapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.SMRMapTest#unusedMutatorAccessor",
+        "org.corfudb.runtime.collections.SMRMapTest#canContainOtherCorfuObjects",
+        "org.corfudb.runtime.collections.SMRMapTest#loadsFollowedByGetsConcurrent",
+        "org.corfudb.runtime.collections.SMRMapTest#canUpdateSingleObjectTransacationallyWhenCached",
+        "org.corfudb.runtime.collections.SMRMapTest#concurrentAbortMultiViewInterleaved",
+        "org.corfudb.runtime.collections.SMRMapTest#smrMapCanContainCustomObjects",
+        "org.corfudb.runtime.collections.SMRMapTest#multipleTXesAreApplied",
+        "org.corfudb.runtime.collections.SMRMapTest#canContainNullObjects",
+        "org.corfudb.runtime.collections.SMRMapTest#abortedTransactionsCannotBeReadOnSingleObject",
+        "org.corfudb.runtime.collections.SMRMapTest#bulkReads",
+        "org.corfudb.runtime.collections.SMRMapTest#loadsFollowedByGets",
+        "org.corfudb.runtime.collections.SMRMapTest#canReadWriteToSingle",
+        "org.corfudb.runtime.collections.SMRMapTest#modificationDuringTransactionCausesAbort",
+        "org.corfudb.runtime.collections.SMRMapTest#mutatorFollowedByATransaction",
+        "org.corfudb.runtime.collections.SMRMapTest#readSetDiffFromWriteSet",
+        "org.corfudb.runtime.collections.SMRMapTest#loadsFollowedByGetsConcurrentMultiView",
+        "org.corfudb.runtime.collections.SMRMapTest#collectionsStreamInterface",
+        "org.corfudb.runtime.collections.SMRMapTest#canUpdateSingleObjectTransacationally",
+        "org.corfudb.runtime.collections.SMRMapTest#smrMapCanContainCustomObjectsInsideTXes",
+        "org.corfudb.runtime.collections.SMRMapTest#multipleTXesAreAppliedWOAccessors",
+        "org.corfudb.runtime.collections.SMRMapTest#concurrentAbortMultiViewThreaded"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 22
+    },
+    {
+      "className": "org.corfudb.runtime.view.StreamViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromStreamConcurrent",
+        "org.corfudb.runtime.view.StreamViewTest#canFindInStream",
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromStreamWithoutBackpointers",
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromStream",
+        "org.corfudb.runtime.view.StreamViewTest#canDoPreviousOnStream",
+        "org.corfudb.runtime.view.StreamViewTest#streamCanSurviveOverwriteException",
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromCachedStream",
+        "org.corfudb.runtime.view.StreamViewTest#canSeekOnStream",
+        "org.corfudb.runtime.view.StreamViewTest#streamWillHoleFill",
+        "org.corfudb.runtime.view.StreamViewTest#streamWithHoleFill"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 10
+    },
+    {
+      "className": "org.corfudb.runtime.collections.PutIfAbsentMapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.PutIfAbsentMapTest#putIfAbsentTest",
+        "org.corfudb.runtime.collections.PutIfAbsentMapTest#putIfAbsentTestConcurrent"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.runtime.view.AddressSpaceViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.AddressSpaceViewTest#ensureStripingReadAllWorks",
+        "org.corfudb.runtime.view.AddressSpaceViewTest#ensureStripingWorks"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.runtime.view.StreamsViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.StreamsViewTest#canCopyStream"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.corfudb.runtime.collections.SMRMapEntrySetTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.SMRMapEntrySetTest#manipulateSetsConcurrent",
+        "org.corfudb.runtime.collections.SMRMapEntrySetTest#manipulateSets"
+      ],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.infrastructure.LogUnitServerTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.infrastructure.LogUnitServerTest#checkThatWritesArePersisted",
+        "org.corfudb.infrastructure.LogUnitServerTest#checkOverwritesFail",
+        "org.corfudb.infrastructure.LogUnitServerTest#checkOverwriteExceptionIsNotThrownWhenTheRankIsHigher",
+        "org.corfudb.infrastructure.LogUnitServerTest#checkUnCachedWrites",
+        "org.corfudb.infrastructure.LogUnitServerTest#checkThatMoreWritesArePersisted"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testOpacityThreaded",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testNoWriteConflictSimpleOptimistic",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testAbortWWInterleaved",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testOptimismInterleaved",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testOpacityInterleaved",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testOptimismThreaded",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#finegrainedUpdatesDoNotConflict",
+        "org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest#testAbortWWThreaded"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 10
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest",
+      "failingMethods": [
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#nestedTransactionCanBeAborted",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#OptimisticStreamGetUpdatedCorrectlyWithNestedTransaction"
+      ],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#writeOnlyTransactionCommitsInMemory",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#threadShouldAbortAfterConflict",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#nestedTransactionCanBeAborted",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#nestedTransactionsCanBeReadDuringCommit",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#nestedTransactionsAreIsolatedAcrossThreads",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#readOwnWrites",
+        "org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest#OptimisticStreamGetUpdatedCorrectlyWithNestedTransaction"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting:\n \u003c{\"k\"\u003d\"v0\"}\u003e\nto contain:\n \u003c[MapEntry[key\u003d\u0027k\u0027, value\u003d\u0027v2\u0027]]\u003e\nbut could not find:\n \u003c[MapEntry[key\u003d\u0027k\u0027, value\u003d\u0027v2\u0027]]\u003e\n",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting:\n \u003c{}\u003e\nto contain:\n \u003c[MapEntry[key\u003d\u0027k\u0027, value\u003d\u0027v1\u0027]]\u003e\nbut could not find:\n \u003c[MapEntry[key\u003d\u0027k\u0027, value\u003d\u0027v1\u0027]]\u003e\n",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 10
+    },
+    {
+      "className": "org.corfudb.runtime.view.ChainReplicationViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.ChainReplicationViewTest#ensureAllUnitsContainData",
+        "org.corfudb.runtime.view.ChainReplicationViewTest#canReadWriteToMultiple",
+        "org.corfudb.runtime.view.ChainReplicationViewTest#canReadWriteToSingleConcurrent",
+        "org.corfudb.runtime.view.ChainReplicationViewTest#canReadWriteToSingle"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "org.corfudb.runtime.object.CompileProxyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCounterReadConcurrency",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCompoundSimple",
+        "org.corfudb.runtime.object.CompileProxyTest#testCorfuMapConcurrency",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCounterWriteConcurrency",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectMapSimple",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCompoundWriteConcurrency",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCounterCASConcurrency",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCounterSimple",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCounterConcurrencyStream",
+        "org.corfudb.runtime.object.CompileProxyTest#testObjectCompoundWriteConcurrencyStream"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 10
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.StreamTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.StreamTest#testConcurrentStreamRW",
+        "org.corfudb.runtime.object.transactions.StreamTest#mixBackpointers"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.runtime.object.CorfuSMRObjectProxyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.CorfuSMRObjectProxyTest#canUseCustomSerializer",
+        "org.corfudb.runtime.object.CorfuSMRObjectProxyTest#canReadWriteToSingle",
+        "org.corfudb.runtime.object.CorfuSMRObjectProxyTest#canUseAnnotations",
+        "org.corfudb.runtime.object.CorfuSMRObjectProxyTest#canOpenObjectWithTwoRuntimes"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "org.corfudb.runtime.view.ObjectsViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.ObjectsViewTest#unrelatedTransactionDoesNotConflict",
+        "org.corfudb.runtime.view.ObjectsViewTest#canCopyObject",
+        "org.corfudb.runtime.view.ObjectsViewTest#unrelatedStreamDoesNotConflict",
+        "org.corfudb.runtime.view.ObjectsViewTest#abortedTransactionDoesNotConflict"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testAbortWWInterleaved",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testOpacityThreaded",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testRWConflictWWInterleaved",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testAbortWWThreaded",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testNoWriteConflictSimpleWW",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#finegrainedUpdatesDoNotConflict",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testOpacityInterleaved",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#simpleWWTest",
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest#testRWConflictWWThreaded"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 11
+    },
+    {
+      "className": "org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest#concurrentModificationsCauseAbort"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Uncaught exception from previous statement",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Uncaught exception at end of test",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.corfudb.runtime.view.LayoutViewTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.LayoutViewTest#reconfigurationDuringDataOperations"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.corfudb.runtime.view.replication.ChainReplicationProtocolTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.replication.ChainReplicationProtocolTest#canWriteRead",
+        "org.corfudb.runtime.view.replication.ChainReplicationProtocolTest#overwriteThrowsException",
+        "org.corfudb.runtime.view.replication.ChainReplicationProtocolTest#failedWriteCanBeRead",
+        "org.corfudb.runtime.view.replication.ChainReplicationProtocolTest#failedWriteIsPropagated"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest#overwriteThrowsException",
+        "org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest#readOnlyCommitted",
+        "org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest#canWriteRead"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
