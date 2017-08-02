@@ -148,11 +148,8 @@ public class LogUnitServer extends AbstractServer {
         // clear any commit record (or set initially to false).
         msg.getPayload().clearCommit();
         try {
-                for (UUID streamID : msg.getPayload().getStreamAddresses().keySet()) {
-                    dataCache.put(new LogAddress(msg.getPayload().getStreamAddresses().get(streamID), streamID),
-                            msg.getPayload().getData());
-                }
-                r.sendResponse(ctx, msg, CorfuMsgType.WRITE_OK.msg());
+            dataCache.put(new LogAddress(msg.getPayload().getGlobalAddress(), null), msg.getPayload().getData());
+            r.sendResponse(ctx, msg, CorfuMsgType.WRITE_OK.msg());
 
         } catch (OverwriteException ex) {
                 r.sendResponse(ctx, msg, CorfuMsgType.ERROR_OVERWRITE.msg());
