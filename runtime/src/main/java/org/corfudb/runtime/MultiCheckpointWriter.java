@@ -22,14 +22,17 @@ import java.util.function.BiConsumer;
 
 public class MultiCheckpointWriter {
     @Getter
-    private List<ICorfuSMR<Map<Object,Object>>> maps = new ArrayList<>();
+    private List<ICorfuSMR<Map>> maps = new ArrayList<>();
     @Getter
     private List<Long> checkpointLogAddresses = new ArrayList<>();
 
+    /** Add a map to the list of maps to be checkpointed by this class. */
     @SuppressWarnings("unchecked")
     public void addMap(SMRMap map) {
-        maps.add((ICorfuSMR<Map<Object,Object>>) map);
+        maps.add((ICorfuSMR<Map>) map);
     }
+
+    /** Add map(s) to the list of maps to be checkpointed by this class. */
 
     public void addAllMaps(Collection<SMRMap> maps) {
         for (SMRMap map : maps) {
@@ -67,12 +70,11 @@ public class MultiCheckpointWriter {
         long firstGlobalAddress = context.getSnapshotTimestamp();
 
         try {
-            for (ICorfuSMR<Map<Object,Object>> map : maps) {
-                final Long fudgeFactor = 75L;
+            for (ICorfuSMR<Map> map : maps) {
                 UUID streamID = map.getCorfuStreamID();
                 CheckpointWriter cpw = new CheckpointWriter(rt, streamID, author, (SMRMap) map);
                 ISerializer serializer =
-                        ((CorfuCompileProxy<Map<Object,Object>>) map.getCorfuSMRProxy())
+                        ((CorfuCompileProxy<Map>) map.getCorfuSMRProxy())
                                 .getSerializer();
                 cpw.setSerializer(serializer);
                 cpw.setPostAppendFunc(postAppendFunc);
