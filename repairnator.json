@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "CorfuDB/CorfuDB",
+  "bugCommit": "https://github.com/CorfuDB/CorfuDB/commit/d0b628953992",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/235072755/test",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 307,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.clients.LogUnitClientTest",
+      "failingMethods": [
+        "org.corfudb.runtime.clients.LogUnitClientTest#CorruptedDataReadThrowsException",
+        "org.corfudb.runtime.clients.LogUnitClientTest#readingTrimmedAddress"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting:\n \u003cjava.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Timeout after 10000 ms\u003e\nto be an instance of:\n \u003cjava.lang.RuntimeException\u003e\nbut was instance of:\n \u003cjava.util.concurrent.ExecutionException\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting:\n \u003cjava.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Timeout after 10000 ms\u003e\nto be an instance of:\n \u003cjava.lang.RuntimeException\u003e\nbut was instance of:\n \u003cjava.util.concurrent.ExecutionException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
