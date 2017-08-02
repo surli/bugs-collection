@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/3177dc19d952...e467f4ea9d00",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/237930594/sharding-jdbc-core",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1101,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest#assertDoDynamicShardingForBetweenSingleKey",
+        "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest#assertDoDynamicShardingForEqualSingleKey",
+        "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest#assertDoDynamicShardingForMultipleKeys",
+        "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest#assertDoStaticShardingForBetweenSingleKey",
+        "com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest#assertDoStaticShardingForEqualSingleKey"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c[1, 2, 3]\u003e      but: was \u003c[1, 2, 3]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c[1, 2, 3]\u003e      but: was \u003c[1, 2, 3]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c[]\u003e      but: was \u003c[]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c[1]\u003e      but: was \u003c[1]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c[1]\u003e      but: was \u003c[1]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}
