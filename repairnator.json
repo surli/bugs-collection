@@ -1,0 +1,40 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-dataformat-xml",
+  "bugCommit": "https://github.com/FasterXML/jackson-dataformat-xml/compare/7df1d649cbcc...2ab0ce5178ff",
+  "failingModule": "/root/workspace/FasterXML/jackson-dataformat-xml/231036718",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.IllegalStateException",
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 150,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.dataformat.xml.VersionInfoTest",
+      "failingMethods": [
+        "com.fasterxml.jackson.dataformat.xml.VersionInfoTest#testMapperCopy"
+      ],
+      "erroringMethods": [
+        "com.fasterxml.jackson.dataformat.xml.VersionInfoTest#testSerializerProviderCopy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "DefaultSerializerProvider sub-class not overriding copy()",
+          "isError": true
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "serialization features did not get copied expected:\u003c2722232\u003e but was:\u003c2722236\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
