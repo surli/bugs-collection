@@ -398,14 +398,14 @@ public class CorfuRuntime {
     }
 
     /**
-     * Invalidate the current layoutFuture.
-     * If the layoutFuture has been previously invalidated and a new layoutFuture has not yet been retrieved,
+     * Invalidate the current layout.
+     * If the layout has been previously invalidated and a new layout has not yet been retrieved,
      * this function does nothing.
      */
     public synchronized void invalidateLayout() {
-        // Is there a pending request to retrieve the layoutFuture?
+        // Is there a pending request to retrieve the layout?
         if (!layoutFuture.isDone()) {
-            // Don't create a new request for a layoutFuture if there is one pending.
+            // Don't create a new request for a layout if there is one pending.
             return;
         }
         layoutFuture = fetchLayout();
@@ -413,11 +413,11 @@ public class CorfuRuntime {
 
 
     /**
-     * Return a completable future which is guaranteed to contain a layoutFuture.
-     * This future will continue retrying until it gets a layoutFuture. If you need this completable future to fail,
+     * Return a completable future which is guaranteed to contain a layout
+     * This future will continue retrying until it gets a layout. If you need this completable future to fail,
      * you should chain it with a timeout.
      *
-     * @return A completable future containing a layoutFuture.
+     * @return A completable future containing a layout.
      */
     private CompletableFuture<Layout> fetchLayout() {
         return CompletableFuture.<Layout>supplyAsync(() -> {
@@ -425,12 +425,12 @@ public class CorfuRuntime {
             while (true) {
                 List<String> layoutServersCopy =  layoutServers.stream().collect(Collectors.toList());
                 Collections.shuffle(layoutServersCopy);
-                // Iterate through the layoutFuture servers, attempting to connect to one
+                // Iterate through the layout servers, attempting to connect to one
                 for (String s : layoutServersCopy) {
                     log.debug("Trying connection to layoutFuture server {}", s);
                     try {
                         IClientRouter router = getRouter(s);
-                        // Try to get a layoutFuture.
+                        // Try to get a layout.
                         CompletableFuture<Layout> layoutFuture = router.getClient(LayoutClient.class).getLayout();
                         // Wait for layoutFuture
                         Layout l = layoutFuture.get();
@@ -449,13 +449,13 @@ public class CorfuRuntime {
                         this.layoutFuture = layoutFuture;
                         //FIXME Synchronization END
 
-                        log.debug("Layout server {} responded with layoutFuture {}", s, l);
+                        log.debug("Layout server {} responded with layout {}", s, l);
                         return l;
                     } catch (Exception e) {
-                        log.warn("Tried to get layoutFuture from {} but failed with exception:", s, e);
+                        log.warn("Tried to get layout from {} but failed with exception:", s, e);
                     }
                 }
-                log.warn("Couldn't connect to any layoutFuture servers, retrying in {}s.", retryRate);
+                log.warn("Couldn't connect to any layout servers, retrying in {}s.", retryRate);
                 try {
                     Thread.sleep(retryRate * 1000);
                 } catch (InterruptedException e) {
@@ -474,8 +474,8 @@ public class CorfuRuntime {
      */
     public synchronized CorfuRuntime connect() {
         if (layoutFuture == null) {
-            log.info("Connecting to Corfu server instance, layoutFuture servers={}", layoutServers);
-            // Fetch the current layoutFuture and save the future.
+            log.info("Connecting to Corfu server instance, layout servers={}", layoutServers);
+            // Fetch the current layout and save the future.
             layoutFuture = fetchLayout();
             try {
                 layoutFuture.get();

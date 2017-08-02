@@ -92,7 +92,7 @@ public class AddressSpaceView extends AbstractView {
         final ILogData ld = new LogData(data);
         layoutHelper(l -> {
             // Check if the token issued is in the same
-            // epoch as the layoutFuture we are about to write
+            // epoch as the layout we are about to write
             // to.
             if (token.getEpoch() != l.getEpoch()) {
                 throw new WrongEpochException(l.getEpoch());

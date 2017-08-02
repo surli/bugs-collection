@@ -23,7 +23,7 @@ public class ManagementServerTest extends AbstractServerTest {
 
     @Override
     public ManagementServer getDefaultServer() {
-        // Adding layoutFuture server for management server runtime to connect to.
+        // Adding layout server for management server runtime to connect to.
         router.addServer(new LayoutServer(new ServerContextBuilder().setSingle(true).setServerRouter(getRouter()).build()));
         managementServer = new ManagementServer(new ServerContextBuilder().setSingle(false).setServerRouter(getRouter()).build());
         return managementServer;

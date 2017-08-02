@@ -37,7 +37,7 @@ public class LayoutServerTest extends AbstractServerTest {
 
     /**
      * Verifies that a server that is not yet bootstrap does not respond with
-     * a layoutFuture.
+     * a layout.
      */
     @Test
     public void nonBootstrappedServerNoLayout() {
@@ -46,8 +46,8 @@ public class LayoutServerTest extends AbstractServerTest {
     }
 
     /**
-     * Verifies that a server responds with a layoutFuture that the server was bootstrapped with.
-     * There are no layoutFuture changes between bootstrap and layoutFuture request.
+     * Verifies that a server responds with a layout that the server was bootstrapped with.
+     * There are no layout changes between bootstrap and layout request.
      */
     @Test
     public void bootstrapServerInstallsNewLayout() {
@@ -171,7 +171,7 @@ public class LayoutServerTest extends AbstractServerTest {
     }
 
     /**
-     * Verifies that a layoutFuture is persisted across server reboots.
+     * Verifies that a layout is persisted across server reboots.
      *
      * @throws Exception
      */
@@ -193,7 +193,7 @@ public class LayoutServerTest extends AbstractServerTest {
         newLayout.setEpoch(NEW_EPOCH);
         setEpoch(NEW_EPOCH);
 
-        // Start the process of electing a new layoutFuture. But that layoutFuture will not take effect
+        // Start the process of electing a new layout. But that layout will not take effect
         // till it is committed.
         sendPrepare(NEW_EPOCH, 1);
         Assertions.assertThat(getLastMessage().getMsgType()).isEqualTo(CorfuMsgType.LAYOUT_PREPARE_ACK);
@@ -213,12 +213,12 @@ public class LayoutServerTest extends AbstractServerTest {
         assertThat(s2).isPhase1Rank(new Rank(1L, AbstractServerTest.testClientId));
         assertThat(s2).isPhase2Rank(new Rank(1L, AbstractServerTest.testClientId));
 
-        // request layoutFuture using the old epoch.
+        // request layout using the old epoch.
         requestLayout(OLD_EPOCH);
         Assertions.assertThat(getLastMessage().getMsgType()).isEqualTo(CorfuMsgType.LAYOUT_RESPONSE);
         Assertions.assertThat(((LayoutMsg) getLastMessage()).getLayout().getEpoch()).isEqualTo(0);
 
-        // request layoutFuture using the new epoch.
+        // request layout using the new epoch.
         requestLayout(NEW_EPOCH);
         Assertions.assertThat(getLastMessage().getMsgType()).isEqualTo(CorfuMsgType.LAYOUT_RESPONSE);
         Assertions.assertThat(((LayoutMsg) getLastMessage()).getLayout().getEpoch()).isEqualTo(0);
@@ -226,7 +226,7 @@ public class LayoutServerTest extends AbstractServerTest {
 
     /**
      * The test verifies that the data in accepted phase1 and phase2 messages
-     * is persisted to disk and survives layoutFuture server restarts.
+     * is persisted to disk and survives layout server restarts.
      *
      * @throws Exception
      */
@@ -273,7 +273,7 @@ public class LayoutServerTest extends AbstractServerTest {
     }
 
     /**
-     * Validates that the layoutFuture server accept or rejects incoming phase1 messages based on
+     * Validates that the layout server accept or rejects incoming phase1 messages based on
      * the last persisted phase1 rank.
      *
      * @throws Exception
@@ -313,7 +313,7 @@ public class LayoutServerTest extends AbstractServerTest {
     }
 
     /**
-     * Validates that the layoutFuture server accept or rejects incoming phase2 messages based on
+     * Validates that the layout server accept or rejects incoming phase2 messages based on
      * the last persisted phase1 and phase2 data.
      * If persisted phase1 rank does not match the LAYOUT_PROPOSE message then the server did not
      * take part in the prepare phase. It should reject this message.
@@ -370,7 +370,7 @@ public class LayoutServerTest extends AbstractServerTest {
     }
 
     /**
-     * Validates that the layoutFuture server accept or rejects incoming phase1 and phase2 messages from multiple
+     * Validates that the layout server accept or rejects incoming phase1 and phase2 messages from multiple
      * clients based on current state {Phease1Rank [rank, clientID], Phase2Rank [rank, clientID] }
      * If LayoutServer has accepted a phase1 message from a client , it can only accept a higher ranked phase1 message
      * from another client.
@@ -449,7 +449,7 @@ public class LayoutServerTest extends AbstractServerTest {
         layout.setEpoch(NEW_EPOCH);
         bootstrapServer(layout);
 
-        // Reboot, then check that our epoch 100 layoutFuture is still there.
+        // Reboot, then check that our epoch 100 layout is still there.
         //s1.reboot();
 
         requestLayout(NEW_EPOCH);

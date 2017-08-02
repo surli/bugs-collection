@@ -24,7 +24,7 @@ import java.util.stream.Stream;
 import static java.util.Objects.requireNonNull;
 
 /**
- * This class represents the layoutFuture of a Corfu instance.
+ * This class represents the layout of a Corfu instance.
  * Created by mwei on 12/8/15.
  */
 @Slf4j
@@ -39,34 +39,34 @@ public class Layout implements Cloneable {
             .registerTypeAdapter(Layout.class, new LayoutDeserializer())
             .create();
     /**
-     * A list of layoutFuture servers in the layoutFuture.
+     * A list of layout servers in the layout.
      */
     @Getter
     List<String> layoutServers;
     /**
-     * A list of sequencers in the layoutFuture.
+     * A list of sequencers in the layout.
      */
     @Getter
     List<String> sequencers;
     /**
-     * A list of the segments in the layoutFuture.
+     * A list of the segments in the layout.
      */
     @Getter
     List<LayoutSegment> segments;
     /**
-     * A list of unresponsive nodes in the layoutFuture.
+     * A list of unresponsive nodes in the layout.
      */
     @Getter
     List<String> unresponsiveServers;
     /**
-     * The epoch of this layoutFuture.
+     * The epoch of this layout.
      */
     @Getter
     @Setter
     long epoch;
 
     /**
-     * The org.corfudb.runtime this layoutFuture is associated with.
+     * The org.corfudb.runtime this layout is associated with.
      */
     @Getter
     @Setter
@@ -99,7 +99,7 @@ public class Layout implements Cloneable {
     }
 
     /**
-     * Get a layoutFuture from a JSON string.
+     * Get a layout from a JSON string.
      */
     public static Layout fromJSONString(String json) {
         /* Empty Json file creates an null Layout */
@@ -107,7 +107,7 @@ public class Layout implements Cloneable {
     }
 
     /**
-     * Move each server in the system to the epoch of this layoutFuture.
+     * Move each server in the system to the epoch of this layout.
      *
      * @throws WrongEpochException If any server is in a higher epoch.
      * @throws QuorumUnreachableException If enough number of servers cannot be sealed.
@@ -116,10 +116,10 @@ public class Layout implements Cloneable {
             throws WrongEpochException, QuorumUnreachableException {
         log.debug("Requested move of servers to new epoch {} servers are {}", epoch, getAllServers());
 
-        // Set remote epoch on all servers in layoutFuture.
+        // Set remote epoch on all servers in layout.
         Map<String, CompletableFuture<Boolean>> resultMap = SealServersHelper.asyncSetRemoteEpoch(this);
 
-        // Validate if we received enough layoutFuture server responses.
+        // Validate if we received enough layout server responses.
         SealServersHelper.waitForLayoutSeal(layoutServers, resultMap);
         // Validate if we received enough log unit server responses depending on the replication mode.
         for (LayoutSegment layoutSegment : getSegments()) {
@@ -129,9 +129,9 @@ public class Layout implements Cloneable {
     }
 
     /**
-     * This function returns a set of all the servers in the layoutFuture.
+     * This function returns a set of all the servers in the layout.
      *
-     * @return A set containing all servers in the layoutFuture.
+     * @return A set containing all servers in the layout.
      */
     public Set<String> getAllServers() {
         Set<String> allServers = new HashSet<>();
@@ -144,10 +144,10 @@ public class Layout implements Cloneable {
     }
 
     /**
-     * Return the layoutFuture client for a particular index.
+     * Return the layout client for a particular index.
      *
-     * @param index The index to return a layoutFuture client for.
-     * @return The layoutFuture client at that index, or null, if there is
+     * @param index The index to return a layout client for.
+     * @return The layout client at that index, or null, if there is
      * no client at that index.
      */
     public LayoutClient getLayoutClient(int index) {
@@ -160,9 +160,9 @@ public class Layout implements Cloneable {
     }
 
     /**
-     * Get a java stream representing all layoutFuture clients for this layoutFuture.
+     * Get a java stream representing all layout clients for this layout.
      *
-     * @return A java stream representing all layoutFuture clients.
+     * @return A java stream representing all layout clients.
      */
     public Stream<LayoutClient> getLayoutClientStream() {
         return layoutServers.stream()
@@ -275,7 +275,7 @@ public class Layout implements Cloneable {
 
 
     /**
-     * Get the layoutFuture as a JSON string.
+     * Get the layout as a JSON string.
      */
     public String asJSONString() {
         return parser.toJson(this);
@@ -425,7 +425,7 @@ public class Layout implements Cloneable {
         };
 
         /**
-         * Seals the layoutFuture segment.
+         * Seals the layout segment.
          */
         public abstract void validateSegmentSeal(LayoutSegment layoutSegment,
                                                  Map<String, CompletableFuture<Boolean>> completableFutureMap)
@@ -448,11 +448,11 @@ public class Layout implements Cloneable {
          */
         ReplicationMode replicationMode;
         /**
-         * The address the layoutFuture segment starts at.
+         * The address the layout segment starts at.
          */
         long start;
         /**
-         * The address the layoutFuture segment ends at.
+         * The address the layout segment ends at.
          */
         long end;
         /**
