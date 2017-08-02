@@ -112,15 +112,6 @@ public class AddressSpaceView extends AbstractView {
 
         // Cache the successful write
         if (!runtime.isCacheDisabled()) {
-            if (ld.hasCheckpointMetadata()) {
-                CheckpointEntry cp = (CheckpointEntry) ld.getPayload(runtime);
-                if (cp.getSmrEntries() != null) {
-                    for (int i = 0; i < cp.getSmrEntries().length; i++) {
-                        cp.getSmrEntries()[i].setRuntime(runtime);
-                        cp.getSmrEntries()[i].setEntry(ld);
-                    }
-                }
-            }
             readCache.put(token.getTokenValue(), ld);
         }
     }

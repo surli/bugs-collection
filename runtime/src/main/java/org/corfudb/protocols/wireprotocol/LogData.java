@@ -117,17 +117,23 @@ public class LogData implements ICorfuPayload<LogData>, IMetadata, ILogData {
     }
 
     public LogData(DataType type, final Object object) {
-        this.type = type;
-        this.data = null;
-        this.payload.set(object);
-        if (object instanceof LogEntry) {
-            ((LogEntry) object).setEntry(this);
-        }
-        this.metadataMap = new EnumMap<>(IMetadata.LogUnitMetadataType.class);
-        if (object instanceof CheckpointEntry) {
-            CheckpointEntry cp = (CheckpointEntry) object;
-            setCheckpointType(cp.getCpType());
-            setCheckpointID(cp.getCheckpointID());
+        if (object instanceof ByteBuf) {
+            this.type = type;
+            this.data = byteArrayFromBuf((ByteBuf) object);
+            this.metadataMap = new EnumMap<>(IMetadata.LogUnitMetadataType.class);
+        } else {
+            this.type = type;
+            this.data = null;
+            this.payload.set(object);
+            if (object instanceof LogEntry) {
+                ((LogEntry) object).setEntry(this);
+            }
+            this.metadataMap = new EnumMap<>(IMetadata.LogUnitMetadataType.class);
+            if (object instanceof CheckpointEntry) {
+                CheckpointEntry cp = (CheckpointEntry) object;
+                setCheckpointType(cp.getCpType());
+                setCheckpointID(cp.getCheckpointID());
+            }
         }
     }
 

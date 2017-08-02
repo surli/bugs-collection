@@ -51,6 +51,10 @@ public class StreamViewSMRAdapter implements ISMRStream {
             if (cp.getSmrEntries() != null && cp.getSmrEntries().length > 0) {
                 List<SMREntry> consumables = new ArrayList<>();
                 Collections.addAll(consumables, cp.getSmrEntries());
+                for (int i = 0; i < cp.getSmrEntries().length; i++) {
+                    cp.getSmrEntries()[i].setRuntime(runtime);
+                    cp.getSmrEntries()[i].setEntry(logData);
+                }
                 return consumables;
             } else {
                 return (List<SMREntry>) Collections.EMPTY_LIST;
