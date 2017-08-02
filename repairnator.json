@@ -1,0 +1,50 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 4,
+  "repo": "CorfuDB/CorfuDB",
+  "bugCommit": "https://github.com/CorfuDB/CorfuDB/commit/9079d93d5703",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/235306389/test",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.IndexOutOfBoundsException"
+  ],
+  "totalNumberRunningTests": 306,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.checkpoint.CheckpointSmokeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.checkpoint.CheckpointSmokeTest#checkpointWriterInterleavedTest",
+        "org.corfudb.runtime.checkpoint.CheckpointSmokeTest#smoke1Test",
+        "org.corfudb.runtime.checkpoint.CheckpointSmokeTest#smoke2Test",
+        "org.corfudb.runtime.checkpoint.CheckpointSmokeTest#checkpointWriterTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "failureDetail": "readerIndex(4) + length(670) exceeds writerIndex(65): UnpooledHeapByteBuf(ridx: 4, widx: 65, cap: 65/65)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "failureDetail": "readerIndex(4) + length(758) exceeds writerIndex(63): UnpooledHeapByteBuf(ridx: 4, widx: 63, cap: 63/63)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "failureDetail": "readerIndex(4) + length(636) exceeds writerIndex(112): UnpooledHeapByteBuf(ridx: 4, widx: 112, cap: 112/112)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "failureDetail": "readerIndex(4) + length(526) exceeds writerIndex(112): UnpooledHeapByteBuf(ridx: 4, widx: 112, cap: 112/112)",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    }
+  ]
+}
