@@ -17,7 +17,7 @@ import java.util.UUID;
 import java.util.function.BiConsumer;
 
 /**
- * Checkpoint multiple SMRMaps in serial as a prerequisite for a later log trim.
+ * Checkpoint multiple SMRMaps serially as a prerequisite for a later log trim.
  */
 
 public class MultiCheckpointWriter {
@@ -37,7 +37,7 @@ public class MultiCheckpointWriter {
         }
     }
 
-    /** Checkpoint multiple SMRMaps in serial.
+    /** Checkpoint multiple SMRMaps serially.
      *
      * @param rt CorfuRuntime
      * @param author Author's name, stored in checkpoint metadata
@@ -49,7 +49,7 @@ public class MultiCheckpointWriter {
         return appendCheckpoints(rt, author, (x,y) -> {});
     }
 
-    /** Checkpoint multiple SMRMaps in serial.
+    /** Checkpoint multiple SMRMaps serially.
      *
      * @param rt CorfuRuntime
      * @param author Author's name, stored in checkpoint metadata
