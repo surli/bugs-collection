@@ -164,8 +164,7 @@ public class LogUnitClient implements IClient {
      * @param r     Router
      */
     @ClientHandler(type=CorfuMsgType.ERROR_DATA_CORRUPTION)
-    private static Object handleReadDataCorruption(CorfuPayloadMsg<ReadResponse> msg,
-                                                   ChannelHandlerContext ctx, IClientRouter r)
+    private static Object handleReadDataCorruption(CorfuMsg msg, ChannelHandlerContext ctx, IClientRouter r)
     {
         throw new DataCorruptionException();
     }
@@ -278,6 +277,14 @@ public class LogUnitClient implements IClient {
      */
     public void trim(long prefix) {
         router.sendMessage(CorfuMsgType.TRIM.payloadMsg(new TrimRequest(null, prefix)));
+    }
+
+    /**
+     * Send a prefix trim request that will trim the log up to a certian address
+     * @param address An address to trim up to (i.e. [0, address))
+     */
+    public void prefixTrim(long address) {
+        router.sendMessageAndGetCompletable(CorfuMsgType.PREFIX_TRIM.payloadMsg(new TrimRequest(null, address)));
     }
 
     /**

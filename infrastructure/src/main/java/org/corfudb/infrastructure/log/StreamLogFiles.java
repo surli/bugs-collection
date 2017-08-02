@@ -122,6 +122,11 @@ public class StreamLogFiles implements StreamLog, StreamLogWithRankedAddressSpac
         }
     }
 
+    @Override
+    public void prefixTrim(LogAddress logAddress) {
+        //No-op
+    }
+
     private void initializeMaxGlobalAddress() {
         long tailSegment = serverContext.getTailSegment();
         long addressInTailSegment = (tailSegment * RECORDS_PER_LOG_FILE) + 1;
@@ -835,7 +840,7 @@ public class StreamLogFiles implements StreamLog, StreamLogWithRankedAddressSpac
                 throw new TrimmedException();
             }
             return readRecord(sh, logAddress.address);
-        } catch (Exception e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

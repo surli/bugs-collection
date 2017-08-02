@@ -100,8 +100,8 @@ public class LogUnitClientTest extends AbstractClientTest {
         serverRouter.addServer(server2);
 
         assertThatThrownBy(() -> client.read(0).get().getReadSet().get(0L))
-                .isInstanceOf(RuntimeException.class);
-                //.hasCause(TrimmedException.class);
+                .isInstanceOf(ExecutionException.class)
+                .hasCauseInstanceOf(TrimmedException.class);
     }
 
     @Test
@@ -276,7 +276,7 @@ public class LogUnitClientTest extends AbstractClientTest {
 
         // Try to read a corrupted log entry
         assertThatThrownBy(() -> client.read(0).get())
-                .isInstanceOf(RuntimeException.class)
+                .isInstanceOf(ExecutionException.class)
                 .hasCauseInstanceOf(DataCorruptionException.class);
     }
 }
