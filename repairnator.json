@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 11,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/409fb1dff1e8...c1d9165581eb",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/230701808/sharding-jdbc-core",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1087,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest#parseWithAutoIncrementColumnsWithoutParameter",
+        "com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest#parseWithAutoIncrementColumnsWithParameter"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"INSERT INTO [Token(TABLE_XXX)] (`field1`) VALUES (?)\"      but: was \"INSERT INTO [Token(TABLE_XXX)] (`field1`, field2) VALUES (?, ?)\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"INSERT INTO [Token(TABLE_XXX)] (`field1`) VALUES (10)\"      but: was \"INSERT INTO [Token(TABLE_XXX)] (`field1`, field2) VALUES (10, 1)\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
