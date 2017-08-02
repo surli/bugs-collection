@@ -50,7 +50,7 @@ public class AddressSpaceView extends AbstractView {
                 }
             });
 
-    public AddressSpaceView(CorfuRuntime runtime) {
+    public AddressSpaceView(@Nonnull final CorfuRuntime runtime) {
         super(runtime);
 
         final String pfx = String.format("%s0x%x.cache.", runtime.getMpASV(), this.hashCode());
