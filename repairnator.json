@@ -1,0 +1,91 @@
+{
+  "totalNumberSkippingTests": 33,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 9,
+  "repo": "apache/commons-math",
+  "bugCommit": "https://github.com/apache/commons-math/compare/e082e0c48ed6...50d293912552",
+  "failingModule": "/root/workspace/apache/commons-math/228554017",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.apache.commons.math4.exception.MathArithmeticException",
+    "java.lang.Exception"
+  ],
+  "totalNumberRunningTests": 5432,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.commons.math4.util.CombinatoricsUtilsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.commons.math4.util.CombinatoricsUtilsTest#testFactorialFail",
+        "org.apache.commons.math4.util.CombinatoricsUtilsTest#testStirlingS2Overflow"
+      ],
+      "failures": [
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "arithmetic exception",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.Exception",
+          "failureDetail": "Unexpected exception, expected\u003cjava.lang.ArithmeticException\u003e but was\u003corg.apache.commons.math4.exception.MathArithmeticException\u003e",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.apache.commons.math4.fraction.FractionTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.commons.math4.fraction.FractionTest#testNegate",
+        "org.apache.commons.math4.fraction.FractionTest#testConstructor",
+        "org.apache.commons.math4.fraction.FractionTest#testSubtract",
+        "org.apache.commons.math4.fraction.FractionTest#testAdd",
+        "org.apache.commons.math4.fraction.FractionTest#testDivide",
+        "org.apache.commons.math4.fraction.FractionTest#testGetReducedFraction",
+        "org.apache.commons.math4.fraction.FractionTest#testReciprocal"
+      ],
+      "failures": [
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "overflow, numerator too large after multiply: -2,147,483,649",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "overflow, numerator too large after multiply: -2,147,483,649",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "zero denominator in fraction 1/0",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "zero denominator in fraction 1/0",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "the fraction to divide by must not be zero: 0/1",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "overflow in fraction -2,147,483,648/1, cannot negate",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.commons.math4.exception.MathArithmeticException",
+          "failureDetail": "overflow in fraction -2,147,483,648/-1, cannot negate",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 7
+    }
+  ]
+}
