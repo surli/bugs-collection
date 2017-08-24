@@ -1,0 +1,69 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/2ab497f92fd9...d512d2629209",
+  "failingModule": "/root/workspace/geotools/geotools/204980425/modules/library/referencing",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.opengis.parameter.ParameterNotFoundException",
+    "java.text.ParseException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 413,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.referencing.ScriptTest",
+      "failingMethods": [
+        "org.geotools.referencing.ScriptTest#testNADCON",
+        "org.geotools.referencing.ScriptTest#testWagnerV",
+        "org.geotools.referencing.ScriptTest#testOpenGIS"
+      ],
+      "erroringMethods": [
+        "org.geotools.referencing.ScriptTest#testMollweide"
+      ],
+      "failures": [
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        },
+        {
+          "failureName": "java.text.ParseException",
+          "failureDetail": "Error in \"PARAMETER\": Parameter \"false_easting\" was not expected.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.geotools.referencing.operation.projection.MollweideProviderTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.referencing.operation.projection.MollweideProviderTest#testParameters"
+      ],
+      "failures": [
+        {
+          "failureName": "org.opengis.parameter.ParameterNotFoundException",
+          "failureDetail": "Parameter \"false_northing\" is missing.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
