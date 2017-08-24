@@ -1,0 +1,1271 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Singularity
+[INFO] SingularityBase
+[INFO] SingularityUI
+[INFO] SingularityMesosClient
+[INFO] SingularitySwagger
+[INFO] SingularityService
+[INFO] SingularityRunnerBase
+[INFO] SingularityS3Base
+[INFO] SingularityClient
+[INFO] SingularityExecutor
+[INFO] SingularityExecutorCleanup
+[INFO] SingularityS3Uploader
+[INFO] SingularityS3Downloader
+[INFO] EmbedSingularityExample
+[INFO] SingularityServiceIntegrationTests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Singularity 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ Singularity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ Singularity ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ Singularity ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ Singularity ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ Singularity ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ Singularity ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ Singularity ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityBase 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityBase ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityBase ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/SlaveMatchState.java:18:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/RequestState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/RequestCleanupType.java:12:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/DeployState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/TaskCleanupType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/RequestType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/singularity/HealthcheckProtocol.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/java/com/hubspot/mesos/JavaUtils.java:201:17: Redundant 'final' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityBase ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityBase ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularityBase/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityBase ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularityBase/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityBase ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityBase ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityUI 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityUI ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityUI ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityUI ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityUI ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularityUI/target/jacoco.exec
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:install-node-and-npm (install node and npm) @ SingularityUI ---
+[INFO] Node v6.2.1 is already installed.
+[INFO] Found NPM version 3.9.3
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm install) @ SingularityUI ---
+[INFO] Running 'npm install --color=false' in /root/workspace/HubSpot/Singularity/188564939/SingularityUI
+[ERROR] npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+[ERROR] npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.1.2
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm test) @ SingularityUI ---
+[INFO] Running 'npm test --color=false' in /root/workspace/HubSpot/Singularity/188564939/SingularityUI
+[INFO] 
+[INFO] > SingularityUI@0.3.0 test /root/workspace/HubSpot/Singularity/188564939/SingularityUI
+[INFO] > mocha --compilers js:babel-core/register test/index.test
+[INFO] 
+[ERROR] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs
+[INFO] 
+[INFO] 
+[INFO]   Utils
+[INFO]     getTaskDataFromTaskId()
+[INFO]       ✓ should grab all fields from a valid task id
+[INFO] 
+[INFO]   Reducers
+[INFO]     tailerView
+[INFO]       ✓ should be properly initialized
+[INFO]       ✓ should populate the tailerId field
+[INFO]       ✓ should auto-populate the requestIds, taskIds, and paths fields
+[INFO]       ✓ should add tailer groups
+[INFO]       ✓ should remove tailer groups
+[INFO]       ✓ should pick an individual tailer group
+[INFO] 
+[INFO] 
+[INFO]   7 passing (22ms)
+[INFO] 
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:gulp (gulp build) @ SingularityUI ---
+[INFO] Running 'gulp build --no-color' in /root/workspace/HubSpot/Singularity/188564939/SingularityUI
+[INFO] [15:43:44] Using gulpfile ~/workspace/HubSpot/Singularity/188564939/SingularityUI/gulpfile.js
+[INFO] [15:43:44] Starting 'clean'...
+[INFO] [15:43:44] Finished 'clean' after 38 ms
+[INFO] [15:43:44] Starting 'static'...
+[INFO] [15:43:44] Finished 'static' after 32 ms
+[INFO] [15:43:44] Starting 'html'...
+[INFO] [15:43:44] Finished 'html' after 17 ms
+[INFO] [15:43:44] Starting 'build'...
+[INFO] [15:45:10] Version: webpack [1m1.13.1[22m
+[INFO] Time: [1m85473[22mms
+[INFO]                                [1mAsset[22m     [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+[INFO] [1m[32m89889688147bd7575d6327160d64e760.svg[39m[22m   109 kB        [1m[22m  [1m[32m[emitted][39m[22m  
+[INFO]                  [1m[32mjs/vendor.bundle.js[39m[22m   614 kB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                     [1m[32mjs/app.bundle.js[39m[22m     2 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                          [1m[32mcss/app.css[39m[22m   334 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]              [1m[32mjs/vendor.bundle.js.map[39m[22m  4.66 MB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                 [1m[32mjs/app.bundle.js.map[39m[22m  9.49 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                      [1m[32mcss/app.css.map[39m[22m   406 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] [15:45:10] Finished 'build' after 1.42 min
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityMesosClient 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityMesosClient ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityMesosClient ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityMesosClient ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityMesosClient ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularityMesosClient/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularityMesosClient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityMesosClient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularityMesosClient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityMesosClient ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityMesosClient ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularitySwagger 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularitySwagger ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularitySwagger ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularitySwagger ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularitySwagger ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularitySwagger/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularitySwagger/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularitySwagger ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/188564939/SingularitySwagger/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularitySwagger ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularitySwagger ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityService 0.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityService ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityService ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/config/UIConfiguration.java:21:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityCmdLineArgsMigration.java:58:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:84:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:139:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/data/history/SingularityHistoryModule.java:126:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/data/CuratorManager.java:59:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityNewTaskChecker.java:164:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:169:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:218:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:243:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:283:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:309:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/hooks/LoadBalancerClientImpl.java:110:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/188564939/SingularityService/src/main/java/com/hubspot/singularity/smtp/SmtpMailer.java:355:5: Redundant 'private' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityService ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityService ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityService ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularityService/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-index.html-template) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-ui) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-resource (add-generated-resources) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- swagger-maven-plugin:2.3.2:generate (build-embedded-documentation) @ SingularityService ---
+[INFO] Reflections took 73 ms to scan 1 urls, producing 12 keys and 67 values 
+[INFO] Detect Resource:com.hubspot.singularity.resources.PriorityResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SandboxResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DeployResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.StateResource
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.S3LogResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DisastersResource
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.HistoryResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestGroupResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SlaveResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.WebhookResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RackResource
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.TaskResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.TestResource
+[INFO] Writing doc to /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/index.html...
+[INFO] Done!
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/service.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_priority.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_sandbox.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_deploys.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_state.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_requests.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_logs.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_disasters.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_history.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_groups.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_slaves.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_webhooks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_racks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_tasks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/classes/assets/api-docs/api_test.json
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityService ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 10.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 113.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1423.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.hubspot.singularity.SingularityS3Test
+Running com.hubspot.singularity.scheduler.MesosUtilsTest
+Running com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+Running com.hubspot.singularity.data.BlendedHistoryTest
+Running com.hubspot.singularity.data.ValidatorTest
+Running com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+Running com.hubspot.singularity.mesos.SingularityStartupTest
+Running com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+Running com.hubspot.singularity.SingularityHistoryTest
+Running com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+Running com.hubspot.singularity.scheduler.SingularitySchedulerTest
+Running com.hubspot.singularity.JavaUtilsTest
+Running com.hubspot.singularity.SingularityAuthorizationHelperTest
+Running com.hubspot.singularity.data.SandboxManagerTest
+Running com.hubspot.singularity.helpers.RFC5545ScheduleTest
+Running com.hubspot.singularity.scheduler.HistoryPersisterTest
+Running com.hubspot.singularity.scheduler.SingularityDeploysTest
+Running com.hubspot.singularity.config.MergingSourceProviderTest
+Running com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.618 sec - in com.hubspot.singularity.SingularityS3Test
+Running com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+Running com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.874 sec - in com.hubspot.singularity.helpers.RFC5545ScheduleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.399 sec - in com.hubspot.singularity.scheduler.MesosUtilsTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 10.874 sec <<< FAILURE! - in com.hubspot.singularity.JavaUtilsTest
+testFixedTimingOutThreadPool(com.hubspot.singularity.JavaUtilsTest)  Time elapsed: 0.614 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at com.hubspot.singularity.JavaUtilsTest.testFixedTimingOutThreadPool(JavaUtilsTest.java:26)
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+	at com.hubspot.singularity.JavaUtilsTest.testFixedTimingOutThreadPool(JavaUtilsTest.java:26)
+
+testSingularityTaskIdSerialization(com.hubspot.singularity.JavaUtilsTest)  Time elapsed: 8.293 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.JavaUtilsTest.testSingularityTaskIdSerialization(JavaUtilsTest.java:73)
+
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 11.669 sec <<< FAILURE! - in com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+testDockerTask(com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest)  Time elapsed: 7.615 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testDockerTask(SingularityMesosTaskBuilderTest.java:150)
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testDockerTask(SingularityMesosTaskBuilderTest.java:150)
+
+testShellCommand(com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testShellCommand(SingularityMesosTaskBuilderTest.java:98)
+
+testAutomaticPortMapping(com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testAutomaticPortMapping(SingularityMesosTaskBuilderTest.java:226)
+
+testArgumentCommand(com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testArgumentCommand(SingularityMesosTaskBuilderTest.java:113)
+
+testDockerMinimalNetworking(com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest.testDockerMinimalNetworking(SingularityMesosTaskBuilderTest.java:200)
+
+Tests run: 14, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 11.483 sec <<< FAILURE! - in com.hubspot.singularity.SingularityAuthorizationHelperTest
+testCheckAdminAuthorizationThrowsOnForbidden(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 2.07 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<javax.ws.rs.WebApplicationException> but was<java.lang.ExceptionInInitializerError>
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckAdminAuthorizationThrowsOnForbidden(SingularityAuthorizationHelperTest.java:168)
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckAdminAuthorizationThrowsOnForbidden(SingularityAuthorizationHelperTest.java:168)
+
+testCheckForAuthorizationByTaskIdThrowsOnForbidden(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.018 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<javax.ws.rs.WebApplicationException> but was<java.lang.NoClassDefFoundError>
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationByTaskIdThrowsOnForbidden(SingularityAuthorizationHelperTest.java:189)
+
+testCheckForAuthorizationThrowsOnForbidden(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<javax.ws.rs.WebApplicationException> but was<java.lang.NoClassDefFoundError>
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationThrowsOnForbidden(SingularityAuthorizationHelperTest.java:203)
+
+testCheckForAuthorizationDoesntThrowOnAuthorized(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationDoesntThrowOnAuthorized(SingularityAuthorizationHelperTest.java:196)
+
+testCheckForAuthorizationByTaskIdDoesntThrowOnAuthorized(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.017 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationByTaskIdDoesntThrowOnAuthorized(SingularityAuthorizationHelperTest.java:182)
+
+testCheckForAuthorizationThrowsOnForbiddenChange(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<javax.ws.rs.WebApplicationException> but was<java.lang.NoClassDefFoundError>
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationThrowsOnForbiddenChange(SingularityAuthorizationHelperTest.java:217)
+
+testCheckForAuthorizationDoesntThrowOnValidChange(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckForAuthorizationDoesntThrowOnValidChange(SingularityAuthorizationHelperTest.java:210)
+
+testCheckAdminAuthorizationDoesntThrowOnAuthorized(com.hubspot.singularity.SingularityAuthorizationHelperTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+	at com.hubspot.singularity.SingularityAuthorizationHelperTest.testCheckAdminAuthorizationDoesntThrowOnAuthorized(SingularityAuthorizationHelperTest.java:175)
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 17.462 sec <<< FAILURE! - in com.hubspot.singularity.data.ValidatorTest
+testCronExpressionHandlesDayIndexing(com.hubspot.singularity.data.ValidatorTest)  Time elapsed: 16.247 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 16.027 sec <<< FAILURE! - in com.hubspot.singularity.config.MergingSourceProviderTest
+testNonObjectFails(com.hubspot.singularity.config.MergingSourceProviderTest)  Time elapsed: 10.044 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testMergedConfigs(com.hubspot.singularity.config.MergingSourceProviderTest)  Time elapsed: 1.137 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testFileNoExistFail(com.hubspot.singularity.config.MergingSourceProviderTest)  Time elapsed: 1.185 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.357 sec <<< FAILURE! - in com.hubspot.singularity.data.BlendedHistoryTest
+testBlendedRequestHistory(com.hubspot.singularity.data.BlendedHistoryTest)  Time elapsed: 16.778 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 18.301 sec <<< FAILURE! - in com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+testTaskShellCommandPersistence(com.hubspot.singularity.mesos.SingularityTaskShellCommandTest)  Time elapsed: 13.239 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testRunCommandBeforeBounceKill(com.hubspot.singularity.mesos.SingularityTaskShellCommandTest)  Time elapsed: 1.214 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 19.099 sec <<< FAILURE! - in com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+testMigrationRunner(com.hubspot.singularity.data.zkmigrations.ZkMigrationTest)  Time elapsed: 14.673 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testSingularityRequestTypeMigration(com.hubspot.singularity.data.zkmigrations.ZkMigrationTest)  Time elapsed: 1.362 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCmdLineArgsMigration(com.hubspot.singularity.data.zkmigrations.ZkMigrationTest)  Time elapsed: 1.196 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 22.774 sec <<< FAILURE! - in com.hubspot.singularity.mesos.SingularityStartupTest
+testScheduledTasksDontGetRescheduledDuringRun(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 14.151 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testFailuresInLaunchPath(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.198 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testOnDemandDoesntGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.106 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScheduledTasksDontGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.056 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRunOnceDoesntGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.049 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 23.336 sec <<< FAILURE! - in com.hubspot.singularity.data.SandboxManagerTest
+testInvalidUtf8WithTwoBytesOfThreeByteCharacter(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 15.442 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testInvalidUtf8WithTwoBytes(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.443 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidUtf8WithOneByte(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.136 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidUtf8WithOneByteOfThreeByteCharacter(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.065 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidUtf8WithLastByte(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.058 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testValidUtf8WithThreeByteCharacters(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.052 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidUtf8WithLastTwoBytes(com.hubspot.singularity.data.SandboxManagerTest)  Time elapsed: 1.038 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 23.236 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.HistoryPersisterTest
+testTaskCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 14.366 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testPurgingDoesntApplyIfDatabasePresent(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.115 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRequestCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.084 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.063 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskAgePurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.077 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRequestAgePurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.054 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 25.593 sec <<< FAILURE! - in com.hubspot.singularity.SingularityHistoryTest
+historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 12.676 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 12.676 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.354 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.359 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testRunId(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.21 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRunId(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.21 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.14 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.14 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.063 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.063 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.048 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.036 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.036 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testMessage(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.045 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testMessage(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.045 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.041 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.041 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:86)
+
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 24.33 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+testExpiringSkipHealthchecks(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 13.777 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testExpiringPause(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.101 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringScale(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.08 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringBounceGoesAway(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.048 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringScaleWithBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringNonIncrementalBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringIncrementalBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.054 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 30.966 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+testMaxHealthcheckRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 15.56 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testHealthchecksDuringBounce(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.128 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSkipHealthchecksDuringBounce(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.052 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPortNumber(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.06 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSkipHealthchecksEdgeCases(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.069 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPortIndices(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testNewTaskCheckerRespectsDeployHealthcheckRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testHealthchecksSuccess(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.034 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testHealthchecksTimeout(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.035 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testFailingStatusCodes(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testStartupDoesNotCountTowardsRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.044 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testStartupTimeout(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.027 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 29.094 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+testSlavePlacementOptimisticSingleOffer(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 13.828 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testReservedSlaveWithMatchinRequestAttribute(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.107 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testEvenRackPlacement(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.054 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRackPlacementOnScaleDown(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPlacementOfBounceTasks(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.035 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSlavePlacementOptimistic(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.05 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testReservedSlaveAttribute(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testAllowedSlaveAttributes(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRequiredSlaveAttributesForRequest(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.033 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSlavePlacementGreedy(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSlavePlacementSeparate(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.045 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testMultipleRequiredAttributes(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.058 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 31.205 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+testFrozenSlaveCanBeDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 11.461 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testBasicSlaveAndRackState(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.229 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testEmptyDecommissioning(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.129 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCannotUseStateReservedForSystem(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.075 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testLoadSlavesFromMasterDataOnStartup(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.053 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testFrozenSlaveDoesntLaunchTasks(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.062 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSystemChangeClearsExpiringChangeIfInvalid(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testBadExpiringStateTransition(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.053 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidTransitionToDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.041 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDecommissioning(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.049 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testReconcileSlaves(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.035 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testExpiringMachineState(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeadSlavesArePurged(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.054 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testValidTransitionToDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.044 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testUnfrozenSlaveLaunchesTasks(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.033 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testFrozenSlaveTransitions(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.036 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 22, Failures: 0, Errors: 22, Skipped: 0, Time elapsed: 40.466 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityDeploysTest
+testUsesNewRequestDataFromPendingDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 13.931 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testAfterDeployWaitsForScheduledTaskToFinish(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.112 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeploySucceedsWithTaskRetries(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.06 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCancelDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.065 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployTimesOut(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.032 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployAllInstancesAtOnce(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployFails(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCannotUpdateRequestDuringPendingDeployWithNewData(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.035 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testUnpauseOnDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.063 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployFailsAfterMaxTaskRetries(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployOneInstanceAtATime(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.046 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testLbUpdatesAfterEachDeployStep(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.038 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScheduledJobLivesThroughDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployClearsObsoleteScheduledTasks(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSkipDeployHealthchecks(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.051 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployWithManualStep(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployManagerHandlesFailedLBTask(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.033 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScaleDownDuringDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployMultipleInstancesAtOnce(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.042 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployFailsForInvalidRequestState(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.029 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCanceledDeployTasksStayActiveUntilReplaced(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.026 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testIncrementalDeployCancel(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.032 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+Tests run: 52, Failures: 0, Errors: 52, Skipped: 0, Time elapsed: 72.058 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularitySchedulerTest
+testRunOnceRunOnlyOnce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 15.336 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.UnsupportedOperationException: can't use .skipNulls() with maps
+
+testDecommissionDoesntKillPendingDeploy(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.103 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testMaxTasksPerOffer(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.069 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDifferentQuartzTimeZones(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testWaitAfterTaskWorks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testBounceWithLoadBalancer(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.042 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPause(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testKilledTaskIdRecords(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testDeployCleanupOverwritesTaskBounceCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.029 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCleanerFindsTasksWithSkippedHealthchecks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.028 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerHandlesFinishedTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.06 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRunNowScheduledJobDoesNotRetry(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.057 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScaleDownTakesHighestInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.032 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testIncrementalBounceShutsDownOldTasksPerNewHealthyTask(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRemovedRequestData(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.047 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCleanerLeavesPausedRequestTasksByDemand(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.044 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testReconciliation(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCronScheduleChanges(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCooldownAfterSequentialFailures(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.043 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerCanBatchOnOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerExhaustsOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.025 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.025 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCustomResourcesWithRunNowRequest(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.033 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testMultipleRunOnceTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.028 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPriorityFreezeDoesntLaunchTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.038 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testObsoletePendingRequestsRemoved(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.033 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCooldownScalesToInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.173 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPauseLbCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScaleWithBounceDoesNotLaunchExtraInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.046 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskKill(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.027 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testLBCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.06 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testJobRescheduledWhenItFinishesDuringDecommission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.054 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRetries(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.034 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerPriority(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.046 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testInvalidQuartzTimeZoneErrors(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testQueueMultipleOneOffs(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testIncrementalBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.039 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testLongRunningTaskKills(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.04 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testTaskOddities(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.041 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerRandomizesOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.037 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.026 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+badPauseExpires(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.021 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testSchedulerIsolatesPendingTasksBasedOnDeploy(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.024 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testScheduledNotification(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.029 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testOnDemandTasksPersist(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.032 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testCooldownOnlyWhenTasksRapidlyFail(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.031 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testOneOffsDontRunByThemselves(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.031 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testPriorityFreezeKillsActiveTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.045 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRunOnceDontMoveDuringDecomission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.052 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testRequestedPorts(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.03 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testLbCleanupDoesNotRemoveBeforeAdd(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.023 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+testOneOffsDontMoveDuringDecomission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.027 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.hubspot.mesos.JavaUtils
+
+
+Results :
+
+Tests in error: 
+  JavaUtilsTest.testFixedTimingOutThreadPool:26 ExceptionInInitializer
+  JavaUtilsTest.testSingularityTaskIdSerialization:73 » NoClassDefFound Could no...
+  SingularityAuthorizationHelperTest.testCheckAdminAuthorizationDoesntThrowOnAuthorized:175 » NoClassDefFound
+  SingularityAuthorizationHelperTest.testCheckAdminAuthorizationThrowsOnForbidden » 
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationByTaskIdDoesntThrowOnAuthorized:182 » NoClassDefFound
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationByTaskIdThrowsOnForbidden » 
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationDoesntThrowOnAuthorized:196 » NoClassDefFound
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationDoesntThrowOnValidChange:210 » NoClassDefFound
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationThrowsOnForbidden » 
+  SingularityAuthorizationHelperTest.testCheckForAuthorizationThrowsOnForbiddenChange » 
+com.hubspot.singularity.SingularityHistoryTest.historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testMessage(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testRunId(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  Run 2: SingularityHistoryTest.blowDBAway:86 NullPointer
+
+  MergingSourceProviderTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  MergingSourceProviderTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  MergingSourceProviderTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  BlendedHistoryTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SandboxManagerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  ValidatorTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  ZkMigrationTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound C...
+  ZkMigrationTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  ZkMigrationTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound C...
+  SingularityMesosTaskBuilderTest.testArgumentCommand:113 » NoClassDefFound Coul...
+  SingularityMesosTaskBuilderTest.testAutomaticPortMapping:226 » NoClassDefFound
+  SingularityMesosTaskBuilderTest.testDockerMinimalNetworking:200 » NoClassDefFound
+  SingularityMesosTaskBuilderTest.testDockerTask:150 » ExceptionInInitializer
+  SingularityMesosTaskBuilderTest.testShellCommand:98 » NoClassDefFound Could no...
+  SingularityStartupTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityStartupTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityStartupTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityStartupTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityStartupTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityTaskShellCommandTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityTaskShellCommandTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  HistoryPersisterTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityDeploysTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityExpiringActionsTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityHealthchecksTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularityMachineStatesTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySchedulerTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » ExceptionInInitializer
+  SingularitySlavePlacementTest>SingularityCuratorTestBase.curatorSetup:32 » NoClassDefFound
+
+Tests run: 189, Failures: 0, Errors: 174, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Singularity ........................................ SUCCESS [  2.675 s]
+[INFO] SingularityBase .................................... SUCCESS [  3.391 s]
+[INFO] SingularityUI ...................................... SUCCESS [01:39 min]
+[INFO] SingularityMesosClient ............................. SUCCESS [  2.250 s]
+[INFO] SingularitySwagger ................................. SUCCESS [  1.196 s]
+[INFO] SingularityService ................................. FAILURE [01:30 min]
+[INFO] SingularityRunnerBase .............................. SKIPPED
+[INFO] SingularityS3Base .................................. SKIPPED
+[INFO] SingularityClient .................................. SKIPPED
+[INFO] SingularityExecutor ................................ SKIPPED
+[INFO] SingularityExecutorCleanup ......................... SKIPPED
+[INFO] SingularityS3Uploader .............................. SKIPPED
+[INFO] SingularityS3Downloader ............................ SKIPPED
+[INFO] EmbedSingularityExample ............................ SKIPPED
+[INFO] SingularityServiceIntegrationTests ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:20 min
+[INFO] Finished at: 2017-08-24T17:46:44+02:00
+[INFO] Final Memory: 144M/2121M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project SingularityService: ExecutionException The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /root/workspace/HubSpot/Singularity/188564939/SingularityService && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -javaagent:/root/./workspace/HubSpot/Singularity/188564939/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/188564939/SingularityService/target/jacoco.exec -Dfile.encoding=UTF-8 org.apache.maven.surefire.booter.ForkedBooter /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/surefire/surefire9220461060325791381tmp /root/workspace/HubSpot/Singularity/188564939/SingularityService/target/surefire/surefire_113161923522402602364tmp
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :SingularityService
