@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/e5f4ae66a6cb...a59080b37a6a",
+  "failingModule": "/root/workspace/geotools/geotools/205541533/modules/plugin/epsg-hsql",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.geotools.referencing.operation.projection.ProjectionException"
+  ],
+  "totalNumberRunningTests": 598,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.referencing.HSQLCRSTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.referencing.HSQLCRSTest#testMercatorProjectionTolerance"
+      ],
+      "failures": [
+        {
+          "failureName": "org.geotools.referencing.operation.projection.ProjectionException",
+          "failureDetail": "The transform result may be 0 meters away from the expected position. Are you sure that the input coordinates are inside this map projection area of validity? The point is located 2°54.0\u0027W away from the central meridian and 39°00.0\u0027N away from the latitude of origin. The projection is \"Transverse_Mercator\".",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
