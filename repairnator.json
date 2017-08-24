@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 25,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/81e297106257...236dcbb61eb0",
+  "failingModule": "/root/workspace/geotools/geotools/221433778/modules/unsupported/geojson",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.RuntimeException",
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 7537,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.geojson.FeatureJSONTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.geojson.FeatureJSONTest#testKeyOrderInFeatureCollectionParsing"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "java.lang.IllegalArgumentException: geometries must not contain null elements",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.geotools.geojson.GeometryJSONTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.geojson.GeometryJSONTest#testKeyOrderInGeometryCollectionParsing"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "geometries must not contain null elements",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
