@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/d338aa504960...522f2ba3cbfb",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/183487103",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.JsonMappingException"
+  ],
+  "totalNumberRunningTests": 1680,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.creators.Creator1476Test",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.creators.Creator1476Test#testConstructorChoice"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Could not find creator property with name \u0027intField\u0027 (in class com.fasterxml.jackson.databind.creators.Creator1476Test$SimplePojo)\n at [Source: { \"intField\": 1, \"stringField\": \"foo\" }; line: 1, column: 1]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
