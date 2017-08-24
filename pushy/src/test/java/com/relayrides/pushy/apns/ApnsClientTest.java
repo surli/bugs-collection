@@ -234,6 +234,7 @@ public class ApnsClientTest {
     @Test
     public void testApnsClientWithManagedEventLoopGroup() throws Exception {
         final ApnsClient managedGroupClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .build();
 
@@ -244,6 +245,7 @@ public class ApnsClientTest {
     @Test
     public void testRestartApnsClientWithManagedEventLoopGroup() throws Exception {
         final ApnsClient managedGroupClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .build();
 
@@ -259,6 +261,7 @@ public class ApnsClientTest {
     @Test
     public void testConnectToUntrustedServer() throws Exception {
         final ApnsClient cautiousClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setEventLoopGroup(EVENT_LOOP_GROUP)
                 .build();
 
@@ -315,6 +318,7 @@ public class ApnsClientTest {
     @Test
     public void testGetReconnectionFutureWhenNotConnected() throws Exception {
         final ApnsClient unconnectedClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .setEventLoopGroup(EVENT_LOOP_GROUP)
                 .build();
@@ -546,6 +550,7 @@ public class ApnsClientTest {
     @Test
     public void testWriteFailureMetrics() throws Exception {
         final ApnsClient unconnectedClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .setEventLoopGroup(EVENT_LOOP_GROUP)
                 .build();
@@ -597,6 +602,7 @@ public class ApnsClientTest {
     @Test
     public void testSuccessfulConnectionMetrics() throws Exception {
         final ApnsClient unconnectedClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .setEventLoopGroup(EVENT_LOOP_GROUP)
                 .build();
@@ -618,6 +624,7 @@ public class ApnsClientTest {
     @Test
     public void testFailedConnectionMetrics() throws Exception {
         final ApnsClient unconnectedClient = new ApnsClientBuilder()
+                .setSigningKey(this.signingKey)
                 .setTrustedServerCertificateChain(CA_CERTIFICATE)
                 .setEventLoopGroup(EVENT_LOOP_GROUP)
                 .build();
