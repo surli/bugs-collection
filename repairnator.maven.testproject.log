@@ -1,0 +1,2068 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Singularity
+[INFO] SingularityBase
+[INFO] SingularityUI
+[INFO] SingularityMesosClient
+[INFO] SingularitySwagger
+[INFO] SingularityService
+[INFO] SingularityRunnerBase
+[INFO] SingularityS3Base
+[INFO] SingularityClient
+[INFO] SingularityExecutor
+[INFO] SingularityExecutorCleanup
+[INFO] SingularityS3Uploader
+[INFO] SingularityS3Downloader
+[INFO] EmbedSingularityExample
+[INFO] SingularityServiceIntegrationTests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Singularity 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ Singularity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ Singularity ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ Singularity ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ Singularity ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ Singularity ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ Singularity ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ Singularity ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityBase 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityBase ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityBase ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/SlaveMatchState.java:18:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/RequestState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/RequestCleanupType.java:12:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/TaskCleanupType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/DeployState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/RequestType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/singularity/HealthcheckProtocol.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/java/com/hubspot/mesos/JavaUtils.java:206:17: Redundant 'final' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityBase ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityBase ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/SingularityBase/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityBase ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularityBase/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityBase ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityBase ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityUI 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityUI ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityUI ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityUI ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityUI ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/SingularityUI/target/jacoco.exec
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:install-node-and-npm (install node and npm) @ SingularityUI ---
+[INFO] Node v6.2.1 is already installed.
+[INFO] Found NPM version 3.9.3
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm install) @ SingularityUI ---
+[INFO] Running 'npm install --color=false' in /root/workspace/HubSpot/Singularity/220655607/SingularityUI
+[ERROR] npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+[ERROR] npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.1.2
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm test) @ SingularityUI ---
+[INFO] Running 'npm test --color=false' in /root/workspace/HubSpot/Singularity/220655607/SingularityUI
+[INFO] 
+[INFO] > SingularityUI@0.3.0 test /root/workspace/HubSpot/Singularity/220655607/SingularityUI
+[INFO] > mocha --compilers js:babel-core/register test/index.test
+[INFO] 
+[ERROR] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs
+[INFO] 
+[INFO] 
+[INFO]   Utils
+[INFO]     getTaskDataFromTaskId()
+[INFO]       ✓ should grab all fields from a valid task id
+[INFO] 
+[INFO]   Reducers
+[INFO]     tailerView
+[INFO]       ✓ should be properly initialized
+[INFO]       ✓ should populate the tailerId field
+[INFO]       ✓ should auto-populate the requestIds, taskIds, and paths fields
+[INFO]       ✓ should add tailer groups
+[INFO]       ✓ should remove tailer groups
+[INFO]       ✓ should pick an individual tailer group
+[INFO] 
+[INFO] 
+[INFO]   7 passing (34ms)
+[INFO] 
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:gulp (gulp build) @ SingularityUI ---
+[INFO] Running 'gulp build --no-color' in /root/workspace/HubSpot/Singularity/220655607/SingularityUI
+[INFO] [13:22:40] Using gulpfile ~/workspace/HubSpot/Singularity/220655607/SingularityUI/gulpfile.js
+[INFO] [13:22:40] Starting 'clean'...
+[INFO] [13:22:40] Finished 'clean' after 37 ms
+[INFO] [13:22:40] Starting 'static'...
+[INFO] [13:22:40] Finished 'static' after 35 ms
+[INFO] [13:22:40] Starting 'html'...
+[INFO] [13:22:40] Finished 'html' after 24 ms
+[INFO] [13:22:40] Starting 'build'...
+[INFO] [13:24:13] Version: webpack [1m1.13.1[22m
+[INFO] Time: [1m93177[22mms
+[INFO]                                [1mAsset[22m     [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+[INFO] [1m[32m89889688147bd7575d6327160d64e760.svg[39m[22m   109 kB        [1m[22m  [1m[32m[emitted][39m[22m  
+[INFO]                  [1m[32mjs/vendor.bundle.js[39m[22m   614 kB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                     [1m[32mjs/app.bundle.js[39m[22m  2.09 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                          [1m[32mcss/app.css[39m[22m   336 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]              [1m[32mjs/vendor.bundle.js.map[39m[22m  4.66 MB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                 [1m[32mjs/app.bundle.js.map[39m[22m   9.9 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                      [1m[32mcss/app.css.map[39m[22m   412 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] [13:24:13] Finished 'build' after 1.55 min
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityMesosClient 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityMesosClient ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityMesosClient ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:12:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:14:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:16:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:29:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:31:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:33:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:35:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:37:3: Redundant 'public' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityMesosClient ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityMesosClient ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityMesosClient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularityMesosClient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityMesosClient ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityMesosClient ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularitySwagger 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularitySwagger ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularitySwagger ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularitySwagger ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularitySwagger ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/SingularitySwagger/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularitySwagger/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularitySwagger ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/220655607/SingularitySwagger/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularitySwagger ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularitySwagger ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityService 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityService ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityService ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/config/UIConfiguration.java:21:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityCmdLineArgsMigration.java:58:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:84:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:139:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/history/SingularityHistoryModule.java:126:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/CuratorManager.java:64:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/data/CuratorAsyncManager.java:46:5: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:13:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:15:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:17:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:19:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:21:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:23:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:25:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:27:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityNewTaskChecker.java:171:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:175:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:224:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:249:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:289:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:315:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/hooks/LoadBalancerClientImpl.java:110:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/220655607/SingularityService/src/main/java/com/hubspot/singularity/smtp/SmtpMailer.java:366:5: Redundant 'private' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityService ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityService ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityService ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/220655607/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/220655607/SingularityService/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-index.html-template) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-ui) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-resource (add-generated-resources) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- swagger-maven-plugin:2.3.2:generate (build-embedded-documentation) @ SingularityService ---
+[INFO] Reflections took 77 ms to scan 1 urls, producing 13 keys and 74 values 
+[INFO] Detect Resource:com.hubspot.singularity.resources.TestResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.S3LogResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DeployResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RackResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.WebhookResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DisastersResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.InactiveSlaveResource
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.TaskResource
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestResource
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.HistoryResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.PriorityResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SandboxResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.UsageResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.StateResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SlaveResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestGroupResource
+[INFO] Writing doc to /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/index.html...
+[INFO] Done!
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/service.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_test.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_logs.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_deploys.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_racks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_webhooks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_disasters.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_disasters.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_tasks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_requests.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_history.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_priority.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_sandbox.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_usage.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_state.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_slaves.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/classes/assets/api-docs/api_groups.json
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityService ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 6.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 119.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1193.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.hubspot.singularity.scheduler.MesosUtilsTest
+Running com.hubspot.singularity.SingularityAuthorizationHelperTest
+Running com.hubspot.singularity.JavaUtilsTest
+Running com.hubspot.singularity.SingularityHistoryTest
+Running com.hubspot.singularity.data.InactiveSlaveManagerTest
+Running com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+Running com.hubspot.singularity.data.ValidatorTest
+Running com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+Running com.hubspot.singularity.mesos.SingularityStartupTest
+Running com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+Running com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+Running com.hubspot.singularity.helpers.RFC5545ScheduleTest
+Running com.hubspot.singularity.SingularityS3Test
+Running com.hubspot.singularity.data.BlendedHistoryTest
+Running com.hubspot.singularity.config.MergingSourceProviderTest
+Running com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+Running com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+Running com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+Running com.hubspot.singularity.scheduler.SingularityDeploysTest
+Running com.hubspot.singularity.scheduler.SingularityUsageTest
+Running com.hubspot.singularity.scheduler.SingularitySchedulerTest
+Running com.hubspot.singularity.data.SandboxManagerTest
+Running com.hubspot.singularity.scheduler.HistoryPersisterTest
+13:24:47.687 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1441328175)
+13:24:47.968 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:48.647 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1893736577)
+13:24:48.704 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.182 sec - in com.hubspot.singularity.SingularityS3Test
+13:24:48.955 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1227903899)
+13:24:48.974 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:49.145 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 827035437)
+13:24:49.208 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:49.164 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 2117642238)
+13:24:49.281 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.499 sec - in com.hubspot.singularity.scheduler.MesosUtilsTest
+13:24:50.235 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 131301148)
+13:24:50.092 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 2086945474)
+13:24:50.343 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.793 sec - in com.hubspot.singularity.helpers.RFC5545ScheduleTest
+13:24:50.419 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 754707140)
+13:24:50.449 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:50.454 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:51.085 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 651698411)
+13:24:51.163 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:51.297 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 55429210)
+13:24:51.329 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:51.799 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 770950500)
+13:24:51.702 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1579823168)
+13:24:51.861 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:52.098 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:52.288 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 66774422)
+13:24:52.339 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:52.754 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1210600718)
+13:24:52.782 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:52.845 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 864221358)
+13:24:53.035 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:53.117 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1953175805)
+13:24:53.149 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:54.872 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:54.887 [main] INFO org.eclipse.jetty.util.log - Logging initialized @13002ms
+13:24:54.939 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@22f057b4
+13:24:54.958 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@77e1dacd{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@690677de,MANAGED}
+13:24:54.963 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@5feff876
+13:24:54.964 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@10ec4721{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7bdf94f2,MANAGED}
+13:24:55.029 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7bdf94f2 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:55.038 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7bdf94f2 added {[/tasks/*]=>tasks,POJO}
+13:24:55.711 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1934729582)
+13:24:55.866 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+13:24:56.335 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:56.364 [main] INFO org.eclipse.jetty.util.log - Logging initialized @14486ms
+13:24:56.444 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@46c475ba
+13:24:56.485 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@f7b7720{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1e0c898c,MANAGED}
+13:24:56.488 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@18356951
+13:24:56.489 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@53335328{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@3a0b6aff,MANAGED}
+13:24:56.878 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@3a0b6aff added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:56.976 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@3a0b6aff added {[/tasks/*]=>tasks,POJO}
+13:24:58.987 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.005 [main] INFO org.eclipse.jetty.util.log - Logging initialized @17127ms
+13:24:59.099 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.110 [main] INFO org.eclipse.jetty.util.log - Logging initialized @17239ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.632 sec - in com.hubspot.singularity.JavaUtilsTest
+13:24:59.135 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.175 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1a0b4955
+13:24:59.197 [main] INFO org.eclipse.jetty.util.log - Logging initialized @17304ms
+13:24:59.322 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@72d7afff{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@5c41f6a0,MANAGED}
+13:24:59.319 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@691a5c3a
+13:24:59.326 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@71806c64
+13:24:59.327 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1e2c0292{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@69988d42,MANAGED}
+13:24:59.380 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.388 [main] INFO org.eclipse.jetty.util.log - Logging initialized @17491ms
+13:24:59.418 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@2fb70301
+13:24:59.447 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@39840986{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@141229f6,MANAGED}
+13:24:59.449 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@3c2fa57a{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@4027edeb,MANAGED}
+13:24:59.438 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@40277077
+13:24:59.456 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1ee22768
+13:24:59.458 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@38a52072{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@306bf4c3,MANAGED}
+13:24:59.473 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@69988d42 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:59.483 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@2526d5f9
+13:24:59.492 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@6b529d42{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@459df48d,MANAGED}
+13:24:59.542 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@69988d42 added {[/tasks/*]=>tasks,POJO}
+13:24:59.570 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@306bf4c3 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:59.574 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@306bf4c3 added {[/tasks/*]=>tasks,POJO}
+13:24:59.615 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@31a4db4f{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@2842ef02,MANAGED}
+13:24:59.623 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@459df48d added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:59.634 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@459df48d added {[/tasks/*]=>tasks,POJO}
+13:24:59.620 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@141229f6
+13:24:59.648 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@723b8eff{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@3987a1e8,MANAGED}
+13:24:59.666 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.675 [main] INFO org.eclipse.jetty.util.log - Logging initialized @17840ms
+13:24:59.749 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@20e48e63
+13:24:59.782 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4687366b{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@3a17acd4,MANAGED}
+13:24:59.795 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@58a7ca42
+13:24:59.796 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4f9980e1{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1f6e6f50,MANAGED}
+13:24:59.821 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@3987a1e8 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:59.855 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1f6e6f50 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:24:59.860 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1f6e6f50 added {[/tasks/*]=>tasks,POJO}
+13:24:59.859 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@3987a1e8 added {[/tasks/*]=>tasks,POJO}
+13:24:59.910 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:24:59.927 [main] INFO org.eclipse.jetty.util.log - Logging initialized @18090ms
+13:25:00.079 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@50b2ba2c
+13:25:00.195 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@20a18cc9{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@61555218,MANAGED}
+13:25:00.203 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@59db8216
+13:25:00.209 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7bb86ac{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@33bf2602,MANAGED}
+13:25:00.273 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:00.280 [main] INFO org.eclipse.jetty.util.log - Logging initialized @18398ms
+13:25:00.329 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@14b4d90b
+13:25:00.292 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:00.349 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@54ec8ab3{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@71b32407,MANAGED}
+13:25:00.353 [main] INFO org.eclipse.jetty.util.log - Logging initialized @18449ms
+13:25:00.352 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3e0a112f
+13:25:00.353 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@abe7d36{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7da1ef46,MANAGED}
+13:25:00.417 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7da1ef46 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:00.422 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7da1ef46 added {[/tasks/*]=>tasks,POJO}
+13:25:00.425 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@33bf2602 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:00.452 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@75d95b67
+13:25:00.467 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@33bf2602 added {[/tasks/*]=>tasks,POJO}
+13:25:00.565 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@37f7ce20{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@c931728,MANAGED}
+13:25:00.568 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@45f6181a
+13:25:00.571 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@19d0d1ab{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7e0941cc,MANAGED}
+13:25:00.641 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7e0941cc added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:00.679 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7e0941cc added {[/tasks/*]=>tasks,POJO}
+13:25:01.219 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:01.281 [main] INFO org.eclipse.jetty.util.log - Logging initialized @19421ms
+13:25:01.328 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:01.334 [main] INFO org.eclipse.jetty.util.log - Logging initialized @19476ms
+13:25:01.376 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1a22c1ba
+13:25:01.421 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@39451d92{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@46610fc9,MANAGED}
+13:25:01.426 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@6870a76f
+13:25:01.427 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@42257df7{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7b11ff9a,MANAGED}
+13:25:01.452 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3d213a2b
+13:25:01.466 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7b11ff9a added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:01.471 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7b11ff9a added {[/tasks/*]=>tasks,POJO}
+13:25:01.516 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@537a8915{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@31aa9b01,MANAGED}
+13:25:01.524 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3cd6d147
+13:25:01.553 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4ed5492c{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@5ec06e97,MANAGED}
+13:25:01.762 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:01.777 [main] INFO org.eclipse.jetty.util.log - Logging initialized @19910ms
+13:25:01.856 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@159408a7
+13:25:01.886 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@5ec06e97 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:01.941 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@5ec06e97 added {[/tasks/*]=>tasks,POJO}
+13:25:01.964 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@293ba26c{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@36dc6b9,MANAGED}
+13:25:02.008 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3d0f4ac4
+13:25:02.009 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@544733a4{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@522f74a1,MANAGED}
+13:25:02.168 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@522f74a1 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:02.174 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@522f74a1 added {[/tasks/*]=>tasks,POJO}
+13:25:02.278 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:02.284 [main] INFO org.eclipse.jetty.util.log - Logging initialized @20433ms
+13:25:02.307 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1812b564
+13:25:02.330 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@3b95fce9{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@f26cd76,MANAGED}
+13:25:02.334 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3599b18
+13:25:02.335 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@143900a6{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@712594f4,MANAGED}
+13:25:02.406 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@712594f4 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:02.433 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@712594f4 added {[/tasks/*]=>tasks,POJO}
+13:25:02.856 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:02.865 [main] INFO org.eclipse.jetty.util.log - Logging initialized @20986ms
+13:25:02.897 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@75df4b1d
+13:25:02.944 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7bf16972{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@eee26bd,MANAGED}
+13:25:02.949 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3ee2d546
+13:25:02.951 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@58be583e{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1a34772e,MANAGED}
+13:25:03.014 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1a34772e added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:03.022 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1a34772e added {[/tasks/*]=>tasks,POJO}
+13:25:03.385 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:03.395 [main] INFO org.eclipse.jetty.util.log - Logging initialized @21506ms
+13:25:03.441 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7df23848
+13:25:03.550 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4f5bfbca{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@552b15f6,MANAGED}
+13:25:03.563 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@eb1e868
+13:25:03.572 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@71a7cf7c{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7f49df25,MANAGED}
+13:25:03.688 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7f49df25 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:03.695 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7f49df25 added {[/tasks/*]=>tasks,POJO}
+13:25:03.955 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+13:25:03.963 [main] INFO org.eclipse.jetty.util.log - Logging initialized @21994ms
+13:25:04.055 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7bfcc108
+13:25:04.078 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1bbef3c7{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@35995029,MANAGED}
+13:25:04.082 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7682bf66
+13:25:04.083 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4eb73cc8{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6e23ba17,MANAGED}
+13:25:04.150 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6e23ba17 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+13:25:04.156 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6e23ba17 added {[/tasks/*]=>tasks,POJO}
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.493 sec - in com.hubspot.singularity.SingularityAuthorizationHelperTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.045 sec - in com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+13:25:20.772 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:35425] WARN org.apache.zookeeper.server.NIOServerCnxn - Exception causing close of session 0x15e146ad80d0000 due to java.nio.channels.ClosedChannelException
+13:25:23.580 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:34473] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146ae4d90000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:24.303 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: Client is not started
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:113)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$2.call(ExistsBuilderImpl.java:172)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$2.call(ExistsBuilderImpl.java:161)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:158)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:148)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:36)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:109)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:122)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:95)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.51 sec - in com.hubspot.singularity.data.BlendedHistoryTest
+13:25:25.698 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:25.731 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:25.927 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:26.017 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 40.071 sec <<< FAILURE! - in com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+testTaskShellCommandPersistence(com.hubspot.singularity.mesos.SingularityTaskShellCommandTest)  Time elapsed: 33.05 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunCommandBeforeBounceKill(com.hubspot.singularity.mesos.SingularityTaskShellCommandTest)  Time elapsed: 2.605 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:26.936 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:35576] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146af3c70000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:26.986 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:27.055 [main] WARN com.hubspot.singularity.scheduler.SingularityLeaderCache - savePendingTask SingularityPendingTask{pendingTaskId=r1-d1-23-3-BOUNCE-1, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}, but not active
+13:25:27.100 [main] WARN com.hubspot.singularity.scheduler.SingularityLeaderCache - savePendingTask SingularityPendingTask{pendingTaskId=r2-d3-231-1-UNPAUSED-23, cmdLineArgsList=Optional.of([cmd line args]), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}, but not active
+13:25:27.128 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hosts/localhost
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hosts/localhost
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1270)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.435 sec - in com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+13:25:27.335 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:35908] WARN org.apache.zookeeper.server.NIOServerCnxn - Exception causing close of session 0x15e146b3b7f0000 due to java.nio.channels.AsynchronousCloseException
+13:25:27.510 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: Client is not started
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:113)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$2.call(ExistsBuilderImpl.java:172)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$2.call(ExistsBuilderImpl.java:161)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:158)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:148)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:36)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:109)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:122)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:95)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:28.036 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:42080] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b3d910000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:28.690 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.886 sec - in com.hubspot.singularity.data.ValidatorTest
+13:25:29.017 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.create(CuratorFrameworkImpl.java:339)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:29.028 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:41991] WARN org.apache.zookeeper.server.NIOServerCnxnFactory - Ignoring unexpected runtime exception
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:187)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:29.028 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hosts/localhost
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hosts/localhost
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1270)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 44.417 sec <<< FAILURE! - in com.hubspot.singularity.data.InactiveSlaveManagerTest
+itShouldNotContainHostAfterActivatingHost(com.hubspot.singularity.data.InactiveSlaveManagerTest)  Time elapsed: 38.681 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+itShouldContainAnInactiveHostWhenHostDeactivated(com.hubspot.singularity.data.InactiveSlaveManagerTest)  Time elapsed: 1.54 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+itShouldMarkSlavesFromInactiveHostAsDecommissioned(com.hubspot.singularity.data.InactiveSlaveManagerTest)  Time elapsed: 1.69 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:29.383 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:43797] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b44400000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:29.531 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1040)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1073)
+	at org.apache.curator.utils.ZKPaths.mkdirs(ZKPaths.java:215)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:702)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.708 sec - in com.hubspot.singularity.config.MergingSourceProviderTest
+13:25:29.982 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at org.apache.curator.CuratorZookeeperClient.internalBlockUntilConnectedOrTimedOut(CuratorZookeeperClient.java:323)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:105)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:30.201 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:30.249 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:33903] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b41a10000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:30.436 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 45.236 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityUsageTest
+testUsagePollerComplex(com.hubspot.singularity.scheduler.SingularityUsageTest)  Time elapsed: 36.699 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testUsagePollerSimple(com.hubspot.singularity.scheduler.SingularityUsageTest)  Time elapsed: 3.085 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testUsageCleaner(com.hubspot.singularity.scheduler.SingularityUsageTest)  Time elapsed: 1.523 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:31.515 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:31.750 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:31.850 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.create(CuratorFrameworkImpl.java:339)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:31.853 [main-EventThread] ERROR com.hubspot.singularity.SingularityLeaderLatch - Can't find our node. Resetting. Index: -1
+13:25:31.854 [main-EventThread] ERROR org.apache.curator.framework.imps.CuratorFrameworkImpl - Background exception was not retry-able or retry gave up
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.create(CuratorFrameworkImpl.java:339)
+	at org.apache.curator.framework.recipes.leader.LeaderLatch.reset(LeaderLatch.java:503)
+	at org.apache.curator.framework.recipes.leader.LeaderLatch.checkLeadership(LeaderLatch.java:530)
+	at org.apache.curator.framework.recipes.leader.LeaderLatch.access$700(LeaderLatch.java:63)
+	at org.apache.curator.framework.recipes.leader.LeaderLatch$7.processResult(LeaderLatch.java:584)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:505)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$2.processResult(GetChildrenBuilderImpl.java:166)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:590)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+13:25:32.145 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 46.799 sec <<< FAILURE! - in com.hubspot.singularity.mesos.SingularityStartupTest
+testScheduledTasksDontGetRescheduledDuringRun(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 36.543 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testFailuresInLaunchPath(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 3.272 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOnDemandDoesntGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.547 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScheduledTasksDontGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.42 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunOnceDoesntGetRescheduled(com.hubspot.singularity.mesos.SingularityStartupTest)  Time elapsed: 1.24 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:32.318 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:46570] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b511f0000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 45.27 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.HistoryPersisterTest
+testTaskCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 29.818 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPurgingDoesntApplyIfDatabasePresent(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 2.027 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRequestCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.557 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployCountPurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.84 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskAgePurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 2.416 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRequestAgePurging(com.hubspot.singularity.scheduler.HistoryPersisterTest)  Time elapsed: 1.284 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:33.010 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:33.023 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:46703] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b53ff0000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:33.201 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:703)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 47.571 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+testExpiringSkipHealthchecks(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 35.46 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringPause(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 2.065 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringScale(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.472 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringBounceGoesAway(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.465 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringScaleWithBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.391 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringNonIncrementalBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.304 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringIncrementalBounce(com.hubspot.singularity.scheduler.SingularityExpiringActionsTest)  Time elapsed: 1.285 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:34.201 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:35.359 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:36.421 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:36.444 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:35608] WARN org.apache.zookeeper.server.NIOServerCnxnFactory - Ignoring unexpected runtime exception
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:187)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:36.600 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:36.952 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:45187] WARN org.apache.zookeeper.server.NIOServerCnxnFactory - Ignoring unexpected runtime exception
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:187)
+	at java.lang.Thread.run(Thread.java:745)
+13:25:38.634 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.utils.ZKPaths.mkdirs(ZKPaths.java:232)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:702)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:38.640 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:45454] WARN org.apache.zookeeper.server.NIOServerCnxnFactory - Ignoring unexpected runtime exception
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:187)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.123 sec - in com.hubspot.singularity.data.SandboxManagerTest
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 53.283 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+testSlavePlacementOptimisticSingleOffer(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 32.459 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testReservedSlaveWithMatchinRequestAttribute(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 3.462 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testEvenRackPlacement(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.72 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRackPlacementOnScaleDown(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.392 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPlacementOfBounceTasks(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 2.49 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSlavePlacementOptimistic(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.36 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testReservedSlaveAttribute(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.222 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testAllowedSlaveAttributes(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.32 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRequiredSlaveAttributesForRequest(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.276 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSlavePlacementGreedy(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.178 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSlavePlacementSeparate(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.163 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testMultipleRequiredAttributes(com.hubspot.singularity.scheduler.SingularitySlavePlacementTest)  Time elapsed: 1.228 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 54.03 sec <<< FAILURE! - in com.hubspot.singularity.SingularityHistoryTest
+historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 36.693 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 36.694 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.863 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.863 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testRunId(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 2.572 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunId(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 2.573 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.354 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.355 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.168 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.169 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.298 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.299 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.352 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.353 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testMessage(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.205 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testMessage(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.205 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.224 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.225 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.253 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)  Time elapsed: 1.254 sec  <<< ERROR!
+org.skife.jdbi.v2.exceptions.UnableToCreateStatementException: 
+org.h2.jdbc.JdbcSQLException: Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", located:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", rewritten:"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;", arguments:{ positional:{}, named:{}, finder:[]}]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "TASKHISTORY" not found; SQL statement:
+DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193]
+	at com.hubspot.singularity.SingularityHistoryTest.blowDBAway(SingularityHistoryTest.java:92)
+
+13:25:40.216 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+13:25:40.658 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:41.130 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 55.497 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+testMaxHealthcheckRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 34.693 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testHealthchecksDuringBounce(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.849 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSkipHealthchecksDuringBounce(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.878 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPortNumber(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.429 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSkipHealthchecksEdgeCases(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.497 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPortIndices(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.248 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testNewTaskCheckerRespectsDeployHealthcheckRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.311 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testHealthchecksSuccess(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.222 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testHealthchecksTimeout(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.155 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testFailingStatusCodes(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 2.189 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testStartupDoesNotCountTowardsRetries(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.145 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testStartupTimeout(com.hubspot.singularity.scheduler.SingularityHealthchecksTest)  Time elapsed: 1.159 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:43.031 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+13:25:43.056 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.create(CuratorFrameworkImpl.java:339)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:45.395 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.setData(CuratorFrameworkImpl.java:371)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:46.540 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1268)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:274)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl$4.call(SetDataBuilderImpl.java:270)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.pathInForeground(SetDataBuilderImpl.java:267)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:253)
+	at org.apache.curator.framework.imps.SetDataBuilderImpl.forPath(SetDataBuilderImpl.java:41)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:96)
+	... 1 common frames omitted
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 62.564 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+testFrozenSlaveCanBeDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 34.136 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testBasicSlaveAndRackState(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 3.321 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testEmptyDecommissioning(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.941 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCannotUseStateReservedForSystem(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.445 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testLoadSlavesFromMasterDataOnStartup(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.386 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testFrozenSlaveDoesntLaunchTasks(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 2.279 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSystemChangeClearsExpiringChangeIfInvalid(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.223 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testBadExpiringStateTransition(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.239 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testInvalidTransitionToDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.213 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDecommissioning(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 2.151 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testReconcileSlaves(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.167 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testExpiringMachineState(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 2.201 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeadSlavesArePurged(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.199 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testValidTransitionToDecommissioned(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.171 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testUnfrozenSlaveLaunchesTasks(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.131 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testFrozenSlaveTransitions(com.hubspot.singularity.scheduler.SingularityMachineStatesTest)  Time elapsed: 1.179 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:25:48.889 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.create(CuratorFrameworkImpl.java:339)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:210)
+13:25:48.893 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:44286] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146b92640000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 23, Failures: 0, Errors: 23, Skipped: 0, Time elapsed: 69.401 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularityDeploysTest
+testUsesNewRequestDataFromPendingDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 32.934 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testAfterDeployWaitsForScheduledTaskToFinish(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 2.058 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeploySucceedsWithTaskRetries(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.659 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCancelDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 2.669 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployTimesOut(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.454 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployAllInstancesAtOnce(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 2.231 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployFails(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.242 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCannotUpdateRequestDuringPendingDeployWithNewData(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.224 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testUnpauseOnDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.212 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployFailsAfterMaxTaskRetries(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.2 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployOneInstanceAtATime(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 2.226 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testIncrementalDeployInstanceCounter(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 2.189 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testLbUpdatesAfterEachDeployStep(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.134 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScheduledJobLivesThroughDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.228 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployClearsObsoleteScheduledTasks(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.134 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSkipDeployHealthchecks(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.185 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployWithManualStep(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.16 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployManagerHandlesFailedLBTask(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.108 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScaleDownDuringDeploy(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.114 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployMultipleInstancesAtOnce(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.161 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployFailsForInvalidRequestState(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.116 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCanceledDeployTasksStayActiveUntilReplaced(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.123 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testIncrementalDeployCancel(com.hubspot.singularity.scheduler.SingularityDeploysTest)  Time elapsed: 1.118 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+13:26:00.108 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:40777] WARN org.apache.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x15e146bbe350000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 58, Failures: 0, Errors: 58, Skipped: 0, Time elapsed: 108.223 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularitySchedulerTest
+testNotAcceptOfferWithRoleForRequestWithoutRole(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 34.129 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunOnceRunOnlyOnce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 2.035 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDecommissionDoesntKillPendingDeploy(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.308 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testMaxTasksPerOffer(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.657 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskDestroy(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.287 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDifferentQuartzTimeZones(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.325 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testWaitAfterTaskWorks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.332 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testBounceWithLoadBalancer(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.226 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPause(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.195 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testKilledTaskIdRecords(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.201 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeployCleanupOverwritesTaskBounceCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.314 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCleanerFindsTasksWithSkippedHealthchecks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.248 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerHandlesFinishedTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.146 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunNowScheduledJobDoesNotRetry(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.165 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScaleDownTakesHighestInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.204 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testIncrementalBounceShutsDownOldTasksPerNewHealthyTask(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.196 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRemovedRequestData(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.175 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCleanerLeavesPausedRequestTasksByDemand(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.14 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOfferCache(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.116 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testReconciliation(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.152 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCronScheduleChanges(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.136 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCooldownAfterSequentialFailures(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.131 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerCanBatchOnOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.112 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerExhaustsOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.136 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.108 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCustomResourcesWithRunNowRequest(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.16 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testMultipleRunOnceTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.13 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPriorityFreezeDoesntLaunchTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.106 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testObsoletePendingRequestsRemoved(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.123 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCooldownScalesToInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.156 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPauseLbCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.131 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScaleWithBounceDoesNotLaunchExtraInstances(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.135 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testDeletingState(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.133 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOfferCacheRescindOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.118 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskKill(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.138 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testLBCleanup(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.116 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testJobRescheduledWhenItFinishesDuringDecommission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.143 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRetries(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.126 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerPriority(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.174 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testInvalidQuartzTimeZoneErrors(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 2.223 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testQueueMultipleOneOffs(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.089 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testIncrementalBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 2.093 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testLongRunningTaskKills(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.092 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testTaskOddities(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.117 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerRandomizesOffers(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.072 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testBounce(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.098 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+badPauseExpires(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.104 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testSchedulerIsolatesPendingTasksBasedOnDeploy(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.098 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testScheduledNotification(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.086 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOnDemandTasksPersist(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.105 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testCooldownOnlyWhenTasksRapidlyFail(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.166 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOneOffsDontRunByThemselves(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.098 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testPriorityFreezeKillsActiveTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.26 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRunOnceDontMoveDuringDecomission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.106 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testRequestedPorts(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 2.084 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testMaxOnDemandTasks(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.094 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testLbCleanupDoesNotRemoveBeforeAdd(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.102 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+testOneOffsDontMoveDuringDecomission(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.089 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+
+
+Results :
+
+Tests in error: 
+com.hubspot.singularity.SingularityHistoryTest.historyPurgerTest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.historyUpdaterTest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testHistoryDoesntHaveActiveTasks(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testMessage(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testPersisterRaceCondition(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testRunId(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskBufferPersist(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchByRequest(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchQueryBlended(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+com.hubspot.singularity.SingularityHistoryTest.testTaskSearchQueryInZkOnly(com.hubspot.singularity.SingularityHistoryTest)
+  Run 1: SingularityHistoryTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  Run 2: SingularityHistoryTest.blowDBAway:92 » UnableToCreateStatement org.h2.jdbc.Jdb...
+
+  InactiveSlaveManagerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  InactiveSlaveManagerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  InactiveSlaveManagerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityStartupTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityStartupTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityStartupTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityStartupTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityStartupTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityTaskShellCommandTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityTaskShellCommandTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  HistoryPersisterTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityDeploysTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityExpiringActionsTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityHealthchecksTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityMachineStatesTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySchedulerTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularitySlavePlacementTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityUsageTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityUsageTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+  SingularityUsageTest>SingularitySchedulerTestBase.setupDriver:202 » UnsupportedOperation
+
+Tests run: 205, Failures: 0, Errors: 157, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Singularity ........................................ SUCCESS [  3.209 s]
+[INFO] SingularityBase .................................... SUCCESS [  4.225 s]
+[INFO] SingularityUI ...................................... SUCCESS [01:51 min]
+[INFO] SingularityMesosClient ............................. SUCCESS [  2.146 s]
+[INFO] SingularitySwagger ................................. SUCCESS [  1.016 s]
+[INFO] SingularityService ................................. FAILURE [02:17 min]
+[INFO] SingularityRunnerBase .............................. SKIPPED
+[INFO] SingularityS3Base .................................. SKIPPED
+[INFO] SingularityClient .................................. SKIPPED
+[INFO] SingularityExecutor ................................ SKIPPED
+[INFO] SingularityExecutorCleanup ......................... SKIPPED
+[INFO] SingularityS3Uploader .............................. SKIPPED
+[INFO] SingularityS3Downloader ............................ SKIPPED
+[INFO] EmbedSingularityExample ............................ SKIPPED
+[INFO] SingularityServiceIntegrationTests ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:20 min
+[INFO] Finished at: 2017-08-24T15:26:35+02:00
+[INFO] Final Memory: 177M/3126M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project SingularityService: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/HubSpot/Singularity/220655607/SingularityService/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :SingularityService

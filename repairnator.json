@@ -1,0 +1,972 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 167,
+  "repo": "HubSpot/Singularity",
+  "bugCommit": "https://github.com/HubSpot/Singularity/compare/b5fe2aebbdc2...e0d2b29b1976",
+  "failingModule": "/root/workspace/HubSpot/Singularity/220655607/SingularityService",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.UnsupportedOperationException",
+    "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException"
+  ],
+  "totalNumberRunningTests": 215,
+  "failing-test-cases": [
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityDeploysTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployOneInstanceAtATime",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testCannotUpdateRequestDuringPendingDeployWithNewData",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployFailsAfterMaxTaskRetries",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployManagerHandlesFailedLBTask",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testIncrementalDeployCancel",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testSkipDeployHealthchecks",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testUsesNewRequestDataFromPendingDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployTimesOut",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployFails",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testScaleDownDuringDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployMultipleInstancesAtOnce",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testLbUpdatesAfterEachDeployStep",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testIncrementalDeployInstanceCounter",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployWithManualStep",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testCancelDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testAfterDeployWaitsForScheduledTaskToFinish",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployAllInstancesAtOnce",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testUnpauseOnDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testCanceledDeployTasksStayActiveUntilReplaced",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployClearsObsoleteScheduledTasks",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testScheduledJobLivesThroughDeploy",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeployFailsForInvalidRequestState",
+        "com.hubspot.singularity.scheduler.SingularityDeploysTest#testDeploySucceedsWithTaskRetries"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 23
+    },
+    {
+      "className": "com.hubspot.singularity.data.InactiveSlaveManagerTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.data.InactiveSlaveManagerTest#itShouldMarkSlavesFromInactiveHostAsDecommissioned",
+        "com.hubspot.singularity.data.InactiveSlaveManagerTest#itShouldNotContainHostAfterActivatingHost",
+        "com.hubspot.singularity.data.InactiveSlaveManagerTest#itShouldContainAnInactiveHostWhenHostDeactivated"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "com.hubspot.singularity.mesos.SingularityStartupTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.mesos.SingularityStartupTest#testRunOnceDoesntGetRescheduled",
+        "com.hubspot.singularity.mesos.SingularityStartupTest#testFailuresInLaunchPath",
+        "com.hubspot.singularity.mesos.SingularityStartupTest#testScheduledTasksDontGetRescheduled",
+        "com.hubspot.singularity.mesos.SingularityStartupTest#testScheduledTasksDontGetRescheduledDuringRun",
+        "com.hubspot.singularity.mesos.SingularityStartupTest#testOnDemandDoesntGetRescheduled"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringScale",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringIncrementalBounce",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringPause",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringBounceGoesAway",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringSkipHealthchecks",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringScaleWithBounce",
+        "com.hubspot.singularity.scheduler.SingularityExpiringActionsTest#testExpiringNonIncrementalBounce"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 7
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularitySchedulerTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testPauseLbCleanup",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testLongRunningTaskKills",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCleanerFindsTasksWithSkippedHealthchecks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCooldownAfterSequentialFailures",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testScheduledNotification",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testBounce",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCooldownOnlyWhenTasksRapidlyFail",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerPriority",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testWaitAfterTaskWorks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testMaxTasksPerOffer",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testIncrementalBounce",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testTaskKill",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRunOnceRunOnlyOnce",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCleanerLeavesPausedRequestTasksByDemand",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testOnDemandTasksPersist",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testScaleWithBounceDoesNotLaunchExtraInstances",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerExhaustsOffers",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testLBCleanup",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testDeployCleanupOverwritesTaskBounceCleanup",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testObsoletePendingRequestsRemoved",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerCanBatchOnOffers",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testPriorityFreezeKillsActiveTasks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCustomResourcesWithRunNowRequest",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRunNowScheduledJobDoesNotRetry",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testReconciliation",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testInvalidQuartzTimeZoneErrors",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testMaxOnDemandTasks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testTaskBounce",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testOneOffsDontMoveDuringDecomission",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testQueueMultipleOneOffs",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testOfferCacheRescindOffers",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testDifferentQuartzTimeZones",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testNotAcceptOfferWithRoleForRequestWithoutRole",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testMultipleRunOnceTasks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerHandlesFinishedTasks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testScaleDownTakesHighestInstances",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testTaskOddities",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testJobRescheduledWhenItFinishesDuringDecommission",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCooldownScalesToInstances",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testPause",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testPriorityFreezeDoesntLaunchTasks",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testBounceWithLoadBalancer",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRetries",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#badPauseExpires",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testIncrementalBounceShutsDownOldTasksPerNewHealthyTask",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testOneOffsDontRunByThemselves",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testOfferCache",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerRandomizesOffers",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testSchedulerIsolatesPendingTasksBasedOnDeploy",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testCronScheduleChanges",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testDecommissionDoesntKillPendingDeploy",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testKilledTaskIdRecords",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRunOnceDontMoveDuringDecomission",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRequestedPorts",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testLbCleanupDoesNotRemoveBeforeAdd",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testTaskDestroy",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testDeletingState",
+        "com.hubspot.singularity.scheduler.SingularitySchedulerTest#testRemovedRequestData"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 58
+    },
+    {
+      "className": "com.hubspot.singularity.mesos.SingularityTaskShellCommandTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.mesos.SingularityTaskShellCommandTest#testTaskShellCommandPersistence",
+        "com.hubspot.singularity.mesos.SingularityTaskShellCommandTest#testRunCommandBeforeBounceKill"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testAllowedSlaveAttributes",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testEvenRackPlacement",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testPlacementOfBounceTasks",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testSlavePlacementOptimistic",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testReservedSlaveWithMatchinRequestAttribute",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testSlavePlacementOptimisticSingleOffer",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testRequiredSlaveAttributesForRequest",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testSlavePlacementGreedy",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testSlavePlacementSeparate",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testRackPlacementOnScaleDown",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testMultipleRequiredAttributes",
+        "com.hubspot.singularity.scheduler.SingularitySlavePlacementTest#testReservedSlaveAttribute"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 12
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityMachineStatesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testCannotUseStateReservedForSystem",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testDecommissioning",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testDeadSlavesArePurged",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testFrozenSlaveCanBeDecommissioned",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testBadExpiringStateTransition",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testInvalidTransitionToDecommissioned",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testFrozenSlaveTransitions",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testFrozenSlaveDoesntLaunchTasks",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testLoadSlavesFromMasterDataOnStartup",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testValidTransitionToDecommissioned",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testEmptyDecommissioning",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testReconcileSlaves",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testSystemChangeClearsExpiringChangeIfInvalid",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testExpiringMachineState",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testBasicSlaveAndRackState",
+        "com.hubspot.singularity.scheduler.SingularityMachineStatesTest#testUnfrozenSlaveLaunchesTasks"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 16
+    },
+    {
+      "className": "com.hubspot.singularity.SingularityHistoryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskSearchQueryInZkOnly",
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskBufferPersist",
+        "com.hubspot.singularity.SingularityHistoryTest#testHistoryDoesntHaveActiveTasks",
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskSearchByRequest",
+        "com.hubspot.singularity.SingularityHistoryTest#testTaskSearchQueryBlended",
+        "com.hubspot.singularity.SingularityHistoryTest#testPersisterRaceCondition",
+        "com.hubspot.singularity.SingularityHistoryTest#testRunId",
+        "com.hubspot.singularity.SingularityHistoryTest#testMessage",
+        "com.hubspot.singularity.SingularityHistoryTest#historyPurgerTest",
+        "com.hubspot.singularity.SingularityHistoryTest#historyUpdaterTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.skife.jdbi.v2.exceptions.UnableToCreateStatementException",
+          "failureDetail": "org.h2.jdbc.JdbcSQLException: Table \"TASKHISTORY\" not found; SQL statement:\nDELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory; [42102-193] [statement:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", located:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", rewritten:\"DELETE FROM taskHistory;DELETE FROM requestHistory;DELETE FROM deployHistory;\", arguments:{ positional:{}, named:{}, finder:[]}]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 20
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.HistoryPersisterTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testTaskAgePurging",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testTaskCountPurging",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testDeployCountPurging",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testPurgingDoesntApplyIfDatabasePresent",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testRequestAgePurging",
+        "com.hubspot.singularity.scheduler.HistoryPersisterTest#testRequestCountPurging"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 6
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityHealthchecksTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testHealthchecksDuringBounce",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testPortIndices",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testNewTaskCheckerRespectsDeployHealthcheckRetries",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testStartupDoesNotCountTowardsRetries",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testPortNumber",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testHealthchecksTimeout",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testSkipHealthchecksEdgeCases",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testFailingStatusCodes",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testStartupTimeout",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testMaxHealthcheckRetries",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testSkipHealthchecksDuringBounce",
+        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testHealthchecksSuccess"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 12
+    },
+    {
+      "className": "com.hubspot.singularity.scheduler.SingularityUsageTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.hubspot.singularity.scheduler.SingularityUsageTest#testUsagePollerComplex",
+        "com.hubspot.singularity.scheduler.SingularityUsageTest#testUsageCleaner",
+        "com.hubspot.singularity.scheduler.SingularityUsageTest#testUsagePollerSimple"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
