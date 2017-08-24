@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "PebbleTemplates/pebble",
+  "bugCommit": "https://github.com/PebbleTemplates/pebble/compare/15ab66989690...4ba1117af923",
+  "failingModule": "/root/workspace/PebbleTemplates/pebble/228970952",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.google.common.util.concurrent.UncheckedExecutionException"
+  ],
+  "totalNumberRunningTests": 455,
+  "failing-test-cases": [
+    {
+      "className": "com.mitchellbosecke.pebble.CoreTagsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.mitchellbosecke.pebble.CoreTagsTest#testForWhenInvalidOrNoEndforTag",
+        "com.mitchellbosecke.pebble.CoreTagsTest#testIfWhenInvalidOrNoEndifTag"
+      ],
+      "failures": [
+        {
+          "failureName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "failureDetail": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "failureDetail": "java.lang.IndexOutOfBoundsException: Index: 13, Size: 13",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
