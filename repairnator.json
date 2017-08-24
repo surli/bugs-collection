@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/8c20a7670f71...974ccddfd718",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/226666085",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.exc.InvalidDefinitionException"
+  ],
+  "totalNumberRunningTests": 1977,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.introspect.TypeCoercion1592Test",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.introspect.TypeCoercion1592Test#testTypeCoercion1592"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidDefinitionException",
+          "failureDetail": "Invalid definition for property \"i\" (of type com.fasterxml.jackson.databind.introspect.TypeCoercion1592Test$Bean1592): Can not refine serialization type [simple type, class int] into java.lang.Integer; types not related",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
