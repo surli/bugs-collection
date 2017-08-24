@@ -1,0 +1,41 @@
+nopolinfo #0
+location: FailureLocation{className='org.semanticweb.owlapi.api.test.syntax.TurtleTestCase', failingMethods=[], erroringMethods=[org.semanticweb.owlapi.api.test.syntax.TurtleTestCase#shouldParseFixedQuotesLiterals6], failures=[FailureType{failureName='org.semanticweb.owlapi.io.UnparsableOntologyException', failureDetail='Problem parsing urn:test#literals
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566
+    Stack trace:
+Encountered " <PN_CHARS> "- "" at line 1, column 34.
+Was expecting:
+    "." ...
+            org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.generateParseException(TurtleParser.java:1960)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.jj_consume_token(TurtleParser.java:1829)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:111)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:48)
+        org.semanticweb.owlapi.io.OWLOntologyDocumentSourceBase.acceptParser(OWLOntologyDocumentSourceBase.java:102)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:190)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:997)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:961)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:910)
+        org.semanticweb.owlapi.api.test.baseclasses.TestBase.loadOntologyFromString(TestBase.java:473)
+
+
+', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Thu Aug 24 18:51:35 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 1minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/owlcs/owlapi/196234047/api/src/main/java, /root/./workspace/owlcs/owlapi/196234047/api/src/main/java, ./workspace/owlcs/owlapi/196234047/impl/src/main/java, /root/./workspace/owlcs/owlapi/196234047/impl/src/main/java, ./workspace/owlcs/owlapi/196234047/tools/src/main/java, /root/./workspace/owlcs/owlapi/196234047/tools/src/main/java, ./workspace/owlcs/owlapi/196234047/parsers/src/main/java, /root/./workspace/owlcs/owlapi/196234047/parsers/src/main/java, ./workspace/owlcs/owlapi/196234047/oboformat/src/main/java, /root/./workspace/owlcs/owlapi/196234047/oboformat/src/main/java, ./workspace/owlcs/owlapi/196234047/rio/src/main/java, /root/./workspace/owlcs/owlapi/196234047/rio/src/main/java, ./workspace/owlcs/owlapi/196234047/compatibility/src/main/java, /root/./workspace/owlcs/owlapi/196234047/compatibility/src/main/java, ./workspace/owlcs/owlapi/196234047/apibinding/src/main/java, /root/./workspace/owlcs/owlapi/196234047/apibinding/src/main/java, ./workspace/owlcs/owlapi/196234047/contract/src/main/java, /root/./workspace/owlcs/owlapi/196234047/contract/src/main/java, ./workspace/owlcs/owlapi/196234047/osgidistribution/src/main/java, /root/./workspace/owlcs/owlapi/196234047/osgidistribution/src/main/java], projectClasspath='[Ljava.net.URL;@4152d38d', projectTests=[org.semanticweb.owlapi.api.test.syntax.TurtleTestCase], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
