@@ -50,12 +50,6 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ owlapi-api ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 119.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1115.9 KB/sec)
 
 -------------------------------------------------------
  T E S T S
@@ -307,7 +301,7 @@ parse fail: DL Syntax Format AsymmetricObjectProperty(<urn:test#op>)
 op ⊑ ¬ op⁻
 roundtrip fail: DL Syntax Format ClassAssertion(<urn:test#c> <urn:test#i>)
 c(i)
-ClassAssertion(<http://www.semanticweb.org/ontologies/Ontology419775841725479#c> <http://www.semanticweb.org/ontologies/Ontology419775841725479#i>)
+ClassAssertion(<http://www.semanticweb.org/ontologies/Ontology419958143877685#c> <http://www.semanticweb.org/ontologies/Ontology419958143877685#i>)
 end of roundtrip failure
 parse fail: DL Syntax Format ClassAssertion(ObjectIntersectionOf(<urn:test#c> <urn:test#iri>) <urn:test#i>)
 (c ⊓ iri)(i)
@@ -315,15 +309,15 @@ parse fail: DL Syntax Format ClassAssertion(ObjectUnionOf(<urn:test#c> <urn:test
 (c ⊔ iri)(i)
 roundtrip fail: DL Syntax Format DataPropertyRange(<urn:test#dp> DataIntersectionOf(<urn:test#datatype> DataOneOf("false"^^xsd:boolean ) ))
 ⊤ ⊑ ∀ dp.(datatype ⊓ ({false}))
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841725566#dp> ObjectIntersectionOf(<http://www.semanticweb.org/ontologies/Ontology419775841725566#datatype> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419775841725566#false>)))
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143877772#dp> ObjectIntersectionOf(<http://www.semanticweb.org/ontologies/Ontology419958143877772#datatype> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419958143877772#false>)))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DataPropertyRange(<urn:test#dp> DataUnionOf(<urn:test#datatype> DataOneOf("false"^^xsd:boolean ) ))
 ⊤ ⊑ ∀ dp.(datatype ⊔ ({false}))
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841725595#dp> ObjectUnionOf(<http://www.semanticweb.org/ontologies/Ontology419775841725595#datatype> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419775841725595#false>)))
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143877801#dp> ObjectUnionOf(<http://www.semanticweb.org/ontologies/Ontology419958143877801#datatype> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419958143877801#false>)))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format ClassAssertion(ObjectComplementOf(<urn:test#c>) <urn:test#i>)
 (¬c)(i)
-ClassAssertion(ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419775841725624#c>) <http://www.semanticweb.org/ontologies/Ontology419775841725624#i>)
+ClassAssertion(ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419958143877830#c>) <http://www.semanticweb.org/ontologies/Ontology419958143877830#i>)
 end of roundtrip failure
 parse fail: DL Syntax Format ClassAssertion(ObjectComplementOf(<urn:test#c>) _:id)
 (¬c)()
@@ -357,73 +351,73 @@ parse fail: DL Syntax Format ClassAssertion(DataExactCardinality(1 <urn:test#dp>
 (= 1 dp.datatype)(i)
 roundtrip fail: DL Syntax Format DataPropertyRange(<urn:test#dp> DataOneOf("false"^^xsd:boolean ))
 ⊤ ⊑ ∀ dp.({false})
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841726088#dp> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419775841726088#false>))
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143878294#dp> ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419958143878294#false>))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DataPropertyRange(<urn:test#dp> DataComplementOf(DataOneOf("false"^^xsd:boolean )))
 ⊤ ⊑ ∀ dp.(¬{false})
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841726117#dp> ObjectComplementOf(ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419775841726117#false>)))
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143878323#dp> ObjectComplementOf(ObjectOneOf(<http://www.semanticweb.org/ontologies/Ontology419958143878323#false>)))
 end of roundtrip failure
 parse fail: DL Syntax Format DataPropertyRange(<urn:test#dp> DataRangeRestriction(xsd:double facetRestriction(minExclusive "5.0"^^xsd:double) facetRestriction(maxExclusive "6.0"^^xsd:double)))
 ⊤ ⊑ ∀ dp.()
 roundtrip fail: DL Syntax Format DataPropertyAssertion(<urn:test#dp> <urn:test#i> "false"^^xsd:boolean)
 dp(i, false)
-ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419775841726175#dp> <http://www.semanticweb.org/ontologies/Ontology419775841726175#i> <http://www.semanticweb.org/ontologies/Ontology419775841726175#false>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419958143878381#dp> <http://www.semanticweb.org/ontologies/Ontology419958143878381#i> <http://www.semanticweb.org/ontologies/Ontology419958143878381#false>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DataPropertyAssertion(<urn:test#dp> <urn:test#i> "string"@en)
 dp(i, string)
-ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419775841726204#dp> <http://www.semanticweb.org/ontologies/Ontology419775841726204#i> <http://www.semanticweb.org/ontologies/Ontology419775841726204#string>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419958143878410#dp> <http://www.semanticweb.org/ontologies/Ontology419958143878410#i> <http://www.semanticweb.org/ontologies/Ontology419958143878410#string>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DataPropertyDomain(<urn:test#dp> <urn:test#c>)
 ∃ dp.⊤ ⊑ c
-ObjectPropertyDomain(<http://www.semanticweb.org/ontologies/Ontology419775841726233#dp> <http://www.semanticweb.org/ontologies/Ontology419775841726233#c>)
+ObjectPropertyDomain(<http://www.semanticweb.org/ontologies/Ontology419958143878439#dp> <http://www.semanticweb.org/ontologies/Ontology419958143878439#c>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DataPropertyRange(<urn:test#dp> <urn:test#datatype>)
 ⊤ ⊑ ∀ dp.datatype
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841726262#dp> <http://www.semanticweb.org/ontologies/Ontology419775841726262#datatype>)
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143878468#dp> <http://www.semanticweb.org/ontologies/Ontology419958143878468#datatype>)
 end of roundtrip failure
 parse fail: DL Syntax Format DatatypeDefinition(<urn:test#datatype> xsd:double)
 
 roundtrip fail: DL Syntax Format DifferentIndividuals(<urn:test#i> <urn:test#iri> )
 i ≠ iri
-DifferentIndividuals(<http://www.semanticweb.org/ontologies/Ontology419775841726434#i> <http://www.semanticweb.org/ontologies/Ontology419775841726434#iri> )
+DifferentIndividuals(<http://www.semanticweb.org/ontologies/Ontology419958143878640#i> <http://www.semanticweb.org/ontologies/Ontology419958143878640#iri> )
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DisjointClasses(<urn:test#c> <urn:test#iri>)
 c ⊑ ¬ iri
-SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419775841726463#c> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419775841726463#iri>))
+SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419958143878669#c> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419958143878669#iri>))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DisjointDataProperties(<urn:test#dp> <urn:test#iri> )
 dp ⊑ ¬ iri
-SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419775841726492#dp> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419775841726492#iri>))
+SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419958143878698#dp> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419958143878698#iri>))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format DisjointObjectProperties(<urn:test#iri> <urn:test#op> )
 iri ⊑ ¬ op
-SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419775841726521#iri> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419775841726521#op>))
+SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419958143878727#iri> ObjectComplementOf(<http://www.semanticweb.org/ontologies/Ontology419958143878727#op>))
 end of roundtrip failure
 parse fail: DL Syntax Format DisjointUnion(<urn:test#c> <urn:test#c> <urn:test#iri> )
 c=c ⊔ iri
 roundtrip fail: DL Syntax Format EquivalentClasses(<urn:test#c> <urn:test#iri> )
 c ≡ iri
-EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419775841726579#c> <http://www.semanticweb.org/ontologies/Ontology419775841726579#iri> )
+EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419958143878785#c> <http://www.semanticweb.org/ontologies/Ontology419958143878785#iri> )
 end of roundtrip failure
 roundtrip fail: DL Syntax Format EquivalentDataProperties(<urn:test#dp> <urn:test#iri> )
 dp ≡ iri
-EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419775841726608#dp> <http://www.semanticweb.org/ontologies/Ontology419775841726608#iri> )
+EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419958143878814#dp> <http://www.semanticweb.org/ontologies/Ontology419958143878814#iri> )
 end of roundtrip failure
 roundtrip fail: DL Syntax Format EquivalentObjectProperties(<urn:test#iri> <urn:test#op> )
 iri ≡ op
-EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419775841726637#iri> <http://www.semanticweb.org/ontologies/Ontology419775841726637#op> )
+EquivalentClasses(<http://www.semanticweb.org/ontologies/Ontology419958143878843#iri> <http://www.semanticweb.org/ontologies/Ontology419958143878843#op> )
 end of roundtrip failure
 roundtrip fail: DL Syntax Format FunctionalDataProperty(<urn:test#dp>)
 ⊤ ⊑ ≤ 1 dp
-FunctionalObjectProperty(<http://www.semanticweb.org/ontologies/Ontology419775841726666#dp>)
+FunctionalObjectProperty(<http://www.semanticweb.org/ontologies/Ontology419958143878872#dp>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format FunctionalObjectProperty(<urn:test#op>)
 ⊤ ⊑ ≤ 1 op
-FunctionalObjectProperty(<http://www.semanticweb.org/ontologies/Ontology419775841726695#op>)
+FunctionalObjectProperty(<http://www.semanticweb.org/ontologies/Ontology419958143878901#op>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format InverseFunctionalObjectProperty(<urn:test#op>)
 ⊤ ⊑ ≤ 1 op⁻
-FunctionalObjectProperty(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419775841726724#op>))
+FunctionalObjectProperty(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419958143878930#op>))
 end of roundtrip failure
 parse fail: DL Syntax Format InverseObjectProperties(<urn:test#op> <urn:test#op>)
 op ≡ op⁻
@@ -435,43 +429,43 @@ parse fail: DL Syntax Format NegativeObjectPropertyAssertion(<urn:test#op> <urn:
 ¬¬op(i, i)
 roundtrip fail: DL Syntax Format ObjectPropertyAssertion(<urn:test#op> <urn:test#i> <urn:test#i>)
 op(i, i)
-ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419775841726869#op> <http://www.semanticweb.org/ontologies/Ontology419775841726869#i> <http://www.semanticweb.org/ontologies/Ontology419775841726869#i>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/ontologies/Ontology419958143879075#op> <http://www.semanticweb.org/ontologies/Ontology419958143879075#i> <http://www.semanticweb.org/ontologies/Ontology419958143879075#i>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format ObjectPropertyAssertion(InverseOf(<urn:test#op>) <urn:test#i> <urn:test#i>)
 op⁻(i, i)
-ObjectPropertyAssertion(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419775841726898#op>) <http://www.semanticweb.org/ontologies/Ontology419775841726898#i> <http://www.semanticweb.org/ontologies/Ontology419775841726898#i>)
+ObjectPropertyAssertion(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419958143879104#op>) <http://www.semanticweb.org/ontologies/Ontology419958143879104#i> <http://www.semanticweb.org/ontologies/Ontology419958143879104#i>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format ObjectPropertyAssertion(InverseOf(<urn:test#op>) <urn:test#i> <urn:test#j>)
 op⁻(i, j)
-ObjectPropertyAssertion(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419775841726927#op>) <http://www.semanticweb.org/ontologies/Ontology419775841726927#i> <http://www.semanticweb.org/ontologies/Ontology419775841726927#j>)
+ObjectPropertyAssertion(InverseOf(<http://www.semanticweb.org/ontologies/Ontology419958143879133#op>) <http://www.semanticweb.org/ontologies/Ontology419958143879133#i> <http://www.semanticweb.org/ontologies/Ontology419958143879133#j>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format ObjectPropertyDomain(<urn:test#op> <urn:test#c>)
 ∃ op.⊤ ⊑ c
-ObjectPropertyDomain(<http://www.semanticweb.org/ontologies/Ontology419775841726956#op> <http://www.semanticweb.org/ontologies/Ontology419775841726956#c>)
+ObjectPropertyDomain(<http://www.semanticweb.org/ontologies/Ontology419958143879162#op> <http://www.semanticweb.org/ontologies/Ontology419958143879162#c>)
 end of roundtrip failure
 roundtrip fail: DL Syntax Format ObjectPropertyRange(<urn:test#op> <urn:test#c>)
 ⊤ ⊑ ∀ op.c
-ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419775841726985#op> <http://www.semanticweb.org/ontologies/Ontology419775841726985#c>)
+ObjectPropertyRange(<http://www.semanticweb.org/ontologies/Ontology419958143879191#op> <http://www.semanticweb.org/ontologies/Ontology419958143879191#c>)
 end of roundtrip failure
 parse fail: DL Syntax Format SubObjectPropertyOf(ObjectPropertyChain( <urn:test#iri> <urn:test#op> ) <urn:test#op>)
 iri ∘ op ⊑ op
 roundtrip fail: DL Syntax Format ReflexiveObjectProperty(<urn:test#op>)
 ⊤ ⊑ ∃ op .self
-SubClassOf(owl:Thing ObjectSomeValuesFrom(<http://www.semanticweb.org/ontologies/Ontology419775841727043#op> <http://www.semanticweb.org/ontologies/Ontology419775841727043#self>))
+SubClassOf(owl:Thing ObjectSomeValuesFrom(<http://www.semanticweb.org/ontologies/Ontology419958143879249#op> <http://www.semanticweb.org/ontologies/Ontology419958143879249#self>))
 end of roundtrip failure
 roundtrip fail: DL Syntax Format SameIndividual(<urn:test#i> <urn:test#iri> )
 i = iri
-SameIndividual(<http://www.semanticweb.org/ontologies/Ontology419775841727072#i> <http://www.semanticweb.org/ontologies/Ontology419775841727072#iri> )
+SameIndividual(<http://www.semanticweb.org/ontologies/Ontology419958143879278#i> <http://www.semanticweb.org/ontologies/Ontology419958143879278#iri> )
 end of roundtrip failure
 roundtrip fail: DL Syntax Format SubClassOf(<urn:test#c> owl:Thing)
 c ⊑ ⊤
-SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419775841727120#c> owl:Thing)
+SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419958143879326#c> owl:Thing)
 end of roundtrip failure
 parse fail: DL Syntax Format SubDataPropertyOf(<urn:test#dp> owl:topDataProperty)
 dp⊑topDataProperty
 roundtrip fail: DL Syntax Format SubObjectPropertyOf(<urn:test#op> owl:topObjectProperty)
 op ⊑ topObjectProperty
-SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419775841727178#op> <http://www.semanticweb.org/ontologies/Ontology419775841727178#topObjectProperty>)
+SubClassOf(<http://www.semanticweb.org/ontologies/Ontology419958143879384#op> <http://www.semanticweb.org/ontologies/Ontology419958143879384#topObjectProperty>)
 end of roundtrip failure
 parse fail: DL Syntax Format DLSafeRule( Body(BuiltInAtom(<urn:swrl#v1> Variable(<urn:swrl#var3>) Variable(<urn:swrl#var4>) )) Head(BuiltInAtom(<urn:swrl#v2> Variable(<urn:swrl#var5>) Variable(<urn:swrl#var6>) )) )
 
@@ -483,46 +477,83 @@ parse fail: DL Syntax Format HasKey(<urn:test#c> (<urn:test#iri> <urn:test#op> )
 
 parse fail: DL Syntax Format DLSafeRule( Body(BuiltInAtom(<urn:swrl#v1> Variable(<urn:swrl#var3>) Variable(<urn:swrl#var4>) ) ClassAtom(<urn:test#c> Variable(<urn:swrl#var2>)) DataRangeAtom(<urn:test#datatype> Variable(<urn:swrl#var1>)) BuiltInAtom(<urn:test#iri> Variable(<urn:swrl#var1>) ) DifferentFromAtom(Variable(<urn:swrl#var2>) <urn:test#i>) SameAsAtom(Variable(<urn:swrl#var2>) <urn:test#iri>)) Head(BuiltInAtom(<urn:swrl#v2> Variable(<urn:swrl#var5>) Variable(<urn:swrl#var6>) ) DataPropertyAtom(<urn:test#dp> Variable(<urn:swrl#var2>) "false"^^xsd:boolean) ObjectPropertyAtom(<urn:test#op> Variable(<urn:swrl#var2>) Variable(<urn:swrl#var2>))) )
 urn:swrl#v2((?var5) , (?var6)) ⋀ dp(?var2, false) ⋀ op(?var2, ?var2) ← urn:swrl#v1((?var3) , (?var4)) ⋀ c(?var2) ⋀ datatype(?var1) ⋀ urn:test#iri((?var1)) ⋀ differentFrom(?var2, i) ⋀ sameAs(?var2, iri)
-elapsed time (ms): 3837
+elapsed time (ms): 2886
 Successful threads: 25	 expected: 25
 
-Tests in error: 
-  TurtleTestCase.shouldParseFixedQuotesLiterals6:51->TestBase.loadOntologyFromString:473 » UnparsableOntology
+Tests run: 5129, Failures: 0, Errors: 0, Skipped: 40
 
-Tests run: 5129, Failures: 0, Errors: 1, Skipped: 40
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWLAPI :: Distribution 6.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ owlapi-distribution ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ owlapi-distribution ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/196234047/distribution/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ owlapi-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ owlapi-distribution ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/196234047/distribution/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ owlapi-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ owlapi-distribution ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWLAPI :: OSGi and Compatibility Distribution 6.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ owlapi-osgidistribution ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ owlapi-osgidistribution ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/196234047/osgidistribution/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ owlapi-osgidistribution ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ owlapi-osgidistribution ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ owlapi-osgidistribution ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ owlapi-osgidistribution ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] OWLAPI ............................................. SUCCESS [  0.321 s]
-[INFO] OWLAPI :: Interfaces ............................... SUCCESS [ 13.421 s]
-[INFO] OWLAPI :: Default Implementation ................... SUCCESS [  4.139 s]
-[INFO] OWLAPI :: Atomic Decomposition and Explanation ..... SUCCESS [  0.054 s]
-[INFO] OWLAPI :: Parsers .................................. SUCCESS [  5.095 s]
-[INFO] OWLAPI :: OBO Format ............................... SUCCESS [  0.664 s]
-[INFO] OWLAPI :: RDF4J Rio ................................ SUCCESS [  0.146 s]
-[INFO] OWLAPI :: Binding and Config ....................... SUCCESS [  0.066 s]
-[INFO] OWLAPI :: Compatibility ............................ SUCCESS [  0.066 s]
-[INFO] OWLAPI :: Tests and Tutorials ...................... FAILURE [ 47.508 s]
-[INFO] OWLAPI :: Distribution ............................. SKIPPED
-[INFO] OWLAPI :: OSGi and Compatibility Distribution ...... SKIPPED
+[INFO] OWLAPI ............................................. SUCCESS [  0.261 s]
+[INFO] OWLAPI :: Interfaces ............................... SUCCESS [ 10.972 s]
+[INFO] OWLAPI :: Default Implementation ................... SUCCESS [  4.635 s]
+[INFO] OWLAPI :: Atomic Decomposition and Explanation ..... SUCCESS [  0.053 s]
+[INFO] OWLAPI :: Parsers .................................. SUCCESS [  3.914 s]
+[INFO] OWLAPI :: OBO Format ............................... SUCCESS [  0.794 s]
+[INFO] OWLAPI :: RDF4J Rio ................................ SUCCESS [  0.165 s]
+[INFO] OWLAPI :: Binding and Config ....................... SUCCESS [  0.078 s]
+[INFO] OWLAPI :: Compatibility ............................ SUCCESS [  0.065 s]
+[INFO] OWLAPI :: Tests and Tutorials ...................... SUCCESS [ 32.606 s]
+[INFO] OWLAPI :: Distribution ............................. SUCCESS [  0.224 s]
+[INFO] OWLAPI :: OSGi and Compatibility Distribution ...... SUCCESS [  2.625 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:13 min
-[INFO] Finished at: 2017-08-24T18:50:25+02:00
-[INFO] Final Memory: 53M/1733M
+[INFO] Total time: 57.591 s
+[INFO] Finished at: 2017-08-24T18:53:16+02:00
+[INFO] Final Memory: 47M/1392M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project owlapi-contract: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/owlcs/owlapi/196234047/contract/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :owlapi-contract
