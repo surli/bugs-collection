@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "HubSpot/Singularity",
+  "bugCommit": "https://github.com/HubSpot/Singularity/compare/05c7a5222baf...e7b49730b748",
+  "failingModule": "/root/workspace/HubSpot/Singularity/230885294/SingularityService",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 232,
+  "failing-test-cases": [
+    {
+      "className": "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest",
+      "failingMethods": [
+        "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest#itCorrectlyScoresLongRunningTasks",
+        "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest#itCorrectlyUsesDefaults",
+        "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest#itCorrectlyScoresLongNonLongRunningTasks",
+        "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest#itCorrectlyScoresMediumLongNonLongRunningTasks",
+        "com.hubspot.singularity.mesos.SingularityMesosOfferSchedulerTest#itCorrectlyScoresShortNonLongRunningTasks"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected 0.250000 but found 0.625000",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected 0.550000 but found 0.700000",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected 0.717000 but found 0.900000",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected 0.800000 but found 0.900000",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected 0.800000 but found 0.900000",
+          "isError": false
+        }
+      ],
+      "nbFailures": 5,
+      "nbErrors": 0
+    }
+  ]
+}
