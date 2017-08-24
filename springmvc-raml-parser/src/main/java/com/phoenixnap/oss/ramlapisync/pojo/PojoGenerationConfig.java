@@ -31,8 +31,9 @@ public class PojoGenerationConfig {
 		return pojoPackage;
 	}
 
-	public void setPojoPackage(String pojoPackage) {
+	public PojoGenerationConfig withPojoPackage(String pojoPackage) {
 		this.pojoPackage = pojoPackage;
+		return this;
 	}
 	
 	

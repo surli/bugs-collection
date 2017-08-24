@@ -28,7 +28,7 @@ import com.sun.codemodel.JCodeModel;
  * @since 0.10.0
  *
  */
-public class StringTypeInterpreter implements RamlTypeInterpreter {
+public class StringTypeInterpreter extends BaseTypeInterpreter {
 
 	@Override
 	public Set<Class<? extends TypeDeclaration>> getSupportedTypes() {
@@ -40,7 +40,6 @@ public class StringTypeInterpreter implements RamlTypeInterpreter {
 	public RamlInterpretationResult interpret(TypeDeclaration type, JCodeModel builderModel, PojoGenerationConfig config) {
 		RamlInterpretationResult result = new RamlInterpretationResult();
 		
-		typeCheck(type);
 		if (type instanceof StringTypeDeclaration) {
 			StringTypeDeclaration stringType = (StringTypeDeclaration) type;
 			//do stringy stuff - enums and stuff.
@@ -48,11 +47,6 @@ public class StringTypeInterpreter implements RamlTypeInterpreter {
 		
 		result.setResolvedClass(CodeModelHelper.findFirstClassBySimpleName(builderModel, "String"));
 		return result;
-	}
-
-
-	private void typeCheck(TypeDeclaration type) {
-		//Used as catch all
 	}
 
 }
