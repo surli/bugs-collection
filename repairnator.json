@@ -1,0 +1,51 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 3,
+  "repo": "IQSS/dataverse",
+  "bugCommit": "https://github.com/IQSS/dataverse/compare/d28d8a96a0ba...cb7c0facfda2",
+  "failingModule": "/root/workspace/IQSS/dataverse/225706931",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 296,
+  "failing-test-cases": [
+    {
+      "className": "edu.harvard.iq.dataverse.util.json.JsonPrinterTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "edu.harvard.iq.dataverse.util.json.JsonPrinterTest#testDatasetContactWithPrivacy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest#testJson2DdiwPrivacy",
+        "edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest#testJson2ddiHasFiles"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
