@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "Flipkart/foxtrot",
+  "bugCommit": "https://github.com/Flipkart/foxtrot/compare/de7dc7bf2d56...3cf5debea7d1",
+  "failingModule": "/root/workspace/Flipkart/foxtrot/229149988/foxtrot-common",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException"
+  ],
+  "totalNumberRunningTests": 4,
+  "failing-test-cases": [
+    {
+      "className": "com.flipkart.foxtrot.common.query.datetime.LastFilterTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.flipkart.foxtrot.common.query.datetime.LastFilterTest#testGetWindowStartFloor",
+        "com.flipkart.foxtrot.common.query.datetime.LastFilterTest#testGetWindowStartCeiling"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException",
+          "failureDetail": "Unrecognized field \"roundingMode\" (class com.flipkart.foxtrot.common.query.datetime.LastFilter), not marked as ignorable (3 known properties: \"field\", \"duration\", \"currentTime\"])  at [Source: { \"operator\": \"last\", \"currentTime\": 1503605195470, \"roundingMode\": \"CEILING\", \"duration\": \"1h\" }; line: 1, column: 70] (through reference chain: com.flipkart.foxtrot.common.query.datetime.LastFilter[\"roundingMode\"])",
+          "isError": true
+        },
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException",
+          "failureDetail": "Unrecognized field \"roundingMode\" (class com.flipkart.foxtrot.common.query.datetime.LastFilter), not marked as ignorable (3 known properties: \"field\", \"duration\", \"currentTime\"])  at [Source: { \"operator\": \"last\", \"currentTime\": 1503605195818, \"roundingMode\": \"FLOOR\", \"duration\": \"1h\" }; line: 1, column: 70] (through reference chain: com.flipkart.foxtrot.common.query.datetime.LastFilter[\"roundingMode\"])",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
