@@ -117,6 +117,11 @@ final class CallArbiter<T> extends AtomicInteger implements Subscription, Produc
       if (!isUnsubscribed()) {
         subscriber.onNext(response);
       }
+    } catch (OnCompletedFailedException
+        | OnErrorFailedException
+        | OnErrorNotImplementedException e) {
+      RxJavaPlugins.getInstance().getErrorHandler().handleError(e);
+      return;
     } catch (Throwable t) {
       Exceptions.throwIfFatal(t);
       try {
