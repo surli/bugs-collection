@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/commit/623d7cd2ad7f",
+  "failingModule": "/root/workspace/square/retrofit/231227524/retrofit-adapters/rxjava",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "rx.exceptions.OnErrorFailedException"
+  ],
+  "totalNumberRunningTests": 373,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest#resultThrowingInOnErrorDeliveredToPlugin"
+      ],
+      "failures": [
+        {
+          "failureName": "rx.exceptions.OnErrorFailedException",
+          "failureDetail": "Error occurred when trying to propagate error to Observer.onError",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
