@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "brettwooldridge/HikariCP",
+  "bugCommit": "https://github.com/brettwooldridge/HikariCP/compare/1759c13a43e8...eafc799f91ee",
+  "failingModule": "/root/workspace/brettwooldridge/HikariCP/196380754",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 116,
+  "failing-test-cases": [
+    {
+      "className": "com.zaxxer.hikari.pool.TestJNDI",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.zaxxer.hikari.pool.TestJNDI#testJndiLookup4"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "dataSource or dataSourceClassName or jdbcUrl is required.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
