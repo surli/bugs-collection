@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "alibaba/fastjson",
+  "bugCommit": "https://github.com/alibaba/fastjson/compare/18fd6baf89a0...b709192f7413",
+  "failingModule": "/root/workspace/alibaba/fastjson/230446566",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.alibaba.fastjson.JSONException"
+  ],
+  "totalNumberRunningTests": 3786,
+  "failing-test-cases": [
+    {
+      "className": "com.alibaba.json.bvt.issue_1100.Issue1189",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.alibaba.json.bvt.issue_1100.Issue1189#test_for_issue"
+      ],
+      "failures": [
+        {
+          "failureName": "com.alibaba.fastjson.JSONException",
+          "failureDetail": "syntax error, expect {, actual [, fieldName headerdestination, pos 81, json : {\"headernotificationType\": \"PUSH\",\"headertemplateNo\": \"99\",\"headerdestination\": [{\"target\": \"all\",\"targetvalue\": \"all\"}],\"body\": [{\"title\": \"预约超时\",\"body\": \"您的预约已经超时\"}]}",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
