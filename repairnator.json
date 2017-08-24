@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 18,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "languagetool-org/languagetool",
+  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/a6c319e2c6e0...f9835e8e28fe",
+  "failingModule": "/root/workspace/languagetool-org/languagetool/224696142/languagetool-standalone",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.RuntimeException"
+  ],
+  "totalNumberRunningTests": 797,
+  "failing-test-cases": [
+    {
+      "className": "org.languagetool.rules.RuleTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.languagetool.rules.RuleTest#testJavaRules"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Rule id occurs more than once: \u0027DASH_RULE\u0027, language: Polish",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
