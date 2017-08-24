@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/a54626374ff8...5f1039fd154d",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/216970075",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.JsonMappingException"
+  ],
+  "totalNumberRunningTests": 1713,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest#testReadOnly1345"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Could not find creator property with name \u0027name\u0027 (in class com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest$Foo1345)\n at [Source: {\"name\":\"test\"}; line: 1, column: 1]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
