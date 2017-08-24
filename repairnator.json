@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 3,
+  "repo": "owlcs/owlapi",
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/58c816c37485...7e695439ff2d",
+  "failingModule": "/root/workspace/owlcs/owlapi/191954919/contract",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.semanticweb.owlapi.manchestersyntax.renderer.ParserException"
+  ],
+  "totalNumberRunningTests": 5047,
+  "failing-test-cases": [
+    {
+      "className": "org.semanticweb.owlapi.api.test.syntax.manchester.ManchesterSyntaxParserTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.semanticweb.owlapi.api.test.syntax.manchester.ManchesterSyntaxParserTest#testParseDataCardinalityExpression[5]",
+        "org.semanticweb.owlapi.api.test.syntax.manchester.ManchesterSyntaxParserTest#testParseDataCardinalityExpression[3]",
+        "org.semanticweb.owlapi.api.test.syntax.manchester.ManchesterSyntaxParserTest#testParseDataCardinalityExpression[1]"
+      ],
+      "failures": [
+        {
+          "failureName": "org.semanticweb.owlapi.manchestersyntax.renderer.ParserException",
+          "failureDetail": "Encountered |EOF| at line 1 column 17. Expected one of:\n Datatype name\n not\n {\n",
+          "isError": true
+        },
+        {
+          "failureName": "org.semanticweb.owlapi.manchestersyntax.renderer.ParserException",
+          "failureDetail": "Encountered |EOF| at line 1 column 13. Expected one of:\n Datatype name\n not\n {\n",
+          "isError": true
+        },
+        {
+          "failureName": "org.semanticweb.owlapi.manchestersyntax.renderer.ParserException",
+          "failureDetail": "Encountered |EOF| at line 1 column 13. Expected one of:\n Datatype name\n not\n {\n",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
