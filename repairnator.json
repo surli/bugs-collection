@@ -1,0 +1,40 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/299655e922b6...977134e69981",
+  "failingModule": "/root/workspace/geotools/geotools/202830112/modules/library/referencing",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.opengis.referencing.NoSuchIdentifierException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 413,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.referencing.CrsTest",
+      "failingMethods": [
+        "org.geotools.referencing.CrsTest#testESRICode"
+      ],
+      "erroringMethods": [
+        "org.geotools.referencing.CrsTest#parseEsriWebMercator"
+      ],
+      "failures": [
+        {
+          "failureName": "org.opengis.referencing.NoSuchIdentifierException",
+          "failureDetail": "No transform for classification \"Mercator_Auxiliary_Sphere\".",
+          "isError": true
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
