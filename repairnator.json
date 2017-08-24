@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/8d5bd6683855...23d49e359217",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/214497429",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.JsonMappingException"
+  ],
+  "totalNumberRunningTests": 1705,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest#testNullEnumFromEmptyArray"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Can not deserialize instance of com.fasterxml.jackson.databind.BaseMapTest$ABC out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
