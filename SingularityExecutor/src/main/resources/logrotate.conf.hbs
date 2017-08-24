@@ -1,0 +1,29 @@
+dateext
+compress
+{{#if compressCmd}}compresscmd {{{compressCmd}}}{{/if}}
+{{#if uncompressCmd}}uncompresscmd {{{uncompressCmd}}}{{/if}}
+{{#if compressOptions}}compressoptions {{{compressOptions}}}{{/if}}
+{{#if compressExt}}compressext {{{compressExt}}}{{/if}}
+{{{ logrotateFrequency }}}
+copytruncate
+nomail
+nosharedscripts
+rotate {{{ rotateCount }}}
+maxage {{{ maxageDays }}}
+notifempty
+
+{{#if shouldLogRotateLogFile }}
+{{{ logfile }}} {
+  dateformat {{{ rotateDateformat }}}{{#if logfileExtension}}.{{{ logfileExtension}}}{{/if}}
+  olddir {{{ rotateDirectory }}}
+}
+{{/if}}
+
+{{#if extrasFiles}}
+{{#each extrasFiles}}{{{filename}}} {
+  dateformat {{{ dateformat }}}{{#if extension}}.{{{ extension}}}{{/if}}
+  missingok
+}
+
+{{/each}}
+{{/if}}
