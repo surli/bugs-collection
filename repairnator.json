@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 45,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "owlcs/owlapi",
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/2947822a95a7...b2afcdc26dd5",
+  "failingModule": "/root/workspace/owlcs/owlapi/196234047/contract",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.semanticweb.owlapi.io.UnparsableOntologyException"
+  ],
+  "totalNumberRunningTests": 6571,
+  "failing-test-cases": [
+    {
+      "className": "org.semanticweb.owlapi.api.test.syntax.TurtleTestCase",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.semanticweb.owlapi.api.test.syntax.TurtleTestCase#shouldParseFixedQuotesLiterals6"
+      ],
+      "failures": [
+        {
+          "failureName": "org.semanticweb.owlapi.io.UnparsableOntologyException",
+          "failureDetail": "Problem parsing urn:test#literals\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566\n\n\nDetailed logs:\n--------------------------------------------------------------------------------\nParser: org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566\n    Stack trace:\nEncountered \" \u003cPN_CHARS\u003e \"- \"\" at line 1, column 34.\nWas expecting:\n    \".\" ...\n            org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.generateParseException(TurtleParser.java:1960)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.jj_consume_token(TurtleParser.java:1829)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:111)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:48)\n        org.semanticweb.owlapi.io.OWLOntologyDocumentSourceBase.acceptParser(OWLOntologyDocumentSourceBase.java:102)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:190)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:997)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:961)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:910)\n        org.semanticweb.owlapi.api.test.baseclasses.TestBase.loadOntologyFromString(TestBase.java:473)\n\n\n",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
