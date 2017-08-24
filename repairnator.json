@@ -1,0 +1,50 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 4,
+  "repo": "owlcs/owlapi",
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/8192738dcd17...50205b3131e1",
+  "failingModule": "/root/workspace/owlcs/owlapi/197561510/impl",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.semanticweb.owlapi.model.OWLOntologyStorageException"
+  ],
+  "totalNumberRunningTests": 1437,
+  "failing-test-cases": [
+    {
+      "className": "uk.ac.manchester.cs.owl.owlapi.concurrent.OWLOntologyManager_Concurrent_TestCase",
+      "failingMethods": [],
+      "erroringMethods": [
+        "uk.ac.manchester.cs.owl.owlapi.concurrent.OWLOntologyManager_Concurrent_TestCase#shouldCall_saveOntology_with_writeLock",
+        "uk.ac.manchester.cs.owl.owlapi.concurrent.OWLOntologyManager_Concurrent_TestCase#shouldCall_saveOntology_with_readLock_8",
+        "uk.ac.manchester.cs.owl.owlapi.concurrent.OWLOntologyManager_Concurrent_TestCase#shouldCall_saveOntology_with_readLock_6",
+        "uk.ac.manchester.cs.owl.owlapi.concurrent.OWLOntologyManager_Concurrent_TestCase#shouldCall_saveOntology_with_readLock_5"
+      ],
+      "failures": [
+        {
+          "failureName": "org.semanticweb.owlapi.model.OWLOntologyStorageException",
+          "failureDetail": "java.net.ProtocolException: cannot write to a URLConnection if doOutput\u003dfalse - call setDoOutput(true)",
+          "isError": true
+        },
+        {
+          "failureName": "org.semanticweb.owlapi.model.OWLOntologyStorageException",
+          "failureDetail": "java.net.ProtocolException: cannot write to a URLConnection if doOutput\u003dfalse - call setDoOutput(true)",
+          "isError": true
+        },
+        {
+          "failureName": "org.semanticweb.owlapi.model.OWLOntologyStorageException",
+          "failureDetail": "java.net.ProtocolException: cannot write to a URLConnection if doOutput\u003dfalse - call setDoOutput(true)",
+          "isError": true
+        },
+        {
+          "failureName": "org.semanticweb.owlapi.model.OWLOntologyStorageException",
+          "failureDetail": "java.net.ProtocolException: cannot write to a URLConnection if doOutput\u003dfalse - call setDoOutput(true)",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    }
+  ]
+}

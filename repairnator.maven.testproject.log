@@ -1,0 +1,134 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 12 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 12 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] OWLAPI
+[INFO] OWLAPI :: Interfaces
+[INFO] OWLAPI :: Default Implementation
+[INFO] OWLAPI :: Atomic Decomposition and Explanation
+[INFO] OWLAPI :: Parsers
+[INFO] OWLAPI :: OBO Format
+[INFO] OWLAPI :: RDF4J Rio
+[INFO] OWLAPI :: Binding and Config
+[INFO] OWLAPI :: Compatibility
+[INFO] OWLAPI :: Tests and Tutorials
+[INFO] OWLAPI :: Distribution
+[INFO] OWLAPI :: OSGi and Compatibility Distribution
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWLAPI 6.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ owlapi-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWLAPI :: Interfaces 6.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ owlapi-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ owlapi-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/197561510/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ owlapi-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 842 source files to /root/workspace/owlcs/owlapi/197561510/api/target/classes
+[INFO] /root/workspace/owlcs/owlapi/197561510/api/src/main/java/org/semanticweb/owlapi/model/OWLSubAnnotationPropertyOfAxiom.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/owlcs/owlapi/197561510/api/src/main/java/org/semanticweb/owlapi/model/OWLSubAnnotationPropertyOfAxiom.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ owlapi-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ owlapi-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ owlapi-api ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 125.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1473.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests run: 889, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWLAPI :: Default Implementation 6.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ owlapi-impl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ owlapi-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/197561510/impl/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ owlapi-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ owlapi-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/owlcs/owlapi/197561510/impl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ owlapi-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ owlapi-impl ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests in error: 
+  OWLOntologyManager_Concurrent_TestCase.shouldCall_saveOntology_with_readLock_5:384 » OWLOntologyStorage
+  OWLOntologyManager_Concurrent_TestCase.shouldCall_saveOntology_with_readLock_6:396 » OWLOntologyStorage
+  OWLOntologyManager_Concurrent_TestCase.shouldCall_saveOntology_with_readLock_8:417 » OWLOntologyStorage
+  OWLOntologyManager_Concurrent_TestCase.shouldCall_saveOntology_with_writeLock:347 » OWLOntologyStorage
+
+Tests run: 548, Failures: 0, Errors: 4, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] OWLAPI ............................................. SUCCESS [  0.299 s]
+[INFO] OWLAPI :: Interfaces ............................... SUCCESS [ 11.403 s]
+[INFO] OWLAPI :: Default Implementation ................... FAILURE [  3.565 s]
+[INFO] OWLAPI :: Atomic Decomposition and Explanation ..... SKIPPED
+[INFO] OWLAPI :: Parsers .................................. SKIPPED
+[INFO] OWLAPI :: OBO Format ............................... SKIPPED
+[INFO] OWLAPI :: RDF4J Rio ................................ SKIPPED
+[INFO] OWLAPI :: Binding and Config ....................... SKIPPED
+[INFO] OWLAPI :: Compatibility ............................ SKIPPED
+[INFO] OWLAPI :: Tests and Tutorials ...................... SKIPPED
+[INFO] OWLAPI :: Distribution ............................. SKIPPED
+[INFO] OWLAPI :: OSGi and Compatibility Distribution ...... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.782 s
+[INFO] Finished at: 2017-08-24T15:54:51+02:00
+[INFO] Final Memory: 50M/1769M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project owlapi-impl: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/owlcs/owlapi/197561510/impl/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :owlapi-impl
