@@ -671,6 +671,21 @@ public class TypeUtils {
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public static <T> T cast(Object obj, Class<T> clazz, ParserConfig config) {
         if (obj == null) {
+            if (clazz == int.class) {
+                return (T) Integer.valueOf(0);
+            } else if (clazz == long.class) {
+                return (T) Long.valueOf(0);
+            } else if (clazz == short.class) {
+                return (T) Short.valueOf((short) 0);
+            } else if (clazz == byte.class) {
+                return (T) Byte.valueOf((byte) 0);
+            } else if (clazz == float.class) {
+                return (T) Float.valueOf(0);
+            } else if (clazz == double.class) {
+                return (T) Double.valueOf(0);
+            } else if (clazz == boolean.class) {
+                return (T) Boolean.FALSE;
+            }
             return null;
         }
 
@@ -727,9 +742,9 @@ public class TypeUtils {
             return (T) castToByte(obj);
         }
 
-        // if (clazz == char.class || clazz == Character.class) {
-        // return (T) castToCharacter(obj);
-        // }
+        if (clazz == char.class || clazz == Character.class) {
+            return (T) castToChar(obj);
+        }
 
         if (clazz == short.class || clazz == Short.class) {
             return (T) castToShort(obj);
