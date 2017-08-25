@@ -1,0 +1,130 @@
+Release Notes -- Apache PDFBox -- Version 2.0.4
+
+Introduction
+------------
+
+The Apache PDFBox library is an open source Java tool for working with PDF documents.
+
+This is an incremental bugfix release based on the earlier 2.0.3 release. It contains
+a couple of fixes and small improvements.
+
+For more details on these changes and all the other fixes and improvements
+included in this release, please refer to the following issues on the
+PDFBox issue tracker at https://issues.apache.org/jira/browse/PDFBOX.
+
+Bug
+
+[PDFBOX-3300] - Space rendered as missing glyph
+[PDFBOX-3375] - Use a static lock for a singleton
+[PDFBOX-3396] - flattening AcroForm with visible sign field ETSI.CAdES.detached
+[PDFBOX-3412] - Using fallback font 'TimesNewRomanPSMT' for 'Wingdings'
+[PDFBOX-3498] - Unexpected spaces in text extraction
+[PDFBOX-3500] - Error expected floating point number actual='0.-262'
+[PDFBOX-3504] - Special characters issue
+[PDFBOX-3506] - Not able to read the custom metadata in trailer section
+[PDFBOX-3507] - Modern OS X doesn't show JMenuBar in PDFDebugger app
+[PDFBOX-3509] - DrawPrintTextLocations example fails with cropBox and rotated pages
+[PDFBOX-3510] - "java.io.IOException: Stream closed" while parsing a page without contents
+[PDFBOX-3511] - NullPointerException - missing glyph description
+[PDFBOX-3514] - Stackoverflow exception
+[PDFBOX-3517] - [Patch] CCITTFactory.createFromFile methods do not release lock on source file
+[PDFBOX-3520] - Security manager fails
+[PDFBOX-3521] - FontProvider not thread safe
+[PDFBOX-3526] - DataFormatException: invalid stored block lengths
+[PDFBOX-3530] - WriteDecodedDoc slow due to decoding images
+[PDFBOX-3531] - LCMS error 13: Couldn't link the profiles
+[PDFBOX-3532] - Java 6 errors
+[PDFBOX-3534] - NPE if an AcroForm field's child cosdict is null
+[PDFBOX-3535] - ClassCastException in PDAnnotationLink.getAction()
+[PDFBOX-3540] - Trailer Syntax error, ID is different in the first and the last trailer - for PDF with incremental updates
+[PDFBOX-3546] - IOException over DataFormatException, "invalid stored block lengths" on a valid PDF
+[PDFBOX-3549] - Can't read embedded ICC 4 profile (Invalid profile sequence)
+[PDFBOX-3551] - CLI Decrypt broken, only allows 1 argument
+[PDFBOX-3555] - FlateFilter.decode cause native memory leaks
+[PDFBOX-3556] - Error "Error getting header version: %PDF--33" on a valid document
+[PDFBOX-3558] - NPE in JBig2Filter if BitsPerComponent is missing
+[PDFBOX-3559] - ExtractImages does not apply masks in some jpegs
+[PDFBOX-3560] - PDPattern.getCOSObject() always returns null
+[PDFBOX-3561] - PDTilingPattern not initialized correctly
+[PDFBOX-3562] - PDFBox hangs indefinately when rendering certain files
+[PDFBOX-3566] - ClassCastException in JPEGFactory.createFromImage()
+[PDFBOX-3569] - Performance regression in PDColorSpace#toRGBImageAWT
+[PDFBOX-3570] - JDK-8054565 Java 8 close contract issue
+[PDFBOX-3571] - sRGB Color Space Profile is subject to 3rd party copyright
+[PDFBOX-3572] - AES-Decryption with Bouncycastle throws NullPointerException
+[PDFBOX-3587] - Flatten not working on attached pdf form
+[PDFBOX-3590] - AccessPermission not applied
+[PDFBOX-3594] - Use PDOutlineItem#findDestinationPage() cannot get PDPage, return was null
+[PDFBOX-3605] - Infinite Read Loop in BufferedRandomAccesssFile
+[PDFBOX-3607] - Font with name containing cache separator
+[PDFBOX-3608] - byte/short tiff tags not read correctly
+[PDFBOX-3609] - ClassCastException in PDCIDFont.readWidths()
+[PDFBOX-3610] - ArrayIndexOutOfBoundsException in PDICCBased.loadICCProfile()
+[PDFBOX-3615] - Multiply transparency not anti-aliased
+[PDFBOX-3619] - TextStripper red bounds not shown correctly in rotated text
+[PDFBOX-3622] - DCTDecode image with separation colorspace not rendered correctly
+[PDFBOX-3625] - Use correct file encoding when saving fdf data
+
+Sub-task
+
+[PDFBOX-2934] - Support smask /S /Alpha
+[PDFBOX-3524] - signatureField.setValue() not implemented
+[PDFBOX-3525] - reference existing signature field when signing
+
+Improvement
+
+[PDFBOX-3262] - AcroForm flattening will cause hidden fields become visible
+[PDFBOX-3432] - Optimize CID to GlyphId mapping (TTF)
+[PDFBOX-3502] - add character spacing to content stream
+[PDFBOX-3529] - Read overprint attributes
+[PDFBOX-3537] - Create example of AcroForm creation with field that has two widgets
+[PDFBOX-3541] - Use /L entry to determine if a linearized file shall be treated as such for PDF/A validation
+[PDFBOX-3547] - [Patch] Improved signing of existing signature fields
+[PDFBOX-3552] - Allow external signing in two steps
+[PDFBOX-3567] - Process softmasks in ExtractImages
+[PDFBOX-3589] - Double negative float
+[PDFBOX-3599] - Support 16 bit JPG2000 images
+[PDFBOX-3618] - Helvetica in PDF/A - warn in PDType1Font.java about licensing issues
+
+New Feature
+
+[PDFBOX-3563] - Create sample code for creating a PDF with patterns
+
+Test
+
+[PDFBOX-3539] - Close Document after printing
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.txt file for instructions on how to build this release.
+
+The source archive is accompanied by SHA1 and MD5 checksums and a PGP
+signature that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+https://svn.apache.org/repos/asf/pdfbox/KEYS.
+
+About Apache PDFBox
+-------------------
+
+Apache PDFBox is an open source Java library for working with PDF documents.
+This project allows creation of new PDF documents, manipulation of existing
+documents and the ability to extract content from documents. Apache PDFBox
+also includes several command line utilities. Apache PDFBox is published
+under the Apache License, Version 2.0.
+
+For more information, visit http://pdfbox.apache.org/
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 100 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 2,500+ contributors.
+
+For more information, visit http://www.apache.org/
