@@ -1,0 +1,399 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.prometheus:simpleclient_vertx:bundle:0.0.23-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ io.prometheus:simpleclient_vertx:[unknown-version], /root/workspace/prometheus/client_java/234804588/simpleclient_vertx/pom.xml, line 6, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Prometheus Java Suite
+[INFO] Prometheus Java Simpleclient
+[INFO] Prometheus Java Simpleclient Common
+[INFO] Prometheus Java Simpleclient Caffeine
+[INFO] Prometheus Java Simpleclient Dropwizard
+[INFO] Prometheus Java Simpleclient Graphite Bridge
+[INFO] Prometheus Java Simpleclient Hibernate
+[INFO] Prometheus Java Simpleclient guava
+[INFO] Prometheus Java Simpleclient Servlet
+[INFO] Prometheus Java Simpleclient Hotspot
+[INFO] Prometheus Java Simpleclient log4j
+[INFO] Prometheus Java Simpleclient log4j2
+[INFO] Prometheus Java Simpleclient logback
+[INFO] Prometheus Java Simpleclient Pushgateway
+[INFO] Prometheus Java Simpleclient Spring Metrics
+[INFO] Prometheus Java Simpleclient Spring Boot Metric
+[INFO] Prometheus Java Simpleclient Jetty
+[INFO] Prometheus Java Simpleclient Vert.x
+[INFO] Prometheus Java Client Benchmarks
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Suite 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.pom (3 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom (3 KB at 110.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.15/surefire-junit4-2.15.jar (63 KB at 1495.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.SummaryMetricFamilyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in io.prometheus.client.SummaryMetricFamilyTest
+Running io.prometheus.client.GaugeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.prometheus.client.GaugeTest
+Running io.prometheus.client.SummaryTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.453 sec - in io.prometheus.client.SummaryTest
+Running io.prometheus.client.CollectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.prometheus.client.CollectorTest
+Running io.prometheus.client.SimpleTimerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.prometheus.client.SimpleTimerTest
+Running io.prometheus.client.SimpleCollectorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.prometheus.client.SimpleCollectorTest
+Running io.prometheus.client.HistogramTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.prometheus.client.HistogramTest
+Running io.prometheus.client.CounterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.prometheus.client.CounterTest
+Running io.prometheus.client.GaugeMetricFamilyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.prometheus.client.GaugeMetricFamilyTest
+Running io.prometheus.client.CounterMetricFamilyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.prometheus.client.CounterMetricFamilyTest
+Running io.prometheus.client.CollectorRegistryTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.prometheus.client.CollectorRegistryTest
+
+Results :
+
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Common 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_common ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_common/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.exporter.common.TextFormatTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in io.prometheus.client.exporter.common.TextFormatTest
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Caffeine 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_caffeine ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_caffeine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_caffeine/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_caffeine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_caffeine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_caffeine/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_caffeine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_caffeine ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_caffeine/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.cache.caffeine.CacheMetricsCollectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 sec - in io.prometheus.client.cache.caffeine.CacheMetricsCollectorTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Dropwizard 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_dropwizard ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_dropwizard ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_dropwizard/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_dropwizard ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_dropwizard ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_dropwizard/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_dropwizard ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_dropwizard ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_dropwizard/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.dropwizard.DropwizardExportsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in io.prometheus.client.dropwizard.DropwizardExportsTest
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Graphite Bridge 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_graphite_bridge ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_graphite_bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_graphite_bridge/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_graphite_bridge ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_graphite_bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_graphite_bridge/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_graphite_bridge ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_graphite_bridge ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_graphite_bridge/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.bridge.GraphiteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in io.prometheus.client.bridge.GraphiteTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Hibernate 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_hibernate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_hibernate/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_hibernate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_hibernate/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_hibernate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_hibernate ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_hibernate/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.hibernate.HibernateStatisticsCollectorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 sec - in io.prometheus.client.hibernate.HibernateStatisticsCollectorTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient guava 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_guava ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_guava/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.guava.cache.CacheMetricsCollectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in io.prometheus.client.guava.cache.CacheMetricsCollectorTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Prometheus Java Simpleclient Servlet 0.0.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ simpleclient_servlet ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ simpleclient_servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_servlet/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ simpleclient_servlet ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ simpleclient_servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prometheus/client_java/234804588/simpleclient_servlet/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ simpleclient_servlet ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ simpleclient_servlet ---
+[INFO] Surefire report directory: /root/workspace/prometheus/client_java/234804588/simpleclient_servlet/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.prometheus.client.filter.MetricsFilterTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.344 sec <<< FAILURE! - in io.prometheus.client.filter.MetricsFilterTest
+testConstructor(io.prometheus.client.filter.MetricsFilterTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Collector already registered that provides name: foobar_baz_filter_duration_seconds_count
+	at io.prometheus.client.CollectorRegistry.register(CollectorRegistry.java:54)
+	at io.prometheus.client.SimpleCollector$Builder.register(SimpleCollector.java:245)
+	at io.prometheus.client.SimpleCollector$Builder.register(SimpleCollector.java:237)
+	at io.prometheus.client.filter.MetricsFilter.init(MetricsFilter.java:153)
+	at io.prometheus.client.filter.MetricsFilterTest.testConstructor(MetricsFilterTest.java:114)
+
+Running io.prometheus.client.exporter.MetricsServletTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in io.prometheus.client.exporter.MetricsServletTest
+
+Results :
+
+Tests in error: 
+  MetricsFilterTest.testConstructor:114 » IllegalArgument Collector already regi...
+
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Prometheus Java Suite .............................. SUCCESS [  0.181 s]
+[INFO] Prometheus Java Simpleclient ....................... SUCCESS [  5.222 s]
+[INFO] Prometheus Java Simpleclient Common ................ SUCCESS [  0.344 s]
+[INFO] Prometheus Java Simpleclient Caffeine .............. SUCCESS [  0.684 s]
+[INFO] Prometheus Java Simpleclient Dropwizard ............ SUCCESS [  0.337 s]
+[INFO] Prometheus Java Simpleclient Graphite Bridge ....... SUCCESS [  0.290 s]
+[INFO] Prometheus Java Simpleclient Hibernate ............. SUCCESS [  0.865 s]
+[INFO] Prometheus Java Simpleclient guava ................. SUCCESS [  0.457 s]
+[INFO] Prometheus Java Simpleclient Servlet ............... FAILURE [  0.615 s]
+[INFO] Prometheus Java Simpleclient Hotspot ............... SKIPPED
+[INFO] Prometheus Java Simpleclient log4j ................. SKIPPED
+[INFO] Prometheus Java Simpleclient log4j2 ................ SKIPPED
+[INFO] Prometheus Java Simpleclient logback ............... SKIPPED
+[INFO] Prometheus Java Simpleclient Pushgateway ........... SKIPPED
+[INFO] Prometheus Java Simpleclient Spring Metrics ........ SKIPPED
+[INFO] Prometheus Java Simpleclient Spring Boot Metric .... SKIPPED
+[INFO] Prometheus Java Simpleclient Jetty ................. SKIPPED
+[INFO] Prometheus Java Simpleclient Vert.x ................ SKIPPED
+[INFO] Prometheus Java Client Benchmarks .................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.734 s
+[INFO] Finished at: 2017-08-25T04:37:37+02:00
+[INFO] Final Memory: 20M/665M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project simpleclient_servlet: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/prometheus/client_java/234804588/simpleclient_servlet/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :simpleclient_servlet
