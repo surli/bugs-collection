@@ -1,0 +1,450 @@
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - configuration:
+DEBUG 2017-08-29 13:38:52	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:52	autoCommit......................false
+DEBUG 2017-08-29 13:38:52	catalog.........................null
+DEBUG 2017-08-29 13:38:52	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:52	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:52	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:52	dataSource......................null
+DEBUG 2017-08-29 13:38:52	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:52	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:52	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:52	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:52	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:52	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:52	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:52	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:52	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:52	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:52	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:52	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:52	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:52	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:52	metricRegistry..................null
+DEBUG 2017-08-29 13:38:52	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:52	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:52	password........................<masked>
+DEBUG 2017-08-29 13:38:52	poolName........................"HikariPool-1"
+DEBUG 2017-08-29 13:38:52	readOnly........................false
+DEBUG 2017-08-29 13:38:52	registerMbeans..................false
+DEBUG 2017-08-29 13:38:52	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:52	threadFactory...................null
+DEBUG 2017-08-29 13:38:52	transactionIsolation............null
+DEBUG 2017-08-29 13:38:52	username........................null
+DEBUG 2017-08-29 13:38:52	validationTimeout...............5000
+INFO 2017-08-29 13:38:52	HikariPool-1 - Started.
+INFO 2017-08-29 13:38:52	HikariPool-1 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Pool stats (total=0, active=0, idle=0, waiting=0)
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn2: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn3: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn4: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn5: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn6: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn7: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn9: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Added connection conn10: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 2017-08-29 13:38:52	the method update will execute SQL [ drop schema if exists test | [] ]
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	the method update will execute SQL [ create schema test | [] ]
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	the method update will execute SQL [ set mode MySQL | [] ]
+DEBUG 2017-08-29 13:38:52	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:52	the method update will execute SQL [ CREATE TABLE `test`.`user`(id BIGINT AUTO_INCREMENT PRIMARY KEY, pt_name VARCHAR(255), pt_password VARCHAR(255), other_info VARCHAR(255)) | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test1, test_pwd1] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test2, test_pwd2] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test3, test_pwd3] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test4, test_pwd4] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test5, test_pwd5] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test6, test_pwd6] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test7, test_pwd7] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test8, test_pwd8] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test9, test_pwd9] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test10, test_pwd10] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into  `test`.`user`  (`pt_password`, `pt_name`) values (?, ?) | [world, hello] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [11] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Executed rollback on connection conn1: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ update  `test`.`user`  set `pt_password` = ?, `pt_name` = ? where `id` = ? | [pwed, hello 2, 11] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [11] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Executed rollback on connection conn1: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ delete from  `test`.`user`  where `id` = ? | [11] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [11] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Executed rollback on connection conn1: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password, other_info) values(?,?,?) | [ptTest, ptTestPwd, testOtherInfo] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [12] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Executed rollback on connection conn1: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ DROP TABLE IF EXISTS `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-1 - Reset (autoCommit) on connection conn1: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - configuration:
+DEBUG 2017-08-29 13:38:53	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:53	autoCommit......................false
+DEBUG 2017-08-29 13:38:53	catalog.........................null
+DEBUG 2017-08-29 13:38:53	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:53	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:53	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:53	dataSource......................null
+DEBUG 2017-08-29 13:38:53	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:53	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:53	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:53	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:53	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:53	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:53	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:53	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:53	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:53	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:53	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:53	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:53	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:53	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:53	metricRegistry..................null
+DEBUG 2017-08-29 13:38:53	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:53	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:53	password........................<masked>
+DEBUG 2017-08-29 13:38:53	poolName........................"HikariPool-2"
+DEBUG 2017-08-29 13:38:53	readOnly........................false
+DEBUG 2017-08-29 13:38:53	registerMbeans..................false
+DEBUG 2017-08-29 13:38:53	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:53	threadFactory...................null
+DEBUG 2017-08-29 13:38:53	transactionIsolation............null
+DEBUG 2017-08-29 13:38:53	username........................null
+DEBUG 2017-08-29 13:38:53	validationTimeout...............5000
+INFO 2017-08-29 13:38:53	HikariPool-2 - Started.
+INFO 2017-08-29 13:38:53	HikariPool-2 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ drop schema if exists test | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ create schema test | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ set mode MySQL | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ CREATE TABLE `test`.`user`(id BIGINT AUTO_INCREMENT PRIMARY KEY, pt_name VARCHAR(255), pt_password VARCHAR(255), other_info VARCHAR(255)) | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test1, test_pwd1] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test2, test_pwd2] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test3, test_pwd3] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test4, test_pwd4] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test5, test_pwd5] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test6, test_pwd6] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test7, test_pwd7] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test8, test_pwd8] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test9, test_pwd9] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test10, test_pwd10] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [1] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [2] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [3] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [4] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [5] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [6] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [7] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [8] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [9] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` where id = ? | [10] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select * from `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Executed rollback on connection conn12: url=jdbc:h2:mem:test user= due to dirty commit state on close().
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ DROP TABLE IF EXISTS `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Reset (autoCommit) on connection conn12: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - configuration:
+DEBUG 2017-08-29 13:38:53	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:53	autoCommit......................false
+DEBUG 2017-08-29 13:38:53	catalog.........................null
+DEBUG 2017-08-29 13:38:53	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:53	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:53	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:53	dataSource......................null
+DEBUG 2017-08-29 13:38:53	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:53	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:53	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:53	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:53	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:53	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:53	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:53	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:53	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:53	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:53	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:53	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:53	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:53	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:53	metricRegistry..................null
+DEBUG 2017-08-29 13:38:53	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:53	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:53	password........................<masked>
+DEBUG 2017-08-29 13:38:53	poolName........................"HikariPool-3"
+DEBUG 2017-08-29 13:38:53	readOnly........................false
+DEBUG 2017-08-29 13:38:53	registerMbeans..................false
+DEBUG 2017-08-29 13:38:53	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:53	threadFactory...................null
+DEBUG 2017-08-29 13:38:53	transactionIsolation............null
+DEBUG 2017-08-29 13:38:53	username........................null
+DEBUG 2017-08-29 13:38:53	validationTimeout...............5000
+INFO 2017-08-29 13:38:53	HikariPool-3 - Started.
+INFO 2017-08-29 13:38:53	HikariPool-3 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Added connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ drop schema if exists test | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ create schema test | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ set mode MySQL | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ CREATE TABLE `test`.`user`(id BIGINT AUTO_INCREMENT PRIMARY KEY, pt_name VARCHAR(255), pt_password VARCHAR(255), other_info VARCHAR(255)) | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test1, test_pwd1] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test2, test_pwd2] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test3, test_pwd3] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test4, test_pwd4] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test5, test_pwd5] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test6, test_pwd6] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test7, test_pwd7] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test8, test_pwd8] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test9, test_pwd9] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method insert will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [test10, test_pwd10] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ DROP TABLE IF EXISTS `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	HikariPool-3 - Reset (autoCommit) on connection conn14: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-4 - configuration:
+DEBUG 2017-08-29 13:38:53	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:53	autoCommit......................false
+DEBUG 2017-08-29 13:38:53	catalog.........................null
+DEBUG 2017-08-29 13:38:53	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:53	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:53	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:53	dataSource......................null
+DEBUG 2017-08-29 13:38:53	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:53	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:53	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:53	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:53	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:53	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:53	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:53	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:53	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:53	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:53	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:53	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:53	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:53	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:53	metricRegistry..................null
+DEBUG 2017-08-29 13:38:53	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:53	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:53	password........................<masked>
+DEBUG 2017-08-29 13:38:53	poolName........................"HikariPool-4"
+DEBUG 2017-08-29 13:38:53	readOnly........................false
+DEBUG 2017-08-29 13:38:53	registerMbeans..................false
+DEBUG 2017-08-29 13:38:53	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:53	threadFactory...................null
+DEBUG 2017-08-29 13:38:53	transactionIsolation............null
+DEBUG 2017-08-29 13:38:53	username........................null
+DEBUG 2017-08-29 13:38:53	validationTimeout...............5000
+INFO 2017-08-29 13:38:53	HikariPool-4 - Started.
+INFO 2017-08-29 13:38:53	HikariPool-4 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:53	HikariPool-4 - Added connection conn16: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ drop schema if exists test | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ create schema test | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ set mode MySQL | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ CREATE TABLE `test`.`user`(id BIGINT AUTO_INCREMENT PRIMARY KEY, pt_name VARCHAR(255), pt_password VARCHAR(255), other_info VARCHAR(255)) | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method insertBatch will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [[Ljava.lang.Object;@275710fc, [Ljava.lang.Object;@525f1e4e, [Ljava.lang.Object;@75f9eccc, [Ljava.lang.Object;@52aa2946, [Ljava.lang.Object;@4de5031f, [Ljava.lang.Object;@67e2d983, [Ljava.lang.Object;@5d47c63f, [Ljava.lang.Object;@5ea434c8, [Ljava.lang.Object;@3bbc39f8, [Ljava.lang.Object;@4ae3c1cd] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [1] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [2] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [3] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [4] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [5] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [6] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [7] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [8] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [9] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [10] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ DROP TABLE IF EXISTS `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	HikariPool-5 - configuration:
+DEBUG 2017-08-29 13:38:53	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:53	autoCommit......................false
+DEBUG 2017-08-29 13:38:53	catalog.........................null
+DEBUG 2017-08-29 13:38:53	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:53	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:53	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:53	dataSource......................null
+DEBUG 2017-08-29 13:38:53	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:53	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:53	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:53	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:53	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:53	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:53	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:53	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:53	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:53	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:53	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:53	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:53	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:53	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:53	metricRegistry..................null
+DEBUG 2017-08-29 13:38:53	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:53	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:53	password........................<masked>
+DEBUG 2017-08-29 13:38:53	poolName........................"HikariPool-5"
+DEBUG 2017-08-29 13:38:53	readOnly........................false
+DEBUG 2017-08-29 13:38:53	registerMbeans..................false
+DEBUG 2017-08-29 13:38:53	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:53	threadFactory...................null
+DEBUG 2017-08-29 13:38:53	transactionIsolation............null
+DEBUG 2017-08-29 13:38:53	username........................null
+DEBUG 2017-08-29 13:38:53	validationTimeout...............5000
+INFO 2017-08-29 13:38:53	HikariPool-5 - Started.
+INFO 2017-08-29 13:38:53	HikariPool-5 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn18: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn19: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn20: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn21: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn22: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn23: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn24: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn25: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - Added connection conn26: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 2017-08-29 13:38:53	HikariPool-5 - Added connection conn27: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ drop schema if exists test | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ create schema test | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ set mode MySQL | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ CREATE TABLE `test`.`user`(id BIGINT AUTO_INCREMENT PRIMARY KEY, pt_name VARCHAR(255), pt_password VARCHAR(255), other_info VARCHAR(255)) | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method insertBatch will execute SQL [ insert into `test`.`user`(pt_name, pt_password) values(?,?) | [[Ljava.lang.Object;@341b80b2, [Ljava.lang.Object;@55a1c291, [Ljava.lang.Object;@2145433b, [Ljava.lang.Object;@2890c451, [Ljava.lang.Object;@40e6dfe1, [Ljava.lang.Object;@1b083826, [Ljava.lang.Object;@105fece7, [Ljava.lang.Object;@3ec300f1, [Ljava.lang.Object;@482cd91f, [Ljava.lang.Object;@123f1134] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	begin transaction 2
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ update  `test`.`user`  set `pt_name` = ? where `id` = ? | [apple, 1] ]
+DEBUG 2017-08-29 13:38:53	end transaction 1
+DEBUG 2017-08-29 13:38:53	begin transaction 2
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [1] ]
+DEBUG 2017-08-29 13:38:53	end transaction 1
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method query will execute SQL [ select `pt_password`, `pt_name`, `id` from  `test`.`user`  where `id` = ? | [1] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	begin transaction 1
+DEBUG 2017-08-29 13:38:53	the method update will execute SQL [ DROP TABLE IF EXISTS `test`.`user` | [] ]
+DEBUG 2017-08-29 13:38:53	end transaction 0
+DEBUG 2017-08-29 13:38:53	HikariPool-6 - configuration:
+DEBUG 2017-08-29 13:38:53	allowPoolSuspension.............false
+DEBUG 2017-08-29 13:38:53	autoCommit......................false
+DEBUG 2017-08-29 13:38:53	catalog.........................null
+DEBUG 2017-08-29 13:38:53	connectionInitSql...............null
+DEBUG 2017-08-29 13:38:53	connectionTestQuery.............null
+DEBUG 2017-08-29 13:38:53	connectionTimeout...............30000
+DEBUG 2017-08-29 13:38:53	dataSource......................null
+DEBUG 2017-08-29 13:38:53	dataSourceClassName.............null
+DEBUG 2017-08-29 13:38:53	dataSourceJNDI..................null
+DEBUG 2017-08-29 13:38:53	dataSourceProperties............{password=<masked>}
+DEBUG 2017-08-29 13:38:53	driverClassName................."org.h2.Driver"
+DEBUG 2017-08-29 13:38:53	healthCheckProperties...........{}
+DEBUG 2017-08-29 13:38:53	healthCheckRegistry.............null
+DEBUG 2017-08-29 13:38:53	idleTimeout.....................600000
+DEBUG 2017-08-29 13:38:53	initializationFailFast..........true
+DEBUG 2017-08-29 13:38:53	isolateInternalQueries..........false
+DEBUG 2017-08-29 13:38:53	jdbc4ConnectionTest.............false
+DEBUG 2017-08-29 13:38:53	jdbcUrl........................."jdbc:h2:mem:test"
+DEBUG 2017-08-29 13:38:53	leakDetectionThreshold..........0
+DEBUG 2017-08-29 13:38:53	maxLifetime.....................1800000
+DEBUG 2017-08-29 13:38:53	maximumPoolSize.................10
+DEBUG 2017-08-29 13:38:53	metricRegistry..................null
+DEBUG 2017-08-29 13:38:53	metricsTrackerFactory...........null
+DEBUG 2017-08-29 13:38:53	minimumIdle.....................10
+DEBUG 2017-08-29 13:38:53	password........................<masked>
+DEBUG 2017-08-29 13:38:53	poolName........................"HikariPool-6"
+DEBUG 2017-08-29 13:38:53	readOnly........................false
+DEBUG 2017-08-29 13:38:53	registerMbeans..................false
+DEBUG 2017-08-29 13:38:53	scheduledExecutorService........null
+DEBUG 2017-08-29 13:38:53	threadFactory...................null
+DEBUG 2017-08-29 13:38:53	transactionIsolation............null
+DEBUG 2017-08-29 13:38:53	username........................null
+DEBUG 2017-08-29 13:38:53	validationTimeout...............5000
+INFO 2017-08-29 13:38:53	HikariPool-6 - Started.
+INFO 2017-08-29 13:38:53	HikariPool-6 - Driver does not support get/set network timeout for connections. (org.h2.jdbc.JdbcConnection.getNetworkTimeout()I)
+DEBUG 2017-08-29 13:38:53	HikariPool-6 - Added connection conn29: url=jdbc:h2:mem:test user=
+DEBUG 2017-08-29 13:38:53	begin transaction 1
