@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/002a9a3e9b98...d44600d3750e",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/190405643",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.JsonMappingException"
+  ],
+  "totalNumberRunningTests": 1571,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.deser.TestMapDeserialization",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.deser.TestMapDeserialization#testcharSequenceKeyMap"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Can not find a (Map) Key deserializer for type [simple type, class java.lang.CharSequence]\n at [Source: {\"a\":\"b\"}; line: 1, column: 1]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
