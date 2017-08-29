@@ -1,0 +1,49 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "joel-costigliola/assertj-core",
+  "bugCommit": "https://github.com/joel-costigliola/assertj-core/compare/08c276844c55...cf3a0fe9b7cf",
+  "failingModule": "/root/workspace/joel-costigliola/assertj-core/196457618",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 9866,
+  "failing-test-cases": [
+    {
+      "className": "org.assertj.core.error.ElementsShouldMatch_create_Test",
+      "failingMethods": [
+        "org.assertj.core.error.ElementsShouldMatch_create_Test#should_create_error_message_with_multiple_non_matching_elements"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ven predicate but th[ese elements] did not:\n  \u003c[\"Luke\"...\u003e but was:\u003c...ven predicate but th[is element] did not:\n  \u003c[\"Luke\"...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.assertj.core.internal.iterables.Iterables_assertAllMatch_Test",
+      "failingMethods": [
+        "org.assertj.core.internal.iterables.Iterables_assertAllMatch_Test#should_report_all_items_that_do_not_match"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "failureDetail": "\nArgument(s) are different! Wanted:\nfailures.failure(\n    WritableAssertionInfo[overridingErrorMessage\u003dnull, description\u003dnull, representation\u003dStandardRepresentation],\n    ElementsShouldMatch[format\u003d\u0027%nExpecting all elements of:%n  \u003c%s\u003e%nto match %s predicate but this element did not:%n  \u003c%s\u003e\u0027, arguments\u003d[[\"123\", \"1234\", \"12345\"], given, [\"1234\", \"12345\"]]]\n);\n-\u003e at org.assertj.core.internal.iterables.Iterables_assertAllMatch_Test.should_report_all_items_that_do_not_match(Iterables_assertAllMatch_Test.java:75)\nActual invocation has different arguments:\nfailures.failure(\n    WritableAssertionInfo[overridingErrorMessage\u003dnull, description\u003dnull, representation\u003dStandardRepresentation],\n    ElementsShouldMatch[format\u003d\u0027%nExpecting all elements of:%n  \u003c%s\u003e%nto match %s predicate but this element did not:%n  \u003c%s\u003e\u0027, arguments\u003d[[\"123\", \"1234\", \"12345\"], given, \"1234\"]]\n);\n-\u003e at org.assertj.core.internal.Iterables.lambda$assertAllMatch$1(Iterables.java:857)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
