@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "OWASP/java-html-sanitizer",
+  "bugCommit": "https://github.com/OWASP/java-html-sanitizer/compare/fd09d5096b27...012cda55b4ac",
+  "failingModule": "/root/workspace/OWASP/java-html-sanitizer/195558805",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 256,
+  "failing-test-cases": [
+    {
+      "className": "org.owasp.html.HtmlPolicyBuilderTest",
+      "failingMethods": [
+        "org.owasp.html.HtmlPolicyBuilderTest#testIssue80"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "failureDetail": "expected:\u003c...d1\u003c/td\u003e\u003ctd\u003etd2\u003c/td\u003e\u003c[/tr\u003e\u003ctr\u003e\u003c]td\u003enew line\u003c/td\u003e\u003c/tr...\u003e but was:\u003c...d1\u003c/td\u003e\u003ctd\u003etd2\u003c/td\u003e\u003c[]td\u003enew line\u003c/td\u003e\u003c/tr...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
