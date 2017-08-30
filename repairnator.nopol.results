@@ -1,0 +1,34 @@
+nopolinfo #0
+location: FailureLocation{className='com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest', failingMethods=[com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest#testPoolSizeAboutSameSizeAsThreadCount, com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest#testSlowConnectionTimeBurstyWork], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Connections were created when there was no waiting consumers expected:<0> but was:<13>', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Connections were created when there was no waiting consumers expected:<0> but was:<17>', isError=false}], nbFailures=2, nbErrors=0}
+status: TIMEOUT
+dateEnd: Wed Aug 30 17:27:30 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 120minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/brettwooldridge/HikariCP/161497342/src/main/java, /root/./workspace/brettwooldridge/HikariCP/161497342/src/main/java], projectClasspath='[Ljava.net.URL;@46c670a6', projectTests=[com.zaxxer.hikari.pool.ConnectionPoolSizeVsThreadsTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 457
+nbAngelicValues: 252
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.zaxxer.hikari.metrics.prometheus.HikariCPCollectorTest', failingMethods=[com.zaxxer.hikari.metrics.prometheus.HikariCPCollectorTest#connectionClosed], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Expected: is <1.0>
+     but: was <6.0>', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Wed Aug 30 17:48:19 CEST 2017
+allocatedtime: 60minutes 
+passingTime: 20minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/brettwooldridge/HikariCP/161497342/src/main/java, /root/./workspace/brettwooldridge/HikariCP/161497342/src/main/java], projectClasspath='[Ljava.net.URL;@6c575325', projectTests=[com.zaxxer.hikari.metrics.prometheus.HikariCPCollectorTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 439
+nbAngelicValues: 321
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
