@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/17366031071c...aa7c18d6b047",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/197023545",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2011,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests",
+      "failingMethods": [
+        "org.springframework.data.web.config.SpringDataWebConfigurationIntegrationTests#shouldNotLoadJacksonConverterWhenJacksonNotPresent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: not a collection containing hasProperty(\"class\", hasProperty(\"name\", \"org.springframework.data.web.ProjectingJackson2HttpMessageConverter\"))\n     but: was \u003c[org.springframework.data.web.XmlBeamHttpMessageConverter@b978d10, org.springframework.data.web.ProjectingJackson2HttpMessageConverter@5b7a8434]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
