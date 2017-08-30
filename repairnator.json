@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "apache/opennlp",
+  "bugCommit": "https://github.com/apache/opennlp/compare/a0b5cdc621d5...24c27ceafb96",
+  "failingModule": "/root/workspace/apache/opennlp/201805745/opennlp-tools",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 450,
+  "failing-test-cases": [
+    {
+      "className": "opennlp.tools.languagemodel.NgramLanguageModelTest",
+      "failingMethods": [
+        "opennlp.tools.languagemodel.NgramLanguageModelTest#testBigramProbabilityNoSmoothing"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c0.666\u003e but was:\u003c0.10000000000000002\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
