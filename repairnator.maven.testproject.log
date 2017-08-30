@@ -43,82 +43,109 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.16:test (default-test) @ pushy ---
 [INFO] Surefire report directory: /root/workspace/relayrides/pushy/197064776/pushy/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 8.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 122.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 1495.7 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 [jetty-alpn-agent] Using: alpn-boot-8.1.10.v20161026.jar
 Running com.relayrides.pushy.apns.ApnsClientTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.743 sec - in com.relayrides.pushy.apns.ApnsClientTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.732 sec - in com.relayrides.pushy.apns.ApnsClientTest
 Running com.relayrides.pushy.apns.MockApnsServerBuilderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in com.relayrides.pushy.apns.MockApnsServerBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in com.relayrides.pushy.apns.MockApnsServerBuilderTest
 Running com.relayrides.pushy.apns.MockApnsServerTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.801 sec - in com.relayrides.pushy.apns.MockApnsServerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.845 sec - in com.relayrides.pushy.apns.MockApnsServerTest
 Running com.relayrides.pushy.apns.DateAsTimeSinceEpochTypeAdapterTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.relayrides.pushy.apns.DateAsTimeSinceEpochTypeAdapterTest
 Running com.relayrides.pushy.apns.util.SimpleApnsPushNotificationTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.relayrides.pushy.apns.util.SimpleApnsPushNotificationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.relayrides.pushy.apns.util.SimpleApnsPushNotificationTest
 Running com.relayrides.pushy.apns.util.TokenUtilTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.relayrides.pushy.apns.util.TokenUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.relayrides.pushy.apns.util.TokenUtilTest
 Running com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest
-Tests run: 25, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.494 sec <<< FAILURE! - in com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest
-testSetLocalizedAlertTitle(com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest)  Time elapsed: 0.006 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilder.setLocalizedAlertTitle(ApnsPayloadBuilder.java:214)
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest.testSetLocalizedAlertTitle(ApnsPayloadBuilderTest.java:167)
-
-testSetLocalizedAlertBody(com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilder.setLocalizedAlertMessage(ApnsPayloadBuilder.java:169)
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest.testSetLocalizedAlertBody(ApnsPayloadBuilderTest.java:112)
-
-testSetLocalizedAlertSubitle(com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilder.setLocalizedAlertSubtitle(ApnsPayloadBuilder.java:258)
-	at com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest.testSetLocalizedAlertSubitle(ApnsPayloadBuilderTest.java:224)
-
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.516 sec - in com.relayrides.pushy.apns.util.ApnsPayloadBuilderTest
 Running com.relayrides.pushy.apns.AuthenticationTokenSupplierTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.relayrides.pushy.apns.AuthenticationTokenSupplierTest
 
 Results :
 
-Tests in error: 
-  ApnsPayloadBuilderTest.testSetLocalizedAlertTitle:167 » NullPointer
-  ApnsPayloadBuilderTest.testSetLocalizedAlertBody:112 » NullPointer
-  ApnsPayloadBuilderTest.testSetLocalizedAlertSubitle:224 » NullPointer
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 81, Failures: 0, Errors: 3, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pushy benchmarks 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pushy-benchmark ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pushy-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ pushy-benchmark ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pushy-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/relayrides/pushy/197064776/benchmark/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ pushy-benchmark ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ pushy-benchmark ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Metrics listener for Pushy 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pushy-dropwizard-metrics-listener ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pushy-dropwizard-metrics-listener ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/relayrides/pushy/197064776/dropwizard-metrics-listener/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ pushy-dropwizard-metrics-listener ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/relayrides/pushy/197064776/dropwizard-metrics-listener/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pushy-dropwizard-metrics-listener ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/relayrides/pushy/197064776/dropwizard-metrics-listener/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ pushy-dropwizard-metrics-listener ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pushy-dropwizard-metrics-listener ---
+[INFO] Surefire report directory: /root/workspace/relayrides/pushy/197064776/dropwizard-metrics-listener/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 10.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 134.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 1001.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.relayrides.pushy.apns.metrics.dropwizard.DropwizardApnsClientMetricsListenerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Pushy parent ....................................... SUCCESS [  0.241 s]
-[INFO] Pushy .............................................. FAILURE [ 20.963 s]
-[INFO] Pushy benchmarks ................................... SKIPPED
-[INFO] Dropwizard Metrics listener for Pushy .............. SKIPPED
+[INFO] Pushy parent ....................................... SUCCESS [  0.272 s]
+[INFO] Pushy .............................................. SUCCESS [ 26.749 s]
+[INFO] Pushy benchmarks ................................... SUCCESS [  0.092 s]
+[INFO] Dropwizard Metrics listener for Pushy .............. SUCCESS [  1.035 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 21.386 s
-[INFO] Finished at: 2017-08-30T10:57:02+02:00
-[INFO] Final Memory: 31M/946M
+[INFO] Total time: 28.314 s
+[INFO] Finished at: 2017-08-30T10:57:43+02:00
+[INFO] Final Memory: 34M/921M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project pushy: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/relayrides/pushy/197064776/pushy/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :pushy
