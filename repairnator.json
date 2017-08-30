@@ -1,0 +1,64 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/bcf62fec5d96...25b6bac7b2b9",
+  "failingModule": "/root/workspace/square/retrofit/201300816/retrofit-adapters/rxjava",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 343,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.rxjava.ObservableTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava.ObservableTest#bodySuccess404"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting:  \u003cretrofit2.HttpException: HTTP 404 Client Error\u003e to be an instance of:  \u003cretrofit2.adapter.rxjava.HttpException\u003e but was instance of:  \u003cretrofit2.HttpException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "retrofit2.adapter.rxjava.SingleTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava.SingleTest#bodySuccess404"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting:  \u003cretrofit2.HttpException: HTTP 404 Client Error\u003e to be an instance of:  \u003cretrofit2.adapter.rxjava.HttpException\u003e but was instance of:  \u003cretrofit2.HttpException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "retrofit2.adapter.rxjava.CompletableTest",
+      "failingMethods": [
+        "retrofit2.adapter.rxjava.CompletableTest#completableSuccess404"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting:  \u003cretrofit2.HttpException: HTTP 404 Client Error\u003e to be an instance of:  \u003cretrofit2.adapter.rxjava.HttpException\u003e but was instance of:  \u003cretrofit2.HttpException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
