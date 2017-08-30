@@ -1,0 +1,117 @@
+{
+  "totalNumberSkippingTests": 45,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "owlcs/owlapi",
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/0c02264734a9...85c142ce8c79",
+  "failingModule": "/root/workspace/owlcs/owlapi/215173902/contract",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 10,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 6568,
+  "failing-test-cases": [
+    {
+      "className": "org.semanticweb.owlapi.api.test.StructuralTransformationTestCase",
+      "failingMethods": [
+        "org.semanticweb.owlapi.api.test.StructuralTransformationTestCase#testAssertion[InverseFunctionalObjectProperty(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) \u003curn:test#op\u003e)]",
+        "org.semanticweb.owlapi.api.test.StructuralTransformationTestCase#testAssertion[ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#i\u003e)]",
+        "org.semanticweb.owlapi.api.test.StructuralTransformationTestCase#testAssertion[ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#j\u003e)]",
+        "org.semanticweb.owlapi.api.test.StructuralTransformationTestCase#testAssertion[InverseObjectProperties(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) \u003curn:test#op\u003e \u003curn:test#op\u003e)]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ectMaxCardinality(1 []InverseOf(\u003curn:test#...\u003e but was:\u003c...ectMaxCardinality(1 [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...rtyOf(\u003curn:test#op\u003e []InverseOf(\u003curn:test#...\u003e but was:\u003c...rtyOf(\u003curn:test#op\u003e [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.semanticweb.owlapi.api.test.OWLObjectComponentCollectorTestCase",
+      "failingMethods": [
+        "org.semanticweb.owlapi.api.test.OWLObjectComponentCollectorTestCase#testAssertion[ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#i\u003e)]",
+        "org.semanticweb.owlapi.api.test.OWLObjectComponentCollectorTestCase#testAssertion[ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#j\u003e)]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c[urn:test#op, ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) InverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#i\u003e), urn:test#i, \u003curn:test#op\u003e, InverseOf(\u003curn:test#op\u003e), \u003curn:test#i\u003e]\u003e but was:\u003c[ObjectInverseOf(\u003curn:test#op\u003e), urn:test#op, ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#i\u003e), urn:test#i, \u003curn:test#op\u003e, \u003curn:test#i\u003e]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c[urn:test#op, ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) InverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#j\u003e), urn:test#i, \u003curn:test#op\u003e, InverseOf(\u003curn:test#op\u003e), urn:test#j, \u003curn:test#j\u003e, \u003curn:test#i\u003e]\u003e but was:\u003c[ObjectInverseOf(\u003curn:test#op\u003e), urn:test#op, ObjectPropertyAssertion(Annotation(\u003curn:test#ann\u003e \"test\"^^xsd:string) ObjectInverseOf(\u003curn:test#op\u003e) \u003curn:test#i\u003e \u003curn:test#j\u003e), urn:test#i, \u003curn:test#op\u003e, \u003curn:test#j\u003e, urn:test#j, \u003curn:test#i\u003e]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.semanticweb.owlapi.api.test.NNFTestCase",
+      "failingMethods": [
+        "org.semanticweb.owlapi.api.test.NNFTestCase#testAssertion[24]",
+        "org.semanticweb.owlapi.api.test.NNFTestCase#testAssertion[25]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.semanticweb.owlapi.api.test.VisitorsTestCase",
+      "failingMethods": [
+        "org.semanticweb.owlapi.api.test.VisitorsTestCase#testAssertion[59]",
+        "org.semanticweb.owlapi.api.test.VisitorsTestCase#testAssertion[58]"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...\"test\"^^xsd:string) []InverseOf(\u003curn:test#...\u003e but was:\u003c...\"test\"^^xsd:string) [Object]InverseOf(\u003curn:test#...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
