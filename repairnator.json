@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "spring-projects/spring-data-commons",
+  "bugCommit": "https://github.com/spring-projects/spring-data-commons/compare/c6cc535ede66...9137dc7c70eb",
+  "failingModule": "/root/workspace/spring-projects/spring-data-commons/186322727",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 1230,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests#skipsEntityWithoutIdentifier"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "Unsupported entity org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests$EntityWithoutId! Could not determine IsNewStrategy.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
