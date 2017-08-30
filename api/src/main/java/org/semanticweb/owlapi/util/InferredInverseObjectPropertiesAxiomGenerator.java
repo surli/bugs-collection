@@ -29,9 +29,12 @@ public class InferredInverseObjectPropertiesAxiomGenerator
 
     @Override
     protected void addAxioms(OWLObjectProperty entity, OWLReasoner reasoner,
-        OWLDataFactory dataFactory, Set<OWLInverseObjectPropertiesAxiom> result) {
+        OWLDataFactory dataFactory, Set<OWLInverseObjectPropertiesAxiom> result,
+        Set<OWLObjectPropertyExpression> nonSimpleProperties) {
         for (OWLObjectPropertyExpression prop : reasoner.getInverseObjectProperties(entity)) {
-            result.add(dataFactory.getOWLInverseObjectPropertiesAxiom(entity, prop));
+            if (!prop.isAnonymous()) {
+                result.add(dataFactory.getOWLInverseObjectPropertiesAxiom(entity, prop));
+            }
         }
     }
 
