@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      lang="en">
+    <h:head>
+        <title><h:outputText value="#{pageTitle}"/></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Language" content="en"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link type="image/png" rel="icon" href="/resources/images/favicondataverse.png"/>
+        <h:outputStylesheet library="bs" name="css/bootstrap.min.css" />
+        <h:outputStylesheet library="bs" name="css/bootstrap-theme.min.css" />
+        <h:outputStylesheet library="css" name="ie-compat.css" />
+        <h:outputStylesheet library="css" name="owl.carousel.css" />
+        <h:outputStylesheet library="css" name="fontcustom.css"/>
+        <h:outputStylesheet library="css" name="socicon.css"/>
+        <h:outputStylesheet library="css" name="structure.css"/>
+        
+        <script>
+            //<![CDATA[
+            var pageSource = window.location.href;
+            var params = parseQueryString(pageSource.split('?')[1]);
+            params.alias; // widgetScope
+            params.persistentId; // persistentId
+            
+            function parseQueryString(queryString) {
+                var params = {};
+                var pl     = /\+/g;
+                if (queryString) {
+                    var keyValues = queryString.split('&');
+                    for (var i=0; i < keyValues.length; i++) {
+                        var pair = keyValues[i].split('=');
+                        params[pair[0]] = pair[1].replace(pl, " ");
+                    }
+                }
+                return params;
+            }
+            
+            var forwardSource = "/dataset.xhtml?persistentId=" + params.persistentId;
+
+            // Don't allow to load outside of iframe
+            if (self === top) {
+                top.location = forwardSource;
+            }
+            //]]>
+        </script>
+    </h:head>
+    <h:body>
+        <f:loadBundle basename="Bundle" var="bundle"/>
+        <f:metadata>
+            <f:viewParam name="persistentId" value="#{DatasetPage.persistentId}"/>
+            <f:viewAction action="#{DatasetPage.initCitation}" rendered="true"/>
+        </f:metadata>
+        <div class="container">
+            <h:form id="iframeForm">
+                <!-- DATASET CITATION BLOCK -->
+                <ui:include src="dataset-citation.xhtml" />
+            </h:form>
+        </div>
+        <!-- FOOTER BLOCK -->
+        <ui:include src="dataverse_footer.xhtml">
+            <ui:param name="widgetView" value="true"/>
+            <ui:param name="loginRedirectPage" value="#{loginRedirectPage != null ? '?redirectPage='.concat(loginRedirectPage) : navigationWrapper.redirectPage}"/>
+        </ui:include>
+
+        <p:ajaxStatus id="ajaxStatusPanel">
+            <f:facet name="start">
+                <h:graphicImage value="/resources/images/ajax-loading.gif" alt="Loading" />
+            </f:facet>
+            <f:facet name="complete">
+                <!-- DO NOTHING -->
+            </f:facet>
+        </p:ajaxStatus>
+        <script type="text/javascript" defer="defer" src="#{resource['bs/js/bootstrap.min.js']}?version=#{systemConfig.getVersion()}"></script>
+        <script type="text/javascript" defer="defer" src="#{resource['bs/js/bootstrap-hover-dropdown.min.js']}?version=#{systemConfig.getVersion()}"></script>
+        <script type="text/javascript" defer="defer" src="#{resource['js/dv_rebind_bootstrap_ui.js']}?version=#{systemConfig.getVersion()}"></script>
+        <ui:include src="google-analytics-snippet.xhtml"></ui:include>
+    </h:body>
+</html>
