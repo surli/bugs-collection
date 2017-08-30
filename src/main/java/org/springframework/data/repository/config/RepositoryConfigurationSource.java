@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2015 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.type.filter.TypeFilter;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 
 /**
@@ -27,6 +28,7 @@ import org.springframework.data.repository.query.QueryLookupStrategy;
  * 
  * @author Oliver Gierke
  * @author Thomas Darimont
+ * @author Peter Rietzler
  */
 public interface RepositoryConfigurationSource {
 
@@ -108,4 +110,12 @@ public interface RepositoryConfigurationSource {
 	 * @since 1.9
 	 */
 	boolean usesExplicitFilters();
+
+	/**
+	 * Return the {@link TypeFilter}s to define which types to exclude when scanning for repositories or repository
+	 * implementations.
+	 *
+	 * @return must not be {@literal null}.
+	 */
+	Iterable<TypeFilter> getExcludeFilters();
 }
