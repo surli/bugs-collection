@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "dangdangdotcom/elastic-job",
+  "bugCommit": "https://github.com/dangdangdotcom/elastic-job/compare/a0a8f7cda038...4e14648d5770",
+  "failingModule": "/root/workspace/dangdangdotcom/elastic-job/194378450/elastic-job-cloud/elastic-job-cloud-scheduler",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.UnsatisfiedLinkError",
+    "java.lang.NoClassDefFoundError"
+  ],
+  "totalNumberRunningTests": 860,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.job.cloud.scheduler.boot.MasterBootstrapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.dangdang.ddframe.job.cloud.scheduler.boot.MasterBootstrapTest#assertStop",
+        "com.dangdang.ddframe.job.cloud.scheduler.boot.MasterBootstrapTest#assertStart"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.UnsatisfiedLinkError",
+          "failureDetail": "no mesos in java.library.path",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.apache.mesos.MesosSchedulerDriver",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
