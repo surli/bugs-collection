@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "square/retrofit",
+  "bugCommit": "https://github.com/square/retrofit/compare/9f2ea471e572...78e0cd85451b",
+  "failingModule": "/root/workspace/square/retrofit/200567808/retrofit-adapters/guava",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 285,
+  "failing-test-cases": [
+    {
+      "className": "retrofit2.adapter.guava.ListenableFutureTest",
+      "failingMethods": [
+        "retrofit2.adapter.guava.ListenableFutureTest#bodySuccess404"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expecting:  \u003cretrofit2.adapter.guava.HttpException: HTTP 404 Client Error\u003e to be an instance of:  \u003cretrofit2.HttpException\u003e but was instance of:  \u003cretrofit2.adapter.guava.HttpException\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
