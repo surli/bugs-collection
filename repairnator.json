@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "airlift/airlift",
+  "bugCommit": "https://github.com/airlift/airlift/compare/d25ad56f635c...73058b3f5664",
+  "failingModule": "/root/workspace/airlift/airlift/199058737/http-client",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1706,
+  "failing-test-cases": [
+    {
+      "className": "io.airlift.http.client.jetty.TestJettyHttpClientHttp2",
+      "failingMethods": [
+        "io.airlift.http.client.jetty.TestJettyHttpClientHttp2#testConnectTimeout"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "unexpected exception: [java.util.concurrent.TimeoutException\n at org.eclipse.jetty.client.util.InputStreamResponseListener.get(InputStreamResponseListener.java:224)\n at io.airlift.http.client.jetty.JettyHttpClient.execute(JettyHttpClient.java:351)\n at io.airlift.http.client.jetty.TestJettyHttpClient.executeRequest(TestJettyHttpClient.java:58)\n at io.airlift.http.client.AbstractHttpClientTest.testConnectTimeout(AbstractHttpClientTest.java:216)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)\n at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)\n at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n at java.lang.Thread.run(Thread.java:745)\n]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
