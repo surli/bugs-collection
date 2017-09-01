@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/306c475a691e...5e9a811b1125",
+  "failingModule": "/root/workspace/geotools/geotools/193753456/modules/plugin/geotiff",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "javax.media.jai.util.ImagingException",
+    "java.lang.IllegalArgumentException"
+  ],
+  "totalNumberRunningTests": 3353,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.gce.geotiff.GeoTiffReaderTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.gce.geotiff.GeoTiffReaderTest#testCanReadInputStream",
+        "org.geotools.gce.geotiff.GeoTiffReaderTest#testCanReadImageInputStream"
+      ],
+      "failures": [
+        {
+          "failureName": "javax.media.jai.util.ImagingException",
+          "failureDetail": "All factories fail for the operation \"ImageRead\"",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "operation \"ImageRead\" requires parameter at index 0 to be non-null.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ]
+}
