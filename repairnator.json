@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 12,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/8bf14a0d78a6...ba27ecc1b364",
+  "failingModule": "/root/workspace/geotools/geotools/214321615/modules/plugin/shapefile",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 3151,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.data.shapefile.ShapefileDumperTest",
+      "failingMethods": [
+        "org.geotools.data.shapefile.ShapefileDumperTest#testNullGeometry"
+      ],
+      "erroringMethods": [
+        "org.geotools.data.shapefile.ShapefileDumperTest#testMultipleTypesWithNullGeometries"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c1\u003e but was:\u003c2\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
