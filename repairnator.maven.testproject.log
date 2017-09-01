@@ -1,0 +1,1489 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Singularity
+[INFO] SingularityBase
+[INFO] SingularityUI
+[INFO] SingularityMesosClient
+[INFO] SingularitySwagger
+[INFO] SingularityService
+[INFO] SingularityRunnerBase
+[INFO] SingularityS3Base
+[INFO] SingularityClient
+[INFO] SingularityExecutor
+[INFO] SingularityExecutorCleanup
+[INFO] SingularityS3Uploader
+[INFO] SingularityS3Downloader
+[INFO] EmbedSingularityExample
+[INFO] SingularityServiceIntegrationTests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Singularity 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ Singularity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ Singularity ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ Singularity ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ Singularity ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ Singularity ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ Singularity ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ Singularity ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityBase 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityBase ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityBase ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/SlaveMatchState.java:18:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/RequestState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/RequestCleanupType.java:12:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/TaskCleanupType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/DeployState.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/RequestType.java:13:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/singularity/HealthcheckProtocol.java:9:3: Redundant 'private' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/java/com/hubspot/mesos/JavaUtils.java:206:17: Redundant 'final' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityBase ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityBase ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityBase ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/SingularityBase/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityBase ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularityBase/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityBase ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityBase ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityUI 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityUI ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityUI ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityUI ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityUI ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityUI ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/SingularityUI/target/jacoco.exec
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:install-node-and-npm (install node and npm) @ SingularityUI ---
+[INFO] Node v6.2.1 is already installed.
+[INFO] Found NPM version 3.9.3
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm install) @ SingularityUI ---
+[INFO] Running 'npm install --color=false' in /root/workspace/HubSpot/Singularity/216151368/SingularityUI
+[ERROR] npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+[ERROR] npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.1.2
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:npm (npm test) @ SingularityUI ---
+[INFO] Running 'npm test --color=false' in /root/workspace/HubSpot/Singularity/216151368/SingularityUI
+[INFO] 
+[INFO] > SingularityUI@0.3.0 test /root/workspace/HubSpot/Singularity/216151368/SingularityUI
+[INFO] > mocha --compilers js:babel-core/register test/index.test
+[INFO] 
+[ERROR] Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs
+[INFO] 
+[INFO] 
+[INFO]   Utils
+[INFO]     getTaskDataFromTaskId()
+[INFO]       ✓ should grab all fields from a valid task id
+[INFO] 
+[INFO]   Reducers
+[INFO]     tailerView
+[INFO]       ✓ should be properly initialized
+[INFO]       ✓ should populate the tailerId field
+[INFO]       ✓ should auto-populate the requestIds, taskIds, and paths fields
+[INFO]       ✓ should add tailer groups
+[INFO]       ✓ should remove tailer groups
+[INFO]       ✓ should pick an individual tailer group
+[INFO] 
+[INFO] 
+[INFO]   7 passing (31ms)
+[INFO] 
+[INFO] 
+[INFO] --- frontend-maven-plugin:0.0.23:gulp (gulp build) @ SingularityUI ---
+[INFO] Running 'gulp build --no-color' in /root/workspace/HubSpot/Singularity/216151368/SingularityUI
+[INFO] [19:44:36] Using gulpfile ~/workspace/HubSpot/Singularity/216151368/SingularityUI/gulpfile.js
+[INFO] [19:44:36] Starting 'clean'...
+[INFO] [19:44:36] Finished 'clean' after 40 ms
+[INFO] [19:44:36] Starting 'static'...
+[INFO] [19:44:36] Finished 'static' after 30 ms
+[INFO] [19:44:36] Starting 'html'...
+[INFO] [19:44:36] Finished 'html' after 17 ms
+[INFO] [19:44:36] Starting 'build'...
+[INFO] [19:46:36] Version: webpack [1m1.13.1[22m
+[INFO] Time: [1m118748[22mms
+[INFO]                                [1mAsset[22m     [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+[INFO] [1m[32m89889688147bd7575d6327160d64e760.svg[39m[22m   109 kB        [1m[22m  [1m[32m[emitted][39m[22m  
+[INFO]                  [1m[32mjs/vendor.bundle.js[39m[22m   614 kB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                     [1m[32mjs/app.bundle.js[39m[22m  2.09 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                          [1m[32mcss/app.css[39m[22m   336 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]              [1m[32mjs/vendor.bundle.js.map[39m[22m  4.66 MB       [1m0[22m  [1m[32m[emitted][39m[22m  js/vendor
+[INFO]                 [1m[32mjs/app.bundle.js.map[39m[22m   9.9 MB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO]                      [1m[32mcss/app.css.map[39m[22m   412 kB       [1m1[22m  [1m[32m[emitted][39m[22m  js/app
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] Child [1mextract-text-webpack-plugin[22m:
+[INFO]     
+[INFO] [19:46:36] Finished 'build' after 1.98 min
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityMesosClient 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityMesosClient ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityMesosClient ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:12:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:14:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:16:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:29:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:31:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:33:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:35:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/java/com/hubspot/mesos/client/MesosClient.java:37:3: Redundant 'public' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityMesosClient ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityMesosClient ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityMesosClient ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityMesosClient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityMesosClient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularityMesosClient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityMesosClient ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityMesosClient ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularitySwagger 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularitySwagger ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularitySwagger ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularitySwagger ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularitySwagger ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularitySwagger ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/SingularitySwagger/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularitySwagger/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularitySwagger ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularitySwagger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/HubSpot/Singularity/216151368/SingularitySwagger/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularitySwagger ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularitySwagger ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SingularityService 0.15.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ SingularityService ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ SingularityService ---
+[INFO] Starting audit...
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/config/UIConfiguration.java:21:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityCmdLineArgsMigration.java:58:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:84:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/data/zkmigrations/SingularityRequestTypeMigration.java:139:9: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/data/history/SingularityHistoryModule.java:126:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/data/CuratorManager.java:59:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:13:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:15:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:17:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:19:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:21:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:23:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:25:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/mesos/OfferCache.java:27:3: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityNewTaskChecker.java:171:10: Redundant 'static' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:175:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:224:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:249:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:289:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/scheduler/SingularityExpiringUserActionPoller.java:315:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/hooks/LoadBalancerClientImpl.java:110:5: Redundant 'public' modifier. [RedundantModifier]
+[WARN] /root/workspace/HubSpot/Singularity/216151368/SingularityService/src/main/java/com/hubspot/singularity/smtp/SmtpMailer.java:366:5: Redundant 'private' modifier. [RedundantModifier]
+Audit done.
+[INFO] 
+[INFO] --- dependency-management-plugin:0.4:analyze (analyze) @ SingularityService ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ SingularityService ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ SingularityService ---
+[INFO] argLine set to -javaagent:/root/./workspace/HubSpot/Singularity/216151368/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/HubSpot/Singularity/216151368/SingularityService/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-index.html-template) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-ui) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-resource (add-generated-resources) @ SingularityService ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- swagger-maven-plugin:2.3.2:generate (build-embedded-documentation) @ SingularityService ---
+[INFO] Reflections took 64 ms to scan 1 urls, producing 12 keys and 72 values 
+[INFO] Detect Resource:com.hubspot.singularity.resources.InactiveSlaveResource
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: com.hubspot.singularity.SingularityPaginatedResponse
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.HistoryResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.UsageResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SandboxResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.SlaveResource
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.TaskResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.TestResource
+UNKNOWN TYPE: java.lang.Iterable
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RackResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DisastersResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.StateResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.RequestGroupResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.PriorityResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.DeployResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.WebhookResource
+[INFO] Detect Resource:com.hubspot.singularity.resources.S3LogResource
+[INFO] Writing doc to /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/index.html...
+[INFO] Done!
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/service.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_disasters.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_history.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_usage.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_sandbox.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_slaves.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_tasks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_test.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_requests.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_racks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_disasters.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_state.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_groups.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_priority.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_deploys.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_webhooks.json
+[INFO] Creating file /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/classes/assets/api-docs/api_logs.json
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ SingularityService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ SingularityService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ SingularityService ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 11.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 113.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1451.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.hubspot.singularity.SingularityAuthorizationHelperTest
+Running com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+Running com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+Running com.hubspot.singularity.SingularityS3Test
+Running com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+Running com.hubspot.singularity.config.MergingSourceProviderTest
+Running com.hubspot.singularity.scheduler.SingularityDeploysTest
+Running com.hubspot.singularity.SingularityHistoryTest
+Running com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+Running com.hubspot.singularity.scheduler.SingularitySchedulerTest
+Running com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+Running com.hubspot.singularity.data.InactiveSlaveManagerTest
+Running com.hubspot.singularity.scheduler.HistoryPersisterTest
+Running com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+Running com.hubspot.singularity.scheduler.MesosUtilsTest
+Running com.hubspot.singularity.mesos.SingularityStartupTest
+Running com.hubspot.singularity.data.SandboxManagerTest
+Running com.hubspot.singularity.scheduler.SingularityUsageTest
+Running com.hubspot.singularity.helpers.RFC5545ScheduleTest
+Running com.hubspot.singularity.JavaUtilsTest
+Running com.hubspot.singularity.data.BlendedHistoryTest
+Running com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+Running com.hubspot.singularity.data.ValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.923 sec - in com.hubspot.singularity.SingularityS3Test
+19:47:06.626 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1899567935)
+19:47:06.731 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:07.031 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 406749219)
+19:47:07.317 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:07.691 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 492045670)
+19:47:07.963 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:07.981 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1352913142)
+19:47:07.901 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 61137731)
+19:47:08.269 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:08.323 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:08.633 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 708350323)
+19:47:08.762 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:08.735 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1262237002)
+19:47:08.946 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:08.954 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 513279161)
+19:47:09.184 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:09.280 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 32206364)
+19:47:09.436 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:09.132 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 2070160397)
+19:47:09.532 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:09.322 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1219637204)
+19:47:09.659 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:10.005 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 836397870)
+19:47:10.168 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:09.956 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 274426173)
+19:47:10.284 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:10.308 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1778801068)
+19:47:10.426 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.326 sec - in com.hubspot.singularity.helpers.RFC5545ScheduleTest
+19:47:10.492 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1808884231)
+19:47:10.619 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.622 sec - in com.hubspot.singularity.scheduler.MesosUtilsTest
+19:47:11.326 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1188623367)
+19:47:11.780 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:11.689 [main] WARN com.squarespace.jersey2.guice.JerseyGuiceUtils - It appears jersey2-guice-spi is either not present or in conflict with some other Jar: ServiceLocatorGeneratorImpl(hk2-locator, 1734343965)
+19:47:11.971 [main] INFO com.squarespace.jersey2.guice.JerseyGuiceUtils - Attempting to install (using relfection) a Guice-aware ServiceLocatorFactory...
+19:47:19.336 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:19.396 [main] INFO org.eclipse.jetty.util.log - Logging initialized @21244ms
+19:47:19.453 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:19.468 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1da32baf
+19:47:19.466 [main] INFO org.eclipse.jetty.util.log - Logging initialized @21355ms
+19:47:19.494 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:19.504 [main] INFO org.eclipse.jetty.util.log - Logging initialized @21369ms
+19:47:19.503 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@423762ae{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7b58d678,MANAGED}
+19:47:19.537 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@446cc036
+19:47:19.538 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@33b2ba25{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6ad198c9,MANAGED}
+19:47:19.543 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7ea8224b
+19:47:19.580 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@239bc43f{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@c3ca482,MANAGED}
+19:47:19.588 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@359fa722
+19:47:19.604 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@15651402
+19:47:19.606 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@5c194652{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1f02b6d1,MANAGED}
+19:47:19.608 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@c7269ad{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1c23e369,MANAGED}
+19:47:19.611 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@77e1dacd
+19:47:19.613 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@690677de{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1c5d376c,MANAGED}
+19:47:19.668 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6ad198c9 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:19.682 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6ad198c9 added {[/tasks/*]=>tasks,POJO}
+19:47:19.718 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1f02b6d1 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:19.737 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1f02b6d1 added {[/tasks/*]=>tasks,POJO}
+19:47:19.797 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1c5d376c added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:19.802 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1c5d376c added {[/tasks/*]=>tasks,POJO}
+19:47:19.916 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:19.946 [main] INFO org.eclipse.jetty.util.log - Logging initialized @22024ms
+19:47:20.212 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@25fcdcc6
+19:47:20.293 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@6c537267{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@19c06762,MANAGED}
+19:47:20.312 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@24749ad3
+19:47:20.318 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1755aee6{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@582b14e2,MANAGED}
+19:47:20.331 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:20.338 [main] INFO org.eclipse.jetty.util.log - Logging initialized @22367ms
+19:47:20.375 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@618e7761
+19:47:20.398 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:20.430 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@575cfec1{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@32068aef,MANAGED}
+19:47:20.435 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@e2498a3
+19:47:20.437 [main] INFO org.eclipse.jetty.util.log - Logging initialized @22310ms
+19:47:20.436 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@26c2f767{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6a7ab205,MANAGED}
+19:47:20.497 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:20.524 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6a7ab205 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:20.535 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6a7ab205 added {[/tasks/*]=>tasks,POJO}
+19:47:20.547 [main] INFO org.eclipse.jetty.util.log - Logging initialized @22587ms
+19:47:20.605 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@582b14e2 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:20.639 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@582b14e2 added {[/tasks/*]=>tasks,POJO}
+19:47:20.765 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@3f78a5ed
+19:47:20.781 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1ba98508
+19:47:20.931 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:20.961 [main] INFO org.eclipse.jetty.util.log - Logging initialized @22986ms
+19:47:20.995 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@2a5ed225{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@2a525f88,MANAGED}
+19:47:20.994 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@62ff14cd{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6ae6a77b,MANAGED}
+19:47:21.021 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1f235a0a
+19:47:21.021 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@75d402d4{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1a0b4955,MANAGED}
+19:47:21.011 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@5c8d631
+19:47:21.037 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@3d42b756{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7c93e69,MANAGED}
+19:47:21.055 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@471a9e8c
+19:47:21.173 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7a51dc38{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@31a4db4f,MANAGED}
+19:47:21.177 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@39840986
+19:47:21.181 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@141229f6{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@723b8eff,MANAGED}
+19:47:21.250 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:21.257 [main] INFO org.eclipse.jetty.util.log - Logging initialized @23286ms
+19:47:21.270 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:21.271 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@723b8eff added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.282 [main] INFO org.eclipse.jetty.util.log - Logging initialized @23404ms
+19:47:21.285 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@723b8eff added {[/tasks/*]=>tasks,POJO}
+19:47:21.358 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@279ebd94
+19:47:21.370 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@638341b0
+19:47:21.408 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:21.446 [main] INFO org.eclipse.jetty.util.log - Logging initialized @23427ms
+19:47:21.441 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1a0b4955 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.486 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@344769b9{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@34376069,MANAGED}
+19:47:21.489 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7095b688
+19:47:21.500 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7c919e1e{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@bddac1c,MANAGED}
+19:47:21.440 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@71b32407{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1d686622,MANAGED}
+19:47:21.556 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@abe7d36
+19:47:21.561 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7da1ef46{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@740fccd2,MANAGED}
+19:47:21.582 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7c93e69 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.590 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@537a8915
+19:47:21.591 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@1a0b4955 added {[/tasks/*]=>tasks,POJO}
+19:47:21.608 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7c93e69 added {[/tasks/*]=>tasks,POJO}
+19:47:21.701 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@bddac1c added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.710 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1574f323{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@78ab63b5,MANAGED}
+19:47:21.713 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@66e434e8
+19:47:21.717 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:21.724 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@740fccd2 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.723 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@bddac1c added {[/tasks/*]=>tasks,POJO}
+19:47:21.733 [main] INFO org.eclipse.jetty.util.log - Logging initialized @23598ms
+19:47:21.714 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@3a7d6976{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@37c45154,MANAGED}
+19:47:21.752 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@740fccd2 added {[/tasks/*]=>tasks,POJO}
+19:47:21.818 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@481bae3f
+19:47:21.837 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@37c45154 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.842 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@37c45154 added {[/tasks/*]=>tasks,POJO}
+19:47:21.860 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7341baa3{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1ca0aa40,MANAGED}
+19:47:21.863 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@1d1fd2aa
+19:47:21.865 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4c78e00c{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@22b3b5d0,MANAGED}
+19:47:21.987 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@22b3b5d0 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:21.993 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@22b3b5d0 added {[/tasks/*]=>tasks,POJO}
+19:47:22.076 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:22.105 [main] INFO org.eclipse.jetty.util.log - Logging initialized @24208ms
+19:47:22.208 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@20a18cc9
+19:47:22.337 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:22.339 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@6d6d81c{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@7c59cf66,MANAGED}
+19:47:22.353 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@7eb94590
+19:47:22.369 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@3777fc44{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@79454d8e,MANAGED}
+19:47:22.370 [main] INFO org.eclipse.jetty.util.log - Logging initialized @24364ms
+19:47:22.517 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@61f08aa9
+19:47:22.562 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@79454d8e added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:22.553 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:22.572 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@79454d8e added {[/tasks/*]=>tasks,POJO}
+19:47:22.603 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@7e017f47{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6166aac5,MANAGED}
+19:47:22.606 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@239bc43f
+19:47:22.607 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@c3ca482{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@6b338591,MANAGED}
+19:47:22.609 [main] INFO org.eclipse.jetty.util.log - Logging initialized @24704ms
+19:47:22.664 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6b338591 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:22.677 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@2681185e
+19:47:22.687 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@6b338591 added {[/tasks/*]=>tasks,POJO}
+19:47:22.745 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1f1e15de{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@2ea0161f,MANAGED}
+19:47:22.838 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@463a1f47
+19:47:22.843 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@23ade612{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@47224d5d,MANAGED}
+19:47:22.990 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@47224d5d added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:23.035 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@47224d5d added {[/tasks/*]=>tasks,POJO}
+19:47:23.197 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:23.236 [main] INFO org.eclipse.jetty.util.log - Logging initialized @25049ms
+19:47:23.387 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@270be080
+19:47:23.413 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:47:23.431 [main] INFO org.eclipse.jetty.util.log - Logging initialized @25413ms
+19:47:23.513 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@5ab3f611{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@33425171,MANAGED}
+19:47:23.570 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@169d4aba
+19:47:23.590 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@5bddd141
+19:47:23.596 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4d6027be{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@475eb4fd,MANAGED}
+19:47:23.603 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@1f6e6f50{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@1f7fcec2,MANAGED}
+19:47:23.607 [main] DEBUG org.eclipse.jetty.util.DecoratedObjectFactory - Adding Decorator: org.eclipse.jetty.util.DeprecationWarning@11174bf
+19:47:23.607 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - i.d.j.MutableServletContextHandler@4f0c1409{/,null,null} added {org.eclipse.jetty.servlet.ServletHandler@188ae8d2,MANAGED}
+19:47:23.647 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@188ae8d2 added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:23.653 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@188ae8d2 added {[/tasks/*]=>tasks,POJO}
+19:47:23.845 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@475eb4fd added {tasks@6907b8e==io.dropwizard.servlets.tasks.TaskServlet,1,true,AUTO}
+19:47:23.877 [main] DEBUG org.eclipse.jetty.util.component.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@475eb4fd added {[/tasks/*]=>tasks,POJO}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.198 sec - in com.hubspot.singularity.JavaUtilsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.886 sec - in com.hubspot.singularity.SingularityAuthorizationHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.16 sec - in com.hubspot.singularity.mesos.SingularityMesosTaskBuilderTest
+19:47:52.647 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.52 sec - in com.hubspot.singularity.data.BlendedHistoryTest
+19:47:56.438 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:703)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.333 sec - in com.hubspot.singularity.data.InactiveSlaveManagerTest
+19:47:58.706 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-retry_test-1504295275772-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:47:58.721 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-retry_test-1504295275772-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:47:59.206 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:696)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.299 sec - in com.hubspot.singularity.config.MergingSourceProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.284 sec - in com.hubspot.singularity.data.zkmigrations.ZkMigrationTest
+19:48:00.840 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1040)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1073)
+	at org.apache.curator.utils.ZKPaths.mkdirs(ZKPaths.java:215)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:702)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.976 sec - in com.hubspot.singularity.data.ValidatorTest
+19:48:02.430 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:781)
+	at org.apache.curator.utils.ZKPaths.mkdirs(ZKPaths.java:232)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:702)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+19:48:02.432 [main-EventThread] ERROR com.hubspot.singularity.SingularityLeaderLatch - Can't find our node. Resetting. Index: -1
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.853 sec - in com.hubspot.singularity.scheduler.SingularityUsageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.817 sec - in com.hubspot.singularity.mesos.SingularityTaskShellCommandTest
+19:48:04.882 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295282828-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:04.886 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295282828-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:05.163 [SingularityStatePoller] ERROR com.hubspot.singularity.SingularityLeaderController - Caught exception while saving state
+java.lang.RuntimeException: java.lang.InterruptedException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:101)
+	at com.hubspot.singularity.SingularityLeaderController$StatePoller.run(SingularityLeaderController.java:209)
+Caused by: java.lang.InterruptedException: null
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.zookeeper.ClientCnxn.submitRequest(ClientCnxn.java:1342)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1040)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1073)
+	at org.apache.curator.utils.ZKPaths.mkdirs(ZKPaths.java:215)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:702)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:679)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:676)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.hubspot.singularity.data.StateManager.save(StateManager.java:98)
+	... 1 common frames omitted
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.947 sec - in com.hubspot.singularity.data.SandboxManagerTest
+19:48:08.909 [check-new-task-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable in task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504284487879-2-IMMEDIATE-1504284487879, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer711"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504284487879-2-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, re-enqueing
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getData(CuratorFrameworkImpl.java:363)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:252)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:285)
+	at com.hubspot.singularity.data.RequestManager.getRequest(RequestManager.java:331)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:199)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:08.924 [check-new-task-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable re-enqueuing task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504284487879-2-IMMEDIATE-1504284487879, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer711"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504284487879-2-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, aborting
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@598c5afb rejected from java.util.concurrent.ScheduledThreadPoolExecutor@745f8f23[Shutting down, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:326)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.enqueueCheckWithDelay(SingularityNewTaskChecker.java:240)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheck(SingularityNewTaskChecker.java:234)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheckOrAbort(SingularityNewTaskChecker.java:225)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.access$600(SingularityNewTaskChecker.java:56)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:217)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.935 sec - in com.hubspot.singularity.mesos.SingularityStartupTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 68.642 sec - in com.hubspot.singularity.scheduler.HistoryPersisterTest
+19:48:14.186 [SyncThread:0] ERROR org.apache.zookeeper.server.NIOServerCnxn - Unexpected Exception: 
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.interestOps(SelectionKeyImpl.java:77)
+	at org.apache.zookeeper.server.NIOServerCnxn.sendBuffer(NIOServerCnxn.java:173)
+	at org.apache.zookeeper.server.NIOServerCnxn.sendCloseSession(NIOServerCnxn.java:119)
+	at org.apache.zookeeper.server.FinalRequestProcessor.processRequest(FinalRequestProcessor.java:406)
+	at org.apache.zookeeper.server.SyncRequestProcessor.flush(SyncRequestProcessor.java:200)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:131)
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 78.177 sec - in com.hubspot.singularity.scheduler.SingularityExpiringActionsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 80.364 sec - in com.hubspot.singularity.scheduler.SingularitySlavePlacementTest
+19:48:26.297 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295305144-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:26.300 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295305144-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:26.346 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295308144-2-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:26.348 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295308144-2-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:26.444 [healthcheck-pool-2] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295308144-3-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:26.445 [healthcheck-pool-2] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295308144-3-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 86.229 sec - in com.hubspot.singularity.SingularityHistoryTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 86.62 sec - in com.hubspot.singularity.scheduler.SingularityMachineStatesTest
+19:48:29.821 [check-new-task-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable in task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504295308802-2-IMMEDIATE-1504295308802, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer256"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504295308802-2-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, re-enqueing
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getData(CuratorFrameworkImpl.java:363)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:252)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:285)
+	at com.hubspot.singularity.data.RequestManager.getRequest(RequestManager.java:331)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:199)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:29.825 [check-new-task-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable re-enqueuing task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504295308802-2-IMMEDIATE-1504295308802, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer256"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504295308802-2-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, aborting
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3ef05238 rejected from java.util.concurrent.ScheduledThreadPoolExecutor@ad77401[Shutting down, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:326)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.enqueueCheckWithDelay(SingularityNewTaskChecker.java:240)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheck(SingularityNewTaskChecker.java:234)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheckOrAbort(SingularityNewTaskChecker.java:225)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.access$600(SingularityNewTaskChecker.java:56)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:217)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:34.495 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-new_task_healthcheck-1504295312379-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:34.496 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-new_task_healthcheck-1504295312379-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:37.962 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-hc_test-1504295315923-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:37.964 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-hc_test-1504295315923-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:40.318 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-timeout_test-1504291718219-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:40.319 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-timeout_test-1504291718219-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:42.636 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-retry_test-1504295320593-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:42.638 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-retry_test-1504295320593-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:44.857 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-retry_test-1504295322832-1-host1-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:48:44.858 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-retry_test-1504295322832-1-host1-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 104.626 sec - in com.hubspot.singularity.scheduler.SingularityHealthchecksTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 109.387 sec - in com.hubspot.singularity.scheduler.SingularityDeploysTest
+19:48:55.930 [main] ERROR com.hubspot.singularity.scheduler.SingularityCleaner - LB delete request SingularityLoadBalancerUpdate{loadBalancerState=FAILED, message=Optional.absent(), timestamp=1504295335927, uri=Optional.absent(), method=CHECK_STATE, loadBalancerRequestId=test-request-1504295335923-DELETE-1} (test-request-1504295335923-DELETE-1) got unexpected response FAILED
+19:49:03.002 [main] ERROR com.hubspot.singularity.scheduler.SingularityCleaner - LB removal request SingularityLoadBalancerUpdate{loadBalancerState=FAILED, message=Optional.absent(), timestamp=1504295343001, uri=Optional.absent(), method=CHECK_STATE, loadBalancerRequestId=test-request-firstDeployId-1504295342963-1-host1-rack1-REMOVE-1} (test-request-firstDeployId-1504295342963-1-host1-rack1-REMOVE-1) got unexpected response FAILED
+19:49:14.598 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295352583-2-host2-rack1, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:14.599 [healthcheck-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295352583-2-host2-rack1, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:14.681 [healthcheck-pool-2] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295352662-1-host3-DEFAULT, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:14.682 [healthcheck-pool-2] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295352662-1-host3-DEFAULT, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:14.777 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while saving health check result for test-request-firstDeployId-1504295352766-2-host1-DEFAULT, will re-enqueue
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkExists(CuratorFrameworkImpl.java:355)
+	at com.hubspot.singularity.data.CuratorManager.checkExists(CuratorManager.java:104)
+	at com.hubspot.singularity.data.CuratorManager.exists(CuratorManager.java:117)
+	at com.hubspot.singularity.data.TaskManager.canSaveNewHealthcheck(TaskManager.java:314)
+	at com.hubspot.singularity.data.TaskManager.saveHealthcheckResult(TaskManager.java:303)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:76)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:14.778 [healthcheck-pool-1] ERROR com.hubspot.singularity.scheduler.SingularityHealthchecker - Caught throwable while re-enqueuing health check for test-request-firstDeployId-1504295352766-2-host1-DEFAULT, aborting
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:379)
+	at com.hubspot.singularity.data.CuratorManager.getChildren(CuratorManager.java:125)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildrenThrows(CuratorAsyncManager.java:46)
+	at com.hubspot.singularity.data.CuratorAsyncManager.getAsyncChildren(CuratorAsyncManager.java:246)
+	at com.hubspot.singularity.data.TaskManager.getTaskHistoryUpdates(TaskManager.java:409)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.enqueueHealthcheck(SingularityHealthchecker.java:83)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.reEnqueueOrAbort(SingularityHealthchecker.java:199)
+	at com.hubspot.singularity.scheduler.SingularityHealthcheckAsyncHandler.saveResult(SingularityHealthcheckAsyncHandler.java:101)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.saveFailure(SingularityHealthchecker.java:236)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.asyncHealthcheck(SingularityHealthchecker.java:274)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker.access$000(SingularityHealthchecker.java:44)
+	at com.hubspot.singularity.scheduler.SingularityHealthchecker$1.run(SingularityHealthchecker.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:18.195 [main] ERROR com.hubspot.singularity.mesos.SingularityMesosStatusUpdateHandler - Unexpected taskId task 
+com.hubspot.singularity.data.transcoders.SingularityTranscoderException: java.lang.reflect.InvocationTargetException
+	at com.hubspot.singularity.data.transcoders.IdTranscoder.fromString(IdTranscoder.java:44)
+	at com.hubspot.singularity.mesos.SingularityMesosStatusUpdateHandler.getTaskId(SingularityMesosStatusUpdateHandler.java:127)
+	at com.hubspot.singularity.mesos.SingularityMesosStatusUpdateHandler.unsafeProcessStatusUpdate(SingularityMesosStatusUpdateHandler.java:179)
+	at com.hubspot.singularity.mesos.SingularityMesosStatusUpdateHandler.processStatusUpdate(SingularityMesosStatusUpdateHandler.java:262)
+	at com.hubspot.singularity.mesos.SingularityMesosScheduler.statusUpdate(SingularityMesosScheduler.java:131)
+	at com.hubspot.singularity.scheduler.SingularitySchedulerTest.testTaskOddities(SingularitySchedulerTest.java:1271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:344)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:269)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:184)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor95.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.hubspot.singularity.data.transcoders.IdTranscoder.fromString(IdTranscoder.java:42)
+	... 31 common frames omitted
+Caused by: com.hubspot.singularity.InvalidSingularityTaskIdException: TaskId task was invalid (There must be at least 5 instances of - (there were 0))
+	at com.hubspot.singularity.SingularityTaskId.valueOf(SingularityTaskId.java:166)
+	... 35 common frames omitted
+19:49:18.272 [main] ERROR com.hubspot.singularity.mesos.SingularityMesosStatusUpdateHandler - Task test-request-firstDeployId-1504295358217-1-host1-rack1 is active but is missing task data
+19:49:38.669 [check-new-task-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable in task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504295377589-1-IMMEDIATE-1504295377589, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer762"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504295377589-1-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, re-enqueing
+java.lang.IllegalStateException: instance must be started before calling this method
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:174)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getData(CuratorFrameworkImpl.java:363)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:252)
+	at com.hubspot.singularity.data.CuratorManager.getData(CuratorManager.java:285)
+	at com.hubspot.singularity.data.RequestManager.getRequest(RequestManager.java:331)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:199)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:49:38.671 [check-new-task-pool-0] ERROR com.hubspot.singularity.scheduler.SingularityNewTaskChecker - Uncaught throwable re-enqueuing task check for task SingularityTask{taskRequest=SingularityTaskRequest{request=SingularityRequest{id='test-request', requestType=WORKER, owners=Optional.absent(), numRetriesOnFailure=Optional.absent(), schedule=Optional.absent(), quartzSchedule=Optional.absent(), scheduleType=Optional.absent(), scheduleTimeZone=Optional.absent(), killOldNonLongRunningTasksAfterMillis=Optional.absent(), taskExecutionTimeLimitMillis=Optional.absent(), scheduledExpectedRuntimeMillis=Optional.absent(), waitAtLeastMillisAfterTaskFinishesForReschedule=Optional.absent(), instances=Optional.absent(), skipHealthchecks=Optional.absent(), rackSensitive=Optional.absent(), rackAffinity=Optional.absent(), slavePlacement=Optional.absent(), requiredSlaveAttributes=Optional.absent(), allowedSlaveAttributes=Optional.absent(), loadBalanced=Optional.of(true), group=Optional.absent(), requiredRole=Optional.absent(), readWriteGroups=Optional.absent(), readOnlyGroups=Optional.absent(), bounceAfterScale=Optional.absent(), emailConfigurationOverrides=Optional.absent(), hideEvenNumberAcrossRacksHint=Optional.absent(), taskLogErrorRegex=Optional.absent(), taskLogErrorRegexCaseSensitive=Optional.absent(), taskPriorityLevel=Optional.absent(), maxTasksPerOffer=Optional.absent(), allowBounceToSameHost=Optional.absent()}, deploy=SingularityDeploy{requestId='test-request', id='firstDeployId', version=Optional.absent(), timestamp=Optional.absent(), metadata=Optional.absent(), containerInfo=Optional.absent(), customExecutorCmd=Optional.absent(), customExecutorId=Optional.absent(), customExecutorSource=Optional.absent(), customExecutorResources=Optional.absent(), resources=Optional.absent(), command=Optional.of(sleep 100), arguments=Optional.absent(), env=Optional.absent(), uris=Optional.absent(), executorData=Optional.absent(), labels=Optional.absent(), mesosLabels=Optional.absent(), taskLabels=Optional.absent(), mesosTaskLabels=Optional.absent(), taskEnv=Optional.absent(), healthcheckUri=Optional.absent(), healthcheckIntervalSeconds=Optional.absent(), healthcheckTimeoutSeconds=Optional.absent(), healthcheckPortIndex=Optional.absent(), healthcheckProtocol=Optional.absent(), healthcheckMaxRetries=Optional.absent(), healthcheckMaxTotalTimeoutSeconds=Optional.absent(), healthcheck=Optional.absent(), skipHealthchecksOnDeploy=Optional.absent(), deployHealthTimeoutSeconds=Optional.absent(), considerHealthyAfterRunningForSeconds=Optional.absent(), serviceBasePath=Optional.absent(), loadBalancerGroups=Optional.absent(), loadBalancerPortIndex=Optional.absent(), loadBalancerOptions=Optional.absent(), loadBalancerDomains=Optional.absent(), loadBalancerAdditionalRoutes=Optional.absent(), loadBalancerTemplate=Optional.absent(), loadBalancerServiceIdOverride=Optional.absent(), loadBalancerUpstreamGroup=Optional.absent(), deployInstanceCountPerStep=Optional.absent(), deployStepWaitTimeMs=Optional.absent(), autoAdvanceDeploySteps=Optional.absent(), maxTaskRetries=Optional.absent(), shell=Optional.absent(), user=Optional.absent()}, pendingTask=SingularityPendingTask{pendingTaskId=test-request-firstDeployId-1504295377589-1-IMMEDIATE-1504295377589, cmdLineArgsList=Optional.absent(), user=Optional.absent(), runId=Optional.absent(), skipHealthchecks=Optional.absent(), message=Optional.absent(), resources=Optional.absent(), actionId=Optional.absent()}}, offer=id { value: "offer762"}framework_id { value: "framework1"}slave_id { value: "slave1"}hostname: "host1"resources { name: "cpus" type: SCALAR scalar { value: 125.0 }}resources { name: "mem" type: SCALAR scalar { value: 1024.0 }}resources { name: "ports" type: RANGES ranges { }}attributes { name: "rackid" type: TEXT text { value: "DEFAULT" }}, mesosTask=name: "name"task_id { value: "test-request-firstDeployId-1504295377589-1-host1-rack1"}slave_id { value: "slave1"}, rackId=Optional.of(rack1)}, aborting
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3882807 rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7b7acae[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:326)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.enqueueCheckWithDelay(SingularityNewTaskChecker.java:240)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheck(SingularityNewTaskChecker.java:234)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.reEnqueueCheckOrAbort(SingularityNewTaskChecker.java:225)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker.access$600(SingularityNewTaskChecker.java:56)
+	at com.hubspot.singularity.scheduler.SingularityNewTaskChecker$1.run(SingularityNewTaskChecker.java:217)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 58, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 158.315 sec <<< FAILURE! - in com.hubspot.singularity.scheduler.SingularitySchedulerTest
+testSchedulerPriority(com.hubspot.singularity.scheduler.SingularitySchedulerTest)  Time elapsed: 1.183 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.hubspot.singularity.scheduler.SingularitySchedulerTest.testSchedulerPriority(SingularitySchedulerTest.java:953)
+
+
+Results :
+
+Failed tests: 
+  SingularitySchedulerTest.testSchedulerPriority:953 null
+
+Tests run: 204, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Singularity ........................................ SUCCESS [  2.829 s]
+[INFO] SingularityBase .................................... SUCCESS [  3.741 s]
+[INFO] SingularityUI ...................................... SUCCESS [02:13 min]
+[INFO] SingularityMesosClient ............................. SUCCESS [  2.165 s]
+[INFO] SingularitySwagger ................................. SUCCESS [  1.076 s]
+[INFO] SingularityService ................................. FAILURE [03:00 min]
+[INFO] SingularityRunnerBase .............................. SKIPPED
+[INFO] SingularityS3Base .................................. SKIPPED
+[INFO] SingularityClient .................................. SKIPPED
+[INFO] SingularityExecutor ................................ SKIPPED
+[INFO] SingularityExecutorCleanup ......................... SKIPPED
+[INFO] SingularityS3Uploader .............................. SKIPPED
+[INFO] SingularityS3Downloader ............................ SKIPPED
+[INFO] EmbedSingularityExample ............................ SKIPPED
+[INFO] SingularityServiceIntegrationTests ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:24 min
+[INFO] Finished at: 2017-09-01T21:49:40+02:00
+[INFO] Final Memory: 157M/2548M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project SingularityService: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/HubSpot/Singularity/216151368/SingularityService/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :SingularityService
