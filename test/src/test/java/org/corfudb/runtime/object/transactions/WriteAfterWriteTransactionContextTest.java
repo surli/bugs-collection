@@ -4,7 +4,7 @@ import org.corfudb.protocols.logprotocol.LogEntry;
 import org.corfudb.protocols.logprotocol.MultiObjectSMREntry;
 import org.corfudb.protocols.logprotocol.MultiSMREntry;
 import org.corfudb.protocols.logprotocol.SMREntry;
-import org.corfudb.protocols.wireprotocol.LogData;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.runtime.exceptions.TransactionAbortedException;
 import org.corfudb.runtime.view.ObjectsView;
 import org.corfudb.runtime.view.stream.IStreamView;
@@ -19,13 +19,26 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class WriteAfterWriteTransactionContextTest extends AbstractTransactionContextTest {
 
+
+    // override {@link AbstractObjectTest ::TXBegin() } in order to set write-write isolation level
+    @Override
+    protected void TXBegin() {
+        getRuntime().getObjectsView().TXBuild()
+                .setType(TransactionType.WRITE_AFTER_WRITE)
+                .begin();
+    }
+
+
     /** In a write after write transaction, concurrent modifications
      * with the same read timestamp should abort.
      */
+
     @Test
     public void concurrentModificationsCauseAbort()
     {
-        getRuntime().getObjectsView().setTransactionLogging(true);
+        getRuntime().setTransactionLogging(true);
+
+        getMap();
 
         t(1, () -> write("k" , "v1"));
         t(1, this::TXBegin);
@@ -43,10 +56,10 @@ public class WriteAfterWriteTransactionContextTest extends AbstractTransactionCo
                 .containsEntry("k", "v2")
                 .doesNotContainEntry("k", "v3");
 
-        // Verify that the transaction that succeeded is written to the transaction stream
-        IStreamView txStream = getRuntime().getStreamsView().get(ObjectsView
-                .TRANSACTION_STREAM_ID);
-        List<LogData> txns = txStream.remainingUpTo(Long.MAX_VALUE);
+        IStreamView txStream = getRuntime().getStreamsView()
+                .get(ObjectsView.TRANSACTION_STREAM_ID);
+
+        List<ILogData> txns = txStream.remainingUpTo(Long.MAX_VALUE);
         assertThat(txns).hasSize(1);
         assertThat(txns.get(0).getLogEntry(getRuntime()).getType()).isEqualTo
             (LogEntry.LogEntryType.MULTIOBJSMR);
@@ -54,7 +67,8 @@ public class WriteAfterWriteTransactionContextTest extends AbstractTransactionCo
         MultiObjectSMREntry tx1 = (MultiObjectSMREntry)txns.get(0).getLogEntry
             (getRuntime());
         assertThat(tx1.getEntryMap().size()).isEqualTo(1);
-        MultiSMREntry entryMap = tx1.getEntryMap().entrySet().iterator().next().getValue();
+        MultiSMREntry entryMap = tx1.getEntryMap().entrySet().iterator()
+                                                        .next().getValue();
         assertThat(entryMap).isNotNull();
         assertThat(entryMap.getUpdates().size()).isEqualTo(1);
         SMREntry smrEntry = entryMap.getUpdates().get(0);
@@ -62,12 +76,5 @@ public class WriteAfterWriteTransactionContextTest extends AbstractTransactionCo
         assertThat(smrEntry.getSMRMethod()).isEqualTo("put");
         assertThat((String) args[0]).isEqualTo("k");
         assertThat((String) args[1]).isEqualTo("v2");
-    }
-
-    @Override
-    void TXBegin() {
-        getRuntime().getObjectsView().TXBuild()
-                .setType(TransactionType.WRITE_AFTER_WRITE)
-                .begin();
     }
 }

@@ -10,6 +10,7 @@ import net.bytebuddy.implementation.MethodDelegation;
 import net.bytebuddy.matcher.ElementMatchers;
 import org.corfudb.annotations.*;
 import org.corfudb.protocols.logprotocol.SMREntry;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.exceptions.ObjectExistsException;
@@ -228,7 +229,7 @@ public class CorfuProxyBuilder {
                         log.debug("There appears to be an existing constructor for {}, reading it...", sv.getID());
                         // The "default" entry should be the first entry in the stream.
                         // TODO: handle garbage collected streams.
-                        LogData entry = sv.next();
+                        ILogData entry = sv.next();
                         while (entry != null) {
                             if (entry.getPayload(runtime) instanceof SMREntry &&
                                     ((SMREntry) entry.getPayload(runtime)).getSMRMethod().equals("default")) {

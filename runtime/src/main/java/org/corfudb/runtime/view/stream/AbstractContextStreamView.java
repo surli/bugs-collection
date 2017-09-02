@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.corfudb.protocols.logprotocol.LogEntry;
 import org.corfudb.protocols.logprotocol.StreamCOWEntry;
 import org.corfudb.protocols.wireprotocol.DataType;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.view.Address;
@@ -90,7 +91,7 @@ public abstract class AbstractContextStreamView<T extends AbstractStreamContext>
      * {@inheritDoc}
      */
     @Override
-    final public synchronized LogData nextUpTo(final long maxGlobal) {
+    final public synchronized ILogData nextUpTo(final long maxGlobal) {
         // Don't do anything if we've already exceeded the global
         // pointer.
         if (getCurrentContext().globalPointer > maxGlobal) {
@@ -106,7 +107,7 @@ public abstract class AbstractContextStreamView<T extends AbstractStreamContext>
         }
 
         // Get the next entry from the underlying implementation.
-        final LogData entry =
+        final ILogData entry =
                 getNextEntry(getCurrentContext(), maxGlobal);
 
         // Process the next entry, checking if the context has changed.
@@ -143,7 +144,7 @@ public abstract class AbstractContextStreamView<T extends AbstractStreamContext>
      * @param maxGlobal     The maximum global address to read to.
      * @return
      */
-    abstract protected LogData getNextEntry(T context, long maxGlobal);
+    abstract protected ILogData getNextEntry(T context, long maxGlobal);
 
     /** Check if the given entry adds a new context, and update
      * the global pointer.
@@ -157,7 +158,7 @@ public abstract class AbstractContextStreamView<T extends AbstractStreamContext>
      * @param data  The entry to process.
      * @return      True, if this entry adds a context.
      */
-    protected boolean processEntryForContext(final LogData data) {
+    protected boolean processEntryForContext(final ILogData data) {
         if (data != null) {
             final Object payload = data.getPayload(runtime);
             // Update the global pointer, if it is data.

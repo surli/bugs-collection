@@ -76,12 +76,12 @@ import java.util.Map;
 
  * Created by dalia on 12/30/16.
  */
-public class SimpleAtomicTransaction extends BasicCorfuProgram {
+public class SimpleAtomicTransaction extends BaseCorfuAppUtils {
     /**
-     * main() and standard setup methods are deferred to BasicCorfuProgram
+     * main() and standard setup methods are deferred to BaseCorfuAppUtils
      * @return
      */
-    static BasicCorfuProgram selfFactory() { return new WriteWriteWorkload1(); }
+    static BaseCorfuAppUtils selfFactory() { return new SimpleAtomicTransaction(); }
     public static void main(String[] args) { selfFactory().start(args); }
 
     /**

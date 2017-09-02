@@ -1,10 +1,11 @@
 package org.corfudb.runtime.view;
 
 import com.google.common.reflect.TypeToken;
+import org.corfudb.protocols.logprotocol.*;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.logprotocol.LogEntry;
 import org.corfudb.protocols.logprotocol.MultiObjectSMREntry;
 import org.corfudb.protocols.logprotocol.MultiSMREntry;
-import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.protocols.logprotocol.SMREntry;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.collections.SMRMap;
@@ -137,7 +138,7 @@ public class ObjectsViewTest extends AbstractViewTest {
 
         IStreamView txStream = r.getStreamsView().get(ObjectsView
                 .TRANSACTION_STREAM_ID);
-        List<LogData> txns = txStream.remainingUpTo(Long.MAX_VALUE);
+        List<ILogData> txns = txStream.remainingUpTo(Long.MAX_VALUE);
         assertThat(txns).hasSize(1);
         assertThat(txns.get(0).getLogEntry(getRuntime()).getType())
                 .isEqualTo(LogEntry.LogEntryType.MULTIOBJSMR);

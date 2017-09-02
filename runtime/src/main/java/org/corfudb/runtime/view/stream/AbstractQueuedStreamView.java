@@ -3,10 +3,12 @@ package org.corfudb.runtime.view.stream;
 import lombok.NonNull;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.runtime.CorfuRuntime;
 
 import java.util.NavigableSet;
+import java.util.TreeSet;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentSkipListSet;
 
@@ -45,8 +47,8 @@ public abstract class AbstractQueuedStreamView extends
      * {@inheritDoc}
      */
     @Override
-    protected LogData getNextEntry(QueuedStreamContext context,
-                                   long maxGlobal) {
+    protected ILogData getNextEntry(QueuedStreamContext context,
+                                    long maxGlobal) {
         // If we have no entries to read, fill the read queue.
         // Return if the queue is still empty.
         if (context.readQueue.isEmpty() &&
@@ -65,7 +67,7 @@ public abstract class AbstractQueuedStreamView extends
         // have to perform several reads.
         while (context.readQueue.size() > 0) {
             final long thisRead = context.readQueue.pollFirst();
-            LogData ld = read(thisRead);
+            ILogData ld = read(thisRead);
             if (ld.containsStream(context.id)) {
                 return ld;
             }
@@ -82,7 +84,7 @@ public abstract class AbstractQueuedStreamView extends
      *
      * @param address       The address to read.
      */
-    abstract protected @NonNull LogData read(final long address);
+    abstract protected @NonNull ILogData read(final long address);
 
     /**
      * Fill the read queue for the current context. This method is called
@@ -113,7 +115,7 @@ public abstract class AbstractQueuedStreamView extends
          * A priority queue of potential addresses to be read from.
          */
         final NavigableSet<Long> readQueue
-                = new ConcurrentSkipListSet<>();
+                = new TreeSet<>();
 
         /** Create a new stream context with the given ID and maximum address
          * to read to.
