@@ -1,0 +1,50 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "IQSS/dataverse",
+  "bugCommit": "https://github.com/IQSS/dataverse/compare/583006909b8e...e6a8b99da7dc",
+  "failingModule": "/root/workspace/IQSS/dataverse/258721032",
+  "hostname": "spirals-repairnator",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 391,
+  "failing-test-cases": [
+    {
+      "className": "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest",
+      "failingMethods": [
+        "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest#testVariables",
+        "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest#testBrokenCSV",
+        "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest#testRead",
+        "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest#testSubset"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "java.io.IOException: Reading mismatch, line 1 of the Data file: 14 delimited values expected, 10 found.",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Column 9 was not properly processed as \"discrete numeric\"",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cnull\u003e but was:\u003cReading mismatch, line 3 of the Data file: 6 delimited values expected, 4 found.\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "java.io.IOException: Reading mismatch, line 1 of the Data file: 14 delimited values expected, 10 found.",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    }
+  ]
+}
