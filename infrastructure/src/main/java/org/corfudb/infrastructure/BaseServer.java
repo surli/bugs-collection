@@ -112,12 +112,6 @@ public class BaseServer extends AbstractServer {
         System.exit(100);
     }
 
-    @Override
-    public void reset() { }
-
-    @Override
-    public void reboot() { }
-
     private static double convertMsec(double ns) {
         return ns / 1_000_000;
     }

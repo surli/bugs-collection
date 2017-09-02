@@ -2,6 +2,7 @@ package org.corfudb.runtime.object;
 
 import com.google.common.reflect.TypeToken;
 import org.corfudb.runtime.collections.SMRMap;
+import org.corfudb.runtime.object.transactions.TransactionalContext;
 import org.corfudb.runtime.view.AbstractViewTest;
 import org.corfudb.runtime.view.StreamView;
 import org.junit.Test;
@@ -10,6 +11,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -439,10 +441,6 @@ public class CompileProxyTest extends AbstractViewTest {
 
     /** Checks that the fine-grained conflict set is correctly produced
      * by the annotation framework.
-     *
-     * Each method in ConflictParameterClass is executed, and the result
-     * of invoking the method from the conflict function map should be
-     * the objects annotated by conflict parameter.
      */
     @Test
     public void checkConflictParameters() {
@@ -453,26 +451,36 @@ public class CompileProxyTest extends AbstractViewTest {
                 .setType(ConflictParameterClass.class)
                 .open();
 
-        ICorfuSMR<ConflictParameterClass> testObjectSMR =
-                (ICorfuSMR<ConflictParameterClass>) testObject;
-        CorfuCompileProxy<ConflictParameterClass> proxy =
-                (CorfuCompileProxy<ConflictParameterClass>) testObjectSMR
-                        .getCorfuSMRProxy();
+        final String TEST_0 = "0";
+        final String TEST_1 = "1";
+        final int TEST_2 = 2;
+        final int TEST_3 = 3;
+        final String TEST_4 = "4";
+        final String TEST_5 = "5";
 
-        // mutator test -> second option should be conflict
-        assertThat(proxy.getConflictFunctionMap().get("mutatorTest")
-                .getConflictSet(0, 1))
-                .contains(1);
+        getRuntime().getObjectsView().TXBegin();
+        // RS=TEST_0
+        testObject.accessorTest(TEST_0, TEST_1);
+        // WS=TEST_3
+        testObject.mutatorTest(TEST_2, TEST_3);
+        // WS,RS=TEST_4
+        testObject.mutatorAccessorTest(TEST_4, TEST_5);
 
-        // accessor test -> first option should be conflict.
-        assertThat(proxy.getConflictFunctionMap().get("accessorTest")
-                .getConflictSet("a", "b"))
-                .contains("a");
+        // Assert that the conflict set contains TEST_1, TEST_4
+        assertThat(TransactionalContext.getCurrentContext()
+                .getReadSet().values().stream()
+                .flatMap(x -> x.stream())
+                .collect(Collectors.toList()))
+                .contains(Integer.valueOf(TEST_0.hashCode()), Integer.valueOf(TEST_4.hashCode()));
 
-        // mutatorAccessor test -> first option should be conflict.
-        assertThat(proxy.getConflictFunctionMap().get("mutatorAccessorTest")
-                .getConflictSet("a", "b"))
-                .contains("a");
+        // in optimistic mode, assert that the conflict set does NOT contain TEST_2, TEST_4
+        assertThat(TransactionalContext.getCurrentContext()
+                .getReadSet().values().stream()
+                .flatMap(x -> x.stream())
+                .collect(Collectors.toList()))
+                .doesNotContain(Integer.valueOf(TEST_3), Integer.valueOf(TEST_4));
+
+        getRuntime().getObjectsView().TXAbort();
     }
 
 }

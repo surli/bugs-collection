@@ -8,6 +8,7 @@ import lombok.ToString;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.exceptions.TransactionAbortedException;
 import org.corfudb.runtime.object.ICorfuSMR;
+import org.corfudb.runtime.object.transactions.TransactionType;
 import org.corfudb.runtime.view.AbstractViewTest;
 import org.corfudb.runtime.view.ObjectOpenOptions;
 import org.corfudb.util.serializer.Serializers;
@@ -291,7 +292,9 @@ public class SMRMapTest extends AbstractViewTest {
         scheduleConcurrently(1, threadNumber -> {
             s1.tryAcquire(PARAMETERS.TIMEOUT_NORMAL.toMillis(),
                     TimeUnit.MILLISECONDS);
-            testMap2.put("c", "d");
+            getRuntime().getObjectsView().TXBegin();
+            testMap2.put("a", "d");
+            getRuntime().getObjectsView().TXEnd();
             s2.release();
         });
 
@@ -503,7 +506,9 @@ public class SMRMapTest extends AbstractViewTest {
                     .setTypeToken(new TypeToken<SMRMap<String, String>>() {})
                     .open();
 
+            getRuntime().getObjectsView().TXBegin();
             testMap2.put("a", "f");
+            getRuntime().getObjectsView().TXEnd();
         });
         cf.join();
         assertThatThrownBy(() -> getRuntime().getObjectsView().TXEnd())
@@ -575,77 +580,6 @@ public class SMRMapTest extends AbstractViewTest {
     }
 
     AtomicInteger aborts;
-
-    void getAbortTestSM() {
-        Map<String, String> testMap = getRuntime().getObjectsView().build()
-                .setStreamID(UUID.randomUUID())
-                .setTypeToken(new TypeToken<SMRMap<String, String>>() {})
-                .addOption(ObjectOpenOptions.NO_CACHE)
-                .open();
-        AtomicInteger aborts = new AtomicInteger();
-        testMap.clear();
-
-        // state 0: start a transaction
-        addTestStep((ignored_task_num) -> {
-            getRuntime().getObjectsView().TXBegin();
-        });
-
-        // state 1: do a put
-        addTestStep( (task_num) -> {
-            assertThat(testMap.put(Integer.toString(task_num),
-                    Integer.toString(task_num)))
-                    .isEqualTo(null);
-        });
-
-        // state 2 (final): ask to commit the transaction
-        addTestStep( (ignored_task_num) -> {
-            try {
-                getRuntime().getObjectsView().TXEnd();
-            } catch (TransactionAbortedException tae) {
-                aborts.incrementAndGet();
-            }
-        });
-    }
-
-    @Test
-    public void concurrentAbortTestThreaded()
-            throws Exception
-    {
-        final int numThreads =  PARAMETERS.CONCURRENCY_SOME;
-        final int numRecords = PARAMETERS.NUM_ITERATIONS_LOW;
-
-        long startTime = System.currentTimeMillis();
-
-        aborts = new AtomicInteger();
-        // invoke the threaded engine
-        scheduleThreaded(numThreads, numThreads*numRecords);
-
-        // print stats..
-        calculateRequestsPerSecond("TPS", numRecords * numThreads, startTime);
-        calculateAbortRate(aborts.get(), numRecords * numThreads);
-
-    }
-
-    @Test
-    public void concurrentAbortTestInterleaved()
-            throws Exception
-    {
-        final int numThreads =  PARAMETERS.CONCURRENCY_SOME;
-        final int numRecords = PARAMETERS.NUM_ITERATIONS_LOW;
-
-        long startTime = System.currentTimeMillis();
-
-        aborts = new AtomicInteger();
-
-        getAbortTestSM();
-        // invoke the interleaving engine
-        scheduleInterleaved(numThreads, numThreads*numRecords);
-
-        // print stats..
-        calculateRequestsPerSecond("TPS", numRecords * numThreads, startTime);
-        calculateAbortRate(aborts.get(), numRecords * numThreads);
-
-    }
 
     void getMultiViewSM(int numThreads) {
 
