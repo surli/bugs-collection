@@ -1,0 +1,39 @@
+{
+  "totalNumberSkippingTests": 1,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "CorfuDB/CorfuDB",
+  "bugCommit": "https://github.com/CorfuDB/CorfuDB/compare/9836c7839104...dda571e41dcd",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/260001478/test",
+  "hostname": "spirals-repairnator",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.util.concurrent.CancellationException",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 390,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.view.StreamViewTest",
+      "failingMethods": [
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromStream"
+      ],
+      "erroringMethods": [
+        "org.corfudb.runtime.view.StreamViewTest#canReadWriteFromStreamConcurrent"
+      ],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cnull\u003e but was:\u003cLogData[1]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
