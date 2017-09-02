@@ -1,0 +1,46 @@
+{
+  "totalNumberSkippingTests": 6,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "dangdangdotcom/sharding-jdbc",
+  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/6d4b71ca6d73...37e205e94403",
+  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/260169863/sharding-jdbc-core",
+  "hostname": "spirals-repairnator",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.IllegalStateException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1402,
+  "failing-test-cases": [
+    {
+      "className": "com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest",
+      "failingMethods": [
+        "com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest#assertSetFetchSize",
+        "com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest#assertGetUpdateCount"
+      ],
+      "erroringMethods": [
+        "com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest#assertGetGeneratedKeysForSingleRoutedStatement"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "failureDetail": "INSERT statement should contain sharding value.",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c40\u003e      but: was \u003c4\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \u003c10\u003e      but: was \u003c4\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 1
+    }
+  ]
+}
