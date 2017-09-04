@@ -1,0 +1,851 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Maven parent POM
+[INFO] @BugPattern annotation
+[INFO] error-prone annotations
+[INFO] error-prone check api
+[INFO] error-prone test helpers
+[INFO] error-prone library
+[INFO] JSR-269 annotation processor for @BugPattern annotation
+[INFO] Documention tool for generating Error Prone bugpattern documentation
+[INFO] Ant build support
+[INFO] Refaster rule compiler
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven parent POM 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building @BugPattern annotation 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_annotation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ error_prone_annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ error_prone_annotation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ error_prone_annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ error_prone_annotation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ error_prone_annotation ---
+[INFO] Surefire report directory: /root/workspace/google/error-prone/211897436/annotation/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 2.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 60.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 600.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.google.errorprone.BugPatternValidatorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building error-prone annotations 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ error_prone_annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ error_prone_annotations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ error_prone_annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/google/error-prone/211897436/annotations/src/test/java
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ error_prone_annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ error_prone_annotations ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building error-prone check api 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_check_api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ error_prone_check_api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ error_prone_check_api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 135 source files to /root/workspace/google/error-prone/211897436/check_api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ error_prone_check_api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ error_prone_check_api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ error_prone_check_api ---
+[INFO] Surefire report directory: /root/workspace/google/error-prone/211897436/check_api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.google.errorprone.apply.SourceFileTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec
+Running com.google.errorprone.apply.ImportStatementsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 sec
+Running com.google.errorprone.dataflow.LocalStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running com.google.errorprone.dataflow.nullnesspropagation.NullnessTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.google.errorprone.dataflow.nullnesspropagation.NonNullAssumptionsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec
+Running com.google.errorprone.fixes.BranchedSuggestedFixesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running com.google.errorprone.fixes.AppliedFixTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Running com.google.errorprone.fixes.ReplacementsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running com.google.errorprone.matchers.DescriptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running com.google.errorprone.matchers.StringLiteralTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running com.google.errorprone.ErrorProneOptionsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+
+Results :
+
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building error-prone test helpers 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_test_helpers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ error_prone_test_helpers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ error_prone_test_helpers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ error_prone_test_helpers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ error_prone_test_helpers ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ error_prone_test_helpers ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 122.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 46.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1673.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.google.errorprone.BugCheckerRefactoringTestHelperTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.035 sec - in com.google.errorprone.BugCheckerRefactoringTestHelperTest
+Running com.google.errorprone.CompilationTestHelperTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.117 sec - in com.google.errorprone.CompilationTestHelperTest
+
+Results :
+
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building error-prone library 2.0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ error_prone_core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ error_prone_core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ error_prone_core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 357 source files to /root/workspace/google/error-prone/211897436/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ error_prone_core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 409 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ error_prone_core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ error_prone_core ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.google.errorprone.refaster.UClassTypeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.613 sec - in com.google.errorprone.refaster.UClassTypeTest
+Running com.google.errorprone.refaster.UWildcardTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.google.errorprone.refaster.UWildcardTypeTest
+Running com.google.errorprone.refaster.ChoiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.google.errorprone.refaster.ChoiceTest
+Running com.google.errorprone.refaster.UBreakTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.google.errorprone.refaster.UBreakTest
+Running com.google.errorprone.refaster.ULocalVarIdentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in com.google.errorprone.refaster.ULocalVarIdentTest
+Running com.google.errorprone.refaster.UBinaryTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec - in com.google.errorprone.refaster.UBinaryTest
+Running com.google.errorprone.refaster.UArrayAccessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 sec - in com.google.errorprone.refaster.UArrayAccessTest
+Running com.google.errorprone.refaster.UFreeIdentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.google.errorprone.refaster.UFreeIdentTest
+Running com.google.errorprone.refaster.UTypeVarTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.google.errorprone.refaster.UTypeVarTest
+Running com.google.errorprone.refaster.UUnaryTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in com.google.errorprone.refaster.UUnaryTest
+Running com.google.errorprone.refaster.UUnionTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.google.errorprone.refaster.UUnionTypeTest
+Running com.google.errorprone.refaster.UForAllTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.google.errorprone.refaster.UForAllTest
+Running com.google.errorprone.refaster.TemplateIntegrationTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.274 sec - in com.google.errorprone.refaster.TemplateIntegrationTest
+Running com.google.errorprone.refaster.RefasterRuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.errorprone.refaster.RefasterRuleTest
+Running com.google.errorprone.refaster.ULabeledStatementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.errorprone.refaster.ULabeledStatementTest
+Running com.google.errorprone.refaster.UPrimitiveTypeTreeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in com.google.errorprone.refaster.UPrimitiveTypeTreeTest
+Running com.google.errorprone.refaster.UExpressionStatementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.google.errorprone.refaster.UExpressionStatementTest
+Running com.google.errorprone.refaster.UEnhancedForLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.google.errorprone.refaster.UEnhancedForLoopTest
+Running com.google.errorprone.refaster.ULiteralTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.google.errorprone.refaster.ULiteralTest
+Running com.google.errorprone.refaster.UNewClassTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.google.errorprone.refaster.UNewClassTest
+Running com.google.errorprone.refaster.UMethodTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.errorprone.refaster.UMethodTypeTest
+Running com.google.errorprone.refaster.UTypeVarIdentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in com.google.errorprone.refaster.UTypeVarIdentTest
+Running com.google.errorprone.refaster.UVariableDeclTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.errorprone.refaster.UVariableDeclTest
+Running com.google.errorprone.refaster.UnificationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.947 sec - in com.google.errorprone.refaster.UnificationTest
+Running com.google.errorprone.refaster.UTypeCastTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.google.errorprone.refaster.UTypeCastTest
+Running com.google.errorprone.refaster.UTypeParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.google.errorprone.refaster.UTypeParameterTest
+Running com.google.errorprone.refaster.UClassIdentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec - in com.google.errorprone.refaster.UClassIdentTest
+Running com.google.errorprone.refaster.DescriptionBasedDiffTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.531 sec - in com.google.errorprone.refaster.DescriptionBasedDiffTest
+Running com.google.errorprone.refaster.URepeatedTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.errorprone.refaster.URepeatedTest
+Running com.google.errorprone.refaster.UMemberSelectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.google.errorprone.refaster.UMemberSelectTest
+Running com.google.errorprone.refaster.UArrayTypeTreeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.errorprone.refaster.UArrayTypeTreeTest
+Running com.google.errorprone.refaster.UPrimitiveTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.errorprone.refaster.UPrimitiveTypeTest
+Running com.google.errorprone.refaster.BindingsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.google.errorprone.refaster.BindingsTest
+Running com.google.errorprone.refaster.TemplatingTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.999 sec - in com.google.errorprone.refaster.TemplatingTest
+Running com.google.errorprone.refaster.USkipTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.google.errorprone.refaster.USkipTest
+Running com.google.errorprone.refaster.UForLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.errorprone.refaster.UForLoopTest
+Running com.google.errorprone.refaster.UIfTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.google.errorprone.refaster.UIfTest
+Running com.google.errorprone.refaster.UAssignTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.errorprone.refaster.UAssignTest
+Running com.google.errorprone.refaster.UAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.google.errorprone.refaster.UAnnotationTest
+Running com.google.errorprone.refaster.UWildcardTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.google.errorprone.refaster.UWildcardTest
+Running com.google.errorprone.refaster.UMethodInvocationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.google.errorprone.refaster.UMethodInvocationTest
+Running com.google.errorprone.refaster.UReturnTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.errorprone.refaster.UReturnTest
+Running com.google.errorprone.refaster.UWhileLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.google.errorprone.refaster.UWhileLoopTest
+Running com.google.errorprone.refaster.UAssignOpTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.errorprone.refaster.UAssignOpTest
+Running com.google.errorprone.refaster.UContinueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.errorprone.refaster.UContinueTest
+Running com.google.errorprone.refaster.UDoWhileLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.google.errorprone.refaster.UDoWhileLoopTest
+Running com.google.errorprone.refaster.UTemplaterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.google.errorprone.refaster.UTemplaterTest
+Running com.google.errorprone.refaster.UStaticIdentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.google.errorprone.refaster.UStaticIdentTest
+Running com.google.errorprone.refaster.UIntersectionTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.errorprone.refaster.UIntersectionTypeTest
+Running com.google.errorprone.refaster.UThrowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.google.errorprone.refaster.UThrowTest
+Running com.google.errorprone.refaster.UArrayTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.errorprone.refaster.UArrayTypeTest
+Running com.google.errorprone.refaster.UInstanceOfTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.google.errorprone.refaster.UInstanceOfTest
+Running com.google.errorprone.refaster.UConditionalTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.google.errorprone.refaster.UConditionalTest
+Running com.google.errorprone.refaster.UParensTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.google.errorprone.refaster.UParensTest
+Running com.google.errorprone.refaster.UBlockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.errorprone.refaster.UBlockTest
+Running com.google.errorprone.refaster.UTypeApplyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.errorprone.refaster.UTypeApplyTest
+Running com.google.errorprone.refaster.USynchronizedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.google.errorprone.refaster.USynchronizedTest
+Running com.google.errorprone.util.ReachabilityTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.307 sec - in com.google.errorprone.util.ReachabilityTest
+Running com.google.errorprone.util.FindIdentifiersTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.718 sec - in com.google.errorprone.util.FindIdentifiersTest
+Running com.google.errorprone.util.ASTHelpersTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.526 sec - in com.google.errorprone.util.ASTHelpersTest
+Running com.google.errorprone.bugpatterns.TypeParameterShadowingTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.611 sec - in com.google.errorprone.bugpatterns.TypeParameterShadowingTest
+Running com.google.errorprone.bugpatterns.AsyncFunctionReturnsNullTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 sec - in com.google.errorprone.bugpatterns.AsyncFunctionReturnsNullTest
+Running com.google.errorprone.bugpatterns.SimpleDateFormatConstantTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 sec - in com.google.errorprone.bugpatterns.SimpleDateFormatConstantTest
+Running com.google.errorprone.bugpatterns.NonCanonicalStaticMemberImportTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec - in com.google.errorprone.bugpatterns.NonCanonicalStaticMemberImportTest
+Running com.google.errorprone.bugpatterns.InvalidPatternSyntaxTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec - in com.google.errorprone.bugpatterns.InvalidPatternSyntaxTest
+Running com.google.errorprone.bugpatterns.SelfEqualsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.58 sec - in com.google.errorprone.bugpatterns.SelfEqualsTest
+Running com.google.errorprone.bugpatterns.MissingFailTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.276 sec - in com.google.errorprone.bugpatterns.MissingFailTest
+Running com.google.errorprone.bugpatterns.PrimitiveArrayPassedToVarargsMethodTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 sec - in com.google.errorprone.bugpatterns.PrimitiveArrayPassedToVarargsMethodTest
+Running com.google.errorprone.bugpatterns.ThrowNullTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in com.google.errorprone.bugpatterns.ThrowNullTest
+Running com.google.errorprone.bugpatterns.TruthSelfEqualsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.164 sec - in com.google.errorprone.bugpatterns.TruthSelfEqualsTest
+Running com.google.errorprone.bugpatterns.NullableConstructorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.714 sec - in com.google.errorprone.bugpatterns.NullableConstructorTest
+Running com.google.errorprone.bugpatterns.EmptyIfStatementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 sec - in com.google.errorprone.bugpatterns.EmptyIfStatementTest
+Running com.google.errorprone.bugpatterns.threadsafety.GuardedByLockMethodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in com.google.errorprone.bugpatterns.threadsafety.GuardedByLockMethodTest
+Running com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest
+Tests run: 62, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 13.09 sec - in com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.ImmutableAnnotationCheckerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.059 sec - in com.google.errorprone.bugpatterns.threadsafety.ImmutableAnnotationCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLockingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.965 sec - in com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLockingTest
+Running com.google.errorprone.bugpatterns.threadsafety.LockMethodCheckerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.781 sec - in com.google.errorprone.bugpatterns.threadsafety.LockMethodCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest
+Tests run: 70, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 13.555 sec - in com.google.errorprone.bugpatterns.threadsafety.ImmutableCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.StaticGuardedByInstanceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.946 sec - in com.google.errorprone.bugpatterns.threadsafety.StaticGuardedByInstanceTest
+Running com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.646 sec - in com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest
+Running com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.035 sec - in com.google.errorprone.bugpatterns.threadsafety.ImmutableEnumCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.SynchronizeOnNonFinalFieldTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 sec - in com.google.errorprone.bugpatterns.threadsafety.SynchronizeOnNonFinalFieldTest
+Running com.google.errorprone.bugpatterns.threadsafety.UnlockMethodCheckerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.536 sec - in com.google.errorprone.bugpatterns.threadsafety.UnlockMethodCheckerTest
+Running com.google.errorprone.bugpatterns.threadsafety.HeldLockAnalyzerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.587 sec - in com.google.errorprone.bugpatterns.threadsafety.HeldLockAnalyzerTest
+Running com.google.errorprone.bugpatterns.threadsafety.GuardedByBinderTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 4.071 sec - in com.google.errorprone.bugpatterns.threadsafety.GuardedByBinderTest
+Running com.google.errorprone.bugpatterns.RequiredModifiersCheckerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.322 sec - in com.google.errorprone.bugpatterns.RequiredModifiersCheckerTest
+Running com.google.errorprone.bugpatterns.ClassNewInstanceTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.543 sec - in com.google.errorprone.bugpatterns.ClassNewInstanceTest
+Running com.google.errorprone.bugpatterns.PreconditionsCheckNotNullTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.072 sec - in com.google.errorprone.bugpatterns.PreconditionsCheckNotNullTest
+Running com.google.errorprone.bugpatterns.nullness.FieldMissingNullableTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.846 sec - in com.google.errorprone.bugpatterns.nullness.FieldMissingNullableTest
+Running com.google.errorprone.bugpatterns.nullness.ParameterNotNullableTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.261 sec - in com.google.errorprone.bugpatterns.nullness.ParameterNotNullableTest
+Running com.google.errorprone.bugpatterns.nullness.ReturnMissingNullableTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.038 sec - in com.google.errorprone.bugpatterns.nullness.ReturnMissingNullableTest
+Running com.google.errorprone.bugpatterns.ComparisonOutOfRangeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 sec - in com.google.errorprone.bugpatterns.ComparisonOutOfRangeTest
+Running com.google.errorprone.bugpatterns.inject.AssistedInjectAndInjectOnSameConstructorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in com.google.errorprone.bugpatterns.inject.AssistedInjectAndInjectOnSameConstructorTest
+Running com.google.errorprone.bugpatterns.inject.InjectOnConstructorOfAbstractClassTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 sec - in com.google.errorprone.bugpatterns.inject.InjectOnConstructorOfAbstractClassTest
+Running com.google.errorprone.bugpatterns.inject.MoreThanOneQualifierTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.784 sec - in com.google.errorprone.bugpatterns.inject.MoreThanOneQualifierTest
+Running com.google.errorprone.bugpatterns.inject.JavaxInjectOnFinalFieldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in com.google.errorprone.bugpatterns.inject.JavaxInjectOnFinalFieldTest
+Running com.google.errorprone.bugpatterns.inject.ScopeAnnotationOnInterfaceOrAbstractClassTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in com.google.errorprone.bugpatterns.inject.ScopeAnnotationOnInterfaceOrAbstractClassTest
+Running com.google.errorprone.bugpatterns.inject.QualifierOnMethodWithoutProvidesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.448 sec - in com.google.errorprone.bugpatterns.inject.QualifierOnMethodWithoutProvidesTest
+Running com.google.errorprone.bugpatterns.inject.guice.ProvidesMethodOutsideOfModuleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec - in com.google.errorprone.bugpatterns.inject.guice.ProvidesMethodOutsideOfModuleTest
+Running com.google.errorprone.bugpatterns.inject.guice.AssistedParametersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 sec - in com.google.errorprone.bugpatterns.inject.guice.AssistedParametersTest
+Running com.google.errorprone.bugpatterns.inject.guice.AssistedInjectScopingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.741 sec - in com.google.errorprone.bugpatterns.inject.guice.AssistedInjectScopingTest
+Running com.google.errorprone.bugpatterns.inject.guice.BindingToUnqualifiedCommonTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.519 sec - in com.google.errorprone.bugpatterns.inject.guice.BindingToUnqualifiedCommonTypeTest
+Running com.google.errorprone.bugpatterns.inject.guice.InjectOnFinalFieldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 sec - in com.google.errorprone.bugpatterns.inject.guice.InjectOnFinalFieldTest
+Running com.google.errorprone.bugpatterns.inject.guice.OverridesGuiceInjectableMethodTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.56 sec - in com.google.errorprone.bugpatterns.inject.guice.OverridesGuiceInjectableMethodTest
+Running com.google.errorprone.bugpatterns.inject.guice.OverridesJavaxInjectableMethodTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec - in com.google.errorprone.bugpatterns.inject.guice.OverridesJavaxInjectableMethodTest
+Running com.google.errorprone.bugpatterns.inject.InjectedConstructorAnnotationsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec - in com.google.errorprone.bugpatterns.inject.InjectedConstructorAnnotationsTest
+Running com.google.errorprone.bugpatterns.inject.JavaxInjectOnAbstractMethodTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 sec - in com.google.errorprone.bugpatterns.inject.JavaxInjectOnAbstractMethodTest
+Running com.google.errorprone.bugpatterns.inject.MoreThanOneInjectableConstructorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec - in com.google.errorprone.bugpatterns.inject.MoreThanOneInjectableConstructorTest
+Running com.google.errorprone.bugpatterns.inject.OverlappingQualifierAndScopeAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in com.google.errorprone.bugpatterns.inject.OverlappingQualifierAndScopeAnnotationTest
+Running com.google.errorprone.bugpatterns.inject.dagger.PrivateConstructorForNoninstantiableModuleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.803 sec - in com.google.errorprone.bugpatterns.inject.dagger.PrivateConstructorForNoninstantiableModuleTest
+Running com.google.errorprone.bugpatterns.inject.dagger.AndroidInjectionBeforeSuperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in com.google.errorprone.bugpatterns.inject.dagger.AndroidInjectionBeforeSuperTest
+Running com.google.errorprone.bugpatterns.inject.dagger.UseBindsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.388 sec - in com.google.errorprone.bugpatterns.inject.dagger.UseBindsTest
+Running com.google.errorprone.bugpatterns.inject.dagger.EmptySetMultibindingContributionsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.299 sec - in com.google.errorprone.bugpatterns.inject.dagger.EmptySetMultibindingContributionsTest
+Running com.google.errorprone.bugpatterns.inject.dagger.ProvidesNullTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.012 sec - in com.google.errorprone.bugpatterns.inject.dagger.ProvidesNullTest
+Running com.google.errorprone.bugpatterns.inject.ScopeOrQualifierAnnotationRetentionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.907 sec - in com.google.errorprone.bugpatterns.inject.ScopeOrQualifierAnnotationRetentionTest
+Running com.google.errorprone.bugpatterns.inject.AutoFactoryAtInjectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 sec - in com.google.errorprone.bugpatterns.inject.AutoFactoryAtInjectTest
+Running com.google.errorprone.bugpatterns.inject.MoreThanOneScopeAnnotationOnClassTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.61 sec - in com.google.errorprone.bugpatterns.inject.MoreThanOneScopeAnnotationOnClassTest
+Running com.google.errorprone.bugpatterns.inject.InvalidTargetingOnScopingAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 sec - in com.google.errorprone.bugpatterns.inject.InvalidTargetingOnScopingAnnotationTest
+Running com.google.errorprone.bugpatterns.inject.QualifierWithTypeUseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in com.google.errorprone.bugpatterns.inject.QualifierWithTypeUseTest
+Running com.google.errorprone.bugpatterns.inject.AssistedInjectAndInjectOnConstructorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 sec - in com.google.errorprone.bugpatterns.inject.AssistedInjectAndInjectOnConstructorsTest
+Running com.google.errorprone.bugpatterns.RedundantThrowsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 sec - in com.google.errorprone.bugpatterns.RedundantThrowsTest
+Running com.google.errorprone.bugpatterns.ModifyingCollectionWithItselfTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 sec - in com.google.errorprone.bugpatterns.ModifyingCollectionWithItselfTest
+Running com.google.errorprone.bugpatterns.ShortCircuitBooleanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in com.google.errorprone.bugpatterns.ShortCircuitBooleanTest
+Running com.google.errorprone.bugpatterns.PreconditionsCheckNotNullPrimitiveTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 sec - in com.google.errorprone.bugpatterns.PreconditionsCheckNotNullPrimitiveTest
+Running com.google.errorprone.bugpatterns.GetClassOnAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 sec - in com.google.errorprone.bugpatterns.GetClassOnAnnotationTest
+Running com.google.errorprone.bugpatterns.ArrayEqualsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 sec - in com.google.errorprone.bugpatterns.ArrayEqualsTest
+Running com.google.errorprone.bugpatterns.LiteralClassNameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in com.google.errorprone.bugpatterns.LiteralClassNameTest
+Running com.google.errorprone.bugpatterns.ChainingConstructorIgnoresParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.679 sec - in com.google.errorprone.bugpatterns.ChainingConstructorIgnoresParameterTest
+Running com.google.errorprone.bugpatterns.VarCheckerTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.59 sec - in com.google.errorprone.bugpatterns.VarCheckerTest
+Running com.google.errorprone.bugpatterns.UnnecessaryTypeArgumentTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.071 sec - in com.google.errorprone.bugpatterns.UnnecessaryTypeArgumentTest
+Running com.google.errorprone.bugpatterns.ArrayToStringTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.01 sec - in com.google.errorprone.bugpatterns.ArrayToStringTest
+Running com.google.errorprone.bugpatterns.FallThroughTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.03 sec - in com.google.errorprone.bugpatterns.FallThroughTest
+Running com.google.errorprone.bugpatterns.EqualsIncompatibleTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.968 sec - in com.google.errorprone.bugpatterns.EqualsIncompatibleTypeTest
+Running com.google.errorprone.bugpatterns.BadShiftAmountTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec - in com.google.errorprone.bugpatterns.BadShiftAmountTest
+Running com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.226 sec - in com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest
+Running com.google.errorprone.bugpatterns.NonCanonicalStaticImportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 sec - in com.google.errorprone.bugpatterns.NonCanonicalStaticImportTest
+Running com.google.errorprone.bugpatterns.JUnitAmbiguousTestClassTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in com.google.errorprone.bugpatterns.JUnitAmbiguousTestClassTest
+Running com.google.errorprone.bugpatterns.JUnit4TestNotRunTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.549 sec - in com.google.errorprone.bugpatterns.JUnit4TestNotRunTest
+Running com.google.errorprone.bugpatterns.IterableAndIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 sec - in com.google.errorprone.bugpatterns.IterableAndIteratorTest
+Running com.google.errorprone.bugpatterns.MockitoCastTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.187 sec - in com.google.errorprone.bugpatterns.MockitoCastTest
+Running com.google.errorprone.bugpatterns.MissingOverrideTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.76 sec - in com.google.errorprone.bugpatterns.MissingOverrideTest
+Running com.google.errorprone.bugpatterns.InputStreamSlowMultibyteReadTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.914 sec - in com.google.errorprone.bugpatterns.InputStreamSlowMultibyteReadTest
+Running com.google.errorprone.bugpatterns.formatstring.FormatStringAnnotationCheckerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.537 sec - in com.google.errorprone.bugpatterns.formatstring.FormatStringAnnotationCheckerTest
+Running com.google.errorprone.bugpatterns.formatstring.FormatStringTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.919 sec - in com.google.errorprone.bugpatterns.formatstring.FormatStringTest
+Running com.google.errorprone.bugpatterns.MethodCanBeStaticTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 sec - in com.google.errorprone.bugpatterns.MethodCanBeStaticTest
+Running com.google.errorprone.bugpatterns.PackageLocationTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.534 sec - in com.google.errorprone.bugpatterns.PackageLocationTest
+Running com.google.errorprone.bugpatterns.MultiVariableDeclarationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.604 sec - in com.google.errorprone.bugpatterns.MultiVariableDeclarationTest
+Running com.google.errorprone.bugpatterns.MissingDefaultTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.029 sec - in com.google.errorprone.bugpatterns.MissingDefaultTest
+Running com.google.errorprone.bugpatterns.LoopConditionCheckerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.406 sec - in com.google.errorprone.bugpatterns.LoopConditionCheckerTest
+Running com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 sec - in com.google.errorprone.bugpatterns.FutureReturnValueIgnoredTest
+Running com.google.errorprone.bugpatterns.NullableVoidTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.844 sec - in com.google.errorprone.bugpatterns.NullableVoidTest
+Running com.google.errorprone.bugpatterns.UnnecessaryStaticImportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.077 sec - in com.google.errorprone.bugpatterns.UnnecessaryStaticImportTest
+Running com.google.errorprone.bugpatterns.OverridesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.644 sec - in com.google.errorprone.bugpatterns.OverridesTest
+Running com.google.errorprone.bugpatterns.ThrowIfUncheckedKnownCheckedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 sec - in com.google.errorprone.bugpatterns.ThrowIfUncheckedKnownCheckedTest
+Running com.google.errorprone.bugpatterns.PreconditionsInvalidPlaceholderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.43 sec - in com.google.errorprone.bugpatterns.PreconditionsInvalidPlaceholderTest
+Running com.google.errorprone.bugpatterns.NonAtomicVolatileUpdateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.491 sec - in com.google.errorprone.bugpatterns.NonAtomicVolatileUpdateTest
+Running com.google.errorprone.bugpatterns.ReturnValueIgnoredTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.385 sec - in com.google.errorprone.bugpatterns.ReturnValueIgnoredTest
+Running com.google.errorprone.bugpatterns.ReferenceEqualityTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.124 sec - in com.google.errorprone.bugpatterns.ReferenceEqualityTest
+Running com.google.errorprone.bugpatterns.ClassCanBeStaticTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.705 sec - in com.google.errorprone.bugpatterns.ClassCanBeStaticTest
+Running com.google.errorprone.bugpatterns.LongLiteralLowerCaseSuffixTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.86 sec - in com.google.errorprone.bugpatterns.LongLiteralLowerCaseSuffixTest
+Running com.google.errorprone.bugpatterns.RandomModIntegerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec - in com.google.errorprone.bugpatterns.RandomModIntegerTest
+Running com.google.errorprone.bugpatterns.ConstantFieldTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.864 sec - in com.google.errorprone.bugpatterns.ConstantFieldTest
+Running com.google.errorprone.bugpatterns.SelfAssignmentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.135 sec - in com.google.errorprone.bugpatterns.SelfAssignmentTest
+Running com.google.errorprone.bugpatterns.IndexOfCharTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in com.google.errorprone.bugpatterns.IndexOfCharTest
+Running com.google.errorprone.bugpatterns.WildcardImportTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.684 sec - in com.google.errorprone.bugpatterns.WildcardImportTest
+Running com.google.errorprone.bugpatterns.NullablePrimitiveTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 sec - in com.google.errorprone.bugpatterns.NullablePrimitiveTest
+Running com.google.errorprone.bugpatterns.MustBeClosedCheckerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.781 sec - in com.google.errorprone.bugpatterns.MustBeClosedCheckerTest
+Running com.google.errorprone.bugpatterns.LiteByteStringUtf8Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 sec - in com.google.errorprone.bugpatterns.LiteByteStringUtf8Test
+Running com.google.errorprone.bugpatterns.ProtoFieldNullComparisonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.352 sec - in com.google.errorprone.bugpatterns.ProtoFieldNullComparisonTest
+Running com.google.errorprone.bugpatterns.FloatingPointLiteralPrecisionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 sec - in com.google.errorprone.bugpatterns.FloatingPointLiteralPrecisionTest
+Running com.google.errorprone.bugpatterns.BadAnnotationImplementationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.904 sec - in com.google.errorprone.bugpatterns.BadAnnotationImplementationTest
+Running com.google.errorprone.bugpatterns.DivZeroTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec - in com.google.errorprone.bugpatterns.DivZeroTest
+Running com.google.errorprone.bugpatterns.OperatorPrecedenceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec - in com.google.errorprone.bugpatterns.OperatorPrecedenceTest
+Running com.google.errorprone.bugpatterns.ImmutableModificationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.748 sec - in com.google.errorprone.bugpatterns.ImmutableModificationTest
+Running com.google.errorprone.bugpatterns.JUnit4TearDownNotRunTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.838 sec - in com.google.errorprone.bugpatterns.JUnit4TearDownNotRunTest
+Running com.google.errorprone.bugpatterns.EqualsNaNTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.505 sec - in com.google.errorprone.bugpatterns.EqualsNaNTest
+Running com.google.errorprone.bugpatterns.ArgumentParameterSimilarityMetricsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.google.errorprone.bugpatterns.ArgumentParameterSimilarityMetricsTest
+Running com.google.errorprone.bugpatterns.ArgumentParameterSwapTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 6.256 sec - in com.google.errorprone.bugpatterns.ArgumentParameterSwapTest
+Running com.google.errorprone.bugpatterns.JUnit4SetUpNotRunTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.226 sec - in com.google.errorprone.bugpatterns.JUnit4SetUpNotRunTest
+Running com.google.errorprone.bugpatterns.FuturesGetCheckedIllegalExceptionTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.815 sec - in com.google.errorprone.bugpatterns.FuturesGetCheckedIllegalExceptionTypeTest
+Running com.google.errorprone.bugpatterns.InfiniteRecursionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 sec - in com.google.errorprone.bugpatterns.InfiniteRecursionTest
+Running com.google.errorprone.bugpatterns.HashtableContainsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2 sec - in com.google.errorprone.bugpatterns.HashtableContainsTest
+Running com.google.errorprone.bugpatterns.ForOverrideCheckerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.763 sec - in com.google.errorprone.bugpatterns.ForOverrideCheckerTest
+Running com.google.errorprone.bugpatterns.TypeParameterUnusedInFormalsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.809 sec - in com.google.errorprone.bugpatterns.TypeParameterUnusedInFormalsTest
+Running com.google.errorprone.bugpatterns.StaticQualifiedUsingExpressionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.884 sec - in com.google.errorprone.bugpatterns.StaticQualifiedUsingExpressionTest
+Running com.google.errorprone.bugpatterns.ConstantOverflowTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.34 sec - in com.google.errorprone.bugpatterns.ConstantOverflowTest
+Running com.google.errorprone.bugpatterns.ClassNameTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.688 sec - in com.google.errorprone.bugpatterns.ClassNameTest
+Running com.google.errorprone.bugpatterns.DefaultCharsetTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.86 sec - in com.google.errorprone.bugpatterns.DefaultCharsetTest
+Running com.google.errorprone.bugpatterns.NonOverridingEqualsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.427 sec - in com.google.errorprone.bugpatterns.NonOverridingEqualsTest
+Running com.google.errorprone.bugpatterns.TruthConstantAssertsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 sec - in com.google.errorprone.bugpatterns.TruthConstantAssertsTest
+Running com.google.errorprone.bugpatterns.ArrayHashCodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.518 sec - in com.google.errorprone.bugpatterns.ArrayHashCodeTest
+Running com.google.errorprone.bugpatterns.RestrictedApiCheckerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.025 sec - in com.google.errorprone.bugpatterns.RestrictedApiCheckerTest
+Running com.google.errorprone.bugpatterns.TryFailThrowableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 sec - in com.google.errorprone.bugpatterns.TryFailThrowableTest
+Running com.google.errorprone.bugpatterns.WrongParameterPackageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.085 sec - in com.google.errorprone.bugpatterns.WrongParameterPackageTest
+Running com.google.errorprone.bugpatterns.FinallyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.268 sec - in com.google.errorprone.bugpatterns.FinallyTest
+Running com.google.errorprone.bugpatterns.BoxedPrimitiveConstructorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.444 sec - in com.google.errorprone.bugpatterns.BoxedPrimitiveConstructorTest
+Running com.google.errorprone.bugpatterns.ElementsCountedInLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 sec - in com.google.errorprone.bugpatterns.ElementsCountedInLoopTest
+Running com.google.errorprone.bugpatterns.MutableConstantFieldTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.576 sec - in com.google.errorprone.bugpatterns.MutableConstantFieldTest
+Running com.google.errorprone.bugpatterns.DepAnnTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.255 sec - in com.google.errorprone.bugpatterns.DepAnnTest
+Running com.google.errorprone.bugpatterns.NoAllocationCheckerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.818 sec - in com.google.errorprone.bugpatterns.NoAllocationCheckerTest
+Running com.google.errorprone.bugpatterns.RemoveUnusedImportsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.569 sec - in com.google.errorprone.bugpatterns.RemoveUnusedImportsTest
+Running com.google.errorprone.bugpatterns.TestExceptionCheckerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.889 sec - in com.google.errorprone.bugpatterns.TestExceptionCheckerTest
+Running com.google.errorprone.bugpatterns.URLEqualsHashCodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 sec - in com.google.errorprone.bugpatterns.URLEqualsHashCodeTest
+Running com.google.errorprone.bugpatterns.BadComparableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 sec - in com.google.errorprone.bugpatterns.BadComparableTest
+Running com.google.errorprone.bugpatterns.SizeGreaterThanOrEqualsZeroTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.796 sec - in com.google.errorprone.bugpatterns.SizeGreaterThanOrEqualsZeroTest
+Running com.google.errorprone.bugpatterns.ProtoStringFieldReferenceEqualityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in com.google.errorprone.bugpatterns.ProtoStringFieldReferenceEqualityTest
+Running com.google.errorprone.bugpatterns.JUnit3FloatingPointComparisonWithoutDeltaTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.256 sec - in com.google.errorprone.bugpatterns.JUnit3FloatingPointComparisonWithoutDeltaTest
+Running com.google.errorprone.bugpatterns.EqualsHashCodeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.481 sec - in com.google.errorprone.bugpatterns.EqualsHashCodeTest
+Running com.google.errorprone.bugpatterns.CheckReturnValueTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.825 sec - in com.google.errorprone.bugpatterns.CheckReturnValueTest
+Running com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.398 sec - in com.google.errorprone.bugpatterns.AmbiguousMethodReferenceTest
+Running com.google.errorprone.bugpatterns.ComparisonContractViolatedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 sec - in com.google.errorprone.bugpatterns.ComparisonContractViolatedTest
+Running com.google.errorprone.bugpatterns.MissingCasesInEnumSwitchTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.261 sec - in com.google.errorprone.bugpatterns.MissingCasesInEnumSwitchTest
+Running com.google.errorprone.bugpatterns.StringEqualityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec - in com.google.errorprone.bugpatterns.StringEqualityTest
+Running com.google.errorprone.bugpatterns.OptionalEqualityTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.14 sec - in com.google.errorprone.bugpatterns.OptionalEqualityTest
+Running com.google.errorprone.bugpatterns.collectionincompatibletype.CollectionIncompatibleTypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.318 sec - in com.google.errorprone.bugpatterns.collectionincompatibletype.CollectionIncompatibleTypeTest
+Running com.google.errorprone.bugpatterns.collectionincompatibletype.IncompatibleArgumentTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.159 sec - in com.google.errorprone.bugpatterns.collectionincompatibletype.IncompatibleArgumentTypeTest
+Running com.google.errorprone.bugpatterns.collectionincompatibletype.CompatibleWithMisuseTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.331 sec - in com.google.errorprone.bugpatterns.collectionincompatibletype.CompatibleWithMisuseTest
+Running com.google.errorprone.bugpatterns.JUnitAssertSameCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 sec - in com.google.errorprone.bugpatterns.JUnitAssertSameCheckTest
+Running com.google.errorprone.bugpatterns.SuppressWarningsDeprecatedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in com.google.errorprone.bugpatterns.SuppressWarningsDeprecatedTest
+Running com.google.errorprone.bugpatterns.FunctionalInterfaceClashTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 sec - in com.google.errorprone.bugpatterns.FunctionalInterfaceClashTest
+Running com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.816 sec - in com.google.errorprone.bugpatterns.PrivateConstructorForUtilityClassTest
+Running com.google.errorprone.bugpatterns.CompileTimeConstantCheckerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.81 sec - in com.google.errorprone.bugpatterns.CompileTimeConstantCheckerTest
+Running com.google.errorprone.bugpatterns.BigDecimalLiteralDoubleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 sec - in com.google.errorprone.bugpatterns.BigDecimalLiteralDoubleTest
+Running com.google.errorprone.bugpatterns.MultipleTopLevelClassesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec - in com.google.errorprone.bugpatterns.MultipleTopLevelClassesTest
+Running com.google.errorprone.bugpatterns.NonRuntimeAnnotationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.521 sec - in com.google.errorprone.bugpatterns.NonRuntimeAnnotationTest
+Running com.google.errorprone.bugpatterns.SelfComparisonTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.562 sec - in com.google.errorprone.bugpatterns.SelfComparisonTest
+Running com.google.errorprone.bugpatterns.ExpectedExceptionCheckerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.435 sec - in com.google.errorprone.bugpatterns.ExpectedExceptionCheckerTest
+Running com.google.errorprone.bugpatterns.ProtoFieldPreconditionsCheckNotNullTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.355 sec - in com.google.errorprone.bugpatterns.ProtoFieldPreconditionsCheckNotNullTest
+Running com.google.errorprone.bugpatterns.CannotMockFinalClassTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 sec - in com.google.errorprone.bugpatterns.CannotMockFinalClassTest
+Running com.google.errorprone.bugpatterns.UnusedCollectionModifiedInPlaceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 sec - in com.google.errorprone.bugpatterns.UnusedCollectionModifiedInPlaceTest
+Running com.google.errorprone.bugpatterns.StreamToStringTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in com.google.errorprone.bugpatterns.StreamToStringTest
+Running com.google.errorprone.bugpatterns.NonFinalCompileTimeConstantTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.224 sec - in com.google.errorprone.bugpatterns.NonFinalCompileTimeConstantTest
+Running com.google.errorprone.bugpatterns.UnsynchronizedOverridesSynchronizedTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 sec - in com.google.errorprone.bugpatterns.UnsynchronizedOverridesSynchronizedTest
+Running com.google.errorprone.bugpatterns.GetClassOnClassTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.77 sec - in com.google.errorprone.bugpatterns.GetClassOnClassTest
+Running com.google.errorprone.bugpatterns.ProtocolBufferOrdinalTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 sec - in com.google.errorprone.bugpatterns.ProtocolBufferOrdinalTest
+Running com.google.errorprone.bugpatterns.IdentityBinaryExpressionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.989 sec - in com.google.errorprone.bugpatterns.IdentityBinaryExpressionTest
+Running com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 sec - in com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitchTest
+Running com.google.errorprone.bugpatterns.StringBuilderInitWithCharTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec - in com.google.errorprone.bugpatterns.StringBuilderInitWithCharTest
+Running com.google.errorprone.bugpatterns.GetClassOnEnumTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 sec - in com.google.errorprone.bugpatterns.GetClassOnEnumTest
+Running com.google.errorprone.bugpatterns.WaitNotInLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.597 sec - in com.google.errorprone.bugpatterns.WaitNotInLoopTest
+Running com.google.errorprone.bugpatterns.MisusedWeekYearTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in com.google.errorprone.bugpatterns.MisusedWeekYearTest
+Running com.google.errorprone.bugpatterns.IncompatibleModifiersCheckerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.583 sec - in com.google.errorprone.bugpatterns.IncompatibleModifiersCheckerTest
+Running com.google.errorprone.bugpatterns.DoNotCallCheckerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.937 sec - in com.google.errorprone.bugpatterns.DoNotCallCheckerTest
+Running com.google.errorprone.bugpatterns.EmptyTopLevelDeclarationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec - in com.google.errorprone.bugpatterns.EmptyTopLevelDeclarationTest
+Running com.google.errorprone.bugpatterns.UnusedAnonymousClassTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.636 sec - in com.google.errorprone.bugpatterns.UnusedAnonymousClassTest
+Running com.google.errorprone.bugpatterns.FunctionalInterfaceMethodChangedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 sec - in com.google.errorprone.bugpatterns.FunctionalInterfaceMethodChangedTest
+Running com.google.errorprone.bugpatterns.DeadExceptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 sec - in com.google.errorprone.bugpatterns.DeadExceptionTest
+Running com.google.errorprone.bugpatterns.FilesLinesLeakTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.938 sec - in com.google.errorprone.bugpatterns.FilesLinesLeakTest
+Running com.google.errorprone.bugpatterns.AssertFalseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in com.google.errorprone.bugpatterns.AssertFalseTest
+Running com.google.errorprone.bugpatterns.JMockTestWithoutRunWithOrRuleAnnotationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.641 sec - in com.google.errorprone.bugpatterns.JMockTestWithoutRunWithOrRuleAnnotationTest
+Running com.google.errorprone.bugpatterns.JUnit3TestNotRunTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.747 sec - in com.google.errorprone.bugpatterns.JUnit3TestNotRunTest
+Running com.google.errorprone.bugpatterns.NumericEqualityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 sec - in com.google.errorprone.bugpatterns.NumericEqualityTest
+Running com.google.errorprone.bugpatterns.InsecureCipherModeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.086 sec - in com.google.errorprone.bugpatterns.InsecureCipherModeTest
+Running com.google.errorprone.bugpatterns.ArgumentParameterMismatchTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 sec - in com.google.errorprone.bugpatterns.ArgumentParameterMismatchTest
+Running com.google.errorprone.bugpatterns.MixedArrayDimensionsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 sec - in com.google.errorprone.bugpatterns.MixedArrayDimensionsTest
+Running com.google.errorprone.bugpatterns.ArraysAsListPrimitiveArrayTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in com.google.errorprone.bugpatterns.ArraysAsListPrimitiveArrayTest
+Running com.google.errorprone.bugpatterns.android.MislabeledAndroidStringTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.956 sec - in com.google.errorprone.bugpatterns.android.MislabeledAndroidStringTest
+Running com.google.errorprone.bugpatterns.android.FragmentNotInstantiableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in com.google.errorprone.bugpatterns.android.FragmentNotInstantiableTest
+Running com.google.errorprone.bugpatterns.android.HardCodedSdCardPathTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 sec - in com.google.errorprone.bugpatterns.android.HardCodedSdCardPathTest
+Running com.google.errorprone.bugpatterns.android.FragmentInjectionTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.61 sec - in com.google.errorprone.bugpatterns.android.FragmentInjectionTest
+Running com.google.errorprone.bugpatterns.android.RectIntersectReturnValueIgnoredTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec - in com.google.errorprone.bugpatterns.android.RectIntersectReturnValueIgnoredTest
+Running com.google.errorprone.bugpatterns.android.BundleDeserializationCastTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.599 sec - in com.google.errorprone.bugpatterns.android.BundleDeserializationCastTest
+Running com.google.errorprone.bugpatterns.android.StaticOrDefaultInterfaceMethodTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 sec - in com.google.errorprone.bugpatterns.android.StaticOrDefaultInterfaceMethodTest
+Running com.google.errorprone.bugpatterns.android.IsLoggableTagLengthTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.406 sec - in com.google.errorprone.bugpatterns.android.IsLoggableTagLengthTest
+Running com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.821 sec - in com.google.errorprone.bugpatterns.NarrowingCompoundAssignmentTest
+Running com.google.errorprone.bugpatterns.MockitoUsageTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.585 sec - in com.google.errorprone.bugpatterns.MockitoUsageTest
+Running com.google.errorprone.bugpatterns.InvalidTimeZoneIDTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 sec - in com.google.errorprone.bugpatterns.InvalidTimeZoneIDTest
+Running com.google.errorprone.bugpatterns.IsInstanceOfClassTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.967 sec - in com.google.errorprone.bugpatterns.IsInstanceOfClassTest
+Running com.google.errorprone.bugpatterns.TypeParameterQualifierTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 sec - in com.google.errorprone.bugpatterns.TypeParameterQualifierTest
+Running com.google.errorprone.ErrorProneJavacPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in com.google.errorprone.ErrorProneJavacPluginTest
+Running com.google.errorprone.ErrorProneJavaCompilerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.414 sec - in com.google.errorprone.ErrorProneJavaCompilerTest
+Running com.google.errorprone.fixes.SuggestedFixesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.781 sec - in com.google.errorprone.fixes.SuggestedFixesTest
+Running com.google.errorprone.CommandLineFlagTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.402 sec - in com.google.errorprone.CommandLineFlagTest
+Running com.google.errorprone.ErrorProneCompilerIntegrationTest
+Tests run: 23, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 4.758 sec <<< FAILURE! - in com.google.errorprone.ErrorProneCompilerIntegrationTest
+paramsFiles(com.google.errorprone.ErrorProneCompilerIntegrationTest)  Time elapsed: 0.026 sec  <<< ERROR!
+java.lang.IllegalArgumentException: invalid flag: @/tmp/junit1246381681956476213/tmp/params.txt
+	at com.google.errorprone.ErrorProneCompilerIntegrationTest.paramsFiles(ErrorProneCompilerIntegrationTest.java:669)
+
+Running com.google.errorprone.matchers.MethodReturnsNonNullStringTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 sec - in com.google.errorprone.matchers.MethodReturnsNonNullStringTest
+Running com.google.errorprone.matchers.NonNullLiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.727 sec - in com.google.errorprone.matchers.NonNullLiteralTest
+Running com.google.errorprone.matchers.NextStatementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 sec - in com.google.errorprone.matchers.NextStatementTest
+Running com.google.errorprone.matchers.EnclosingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.528 sec - in com.google.errorprone.matchers.EnclosingTest
+Running com.google.errorprone.matchers.MethodReturnsNonNullNextTokenTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 sec - in com.google.errorprone.matchers.MethodReturnsNonNullNextTokenTest
+Running com.google.errorprone.matchers.MethodHasParametersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 sec - in com.google.errorprone.matchers.MethodHasParametersTest
+Running com.google.errorprone.matchers.DescendantOfTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in com.google.errorprone.matchers.DescendantOfTest
+Running com.google.errorprone.matchers.DescendantOfTransitiveTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in com.google.errorprone.matchers.DescendantOfTransitiveTest
+Running com.google.errorprone.matchers.AnnotationDoesNotHaveArgumentTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.756 sec - in com.google.errorprone.matchers.AnnotationDoesNotHaveArgumentTest
+Running com.google.errorprone.matchers.HasIdentifierTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.162 sec - in com.google.errorprone.matchers.HasIdentifierTest
+Running com.google.errorprone.matchers.CompileTimeConstantExpressionMatcherTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.051 sec - in com.google.errorprone.matchers.CompileTimeConstantExpressionMatcherTest
+Running com.google.errorprone.matchers.ConstructorOfClassTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.969 sec - in com.google.errorprone.matchers.ConstructorOfClassTest
+Running com.google.errorprone.matchers.CompoundAssignmentTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 sec - in com.google.errorprone.matchers.CompoundAssignmentTest
+Running com.google.errorprone.matchers.AnnotationHasArgumentWithValueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.087 sec - in com.google.errorprone.matchers.AnnotationHasArgumentWithValueTest
+Running com.google.errorprone.matchers.MethodReturnsNonNullToStringTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in com.google.errorprone.matchers.MethodReturnsNonNullToStringTest
+Running com.google.errorprone.matchers.MethodReturnsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.439 sec - in com.google.errorprone.matchers.MethodReturnsTest
+Running com.google.errorprone.matchers.MatchersTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.097 sec - in com.google.errorprone.matchers.MatchersTest
+Running com.google.errorprone.matchers.AnnotationMatcherTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.159 sec - in com.google.errorprone.matchers.AnnotationMatcherTest
+Running com.google.errorprone.matchers.InstanceMethodTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.909 sec - in com.google.errorprone.matchers.InstanceMethodTest
+Running com.google.errorprone.matchers.MethodMatchersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 sec - in com.google.errorprone.matchers.MethodMatchersTest
+Running com.google.errorprone.SubContextTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.google.errorprone.SubContextTest
+Running com.google.errorprone.DiagnosticKindTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 sec - in com.google.errorprone.DiagnosticKindTest
+Running com.google.errorprone.scanner.ScannerSupplierTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.google.errorprone.scanner.ScannerSupplierTest
+
+Results :
+
+Tests in error: 
+  ErrorProneCompilerIntegrationTest.paramsFiles:669 » IllegalArgument invalid fl...
+
+Tests run: 1941, Failures: 0, Errors: 1, Skipped: 17
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Maven parent POM ................................... SUCCESS [  0.776 s]
+[INFO] @BugPattern annotation ............................. SUCCESS [  4.247 s]
+[INFO] error-prone annotations ............................ SUCCESS [  0.040 s]
+[INFO] error-prone check api .............................. SUCCESS [ 13.226 s]
+[INFO] error-prone test helpers ........................... SUCCESS [ 10.712 s]
+[INFO] error-prone library ................................ FAILURE [07:45 min]
+[INFO] JSR-269 annotation processor for @BugPattern annotation SKIPPED
+[INFO] Documention tool for generating Error Prone bugpattern documentation SKIPPED
+[INFO] Ant build support .................................. SKIPPED
+[INFO] Refaster rule compiler ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 08:15 min
+[INFO] Finished at: 2017-09-04T15:18:36+02:00
+[INFO] Final Memory: 32M/821M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project error_prone_core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/google/error-prone/211897436/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :error_prone_core

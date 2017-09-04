@@ -1,0 +1,40 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/f6a5928cf5f7...87670d7a1fb7",
+  "failingModule": "/root/workspace/google/error-prone/211897436/core",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.IllegalArgumentException",
+    "skipped"
+  ],
+  "totalNumberRunningTests": 2041,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.ErrorProneCompilerIntegrationTest",
+      "failingMethods": [
+        "com.google.errorprone.ErrorProneCompilerIntegrationTest#ignoreGeneratedSuperInvocations"
+      ],
+      "erroringMethods": [
+        "com.google.errorprone.ErrorProneCompilerIntegrationTest#paramsFiles"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "failureDetail": "invalid flag: @/tmp/junit1246381681956476213/tmp/params.txt",
+          "isError": true
+        },
+        {
+          "failureName": "skipped",
+          "failureDetail": "skipped",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 1
+    }
+  ]
+}
