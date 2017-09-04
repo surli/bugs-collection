@@ -58,6 +58,7 @@ import com.google.errorprone.bugpatterns.EqualsHashCode;
 import com.google.errorprone.bugpatterns.EqualsIncompatibleType;
 import com.google.errorprone.bugpatterns.EqualsNaN;
 import com.google.errorprone.bugpatterns.ExpectedExceptionChecker;
+import com.google.errorprone.bugpatterns.FallThrough;
 import com.google.errorprone.bugpatterns.FilesLinesLeak;
 import com.google.errorprone.bugpatterns.Finally;
 import com.google.errorprone.bugpatterns.ForOverrideChecker;
@@ -92,6 +93,7 @@ import com.google.errorprone.bugpatterns.LiteByteStringUtf8;
 import com.google.errorprone.bugpatterns.LongLiteralLowerCaseSuffix;
 import com.google.errorprone.bugpatterns.MethodCanBeStatic;
 import com.google.errorprone.bugpatterns.MissingCasesInEnumSwitch;
+import com.google.errorprone.bugpatterns.MissingDefault;
 import com.google.errorprone.bugpatterns.MissingFail;
 import com.google.errorprone.bugpatterns.MissingOverride;
 import com.google.errorprone.bugpatterns.MisusedWeekYear;
@@ -154,6 +156,7 @@ import com.google.errorprone.bugpatterns.TryFailThrowable;
 import com.google.errorprone.bugpatterns.TypeParameterQualifier;
 import com.google.errorprone.bugpatterns.TypeParameterUnusedInFormals;
 import com.google.errorprone.bugpatterns.URLEqualsHashCode;
+import com.google.errorprone.bugpatterns.UnnecessaryDefaultInEnumSwitch;
 import com.google.errorprone.bugpatterns.UnnecessaryStaticImport;
 import com.google.errorprone.bugpatterns.UnnecessaryTypeArgument;
 import com.google.errorprone.bugpatterns.UnsynchronizedOverridesSynchronized;
@@ -273,6 +276,7 @@ public class BuiltInCheckerSuppliers {
           ConstantOverflow.class,
           DeadException.class,
           EqualsNaN.class,
+          FallThrough.class,
           FilesLinesLeak.class,
           ForOverrideChecker.class,
           FormatString.class,
@@ -392,6 +396,7 @@ public class BuiltInCheckerSuppliers {
           SynchronizeOnNonFinalField.class,
           TruthConstantAsserts.class,
           TypeParameterUnusedInFormals.class,
+          UnnecessaryDefaultInEnumSwitch.class,
           UnsynchronizedOverridesSynchronized.class,
           URLEqualsHashCode.class,
           WaitNotInLoop.class);
@@ -424,6 +429,7 @@ public class BuiltInCheckerSuppliers {
           LockMethodChecker.class,
           LongLiteralLowerCaseSuffix.class,
           MethodCanBeStatic.class,
+          MissingDefault.class,
           MixedArrayDimensions.class,
           MoreThanOneQualifier.class,
           MultiVariableDeclaration.class,
