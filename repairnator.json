@@ -1,0 +1,48 @@
+{
+  "totalNumberSkippingTests": 5,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "airlift/airlift",
+  "bugCommit": "https://github.com/airlift/airlift/compare/6be9ab213955...35a98de1461c",
+  "failingModule": "/root/workspace/airlift/airlift/209201569/http-server",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.util.concurrent.TimeoutException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1944,
+  "failing-test-cases": [
+    {
+      "className": "io.airlift.http.server.TestHttpServerModule",
+      "failingMethods": [
+        "io.airlift.http.server.TestHttpServerModule#testHttpRequestEvent"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [1] but found [0]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.airlift.http.server.TestHttpServerProvider",
+      "failingMethods": [
+        "io.airlift.http.server.TestHttpServerProvider#testStop"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.TimeoutException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
