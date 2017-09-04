@@ -1,0 +1,61 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "bugCommit": "https://github.com/google/error-prone/compare/06569874d5fd...9e2a977ea507",
+  "failingModule": "/root/workspace/google/error-prone/199117909/core",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1995,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest#deleteAll",
+        "com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest#testPositiveCase"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ce Test {\n  void f()[];\n}\u003e but was:\u003c...ce Test {\n  void f()[ ];\n}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Did not see an error on line 23 matching \u0027public void doSomething() {\u0027. All errors:\n[/com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:23: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.\n  public void doSomething() throws IllegalArgumentException {\n                                   ^\n    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)\n  Did you mean \u0027public void doSomething()  {\u0027?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:28: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.\n  public void doSomethingElse() throws RuntimeException, NullPointerException {\n                                       ^\n    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)\n  Did you mean \u0027public void doSomethingElse()  {\u0027?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:33: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.\n  public void doMore() throws RuntimeException, IOException {\n                              ^\n    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)\n  Did you mean \u0027public void doMore() throws IOException {\u0027?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:38: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.\n  public void doEverything() throws RuntimeException, IOException, IndexOutOfBoundsException {\n                                    ^\n    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)\n  Did you mean \u0027public void doEverything() throws IOException {\u0027?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:43: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.\n  public void doBetter() throws RuntimeException, AssertionError {\n                                ^\n    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)\n  Did you mean \u0027public void doBetter()  {\u0027?]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.google.errorprone.bugpatterns.DefaultCharsetTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.DefaultCharsetTest#byteStringDefaultCharset",
+        "com.google.errorprone.bugpatterns.DefaultCharsetTest#byteString"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 1 unmatched nodes in the expected tree. \n\n\u003e Extra node in expected tree.\n  Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eMETHOD_INVOCATION\n  Node contents: \u003cCharset.defaultCharset()\u003e.\n  \n\nFound 1 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eSTRING_LITERAL(hello)-\u003eSTRING_LITERAL(hello)\n  Actual node: Line 5 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eMETHOD_INVOCATION-\u003eMETHOD_INVOCATION\n  Expected node kind to be \u003cSTRING_LITERAL\u003e but was \u003cMETHOD_INVOCATION\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport com.google.protobuf.ByteString;\nimport java.nio.charset.Charset;\nclass Test {\n  void f() throws Exception {\n    ByteString.copyFrom(\"hello\", Charset.defaultCharset());\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport com.google.protobuf.ByteString;\nimport java.nio.charset.Charset;\nclass Test {\n  void f() throws Exception {\n    ByteString.copyFrom(\"hello\".getBytes(Charset.defaultCharset()));\n  }\n}",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nSource declared the same top-level types of an expected source, but\ndidn\u0027t match exactly.\n\nExpected file: \u003c/out/Test.java\u003e\nActual file: \u003cTest.java\u003e\n\nDiffs:\n\u003d\u003d\u003d\u003d\u003d\u003d\n\nFound 1 unmatched nodes in the actual tree. \n\n\u003e Extra node in actual tree.\n  Line 3 COMPILATION_UNIT-\u003eIMPORT(non-static)\n  Node contents: \u003cimport com.google.protobuf.ByteString;\u003e.\n  \n\nFound 7 nodes that differed in expected and actual trees. \n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)\n  Expected import to be \u003cnon-static\u003e but was \u003cstatic\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(ByteString)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)\n  Expected member identifier to be \u003cByteString\u003e but was \u003cUTF_8\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(ByteString)-\u003eMEMBER_SELECT(protobuf)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)-\u003eMEMBER_SELECT(StandardCharsets)\n  Expected member identifier to be \u003cprotobuf\u003e but was \u003cStandardCharsets\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(ByteString)-\u003eMEMBER_SELECT(protobuf)-\u003eMEMBER_SELECT(google)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)-\u003eMEMBER_SELECT(StandardCharsets)-\u003eMEMBER_SELECT(charset)\n  Expected member identifier to be \u003cgoogle\u003e but was \u003ccharset\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 1 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(ByteString)-\u003eMEMBER_SELECT(protobuf)-\u003eMEMBER_SELECT(google)-\u003eIDENTIFIER(com)-\u003eIDENTIFIER(com)\n  Actual node: Line 1 COMPILATION_UNIT-\u003eIMPORT(static)-\u003eMEMBER_SELECT(UTF_8)-\u003eMEMBER_SELECT(StandardCharsets)-\u003eMEMBER_SELECT(charset)-\u003eMEMBER_SELECT(nio)-\u003eMEMBER_SELECT(nio)\n  Expected node kind to be \u003cIDENTIFIER\u003e but was \u003cMEMBER_SELECT\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eMEMBER_SELECT(copyFromUtf8)\n  Actual node: Line 6 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eMEMBER_SELECT(copyFrom)\n  Expected member identifier to be \u003ccopyFromUtf8\u003e but was \u003ccopyFrom\u003e.\n\n\u003e Difference in expected tree and actual tree.\n  Expected node: Line 4 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eSTRING_LITERAL(hello)-\u003eSTRING_LITERAL(hello)\n  Actual node: Line 6 COMPILATION_UNIT-\u003eCLASS(Test)-\u003eMETHOD(f)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eMETHOD_INVOCATION-\u003eMETHOD_INVOCATION\n  Expected node kind to be \u003cSTRING_LITERAL\u003e but was \u003cMETHOD_INVOCATION\u003e.\n\n\nExpected Source: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport com.google.protobuf.ByteString;\nclass Test {\n  void f() throws Exception {\n    ByteString.copyFromUtf8(\"hello\");\n  }\n}\n\nActual Source:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nimport static java.nio.charset.StandardCharsets.UTF_8;\n\nimport com.google.protobuf.ByteString;\nclass Test {\n  void f() throws Exception {\n    ByteString.copyFrom(\"hello\".getBytes(UTF_8));\n  }\n}",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
