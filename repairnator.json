@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 10,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "sakaiproject/sakai",
+  "bugCommit": "https://github.com/sakaiproject/sakai/compare/44c87baeb7152267074002cb9dcb55eb59948b1e...49e465ca7bbcc80d652a95158161fa9cdfd824cf",
+  "failingModule": "/root/workspace/sakaiproject/sakai/230828769/kernel/kernel-impl",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1025,
+  "failing-test-cases": [
+    {
+      "className": "org.sakaiproject.util.impl.FormattedTextTest",
+      "failingMethods": [
+        "org.sakaiproject.util.impl.FormattedTextTest#testAntisamyProcessFormattedText",
+        "org.sakaiproject.util.impl.FormattedTextTest#testTargetNotOverridden"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...k\" class\u003d\"arbitrary\"[ rel\u003d\"noopener\"]\u003elink\u003c/a\u003e\u003e but was:\u003c...k\" class\u003d\"arbitrary\"[]\u003elink\u003c/a\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ld;\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e but was:\u003c...ld;\" target\u003d\"_blank\"[]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
