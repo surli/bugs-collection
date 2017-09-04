@@ -15,7 +15,6 @@
  */
 package io.airlift.jmx;
 
-import com.google.common.base.Throwables;
 import com.google.common.net.HostAndPort;
 import com.sun.tools.attach.AttachNotSupportedException;
 import com.sun.tools.attach.VirtualMachine;
@@ -70,7 +69,7 @@ class JmxAgent9
             }
         }
         catch (AttachNotSupportedException e) {
-            throw Throwables.propagate(e);
+            throw new RuntimeException(e);
         }
 
         HostAndPort address;
@@ -86,7 +85,7 @@ class JmxAgent9
 
         log.info("JMX agent started and listening on %s", address);
 
-        this.url = new JMXServiceURL(String.format("service:jmx:rmi:///jndi/rmi://%s:%s/jmxrmi", address.getHostText(), address.getPort()));
+        this.url = new JMXServiceURL(String.format("service:jmx:rmi:///jndi/rmi://%s:%s/jmxrmi", address.getHost(), address.getPort()));
     }
 
     public JMXServiceURL getUrl()

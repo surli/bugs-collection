@@ -17,7 +17,6 @@ package io.airlift.configuration;
 
 import com.google.common.annotations.Beta;
 import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Throwables;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -28,7 +27,6 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.ImmutableSortedSet;
 import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Multimaps;
-import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.google.inject.Binding;
 import com.google.inject.ConfigurationException;
 import com.google.inject.Key;
@@ -61,6 +59,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 import static com.google.common.base.CaseFormat.LOWER_CAMEL;
 import static com.google.common.base.CaseFormat.UPPER_CAMEL;
@@ -185,7 +184,7 @@ public class ConfigurationFactory
                     // configuration provider
                     if (binding instanceof ProviderInstanceBinding) {
                         ProviderInstanceBinding<?> providerInstanceBinding = (ProviderInstanceBinding<?>) binding;
-                        Provider<?> provider = providerInstanceBinding.getProviderInstance();
+                        Provider<?> provider = providerInstanceBinding.getUserSuppliedProvider();
                         if (provider instanceof ConfigurationProvider) {
                             registerConfigurationProvider((ConfigurationProvider<?>) provider, Optional.of(binding.getSource()));
                         }
@@ -257,13 +256,13 @@ public class ConfigurationFactory
 
         Key<?> globalDefaults = Key.get(key.getTypeLiteral(), GlobalDefaults.class);
         registeredDefaultConfigs.get(globalDefaults).stream()
-                .map(holder -> (ConfigDefaultsHolder<T>) holder)
+                .map(ConfigurationFactory.<T>castHolder())
                 .sorted()
                 .map(ConfigDefaultsHolder::getConfigDefaults)
                 .forEach(defaults::add);
 
         registeredDefaultConfigs.get(key).stream()
-                .map(holder -> (ConfigDefaultsHolder<T>) holder)
+                .map(ConfigurationFactory.<T>castHolder())
                 .sorted()
                 .map(ConfigDefaultsHolder::getConfigDefaults)
                 .forEach(defaults::add);
@@ -271,9 +270,15 @@ public class ConfigurationFactory
         return ConfigDefaults.configDefaults(defaults.build());
     }
 
+    @SuppressWarnings("unchecked")
+    private static <T> Function<ConfigDefaultsHolder<?>, ConfigDefaultsHolder<T>> castHolder()
+    {
+        return holder -> (ConfigDefaultsHolder<T>) holder;
+    }
+
     <T> T getDefaultConfig(Key<T> key)
     {
-        ConfigurationMetadata<T> configurationMetadata = getMetadata((Class<T>) key.getTypeLiteral().getRawType());
+        ConfigurationMetadata<T> configurationMetadata = getMetadata(key);
         configurationMetadata.getProblems().throwIfHasErrors();
 
         T instance = newInstance(configurationMetadata);
@@ -410,14 +415,15 @@ public class ConfigurationFactory
     }
 
     @SuppressWarnings("unchecked")
+    private <T> ConfigurationMetadata<T> getMetadata(Key<T> key)
+    {
+        return getMetadata((Class<T>) key.getTypeLiteral().getRawType());
+    }
+
+    @SuppressWarnings("unchecked")
     private <T> ConfigurationMetadata<T> getMetadata(Class<T> configClass)
     {
-        try {
-            return (ConfigurationMetadata<T>) metadataCache.getUnchecked(configClass);
-        }
-        catch (UncheckedExecutionException e) {
-            throw Throwables.propagate(e.getCause());
-        }
+        return (ConfigurationMetadata<T>) metadataCache.getUnchecked(configClass);
     }
 
     private static <T> T newInstance(ConfigurationMetadata<T> configurationMetadata)
