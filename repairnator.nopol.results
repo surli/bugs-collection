@@ -1,0 +1,177 @@
+nopolinfo #0
+location: FailureLocation{className='com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest', failingMethods=[com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest#deleteAll, com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest#testPositiveCase], erroringMethods=[], failures=[FailureType{failureName='org.junit.ComparisonFailure', failureDetail='expected:<...ce Test {
+  void f()[];
+}> but was:<...ce Test {
+  void f()[ ];
+}>', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Did not see an error on line 23 matching 'public void doSomething() {'. All errors:
+[/com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:23: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.
+  public void doSomething() throws IllegalArgumentException {
+                                   ^
+    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)
+  Did you mean 'public void doSomething()  {'?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:28: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.
+  public void doSomethingElse() throws RuntimeException, NullPointerException {
+                                       ^
+    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)
+  Did you mean 'public void doSomethingElse()  {'?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:33: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.
+  public void doMore() throws RuntimeException, IOException {
+                              ^
+    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)
+  Did you mean 'public void doMore() throws IOException {'?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:38: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.
+  public void doEverything() throws RuntimeException, IOException, IndexOutOfBoundsException {
+                                    ^
+    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)
+  Did you mean 'public void doEverything() throws IOException {'?, /com/google/errorprone/bugpatterns/ThrowsUncheckedExceptionPositiveCases.java:43: Note: [ThrowsUncheckedException] Unchecked exceptions do not need to be declared in the method signature.
+  public void doBetter() throws RuntimeException, AssertionError {
+                                ^
+    (see http://errorprone.info/bugpattern/ThrowsUncheckedException)
+  Did you mean 'public void doBetter()  {'?]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon Sep 04 15:00:30 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/199117909/check_api/src/main/java, /root/./workspace/google/error-prone/199117909/check_api/src/main/java, ./workspace/google/error-prone/199117909/test_helpers/src/main/java, /root/./workspace/google/error-prone/199117909/test_helpers/src/main/java, ./workspace/google/error-prone/199117909/core/src/main/java, /root/./workspace/google/error-prone/199117909/core/src/main/java, ./workspace/google/error-prone/199117909/annotation/src/main/java, /root/./workspace/google/error-prone/199117909/annotation/src/main/java, ./workspace/google/error-prone/199117909/annotations/src/main/java, /root/./workspace/google/error-prone/199117909/annotations/src/main/java, ./workspace/google/error-prone/199117909/docgen/src/main/java, /root/./workspace/google/error-prone/199117909/docgen/src/main/java, ./workspace/google/error-prone/199117909/docgen_processor/src/main/java, /root/./workspace/google/error-prone/199117909/docgen_processor/src/main/java, ./workspace/google/error-prone/199117909/ant/src/main/java, /root/./workspace/google/error-prone/199117909/ant/src/main/java, ./workspace/google/error-prone/199117909/refaster/src/main/java, /root/./workspace/google/error-prone/199117909/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@5cc5b667', projectTests=[com.google.errorprone.bugpatterns.ThrowsUncheckedExceptionTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.google.errorprone.bugpatterns.DefaultCharsetTest', failingMethods=[com.google.errorprone.bugpatterns.DefaultCharsetTest#byteStringDefaultCharset, com.google.errorprone.bugpatterns.DefaultCharsetTest#byteString], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 unmatched nodes in the expected tree. 
+
+> Extra node in expected tree.
+  Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->METHOD_INVOCATION
+  Node contents: <Charset.defaultCharset()>.
+  
+
+Found 1 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->STRING_LITERAL(hello)->STRING_LITERAL(hello)
+  Actual node: Line 5 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->METHOD_INVOCATION->METHOD_INVOCATION
+  Expected node kind to be <STRING_LITERAL> but was <METHOD_INVOCATION>.
+
+
+Expected Source: 
+================
+
+import com.google.protobuf.ByteString;
+import java.nio.charset.Charset;
+class Test {
+  void f() throws Exception {
+    ByteString.copyFrom("hello", Charset.defaultCharset());
+  }
+}
+
+Actual Source:
+=================
+
+import com.google.protobuf.ByteString;
+import java.nio.charset.Charset;
+class Test {
+  void f() throws Exception {
+    ByteString.copyFrom("hello".getBytes(Charset.defaultCharset()));
+  }
+}', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: </out/Test.java>
+Actual file: <Test.java>
+
+Diffs:
+======
+
+Found 1 unmatched nodes in the actual tree. 
+
+> Extra node in actual tree.
+  Line 3 COMPILATION_UNIT->IMPORT(non-static)
+  Node contents: <import com.google.protobuf.ByteString;>.
+  
+
+Found 7 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(non-static)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(static)
+  Expected import to be <non-static> but was <static>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ByteString)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)
+  Expected member identifier to be <ByteString> but was <UTF_8>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ByteString)->MEMBER_SELECT(protobuf)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)->MEMBER_SELECT(StandardCharsets)
+  Expected member identifier to be <protobuf> but was <StandardCharsets>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ByteString)->MEMBER_SELECT(protobuf)->MEMBER_SELECT(google)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)->MEMBER_SELECT(StandardCharsets)->MEMBER_SELECT(charset)
+  Expected member identifier to be <google> but was <charset>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 1 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(ByteString)->MEMBER_SELECT(protobuf)->MEMBER_SELECT(google)->IDENTIFIER(com)->IDENTIFIER(com)
+  Actual node: Line 1 COMPILATION_UNIT->IMPORT(static)->MEMBER_SELECT(UTF_8)->MEMBER_SELECT(StandardCharsets)->MEMBER_SELECT(charset)->MEMBER_SELECT(nio)->MEMBER_SELECT(nio)
+  Expected node kind to be <IDENTIFIER> but was <MEMBER_SELECT>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(copyFromUtf8)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->MEMBER_SELECT(copyFrom)
+  Expected member identifier to be <copyFromUtf8> but was <copyFrom>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 4 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->STRING_LITERAL(hello)->STRING_LITERAL(hello)
+  Actual node: Line 6 COMPILATION_UNIT->CLASS(Test)->METHOD(f)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->METHOD_INVOCATION->METHOD_INVOCATION
+  Expected node kind to be <STRING_LITERAL> but was <METHOD_INVOCATION>.
+
+
+Expected Source: 
+================
+
+import com.google.protobuf.ByteString;
+class Test {
+  void f() throws Exception {
+    ByteString.copyFromUtf8("hello");
+  }
+}
+
+Actual Source:
+=================
+
+import static java.nio.charset.StandardCharsets.UTF_8;
+
+import com.google.protobuf.ByteString;
+class Test {
+  void f() throws Exception {
+    ByteString.copyFrom("hello".getBytes(UTF_8));
+  }
+}', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Mon Sep 04 15:00:52 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[./workspace/google/error-prone/199117909/check_api/src/main/java, /root/./workspace/google/error-prone/199117909/check_api/src/main/java, ./workspace/google/error-prone/199117909/test_helpers/src/main/java, /root/./workspace/google/error-prone/199117909/test_helpers/src/main/java, ./workspace/google/error-prone/199117909/core/src/main/java, /root/./workspace/google/error-prone/199117909/core/src/main/java, ./workspace/google/error-prone/199117909/annotation/src/main/java, /root/./workspace/google/error-prone/199117909/annotation/src/main/java, ./workspace/google/error-prone/199117909/annotations/src/main/java, /root/./workspace/google/error-prone/199117909/annotations/src/main/java, ./workspace/google/error-prone/199117909/docgen/src/main/java, /root/./workspace/google/error-prone/199117909/docgen/src/main/java, ./workspace/google/error-prone/199117909/docgen_processor/src/main/java, /root/./workspace/google/error-prone/199117909/docgen_processor/src/main/java, ./workspace/google/error-prone/199117909/ant/src/main/java, /root/./workspace/google/error-prone/199117909/ant/src/main/java, ./workspace/google/error-prone/199117909/refaster/src/main/java, /root/./workspace/google/error-prone/199117909/refaster/src/main/java], projectClasspath='[Ljava.net.URL;@b04a6a4', projectTests=[com.google.errorprone.bugpatterns.DefaultCharsetTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
