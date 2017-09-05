@@ -1,0 +1,55 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 2,
+  "repo": "PebbleTemplates/pebble",
+  "bugCommit": "https://github.com/PebbleTemplates/pebble/compare/f7fd95025255...ac4c89fc11bf",
+  "failingModule": "/root/workspace/PebbleTemplates/pebble/226455119",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.IndexOutOfBoundsException",
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 461,
+  "failing-test-cases": [
+    {
+      "className": "com.mitchellbosecke.pebble.CoreTagsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.mitchellbosecke.pebble.CoreTagsTest#testForWhenInvalidOrNoEndforTag",
+        "com.mitchellbosecke.pebble.CoreTagsTest#testIfWhenInvalidOrNoEndifTag"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException",
+          "failureDetail": "Index: 13, Size: 13",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "com.mitchellbosecke.pebble.macro.TestMacroCalls",
+      "failingMethods": [
+        "com.mitchellbosecke.pebble.macro.TestMacroCalls#testInvalidMacro"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003cnull\u003e but was:\u003c2\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
