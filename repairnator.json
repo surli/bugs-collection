@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 3,
+  "repo": "FasterXML/jackson-databind",
+  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/ce1147371395...8d5bd6683855",
+  "failingModule": "/root/workspace/FasterXML/jackson-databind/210831117",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "com.fasterxml.jackson.databind.JsonMappingException"
+  ],
+  "totalNumberRunningTests": 1704,
+  "failing-test-cases": [
+    {
+      "className": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest#testWrapperFromEmptyArray",
+        "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest#testNullStringFromEmptyArray",
+        "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest#testStdJdkTypesFromEmptyArray"
+      ],
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Can not deserialize instance of java.math.BigInteger out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+          "isError": true
+        },
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Can not deserialize instance of java.lang.String out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+          "isError": true
+        },
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "failureDetail": "Can not deserialize instance of java.lang.Character out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    }
+  ]
+}
