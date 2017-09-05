@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "PebbleTemplates/pebble",
+  "bugCommit": "https://github.com/PebbleTemplates/pebble/compare/ac4c89fc11bf...292accd1ed3c",
+  "failingModule": "/root/workspace/PebbleTemplates/pebble/229433383",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 464,
+  "failing-test-cases": [
+    {
+      "className": "com.mitchellbosecke.pebble.GetAttributeTest",
+      "failingMethods": [
+        "com.mitchellbosecke.pebble.GetAttributeTest#testAttributeProviderSimple",
+        "com.mitchellbosecke.pebble.GetAttributeTest#testAttributeProviderEmptyArguments",
+        "com.mitchellbosecke.pebble.GetAttributeTest#testAttributeProviderWithArguments"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003chello [Steve [abc, 42]]\u003e but was:\u003chello [Invalid]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003chello [Steve] Doe\u003e but was:\u003chello [Invalid] Doe\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003chello [Steve]\u003e but was:\u003chello [Invalid]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
