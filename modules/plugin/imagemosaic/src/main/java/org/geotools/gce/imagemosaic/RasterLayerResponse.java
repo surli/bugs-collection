@@ -376,17 +376,13 @@ public class RasterLayerResponse {
                     LOGGER.fine("Submosaic producer being called: " + collector.toString());
                 }
                 final List<MosaicElement> preparedMosaic = collector.createMosaic();
-                size += preparedMosaic.size();
                 if (preparedMosaic.size() > 0
                         && !preparedMosaic.stream().allMatch(p -> p == null)) {
+                    size += preparedMosaic.size();
                     mosaicInputs.addAll(preparedMosaic);
                     if (first == null) {
                         first = collector;
                     }
-                } else {
-                    // we were not able to mosaic these granules, e.g. we have ROIs and the requested area
-                    // fell outside the ROI
-                    size--;
                 }
             }
             LOGGER.fine("Producing the final mosaic, step 2, final mosaicking");
@@ -703,7 +699,7 @@ public class RasterLayerResponse {
         // SG using the above may lead to problems since the reason is that may be a little (1 px) bigger
         // than what we need. The code below is a bit better since it uses a proper logic (see GridEnvelope
         // Javadoc)
-        // rasterBounds = new GridEnvelope2D(new Envelope2D(tempRasterBounds), PixelInCell.CELL_CORNER);
+        rasterBounds = new GridEnvelope2D(new Envelope2D(tempRasterBounds), PixelInCell.CELL_CORNER);
         if (rasterBounds.width == 0)
             rasterBounds.width++;
         if (rasterBounds.height == 0)
