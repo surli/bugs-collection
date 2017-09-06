@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/d512d2629209...bae3af4522dc",
+  "failingModule": "/root/workspace/geotools/geotools/205246734/modules/plugin/imagemosaic",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 5980,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.gce.imagemosaic.properties.string.StringFileNameExtractorTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.properties.string.StringFileNameExtractorTest#testGroupExtraction",
+        "org.geotools.gce.imagemosaic.properties.string.StringFileNameExtractorTest#testMultipleGroupExtraction"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[20130301000000]\u003e but was:\u003c[_20130301T000000_]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[20130301T000000]\u003e but was:\u003c[_20130301T000000_]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
