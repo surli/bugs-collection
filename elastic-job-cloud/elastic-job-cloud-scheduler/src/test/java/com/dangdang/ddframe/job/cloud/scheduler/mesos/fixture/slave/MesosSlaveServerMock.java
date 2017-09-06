@@ -82,6 +82,6 @@ public class MesosSlaveServerMock {
                 + "-61cf824a660d-S0\",\"state\":\"TASK_RUNNING\",\"resources\":{\"disk\":0.0,\"mem\":128.0,\"gpus\":0.0,\"cpus\":0.5},"
                 + "\"statuses\":[{\"state\":\"TASK_RUNNING\",\"timestamp\":1488186955.00174,\"container_status\":{\"network_infos\""
                 + ":[{\"ip_addresses\":[{\"ip_address\":\"192.168.96.45\"}]}]}}]}],\"queued_tasks\":[],\"completed_tasks\":[]}],\""
-                + "completed_executors\":[]}],\"completed_frameworks\":[]");
+                + "completed_executors\":[]}],\"completed_frameworks\":[]}");
     }
 }
