@@ -1,0 +1,599 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] killbill
+[INFO] killbill-api
+[INFO] killbill-util
+[INFO] killbill-tenant
+[INFO] killbill-account
+[INFO] killbill-catalog
+[INFO] killbill-currency
+[INFO] killbill-subscription
+[INFO] killbill-entitlement
+[INFO] killbill-usage
+[INFO] killbill-invoice
+[INFO] killbill-junction
+[INFO] killbill-overdue
+[INFO] killbill-payment
+[INFO] killbill-beatrix
+[INFO] killbill-jaxrs
+[INFO] killbill-profiles
+[INFO] killbill-profiles-killbill
+[INFO] killbill-profiles-killpay
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-api 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-internal-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-internal-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-internal-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-internal-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 114 source files to /root/workspace/killbill/killbill/218313159/api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-internal-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-internal-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-internal-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-util 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9.1:add-source (default) @ killbill-util ---
+[INFO] Source directory: /root/workspace/killbill/killbill/218313159/util/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- templating-maven-plugin:1.0-alpha-3:filter-sources (generate-verion-class) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Source directory: /root/workspace/killbill/killbill/218313159/util/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-util ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 225 source files to /root/workspace/killbill/killbill/218313159/util/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218313159/util/src/main/java/org/killbill/billing/util/security/shiro/realm/KillBillJndiLdapRealm.java:[38,34] [deprecation] JndiLdapRealm in org.apache.shiro.realm.ldap has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218313159/util/src/main/java/org/killbill/billing/util/security/shiro/realm/KillBillJndiLdapRealm.java:[59,43] [deprecation] JndiLdapRealm in org.apache.shiro.realm.ldap has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-util ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 107 source files to /root/workspace/killbill/killbill/218313159/util/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218313159/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[195,30] [deprecation] MySQLDataSource in org.mariadb.jdbc has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218313159/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[195,79] [deprecation] MySQLDataSource in org.mariadb.jdbc has been deprecated
+[WARNING] /root/workspace/killbill/killbill/218313159/util/src/test/java/org/killbill/billing/util/dao/TestDateInvestigation.java:[196,17] [deprecation] setURL(String) in MariaDbDataSource has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-util ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/util/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.pom (4 KB at 4.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom (3 KB at 11.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.pom (2 KB at 8.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/testng/testng/5.7/testng-5.7.pom (12 KB at 49.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.13/surefire-testng-2.13.jar (33 KB at 104.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.13/common-java5-2.13.jar (55 KB at 93.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.13/surefire-testng-utils-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.13/surefire-testng-utils-2.13.jar (29 KB at 134.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.13/surefire-grouper-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.13/surefire-grouper-2.13.jar (37 KB at 165.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.989 sec
+
+Results :
+
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-tenant 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-tenant ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-tenant ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-tenant ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-tenant ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /root/workspace/killbill/killbill/218313159/tenant/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-tenant ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/tenant/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-tenant ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /root/workspace/killbill/killbill/218313159/tenant/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-tenant ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/tenant/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 sec
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-account 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-account ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-account ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-account ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-account ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/killbill/killbill/218313159/account/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-account ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/account/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-account ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/killbill/killbill/218313159/account/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-account ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/account/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.872 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-catalog 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-catalog ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-catalog ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-catalog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-catalog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 66 source files to /root/workspace/killbill/killbill/218313159/catalog/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218313159/catalog/src/main/java/org/killbill/billing/catalog/api/user/DefaultCatalogUserApi.java:[162,108] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-catalog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-catalog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /root/workspace/killbill/killbill/218313159/catalog/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/root/workspace/killbill/killbill/218313159/catalog/src/test/java/org/killbill/billing/catalog/TestCatalogUpdater.java:[58,94] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-catalog ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/catalog/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.422 sec
+
+Results :
+
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-currency 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-currency ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-currency ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-currency ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/currency/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-currency ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/killbill/killbill/218313159/currency/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-currency ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/currency/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-currency ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-currency ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-subscription 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-subscription ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-subscription ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-subscription ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-subscription ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /root/workspace/killbill/killbill/218313159/subscription/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-subscription ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-subscription ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /root/workspace/killbill/killbill/218313159/subscription/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-subscription ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/subscription/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.97 sec
+
+Results :
+
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-entitlement 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-entitlement ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-entitlement ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-entitlement ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-entitlement ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 41 source files to /root/workspace/killbill/killbill/218313159/entitlement/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-entitlement ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-entitlement ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /root/workspace/killbill/killbill/218313159/entitlement/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-entitlement ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/entitlement/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.731 sec
+
+Results :
+
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-usage 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-usage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-usage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-usage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-usage ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/killbill/killbill/218313159/usage/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-usage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/killbill/killbill/218313159/usage/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-usage ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/killbill/killbill/218313159/usage/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-usage ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/usage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building killbill-invoice 0.18.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-versions) @ killbill-invoice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ killbill-invoice ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ killbill-invoice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ killbill-invoice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 95 source files to /root/workspace/killbill/killbill/218313159/invoice/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ killbill-invoice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ killbill-invoice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 62 source files to /root/workspace/killbill/killbill/218313159/invoice/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ killbill-invoice ---
+[INFO] Surefire report directory: /root/workspace/killbill/killbill/218313159/invoice/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Configuring TestNG with: TestNG652Configurator
+<html>
+    <head>
+        <style type="text/css">
+            #header td { width: 250px; }
+            #header .company_info { width: 450px; }
+            #header .label { text-align: right; font-weight: bold; }
+            #header .label_value { padding-left: 10px; }
+
+            #invoice_items { margin-top: 50px; }
+            #invoice_items th { border-bottom: solid 2px black; }
+            #invoice_items td { width: 250px; }
+            #invoice_items td.amount { width: 125px; }
+            #invoice_items td.network { width: 350px; }
+            #invoice_items .amount { text-align: right; }
+            #invoice_items .label { text-align: right; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <table id="header">
+            <tr>
+                <td class="company_info"/>
+                <td />
+                <td><h1>INVOICE</h1></td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="http://static.foo.com/www/0/main/gfx/front/logo.png"/></td>
+            </tr>
+            <tr>
+                <td class="company_info" />
+                <td class="label">Date:</td>
+                <td class="label_value">Sep 6, 2017</td>
+            </tr>
+            <tr>
+                <td class="company_info" />
+                <td class="label">Invoice #</td>
+                <td class="label_value">234</td>
+            </tr>
+            <tr>
+                <td class="company_info">USA</td>
+                <td colspan="2" />
+            </tr>
+            <tr>
+                <td class="company_info">http://killbilling.org</td>
+                <td colspan="2" />
+            </tr>
+        </table>
+
+        <table id="invoice_items">
+            <tr>
+                <th class="network">Weapon</td>
+                <th>Description</td>
+                <th>Service Period</td>
+                <th>Amount</td>
+            </tr>
+            
+            <tr>
+                <td class="network">b7ba3187-2a75-4a2e-a6a4-981aea86f7cd (fixed price)</td>
+                <td>421b5637-d01c-472d-9cc3-f49735911cc0</td>
+                <td>Sep 6, 2017</td>
+                <td class="amount">BRL1,499.95</td>
+            </tr>
+            
+            <tr>
+                <td colspan="4" height="50px"></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">New Charges</td>
+                <td class="amount"><strong>R$1,499.95</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">Payment                    
+                </td>
+                <td class="amount"><strong>R$0.00</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2" />
+                <td class="label">Balance</td>
+                <td class="amount"><strong>R$1,499.95</strong></td>
+            </tr>
+        </table>
+            </body>
+</html>
+
+Tests run: 300, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.599 sec <<< FAILURE!
+testWithBCDLargerThanEndMonth(org.killbill.billing.invoice.generator.TestInAdvanceBillingIntervalDetail)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [3] but found [2]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.killbill.billing.invoice.generator.TestInAdvanceBillingIntervalDetail.testWithBCDLargerThanEndMonth(TestInAdvanceBillingIntervalDetail.java:215)
+
+
+Results :
+
+Failed tests: 
+  TestInAdvanceBillingIntervalDetail.testWithBCDLargerThanEndMonth:215 expected [3] but found [2]
+
+Tests run: 300, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] killbill ........................................... SUCCESS [  0.386 s]
+[INFO] killbill-api ....................................... SUCCESS [  2.628 s]
+[INFO] killbill-util ...................................... SUCCESS [ 41.902 s]
+[INFO] killbill-tenant .................................... SUCCESS [  4.467 s]
+[INFO] killbill-account ................................... SUCCESS [  9.272 s]
+[INFO] killbill-catalog ................................... SUCCESS [ 18.218 s]
+[INFO] killbill-currency .................................. SUCCESS [  0.895 s]
+[INFO] killbill-subscription .............................. SUCCESS [ 20.898 s]
+[INFO] killbill-entitlement ............................... SUCCESS [ 12.536 s]
+[INFO] killbill-usage ..................................... SUCCESS [  3.301 s]
+[INFO] killbill-invoice ................................... FAILURE [ 20.176 s]
+[INFO] killbill-junction .................................. SKIPPED
+[INFO] killbill-overdue ................................... SKIPPED
+[INFO] killbill-payment ................................... SKIPPED
+[INFO] killbill-beatrix ................................... SKIPPED
+[INFO] killbill-jaxrs ..................................... SKIPPED
+[INFO] killbill-profiles .................................. SKIPPED
+[INFO] killbill-profiles-killbill ......................... SKIPPED
+[INFO] killbill-profiles-killpay .......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:15 min
+[INFO] Finished at: 2017-09-06T11:02:06+02:00
+[INFO] Final Memory: 34M/542M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.13:test (default-test) on project killbill-invoice: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/killbill/killbill/218313159/invoice/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :killbill-invoice
