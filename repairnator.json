@@ -1,0 +1,32 @@
+{
+  "totalNumberSkippingTests": 14,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/985884996b73...2b9e539d873e",
+  "failingModule": "/root/workspace/geotools/geotools/211636227/modules/library/xml",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.xml.sax.SAXException"
+  ],
+  "totalNumberRunningTests": 5311,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.xml.SchemaFactoryResolveTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.geotools.xml.SchemaFactoryResolveTest#testRemotePathResolve"
+      ],
+      "failures": [
+        {
+          "failureName": "org.xml.sax.SAXException",
+          "failureDetail": "Server returned HTTP response code: 403 for URL: http://www.w3.org/2001/03/xml.xsd",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}
