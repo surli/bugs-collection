@@ -103,98 +103,1124 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-core ---
 [INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/191792715/core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 3.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 50.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1121.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.teavm.model.util.test.PhiUpdaterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.34 sec - in org.teavm.model.util.test.PhiUpdaterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 sec - in org.teavm.model.util.test.PhiUpdaterTest
 Running org.teavm.model.analysis.test.NullnessAnalysisTest
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec <<< FAILURE! - in org.teavm.model.analysis.test.NullnessAnalysisTest
-nonDominatedBranch(org.teavm.model.analysis.test.NullnessAnalysisTest)  Time elapsed: 0.023 sec  <<< FAILURE!
-java.lang.AssertionError: Variable used before definition: @b at $3
-	at org.teavm.model.util.PhiUpdater.use(PhiUpdater.java:421)
-	at org.teavm.model.util.PhiUpdater.access$200(PhiUpdater.java:81)
-	at org.teavm.model.util.PhiUpdater$1.visit(PhiUpdater.java:644)
-	at org.teavm.model.instructions.NullCheckInstruction.acceptVisitor(NullCheckInstruction.java:47)
-	at org.teavm.model.util.PhiUpdater.renameVariables(PhiUpdater.java:233)
-	at org.teavm.model.util.PhiUpdater.updatePhis(PhiUpdater.java:153)
-	at org.teavm.model.analysis.NullnessInformationBuilder.extendProgram(NullnessInformationBuilder.java:93)
-	at org.teavm.model.analysis.NullnessInformationBuilder.build(NullnessInformationBuilder.java:79)
-	at org.teavm.model.analysis.NullnessInformation.build(NullnessInformation.java:91)
-	at org.teavm.model.analysis.test.NullnessAnalysisTest.test(NullnessAnalysisTest.java:93)
-	at org.teavm.model.analysis.test.NullnessAnalysisTest.nonDominatedBranch(NullnessAnalysisTest.java:80)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in org.teavm.model.analysis.test.NullnessAnalysisTest
 Running org.teavm.model.text.ParserTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.teavm.model.text.ParserTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.teavm.model.text.ParserTest
 Running org.teavm.common.GraphTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.teavm.common.GraphTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.teavm.common.GraphTest
 Running org.teavm.vm.PluginLoaderTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.teavm.vm.PluginLoaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.teavm.vm.PluginLoaderTest
 Running org.teavm.cache.ProgramIOTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.teavm.cache.ProgramIOTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.teavm.cache.ProgramIOTest
 
 Results :
 
-Failed tests: 
-  NullnessAnalysisTest.nonDominatedBranch:80->test:93 Variable used before definition: @b at $3
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 35, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM JavaScript objects 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-jso ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-jso ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/jso/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-jso ---
+[INFO] Compiling 1 source file to /root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-jso ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/jso/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-jso ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-jso ---
+[INFO] Tests are skipped.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM JavaScript APIs 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-jso-apis ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-jso-apis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/jso/apis/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-jso-apis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-jso-apis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/jso/apis/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-jso-apis ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-jso-apis ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM platform 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-platform ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-platform ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-platform ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-platform ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/platform/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-platform ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-platform ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM JavaScript objects - implementation 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-jso-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-jso-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-jso-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-jso-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/jso/impl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-jso-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-jso-impl ---
+[INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/191792715/jso/impl/target/surefire-reports
 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.teavm.jso.plugin.AstWriterTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in org.teavm.jso.plugin.AstWriterTest
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM Java class library 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-classlib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-classlib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (generate-tz-cache) > validate @ teavm-classlib >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (generate-tz-cache) < validate @ teavm-classlib <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (generate-tz-cache) @ teavm-classlib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-classlib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/classlib/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-classlib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (generate-classlib-doc) > validate @ teavm-classlib >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (generate-classlib-doc) < validate @ teavm-classlib <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (generate-classlib-doc) @ teavm-classlib ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-classlib ---
+[INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/191792715/classlib/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.teavm.classlib.impl.Base46Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.275 sec - in org.teavm.classlib.impl.Base46Test
+Running org.teavm.classlib.impl.unicode.UnicodeSupportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec - in org.teavm.classlib.impl.unicode.UnicodeSupportTest
+Running org.teavm.classlib.impl.Base64Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.teavm.classlib.impl.Base64Test
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM html4j support 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-html4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-html4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-html4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-html4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-html4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ teavm-html4j ---
+[INFO] Tests are skipped.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM samples 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM tooling core 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-tooling ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-tooling ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-tooling ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-tooling ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-tooling ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-tooling ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM maven 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM maven plugin 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-maven-plugin ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/maven/plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.3:descriptor (default-descriptor) @ teavm-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[WARNING] Deprecated @component for project field in org.teavm.maven.TeaVMCompileMojo.: replace with @parameter name="${project}" @readonly
+[INFO] Mojo extractor for language: java-annotations found 1 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-maven-plugin ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM Hello world web application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-samples-hello ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/hello/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-hello ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-hello ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/root/workspace/konsoletyper/teavm/191792715/samples/hello/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] Source maps successfully written
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCloneNotSupportedException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThrowable.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TIllegalCharsetNameException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TSystem.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TFilterOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStdout.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStderr.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TOutputStream.java
+[INFO] Missing source file: org/teavm/jso/dom/events/MouseEventTarget.java
+[INFO] Missing source file: org/teavm/jso/ajax/XMLHttpRequest.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TMapEntry.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TAbstractStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchMethodError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchFieldError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLinkageError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalArgumentException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThread.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TPrintStream.java
+[INFO] Missing source file: org/teavm/jso/JSObject.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIncompatibleClassChangeError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TRuntimeException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/THashMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TObject.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Charset.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TString.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TClass.java
+[INFO] Source files successfully written
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/hello/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-hello ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-hello ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM performance benchmark 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-samples-benchmark ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-benchmark ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-benchmark ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/jbox2d/jbox2d-library/2.2.1.1/jbox2d-library-2.2.1.1.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/jbox2d/jbox2d-library/2.2.1.1/jbox2d-library-2.2.1.1-sources.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/apidesign/bck2brwsr/emul/0.17/emul-0.17-rt.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/dukescript/canvas/html5-canvas/0.7.2/html5-canvas-0.7.2.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/dukescript/canvas/canvas-api/0.7.2/canvas-api-0.7.2.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/apidesign/bck2brwsr/ko-bck2brwsr/0.17/ko-bck2brwsr-0.17-bck2brwsr.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.json/1.2.3/net.java.html.json-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/ko4j/1.2.3/ko4j-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.geo/1.2.3/net.java.html.geo-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.sound/1.2.3/net.java.html.sound-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.boot/1.2.3/net.java.html.boot-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html/1.2.3/net.java.html-1.2.3.jar:/root/workspace/konsoletyper/teavm/191792715/samples/benchmark/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (wasm-client) @ teavm-samples-benchmark ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/jbox2d/jbox2d-library/2.2.1.1/jbox2d-library-2.2.1.1.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/jbox2d/jbox2d-library/2.2.1.1/jbox2d-library-2.2.1.1-sources.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/apidesign/bck2brwsr/emul/0.17/emul-0.17-rt.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/dukescript/canvas/html5-canvas/0.7.2/html5-canvas-0.7.2.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/dukescript/canvas/canvas-api/0.7.2/canvas-api-0.7.2.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/apidesign/bck2brwsr/ko-bck2brwsr/0.17/ko-bck2brwsr-0.17-bck2brwsr.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.json/1.2.3/net.java.html.json-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/ko4j/1.2.3/ko4j-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.geo/1.2.3/net.java.html.geo-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.sound/1.2.3/net.java.html.sound-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html.boot/1.2.3/net.java.html.boot-1.2.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/netbeans/html/net.java.html/1.2.3/net.java.html-1.2.3.jar:/root/workspace/konsoletyper/teavm/191792715/samples/benchmark/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] 
+[INFO] --- html4j-maven-plugin:1.1:process-js-annotations (default) @ teavm-samples-benchmark ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/benchmark/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-benchmark ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-benchmark ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM Web Storage web application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-samples-storage ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/storage/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-storage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/storage/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-storage ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-storage ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM HTML5 video web application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-samples-video ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-video ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/video/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-video ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-video ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/root/workspace/konsoletyper/teavm/191792715/samples/video/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] Source maps successfully written
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCloneNotSupportedException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThrowable.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TIllegalCharsetNameException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TSystem.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TFilterOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStdout.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStderr.java
+[INFO] Missing source file: org/teavm/jso/dom/events/MouseEventTarget.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TOutputStream.java
+[INFO] Missing source file: org/teavm/jso/dom/html/HTMLElement.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TMapEntry.java
+[INFO] Missing source file: org/teavm/jso/dom/html/HTMLMediaElement.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TAbstractStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchMethodError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchFieldError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLinkageError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalArgumentException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThread.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TPrintStream.java
+[INFO] Missing source file: org/teavm/jso/JSObject.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIncompatibleClassChangeError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TRuntimeException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/THashMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TObject.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Charset.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TString.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TClass.java
+[INFO] Source files successfully written
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-video ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/video/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-video ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-video ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM CPS demo 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-samples-async ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-async ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/async/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-async ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-async ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/samples/async/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] Source maps successfully written
+[INFO] Missing source file: org/teavm/platform/plugin/AsyncCallbackWrapper.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCloneNotSupportedException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThrowable.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TArrays.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStdout.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TBuffer.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TCharBufferImpl.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TBufferedEncoder.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TBufferOverflowException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TCharBufferOverArray.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharsetEncoder.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TReadOnlyBufferException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLinkageError.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TCharBuffer.java
+[INFO] Missing source file: org/teavm/platform/Platform.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThread.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCharacter.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TUnsupportedOperationException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/THashMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalStateException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TError.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TByteOrder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TInterruptedException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TIllegalCharsetNameException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCodingErrorAction.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TSystem.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TFilterOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStderr.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TBufferUnderflowException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalMonitorStateException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TMapEntry.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TAbstractStringBuilder.java
+[INFO] Missing source file: org/teavm/platform/PlatformQueue.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchMethodError.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Encoder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchFieldError.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCoderResult.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TByteBufferImpl.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalArgumentException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TPrintStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TMath.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIncompatibleClassChangeError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TRuntimeException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TObject.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Charset.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/TByteBuffer.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCoderMalfunctionError.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TString.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TClass.java
+[INFO] Source files successfully written
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-async ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/async/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-async ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-async ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM Kotlin web application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-kotlin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/kotlin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-kotlin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.0.3:compile (compile) @ teavm-samples-kotlin ---
+[INFO] Kotlin Compiler version 1.0.3
+[INFO] Compiling Kotlin sources from [/root/workspace/konsoletyper/teavm/191792715/samples/kotlin/src/main/kotlin]
+[INFO] Module name is teavm-samples-kotlin
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-kotlin ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/./workspace/konsoletyper/teavm/191792715/.m2/org/jetbrains/kotlin/kotlin-stdlib/1.0.3/kotlin-stdlib-1.0.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/jetbrains/kotlin/kotlin-runtime/1.0.3/kotlin-runtime-1.0.3.jar:/root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/samples/kotlin/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] Source maps successfully written
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCloneNotSupportedException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThrowable.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TIllegalCharsetNameException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TArrays.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TSystem.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TFilterOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractList.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/reflect/TArray.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStdout.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStderr.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNullPointerException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TMapEntry.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TAbstractStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchMethodError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchFieldError.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TConcurrentModificationException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLinkageError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalArgumentException.java
+[INFO] Missing source file: org/teavm/platform/Platform.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThread.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TPrintStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TMath.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIncompatibleClassChangeError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TRuntimeException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/THashMap.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractCollection.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TNoSuchElementException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TObject.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Charset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNegativeArraySizeException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TString.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TClass.java
+[INFO] Source files successfully written
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-kotlin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/kotlin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-kotlin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.0.3:test-compile (test-compile) @ teavm-samples-kotlin ---
+[INFO] Kotlin Compiler version 1.0.3
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-kotlin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM Scala example 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-samples-scala ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/scala/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-samples-scala ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.1:compile (default) @ teavm-samples-scala ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- teavm-maven-plugin:1.0.0-SNAPSHOT:compile (web-client) @ teavm-samples-scala ---
+[INFO] Preparing classpath for JavaScript generation
+[INFO] Using the following classpath for JavaScript generation: /root/workspace/konsoletyper/teavm/191792715/classlib/target/classes:/root/workspace/konsoletyper/teavm/191792715/platform/target/classes:/root/workspace/konsoletyper/teavm/191792715/core/target/classes:/root/workspace/konsoletyper/teavm/191792715/interop/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/root/workspace/konsoletyper/teavm/191792715/jso/apis/target/classes:/root/workspace/konsoletyper/teavm/191792715/jso/impl/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/root/./workspace/konsoletyper/teavm/191792715/.m2/joda-time/joda-time/2.7/joda-time-2.7.jar:/root/workspace/konsoletyper/teavm/191792715/jso/core/target/classes:/root/./workspace/konsoletyper/teavm/191792715/.m2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar:/root/workspace/konsoletyper/teavm/191792715/samples/scala/target/classes
+[INFO] Building JavaScript file
+[INFO] Output file successfully built
+[INFO] Debug information successfully written
+[INFO] Source maps successfully written
+[INFO] Missing source file: org/teavm/platform/plugin/AsyncCallbackWrapper.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThrowable.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TArrays.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TDivision.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStdout.java
+[INFO] Missing source file: org/teavm/jso/dom/html/HTMLElement.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNullPointerException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLong.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TMultiplication.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TThread.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TMathContext.java
+[INFO] Missing source file: org/teavm/classlib/java/util/THashMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalStateException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TArrayStoreException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TIllegalCharsetNameException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TFilterOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TEnum.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleOutputStreamStderr.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TBoolean.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalMonitorStateException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/platform/PlatformQueue.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchMethodError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIncompatibleClassChangeError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TRuntimeException.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TConversion.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TRoundingMode.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TObject.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TBigInteger.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TClass.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCloneNotSupportedException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TOutputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TFloat.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TLinkageError.java
+[INFO] Missing source file: org/teavm/platform/Platform.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNumber.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TCharacter.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TUnsupportedOperationException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TConsoleInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TAbstractMap.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TDouble.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TSystem.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TBitLevel.java
+[INFO] Missing source file: org/teavm/jso/dom/events/MouseEventTarget.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TInteger.java
+[INFO] Missing source file: org/teavm/classlib/java/math/TElementary.java
+[INFO] Missing source file: org/teavm/jso/dom/html/HTMLDocument.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TMapEntry.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TAbstractStringBuilder.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TNoSuchFieldError.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TIllegalArgumentException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TPrintStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TMath.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TStringIndexOutOfBoundsException.java
+[INFO] Missing source file: org/teavm/classlib/java/io/TInputStream.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TException.java
+[INFO] Missing source file: org/teavm/classlib/java/util/TNoSuchElementException.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TArithmeticException.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/impl/TUTF8Charset.java
+[INFO] Missing source file: org/teavm/classlib/java/nio/charset/TCharset.java
+[INFO] Missing source file: org/teavm/classlib/java/lang/TString.java
+[INFO] Source files successfully written
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-samples-scala ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/samples/scala/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-samples-scala ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.1:testCompile (default) @ teavm-samples-scala ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-samples-scala ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM CLI 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-cli ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/cli/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-cli ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-cli ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM maven web application archetype 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-maven-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-maven-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/maven/webapp/src/test/resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM debugging backend for Google Chrome RDP 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-chrome-rdp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-chrome-rdp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/chrome-rdp/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-chrome-rdp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-chrome-rdp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/chrome-rdp/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-chrome-rdp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-chrome-rdp ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building teavm-junit 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-junit ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-junit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-junit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-junit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tools/junit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-junit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-junit ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM metaprogramming API implementation 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-metaprogramming-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ teavm-metaprogramming-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-metaprogramming-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ teavm-metaprogramming-impl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/metaprogramming/impl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-metaprogramming-impl ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-metaprogramming-impl ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM tests 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-tests ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/tests/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ teavm-tests ---
+[INFO] Surefire report directory: /root/workspace/konsoletyper/teavm/191792715/tests/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 4.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 62.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 1083.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.teavm.classlib.java.util.StringTokenizerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.287 sec - in org.teavm.classlib.java.util.StringTokenizerTest
+Running org.teavm.classlib.java.util.LinkedListTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.703 sec - in org.teavm.classlib.java.util.LinkedListTest
+Running org.teavm.classlib.java.util.ServiceLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in org.teavm.classlib.java.util.ServiceLoaderTest
+Running org.teavm.classlib.java.util.HashtableTest
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.379 sec - in org.teavm.classlib.java.util.HashtableTest
+Running org.teavm.classlib.java.util.CalendarTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.034 sec - in org.teavm.classlib.java.util.CalendarTest
+Running org.teavm.classlib.java.util.DateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in org.teavm.classlib.java.util.DateTest
+Running org.teavm.classlib.java.util.regex.PatternErrorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.25 sec - in org.teavm.classlib.java.util.regex.PatternErrorTest
+Running org.teavm.classlib.java.util.regex.SplitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.104 sec - in org.teavm.classlib.java.util.regex.SplitTest
+Running org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.464 sec - in org.teavm.classlib.java.util.regex.PatternSyntaxExceptionTest
+Running org.teavm.classlib.java.util.regex.ModeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.594 sec - in org.teavm.classlib.java.util.regex.ModeTest
+Running org.teavm.classlib.java.util.regex.Pattern2Test
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.474 sec - in org.teavm.classlib.java.util.regex.Pattern2Test
+Running org.teavm.classlib.java.util.regex.PatternTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 69.98 sec - in org.teavm.classlib.java.util.regex.PatternTest
+Running org.teavm.classlib.java.util.regex.Matcher2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.848 sec - in org.teavm.classlib.java.util.regex.Matcher2Test
+Running org.teavm.classlib.java.util.regex.MatcherTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.656 sec - in org.teavm.classlib.java.util.regex.MatcherTest
+Running org.teavm.classlib.java.util.regex.ReplaceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.965 sec - in org.teavm.classlib.java.util.regex.ReplaceTest
+Running org.teavm.classlib.java.util.TreeMapTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 82.132 sec - in org.teavm.classlib.java.util.TreeMapTest
+Running org.teavm.classlib.java.util.PriorityQueueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec - in org.teavm.classlib.java.util.PriorityQueueTest
+Running org.teavm.classlib.java.util.ArrayListTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.464 sec - in org.teavm.classlib.java.util.ArrayListTest
+Running org.teavm.classlib.java.util.VectorTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.942 sec - in org.teavm.classlib.java.util.VectorTest
+Running org.teavm.classlib.java.util.CurrencyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.657 sec - in org.teavm.classlib.java.util.CurrencyTest
+Running org.teavm.classlib.java.util.zip.GZIPInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.427 sec - in org.teavm.classlib.java.util.zip.GZIPInputStreamTest
+Running org.teavm.classlib.java.util.LocaleTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.279 sec - in org.teavm.classlib.java.util.LocaleTest
+Running org.teavm.classlib.java.util.TimeZoneTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.513 sec - in org.teavm.classlib.java.util.TimeZoneTest
+Running org.teavm.classlib.java.util.LinkedHashMapTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.835 sec - in org.teavm.classlib.java.util.LinkedHashMapTest
+Running org.teavm.classlib.java.util.ArrayDequeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.811 sec - in org.teavm.classlib.java.util.ArrayDequeTest
+Running org.teavm.classlib.java.util.BitSetTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.409 sec - in org.teavm.classlib.java.util.BitSetTest
+Running org.teavm.classlib.java.util.ArraysTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec - in org.teavm.classlib.java.util.ArraysTest
+Running org.teavm.classlib.java.util.CollectionsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.011 sec - in org.teavm.classlib.java.util.CollectionsTest
+Running org.teavm.classlib.java.io.InputStreamReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.559 sec - in org.teavm.classlib.java.io.InputStreamReaderTest
+Running org.teavm.classlib.java.io.PushbackInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.814 sec - in org.teavm.classlib.java.io.PushbackInputStreamTest
+Running org.teavm.classlib.java.io.OutputStreamWriterTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.276 sec - in org.teavm.classlib.java.io.OutputStreamWriterTest
+Running org.teavm.classlib.java.io.BufferedReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in org.teavm.classlib.java.io.BufferedReaderTest
+Running org.teavm.classlib.java.io.ByteArrayInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.teavm.classlib.java.io.ByteArrayInputStreamTest
+Running org.teavm.classlib.java.io.BufferedInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.562 sec - in org.teavm.classlib.java.io.BufferedInputStreamTest
+Running org.teavm.classlib.java.lang.CharacterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 sec - in org.teavm.classlib.java.lang.CharacterTest
+Running org.teavm.classlib.java.lang.EnumTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.676 sec - in org.teavm.classlib.java.lang.EnumTest
+Running org.teavm.classlib.java.lang.MathTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec - in org.teavm.classlib.java.lang.MathTest
+Running org.teavm.classlib.java.lang.LambdaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec - in org.teavm.classlib.java.lang.LambdaTest
+Running org.teavm.classlib.java.lang.IntegerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.985 sec - in org.teavm.classlib.java.lang.IntegerTest
+Running org.teavm.classlib.java.lang.reflect.ArrayTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.teavm.classlib.java.lang.reflect.ArrayTest
+Running org.teavm.classlib.java.lang.ThreadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 sec - in org.teavm.classlib.java.lang.ThreadTest
+Running org.teavm.classlib.java.lang.SystemTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.659 sec - in org.teavm.classlib.java.lang.SystemTest
+Running org.teavm.classlib.java.lang.FloatTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in org.teavm.classlib.java.lang.FloatTest
+Running org.teavm.classlib.java.lang.ObjectTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.167 sec - in org.teavm.classlib.java.lang.ObjectTest
+Running org.teavm.classlib.java.lang.StringBuilderTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.406 sec - in org.teavm.classlib.java.lang.StringBuilderTest
+Running org.teavm.classlib.java.lang.BooleanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in org.teavm.classlib.java.lang.BooleanTest
+Running org.teavm.classlib.java.lang.StringTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.242 sec - in org.teavm.classlib.java.lang.StringTest
+Running org.teavm.classlib.java.lang.ClassTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.513 sec - in org.teavm.classlib.java.lang.ClassTest
+Running org.teavm.classlib.java.lang.ClassLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 sec - in org.teavm.classlib.java.lang.ClassLoaderTest
+Running org.teavm.classlib.java.lang.DoubleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.652 sec - in org.teavm.classlib.java.lang.DoubleTest
+Running org.teavm.classlib.java.math.BigIntegerAddTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.467 sec - in org.teavm.classlib.java.math.BigIntegerAddTest
+Running org.teavm.classlib.java.math.BigIntegerMultiplyTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.7 sec - in org.teavm.classlib.java.math.BigIntegerMultiplyTest
+Running org.teavm.classlib.java.math.BigIntegerModPowTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.352 sec - in org.teavm.classlib.java.math.BigIntegerModPowTest
+Running org.teavm.classlib.java.math.BigDecimalScaleOperationsTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.67 sec - in org.teavm.classlib.java.math.BigDecimalScaleOperationsTest
+Running org.teavm.classlib.java.math.BigIntegerXorTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.749 sec - in org.teavm.classlib.java.math.BigIntegerXorTest
+Running org.teavm.classlib.java.math.BigDecimalArithmeticTest
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.144 sec - in org.teavm.classlib.java.math.BigDecimalArithmeticTest
+Running org.teavm.classlib.java.math.BigIntegerSubtractTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.503 sec - in org.teavm.classlib.java.math.BigIntegerSubtractTest
+Running org.teavm.classlib.java.math.BigIntegerConvertTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.414 sec - in org.teavm.classlib.java.math.BigIntegerConvertTest
+Running org.teavm.classlib.java.math.BigIntegerHashCodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.586 sec - in org.teavm.classlib.java.math.BigIntegerHashCodeTest
+Running org.teavm.classlib.java.math.BigIntegerNotTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.388 sec - in org.teavm.classlib.java.math.BigIntegerNotTest
+Running org.teavm.classlib.java.math.BigDecimalConvertTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.739 sec - in org.teavm.classlib.java.math.BigDecimalConvertTest
+Running org.teavm.classlib.java.math.BigIntegerCompareTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.296 sec - in org.teavm.classlib.java.math.BigIntegerCompareTest
+Running org.teavm.classlib.java.math.BigDecimalConstructorsTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.752 sec - in org.teavm.classlib.java.math.BigDecimalConstructorsTest
+Running org.teavm.classlib.java.math.BigIntegerConstructorsTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.218 sec - in org.teavm.classlib.java.math.BigIntegerConstructorsTest
+Running org.teavm.classlib.java.math.BigIntegerAndTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.705 sec - in org.teavm.classlib.java.math.BigIntegerAndTest
+Running org.teavm.classlib.java.math.BigIntegerOperateBitsTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.484 sec - in org.teavm.classlib.java.math.BigIntegerOperateBitsTest
+Running org.teavm.classlib.java.math.BigIntegerToStringTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.485 sec - in org.teavm.classlib.java.math.BigIntegerToStringTest
+Running org.teavm.classlib.java.math.BigIntegerDivideTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.992 sec - in org.teavm.classlib.java.math.BigIntegerDivideTest
+Running org.teavm.classlib.java.math.BigDecimalCompareTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.109 sec - in org.teavm.classlib.java.math.BigDecimalCompareTest
+Running org.teavm.classlib.java.math.BigIntegerOrTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.658 sec - in org.teavm.classlib.java.math.BigIntegerOrTest
+Running org.teavm.classlib.java.text.SimpleDateFormatTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.784 sec - in org.teavm.classlib.java.text.SimpleDateFormatTest
+Running org.teavm.classlib.java.text.NumberFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 sec - in org.teavm.classlib.java.text.NumberFormatTest
+Running org.teavm.classlib.java.text.DecimalFormatTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.954 sec - in org.teavm.classlib.java.text.DecimalFormatTest
+Running org.teavm.classlib.java.text.DateFormatTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.447 sec - in org.teavm.classlib.java.text.DateFormatTest
+Running org.teavm.classlib.java.text.DecimalFormatParseTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.71 sec - in org.teavm.classlib.java.text.DecimalFormatParseTest
+Running org.teavm.classlib.java.nio.LongBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.231 sec - in org.teavm.classlib.java.nio.LongBufferTest
+Running org.teavm.classlib.java.nio.charset.UTF8Test
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.124 sec - in org.teavm.classlib.java.nio.charset.UTF8Test
+Running org.teavm.classlib.java.nio.CharBufferTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.723 sec - in org.teavm.classlib.java.nio.CharBufferTest
+Running org.teavm.classlib.java.nio.ByteBufferTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.398 sec - in org.teavm.classlib.java.nio.ByteBufferTest
+Running org.teavm.classlib.java.nio.DoubleBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.77 sec - in org.teavm.classlib.java.nio.DoubleBufferTest
+Running org.teavm.classlib.java.nio.FloatBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.615 sec - in org.teavm.classlib.java.nio.FloatBufferTest
+Running org.teavm.classlib.java.nio.ByteBufferWrapperTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.374 sec - in org.teavm.classlib.java.nio.ByteBufferWrapperTest
+Running org.teavm.classlib.java.nio.ShortBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.976 sec - in org.teavm.classlib.java.nio.ShortBufferTest
+Running org.teavm.classlib.java.nio.IntBufferTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.218 sec - in org.teavm.classlib.java.nio.IntBufferTest
+Running org.teavm.dependency.ClassValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in org.teavm.dependency.ClassValueTest
+Running org.teavm.dependency.DependencyTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in org.teavm.dependency.DependencyTest
+Running org.teavm.metaprogramming.test.ProxyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.133 sec - in org.teavm.metaprogramming.test.ProxyTest
+Running org.teavm.metaprogramming.test.MetaprogrammingTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.259 sec - in org.teavm.metaprogramming.test.MetaprogrammingTest
+Running org.teavm.tests.JSOTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.629 sec - in org.teavm.tests.JSOTest
+Running org.teavm.vm.LongTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 sec - in org.teavm.vm.LongTest
+Running org.teavm.vm.VMTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.012 sec - in org.teavm.vm.VMTest
+Running org.teavm.platform.metadata.MetadataGeneratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.teavm.platform.metadata.MetadataGeneratorTest
+Running org.teavm.jso.test.ImplementationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.teavm.jso.test.ImplementationTest
+Running org.teavm.jso.test.FunctorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.teavm.jso.test.FunctorTest
+Running org.teavm.jso.test.AnnotationsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 sec - in org.teavm.jso.test.AnnotationsTest
+Running org.teavm.jso.test.JavaInvocationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in org.teavm.jso.test.JavaInvocationTest
+Running org.teavm.jso.test.ConversionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 sec - in org.teavm.jso.test.ConversionTest
+
+Results :
+
+Tests run: 1706, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeaVM slf4j 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ teavm-extras-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ teavm-extras-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ teavm-extras-slf4j ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ teavm-extras-slf4j ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/konsoletyper/teavm/191792715/extras-slf4j/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ teavm-extras-slf4j ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ teavm-extras-slf4j ---
+[INFO] No tests to run.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] TeaVM .............................................. SUCCESS [  0.008 s]
-[INFO] TeaVM metaprogramming API .......................... SUCCESS [  2.462 s]
-[INFO] TeaVM interop API .................................. SUCCESS [  1.216 s]
-[INFO] TeaVM core ......................................... FAILURE [  3.537 s]
-[INFO] TeaVM JavaScript objects ........................... SKIPPED
-[INFO] TeaVM JavaScript APIs .............................. SKIPPED
-[INFO] TeaVM platform ..................................... SKIPPED
-[INFO] TeaVM JavaScript objects - implementation .......... SKIPPED
-[INFO] TeaVM Java class library ........................... SKIPPED
-[INFO] TeaVM html4j support ............................... SKIPPED
-[INFO] TeaVM samples ...................................... SKIPPED
-[INFO] TeaVM tooling core ................................. SKIPPED
-[INFO] TeaVM maven ........................................ SKIPPED
-[INFO] TeaVM maven plugin ................................. SKIPPED
-[INFO] TeaVM Hello world web application .................. SKIPPED
-[INFO] TeaVM performance benchmark ........................ SKIPPED
-[INFO] TeaVM Web Storage web application .................. SKIPPED
-[INFO] TeaVM HTML5 video web application .................. SKIPPED
-[INFO] TeaVM CPS demo ..................................... SKIPPED
-[INFO] TeaVM Kotlin web application ....................... SKIPPED
-[INFO] TeaVM Scala example ................................ SKIPPED
-[INFO] TeaVM CLI .......................................... SKIPPED
-[INFO] TeaVM maven web application archetype .............. SKIPPED
-[INFO] TeaVM debugging backend for Google Chrome RDP ...... SKIPPED
-[INFO] teavm-junit ........................................ SKIPPED
-[INFO] TeaVM metaprogramming API implementation ........... SKIPPED
-[INFO] TeaVM tests ........................................ SKIPPED
-[INFO] TeaVM slf4j ........................................ SKIPPED
+[INFO] TeaVM .............................................. SUCCESS [  0.006 s]
+[INFO] TeaVM metaprogramming API .......................... SUCCESS [  1.871 s]
+[INFO] TeaVM interop API .................................. SUCCESS [  0.906 s]
+[INFO] TeaVM core ......................................... SUCCESS [  2.787 s]
+[INFO] TeaVM JavaScript objects ........................... SUCCESS [  0.551 s]
+[INFO] TeaVM JavaScript APIs .............................. SUCCESS [  0.065 s]
+[INFO] TeaVM platform ..................................... SUCCESS [  0.055 s]
+[INFO] TeaVM JavaScript objects - implementation .......... SUCCESS [  0.737 s]
+[INFO] TeaVM Java class library ........................... SUCCESS [  9.435 s]
+[INFO] TeaVM html4j support ............................... SUCCESS [  0.331 s]
+[INFO] TeaVM samples ...................................... SUCCESS [  0.001 s]
+[INFO] TeaVM tooling core ................................. SUCCESS [  0.086 s]
+[INFO] TeaVM maven ........................................ SUCCESS [  0.003 s]
+[INFO] TeaVM maven plugin ................................. SUCCESS [  3.957 s]
+[INFO] TeaVM Hello world web application .................. SUCCESS [  4.115 s]
+[INFO] TeaVM performance benchmark ........................ SUCCESS [ 20.724 s]
+[INFO] TeaVM Web Storage web application .................. SUCCESS [  0.035 s]
+[INFO] TeaVM HTML5 video web application .................. SUCCESS [  2.103 s]
+[INFO] TeaVM CPS demo ..................................... SUCCESS [  2.595 s]
+[INFO] TeaVM Kotlin web application ....................... SUCCESS [  7.513 s]
+[INFO] TeaVM Scala example ................................ SUCCESS [  7.752 s]
+[INFO] TeaVM CLI .......................................... SUCCESS [  0.025 s]
+[INFO] TeaVM maven web application archetype .............. SUCCESS [  0.125 s]
+[INFO] TeaVM debugging backend for Google Chrome RDP ...... SUCCESS [  0.210 s]
+[INFO] teavm-junit ........................................ SUCCESS [  0.107 s]
+[INFO] TeaVM metaprogramming API implementation ........... SUCCESS [  0.056 s]
+[INFO] TeaVM tests ........................................ SUCCESS [09:48 min]
+[INFO] TeaVM slf4j ........................................ SUCCESS [  0.036 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.927 s
-[INFO] Finished at: 2017-09-07T10:37:21+02:00
-[INFO] Final Memory: 30M/370M
+[INFO] Total time: 10:57 min
+[INFO] Finished at: 2017-09-07T10:52:08+02:00
+[INFO] Final Memory: 79M/1524M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project teavm-core: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/konsoletyper/teavm/191792715/core/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :teavm-core
