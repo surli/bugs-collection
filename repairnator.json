@@ -1,0 +1,38 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "pr-remote-repo": "kjames88/CorfuDB",
+  "totalNumberErroringTests": 1,
+  "pr-head-commit-id": "424d8dc52606a234ddee5b6745d0941913b387a7",
+  "pr-id": 441,
+  "repo": "CorfuDB/CorfuDB",
+  "pr-head-commit-id-url": "https://github.com/CorfuDB/CorfuDB/commit/424d8dc52606a234ddee5b6745d0941913b387a7",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/204734269/test",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "is-pr": "true",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.RuntimeException"
+  ],
+  "totalNumberRunningTests": 223,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.collections.FGMapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.FGMapTest#loadsFollowedByGetsConcurrent"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "failureDetail": "Attempted to get the result of an upcall@4 but we are @9 and we don\u0027t have a copy",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ],
+  "pr-base-commit-id": "7ebcf1cba6651520c9424b72fda1b18293f4e405",
+  "pr-base-commit-id-url": "https://github.com/CorfuDB/CorfuDB/commit/7ebcf1cba6651520c9424b72fda1b18293f4e405"
+}
