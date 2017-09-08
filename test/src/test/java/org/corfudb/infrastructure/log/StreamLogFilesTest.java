@@ -400,7 +400,7 @@ public class StreamLogFilesTest extends AbstractCorfuTest {
 
         // Verify that first 25 segments have been deleted
         String[] afterTrimFiles = logs.list();
-        assertThat((long) afterTrimFiles.length).isEqualTo((numSegments - endSegment) * filesPerSegment);
+        assertThat((long) afterTrimFiles.length).isEqualTo((numSegments - endSegment + 1) * filesPerSegment);
 
         Set<String> fileNames = new HashSet(Arrays.asList(afterTrimFiles));
         for (long x = endSegment + 1; x < numSegments; x++) {
