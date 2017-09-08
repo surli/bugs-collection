@@ -91,7 +91,8 @@ public abstract class AbstractTransactionalContext implements
      *  - a set of conflict-parameters modified by this transaction on the stream,
      *  - a list of SMR updates by this transcation on the stream.
      *
-     * @return a map from streams to write entry representing an update made by this TX
+     * @return a map from streams to write entry representing an update made by
+     * this TX
      */
     @Getter
     protected final Map
@@ -226,7 +227,8 @@ public abstract class AbstractTransactionalContext implements
     }
 
     /**
-     * collect all the conflict-params from the write-set for this transaction into a set.
+     * collect all the conflict-params from the write-set for this transaction
+     * into a set.
      * @return A set of longs representing all the conflict params
      */
     Map<UUID, Set<Integer>> collectWriteConflictParams() {
@@ -289,8 +291,8 @@ public abstract class AbstractTransactionalContext implements
 
     /** Helper function to get a write set for a particular stream.
      *
-     * @param id    The stream to get a write set for.
-     * @return      The write set for that stream, as an ordered list.
+     * @param id    The stream to get a append set for.
+     * @return      The append set for that stream, as an ordered list.
      */
     List<WriteSetEntry> getWriteSetEntryList(UUID id) {
 
