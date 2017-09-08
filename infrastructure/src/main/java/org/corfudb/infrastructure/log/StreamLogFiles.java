@@ -1,6 +1,7 @@
 package org.corfudb.infrastructure.log;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,6 +44,7 @@ import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.corfudb.format.Types;
 import org.corfudb.format.Types.TrimEntry;
 import org.corfudb.format.Types.DataType;
@@ -268,7 +270,39 @@ public class StreamLogFiles implements StreamLog, StreamLogWithRankedAddressSpac
     }
 
     @Override
-    public void compact() {
+    public synchronized void compact() {
+        if (startingAddress == 0) {
+            spaseCompact();
+        } else {
+            trimPrefix();
+        }
+    }
+
+    private void trimPrefix() {
+        // Trim all segments up till the segment that contains the starting address
+        // (i.e. trim only complete segments)
+        long endSegment = (startingAddress / RECORDS_PER_LOG_FILE) - 1;
+
+        if (endSegment <= 0) {
+            log.debug("Only one segment detected, ignoring trim");
+            return;
+        }
+
+        File dir = new File(logDir);
+        String regex = String.format("[0-%d].log|[0-%d].log.trimmed|[0-%d].log.pending",
+                endSegment, endSegment, endSegment);
+        FileFilter fileFilter = new WildcardFileFilter(regex);
+        File[] files = dir.listFiles(fileFilter);
+
+        for(File file : files) {
+            if(!file.delete()) {
+                log.error("Couldn't delete/trim file {}", file.getName());
+            }
+        }
+        log.info("Prefix trim completed, delete segments 0 to {}", endSegment);
+    }
+
+    private void spaseCompact() {
         //TODO(Maithem) Open all segment handlers?
         for (SegmentHandle sh : writeChannels.values()) {
             Set<Long> pending = new HashSet(sh.getPendingTrims());

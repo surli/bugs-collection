@@ -7,10 +7,12 @@ import static org.corfudb.infrastructure.log.StreamLogFiles.METADATA_SIZE;
 import io.netty.buffer.ByteBuf;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 
 import io.netty.buffer.Unpooled;
+import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.corfudb.AbstractCorfuTest;
 import org.corfudb.format.Types.Metadata;
 import org.corfudb.infrastructure.ServerContext;
@@ -365,5 +367,25 @@ public class StreamLogFilesTest extends AbstractCorfuTest {
         // Restart and try to retrieve the global tail one last time
         log = new StreamLogFiles(getContext(), false);
         assertThat(log.getGlobalTail()).isEqualTo(lastAddress + tailDelta);
+    }
+
+    @Test
+    public void testPrefixTrim() {
+        String logDir = getContext().getServerConfig().get("--log-path") + File.separator + "log";
+        StreamLog log = new StreamLogFiles(getContext(), false);
+
+        // Write 50 segments and trim the first 25
+        final long numSegments = 50;
+        for(long x = 0; x < numSegments * StreamLogFiles.RECORDS_PER_LOG_FILE; x++) {
+            writeToLog(log, x);
+        }
+
+        final long endSegment = 25;
+
+        File dir = new File(logDir);
+        String regex = String.format("[0-%d].log|[0-%d].log.trimmed|[0-%d].log.pending",
+                endSegment, endSegment, endSegment);
+        FileFilter fileFilter = new WildcardFileFilter(regex);
+        File[] files = dir.listFiles(fileFilter);
     }
 }

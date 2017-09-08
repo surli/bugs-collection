@@ -2,9 +2,10 @@ package org.corfudb.infrastructure;
 
 import java.lang.invoke.MethodHandles;
 import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
@@ -68,6 +69,7 @@ public class LogUnitServer extends AbstractServer {
     private final Thread gcThread = null;
     private Long gcRetryInterval;
     private AtomicBoolean running = new AtomicBoolean(true);
+    private ScheduledFuture<?> compactor;
 
     /**
      * The options map.
@@ -122,6 +124,9 @@ public class LogUnitServer extends AbstractServer {
 
         MetricRegistry metrics = serverContext.getMetrics();
         MetricsUtils.addCacheGauges(metrics, metricsPrefix + "cache.", dataCache);
+
+        Runnable task = () -> streamLog.compact();
+        compactor = scheduler.scheduleAtFixedRate(task, 10,45, TimeUnit.MINUTES);
     }
 
     /**
@@ -261,6 +266,7 @@ public class LogUnitServer extends AbstractServer {
      */
     @Override
     public void shutdown() {
+        compactor.cancel(true);
         scheduler.shutdownNow();
         batchWriter.close();
     }

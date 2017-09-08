@@ -41,7 +41,7 @@ public class DataStore implements IDataStore {
     private final String logDir;
 
     @Getter
-    private final long DS_CACHE_SZ = 1_003; // size bound for in-memory cache for dataStore
+    private final long DS_CACHE_SZ = 1_000; // size bound for in-memory cache for dataStore
 
 
     public DataStore(Map<String, Object> opts) {

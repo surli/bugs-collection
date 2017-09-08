@@ -92,7 +92,7 @@ public class LogUnitClientTest extends AbstractClientTest {
         assertThat(r.getType())
                 .isEqualTo(DataType.DATA);
 
-        client.prefixTrim(0);
+        client.trim(0);
 
         // For logunit cach flush
         LogUnitServer server2 = new LogUnitServer(serverContext);
