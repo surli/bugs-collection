@@ -1,0 +1,54 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "pr-remote-repo": "CorfuDB/CorfuDB",
+  "totalNumberErroringTests": 1,
+  "pr-head-commit-id": "81ea4523b365bc71045eca4cca60cf65628181a3",
+  "pr-id": 407,
+  "repo": "CorfuDB/CorfuDB",
+  "pr-head-commit-id-url": "https://github.com/CorfuDB/CorfuDB/commit/81ea4523b365bc71045eca4cca60cf65628181a3",
+  "failingModule": "/root/workspace/CorfuDB/CorfuDB/189702185/test",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "is-pr": "true",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.util.concurrent.CancellationException",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 221,
+  "failing-test-cases": [
+    {
+      "className": "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrenctTest",
+      "failingMethods": [
+        "org.corfudb.runtime.object.transactions.WriteWriteTXConcurrenctTest#testAbortWWThreaded"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[0]\u003e but was:\u003c[2]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.corfudb.runtime.collections.ReplexSMRMapTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.corfudb.runtime.collections.ReplexSMRMapTest#concurrentAbortMultiViewThreaded"
+      ],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CancellationException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ],
+  "pr-base-commit-id": "e66e333032c401160db048b25734bc056ed01e86",
+  "pr-base-commit-id-url": "https://github.com/CorfuDB/CorfuDB/commit/e66e333032c401160db048b25734bc056ed01e86"
+}
