@@ -114,7 +114,7 @@ public class ObjectsView extends AbstractView {
             CorfuSMRObjectProxy<T> proxy = (CorfuSMRObjectProxy<T>) ((ICorfuSMRObject) obj).getProxy();
             ObjectID oid = new ObjectID(destination, proxy.getOriginalClass(), null);
             return (T) objectCache.computeIfAbsent(oid, x -> {
-                IStreamView sv = runtime.getStreamsView().copy(proxy.getSv().getStreamID(),
+                IStreamView sv = runtime.getStreamsView().copy(proxy.getSv().getID(),
                         destination, proxy.getTimestamp());
                 return CorfuProxyBuilder.getProxy(proxy.getOriginalClass(), null, sv, runtime,
                         proxy.getSerializer(), Collections.emptySet());
@@ -129,7 +129,7 @@ public class ObjectsView extends AbstractView {
                 try {
                     return
                             CorfuCompileWrapperBuilder.getWrapper(proxy.getCorfuSMRProxy().getObjectType(),
-                                    runtime, sv.getStreamID(), null, Serializers.JSON);
+                                    runtime, sv.getID(), null, Serializers.JSON);
                 }
                 catch (Exception ex) {
                     throw new RuntimeException(ex);

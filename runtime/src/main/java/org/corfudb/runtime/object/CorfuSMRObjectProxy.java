@@ -12,6 +12,7 @@ import org.corfudb.annotations.Mutator;
 import org.corfudb.annotations.MutatorAccessor;
 import org.corfudb.protocols.logprotocol.*;
 import org.corfudb.protocols.wireprotocol.DataType;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.exceptions.UnprocessedException;
@@ -329,7 +330,7 @@ public class CorfuSMRObjectProxy<P> extends CorfuObjectProxy<P> {
             methodAccessMode.set(false);
             // Update the current timestamp.
             timestamp = address;
-            log.trace("Timestamp for [{}] updated to {}", sv.getStreamID(), address);
+            log.trace("Timestamp for [{}] updated to {}", sv.getID(), address);
             if (completableFutureMap.containsKey(address)) {
                 completableFutureMap.get(address).complete(ret);
             }
@@ -372,9 +373,9 @@ public class CorfuSMRObjectProxy<P> extends CorfuObjectProxy<P> {
     @Override
     public synchronized void sync(P obj, long maxPos) {
         try (LockUtils.AutoCloseRWLock writeLock = new LockUtils.AutoCloseRWLock(rwLock).writeLock()) {
-            List<LogData> entries = sv.remainingUpTo(maxPos);
+            List<ILogData> entries = sv.remainingUpTo(maxPos);
             log.trace("Object[{}] sync to pos {}, read {} entries",
-                    sv.getStreamID(), maxPos == Long.MAX_VALUE ? "MAX" :
+                    sv.getID(), maxPos == Long.MAX_VALUE ? "MAX" :
                             maxPos, entries.size());
             entries.stream()
                     .filter(m -> m.getType() == DataType.DATA)

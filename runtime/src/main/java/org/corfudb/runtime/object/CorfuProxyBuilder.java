@@ -10,6 +10,7 @@ import net.bytebuddy.implementation.MethodDelegation;
 import net.bytebuddy.matcher.ElementMatchers;
 import org.corfudb.annotations.*;
 import org.corfudb.protocols.logprotocol.SMREntry;
+import org.corfudb.protocols.wireprotocol.ILogData;
 import org.corfudb.protocols.wireprotocol.LogData;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.exceptions.ObjectExistsException;
@@ -211,10 +212,10 @@ public class CorfuProxyBuilder {
                     // we need to either persist the constructor, or load from the saved args...
                     boolean readConstructor = true;
                     if (!sv.hasNext()) {
-                        log.debug("There appears to be no constructor for {}, writing one.", sv.getStreamID());
+                        log.debug("There appears to be no constructor for {}, writing one.", sv.getID());
                         // "default" is the SMRMethod name we use because it is also a Java reserved keyword.
                         long streamStart = sv.append(new SMREntry("default", constructorArgs, serializer),
-                                t -> t.getBackpointerMap().get(sv.getStreamID()) == -1L,
+                                t -> t.getBackpointerMap().get(sv.getID()) == -1L,
                                 t -> false);
                         readConstructor = streamStart == -1L;
                         if (annotation.objectType() == ObjectType.SMR) {
@@ -225,10 +226,10 @@ public class CorfuProxyBuilder {
                         if (options.contains(ObjectOpenOptions.CREATE_ONLY)) {
                             throw new ObjectExistsException(-1L);
                         }
-                        log.debug("There appears to be an existing constructor for {}, reading it...", sv.getStreamID());
+                        log.debug("There appears to be an existing constructor for {}, reading it...", sv.getID());
                         // The "default" entry should be the first entry in the stream.
                         // TODO: handle garbage collected streams.
-                        LogData entry = sv.next();
+                        ILogData entry = sv.next();
                         while (entry != null) {
                             if (entry.getPayload(runtime) instanceof SMREntry &&
                                     ((SMREntry) entry.getPayload(runtime)).getSMRMethod().equals("default")) {

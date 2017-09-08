@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.corfudb.protocols.wireprotocol.*;
 import org.corfudb.runtime.CorfuRuntime;
 import org.corfudb.runtime.exceptions.OverwriteException;
+import org.corfudb.runtime.view.Address;
 
 import java.util.*;
 import java.util.function.Function;
@@ -47,7 +48,7 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
                        Function<TokenResponse, Boolean> deacquisitionCallback) {
         // First, we get a token from the sequencer.
         TokenResponse tokenResponse = runtime.getSequencerView()
-                .nextToken(Collections.singleton(streamID), 1);
+                .nextToken(Collections.singleton(ID), 1);
 
         // We loop forever until we are interrupted, since we may have to
         // acquire an address several times until we are successful.
@@ -70,7 +71,7 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
             try {
                 runtime.getAddressSpaceView()
                         .write(tokenResponse.getToken(),
-                                Collections.singleton(streamID),
+                                Collections.singleton(ID),
                                 object,
                                 tokenResponse.getBackpointerMap(),
                                 tokenResponse.getStreamAddresses());
@@ -90,7 +91,7 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
                 // Request a new token, informing the sequencer we were
                 // overwritten.
                 tokenResponse = runtime.getSequencerView()
-                        .nextToken(Collections.singleton(streamID),
+                        .nextToken(Collections.singleton(ID),
                              1, true, false);
             }
         }
@@ -104,18 +105,10 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
      * address space cache since the entries were read in order to resolve the
      * backpointers.
      *
-     * Since address is a global, we return NULL if it exceeds maxGlobal,
-     * and no read is necessary to determine this.
      * */
     @Override
-    protected LogData readAndUpdatePointers(final StreamContext context,
-                              final long address, final long maxGlobal) {
-        if (address <= maxGlobal) {
-            context.globalPointer = address;
-            context.streamPointer++;
+    protected ILogData read(final long address) {
             return runtime.getAddressSpaceView().read(address);
-        }
-        return null;
     }
 
     /**
@@ -126,12 +119,11 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
      * if the next token is greater than our log pointer.
      */
     @Override
-    public boolean hasNext() {
-        return  !getCurrentContext().readQueue.isEmpty() ||
+    public boolean getHasNext(QueuedStreamContext context) {
+        return  context.readQueue.isEmpty() ||
                 runtime.getSequencerView()
-                .nextToken(Collections.singleton(getCurrentContext()
-                        .id), 0).getToken()
-                        > getCurrentContext().globalPointer;
+                .nextToken(Collections.singleton(context.id), 0).getToken()
+                        > context.globalPointer;
     }
 
     /**
@@ -145,32 +137,38 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
      * {@inheritDoc}
      */
     @Override
-    protected void fillReadQueue(final long maxGlobal,
-                                 final StreamContext context) {
+    protected boolean fillReadQueue(final long maxGlobal,
+                                 final QueuedStreamContext context) {
         // The maximum address we will fill to.
         final long maxAddress =
-                Long.min(maxGlobal, context.maxAddress);
+                Long.min(maxGlobal, context.maxGlobalAddress);
 
         // If the maximum address is less than the current pointer,
         // we return since there is nothing left to do.
         if (context.globalPointer > maxAddress) {
-            return;
+            return false;
         }
 
-        // First, we fetch the current token from the sequencer.
+        // First, we fetch the current token (backpointer) from the sequencer.
         final long latestToken = runtime.getSequencerView()
                 .nextToken(Collections.singleton(context.id), 0)
                 .getToken();
 
+        // If the backpointer was unwritten, return, there is nothing to do
+        if (latestToken == Address.NEVER_READ) {
+            return false;
+        }
+
         // Now we start traversing backpointers, if they are available. We
         // start at the latest token and go backward, until we reach the
         // log pointer. For each address which is less than
-        // maxAddress, we insert it into the read queue.
+        // maxGlobalAddress, we insert it into the read queue.
         long currentRead = latestToken;
 
-        while (currentRead > context.globalPointer) {
+        while (currentRead > context.globalPointer &&
+                currentRead != Address.NEVER_READ) {
             // Read the entry in question.
-            LogData currentEntry =
+            ILogData currentEntry =
                     runtime.getAddressSpaceView().read(currentRead);
 
             // If the current entry is unwritten, we need to fill it,
@@ -180,11 +178,18 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
                 // We'll retry the read a few times, we should only need
                 // to fill if a client has actually failed, which should
                 // be a relatively rare event.
+
                 for (int i = 0; i < NUM_RETRIES; i++) {
                     currentEntry =
                             runtime.getAddressSpaceView().read(currentRead);
                     if (currentEntry.getType() != DataType.EMPTY) {
                         break;
+                    }
+                    // Wait 1 << i ms (exp. backoff) before retrying again.
+                    try {
+                        Thread.sleep(1 << i);
+                    } catch (InterruptedException ie) {
+                        throw new RuntimeException(ie);
                     }
                 }
 
@@ -223,5 +228,7 @@ public class BackpointerStreamView extends AbstractQueuedStreamView {
                 currentRead = currentRead - 1L;
             }
         }
+
+        return !context.readQueue.isEmpty();
     }
 }

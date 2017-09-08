@@ -156,12 +156,12 @@ public class CorfuObjectProxy<P> {
     }
 
     synchronized public void sync(P obj, long maxPos) {
-        log.trace("CorfuObjectProxy[{}] sync to pos {}", sv.getStreamID(), maxPos == Long.MAX_VALUE ? "MAX" : maxPos);
+        log.trace("CorfuObjectProxy[{}] sync to pos {}", sv.getID(), maxPos == Long.MAX_VALUE ? "MAX" : maxPos);
         sv.remainingUpTo(maxPos);
     }
 
     public UUID getStreamID() {
-        return sv.getStreamID();
+        return sv.getID();
     }
 
     public CorfuObjectProxy getProxy() {

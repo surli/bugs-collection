@@ -1,5 +1,6 @@
 package org.corfudb.runtime.view.stream;
 
+import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.corfudb.protocols.wireprotocol.DataType;
 import org.corfudb.protocols.wireprotocol.LogData;
@@ -10,12 +11,13 @@ import org.corfudb.runtime.exceptions.ReplexOverwriteException;
 import org.corfudb.runtime.view.Address;
 
 import java.util.Collections;
+import java.util.NavigableSet;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.function.Function;
 
 /** A view of a stream implemented using Replex.
  *
- * In this implementation, addresses in the read queue are stream addresses.
  *
  * TODO: This implementation does not implement bulk reads anymore. This will
  * be addressed once the address space implementation is refactored into an
@@ -26,7 +28,8 @@ import java.util.function.Function;
  * Created by mwei on 1/5/17.
  */
 @Slf4j
-public class ReplexStreamView extends AbstractQueuedStreamView {
+public class ReplexStreamView extends
+        AbstractContextStreamView<ReplexStreamView.ReplexStreamContext> {
 
     /**
      * The number of retries before attempting a hole fill.
@@ -41,7 +44,7 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
      */
     public ReplexStreamView(final CorfuRuntime runtime,
                                  final UUID streamID) {
-        super(runtime, streamID);
+        super(runtime, streamID, ReplexStreamContext::new);
     }
 
     /** {@inheritDoc}
@@ -56,7 +59,7 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
                        Function<TokenResponse, Boolean> deacquisitionCallback) {
         // First, we get a token from the sequencer.
         TokenResponse tokenResponse = runtime.getSequencerView()
-                .nextToken(Collections.singleton(streamID), 1);
+                .nextToken(Collections.singleton(ID), 1);
 
         // We loop forever until we are interrupted, since we may have to
         // acquire an address several times until we are successful.
@@ -79,7 +82,7 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
             try {
                 runtime.getAddressSpaceView()
                         .write(tokenResponse.getToken(),
-                                Collections.singleton(streamID),
+                                Collections.singleton(ID),
                                 object,
                                 tokenResponse.getBackpointerMap(),
                                 tokenResponse.getStreamAddresses());
@@ -100,7 +103,7 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
                 // Request a new token, informing the sequencer
                 // of the overwrite.
                 tokenResponse = runtime.getSequencerView()
-                        .nextToken(Collections.singleton(streamID),
+                        .nextToken(Collections.singleton(ID),
                               1,
                                 // If this is a normal overwrite
                                 !(oe instanceof ReplexOverwriteException),
@@ -110,86 +113,90 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
         }
     }
 
-    /** {@inheritDoc}
+    /** Update the known maximum stream address, given the context.
      *
-     * In Replex, the queue contains stream addresses. We can't determine
-     * the global address until we perform the read.
-     *
-     * In addition, the implementation of fillReadQueue doesn't fill holes
-     * for us, so we need to check and fill them as appropiate.
-     * */
-    @Override
-    protected LogData readAndUpdatePointers(final StreamContext context,
-                      final long address, long maxGlobal) {
-
-        LogData ld = runtime.getAddressSpaceView()
-                .read(streamID, address, 1L).get(address);
-
-        // Do we have data? If not, retry the given number of times before
-        // attempting a hole fill.
-        for (int i = 0; i < NUM_RETRIES; i++) {
-            ld = runtime.getAddressSpaceView()
-                    .read(streamID, address, 1L).get(address);
-            if (ld.getType() != DataType.EMPTY) {
-                break;
-            }
-        }
-
-        // If after we retry the data is still empty, let's hole fill.
-        if (ld.getType() == DataType.EMPTY) {
-            try {
-                runtime.getAddressSpaceView()
-                        .fillStreamHole(context.id, address);
-            } catch (OverwriteException oe) {
-                // If we're overwritten while hole filling, that's okay
-                // since we're going to re-read anyway
-            }
-            ld = runtime.getAddressSpaceView()
-                    .read(streamID, address, 1L).get(address);
-        }
-
-        // We return holes to be filtered out, because
-        // returning NULL will cause the implementation of
-        // next() to stop.
-        if (ld.getType() == DataType.HOLE)
-        {
-            return ld;
-        }
-
-        // Check if we are within maxGlobal.
-        if (ld.getGlobalAddress() <= maxGlobal) {
-            context.globalPointer = ld.getGlobalAddress();
-            context.streamPointer =
-                    ld.getStreamAddress(getCurrentContext().id);
-            return ld;
-        }
-
-        // Otherwise return null.
-        return null;
+     * @param context   The context to use.
+     */
+    private void updateKnownMax(final ReplexStreamContext context) {
+        context.knownStreamMax = runtime.getSequencerView()
+                .nextToken(Collections.singleton(context.id), 0)
+                .getStreamAddresses().get(context.id);
     }
 
     /** {@inheritDoc}
      *
-     * In Replex, filling the read queue is complicated by the fact that
-     * our addresses are stream addresses and not global addresses. We use
-     * the sequencer to determine what the maximum stream address is and
-     * fill to that point.
+     * In Replex, we use stream addresses. We can't determine
+     * the global address until we perform the read.
      *
-     * In the future, we might be able to just go to the log unit.
-     */
+     * */
     @Override
-    protected void fillReadQueue(final long maxGlobal,
-                                 final StreamContext context) {
-        TokenResponse tr = runtime.getSequencerView()
-                .nextToken(Collections.singleton(getCurrentContext()
-                        .id), 0);
-        // For each address, starting at the one after the current
-        // pointer, add each address up to and including the last
-        // issued stream address by the sequencer.
-        for (long i = getCurrentContext().streamPointer + 1;
-                i <= tr.getStreamAddresses().get(context.id); i++) {
-            context.readQueue.add(i);
+    protected LogData getNextEntry(final ReplexStreamContext context,
+                                   long maxGlobal) {
+        // If we are at (or greater than, which shouldn't occur...) the known
+        // stream maximum, we need to check if theres a new stream maximum.
+        if (context.streamPointer >= context.knownStreamMax) {
+            updateKnownMax(context);
+            // There are no new entries, so we return null
+            if (context.streamPointer >= context.knownStreamMax)
+            {
+                return null;
+            }
         }
+
+        // Read until we have exceeded the known stream maximum
+        while (context.streamPointer < context.knownStreamMax) {
+            // The address we are reading from
+            final long thisRead = context.streamPointer + 1;
+
+            // Perform the read using replex.
+            LogData ld = runtime.getAddressSpaceView()
+                    .read(context.id, thisRead, 1L)
+                    .get(context.streamPointer);
+
+            // Do we have data? If not, retry the given number of times before
+            // attempting a hole fill.
+            for (int i = 0; i < NUM_RETRIES; i++) {
+                ld = runtime.getAddressSpaceView()
+                        .read(context.id, thisRead, 1L)
+                        .get(thisRead);
+                if (ld.getType() != DataType.EMPTY) {
+                    break;
+                }
+            }
+
+            // If after we retry the data is still empty, let's hole fill.
+            while (ld.getType() == DataType.EMPTY) {
+                try {
+                    runtime.getAddressSpaceView()
+                            .fillStreamHole(context.id, thisRead);
+                } catch (OverwriteException oe) {
+                    // If we're overwritten while hole filling, that's okay
+                    // since we're going to re-read anyway
+                }
+                ld = runtime.getAddressSpaceView()
+                        .read(ID, thisRead, 1L)
+                        .get(thisRead);
+            }
+
+            // Check if we are within maxGlobal.
+            if (ld.getType() == DataType.DATA) {
+                if (ld.getGlobalAddress() > maxGlobal) {
+                    // We exceed the max global.
+                    return null;
+                }
+                context.streamPointer++;
+                return ld;
+            }
+
+            // If this entry was a hole, or not data, update
+            // the stream max to make sure we captured any
+            // entries that might have been added.
+            context.streamPointer++;
+            updateKnownMax(context);
+        }
+        // Return null, as there were no entries which were data
+        // which belonged to this stream.
+        return null;
     }
 
     /**
@@ -200,11 +207,39 @@ public class ReplexStreamView extends AbstractQueuedStreamView {
      * if the next token is greater than our log pointer.
      */
     @Override
-    public boolean hasNext() {
-        return  !getCurrentContext().readQueue.isEmpty() ||
+    public boolean getHasNext(ReplexStreamContext context) {
+        return  context.knownStreamMax > context.streamPointer ||
                 runtime.getSequencerView()
-                        .nextToken(Collections.singleton(getCurrentContext()
-                                .id), 0).getToken()
-                        > getCurrentContext().globalPointer;
+                        .nextToken(Collections.singleton(context.id),
+                                0).getToken()
+                        > context.globalPointer;
+    }
+
+    /** {@inheritDoc}
+     *
+     * For a replex stream context, we include just a stream pointer, which
+     * uses the stream address.
+     */
+    @ToString
+    static class ReplexStreamContext extends AbstractStreamContext {
+
+        /** A pointer to the current position in the stream which
+         * uses the stream address.
+         */
+        long streamPointer;
+
+        /** The largest known stream address we know was issued. */
+        long knownStreamMax;
+
+        /** Create a new stream context with the given ID and maximum address
+         * to read to.
+         * @param id                  The ID of the stream to read from
+         * @param maxGlobalAddress    The maximum address for the context.
+         */
+        public ReplexStreamContext(UUID id, long maxGlobalAddress) {
+            super(id, maxGlobalAddress);
+            streamPointer = Address.NEVER_READ;
+            knownStreamMax = Address.NEVER_READ;
+        }
     }
 }
