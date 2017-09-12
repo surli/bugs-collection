@@ -28,7 +28,7 @@
 [INFO] sample-server
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building airlift 0.146-SNAPSHOT
+[INFO] Building airlift 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ airlift ---
@@ -66,7 +66,7 @@
 [INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ airlift ---
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building log 0.146-SNAPSHOT
+[INFO] Building log 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ log ---
@@ -90,16 +90,14 @@
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/log/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ log ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/219828131/log/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/log/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ log ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/219828131/log/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ log ---
 [INFO] No dependency problems found
@@ -120,30 +118,12 @@
 [INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ log ---
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ log ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 6.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 68.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 124.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 71.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 487.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 618.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 551.0 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 274.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.airlift.log.TestLogger
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.752 sec - in io.airlift.log.TestLogger
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.232 sec - in io.airlift.log.TestLogger
 
 Results :
 
@@ -151,7 +131,7 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building testing 0.146-SNAPSHOT
+[INFO] Building testing 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ testing ---
@@ -175,16 +155,14 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/testing/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ testing ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 9 source files to /root/workspace/airlift/airlift/219828131/testing/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ testing ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/testing/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ testing ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/219828131/testing/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ testing ---
 [INFO] No dependency problems found
@@ -210,7 +188,7 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.311 sec - in TestSuite
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.973 sec - in TestSuite
 
 Results :
 
@@ -218,7 +196,7 @@ Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building configuration 0.146-SNAPSHOT
+[INFO] Building configuration 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ configuration ---
@@ -242,8 +220,7 @@ Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/configuration/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ configuration ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 25 source files to /root/workspace/airlift/airlift/219828131/configuration/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ configuration ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -277,7 +254,7 @@ Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 106, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.647 sec - in TestSuite
+Tests run: 106, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.031 sec - in TestSuite
 
 Results :
 
@@ -285,7 +262,7 @@ Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building log-manager 0.146-SNAPSHOT
+[INFO] Building log-manager 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ log-manager ---
@@ -309,8 +286,7 @@ Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/log-manager/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ log-manager ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 10 source files to /root/workspace/airlift/airlift/219828131/log-manager/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-manager ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -344,7 +320,7 @@ Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.158 sec - in TestSuite
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.624 sec - in TestSuite
 
 Results :
 
@@ -352,7 +328,7 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building bootstrap 0.146-SNAPSHOT
+[INFO] Building bootstrap 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ bootstrap ---
@@ -376,8 +352,7 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/bootstrap/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ bootstrap ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 8 source files to /root/workspace/airlift/airlift/219828131/bootstrap/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bootstrap ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -411,7 +386,7 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.785 sec - in TestSuite
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.024 sec - in TestSuite
 
 Results :
 
@@ -419,7 +394,7 @@ Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building concurrent 0.146-SNAPSHOT
+[INFO] Building concurrent 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ concurrent ---
@@ -443,8 +418,7 @@ Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/concurrent/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ concurrent ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 9 source files to /root/workspace/airlift/airlift/219828131/concurrent/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ concurrent ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -478,7 +452,7 @@ Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.166 sec - in TestSuite
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.303 sec - in TestSuite
 
 Results :
 
@@ -486,7 +460,7 @@ Tests run: 52, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building json 0.146-SNAPSHOT
+[INFO] Building json 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ json ---
@@ -510,16 +484,14 @@ Tests run: 52, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/json/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ json ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 9 source files to /root/workspace/airlift/airlift/219828131/json/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ json ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/json/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ json ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 7 source files to /root/workspace/airlift/airlift/219828131/json/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ json ---
 [INFO] No dependency problems found
@@ -545,7 +517,7 @@ Tests run: 52, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.984 sec - in TestSuite
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.263 sec - in TestSuite
 
 Results :
 
@@ -553,7 +525,7 @@ Tests run: 33, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building stats 0.146-SNAPSHOT
+[INFO] Building stats 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ stats ---
@@ -577,8 +549,7 @@ Tests run: 33, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/stats/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ stats ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 20 source files to /root/workspace/airlift/airlift/219828131/stats/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ stats ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -612,7 +583,7 @@ Tests run: 33, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.727 sec - in TestSuite
+Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.649 sec - in TestSuite
 
 Results :
 
@@ -620,7 +591,7 @@ Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building trace-token 0.146-SNAPSHOT
+[INFO] Building trace-token 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ trace-token ---
@@ -644,16 +615,14 @@ Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/trace-token/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ trace-token ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 2 source files to /root/workspace/airlift/airlift/219828131/trace-token/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ trace-token ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/trace-token/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ trace-token ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/219828131/trace-token/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ trace-token ---
 [INFO] No dependency problems found
@@ -679,7 +648,7 @@ Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running io.airlift.tracetoken.TestTraceTokenManager
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec - in io.airlift.tracetoken.TestTraceTokenManager
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in io.airlift.tracetoken.TestTraceTokenManager
 
 Results :
 
@@ -687,7 +656,7 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building http-client 0.146-SNAPSHOT
+[INFO] Building http-client 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ http-client ---
@@ -746,7 +715,7 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 312, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 34.417 sec - in TestSuite
+Tests run: 312, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 32.548 sec - in TestSuite
 
 Results :
 
@@ -754,7 +723,7 @@ Tests run: 312, Failures: 0, Errors: 0, Skipped: 5
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building node 0.146-SNAPSHOT
+[INFO] Building node 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ node ---
@@ -778,8 +747,7 @@ Tests run: 312, Failures: 0, Errors: 0, Skipped: 5
 [INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/node/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ node ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/219828131/node/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ node ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -813,7 +781,7 @@ Tests run: 312, Failures: 0, Errors: 0, Skipped: 5
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.549 sec - in TestSuite
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.154 sec - in TestSuite
 
 Results :
 
@@ -821,7 +789,7 @@ Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building discovery 0.146-SNAPSHOT
+[INFO] Building discovery 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ discovery ---
@@ -880,7 +848,7 @@ Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.923 sec - in TestSuite
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.897 sec - in TestSuite
 
 Results :
 
@@ -888,7 +856,7 @@ Tests run: 60, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building dbpool 0.146-SNAPSHOT
+[INFO] Building dbpool 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ dbpool ---
@@ -947,7 +915,7 @@ Tests run: 60, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.608 sec - in TestSuite
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.194 sec - in TestSuite
 
 Results :
 
@@ -955,7 +923,7 @@ Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building event 0.146-SNAPSHOT
+[INFO] Building event 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ event ---
@@ -1014,107 +982,107 @@ Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-future JettyResponseFuture{requestStart=1121239084220513, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@59252cb6}}
-future JettyResponseFuture{requestStart=1121239116160777, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@31d0e481}}
-future JettyResponseFuture{requestStart=1121239117087736, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3243b914}}
-future JettyResponseFuture{requestStart=1121239118070069, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@241e8ea6}}
-future JettyResponseFuture{requestStart=1121239118903536, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@542e560f}}
-future JettyResponseFuture{requestStart=1121239119814120, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@626c44e7}}
-future JettyResponseFuture{requestStart=1121239120641122, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4dc8caa7}}
-future JettyResponseFuture{requestStart=1121239124854497, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1d730606}}
-future JettyResponseFuture{requestStart=1121239125727349, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3bcbb589}}
-future JettyResponseFuture{requestStart=1121239126507246, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3b00856b}}
-future JettyResponseFuture{requestStart=1121239127249515, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3016fd5e}}
-future JettyResponseFuture{requestStart=1121239128082591, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@35d08e6c}}
-future JettyResponseFuture{requestStart=1121239128848501, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@53d102a2}}
-future JettyResponseFuture{requestStart=1121239129584965, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6c45ee6e}}
-future JettyResponseFuture{requestStart=1121239130345374, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6b3e12b5}}
-future JettyResponseFuture{requestStart=1121239131170367, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5aac4250}}
-future JettyResponseFuture{requestStart=1121239132126665, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1338fb5}}
-future JettyResponseFuture{requestStart=1121239132881132, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@42463763}}
-future JettyResponseFuture{requestStart=1121239133675935, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@59f63e24}}
-future JettyResponseFuture{requestStart=1121239134455325, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@61f05988}}
-future JettyResponseFuture{requestStart=1121239135106264, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7ca33c24}}
-future JettyResponseFuture{requestStart=1121239135714375, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@fade1fc}}
-future JettyResponseFuture{requestStart=1121239136364951, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@67c2e933}}
-future JettyResponseFuture{requestStart=1121239140762002, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@41dd05a}}
-future JettyResponseFuture{requestStart=1121239141568796, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@613a8ee1}}
-future JettyResponseFuture{requestStart=1121239142277720, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@178213b}}
-future JettyResponseFuture{requestStart=1121239142996190, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7103cb56}}
-future JettyResponseFuture{requestStart=1121239143668246, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1b765a2c}}
-future JettyResponseFuture{requestStart=1121239144344046, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2e8e8225}}
-future JettyResponseFuture{requestStart=1121239144973379, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6ebf0f36}}
-future JettyResponseFuture{requestStart=1121239145663777, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@18920cc}}
-future JettyResponseFuture{requestStart=1121239146351971, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2807bdeb}}
-future JettyResponseFuture{requestStart=1121239147053772, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@72c28d64}}
-future JettyResponseFuture{requestStart=1121239147722412, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6492fab5}}
-future JettyResponseFuture{requestStart=1121239148362056, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2c5529ab}}
-future JettyResponseFuture{requestStart=1121239149000112, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@39a8312f}}
-future JettyResponseFuture{requestStart=1121239149634105, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5f6722d3}}
-future JettyResponseFuture{requestStart=1121239150324948, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2c532cd8}}
-future JettyResponseFuture{requestStart=1121239150948778, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@294e5088}}
-future JettyResponseFuture{requestStart=1121239167488524, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@51972dc7}}
-future JettyResponseFuture{requestStart=1121239172489496, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3700ec9c}}
-future JettyResponseFuture{requestStart=1121239173079565, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2002348}}
-future JettyResponseFuture{requestStart=1121239173581457, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5911e990}}
-future JettyResponseFuture{requestStart=1121239174048376, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@31000e60}}
-future JettyResponseFuture{requestStart=1121239174574753, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1d470d0}}
-future JettyResponseFuture{requestStart=1121239175075529, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@24d09c1}}
-future JettyResponseFuture{requestStart=1121239175529441, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@54c62d71}}
-future JettyResponseFuture{requestStart=1121239181434138, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@65045a87}}
-future JettyResponseFuture{requestStart=1121239181994378, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@47f4e407}}
-future JettyResponseFuture{requestStart=1121239182540416, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2d1dee39}}
-future JettyResponseFuture{requestStart=1121239183064921, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@48d5f34e}}
-future JettyResponseFuture{requestStart=1121239183898579, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@fc258b1}}
-future JettyResponseFuture{requestStart=1121239184418441, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6ff65192}}
-future JettyResponseFuture{requestStart=1121239184929911, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2dd80673}}
-future JettyResponseFuture{requestStart=1121239185640670, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4af0df05}}
-future JettyResponseFuture{requestStart=1121239186198397, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@57ea113a}}
-future JettyResponseFuture{requestStart=1121239186746598, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@acdb094}}
-future JettyResponseFuture{requestStart=1121239187235587, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@674bd420}}
-future JettyResponseFuture{requestStart=1121239187756256, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2b0f373b}}
-future JettyResponseFuture{requestStart=1121239188358422, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2ceb80a1}}
-future JettyResponseFuture{requestStart=1121239188830306, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4b45dcb8}}
-future JettyResponseFuture{requestStart=1121239189454792, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7216fb24}}
-future JettyResponseFuture{requestStart=1121239189995093, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2072acb2}}
-future JettyResponseFuture{requestStart=1121239190485173, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@50ecde95}}
-future JettyResponseFuture{requestStart=1121239191020808, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@35a9782c}}
-future JettyResponseFuture{requestStart=1121239191451372, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@70a36a66}}
-future JettyResponseFuture{requestStart=1121239192161883, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@45815ffc}}
-future JettyResponseFuture{requestStart=1121239192624057, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@732f29af}}
-future JettyResponseFuture{requestStart=1121239193150668, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@d3957fe}}
-future JettyResponseFuture{requestStart=1121239193653981, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6622fc65}}
-future JettyResponseFuture{requestStart=1121239194099688, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@299321e2}}
-future JettyResponseFuture{requestStart=1121239194564462, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@23fb172e}}
-future JettyResponseFuture{requestStart=1121239195004356, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@64ba3208}}
-future JettyResponseFuture{requestStart=1121239195461169, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@158a3b2e}}
-future JettyResponseFuture{requestStart=1121239195896883, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@25a6944c}}
-future JettyResponseFuture{requestStart=1121239196537001, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5e1fa5b1}}
-future JettyResponseFuture{requestStart=1121239197113177, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6b00f608}}
-future JettyResponseFuture{requestStart=1121239197567686, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2f17e30d}}
-future JettyResponseFuture{requestStart=1121239198038512, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3e821657}}
-future JettyResponseFuture{requestStart=1121239198411267, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1d131e1b}}
-future JettyResponseFuture{requestStart=1121239198746319, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@71cf1b07}}
-future JettyResponseFuture{requestStart=1121239199202077, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@615091b8}}
-future JettyResponseFuture{requestStart=1121239199652815, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4fce136b}}
-future JettyResponseFuture{requestStart=1121239200900790, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4aa83f4f}}
-future JettyResponseFuture{requestStart=1121239201406667, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@43b6123e}}
-future JettyResponseFuture{requestStart=1121239201882734, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@260e86a1}}
-future JettyResponseFuture{requestStart=1121239202414313, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@19648c40}}
-future JettyResponseFuture{requestStart=1121239202961024, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@12bd8a64}}
-future JettyResponseFuture{requestStart=1121239203585640, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@61e94def}}
-future JettyResponseFuture{requestStart=1121239204071988, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3300f4fd}}
-future JettyResponseFuture{requestStart=1121239204535019, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@ebb6851}}
-future JettyResponseFuture{requestStart=1121239204979066, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@70ab2d48}}
-future JettyResponseFuture{requestStart=1121239205467182, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5b068087}}
-future JettyResponseFuture{requestStart=1121239205922033, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6f152006}}
-future JettyResponseFuture{requestStart=1121239206364916, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3a393455}}
-future JettyResponseFuture{requestStart=1121239206887265, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@13518f37}}
-future JettyResponseFuture{requestStart=1121239207356911, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7cbc3762}}
-future JettyResponseFuture{requestStart=1121239207804867, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3a6f2de3}}
-future JettyResponseFuture{requestStart=1121239208364269, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@49872d67}}
-future JettyResponseFuture{requestStart=1121239208932301, state=DONE, request=Request{uri=http://127.0.0.1:36525/v2/event, method=POST, headers={User-Agent=[298a8758-09d7-48ea-a41a-135e181e53a2], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@56303b57}}
-Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.567 sec - in TestSuite
+future JettyResponseFuture{requestStart=1121807340512208, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@16b2bb0c}}
+future JettyResponseFuture{requestStart=1121807354598776, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@327af41b}}
+future JettyResponseFuture{requestStart=1121807355316145, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6cb6decd}}
+future JettyResponseFuture{requestStart=1121807356219967, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@c7045b9}}
+future JettyResponseFuture{requestStart=1121807357051711, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@f99f5e0}}
+future JettyResponseFuture{requestStart=1121807357772749, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6aa61224}}
+future JettyResponseFuture{requestStart=1121807358511744, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@30bce90b}}
+future JettyResponseFuture{requestStart=1121807359435621, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3e6f3f28}}
+future JettyResponseFuture{requestStart=1121807365804090, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7e19ebf0}}
+future JettyResponseFuture{requestStart=1121807366771520, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2474f125}}
+future JettyResponseFuture{requestStart=1121807367294082, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7357a011}}
+future JettyResponseFuture{requestStart=1121807367849382, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3406472c}}
+future JettyResponseFuture{requestStart=1121807368482528, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5717c37}}
+future JettyResponseFuture{requestStart=1121807369392227, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@68f4865}}
+future JettyResponseFuture{requestStart=1121807370834447, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4816278d}}
+future JettyResponseFuture{requestStart=1121807371917078, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4eaf3684}}
+future JettyResponseFuture{requestStart=1121807372711785, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@40317ba2}}
+future JettyResponseFuture{requestStart=1121807373670142, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3c01cfa1}}
+future JettyResponseFuture{requestStart=1121807374416709, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@45d2ade3}}
+future JettyResponseFuture{requestStart=1121807375265288, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@727eb8cb}}
+future JettyResponseFuture{requestStart=1121807376071674, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@39d9314d}}
+future JettyResponseFuture{requestStart=1121807376890885, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@b978d10}}
+future JettyResponseFuture{requestStart=1121807377620122, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5b7a8434}}
+future JettyResponseFuture{requestStart=1121807378360758, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5c45d770}}
+future JettyResponseFuture{requestStart=1121807379091971, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2ce6c6ec}}
+future JettyResponseFuture{requestStart=1121807410811781, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1bae316d}}
+future JettyResponseFuture{requestStart=1121807411508731, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@147a5d08}}
+future JettyResponseFuture{requestStart=1121807412175140, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6676f6a0}}
+future JettyResponseFuture{requestStart=1121807413079839, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7cbd9d24}}
+future JettyResponseFuture{requestStart=1121807413773084, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1672fe87}}
+future JettyResponseFuture{requestStart=1121807414442622, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5026735c}}
+future JettyResponseFuture{requestStart=1121807415129404, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1b45c0e}}
+future JettyResponseFuture{requestStart=1121807415754192, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@11f0a5a1}}
+future JettyResponseFuture{requestStart=1121807416402383, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@10f7f7de}}
+future JettyResponseFuture{requestStart=1121807417151222, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@73a8da0f}}
+future JettyResponseFuture{requestStart=1121807417822181, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@50dfbc58}}
+future JettyResponseFuture{requestStart=1121807418468050, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4416d64f}}
+future JettyResponseFuture{requestStart=1121807419104608, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6bf08014}}
+future JettyResponseFuture{requestStart=1121807419766726, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5e3d57c7}}
+future JettyResponseFuture{requestStart=1121807426708563, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@732d0d24}}
+future JettyResponseFuture{requestStart=1121807427247189, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1fb19a0}}
+future JettyResponseFuture{requestStart=1121807427746541, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6ee4d9ab}}
+future JettyResponseFuture{requestStart=1121807428344019, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5a5338df}}
+future JettyResponseFuture{requestStart=1121807428891244, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@418c5a9c}}
+future JettyResponseFuture{requestStart=1121807430166180, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@18e36d14}}
+future JettyResponseFuture{requestStart=1121807431081030, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5082d622}}
+future JettyResponseFuture{requestStart=1121807431824138, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@13d4992d}}
+future JettyResponseFuture{requestStart=1121807432490922, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@302f7971}}
+future JettyResponseFuture{requestStart=1121807433152210, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@332729ad}}
+future JettyResponseFuture{requestStart=1121807433882177, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@75d2da2d}}
+future JettyResponseFuture{requestStart=1121807434612982, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4278284b}}
+future JettyResponseFuture{requestStart=1121807435379916, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@9573584}}
+future JettyResponseFuture{requestStart=1121807436044663, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3370f42}}
+future JettyResponseFuture{requestStart=1121807443335526, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6057aebb}}
+future JettyResponseFuture{requestStart=1121807449890027, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@63eef88a}}
+future JettyResponseFuture{requestStart=1121807451952289, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@53251a66}}
+future JettyResponseFuture{requestStart=1121807518333002, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6853425f}}
+future JettyResponseFuture{requestStart=1121807518908419, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@352c1b98}}
+future JettyResponseFuture{requestStart=1121807519473466, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@21129f1f}}
+future JettyResponseFuture{requestStart=1121807531738012, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5a9f4771}}
+future JettyResponseFuture{requestStart=1121807532590695, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@282cb7c7}}
+future JettyResponseFuture{requestStart=1121807536177845, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7d898981}}
+future JettyResponseFuture{requestStart=1121807536885026, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@48d61b48}}
+future JettyResponseFuture{requestStart=1121807538170240, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@68d279ec}}
+future JettyResponseFuture{requestStart=1121807538858456, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@258d79be}}
+future JettyResponseFuture{requestStart=1121807539401813, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@14f9390f}}
+future JettyResponseFuture{requestStart=1121807539946099, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6c0d7c83}}
+future JettyResponseFuture{requestStart=1121807540481238, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@176b75f7}}
+future JettyResponseFuture{requestStart=1121807541045736, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5965be2d}}
+future JettyResponseFuture{requestStart=1121807559529676, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@409c54f}}
+future JettyResponseFuture{requestStart=1121807560092296, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3e74829}}
+future JettyResponseFuture{requestStart=1121807560590959, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4f6f416f}}
+future JettyResponseFuture{requestStart=1121807561171143, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3b8f0a79}}
+future JettyResponseFuture{requestStart=1121807561699502, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@71e693fa}}
+future JettyResponseFuture{requestStart=1121807562257242, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@48793bef}}
+future JettyResponseFuture{requestStart=1121807563236885, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7d286fb6}}
+future JettyResponseFuture{requestStart=1121807564035368, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3eb77ea8}}
+future JettyResponseFuture{requestStart=1121807564734899, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7b8b43c7}}
+future JettyResponseFuture{requestStart=1121807565434029, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7aaca91a}}
+future JettyResponseFuture{requestStart=1121807566118156, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@44c73c26}}
+future JettyResponseFuture{requestStart=1121807566841384, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@41005828}}
+future JettyResponseFuture{requestStart=1121807567476185, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@60b4beb4}}
+future JettyResponseFuture{requestStart=1121807567999261, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7fcf2fc1}}
+future JettyResponseFuture{requestStart=1121807568546152, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2141a12}}
+future JettyResponseFuture{requestStart=1121807569057865, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4196c360}}
+future JettyResponseFuture{requestStart=1121807569752393, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@41294f8}}
+future JettyResponseFuture{requestStart=1121807570301171, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@225129c}}
+future JettyResponseFuture{requestStart=1121807570860754, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@20435c40}}
+future JettyResponseFuture{requestStart=1121807571360110, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@573906eb}}
+future JettyResponseFuture{requestStart=1121807571862377, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@479ceda0}}
+future JettyResponseFuture{requestStart=1121807572445257, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6d07a63d}}
+future JettyResponseFuture{requestStart=1121807572987826, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@571c5681}}
+future JettyResponseFuture{requestStart=1121807573507987, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@488d1cd7}}
+future JettyResponseFuture{requestStart=1121807574063769, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@68dc098b}}
+future JettyResponseFuture{requestStart=1121807574568753, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@38ba6ce3}}
+future JettyResponseFuture{requestStart=1121807575078821, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@d278d2b}}
+future JettyResponseFuture{requestStart=1121807575568836, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2d6c53fc}}
+future JettyResponseFuture{requestStart=1121807576629428, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@25f4878b}}
+future JettyResponseFuture{requestStart=1121807577138890, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4e423aa2}}
+future JettyResponseFuture{requestStart=1121807577721813, state=DONE, request=Request{uri=http://127.0.0.1:45073/v2/event, method=POST, headers={User-Agent=[82ebbee3-e149-4172-8dd7-3864b6b14e37], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7fbdb894}}
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.356 sec - in TestSuite
 
 Results :
 
@@ -1122,7 +1090,7 @@ Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building http-server 0.146-SNAPSHOT
+[INFO] Building http-server 0.147-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ http-server ---
@@ -1181,63 +1149,545 @@ Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Tests run: 59, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.072 sec <<< FAILURE! - in TestSuite
-testHttpRequestEvent(io.airlift.http.server.TestHttpServerModule)  Time elapsed: 0.063 sec  <<< FAILURE!
-java.lang.AssertionError: expected [1] but found [0]
-	at io.airlift.http.server.TestHttpServerModule.testHttpRequestEvent(TestHttpServerModule.java:328)
-
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.573 sec - in TestSuite
 
 Results :
 
-Failed tests: 
-  TestHttpServerModule.testHttpRequestEvent:328 expected [1] but found [0]
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 59, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jaxrs 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jaxrs ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jaxrs ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ jaxrs ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jaxrs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jaxrs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /root/workspace/airlift/airlift/219828131/jaxrs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jaxrs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jaxrs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/219828131/jaxrs/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jaxrs ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jaxrs ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jaxrs ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ jaxrs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jaxrs ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 118, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.601 sec - in TestSuite
+
+Results :
+
+Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx-http-rpc 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx-http-rpc ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx-http-rpc ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ jmx-http-rpc ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx-http-rpc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jmx-http-rpc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /root/workspace/airlift/airlift/219828131/jmx-http-rpc/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx-http-rpc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jmx-http-rpc/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jmx-http-rpc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/airlift/airlift/219828131/jmx-http-rpc/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx-http-rpc ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx-http-rpc ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx-http-rpc ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ jmx-http-rpc ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jmx-http-rpc ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.406 sec - in TestSuite
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx-http 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx-http ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx-http ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ jmx-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jmx-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/airlift/airlift/219828131/jmx-http/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jmx-http/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jmx-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/219828131/jmx-http/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx-http ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx-http ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx-http ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ jmx-http ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jmx-http ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.airlift.jmx.TestMBeanResource
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.521 sec - in io.airlift.jmx.TestMBeanResource
+
+Results :
+
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ jmx ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ jmx ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ jmx ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jmx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jmx ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/airlift/airlift/219828131/jmx/target/classes
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[21,21] Agent is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[22,31] ConnectorBootstrap is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[23,21] UnicastRef is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[79,16] Agent is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[114,33] Agent is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[115,32] ConnectorBootstrap is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/airlift/airlift/219828131/jmx/src/main/java/io/airlift/jmx/JmxAgent8.java:[122,35] UnicastRef is internal proprietary API and may be removed in a future release
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/jmx/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jmx ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/219828131/jmx/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ jmx ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jmx ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.289 sec - in TestSuite
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building launcher 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ launcher ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ launcher ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ launcher ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ launcher ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ launcher ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ launcher ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ launcher ---
+[INFO] Skipping pom project
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ launcher ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ launcher ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ launcher ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ launcher ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building packaging 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ packaging ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ packaging ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ packaging ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ packaging ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ packaging ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ packaging ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ packaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ packaging ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ packaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/packaging/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ packaging ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ packaging ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ packaging ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ packaging ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ packaging ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ packaging ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ packaging ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building skeleton-server 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ skeleton-server ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ skeleton-server ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ skeleton-server ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ skeleton-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/skeleton-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ skeleton-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/airlift/airlift/219828131/skeleton-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ skeleton-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/skeleton-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ skeleton-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/219828131/skeleton-server/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ skeleton-server ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ skeleton-server ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ skeleton-server ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ skeleton-server ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ skeleton-server ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.airlift.skeleton.TestServer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.894 sec - in io.airlift.skeleton.TestServer
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sample-server 0.147-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ sample-server ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ sample-server ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ sample-server ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ sample-server ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ sample-server ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ sample-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sample-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/219828131/sample-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ sample-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/airlift/airlift/219828131/sample-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sample-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ sample-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/airlift/airlift/219828131/sample-server/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ sample-server ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ sample-server ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ sample-server ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ sample-server ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ sample-server ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ sample-server ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.052 sec - in TestSuite
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] airlift ............................................ SUCCESS [  6.748 s]
-[INFO] log ................................................ SUCCESS [ 12.496 s]
-[INFO] testing ............................................ SUCCESS [ 10.385 s]
-[INFO] configuration ...................................... SUCCESS [ 15.159 s]
-[INFO] log-manager ........................................ SUCCESS [  9.209 s]
-[INFO] bootstrap .......................................... SUCCESS [  9.864 s]
-[INFO] concurrent ......................................... SUCCESS [ 13.875 s]
-[INFO] json ............................................... SUCCESS [ 11.031 s]
-[INFO] stats .............................................. SUCCESS [ 58.730 s]
-[INFO] trace-token ........................................ SUCCESS [  8.532 s]
-[INFO] http-client ........................................ SUCCESS [ 47.763 s]
-[INFO] node ............................................... SUCCESS [  8.850 s]
-[INFO] discovery .......................................... SUCCESS [ 15.463 s]
-[INFO] dbpool ............................................. SUCCESS [ 14.092 s]
-[INFO] event .............................................. SUCCESS [ 13.978 s]
-[INFO] http-server ........................................ FAILURE [ 13.808 s]
-[INFO] jaxrs .............................................. SKIPPED
-[INFO] jmx-http-rpc ....................................... SKIPPED
-[INFO] jmx-http ........................................... SKIPPED
-[INFO] jmx ................................................ SKIPPED
-[INFO] launcher ........................................... SKIPPED
-[INFO] packaging .......................................... SKIPPED
-[INFO] skeleton-server .................................... SKIPPED
-[INFO] sample-server ...................................... SKIPPED
+[INFO] airlift ............................................ SUCCESS [  9.423 s]
+[INFO] log ................................................ SUCCESS [  9.660 s]
+[INFO] testing ............................................ SUCCESS [  3.945 s]
+[INFO] configuration ...................................... SUCCESS [  9.728 s]
+[INFO] log-manager ........................................ SUCCESS [  7.332 s]
+[INFO] bootstrap .......................................... SUCCESS [  6.711 s]
+[INFO] concurrent ......................................... SUCCESS [ 10.911 s]
+[INFO] json ............................................... SUCCESS [  4.683 s]
+[INFO] stats .............................................. SUCCESS [ 56.001 s]
+[INFO] trace-token ........................................ SUCCESS [  2.547 s]
+[INFO] http-client ........................................ SUCCESS [ 43.048 s]
+[INFO] node ............................................... SUCCESS [  4.473 s]
+[INFO] discovery .......................................... SUCCESS [ 10.235 s]
+[INFO] dbpool ............................................. SUCCESS [ 12.651 s]
+[INFO] event .............................................. SUCCESS [ 13.011 s]
+[INFO] http-server ........................................ SUCCESS [ 14.374 s]
+[INFO] jaxrs .............................................. SUCCESS [ 12.049 s]
+[INFO] jmx-http-rpc ....................................... SUCCESS [  9.719 s]
+[INFO] jmx-http ........................................... SUCCESS [ 10.679 s]
+[INFO] jmx ................................................ SUCCESS [  6.620 s]
+[INFO] launcher ........................................... SUCCESS [  0.031 s]
+[INFO] packaging .......................................... SUCCESS [  1.077 s]
+[INFO] skeleton-server .................................... SUCCESS [ 11.176 s]
+[INFO] sample-server ...................................... SUCCESS [ 16.490 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 04:32 min
-[INFO] Finished at: 2017-09-12T10:17:59+02:00
-[INFO] Final Memory: 132M/1257M
+[INFO] Total time: 04:48 min
+[INFO] Finished at: 2017-09-12T10:28:35+02:00
+[INFO] Final Memory: 146M/1396M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project http-server: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/airlift/airlift/219828131/http-server/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :http-server
