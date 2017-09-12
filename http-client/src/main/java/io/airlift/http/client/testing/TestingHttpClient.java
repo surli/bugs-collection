@@ -14,9 +14,7 @@ import io.airlift.units.Duration;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
 
-import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 import static com.google.common.util.concurrent.MoreExecutors.listeningDecorator;
 import static com.google.common.util.concurrent.MoreExecutors.newDirectExecutorService;
@@ -46,8 +44,8 @@ public class TestingHttpClient
     @Override
     public <T, E extends Exception> HttpResponseFuture<T> executeAsync(Request request, ResponseHandler<T, E> responseHandler)
     {
-        checkNotNull(request, "request is null");
-        checkNotNull(responseHandler, "responseHandler is null");
+        requireNonNull(request, "request is null");
+        requireNonNull(responseHandler, "responseHandler is null");
         checkState(!closed.get(), "client is closed");
 
         AtomicReference<String> state = new AtomicReference<>("SENDING_REQUEST");
@@ -60,8 +58,8 @@ public class TestingHttpClient
     public <T, E extends Exception> T execute(Request request, ResponseHandler<T, E> responseHandler)
             throws E
     {
-        checkNotNull(request, "request is null");
-        checkNotNull(responseHandler, "responseHandler is null");
+        requireNonNull(request, "request is null");
+        requireNonNull(responseHandler, "responseHandler is null");
         checkState(!closed.get(), "client is closed");
         return execute(request, responseHandler, new AtomicReference<>("SENDING_REQUEST"));
     }

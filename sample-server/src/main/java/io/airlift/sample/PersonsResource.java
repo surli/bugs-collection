@@ -15,11 +15,10 @@
  */
 package io.airlift.sample;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableList.Builder;
-import com.google.inject.Inject;
 
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -27,6 +26,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import static io.airlift.sample.PersonRepresentation.from;
+import static java.util.Objects.requireNonNull;
 
 @Path("/v1/person")
 public class PersonsResource
@@ -36,7 +36,7 @@ public class PersonsResource
     @Inject
     public PersonsResource(PersonStore store)
     {
-        Preconditions.checkNotNull(store, "store must not be null");
+        requireNonNull(store, "store must not be null");
 
         this.store = store;
     }

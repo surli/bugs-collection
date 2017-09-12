@@ -18,8 +18,6 @@ package io.airlift.configuration;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.ImmutableSortedMap;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 import com.google.inject.ConfigurationException;
 import io.airlift.configuration.Problems.Monitor;
 
@@ -28,11 +26,14 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import static com.google.common.base.MoreObjects.toStringHelper;
+import static java.util.Objects.requireNonNull;
 
 public class ConfigurationMetadata<T>
 {
@@ -82,7 +83,7 @@ public class ConfigurationMetadata<T>
             problems.addError("Config class [%s] is not public", configClass.getName());
         }
 
-        this.defunctConfig = Sets.newHashSet();
+        this.defunctConfig = new HashSet<>();
         if (configClass.isAnnotationPresent(DefunctConfig.class)) {
             DefunctConfig defunctConfig = configClass.getAnnotation(DefunctConfig.class);
             if (defunctConfig.value().length < 1) {
@@ -218,7 +219,7 @@ public class ConfigurationMetadata<T>
 
     private Map<String, AttributeMetadata> buildAttributeMetadata(Class<T> configClass)
     {
-        Map<String, AttributeMetadata> attributes = Maps.newHashMap();
+        Map<String, AttributeMetadata> attributes = new HashMap<>();
         for (Method configMethod : findConfigMethods(configClass)) {
             AttributeMetadata attribute = buildAttributeMetadata(configClass, configMethod);
 
@@ -355,9 +356,9 @@ public class ConfigurationMetadata<T>
 
         private InjectionPointMetaData(Class<?> configClass, String property, Method setter, boolean current)
         {
-            Preconditions.checkNotNull(configClass);
-            Preconditions.checkNotNull(property);
-            Preconditions.checkNotNull(setter);
+            requireNonNull(configClass);
+            requireNonNull(property);
+            requireNonNull(setter);
             Preconditions.checkArgument(!property.isEmpty());
 
             this.configClass = configClass;
@@ -430,11 +431,11 @@ public class ConfigurationMetadata<T>
         public AttributeMetadata(Class<?> configClass, String name, String description, Method getter,
                 InjectionPointMetaData injectionPoint, Set<InjectionPointMetaData> legacyInjectionPoints)
         {
-            Preconditions.checkNotNull(configClass);
-            Preconditions.checkNotNull(name);
-            Preconditions.checkNotNull(getter);
-            Preconditions.checkNotNull(injectionPoint);
-            Preconditions.checkNotNull(legacyInjectionPoints);
+            requireNonNull(configClass);
+            requireNonNull(name);
+            requireNonNull(getter);
+            requireNonNull(injectionPoint);
+            requireNonNull(legacyInjectionPoints);
 
             this.configClass = configClass;
             this.name = name;
@@ -522,12 +523,12 @@ public class ConfigurationMetadata<T>
         private String description;
         private Method getter;
         private InjectionPointMetaData injectionPoint;
-        private final Set<InjectionPointMetaData> legacyInjectionPoints = Sets.newHashSet();
+        private final Set<InjectionPointMetaData> legacyInjectionPoints = new HashSet<>();
 
         public AttributeMetaDataBuilder(Class<?> configClass, String name)
         {
-            Preconditions.checkNotNull(configClass);
-            Preconditions.checkNotNull(name);
+            requireNonNull(configClass);
+            requireNonNull(name);
             Preconditions.checkArgument(!name.isEmpty());
 
             this.configClass = configClass;
@@ -536,21 +537,21 @@ public class ConfigurationMetadata<T>
 
         public void setDescription(String description)
         {
-            Preconditions.checkNotNull(description);
+            requireNonNull(description);
 
             this.description = description;
         }
 
         public void setGetter(Method getter)
         {
-            Preconditions.checkNotNull(getter);
+            requireNonNull(getter);
 
             this.getter = getter;
         }
 
         public void addInjectionPoint(InjectionPointMetaData injectionPointMetaData)
         {
-            Preconditions.checkNotNull(injectionPointMetaData);
+            requireNonNull(injectionPointMetaData);
 
             if (injectionPointMetaData.isLegacy()) {
                 this.legacyInjectionPoints.add(injectionPointMetaData);
@@ -647,7 +648,7 @@ public class ConfigurationMetadata<T>
 
     private Set<InjectionPointMetaData> findLegacySetters(Class<?> configClass, String propertyName, String attributeName)
     {
-        Set<InjectionPointMetaData> setters = Sets.newHashSet();
+        Set<InjectionPointMetaData> setters = new HashSet<>();
 
         String setterName = "set" + attributeName;
 

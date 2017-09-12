@@ -16,10 +16,7 @@
 package io.airlift.discovery.client;
 
 import com.google.common.base.Preconditions;
-import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Iterables;
-import com.google.inject.Inject;
 import io.airlift.http.client.HttpClient;
 import io.airlift.http.client.Request.Builder;
 import io.airlift.json.JsonCodec;
@@ -30,9 +27,11 @@ import org.weakref.jmx.Managed;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.inject.Inject;
 
 import java.io.File;
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
@@ -41,12 +40,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static com.google.common.collect.Lists.newArrayList;
 import static io.airlift.concurrent.Threads.daemonThreadsNamed;
 import static io.airlift.http.client.JsonResponseHandler.createJsonResponseHandler;
 import static io.airlift.http.client.Request.Builder.prepareGet;
 import static java.nio.file.Files.readAllBytes;
+import static java.util.Objects.requireNonNull;
 import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
+import static java.util.stream.Collectors.toList;
 
 public class ServiceInventory
 {
@@ -59,7 +59,7 @@ public class ServiceInventory
     private final JsonCodec<ServiceDescriptorsRepresentation> serviceDescriptorsCodec;
     private final HttpClient httpClient;
 
-    private final AtomicReference<List<ServiceDescriptor>> serviceDescriptors = new AtomicReference<List<ServiceDescriptor>>(ImmutableList.<ServiceDescriptor>of());
+    private final AtomicReference<List<ServiceDescriptor>> serviceDescriptors = new AtomicReference<>(ImmutableList.of());
     private final ScheduledExecutorService executorService = newSingleThreadScheduledExecutor(daemonThreadsNamed("service-inventory-%s"));
     private final AtomicBoolean serverUp = new AtomicBoolean(true);
     private ScheduledFuture<?> scheduledFuture;
@@ -70,10 +70,10 @@ public class ServiceInventory
             JsonCodec<ServiceDescriptorsRepresentation> serviceDescriptorsCodec,
             @ForDiscoveryClient HttpClient httpClient)
     {
-        Preconditions.checkNotNull(config, "config is null");
-        Preconditions.checkNotNull(nodeInfo, "nodeInfo is null");
-        Preconditions.checkNotNull(serviceDescriptorsCodec, "serviceDescriptorsCodec is null");
-        Preconditions.checkNotNull(httpClient, "httpClient is null");
+        requireNonNull(config, "config is null");
+        requireNonNull(nodeInfo, "nodeInfo is null");
+        requireNonNull(serviceDescriptorsCodec, "serviceDescriptorsCodec is null");
+        requireNonNull(httpClient, "httpClient is null");
 
         this.nodeInfo = nodeInfo;
         this.environment = nodeInfo.getEnvironment();
@@ -129,29 +129,19 @@ public class ServiceInventory
         return serviceDescriptors.get();
     }
 
-    public Iterable<ServiceDescriptor> getServiceDescriptors(final String type)
+    public Iterable<ServiceDescriptor> getServiceDescriptors(String type)
     {
-        return Iterables.filter(getServiceDescriptors(), new Predicate<ServiceDescriptor>()
-        {
-            @Override
-            public boolean apply(ServiceDescriptor serviceDescriptor)
-            {
-                return serviceDescriptor.getType().equals(type);
-            }
-        });
+        return serviceDescriptors.get().stream()
+                .filter(descriptor -> descriptor.getType().equals(type))
+                .collect(toList());
     }
 
-    public Iterable<ServiceDescriptor> getServiceDescriptors(final String type, final String pool)
+    public Iterable<ServiceDescriptor> getServiceDescriptors(String type, String pool)
     {
-        return Iterables.filter(getServiceDescriptors(), new Predicate<ServiceDescriptor>()
-        {
-            @Override
-            public boolean apply(ServiceDescriptor serviceDescriptor)
-            {
-                return serviceDescriptor.getType().equals(type) &&
-                        serviceDescriptor.getPool().equals(pool);
-            }
-        });
+        return serviceDescriptors.get().stream()
+                .filter(descriptor -> descriptor.getType().equals(type))
+                .filter(descriptor -> descriptor.getPool().equals(pool))
+                .collect(toList());
     }
 
     @Managed
@@ -178,7 +168,7 @@ public class ServiceInventory
                 logServerError("Expected environment to be %s, but was %s", environment, serviceDescriptorsRepresentation.getEnvironment());
             }
 
-            List<ServiceDescriptor> descriptors = newArrayList(serviceDescriptorsRepresentation.getServiceDescriptors());
+            List<ServiceDescriptor> descriptors = new ArrayList<>(serviceDescriptorsRepresentation.getServiceDescriptors());
             Collections.shuffle(descriptors);
             serviceDescriptors.set(ImmutableList.copyOf(descriptors));
 

@@ -15,7 +15,6 @@
  */
 package io.airlift.configuration;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableSortedSet;
 import com.google.common.collect.Ordering;
@@ -26,6 +25,8 @@ import java.lang.reflect.Method;
 import java.util.SortedSet;
 
 import static com.google.common.base.MoreObjects.toStringHelper;
+import static java.util.Objects.requireNonNull;
+import static io.airlift.configuration.ConfigurationMetadata.getConfigurationMetadata;
 
 public class ConfigurationInspector
 {
@@ -33,7 +34,8 @@ public class ConfigurationInspector
     {
         ImmutableSortedSet.Builder<ConfigRecord<?>> builder = ImmutableSortedSet.naturalOrder();
         for (ConfigurationProvider<?> configurationProvider : configurationFactory.getConfigurationProviders()) {
-            builder.add(ConfigRecord.createConfigRecord(configurationProvider));
+            ConfigRecord<?> result = new ConfigRecord<>(configurationFactory, configurationProvider);
+            builder.add(result);
         }
 
         return builder.build();
@@ -65,22 +67,18 @@ public class ConfigurationInspector
         private final String prefix;
         private final SortedSet<ConfigAttribute> attributes;
 
-        public static <T> ConfigRecord<T> createConfigRecord(ConfigurationProvider<T> configurationProvider)
+        private ConfigRecord(ConfigurationFactory configurationFactory, ConfigurationProvider<T> configurationProvider)
         {
-            return new ConfigRecord<>(configurationProvider);
-        }
+            requireNonNull(configurationProvider, "configurationProvider");
 
-        private ConfigRecord(ConfigurationProvider<T> configurationProvider)
-        {
-            Preconditions.checkNotNull(configurationProvider, "configurationProvider");
+            ConfigurationBinding<T> configurationBinding = configurationProvider.getConfigurationBinding();
+            key = configurationBinding.getKey();
+            configClass = configurationBinding.getConfigClass();
+            prefix = configurationBinding.getPrefix().orElse(null);
 
-            key = configurationProvider.getKey();
-            configClass = configurationProvider.getConfigClass();
-            prefix = configurationProvider.getPrefix();
+            ConfigurationMetadata<T> metadata = getConfigurationMetadata(configurationBinding.getConfigClass());
 
-            ConfigurationMetadata<T> metadata = configurationProvider.getConfigurationMetadata();
-
-            T defaults = configurationProvider.getDefaultConfig();
+            T defaults = configurationFactory.getDefaultConfig(configurationBinding.getKey());
 
             T instance = null;
             try {
@@ -91,8 +89,9 @@ public class ConfigurationInspector
                 // this is catch throwable because we may get an AssertionError
             }
 
-            String prefix = configurationProvider.getPrefix();
-            prefix = prefix == null ? "" : (prefix + ".");
+            String prefix = configurationBinding.getPrefix()
+                    .map(value -> value + ".")
+                    .orElse("");
 
             ImmutableSortedSet.Builder<ConfigAttribute> builder = ImmutableSortedSet.naturalOrder();
             for (AttributeMetadata attribute : metadata.getAttributes().values()) {
@@ -175,11 +174,11 @@ public class ConfigurationInspector
 
         private ConfigAttribute(String attributeName, String propertyName, String defaultValue, String currentValue, String description)
         {
-            Preconditions.checkNotNull(attributeName, "attributeName");
-            Preconditions.checkNotNull(propertyName, "propertyName");
-            Preconditions.checkNotNull(defaultValue, "defaultValue");
-            Preconditions.checkNotNull(currentValue, "currentValue");
-            Preconditions.checkNotNull(description, "description");
+            requireNonNull(attributeName, "attributeName");
+            requireNonNull(propertyName, "propertyName");
+            requireNonNull(defaultValue, "defaultValue");
+            requireNonNull(currentValue, "currentValue");
+            requireNonNull(description, "description");
 
             this.attributeName = attributeName;
             this.propertyName = propertyName;

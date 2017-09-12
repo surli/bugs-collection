@@ -28,7 +28,11 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.net.InetAddress;
+import java.time.Instant;
 import java.util.Map;
+
+import static java.time.format.DateTimeFormatter.ISO_INSTANT;
+import static java.util.Objects.requireNonNull;
 
 @SuppressWarnings("UnusedDeclaration")
 enum EventDataType
@@ -133,6 +137,16 @@ enum EventDataType
                 }
             },
 
+    INSTANT(Instant.class)
+            {
+                public void writeFieldValue(JsonGenerator jsonGenerator, Object value)
+                        throws IOException
+                {
+                    validateFieldValueType(value, Instant.class);
+                    jsonGenerator.writeString(ISO_INSTANT.format((Instant) value));
+                }
+            },
+
     DATETIME(DateTime.class)
             {
                 public void writeFieldValue(JsonGenerator jsonGenerator, Object value)
@@ -208,7 +222,7 @@ enum EventDataType
 
     static void validateFieldValueType(Object value, Class<?> expectedType)
     {
-        Preconditions.checkNotNull(value, "value is null");
+        requireNonNull(value, "value is null");
         Preconditions.checkArgument(expectedType.isInstance(value),
                 "Expected 'value' to be a " + expectedType.getSimpleName() +
                         " but it is a " + value.getClass().getName());

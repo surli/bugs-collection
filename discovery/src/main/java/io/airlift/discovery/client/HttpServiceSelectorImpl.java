@@ -15,14 +15,15 @@
  */
 package io.airlift.discovery.client;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Lists;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import static java.util.Objects.requireNonNull;
 
 public class HttpServiceSelectorImpl implements HttpServiceSelector
 {
@@ -30,7 +31,7 @@ public class HttpServiceSelectorImpl implements HttpServiceSelector
 
     public HttpServiceSelectorImpl(ServiceSelector serviceSelector)
     {
-        Preconditions.checkNotNull(serviceSelector, "serviceSelector is null");
+        requireNonNull(serviceSelector, "serviceSelector is null");
         this.serviceSelector = serviceSelector;
     }
 
@@ -49,13 +50,13 @@ public class HttpServiceSelectorImpl implements HttpServiceSelector
     @Override
     public List<URI> selectHttpService()
     {
-        List<ServiceDescriptor> serviceDescriptors = Lists.newArrayList(serviceSelector.selectAllServices());
+        List<ServiceDescriptor> serviceDescriptors = new ArrayList<>(serviceSelector.selectAllServices());
         if (serviceDescriptors.isEmpty()) {
             return ImmutableList.of();
         }
 
         // favor https over http
-        List<URI> httpsUri = Lists.newArrayList();
+        List<URI> httpsUri = new ArrayList<>();
         for (ServiceDescriptor serviceDescriptor : serviceDescriptors) {
             String https = serviceDescriptor.getProperties().get("https");
             if (https != null) {
@@ -66,7 +67,7 @@ public class HttpServiceSelectorImpl implements HttpServiceSelector
                 }
             }
         }
-        List<URI> httpUri = Lists.newArrayList();
+        List<URI> httpUri = new ArrayList<>();
         for (ServiceDescriptor serviceDescriptor : serviceDescriptors) {
             String http = serviceDescriptor.getProperties().get("http");
             if (http != null) {

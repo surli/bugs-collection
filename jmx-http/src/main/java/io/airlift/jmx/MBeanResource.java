@@ -16,12 +16,10 @@
 package io.airlift.jmx;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.base.Charsets;
-import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Resources;
-import com.google.inject.Inject;
 
+import javax.inject.Inject;
 import javax.management.JMException;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
@@ -34,6 +32,8 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 import static com.google.common.io.Resources.getResource;
+import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.util.Objects.requireNonNull;
 
 @Path("/v1/jmx")
 public class MBeanResource
@@ -53,7 +53,7 @@ public class MBeanResource
     public String getMBeansUi()
             throws Exception
     {
-        return Resources.toString(getResource(getClass(), "mbeans.html"), Charsets.UTF_8);
+        return Resources.toString(getResource(getClass(), "mbeans.html"), UTF_8);
     }
 
     @GET
@@ -76,7 +76,7 @@ public class MBeanResource
     public MBeanRepresentation getMBean(@PathParam("objectName") ObjectName objectName)
             throws JMException
     {
-        Preconditions.checkNotNull(objectName, "objectName is null");
+        requireNonNull(objectName, "objectName is null");
         return new MBeanRepresentation(mbeanServer, objectName, objectMapper);
     }
 
@@ -86,7 +86,7 @@ public class MBeanResource
     public Object getMBean(@PathParam("objectName") ObjectName objectName, @PathParam("attributeName") String attributeName)
             throws JMException
     {
-        Preconditions.checkNotNull(objectName, "objectName is null");
+        requireNonNull(objectName, "objectName is null");
         return mbeanServer.getAttribute(objectName, attributeName);
     }
 }

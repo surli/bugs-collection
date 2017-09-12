@@ -15,7 +15,7 @@
  */
 package io.airlift.configuration;
 
-import com.google.common.collect.Maps;
+import com.google.common.collect.ImmutableList;
 import com.google.inject.CreationException;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -29,12 +29,12 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 import static io.airlift.configuration.ConfigBinder.configBinder;
-import static io.airlift.configuration.Configuration.processConfiguration;
 
 public class ConfigurationFactoryTest
 {
@@ -178,7 +178,7 @@ public class ConfigurationFactoryTest
     @Test
     public void testDefunctPropertyInConfigThrows()
     {
-        Map<String, String> properties = Maps.newTreeMap();
+        Map<String, String> properties = new TreeMap<>();
         properties.put("string-value", "this is a");
         properties.put("defunct-value", "this shouldn't work");
         TestMonitor monitor = new TestMonitor();
@@ -196,7 +196,7 @@ public class ConfigurationFactoryTest
     @Test
     public void testSuccessfulBeanValidation()
     {
-        Map<String, String> properties = Maps.newHashMap();
+        Map<String, String> properties = new HashMap<>();
         properties.put("string-value", "has a value");
         properties.put("int-value", "50");
         TestMonitor monitor = new TestMonitor();
@@ -212,7 +212,7 @@ public class ConfigurationFactoryTest
     @Test
     public void testFailedBeanValidation()
     {
-        Map<String, String> properties = Maps.newHashMap();
+        Map<String, String> properties = new HashMap<>();
         // string-value left at invalid default
         properties.put("int-value", "5000");  // out of range
         TestMonitor monitor = new TestMonitor();
@@ -229,8 +229,9 @@ public class ConfigurationFactoryTest
 
     private static Injector createInjector(Map<String, String> properties, TestMonitor monitor, Module module)
     {
-        ConfigurationFactory configurationFactory = new ConfigurationFactory(properties, monitor);
-        List<Message> messages = processConfiguration(configurationFactory, null, module);
+        ConfigurationFactory configurationFactory = new ConfigurationFactory(properties, null, monitor);
+        configurationFactory.registerConfigurationClasses(ImmutableList.of(module));
+        List<Message> messages = configurationFactory.validateRegisteredConfigurationProvider();
         return Guice.createInjector(new ConfigurationModule(configurationFactory), module, new ValidationErrorModule(messages));
     }
 
@@ -262,7 +263,7 @@ public class ConfigurationFactoryTest
             this.booleanValue = booleanValue;
         }
     }
-    
+
     public static class AnnotatedSetter {
         private String stringValue;
         private boolean booleanValue;

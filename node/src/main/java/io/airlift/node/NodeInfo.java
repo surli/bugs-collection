@@ -18,10 +18,11 @@ package io.airlift.node;
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableList;
 import com.google.common.net.InetAddresses;
-import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import io.airlift.node.NodeConfig.AddressSource;
 import org.weakref.jmx.Managed;
+
+import javax.inject.Inject;
 
 import java.net.Inet4Address;
 import java.net.Inet6Address;
@@ -35,7 +36,7 @@ import java.util.UUID;
 
 import static com.google.common.base.MoreObjects.toStringHelper;
 import static com.google.common.base.Preconditions.checkArgument;
-import static com.google.common.base.Preconditions.checkNotNull;
+import static java.util.Objects.requireNonNull;
 
 @Singleton
 public class NodeInfo
@@ -84,9 +85,9 @@ public class NodeInfo
             String configSpec,
             AddressSource internalAddressSource)
     {
-        checkNotNull(environment, "environment is null");
-        checkNotNull(pool, "pool is null");
-        checkNotNull(internalAddressSource, "internalAddressSource is null");
+        requireNonNull(environment, "environment is null");
+        requireNonNull(pool, "pool is null");
+        requireNonNull(internalAddressSource, "internalAddressSource is null");
         checkArgument(environment.matches(NodeConfig.ENV_REGEXP), "environment '%s' is invalid", environment);
         checkArgument(pool.matches(NodeConfig.POOL_REGEXP), "pool '%s' is invalid", pool);
 

@@ -23,16 +23,17 @@ import io.airlift.http.client.FullJsonResponseHandler.JsonResponse;
 import io.airlift.json.JsonCodec;
 
 import javax.annotation.Nullable;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
 
 import static com.google.common.base.MoreObjects.toStringHelper;
-import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.net.HttpHeaders.CONTENT_TYPE;
 import static io.airlift.http.client.ResponseHandlerUtils.propagate;
 import static java.lang.String.format;
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.util.Objects.requireNonNull;
 
 public class FullJsonResponseHandler<T>
         implements ResponseHandler<JsonResponse<T>, RuntimeException>
@@ -97,7 +98,7 @@ public class FullJsonResponseHandler<T>
 
             this.hasValue = false;
             this.jsonBytes = null;
-            this.responseBytes = checkNotNull(responseBytes, "responseBytes is null");
+            this.responseBytes = requireNonNull(responseBytes, "responseBytes is null");
             this.value = null;
             this.exception = null;
         }
@@ -109,8 +110,8 @@ public class FullJsonResponseHandler<T>
             this.statusMessage = statusMessage;
             this.headers = ImmutableListMultimap.copyOf(headers);
 
-            this.jsonBytes = checkNotNull(jsonBytes, "jsonBytes is null");
-            this.responseBytes = checkNotNull(jsonBytes, "responseBytes is null");
+            this.jsonBytes = requireNonNull(jsonBytes, "jsonBytes is null");
+            this.responseBytes = requireNonNull(jsonBytes, "responseBytes is null");
 
             T value = null;
             IllegalArgumentException exception = null;

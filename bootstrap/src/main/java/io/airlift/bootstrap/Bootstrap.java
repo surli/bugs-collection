@@ -20,7 +20,6 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableList.Builder;
 import com.google.common.collect.ImmutableSortedMap;
-import com.google.common.collect.Maps;
 import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -49,7 +48,6 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 import static com.google.common.collect.Maps.fromProperties;
-import static io.airlift.configuration.Configuration.processConfiguration;
 
 /**
  * Entry point for an application built using the platform codebase.
@@ -181,7 +179,7 @@ public class Bootstrap
         else {
             requiredProperties = requiredConfigurationProperties;
         }
-        SortedMap<String, String> properties = Maps.newTreeMap();
+        SortedMap<String, String> properties = new TreeMap<>();
         if (optionalConfigurationProperties != null) {
             properties.putAll(optionalConfigurationProperties);
         }
@@ -189,8 +187,7 @@ public class Bootstrap
         properties.putAll(fromProperties(System.getProperties()));
         properties = ImmutableSortedMap.copyOf(properties);
 
-        configurationFactory = new ConfigurationFactory(properties);
-
+        configurationFactory = new ConfigurationFactory(properties, log::warn);
 
         if (logging != null) {
             // initialize logging
@@ -199,8 +196,11 @@ public class Bootstrap
             logging.configure(configuration);
         }
 
-        // Validate configuration
-        List<Message> messages = processConfiguration(configurationFactory, log::warn, modules);
+        // Register configuration classes defined in the modules
+        configurationFactory.registerConfigurationClasses(modules);
+
+        // Validate configuration classes
+        List<Message> messages = configurationFactory.validateRegisteredConfigurationProvider();
 
         // at this point all config file properties should be used
         // so we can calculate the unused properties

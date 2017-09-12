@@ -15,18 +15,20 @@
  */
 package io.airlift.sample;
 
-import com.google.common.base.Preconditions;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.ImmutableList;
-import com.google.inject.Inject;
 import io.airlift.event.client.EventClient;
 import org.weakref.jmx.Flatten;
 import org.weakref.jmx.Managed;
 
+import javax.inject.Inject;
+
 import java.util.Collection;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
+
+import static java.util.Objects.requireNonNull;
 
 public class PersonStore
 {
@@ -36,8 +38,8 @@ public class PersonStore
     @Inject
     public PersonStore(StoreConfig config, EventClient eventClient)
     {
-        Preconditions.checkNotNull(config, "config must not be null");
-        Preconditions.checkNotNull(eventClient, "eventClient is null");
+        requireNonNull(config, "config must not be null");
+        requireNonNull(eventClient, "eventClient is null");
 
         Cache<String, Person> personCache = CacheBuilder.newBuilder()
                 .expireAfterWrite(config.getTtl().toMillis(), TimeUnit.MILLISECONDS)
@@ -55,7 +57,7 @@ public class PersonStore
 
     public Person get(String id)
     {
-        Preconditions.checkNotNull(id, "id must not be null");
+        requireNonNull(id, "id must not be null");
 
         Person person = persons.get(id);
         if (person != null) {
@@ -69,8 +71,8 @@ public class PersonStore
      */
     public boolean put(String id, Person person)
     {
-        Preconditions.checkNotNull(id, "id must not be null");
-        Preconditions.checkNotNull(person, "person must not be null");
+        requireNonNull(id, "id must not be null");
+        requireNonNull(person, "person must not be null");
 
         boolean added = persons.put(id, person) == null;
         if (added) {
@@ -87,7 +89,7 @@ public class PersonStore
      */
     public boolean delete(String id)
     {
-        Preconditions.checkNotNull(id, "id must not be null");
+        requireNonNull(id, "id must not be null");
 
         Person removedPerson = persons.remove(id);
         if (removedPerson != null) {

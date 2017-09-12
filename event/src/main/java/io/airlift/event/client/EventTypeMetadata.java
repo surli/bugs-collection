@@ -21,29 +21,28 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.ImmutableSortedMap;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
-import com.google.common.collect.Ordering;
 import io.airlift.event.client.EventField.EventFieldMapping;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.SortedMap;
-import java.util.stream.Collectors;
+import java.util.TreeMap;
 
 import static com.google.common.collect.Iterables.getFirst;
-import static com.google.common.collect.Maps.newTreeMap;
 import static io.airlift.event.client.AnnotationUtils.findAnnotatedMethods;
 import static io.airlift.event.client.EventDataType.getEventDataType;
 import static io.airlift.event.client.EventFieldMetadata.ContainerType;
 import static io.airlift.event.client.TypeParameterUtils.getTypeParameters;
+import static java.util.Objects.requireNonNull;
 
 public final class EventTypeMetadata<T>
 {
@@ -68,12 +67,12 @@ public final class EventTypeMetadata<T>
 
     public static <T> EventTypeMetadata<T> getEventTypeMetadata(Class<T> eventClass)
     {
-        return new EventTypeMetadata<T>(eventClass, Lists.<String>newArrayList(), Maps.<Class<?>, EventTypeMetadata<?>>newHashMap(), false);
+        return new EventTypeMetadata<T>(eventClass, new ArrayList<>(), new HashMap<>(), false);
     }
 
     public static <T> EventTypeMetadata<T> getEventTypeMetadataNested(Class<T> eventClass)
     {
-        return new EventTypeMetadata<T>(eventClass, Lists.<String>newArrayList(), Maps.<Class<?>, EventTypeMetadata<?>>newHashMap(), true);
+        return new EventTypeMetadata<T>(eventClass, new ArrayList<>(), new HashMap<>(), true);
     }
 
     private final Class<T> eventClass;
@@ -86,9 +85,9 @@ public final class EventTypeMetadata<T>
 
     private EventTypeMetadata(Class<T> eventClass, List<String> errors, Map<Class<?>, EventTypeMetadata<?>> metadataClasses, boolean nestedEvent)
     {
-        Preconditions.checkNotNull(eventClass, "eventClass is null");
-        Preconditions.checkNotNull(errors, "errors is null");
-        Preconditions.checkNotNull(metadataClasses, "metadataClasses is null");
+        requireNonNull(eventClass, "eventClass is null");
+        requireNonNull(errors, "errors is null");
+        requireNonNull(metadataClasses, "metadataClasses is null");
         Preconditions.checkState(!metadataClasses.containsKey(eventClass), "metadataClasses contains eventClass");
 
         this.eventClass = eventClass;
@@ -103,7 +102,7 @@ public final class EventTypeMetadata<T>
 
         // build event field metadata
         Multimap<EventFieldMapping, EventFieldMetadata> specialFields = ArrayListMultimap.create();
-        Map<String, EventFieldMetadata> fields = newTreeMap();
+        Map<String, EventFieldMetadata> fields = new TreeMap<>();
 
         for (Method method : findAnnotatedMethods(eventClass, EventField.class)) {
             // validate method

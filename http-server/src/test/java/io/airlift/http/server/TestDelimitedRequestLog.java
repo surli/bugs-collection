@@ -15,7 +15,6 @@
  */
 package io.airlift.http.server;
 
-import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Files;
 import io.airlift.event.client.InMemoryEventClient;
@@ -23,9 +22,6 @@ import io.airlift.tracetoken.TraceTokenManager;
 import org.eclipse.jetty.http.HttpURI;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Response;
-import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.DateTimeFormatterBuilder;
-import org.joda.time.format.ISODateTimeFormat;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
@@ -34,19 +30,21 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 import java.security.Principal;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.List;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @Test(singleThreaded = true)
 public class TestDelimitedRequestLog
 {
-    private final DateTimeFormatter isoFormatter = new DateTimeFormatterBuilder()
-            .append(ISODateTimeFormat.dateHourMinuteSecondFraction())
-            .appendTimeZoneOffset("Z", true, 2, 2)
-            .toFormatter();
+    private static final DateTimeFormatter ISO_FORMATTER = ISO_OFFSET_DATE_TIME.withZone(ZoneId.systemDefault());
 
     private File file;
 
@@ -124,7 +122,7 @@ public class TestDelimitedRequestLog
         HttpRequestEvent event = (HttpRequestEvent) events.get(0);
 
 
-        Assert.assertEquals(event.getTimeStamp().getMillis(), timestamp);
+        Assert.assertEquals(event.getTimeStamp().toEpochMilli(), timestamp);
         Assert.assertEquals(event.getClientAddress(), ip);
         Assert.assertEquals(event.getProtocol(), protocol);
         Assert.assertEquals(event.getMethod(), method);
@@ -141,9 +139,9 @@ public class TestDelimitedRequestLog
         Assert.assertEquals(event.getTimeToLastByte(), timeToLastByte);
         Assert.assertEquals(event.getTraceToken(), tokenManager.getCurrentRequestToken());
 
-        String actual = Files.toString(file, Charsets.UTF_8);
+        String actual = Files.toString(file, UTF_8);
         String expected = String.format("%s\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%d\t%d\t%s\n",
-                isoFormatter.print(timestamp),
+                ISO_FORMATTER.format(Instant.ofEpochMilli(timestamp)),
                 ip,
                 method,
                 uri,

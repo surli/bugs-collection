@@ -16,8 +16,6 @@
 package io.airlift.http.client;
 
 import com.google.common.annotations.Beta;
-import com.google.common.base.Objects;
-import com.google.common.base.Preconditions;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ImmutableListMultimap;
 import com.google.common.collect.ListMultimap;
@@ -25,9 +23,11 @@ import com.google.common.collect.ListMultimap;
 import java.net.URI;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.Objects;
 
 import static com.google.common.base.MoreObjects.toStringHelper;
-import static com.google.common.base.Objects.equal;
+import static com.google.common.base.Preconditions.checkArgument;
+import static java.util.Objects.requireNonNull;
 
 @Beta
 public class Request
@@ -39,12 +39,12 @@ public class Request
 
     public Request(URI uri, String method, ListMultimap<String, String> headers, BodyGenerator bodyGenerator)
     {
-        Preconditions.checkNotNull(uri, "uri is null");
-        Preconditions.checkNotNull(uri.getHost(), "uri does not have a host: %s", uri);
-        Preconditions.checkNotNull(method, "method is null");
-        Preconditions.checkNotNull(uri.getScheme(), "uri does not have a scheme: %s", uri);
+        requireNonNull(uri, "uri is null");
+        checkArgument(uri.getHost() != null, "uri does not have a host: %s", uri);
+        checkArgument(uri.getScheme() != null, "uri does not have a scheme: %s", uri);
         String scheme = uri.getScheme().toLowerCase();
-        Preconditions.checkArgument(!"http".equals(scheme) || !"https".equals(scheme), "uri scheme must be http or https: %s", uri);
+        checkArgument("http".equals(scheme) || "https".equals(scheme), "uri scheme must be http or https: %s", uri);
+        requireNonNull(method, "method is null");
 
         this.uri = validateUri(uri);
         this.method = method;
@@ -103,16 +103,16 @@ public class Request
             return false;
         }
         Request r = (Request) o;
-        return equal(uri, r.uri) &&
-                equal(method, r.method) &&
-                equal(headers, r.headers) &&
-                equal(bodyGenerator, r.bodyGenerator);
+        return Objects.equals(uri, r.uri) &&
+                Objects.equals(method, r.method) &&
+                Objects.equals(headers, r.headers) &&
+                Objects.equals(bodyGenerator, r.bodyGenerator);
     }
 
     @Override
     public int hashCode()
     {
-        return Objects.hashCode(uri, method, headers, bodyGenerator);
+        return Objects.hash(uri, method, headers, bodyGenerator);
     }
 
     @Beta
@@ -193,7 +193,7 @@ public class Request
 
     private static URI validateUri(URI uri)
     {
-        Preconditions.checkArgument(uri.getPort() != 0, "Cannot make requests to HTTP port 0");
+        checkArgument(uri.getPort() != 0, "Cannot make requests to HTTP port 0");
         return uri;
     }
 }
