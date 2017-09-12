@@ -1,0 +1,842 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] airlift
+[INFO] log
+[INFO] testing
+[INFO] configuration
+[INFO] log-manager
+[INFO] bootstrap
+[INFO] concurrent
+[INFO] json
+[INFO] stats
+[INFO] trace-token
+[INFO] http-client
+[INFO] node
+[INFO] discovery
+[INFO] dbpool
+[INFO] event
+[INFO] http-server
+[INFO] jaxrs
+[INFO] jmx-http-rpc
+[INFO] jmx-http
+[INFO] jmx
+[INFO] launcher
+[INFO] packaging
+[INFO] skeleton-server
+[INFO] sample-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building airlift 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ airlift ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ airlift ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ airlift ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ airlift ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ airlift ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ airlift ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ airlift ---
+[INFO] Skipping pom project
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ airlift ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ airlift ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ airlift ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ airlift ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ log ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ log ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ log ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ log ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ log ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ log ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/log/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ log ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/199058265/log/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/log/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ log ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/199058265/log/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ log ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ log ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ log ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ log ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ log ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ log ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 3.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 50.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 35.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 54.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 39.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 356.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 212.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 245.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 307.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.airlift.log.TestLogger
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.428 sec - in io.airlift.log.TestLogger
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testing 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ testing ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ testing ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ testing ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ testing ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ testing ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ testing ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/testing/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ testing ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /root/workspace/airlift/airlift/199058265/testing/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/testing/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ testing ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/199058265/testing/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ testing ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ testing ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ testing ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ testing ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ testing ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ testing ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.64 sec - in TestSuite
+
+Results :
+
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building configuration 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ configuration ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ configuration ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ configuration ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ configuration ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ configuration ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ configuration ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/configuration/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ configuration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /root/workspace/airlift/airlift/199058265/configuration/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/configuration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ configuration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /root/workspace/airlift/airlift/199058265/configuration/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ configuration ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ configuration ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ configuration ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ configuration ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ configuration ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ configuration ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 106, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.807 sec - in TestSuite
+
+Results :
+
+Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-manager 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ log-manager ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ log-manager ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ log-manager ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ log-manager ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ log-manager ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ log-manager ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-manager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/log-manager/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ log-manager ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /root/workspace/airlift/airlift/199058265/log-manager/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-manager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/log-manager/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ log-manager ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/199058265/log-manager/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ log-manager ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ log-manager ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ log-manager ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ log-manager ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ log-manager ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ log-manager ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.721 sec - in TestSuite
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bootstrap 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ bootstrap ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ bootstrap ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ bootstrap ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ bootstrap ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ bootstrap ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ bootstrap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bootstrap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/bootstrap/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ bootstrap ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /root/workspace/airlift/airlift/199058265/bootstrap/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bootstrap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/bootstrap/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ bootstrap ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /root/workspace/airlift/airlift/199058265/bootstrap/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ bootstrap ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ bootstrap ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ bootstrap ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ bootstrap ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ bootstrap ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ bootstrap ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.671 sec - in TestSuite
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building concurrent 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ concurrent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ concurrent ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ concurrent ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ concurrent ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ concurrent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ concurrent ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ concurrent ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/concurrent/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ concurrent ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /root/workspace/airlift/airlift/199058265/concurrent/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ concurrent ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/concurrent/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ concurrent ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/airlift/airlift/199058265/concurrent/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ concurrent ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ concurrent ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ concurrent ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ concurrent ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ concurrent ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ concurrent ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.862 sec - in TestSuite
+
+Results :
+
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building json 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ json ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ json ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ json ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ json ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ json ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ json ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ json ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/json/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ json ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /root/workspace/airlift/airlift/199058265/json/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ json ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/json/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ json ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/airlift/airlift/199058265/json/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ json ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ json ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ json ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ json ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ json ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ json ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.286 sec - in TestSuite
+
+Results :
+
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building stats 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ stats ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ stats ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ stats ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ stats ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ stats ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ stats ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ stats ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/stats/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ stats ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /root/workspace/airlift/airlift/199058265/stats/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ stats ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/stats/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ stats ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/airlift/airlift/199058265/stats/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ stats ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ stats ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ stats ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ stats ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ stats ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ stats ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.847 sec - in TestSuite
+
+Results :
+
+Tests run: 1145, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building trace-token 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ trace-token ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ trace-token ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ trace-token ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ trace-token ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ trace-token ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ trace-token ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ trace-token ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/trace-token/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ trace-token ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/airlift/airlift/199058265/trace-token/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ trace-token ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/trace-token/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ trace-token ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/airlift/airlift/199058265/trace-token/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ trace-token ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ trace-token ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ trace-token ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ trace-token ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ trace-token ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ trace-token ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.airlift.tracetoken.TestTraceTokenManager
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec - in io.airlift.tracetoken.TestTraceTokenManager
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building http-client 0.142-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ http-client ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ http-client ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ http-client ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ http-client ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ http-client ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ http-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ http-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/199058265/http-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ http-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 40 source files to /root/workspace/airlift/airlift/199058265/http-client/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ http-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ http-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /root/workspace/airlift/airlift/199058265/http-client/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ http-client ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ http-client ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ http-client ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ http-client ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ http-client ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ http-client ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 312, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 37.42 sec <<< FAILURE! - in TestSuite
+testConnectTimeout(io.airlift.http.client.jetty.TestJettyHttpsClient)  Time elapsed: 2.027 sec  <<< FAILURE!
+java.lang.AssertionError: 
+unexpected exception: [java.util.concurrent.TimeoutException
+	at org.eclipse.jetty.client.util.InputStreamResponseListener.get(InputStreamResponseListener.java:224)
+	at io.airlift.http.client.jetty.JettyHttpClient.execute(JettyHttpClient.java:350)
+	at io.airlift.http.client.jetty.TestJettyHttpsClient.executeRequest(TestJettyHttpsClient.java:79)
+	at io.airlift.http.client.AbstractHttpClientTest.testConnectTimeout(AbstractHttpClientTest.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]
+
+
+Results :
+
+Failed tests: 
+  TestJettyHttpsClient>AbstractHttpClientTest.testConnectTimeout:222 unexpected exception: [java.util.concurrent.TimeoutException
+	at org.eclipse.jetty.client.util.InputStreamResponseListener.get(InputStreamResponseListener.java:224)
+	at io.airlift.http.client.jetty.JettyHttpClient.execute(JettyHttpClient.java:350)
+	at io.airlift.http.client.jetty.TestJettyHttpsClient.executeRequest(TestJettyHttpsClient.java:79)
+	at io.airlift.http.client.AbstractHttpClientTest.testConnectTimeout(AbstractHttpClientTest.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]
+
+Tests run: 312, Failures: 1, Errors: 0, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] airlift ............................................ SUCCESS [ 20.515 s]
+[INFO] log ................................................ SUCCESS [ 17.557 s]
+[INFO] testing ............................................ SUCCESS [ 11.808 s]
+[INFO] configuration ...................................... SUCCESS [ 18.630 s]
+[INFO] log-manager ........................................ SUCCESS [ 12.509 s]
+[INFO] bootstrap .......................................... SUCCESS [ 11.730 s]
+[INFO] concurrent ......................................... SUCCESS [ 15.104 s]
+[INFO] json ............................................... SUCCESS [ 13.920 s]
+[INFO] stats .............................................. SUCCESS [01:08 min]
+[INFO] trace-token ........................................ SUCCESS [  5.978 s]
+[INFO] http-client ........................................ FAILURE [ 54.605 s]
+[INFO] node ............................................... SKIPPED
+[INFO] discovery .......................................... SKIPPED
+[INFO] dbpool ............................................. SKIPPED
+[INFO] event .............................................. SKIPPED
+[INFO] http-server ........................................ SKIPPED
+[INFO] jaxrs .............................................. SKIPPED
+[INFO] jmx-http-rpc ....................................... SKIPPED
+[INFO] jmx-http ........................................... SKIPPED
+[INFO] jmx ................................................ SKIPPED
+[INFO] launcher ........................................... SKIPPED
+[INFO] packaging .......................................... SKIPPED
+[INFO] skeleton-server .................................... SKIPPED
+[INFO] sample-server ...................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:14 min
+[INFO] Finished at: 2017-09-12T10:05:22+02:00
+[INFO] Final Memory: 119M/1135M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project http-client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/airlift/airlift/199058265/http-client/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :http-client
