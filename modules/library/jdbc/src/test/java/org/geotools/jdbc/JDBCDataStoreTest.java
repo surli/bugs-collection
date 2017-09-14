@@ -40,8 +40,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 
-import static org.easymock.EasyMock.createNiceMock;
-import static org.easymock.EasyMock.eq;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
@@ -195,11 +193,11 @@ public class JDBCDataStoreTest {
             reader.next();
         }
 
-        verify(callback, times(1)).init(eq(reader));
-        verify(callback, times(4)).beforeNext(eq(rowData));
-        verify(callback, times(3)).afterNext(eq(rowData), true);
-        verify(callback, times(1)).afterNext(eq(rowData), false);
-        verify(callback, times(1)).finish(eq(reader));
+        verify(callback, times(1)).init(reader);
+        verify(callback, times(4)).beforeNext(rowData);
+        verify(callback, times(3)).afterNext(rowData, true);
+        verify(callback, times(1)).afterNext(rowData, false);
+        verify(callback, times(1)).finish(reader);
     }
 }
 
