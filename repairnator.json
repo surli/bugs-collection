@@ -1,0 +1,31 @@
+{
+  "totalNumberSkippingTests": 14,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "failingModule": "/root/workspace/geotools/geotools/201123985/modules/library/jdbc",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent"
+  ],
+  "totalNumberRunningTests": 5339,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.jdbc.JDBCDataStoreTest",
+      "failingMethods": [
+        "org.geotools.jdbc.JDBCDataStoreTest#testReaderCallback"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "failureDetail": "\nArgument(s) are different! Wanted:\njDBCReaderCallback.init(\n    null\n);\n-\u003e at org.geotools.jdbc.JDBCDataStoreTest.testReaderCallback(JDBCDataStoreTest.java:198)\nActual invocation has different arguments:\njDBCReaderCallback.init(\n    org.geotools.jdbc.JDBCFeatureReader@393671df\n);\n-\u003e at org.geotools.jdbc.JDBCFeatureReader.init(JDBCFeatureReader.java:225)\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
