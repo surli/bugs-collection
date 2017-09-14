@@ -1,0 +1,47 @@
+{
+  "totalNumberSkippingTests": 21,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "CloudSlang/cloud-slang",
+  "failingModule": "/root/workspace/CloudSlang/cloud-slang/211350359/cloudslang-tests",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 985,
+  "failing-test-cases": [
+    {
+      "className": "io.cloudslang.lang.systemtests.flows.ValueSyntaxInFlowTest",
+      "failingMethods": [
+        "io.cloudslang.lang.systemtests.flows.ValueSyntaxInFlowTest#testValues"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Executable inputs not bound correctly expected:\u003c{input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, output_no_expression_input\u003doutput_no_expression_value, enableOptionForAction\u003denable_option_for_action_value, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, step_argument_null\u003dstep_argument_null_value, b\u003db, scp_host_port\u003d8888, input_str_double\u003dHi, enable_option_for_action\u003denable_option_for_action_value, input_no_value_tag\u003dinput_no_value_tag_value, input_private\u003d25, authorized_keys_path\u003d./auth, input_python_null\u003dnull, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, b_copy\u003db, input_concat_1\u003dab, input_properties_yaml_map_folded\u003dmedium, input_int\u003d22, input_system_property\u003dlocalhost, input_str_single\u003dHi, input_yaml_list\u003d[1, 2, 3], input_concat_2_folded\u003dprefix_ab_suffix, input_str_no_quotes\u003dHi}\u003e but was:\u003c{enable_option_for_action\u003denable_option_for_action_value, enableOptionForAction\u003denable_option_for_action_value, output_no_expression_input\u003doutput_no_expression_value, authorized_keys_path\u003d./auth, scp_host_port\u003d8888, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, input_system_property\u003dlocalhost, input_private\u003d25, input_int\u003d22, input_str_no_quotes\u003dHi, input_str_single\u003dHi, input_str_double\u003dHi, input_yaml_list\u003d[1, 2, 3], input_properties_yaml_map_folded\u003dmedium, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, input_python_null\u003dnull, b\u003db, b_copy\u003db, input_concat_1\u003dab, input_concat_2_folded\u003dprefix_ab_suffix, input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, step_argument_null\u003dstep_argument_null_value}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.cloudslang.lang.systemtests.flows.ValueSyntaxInOperationTest",
+      "failingMethods": [
+        "io.cloudslang.lang.systemtests.flows.ValueSyntaxInOperationTest#testValues"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Executable inputs not bound correctly expected:\u003c{input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, output_no_expression_input\u003doutput_no_expression_value, enableOptionForAction\u003denable_option_for_action_value, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, step_argument_null\u003dstep_argument_null_value, b\u003db, scp_host_port\u003d8888, input_str_double\u003dHi, enable_option_for_action\u003denable_option_for_action_value, input_no_value_tag\u003dinput_no_value_tag_value, input_private\u003d25, authorized_keys_path\u003d./auth, input_python_null\u003dnull, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, b_copy\u003db, input_concat_1\u003dab, input_properties_yaml_map_folded\u003dmedium, input_int\u003d22, input_system_property\u003dlocalhost, input_str_single\u003dHi, input_yaml_list\u003d[1, 2, 3], input_concat_2_folded\u003dprefix_ab_suffix, input_str_no_quotes\u003dHi}\u003e but was:\u003c{enable_option_for_action\u003denable_option_for_action_value, enableOptionForAction\u003denable_option_for_action_value, output_no_expression_input\u003doutput_no_expression_value, authorized_keys_path\u003d./auth, scp_host_port\u003d8888, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, input_system_property\u003dlocalhost, input_private\u003d25, input_int\u003d22, input_str_no_quotes\u003dHi, input_str_single\u003dHi, input_str_double\u003dHi, input_yaml_list\u003d[1, 2, 3], input_properties_yaml_map_folded\u003dmedium, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, input_python_null\u003dnull, b\u003db, b_copy\u003db, input_concat_1\u003dab, input_concat_2_folded\u003dprefix_ab_suffix, input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, step_argument_null\u003dstep_argument_null_value}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
