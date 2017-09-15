@@ -25,7 +25,6 @@ import com.graphhopper.routing.util.TestAlgoCollector.AlgoHelperEntry;
 import com.graphhopper.routing.util.TestAlgoCollector.OneRun;
 import com.graphhopper.routing.weighting.ShortestWeighting;
 import com.graphhopper.routing.weighting.Weighting;
-import com.graphhopper.storage.CHGraph;
 import com.graphhopper.storage.Graph;
 import com.graphhopper.storage.index.LocationIndex;
 import com.graphhopper.storage.index.QueryResult;
@@ -45,8 +44,6 @@ import static com.graphhopper.GraphHopperIT.DIR;
 import static com.graphhopper.util.Parameters.Algorithms.ASTAR;
 import static com.graphhopper.util.Parameters.Algorithms.DIJKSTRA_BI;
 import static org.junit.Assert.assertEquals;
-
-import org.junit.Ignore;
 
 /**
  * Try algorithms, indices and graph storages with real data
@@ -137,52 +134,6 @@ public class RoutingAlgorithmWithOSMIT {
                 list, "bike2", true, "bike2", "fastest", true);
 
         assertEquals(testCollector.toString(), 0, testCollector.errors.size());
-    }
-
-    @Test
-    public void testMonacoAllAlgorithmsWithBaseGraph() {
-        String vehicle = "car";
-        String graphFile = "target/monaco-gh";
-        String osmFile = DIR + "/monaco.osm.gz";
-        String importVehicles = vehicle;
-
-        Helper.removeDir(new File(graphFile));
-        GraphHopper hopper = new GraphHopperOSM().
-                // avoid that path.getDistance is too different to path.getPoint.calcDistance
-                        setWayPointMaxDistance(0).
-                        setDataReaderFile(osmFile).
-                        setCHEnabled(false).
-                        setGraphHopperLocation(graphFile).
-                        setEncodingManager(new EncodingManager(importVehicles));
-
-        hopper.importOrLoad();
-
-        FlagEncoder encoder = hopper.getEncodingManager().getEncoder(vehicle);
-        Weighting weighting = hopper.createWeighting(new HintsMap("shortest"), encoder, hopper.getGraphHopperStorage());
-
-        List<AlgoHelperEntry> prepares = RoutingAlgorithmIT.createAlgos(hopper.getGraphHopperStorage(), hopper.getLocationIndex(),
-                true, TraversalMode.NODE_BASED, weighting, hopper.getEncodingManager());
-        AlgoHelperEntry chPrepare = prepares.get(prepares.size() - 1);
-        if (!(chPrepare.getQueryGraph() instanceof CHGraph))
-            throw new IllegalStateException("Last prepared QueryGraph has to be a CHGraph");
-
-        // set all normal algorithms to baseGraph of already prepared to see if all algorithms still work
-        Graph baseGraphOfCHPrepared = chPrepare.getBaseGraph();
-        for (AlgoHelperEntry ahe : prepares) {
-            if (!(ahe.getQueryGraph() instanceof CHGraph)) {
-                ahe.setQueryGraph(baseGraphOfCHPrepared);
-            }
-        }
-
-        List<OneRun> forEveryAlgo = createMonacoCar();
-        EdgeFilter edgeFilter = new DefaultEdgeFilter(encoder);
-        for (AlgoHelperEntry entry : prepares) {
-            LocationIndex idx = entry.getIdx();
-            for (OneRun oneRun : forEveryAlgo) {
-                List<QueryResult> list = oneRun.getList(idx, edgeFilter);
-                testCollector.assertDistance(entry, list, oneRun);
-            }
-        }
     }
 
     @Test
@@ -522,24 +473,39 @@ public class RoutingAlgorithmWithOSMIT {
     }
 
     /**
-     * @param withPreparedAlgos if true also the CH and LM algorithms will be tested which need
-     *                          preparation and takes a bit longer
+     * @param withCH if true also the CH and LM algorithms will be tested which need
+     *               preparation and takes a bit longer
      */
     Graph runAlgo(TestAlgoCollector testCollector, String osmFile,
                   String graphFile, List<OneRun> forEveryAlgo, String importVehicles,
-                  boolean withPreparedAlgos, String vehicle, String weightStr, boolean is3D) {
+                  boolean withCH, String vehicle, String weightStr, boolean is3D) {
+
+        // for different weightings we need a different storage, otherwise we would need to remove the graph folder
+        // everytime we come with a different weighting
+        // graphFile += weightStr;
+
         AlgoHelperEntry algoEntry = null;
         OneRun tmpOneRun = null;
         try {
             Helper.removeDir(new File(graphFile));
             GraphHopper hopper = new GraphHopperOSM().
                     setStoreOnFlush(true).
-                    // avoid that path.getDistance is too different to path.getPoint.calcDistance
-                            setWayPointMaxDistance(0).
-                            setDataReaderFile(osmFile).
-                            setCHEnabled(false).
-                            setGraphHopperLocation(graphFile).
-                            setEncodingManager(new EncodingManager(importVehicles));
+                    setCHEnabled(false).
+                    setDataReaderFile(osmFile).
+                    setGraphHopperLocation(graphFile).
+                    setEncodingManager(new EncodingManager(importVehicles));
+
+            // avoid that path.getDistance is too different to path.getPoint.calcDistance
+            hopper.setWayPointMaxDistance(0);
+
+            // always enable landmarks
+            hopper.getLMFactoryDecorator().addWeighting(weightStr).
+                    setEnabled(true).setDisablingAllowed(true);
+
+            if (withCH)
+                hopper.getCHFactoryDecorator().addWeighting(weightStr).
+                        setEnabled(true).setDisablingAllowed(true);
+
             if (is3D)
                 hopper.setElevationProvider(new SRTMProvider().setCacheDir(new File(DIR)));
 
@@ -548,10 +514,9 @@ public class RoutingAlgorithmWithOSMIT {
             TraversalMode tMode = importVehicles.contains("turn_costs=true")
                     ? TraversalMode.EDGE_BASED_2DIR : TraversalMode.NODE_BASED;
             FlagEncoder encoder = hopper.getEncodingManager().getEncoder(vehicle);
-            Weighting weighting = hopper.createWeighting(new HintsMap(weightStr), encoder, hopper.getGraphHopperStorage());
+            HintsMap hints = new HintsMap().setWeighting(weightStr).setVehicle(vehicle);
 
-            Collection<AlgoHelperEntry> prepares = RoutingAlgorithmIT.createAlgos(hopper.getGraphHopperStorage(),
-                    hopper.getLocationIndex(), withPreparedAlgos, tMode, weighting, hopper.getEncodingManager());
+            Collection<AlgoHelperEntry> prepares = RoutingAlgorithmIT.createAlgos(hopper, hints, tMode);
 
             EdgeFilter edgeFilter = new DefaultEdgeFilter(encoder);
             for (AlgoHelperEntry entry : prepares) {
@@ -582,7 +547,7 @@ public class RoutingAlgorithmWithOSMIT {
         String graphFile = "target/monaco-gh";
         Helper.removeDir(new File(graphFile));
         final EncodingManager encodingManager = new EncodingManager("car");
-        GraphHopper hopper = new GraphHopperOSM().
+        final GraphHopper hopper = new GraphHopperOSM().
                 setStoreOnFlush(true).
                 setEncodingManager(encodingManager).setCHEnabled(false).
                 setWayPointMaxDistance(0).
@@ -602,6 +567,7 @@ public class RoutingAlgorithmWithOSMIT {
         int algosLength = 2;
         final Weighting weighting = new ShortestWeighting(encodingManager.getEncoder("car"));
         final EdgeFilter filter = new DefaultEdgeFilter(carEncoder);
+        final HintsMap hints = new HintsMap().setWeighting("shortest").setVehicle("car");
         for (int no = 0; no < MAX; no++) {
             for (int instanceNo = 0; instanceNo < instances.size(); instanceNo++) {
                 String[] algos = new String[]{
@@ -615,7 +581,7 @@ public class RoutingAlgorithmWithOSMIT {
                         public void run() {
                             OneRun oneRun = instances.get(instanceIndex);
                             AlgorithmOptions opts = AlgorithmOptions.start().weighting(weighting).algorithm(algoStr).build();
-                            testCollector.assertDistance(new AlgoHelperEntry(g, g, opts, idx),
+                            testCollector.assertDistance(new AlgoHelperEntry(g, opts, idx, algoStr + "|" + weighting),
                                     oneRun.getList(idx, filter), oneRun);
                             integ.addAndGet(1);
                         }

@@ -27,6 +27,7 @@ import com.graphhopper.routing.weighting.Weighting;
 import com.graphhopper.storage.Graph;
 import com.graphhopper.storage.GraphHopperStorage;
 import com.graphhopper.util.CmdArgs;
+import com.graphhopper.util.PMap;
 import com.graphhopper.util.Parameters.Landmark;
 
 import java.util.ArrayList;
@@ -51,7 +52,7 @@ public class LMAlgoFactoryDecorator implements RoutingAlgorithmFactoryDecorator 
     public void init(CmdArgs args) {
         landmarkCount = args.getInt(Landmark.COUNT, landmarkCount);
         activeLandmarkCount = args.getInt(Landmark.ACTIVE_COUNT_DEFAULT, Math.max(2, landmarkCount / 2));
-        String lmWeightingsStr = args.get("prepare.lm.weightings", "");
+        String lmWeightingsStr = args.get(Landmark.PREPARE + "weightings", "");
         if (!lmWeightingsStr.isEmpty()) {
             List<String> tmpLMWeightingList = Arrays.asList(lmWeightingsStr.split(","));
             setWeightingsAsStrings(tmpLMWeightingList);
@@ -67,8 +68,9 @@ public class LMAlgoFactoryDecorator implements RoutingAlgorithmFactoryDecorator 
         return landmarkCount;
     }
 
-    public void setDisablingAllowed(boolean disablingAllowed) {
+    public LMAlgoFactoryDecorator setDisablingAllowed(boolean disablingAllowed) {
         this.disablingAllowed = disablingAllowed;
+        return this;
     }
 
     public final boolean isDisablingAllowed() {
@@ -78,8 +80,9 @@ public class LMAlgoFactoryDecorator implements RoutingAlgorithmFactoryDecorator 
     /**
      * Enables or disables this decorator. This speed-up mode is disabled by default.
      */
-    public final void setEnabled(boolean enabled) {
+    public final LMAlgoFactoryDecorator setEnabled(boolean enabled) {
         this.enabled = enabled;
+        return this;
     }
 
     @Override
