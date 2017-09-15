@@ -8,13 +8,14 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
 import java.io.File;
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.net.URI;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -52,7 +53,7 @@ import java.util.function.DoublePredicate;
 import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+import java.util.stream.BaseStream;
 
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.assertj.core.api.filter.Filters;
@@ -230,6 +231,18 @@ public interface WithAssertions {
    */
   @CheckReturnValue
   default AbstractBigDecimalAssert<?> assertThat(final BigDecimal actual) {
+    return Assertions.assertThat(actual);
+  }
+
+  /**
+   * Creates a new instance of <code>{@link BigIntegerAssert}</code>.
+   *
+   * @param actual the actual value.
+   * @return the created assertion object.
+   * @since 2.7.0 / 3.7.0
+   */
+  @CheckReturnValue
+  public static AbstractBigIntegerAssert<?> assertThat(BigInteger actual) {
     return Assertions.assertThat(actual);
   }
 
@@ -651,8 +664,8 @@ public interface WithAssertions {
    * Delegate call to {@link org.assertj.core.api.Assertions#assertThat(List)}
    */
   @CheckReturnValue
-  default <T> AbstractListAssert<?, ? extends List<? extends T>, T, ObjectAssert<T>> assertThat(
-      final Stream<? extends T> actual) {
+  default <ELEMENT, STREAM extends BaseStream<ELEMENT, STREAM>> AbstractListAssert<?, ? extends List<? extends ELEMENT>, ELEMENT, ObjectAssert<ELEMENT>> assertThat(
+      final BaseStream<? extends ELEMENT, STREAM> actual) {
     return Assertions.assertThat(actual);
   }
   
@@ -901,6 +914,14 @@ public interface WithAssertions {
   default AbstractThrowableAssert<?, ? extends Throwable> assertThatThrownBy(
       final ThrowingCallable shouldRaiseThrowable) {
     return Assertions.assertThatThrownBy(shouldRaiseThrowable);
+  }
+
+  /**
+   * Delegate call to {@link org.assertj.core.api.Assertions#assertThat(ThrowableAssert.ThrowingCallable)}
+   */
+  default AbstractThrowableAssert<?, ? extends Throwable> assertThat(
+      final ThrowingCallable shouldRaiseThrowable) {
+    return Assertions.assertThat(shouldRaiseThrowable);
   }
 
   /**

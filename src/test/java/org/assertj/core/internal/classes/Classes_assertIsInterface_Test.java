@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.internal.classes;
 
@@ -45,14 +45,8 @@ public class Classes_assertIsInterface_Test extends ClassesBaseTest {
 
   @Test()
   public void should_fail_if_actual_is_not_an_interface() {
-    AssertionInfo info = someInfo();
     actual = Classes_assertIsInterface_Test.class;
-    try {
-      classes.assertIsInterface(someInfo(), actual);
-    } catch (AssertionError e) {
-      verify(failures).failure(info, shouldBeInterface(actual));
-      return;
-    }
-    failBecauseExpectedAssertionErrorWasNotThrown();
+    thrown.expectAssertionError(shouldBeInterface(actual));
+    classes.assertIsInterface(someInfo(), actual);
   }
 }

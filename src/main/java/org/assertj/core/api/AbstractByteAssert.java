@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
@@ -18,15 +18,17 @@ import org.assertj.core.data.Offset;
 import org.assertj.core.data.Percentage;
 import org.assertj.core.internal.Bytes;
 import org.assertj.core.internal.ComparatorBasedComparisonStrategy;
+import org.assertj.core.util.CheckReturnValue;
 import org.assertj.core.util.VisibleForTesting;
 
 /**
  * Base class for all implementations of assertions for {@link Byte}s.
  * 
- * @param <S> the "self" type of this assertion class. Please read &quot;<a href="http://bit.ly/1IZIRcY"
+ * @param <SELF> the "self" type of this assertion class. Please read &quot;<a href="http://bit.ly/1IZIRcY"
  *          target="_blank">Emulating 'self types' using Java Generics to simplify fluent API implementation</a>&quot;
  *          for more details.
  * 
+ * @author Drummond Dawson
  * @author Yvonne Wang
  * @author David DIDIER
  * @author Ansgar Konermann
@@ -34,8 +36,8 @@ import org.assertj.core.util.VisibleForTesting;
  * @author Mikhail Mazursky
  * @author Nicolas François
  */
-public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extends AbstractComparableAssert<S, Byte>
-    implements NumberAssert<S, Byte> {
+public abstract class AbstractByteAssert<SELF extends AbstractByteAssert<SELF>> extends AbstractComparableAssert<SELF, Byte>
+    implements NumberAssert<SELF, Byte> {
 
   @VisibleForTesting
   Bytes bytes = Bytes.instance();
@@ -61,7 +63,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is not equal to the given one.
    */
-  public S isEqualTo(byte expected) {
+  public SELF isEqualTo(byte expected) {
     bytes.assertEqual(info, actual, expected);
     return myself;
   }
@@ -83,22 +85,29 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to the given one.
    */
-  public S isNotEqualTo(byte other) {
+  public SELF isNotEqualTo(byte other) {
     bytes.assertNotEqual(info, actual, other);
     return myself;
   }
 
   /** {@inheritDoc} */
   @Override
-  public S isZero() {
+  public SELF isZero() {
     bytes.assertIsZero(info, actual);
     return myself;
   }
 
   /** {@inheritDoc} */
   @Override
-  public S isNotZero() {
+  public SELF isNotZero() {
     bytes.assertIsNotZero(info, actual);
+    return myself;
+  }
+
+  /** {@inheritDoc} */
+  @Override
+  public SELF isOne() {
+    bytes.assertIsOne(info, actual);
     return myself;
   }
 
@@ -115,7 +124,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isPositive() {
+  public SELF isPositive() {
     bytes.assertIsPositive(info, actual);
     return myself;
   }
@@ -133,7 +142,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isNegative() {
+  public SELF isNegative() {
     bytes.assertIsNegative(info, actual);
     return myself;
   }
@@ -151,7 +160,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isNotNegative() {
+  public SELF isNotNegative() {
     bytes.assertIsNotNegative(info, actual);
     return myself;
   }
@@ -169,7 +178,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isNotPositive() {
+  public SELF isNotPositive() {
     bytes.assertIsNotPositive(info, actual);
     return myself;
   }
@@ -192,7 +201,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to or greater than the given one.
    */
-  public S isLessThan(byte other) {
+  public SELF isLessThan(byte other) {
     bytes.assertLessThan(info, actual, other);
     return myself;
   }
@@ -215,7 +224,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is greater than the given one.
    */
-  public S isLessThanOrEqualTo(byte other) {
+  public SELF isLessThanOrEqualTo(byte other) {
     bytes.assertLessThanOrEqualTo(info, actual, other);
     return myself;
   }
@@ -238,7 +247,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to or less than the given one.
    */
-  public S isGreaterThan(byte other) {
+  public SELF isGreaterThan(byte other) {
     bytes.assertGreaterThan(info, actual, other);
     return myself;
   }
@@ -261,7 +270,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is less than the given one.
    */
-  public S isGreaterThanOrEqualTo(byte other) {
+  public SELF isGreaterThanOrEqualTo(byte other) {
     bytes.assertGreaterThanOrEqualTo(info, actual, other);
     return myself;
   }
@@ -282,7 +291,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isBetween(Byte start, Byte end) {
+  public SELF isBetween(Byte start, Byte end) {
     bytes.assertIsBetween(info, actual, start, end);
     return myself;
   }
@@ -303,7 +312,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * </p>
    */
   @Override
-  public S isStrictlyBetween(Byte start, Byte end) {
+  public SELF isStrictlyBetween(Byte start, Byte end) {
     bytes.assertIsStrictlyBetween(info, actual, start, end);
     return myself;
   }
@@ -328,7 +337,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws NullPointerException if the given offset is {@code null}.
    * @throws AssertionError if the actual value is not close to the given one.
    */
-  public S isCloseTo(byte expected, Offset<Byte> offset) {
+  public SELF isCloseTo(byte expected, Offset<Byte> offset) {
     bytes.assertIsCloseTo(info, actual, expected, offset);
     return myself;
   }
@@ -353,7 +362,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @see Assertions#byLessThan(Byte)
    * @since 2.6.0 / 3.6.0
    */
-  public S isNotCloseTo(byte expected, Offset<Byte> offset) {
+  public SELF isNotCloseTo(byte expected, Offset<Byte> offset) {
     bytes.assertIsNotCloseTo(info, actual, expected, offset);
     return myself;
   }
@@ -380,7 +389,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is not close to the given one.
    */
   @Override
-  public S isCloseTo(Byte expected, Offset<Byte> offset) {
+  public SELF isCloseTo(Byte expected, Offset<Byte> offset) {
     bytes.assertIsCloseTo(info, actual, expected, offset);
     return myself;
   }
@@ -407,7 +416,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @since 2.6.0 / 3.6.0
    */
   @Override
-  public S isNotCloseTo(Byte expected, Offset<Byte> offset) {
+  public SELF isNotCloseTo(Byte expected, Offset<Byte> offset) {
     bytes.assertIsNotCloseTo(info, actual, expected, offset);
     return myself;
   }
@@ -434,7 +443,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is not close to the given one.
    */
   @Override
-  public S isCloseTo(Byte expected, Percentage percentage) {
+  public SELF isCloseTo(Byte expected, Percentage percentage) {
     bytes.assertIsCloseToPercentage(info, actual, expected, percentage);
     return myself;
   }
@@ -460,7 +469,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @since 2.6.0 / 3.6.0
    */
   @Override
-  public S isNotCloseTo(Byte expected, Percentage percentage) {
+  public SELF isNotCloseTo(Byte expected, Percentage percentage) {
     bytes.assertIsNotCloseToPercentage(info, actual, expected, percentage);
     return myself;
   }
@@ -484,7 +493,7 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws NullPointerException if the expected number is {@code null}.
    * @throws AssertionError if the actual value is close to the given one.
    */
-  public S isCloseTo(byte expected, Percentage percentage) {
+  public SELF isCloseTo(byte expected, Percentage percentage) {
     bytes.assertIsCloseToPercentage(info, actual, expected, percentage);
     return myself;
   }
@@ -509,20 +518,22 @@ public abstract class AbstractByteAssert<S extends AbstractByteAssert<S>> extend
    * @throws AssertionError if the actual value is close to the given one.
    * @since 2.6.0 / 3.6.0
    */
-  public S isNotCloseTo(byte expected, Percentage percentage) {
+  public SELF isNotCloseTo(byte expected, Percentage percentage) {
     bytes.assertIsNotCloseToPercentage(info, actual, expected, percentage);
     return myself;
   }
 
   @Override
-  public S usingComparator(Comparator<? super Byte> customComparator) {
+  @CheckReturnValue
+  public SELF usingComparator(Comparator<? super Byte> customComparator) {
     super.usingComparator(customComparator);
     this.bytes = new Bytes(new ComparatorBasedComparisonStrategy(customComparator));
     return myself;
   }
 
   @Override
-  public S usingDefaultComparator() {
+  @CheckReturnValue
+  public SELF usingDefaultComparator() {
     super.usingDefaultComparator();
     this.bytes = Bytes.instance();
     return myself;

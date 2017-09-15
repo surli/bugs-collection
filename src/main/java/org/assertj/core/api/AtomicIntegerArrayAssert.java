@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
@@ -20,6 +20,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 import org.assertj.core.data.Index;
 import org.assertj.core.internal.ComparatorBasedComparisonStrategy;
 import org.assertj.core.internal.IntArrays;
+import org.assertj.core.util.CheckReturnValue;
 import org.assertj.core.util.VisibleForTesting;
 
 public class AtomicIntegerArrayAssert
@@ -504,6 +505,7 @@ public class AtomicIntegerArrayAssert
    * @return {@code this} assertion object.
    */
   @Override
+  @CheckReturnValue
   public AtomicIntegerArrayAssert usingElementComparator(Comparator<? super Integer> customComparator) {
     this.arrays = new IntArrays(new ComparatorBasedComparisonStrategy(customComparator));
     return myself;
@@ -511,6 +513,7 @@ public class AtomicIntegerArrayAssert
 
   /** {@inheritDoc} */
   @Override
+  @CheckReturnValue
   public AtomicIntegerArrayAssert usingDefaultElementComparator() {
     this.arrays = IntArrays.instance();
     return myself;

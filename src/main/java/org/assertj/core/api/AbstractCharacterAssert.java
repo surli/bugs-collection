@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
@@ -16,12 +16,13 @@ import java.util.Comparator;
 
 import org.assertj.core.internal.Characters;
 import org.assertj.core.internal.ComparatorBasedComparisonStrategy;
+import org.assertj.core.util.CheckReturnValue;
 import org.assertj.core.util.VisibleForTesting;
 
 /**
  * Base class for all implementations of assertions for {@link Character}s.
  * 
- * @param <S> the "self" type of this assertion class. Please read &quot;<a href="http://bit.ly/1IZIRcY"
+ * @param <SELF> the "self" type of this assertion class. Please read &quot;<a href="http://bit.ly/1IZIRcY"
  *          target="_blank">Emulating 'self types' using Java Generics to simplify fluent API implementation</a>&quot;
  *          for more details.
  * 
@@ -32,8 +33,8 @@ import org.assertj.core.util.VisibleForTesting;
  * @author Joel Costigliola
  * @author Mikhail Mazursky
  */
-public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<S>> extends
-    AbstractComparableAssert<S, Character> {
+public abstract class AbstractCharacterAssert<SELF extends AbstractCharacterAssert<SELF>> extends
+    AbstractComparableAssert<SELF, Character> {
 
   @VisibleForTesting
   Characters characters = Characters.instance();
@@ -58,7 +59,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is not equal to the given one.
    */
-  public S isEqualTo(char expected) {
+  public SELF isEqualTo(char expected) {
     characters.assertEqual(info, actual, expected);
     return myself;
   }
@@ -79,7 +80,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to the given one.
    */
-  public S isNotEqualTo(char other) {
+  public SELF isNotEqualTo(char other) {
     characters.assertNotEqual(info, actual, other);
     return myself;
   }
@@ -103,7 +104,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to or greater than the given one.
    */
-  public S isLessThan(char other) {
+  public SELF isLessThan(char other) {
     characters.assertLessThan(info, actual, other);
     return myself;
   }
@@ -126,7 +127,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is greater than the given one.
    */
-  public S isLessThanOrEqualTo(char other) {
+  public SELF isLessThanOrEqualTo(char other) {
     characters.assertLessThanOrEqualTo(info, actual, other);
     return myself;
   }
@@ -150,7 +151,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is equal to or less than the given one.
    */
-  public S isGreaterThan(char other) {
+  public SELF isGreaterThan(char other) {
     characters.assertGreaterThan(info, actual, other);
     return myself;
   }
@@ -177,7 +178,8 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    *
    * @return {@code this} assertion object.
    */
-  public S inUnicode() {
+  @CheckReturnValue
+  public SELF inUnicode() {
     info.useUnicodeRepresentation();
     return myself;
   }
@@ -200,7 +202,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is less than the given one.
    */
-  public S isGreaterThanOrEqualTo(char other) {
+  public SELF isGreaterThanOrEqualTo(char other) {
     characters.assertGreaterThanOrEqualTo(info, actual, other);
     return myself;
   }
@@ -222,7 +224,7 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is not a lowercase character.
    */
 
-  public S isLowerCase() {
+  public SELF isLowerCase() {
     characters.assertLowerCase(info, actual);
     return myself;
   }
@@ -243,20 +245,22 @@ public abstract class AbstractCharacterAssert<S extends AbstractCharacterAssert<
    * @throws AssertionError if the actual value is {@code null}.
    * @throws AssertionError if the actual value is not a uppercase character.
    */
-  public S isUpperCase() {
+  public SELF isUpperCase() {
     characters.assertUpperCase(info, actual);
     return myself;
   }
 
   @Override
-  public S usingComparator(Comparator<? super Character> customComparator) {
+  @CheckReturnValue
+  public SELF usingComparator(Comparator<? super Character> customComparator) {
     super.usingComparator(customComparator);
     this.characters = new Characters(new ComparatorBasedComparisonStrategy(customComparator));
     return myself;
   }
 
   @Override
-  public S usingDefaultComparator() {
+  @CheckReturnValue
+  public SELF usingDefaultComparator() {
     super.usingDefaultComparator();
     this.characters = Characters.instance();
     return myself;

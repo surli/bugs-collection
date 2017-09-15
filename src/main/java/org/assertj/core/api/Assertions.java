@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.net.URI;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -56,7 +57,7 @@ import java.util.function.Function;
 import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+import java.util.stream.BaseStream;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.assertj.core.api.exception.RuntimeIOException;
 import org.assertj.core.api.filter.FilterOperator;
@@ -248,6 +249,18 @@ public class Assertions {
   @CheckReturnValue
   public static AbstractBigDecimalAssert<?> assertThat(BigDecimal actual) {
     return AssertionsForClassTypes.assertThat(actual);
+  }
+
+  /**
+   * Creates a new instance of <code>{@link BigIntegerAssert}</code>.
+   *
+   * @param actual the actual value.
+   * @return the created assertion object.
+   * @since 2.7.0 / 3.7.0
+   */
+  @CheckReturnValue
+  public static AbstractBigIntegerAssert<?> assertThat(BigInteger actual) {
+    return new BigIntegerAssert(actual);
   }
 
   /**
@@ -886,7 +899,7 @@ public class Assertions {
    */
   @CheckReturnValue
   public static <OBJECT> AtomicIntegerFieldUpdaterAssert<OBJECT> assertThat(AtomicIntegerFieldUpdater<OBJECT> actual) {
-    return new AtomicIntegerFieldUpdaterAssert<OBJECT>(actual);
+    return new AtomicIntegerFieldUpdaterAssert<>(actual);
   }
 
   /**
@@ -923,7 +936,7 @@ public class Assertions {
    */
   @CheckReturnValue
   public static <OBJECT> AtomicLongFieldUpdaterAssert<OBJECT> assertThat(AtomicLongFieldUpdater<OBJECT> actual) {
-    return new AtomicLongFieldUpdaterAssert<OBJECT>(actual);
+    return new AtomicLongFieldUpdaterAssert<>(actual);
   }
 
   /**
@@ -936,7 +949,7 @@ public class Assertions {
    */
   @CheckReturnValue
   public static <VALUE> AtomicReferenceAssert<VALUE> assertThat(AtomicReference<VALUE> actual) {
-    return new AtomicReferenceAssert<VALUE>(actual);
+    return new AtomicReferenceAssert<>(actual);
   }
 
   /**
@@ -1045,8 +1058,7 @@ public class Assertions {
    * public void testException() {
    *   assertThat(() -> { throw new Exception("boom!"); }).isInstanceOf(Exception.class)
    *                                                      .hasMessageContaining("boom");
-   *   assertThat(() -> { throw new Exception("boom!"); }).doesNotThrow();
-   * }</code></pre>
+   *   assertThat(() -> { throw new Exception("boom!"); }).didNotThrowAnyException();</code></pre>
    *
    * If the provided {@link ThrowingCallable} does not validate against next assertions, an error is immediately raised,
    * in that case the test description provided with {@link AbstractAssert#as(String, Object...) as(String, Object...)} is not honored.
@@ -1489,6 +1501,17 @@ public class Assertions {
   }
 
   /**
+   * Assertions entry point for BigInteger {@link Offset} to use with isCloseTo assertions.
+   * <p>
+   * Typical usage :
+   * <pre><code class='java'> assertThat(BigInteger.TEN).isCloseTo(new BigInteger("11"), within(new BigInteger("2")));</code></pre>
+   * @since 2.7.0 / 3.7.0
+   */
+  public static Offset<BigInteger> within(BigInteger value) {
+    return Offset.offset(value);
+  }
+
+  /**
    * Assertions entry point for Byte {@link Offset} to use with isCloseTo assertions.
    * <p>
    * Typical usage :
@@ -1609,6 +1632,17 @@ public class Assertions {
    * <pre><code class='java'> assertThat(BigDecimal.TEN).isCloseTo(new BigDecimal("10.5"), byLessThan(BigDecimal.ONE));</code></pre>
    */
   public static Offset<BigDecimal> byLessThan(BigDecimal value) {
+    return Offset.offset(value);
+  }
+
+  /**
+   * Assertions entry point for BigInteger {@link Offset} to use with isCloseTo assertions.
+   * <p>
+   * Typical usage :
+   * <pre><code class='java'> assertThat(BigInteger.TEN).isCloseTo(new BigInteger("11"), byLessThan(new BigInteger("2")));</code></pre>
+   * @since 2.7.0 / 3.7.0
+   */
+  public static Offset<BigInteger> byLessThan(BigInteger value) {
     return Offset.offset(value);
   }
 
@@ -2272,17 +2306,20 @@ public class Assertions {
   }
 
   /**
-   * Creates a new instance of <code>{@link ListAssert}</code> from the given {@link Stream}.
+   * Creates a new instance of <code>{@link ListAssert}</code> from the given {@link BaseStream}.
    * <p>
-   * <b>Be aware that to create the returned {@link ListAssert} the given the {@link Stream} is consumed so it won't be
+   * <b>Be aware that to create the returned {@link ListAssert} the given the {@link BaseStream} is consumed so it won't be
    * possible to use it again.</b> Calling multiple methods on the returned {@link ListAssert} is safe as it only
-   * interacts with the {@link List} built from the {@link Stream}.
+   * interacts with the {@link List} built from the {@link BaseStream}.
    *
-   * @param actual the actual {@link Stream} value.
+   * <p>This method accepts {@link java.util.stream.Stream} and primitive stream variants
+   * {@link java.util.stream.IntStream}, {@link java.util.stream.LongStream} and {@link java.util.stream.DoubleStream}.
+   *
+   * @param actual the actual {@link BaseStream} value.
    * @return the created assertion object.
    */
   @CheckReturnValue
-  public static <ELEMENT> AbstractListAssert<?, List<? extends ELEMENT>, ELEMENT, ObjectAssert<ELEMENT>> assertThat(Stream<? extends ELEMENT> actual) {
+  public static <ELEMENT, STREAM extends BaseStream<ELEMENT, STREAM>> AbstractListAssert<?, List<? extends ELEMENT>, ELEMENT, ObjectAssert<ELEMENT>> assertThat(BaseStream<? extends ELEMENT, STREAM> actual) {
     return AssertionsForInterfaceTypes.assertThat(actual);
   }
 

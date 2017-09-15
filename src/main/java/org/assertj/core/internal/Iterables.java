@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.internal;
 
@@ -28,6 +28,7 @@ import static org.assertj.core.error.ElementsShouldMatch.elementsShouldMatch;
 import static org.assertj.core.error.ElementsShouldNotBe.elementsShouldNotBe;
 import static org.assertj.core.error.ElementsShouldNotHave.elementsShouldNotHave;
 import static org.assertj.core.error.ElementsShouldSatisfy.elementsShouldSatisfy;
+import static org.assertj.core.error.ElementsShouldSatisfy.elementsShouldSatisfyAny;
 import static org.assertj.core.error.NoElementsShouldMatch.noElementsShouldMatch;
 import static org.assertj.core.error.ShouldBeEmpty.shouldBeEmpty;
 import static org.assertj.core.error.ShouldBeNullOrEmpty.shouldBeNullOrEmpty;
@@ -68,6 +69,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import org.assertj.core.api.AssertionInfo;
 import org.assertj.core.api.Condition;
@@ -847,16 +849,35 @@ public class Iterables {
     });
   }
 
+  public <E> void assertAnySatisfy(AssertionInfo info, Iterable<? extends E> actual, Consumer<? super E> requirements) {
+    assertNotNull(info, actual);
+    requireNonNull(requirements, "The Consumer<T> expressing the assertions requirements must not be null");
+    boolean anyMatch = stream(actual.spliterator(), false).anyMatch(e -> {
+      try {
+        requirements.accept(e);
+      } catch (AssertionError ex) {
+        return false;
+      }
+      return true;
+    });
+
+    if (!anyMatch) {
+      throw failures.failure(info, elementsShouldSatisfyAny(actual));
+    }
+  }
+
   public <E> void assertAllMatch(AssertionInfo info, Iterable<? extends E> actual, Predicate<? super E> predicate,
                                  PredicateDescription predicateDescription) {
     assertNotNull(info, actual);
     predicates.assertIsNotNull(predicate);
-    stream(actual.spliterator(), false).filter(predicate.negate())
-                                       .findFirst()
-                                       .ifPresent(e -> {
-                                         throw failures.failure(info, elementsShouldMatch(actual, e,
-                                                                                          predicateDescription));
-                                       });
+    List<? extends E> nonMatches = stream(actual.spliterator(), false).filter(predicate.negate())
+                                                                      .collect(Collectors.toList());
+
+    if (!nonMatches.isEmpty()) {
+      throw failures.failure(info, elementsShouldMatch(actual,
+                                                       nonMatches.size() == 1 ? nonMatches.get(0) : nonMatches,
+                                                       predicateDescription));
+    }
   }
 
   public <E> void assertNoneMatch(AssertionInfo info, Iterable<? extends E> actual, Predicate<? super E> predicate,

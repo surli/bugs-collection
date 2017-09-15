@@ -8,22 +8,23 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
 import java.io.File;
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.net.URI;
 import java.net.URL;
+import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.OffsetDateTime;
 import java.time.OffsetTime;
 import java.time.ZonedDateTime;
-import java.nio.file.Path;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -32,6 +33,8 @@ import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
 import java.util.OptionalLong;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
@@ -44,13 +47,11 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 import java.util.concurrent.atomic.AtomicStampedReference;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
 import java.util.function.DoublePredicate;
 import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+import java.util.stream.BaseStream;
 
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.assertj.core.util.CheckReturnValue;
@@ -138,6 +139,7 @@ public class BDDAssertions extends Assertions {
   public static DoublePredicateAssert then(DoublePredicate actual) {
     return assertThat(actual);
   }
+
   /**
    * Create assertion for {@link java.util.Optional}.
    *
@@ -195,6 +197,18 @@ public class BDDAssertions extends Assertions {
    */
   @CheckReturnValue
   public static AbstractBigDecimalAssert<?> then(BigDecimal actual) {
+    return assertThat(actual);
+  }
+
+  /**
+   * Creates a new instance of <code>{@link org.assertj.core.api.BigIntegerAssert}</code>.
+   *
+   * @param actual the actual value.
+   * @return the created assertion object.
+   * @since 2.7.0 / 3.7.0
+   */
+  @CheckReturnValue
+  public static AbstractBigIntegerAssert<?> then(BigInteger actual) {
     return assertThat(actual);
   }
 
@@ -639,7 +653,7 @@ public class BDDAssertions extends Assertions {
    * @return the created assertion object.
    */
   @CheckReturnValue
-  public static <T> ListAssert<T> then(List<? extends T> actual){
+  public static <T> ListAssert<T> then(List<? extends T> actual) {
     return assertThat(actual);
   }
 
@@ -953,6 +967,25 @@ public class BDDAssertions extends Assertions {
   }
 
   /**
+   * Allows to capture and then assert on a {@link ThrowingCallable} more easily when used with Java 8 lambdas.
+   *
+   * <p>
+   * Java 8 example :
+   * <pre><code class='java'> {@literal @}Test
+   *  public void testException() {
+   *    then(() -> { throw new Exception("boom!"); }).isInstanceOf(Exception.class)
+   *                                                 .hasMessageContaining("boom");
+   *    then(() -> { throw new Exception("boom!"); }).didNotThrowAnyException();</code></pre>
+   *
+   * @param shouldRaiseOrNotThrowable The {@link ThrowingCallable} or lambda with the code that should raise the throwable.
+   * @return The captured exception or <code>null</code> if none was raised by the callable.
+   */
+  @CheckReturnValue
+  public static AbstractThrowableAssert<?, ? extends Throwable> then(ThrowingCallable shouldRaiseOrNotThrowable) {
+    return assertThat(shouldRaiseOrNotThrowable);
+  }
+
+  /**
    * Creates a new instance of <code>{@link org.assertj.core.api.LocalDateAssert}</code>.
    *
    * @param actual the actual value.
@@ -1124,17 +1157,20 @@ public class BDDAssertions extends Assertions {
   }
 
   /**
-   * Creates a new instance of <code>{@link ListAssert}</code> from the given {@link Stream}.
+   * Creates a new instance of <code>{@link ListAssert}</code> from the given {@link BaseStream}.
    * <p>
-   * <b>Be aware that to create the returned {@link ListAssert} the given the {@link Stream} is consumed so it won't be
+   * <b>Be aware that to create the returned {@link ListAssert} the given the {@link BaseStream} is consumed so it won't be
    * possible to use it again.</b> Calling multiple methods on the returned {@link ListAssert} is safe as it only
-   * interacts with the {@link List} built from the {@link Stream}.
+   * interacts with the {@link List} built from the {@link BaseStream}.
    *
-   * @param actual the actual {@link Stream} value.
+   * <p>This method accepts {@link java.util.stream.Stream} and primitive stream variants
+   * {@link java.util.stream.IntStream}, {@link java.util.stream.LongStream} and {@link java.util.stream.DoubleStream}.
+   *
+   * @param actual the actual {@link BaseStream} value.
    * @return the created assertion object.
    */
   @CheckReturnValue
-  public static <ELEMENT> AbstractListAssert<?, List<? extends ELEMENT>, ELEMENT, ObjectAssert<ELEMENT>> then(Stream<? extends ELEMENT> actual) {
+  public static <ELEMENT, STREAM extends BaseStream<ELEMENT, STREAM>> AbstractListAssert<?, List<? extends ELEMENT>, ELEMENT, ObjectAssert<ELEMENT>> then(BaseStream<? extends ELEMENT, STREAM> actual) {
     return assertThat(actual);
   }
 

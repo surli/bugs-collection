@@ -8,12 +8,11 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.internal;
 
 import static org.assertj.core.test.ExpectedException.none;
-import static org.mockito.Mockito.spy;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -64,9 +63,7 @@ public abstract class ClassesBaseTest {
 
   @Before
   public void setUp() {
-    failures = spy(new Failures());
     classes = new Classes();
-    classes.failures = failures;
   }
 
 }

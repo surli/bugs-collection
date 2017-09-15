@@ -8,23 +8,23 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
 /**
  * Base class for all array assertions.
  *
- * @param <S> the "self" type of this assertion class.
- * @param <A> the type of the "actual" value which is an Array of E.
- * @param <E> the type of the "actual" array element.
+ * @param <SELF> the "self" type of this assertion class.
+ * @param <ACTUAL> the type of the "actual" value which is an Array of ELEMENT.
+ * @param <ELEMENT> the type of the "actual" array element.
  * @author Joel Costigliola
  */
-public abstract class AbstractArrayAssert<S extends AbstractArrayAssert<S, A, E>, A, E>
-  extends AbstractEnumerableAssert<S, A, E>
-  implements ArraySortedAssert<AbstractArrayAssert<S, A, E>, E> {
+public abstract class AbstractArrayAssert<SELF extends AbstractArrayAssert<SELF, ACTUAL, ELEMENT>, ACTUAL, ELEMENT>
+  extends AbstractEnumerableAssert<SELF, ACTUAL, ELEMENT>
+  implements ArraySortedAssert<AbstractArrayAssert<SELF, ACTUAL, ELEMENT>, ELEMENT> {
 
-  public AbstractArrayAssert(final A actual, final Class<?> selfType) {
+  public AbstractArrayAssert(final ACTUAL actual, final Class<?> selfType) {
     super(actual, selfType);
   }
 }

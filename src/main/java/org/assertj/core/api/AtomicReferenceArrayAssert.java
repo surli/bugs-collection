@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.api;
 
@@ -53,6 +53,7 @@ import org.assertj.core.internal.OnFieldsComparator;
 import org.assertj.core.internal.RecursiveFieldByFieldComparator;
 import org.assertj.core.internal.TypeComparators;
 import org.assertj.core.presentation.PredicateDescription;
+import org.assertj.core.util.CheckReturnValue;
 import org.assertj.core.util.IterableUtil;
 import org.assertj.core.util.VisibleForTesting;
 import org.assertj.core.util.introspection.IntrospectionError;
@@ -77,11 +78,13 @@ public class AtomicReferenceArrayAssert<T>
   }
 
   @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> as(Description description) {
     return super.as(description);
   }
 
   @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> as(String description, Object... args) {
     return super.as(description, args);
   }
@@ -564,6 +567,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws NullPointerException if the given {@code Index} is {@code null}.
    * @throws AssertionError if the actual AtomicReferenceArray contains the given object at the given index.
    */
+  @Override
   public AtomicReferenceArrayAssert<T> doesNotContain(T value, Index index) {
     arrays.assertDoesNotContain(info, array, value, index);
     return myself;
@@ -1212,6 +1216,8 @@ public class AtomicReferenceArrayAssert<T>
    * @throws NullPointerException if the given comparator is {@code null}.
    * @return {@code this} assertion object.
    */
+  @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingElementComparator(Comparator<? super T> elementComparator) {
     this.arrays = new ObjectArrays(new ComparatorBasedComparisonStrategy(elementComparator));
     objects = new Objects(new AtomicReferenceArrayElementComparisonStrategy<>(elementComparator));
@@ -1220,6 +1226,7 @@ public class AtomicReferenceArrayAssert<T>
 
   /** {@inheritDoc} */
   @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingDefaultElementComparator() {
     this.arrays = ObjectArrays.instance();
     return myself;
@@ -1289,6 +1296,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertions object
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <C> AtomicReferenceArrayAssert<T> usingComparatorForElementFieldsWithNames(Comparator<C> comparator,
                                                         String... elementPropertyOrFieldNames) {
     for (String elementPropertyOrField : elementPropertyOrFieldNames) {
@@ -1366,6 +1374,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertions object
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <C> AtomicReferenceArrayAssert<T> usingComparatorForElementFieldsWithType(Comparator<C> comparator, Class<C> type) {
     comparatorsForElementPropertyOrFieldTypes.put(type, comparator);
     return myself;
@@ -1398,6 +1407,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertion object.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingFieldByFieldElementComparator() {
     return usingElementComparator(new FieldByFieldComparator(comparatorsForElementPropertyOrFieldNames,
                                                              comparatorsForElementPropertyOrFieldTypes));
@@ -1446,6 +1456,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertion object.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingRecursiveFieldByFieldElementComparator() {
     return usingElementComparator(new RecursiveFieldByFieldComparator(comparatorsForElementPropertyOrFieldNames,
                                                                       comparatorsForElementPropertyOrFieldTypes));
@@ -1479,6 +1490,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertion object.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingElementComparatorOnFields(String... fields) {
     return usingElementComparator(new OnFieldsComparator(comparatorsForElementPropertyOrFieldNames,
                                                          comparatorsForElementPropertyOrFieldTypes, fields));
@@ -1512,6 +1524,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return {@code this} assertion object.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> usingElementComparatorIgnoringFields(String... fields) {
     return usingElementComparator(new IgnoringFieldsComparator(comparatorsForElementPropertyOrFieldNames,
                                                                comparatorsForElementPropertyOrFieldTypes, fields));
@@ -1560,6 +1573,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IntrospectionError if no field or property exists with the given name
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public ObjectArrayAssert<Object> extracting(String fieldOrProperty) {
     Object[] values = FieldsOrPropertiesExtractor.extract(array, byName(fieldOrProperty));
     return new ObjectArrayAssert<>(values);
@@ -1609,6 +1623,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IntrospectionError if no field or property exists with the given name
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <P> ObjectArrayAssert<P> extracting(String fieldOrProperty, Class<P> extractingType) {
     @SuppressWarnings("unchecked")
     P[] values = (P[]) FieldsOrPropertiesExtractor.extract(array, byName(fieldOrProperty));
@@ -1667,6 +1682,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IntrospectionError if one of the given name does not match a field or property in one of the initial
    *         Iterable's element.
    */
+  @CheckReturnValue
   public ObjectArrayAssert<Tuple> extracting(String... propertiesOrFields) {
     Object[] values = FieldsOrPropertiesExtractor.extract(array, byName(propertiesOrFields));
     Tuple[] result = Arrays.copyOf(values, values.length, Tuple[].class);
@@ -1715,6 +1731,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return a new assertion object whose object under test is the list of values extracted
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <U> ObjectArrayAssert<U> extracting(Extractor<? super T, U> extractor) {
     U[] extracted = FieldsOrPropertiesExtractor.extract(array, extractor);
 
@@ -1757,6 +1774,7 @@ public class AtomicReferenceArrayAssert<T>
    * @return a new assertion object whose object under test is the list of values extracted
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <U, C extends Collection<U>> ObjectArrayAssert<U> flatExtracting(Extractor<? super T, C> extractor) {
     final List<C> extractedValues = FieldsOrPropertiesExtractor.extract(Arrays.asList(array), extractor);
 
@@ -1798,6 +1816,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IllegalArgumentException if one of the extracted property value was not an array or an iterable.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public ObjectArrayAssert<Object> flatExtracting(String propertyName) {
     List<Object> extractedValues = newArrayList();
     List<?> extractedGroups = FieldsOrPropertiesExtractor.extract(Arrays.asList(array), byName(propertyName));
@@ -1861,6 +1880,7 @@ public class AtomicReferenceArrayAssert<T>
    *           return void, or method accepts arguments.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public ObjectArrayAssert<Object> extractingResultOf(String method) {
     Object[] values = FieldsOrPropertiesExtractor.extract(array, resultOf(method));
     return new ObjectArrayAssert<>(values);
@@ -1908,6 +1928,7 @@ public class AtomicReferenceArrayAssert<T>
    *           return void, or method accepts arguments.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public <P> ObjectArrayAssert<P> extractingResultOf(String method, Class<P> extractingType) {
     @SuppressWarnings("unchecked")
     P[] values = (P[]) FieldsOrPropertiesExtractor.extract(array, resultOf(method));
@@ -1945,11 +1966,13 @@ public class AtomicReferenceArrayAssert<T>
    * @since 2.7.0 / 3.7.0
    */
   @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> inHexadecimal() {
     return super.inHexadecimal();
   }
 
   @Override
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> inBinary() {
     return super.inBinary();
   }
@@ -2011,6 +2034,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IntrospectionError if the given propertyOrFieldName can't be found in one of the array elements.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> filteredOn(String propertyOrFieldName, Object expectedValue) {
     Iterable<? extends T> filteredIterable = filter(array).with(propertyOrFieldName, expectedValue).get();
     return new AtomicReferenceArrayAssert<>(new AtomicReferenceArray<T>(toArray(filteredIterable)));
@@ -2055,6 +2079,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IntrospectionError if the given propertyOrFieldName can't be found in one of the array elements.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> filteredOnNull(String propertyOrFieldName) {
     // need to cast nulll to Object otherwise it calls :
     // filteredOn(String propertyOrFieldName, FilterOperation<?> filterOperation)
@@ -2127,6 +2152,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IllegalArgumentException if the given propertyOrFieldName is {@code null} or empty.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> filteredOn(String propertyOrFieldName, FilterOperator<?> filterOperator) {
     checkNotNull(filterOperator);
     Filters<? extends T> filter = filter(array).with(propertyOrFieldName);
@@ -2167,6 +2193,7 @@ public class AtomicReferenceArrayAssert<T>
    * @throws IllegalArgumentException if the given condition is {@code null}.
    * @since 2.7.0 / 3.7.0
    */
+  @CheckReturnValue
   public AtomicReferenceArrayAssert<T> filteredOn(Condition<? super T> condition) {
     Iterable<? extends T> filteredIterable = filter(array).being(condition).get();
     return new AtomicReferenceArrayAssert<>(new AtomicReferenceArray<T>(toArray(filteredIterable)));
@@ -2243,21 +2270,52 @@ public class AtomicReferenceArrayAssert<T>
    * <p>
    * Grouping assertions example:
    * <pre><code class='java'> // myIcelanderFriends is an AtomicReferenceArray&lt;Person&gt; 
-   * assertThat(myIcelanderFriends).extracting(Person::getAddress)
-   *                               .allSatisfy(p -&gt; {
-   *                                 assertThat(p.getCountry()).isEqualTo("Iceland");
-   *                                 assertThat(p.getPhoneCountryCode()).isEqualTo("+354");
+   * assertThat(myIcelanderFriends).allSatisfy(person -&gt; {
+   *                                 assertThat(person.getCountry()).isEqualTo("Iceland");
+   *                                 assertThat(person.getPhoneCountryCode()).isEqualTo("+354");
    *                               });</code></pre>
    *
    * @param requirements the given {@link Consumer}.
    * @return {@code this} object.
-   * @throws NullPointerException if the given predicate is {@code null}.
+   * @throws NullPointerException if the given {@link Consumer} is {@code null}.
    * @throws AssertionError if one or more elements don't satisfy given requirements.
    * @since 3.7.0
    */
   @Override
   public AtomicReferenceArrayAssert<T> allSatisfy(Consumer<? super T> requirements) {
     iterables.assertAllSatisfy(info, newArrayList(array), requirements);
+    return myself;
+  }
+
+  /**
+   * Verifies that at least one element satisfies the given requirements expressed as a {@link Consumer}.
+   * <p>
+   * This is useful to check that a group of assertions is verified by (at least) one element.
+   * <p>
+   * If the {@link AtomicReferenceArray} to assert is empty, the assertion will fail.
+   * <p>
+   * Grouping assertions example:
+   * <pre><code class='java'> // myIcelanderFriends is an AtomicReferenceArray&lt;Person&gt;
+   * assertThat(myIcelanderFriends).anySatisfy(person -&gt; {
+   *                                 assertThat(person.getCountry()).isEqualTo("Iceland");
+   *                                 assertThat(person.getPhoneCountryCode()).isEqualTo("+354");
+   *                                 assertThat(person.getSurname()).endsWith("son");
+   *                               });
+   *                               
+   * // assertion fails for empty group, whatever the requirements are.  
+   * assertThat(emptyArray).anySatisfy($ -&gt; {
+   *                         assertThat(true).isTrue();
+   *                       });</code></pre>
+   *
+   * @param requirements the given {@link Consumer}.
+   * @return {@code this} object.
+   * @throws NullPointerException if the given {@link Consumer} is {@code null}.
+   * @throws AssertionError if all elements don't satisfy given requirements.
+   * @since 3.7.0
+   */
+  @Override
+  public AtomicReferenceArrayAssert<T> anySatisfy(Consumer<? super T> requirements) {
+    iterables.assertAnySatisfy(info, newArrayList(array), requirements);
     return myself;
   }
 

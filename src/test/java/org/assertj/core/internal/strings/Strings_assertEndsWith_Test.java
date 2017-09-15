@@ -8,7 +8,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *
- * Copyright 2012-2016 the original author or authors.
+ * Copyright 2012-2017 the original author or authors.
  */
 package org.assertj.core.internal.strings;
 
@@ -36,14 +36,8 @@ public class Strings_assertEndsWith_Test extends StringsBaseTest {
 
   @Test
   public void should_fail_if_actual_does_not_end_with_suffix() {
-    AssertionInfo info = someInfo();
-    try {
-      strings.assertEndsWith(info, "Yoda", "Luke");
-    } catch (AssertionError e) {
-      verify(failures).failure(info, shouldEndWith("Yoda", "Luke"));
-      return;
-    }
-    failBecauseExpectedAssertionErrorWasNotThrown();
+    thrown.expectAssertionError(shouldEndWith("Yoda", "Luke"));
+    strings.assertEndsWith(someInfo(), "Yoda", "Luke");
   }
 
   @Test
@@ -74,14 +68,8 @@ public class Strings_assertEndsWith_Test extends StringsBaseTest {
 
   @Test
   public void should_fail_if_actual_does_not_end_with_suffix_according_to_custom_comparison_strategy() {
-    AssertionInfo info = someInfo();
-    try {
-      stringsWithCaseInsensitiveComparisonStrategy.assertEndsWith(info, "Yoda", "Luke");
-    } catch (AssertionError e) {
-      verify(failures).failure(info, shouldEndWith("Yoda", "Luke", comparisonStrategy));
-      return;
-    }
-    failBecauseExpectedAssertionErrorWasNotThrown();
+    thrown.expectAssertionError(shouldEndWith("Yoda", "Luke", comparisonStrategy));
+    stringsWithCaseInsensitiveComparisonStrategy.assertEndsWith(someInfo(), "Yoda", "Luke");
   }
 
 }
