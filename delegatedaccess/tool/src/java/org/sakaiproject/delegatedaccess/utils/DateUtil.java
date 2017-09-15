@@ -54,18 +54,18 @@ public final class DateUtil {
 		try {
 		    isoFormatter.parse(date);
 		    return true;
-		  } catch (Exception e) {
+		  } catch (Exception e) { 
 			  return false;
 		  }
 	}
-
+	
 	/**
 	 * Parse the date string input using the ISO_ZONED_DATE_TIME format such as '2011-12-03T10:15:30+01:00[Europe/Paris]'.
-	 *
+	 * 
 	 * @param inputDate
 	 *            The string that needs to be parsed.
-	 *
-	 * @throws DateTimeParseException
+	 * 
+	 * @throws DateTimeParseException 
 	 * 			If not a valid date compared to ISO_ZONED_DATE_TIME format
 	 */
 	public static Date parseISODate(final String inputDate) throws DateTimeParseException  {
@@ -73,7 +73,7 @@ public final class DateUtil {
 
 		try {
 			LocalDateTime ldt = LocalDateTime.parse(inputDate, isoFormatter);
-		convertedDate = Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
+	    	convertedDate = Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
 		} catch (DateTimeParseException  e) {
 			throw new DateTimeParseException (e.getMessage(), inputDate, 0);
 		}
@@ -82,7 +82,7 @@ public final class DateUtil {
 	}
 	/**
 	 * Formats the date input to String using the format given.
-	 *
+	 * 
 	 * @param inputDate
 	 *            The date that needs to be formatted.
 	 * @param format
@@ -93,8 +93,8 @@ public final class DateUtil {
 	 * 			If not a valid date compared to ISO_ZONED_DATE_TIME format
 	 */
 	public static String format(Date inputDate, String format, Locale locale){
-	SimpleDateFormat formatter = null;
-	try{
+    	SimpleDateFormat formatter = null;
+    	try{
 			formatter = new SimpleDateFormat(format, locale);
 			return formatter.format(inputDate);
 		}catch(Exception ex){
