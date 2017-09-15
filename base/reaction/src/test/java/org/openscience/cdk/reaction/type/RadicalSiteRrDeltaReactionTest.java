@@ -193,6 +193,12 @@ public class RadicalSiteRrDeltaReactionTest extends ReactionProcessTest {
         return setOfProducts;
     }
 
+    @Test
+    public void testExampleSmiles() throws Exception {
+        assertReaction("[CH](C)CCCCC>>[CH2]CCCC(C)C |^1:0,7|",
+                       new RadicalSiteRrDeltaReaction());
+    }
+
     /**
      * A unit test suite for JUnit.
      *
