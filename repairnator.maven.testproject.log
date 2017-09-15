@@ -1,0 +1,110 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mp3agic 0.8.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ mp3agic ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ mp3agic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/mpatric/mp3agic/193259439/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ mp3agic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ mp3agic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ mp3agic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ mp3agic ---
+[INFO] Surefire report directory: /root/workspace/mpatric/mp3agic/193259439/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.14.1/surefire-junit4-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.14.1/surefire-junit4-2.14.1.pom (3 KB at 3.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom (3 KB at 86.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.14.1/surefire-junit4-2.14.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.14.1/surefire-junit4-2.14.1.jar (78 KB at 562.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mpatric.mp3agic.ID3v2TagTest
+Tests run: 35, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.201 sec <<< FAILURE!
+shouldReadFramesFromMp3With32Tag(com.mpatric.mp3agic.ID3v2TagTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.mpatric.mp3agic.ID3v2TagTest.shouldReadFramesFromMp3With32Tag(ID3v2TagTest.java:87)
+
+Running com.mpatric.mp3agic.ID3v2TextFrameDataTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.MpegFrameTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running com.mpatric.mp3agic.ID3v2ChapterFrameDataTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.mpatric.mp3agic.FileWrapperTest
+src/test/resources/notags.mp3
+src/test/resources/notags.mp3
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.mpatric.mp3agic.ID3v2ObseleteFrameTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.ID3v2UrlFrameDataTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.mpatric.mp3agic.BaseExceptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.BufferToolsTest
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running com.mpatric.mp3agic.ID3v2CommentFrameDataTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.ID3v2ChapterTOCFrameDataTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.mpatric.mp3agic.EncodedTextTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running com.mpatric.mp3agic.TestHelper
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.Mp3FileTest
+src/test/resources/v1andv23andcustomtags.mp3
+src/test/resources/v1andv23andcustomtags.mp3
+src/test/resources/v1andv23andcustomtags.mp3
+src/test/resources/v1andv23andcustomtags.mp3
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+Running com.mpatric.mp3agic.ID3v1TagTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.mpatric.mp3agic.ID3v2FrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.mpatric.mp3agic.ID3v2ObseletePictureFrameDataTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.mpatric.mp3agic.ID3v2PopmFrameDataTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running com.mpatric.mp3agic.ID3v2PictureFrameDataTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.mpatric.mp3agic.ID3v1GenresTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+
+Results :
+
+Tests in error: 
+  ID3v2TagTest.shouldReadFramesFromMp3With32Tag:87 NullPointer
+
+Tests run: 230, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.992 s
+[INFO] Finished at: 2017-09-15T12:53:02+02:00
+[INFO] Final Memory: 15M/244M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project mp3agic: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/mpatric/mp3agic/193259439/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
