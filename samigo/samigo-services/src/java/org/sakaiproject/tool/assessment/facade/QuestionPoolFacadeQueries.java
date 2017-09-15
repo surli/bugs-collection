@@ -1317,8 +1317,8 @@ public class QuestionPoolFacadeQueries
 	    Set fromSet = fromItemData.getItemTagSet();
 	    Iterator iter = fromSet.iterator();
 	    while (iter.hasNext()) {
-		ItemTag itemTag = (ItemTag) iter.next();
-		toSet.add(new ItemTag(toItemData, itemTag.getTagId(), itemTag.getTagLabel(), itemTag.getTagCollectionId(), itemTag.getTagCollectionName()));
+	    	ItemTag itemTag = (ItemTag) iter.next();
+	    	toSet.add(new ItemTag(toItemData, itemTag.getTagId(), itemTag.getTagLabel(), itemTag.getTagCollectionId(), itemTag.getTagCollectionName()));
 	    }
 	    return toSet;
   }

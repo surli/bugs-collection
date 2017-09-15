@@ -18,7 +18,7 @@ should be included in file searchPreview
 * distributed under the License is distributed on an "AS IS" BASIS,
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
-* limitations under the License.
+* limitations under the License. 
 *
 **********************************************************************************/
 --%>
@@ -35,22 +35,22 @@ should be included in file searchPreview
   <h:dataTable value="#{item.itemTextArraySorted}" var="itemText" width="100%">
     <h:column>
       <h:dataTable value="#{itemText.answerArraySorted}" var="answer" width="100%">
-        <h:column>
+        <h:column> 
          <h:panelGroup rendered="#{answer.text != null && answer.text ne ''}">
           <h:graphicImage id="image1" rendered="#{answer.isCorrect}"
-             alt="#{authorMessages.correct}" url="/images/checked.gif" />
+             alt="#{authorMessages.correct}" url="/images/checked.gif" />         
           <h:graphicImage id="image2" rendered="#{!answer.isCorrect}"
-             alt="#{authorMessages.not_correct}" url="/images/unchecked.gif"/>
+             alt="#{authorMessages.not_correct}" url="/images/unchecked.gif"/>      
           <h:outputText escape="false" value="#{answer.label}. " />
           <h:outputText escape="false" value="#{answer.text}" styleClass="mcAnswerText"/>
 
         </h:panelGroup>
         </h:column><h:column>
-        <h:panelGroup rendered="#{answer.text ne null && answer.text ne '' && author.isEditPendingAssessmentFlow && assessmentSettings.feedbackAuthoring ne '1' && answer.generalAnswerFbIsNotEmpty}">
+        <h:panelGroup rendered="#{answer.text ne null && answer.text ne '' && author.isEditPendingAssessmentFlow && assessmentSettings.feedbackAuthoring ne '1' && answer.generalAnswerFbIsNotEmpty}">    
          <h:outputLabel value=" #{commonMessages.feedback}: " />
          <h:outputText escape="false" value="#{answer.generalAnswerFeedback}" />
 		</h:panelGroup>
-        <h:panelGroup rendered="#{answer.text ne null && answer.text ne '' && !author.isEditPendingAssessmentFlow && publishedSettings.feedbackAuthoring ne '1' && answer.generalAnswerFbIsNotEmpty}">
+        <h:panelGroup rendered="#{answer.text ne null && answer.text ne '' && !author.isEditPendingAssessmentFlow && publishedSettings.feedbackAuthoring ne '1' && answer.generalAnswerFbIsNotEmpty}">    
          <h:outputLabel value=" #{commonMessages.feedback}: " />
          <h:outputText escape="false" value="#{answer.generalAnswerFeedback}" />
 		</h:panelGroup>

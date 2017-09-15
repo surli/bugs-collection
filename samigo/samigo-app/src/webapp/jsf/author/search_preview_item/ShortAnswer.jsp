@@ -17,7 +17,7 @@ should be included in file searchPreview
 * distributed under the License is distributed on an "AS IS" BASIS,
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
-* limitations under the License.
+* limitations under the License. 
 *
 **********************************************************************************/
 --%>
@@ -35,7 +35,7 @@ should be included in file searchPreview
     <h:column>
       <h:dataTable value="#{itemText.answerArray}" var="answer">
         <h:column>
-
+       
 <h:outputLabel rendered="#{answer.textIsNotEmpty}" value="#{authorMessages.preview_model_short_answer}" />
           <f:verbatim><br/></f:verbatim>
           <h:outputText rendered="#{answer.textIsNotEmpty}" escape="false" value="#{answer.text}" />

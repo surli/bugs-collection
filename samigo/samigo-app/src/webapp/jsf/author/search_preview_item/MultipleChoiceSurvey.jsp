@@ -18,7 +18,7 @@ should be included in file searchPreview
 * distributed under the License is distributed on an "AS IS" BASIS,
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
-* limitations under the License.
+* limitations under the License. 
 *
 **********************************************************************************/
 --%>
@@ -40,7 +40,7 @@ should be included in file searchPreview
              alt="#{authorMessages.not_correct}" url="/images/radiounchecked.gif" >
           </h:graphicImage>
           <h:outputText escape="false" value="#{answer.text}" >
-		<f:converter converterId="org.sakaiproject.tool.assessment.jsf.convert.AnswerSurveyConverter" />
+          	<f:converter converterId="org.sakaiproject.tool.assessment.jsf.convert.AnswerSurveyConverter" /> 
           </h:outputText>
         </h:column>
       </h:dataTable>

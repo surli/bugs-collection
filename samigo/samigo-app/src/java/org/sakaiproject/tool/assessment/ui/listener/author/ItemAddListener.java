@@ -882,16 +882,16 @@ public class ItemAddListener
 	  Set<ItemTagIfc> originalTagList = itemauthor.getTagsList();
 
 	  if (itemauthor.getDeleteTagsAllowed()){
-		//Let's check the ones that have been deleted and delete from the item
-		if (originalTagList!=null){
+	  	//Let's check the ones that have been deleted and delete from the item
+	  	if (originalTagList!=null){
 			Iterator<ItemTagIfc> ite = originalTagList.iterator();
 			while ( ite.hasNext() ) {
 			  ItemTagIfc tagToShow = (ItemTagIfc)ite.next();
 			  if (tagsFromForm==null || !(Arrays.asList(tagsFromForm).contains(tagToShow.getTagId()))){
-				  item.removeItemTagByTagId(tagToShow.getTagId());
+			  	  item.removeItemTagByTagId(tagToShow.getTagId());
 			  }
-			}
-		}
+		  	}
+	  	}
 	  }
 
 	  //Let's add the new ones

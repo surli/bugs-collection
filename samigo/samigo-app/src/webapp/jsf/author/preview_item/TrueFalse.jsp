@@ -73,3 +73,4 @@ should be included in file importing DeliveryMessages
 </h:panelGroup>
 
 <%@ include file="/jsf/author/preview_item/tags.jsp" %>
+

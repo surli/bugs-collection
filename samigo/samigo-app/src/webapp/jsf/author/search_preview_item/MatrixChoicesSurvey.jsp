@@ -14,7 +14,7 @@
 * distributed under the License is distributed on an "AS IS" BASIS,
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
-* limitations under the License.
+* limitations under the License. 
 *
 **********************************************************************************/
 --%>
@@ -45,7 +45,7 @@
                     </f:facet>
                     <h:outputText value="#{row}"/>
                 </t:column>
-
+                
                 <t:columns value="#{item.columnIndexList}" var="colIndex" styleClass="center" headerstyleClass="center matrixSurvey" >
                     <f:facet name="header">
                             <t:outputText value="#{item.columnChoices[colIndex]}" />
@@ -55,10 +55,10 @@
                  </div>
                 </t:columns>
             </t:dataTable>
-          <f:verbatim><br /></f:verbatim>
+          <f:verbatim><br /></f:verbatim> 
 <h:panelGrid rendered="#{item.addCommentFlag}">
-	<h:outputText value="#{item.commentField}" />
-
+ 	<h:outputText value="#{item.commentField}" />
+ 	
 </h:panelGrid>
 
 <h:panelGroup rendered="#{!author.isEditPendingAssessmentFlow && publishedSettings.feedbackAuthoring ne '2' }">

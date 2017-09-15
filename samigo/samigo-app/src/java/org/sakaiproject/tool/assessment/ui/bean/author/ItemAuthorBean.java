@@ -1209,7 +1209,7 @@ public class ItemAuthorBean
     }
     return itemData;
   }
-
+  
   /* called by SamigoJsfTool.java on exit from file picker */
   public void setItemAttachment(){
 	AuthorBean author = (AuthorBean) ContextUtil.lookupBean("author");

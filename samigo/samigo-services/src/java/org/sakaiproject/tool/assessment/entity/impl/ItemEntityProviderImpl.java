@@ -229,7 +229,7 @@ public class ItemEntityProviderImpl implements ItemEntityProvider,CoreEntityProv
             return "";
         }
     }
-
+    
 
     public String[] getHandledOutputFormats() {
         return new String[]{Formats.JSON};
