@@ -24,8 +24,7 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -74,7 +73,6 @@ import org.sakaiproject.exception.PermissionException;
 import org.sakaiproject.exception.ServerOverloadException;
 import org.sakaiproject.site.api.Site;
 import org.sakaiproject.site.cover.SiteService;
-import org.sakaiproject.time.cover.TimeService;
 import org.sakaiproject.tool.api.ToolSession;
 import org.sakaiproject.tool.cover.SessionManager;
 import org.sakaiproject.tool.cover.ToolManager;
@@ -95,11 +93,11 @@ public class podHomeBean {
 	
 	// Patterns for Date and Number formatting
 	private static final String PUBLISH_DATE_FORMAT = "publish_date_format";
-	private static final String DATE_BY_HAND_FORMAT = "date_by_hand_format";
 	private static final String DATEPICKER_EDIT_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
-	private static final String LAST_MODIFIED_TIME_FORMAT = "hh:mm a z";
-	private static final String LAST_MODIFIED_DATE_FORMAT = "MM/dd/yyyy";
+	private static final String POD_ADD_ISO_HIDDEN_DATE = "podAddISO8601";
+	private static final String POD_REVISE_ISO_HIDDEN_DATE = "podReviseISO8601";
+
 	
 	// error handling variables
 	private boolean displayNoFileErrMsg = false;
@@ -121,12 +119,12 @@ public class podHomeBean {
 		private long fileSize;
 		private String displayDate;
 		private String displayDateRevise;
+		private Date editDate;
 		private String title;
 		private String description;
 		private String size;
 		private String type;
-		private String postedTime;
-		private String postedDate;
+		private String postedDatetime;
 		private String author;
 		private String fileURL;
 		private String newWindow;
@@ -162,33 +160,24 @@ public class podHomeBean {
 			String dispDate = null;
 			
 			if (displayDateRevise == null) {
-				dispDate = displayDate;
+				return DateUtil.format(this.getEditDate(), DATEPICKER_EDIT_FORMAT, rb.getLocale());
 			}
 			else {
-				dispDate = displayDateRevise;
+				return displayDateRevise;
 			}
-				
-			SimpleDateFormat formatter = new SimpleDateFormat(DATEPICKER_EDIT_FORMAT, rb.getLocale());
-			formatter.setTimeZone(TimeService.getLocalTimeZone());
-			
-			try {
-				Date tempDate = DateUtil.convertDateString(dispDate,
-						getErrorMessageString(PUBLISH_DATE_FORMAT), rb.getLocale());
-
-				return formatter.format(tempDate);
-			
-			} catch (ParseException e) {
-				// since revising, only log error if malformed date and not just blank
-				if (! "".equals(dispDate)) {
-					LOG.error("ParseException while rendering Revise Podcast page. ", e);
-				}
-			}
-			
-			return dispDate;
-
 		}
 		public void setDisplayDate(String displayDate) {
 			this.displayDate = displayDate;
+		}
+
+		/** Returns the revised date for this podcast **/
+		public Date getEditDate() {
+			return this.editDate;
+		}
+
+		/** Sets the revised date for this podcast **/
+		public void setEditDate(Date editDate) {
+			this.editDate = editDate;
 		}
 
 		public String getFilename() {
@@ -227,20 +216,12 @@ public class podHomeBean {
 			this.type = type;
 		}
 
-		public String getPostedTime() {
-			return postedTime;
+		public String getPostedDatetime() {
+			return postedDatetime;
 		}
 
-		public void setPostedTime(String postedTime) {
-			this.postedTime = postedTime;
-		}
-
-		public String getPostedDate() {
-			return postedDate;
-		}
-
-		public void setPostedDate(String postedDate) {
-			this.postedDate = postedDate;
+		public void setPostedDatetime(String postedDatetime) {
+			this.postedDatetime = postedDatetime;
 		}
 
 		public String getAuthor() {
@@ -636,8 +617,6 @@ public class podHomeBean {
 		// if instructor or has hidden property, set hidden property of decorated bean
 		// if not, return null since user cannot see
 		Date tempDate = null;
-		final SimpleDateFormat formatter = new SimpleDateFormat(getErrorMessageString(PUBLISH_DATE_FORMAT), rb.getLocale());
-		formatter.setTimeZone(TimeService.getLocalTimeZone());
 
 		// get release/publish date - else part needed for podcasts created before release/retract dates
 		// feature implemented
@@ -655,7 +634,9 @@ public class podHomeBean {
 		if (! uiHidden || getHasHidden()) {
 			podcastInfo = new DecoratedPodcastBean();
 
-			podcastInfo.setDisplayDate(formatter.format(tempDate));
+			podcastInfo.setDisplayDate(DateUtil.format(tempDate, getErrorMessageString(PUBLISH_DATE_FORMAT), rb.getLocale()));
+
+			podcastInfo.setEditDate(tempDate);
 
 			// store resourceId
 			podcastInfo.setResourceId(podcastResource.getId());
@@ -721,19 +702,9 @@ public class podHomeBean {
 				podcastInfo.setType("UNK");
 			}
 
-			// get and format last modified time
-			formatter.applyPattern(LAST_MODIFIED_TIME_FORMAT);
-
 			tempDate = new Date(podcastProperties.getTimeProperty(ResourceProperties.PROP_MODIFIED_DATE).getTime());
 
-			podcastInfo.setPostedTime(formatter.format(tempDate));
-
-			// get and format last modified date
-			formatter.applyPattern(LAST_MODIFIED_DATE_FORMAT);
-
-			tempDate = new Date(podcastProperties.getTimeProperty(ResourceProperties.PROP_MODIFIED_DATE).getTime());
-
-			podcastInfo.setPostedDate(formatter.format(tempDate));
+			podcastInfo.setPostedDatetime(DateUtil.format(tempDate, getErrorMessageString(PUBLISH_DATE_FORMAT), rb.getLocale()));
 
 			// get author
 			podcastInfo.setAuthor(podcastProperties.getPropertyFormatted(ResourceProperties.PROP_CREATOR));
@@ -1255,12 +1226,11 @@ public class podHomeBean {
 				Date displayDate = null;
 
 				try {
-					displayDate = DateUtil.convertDateString(date,
-							getErrorMessageString(DATE_BY_HAND_FORMAT), rb.getLocale());
+					displayDate = DateUtil.parseISODate(date);
 				} 
-				catch (ParseException e1) {
+				catch (DateTimeParseException e1) {
 					// Now it's invalid, so set error message and stay on page
-					LOG.warn("ParseException attempting to convert " + date
+					LOG.warn("DateTimeParseException attempting to convert " + date
 							+ " both valid ways. " + e1.getMessage(), e1);
 
 					displayInvalidDateErrMsg = true;
@@ -1455,20 +1425,21 @@ public class podHomeBean {
 
 		Date displayDate = null;
 		Date displayDateRevise = null;
+
+		Map<String, String> params = FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
+		String editedISODate = params.get(POD_REVISE_ISO_HIDDEN_DATE);
+
 		try {
 			try {
-				// SAK-13493: SimpleDateFormat.parse() did not enforce format specified, so
-				// had to call custom method to check if String was valid
-				if (DateUtil.isValidDate(selectedPodcast.displayDateRevise, getErrorMessageString(DATE_BY_HAND_FORMAT), rb.getLocale())) {
-					displayDateRevise = DateUtil.convertDateString(selectedPodcast.displayDateRevise,
-											getErrorMessageString(DATE_BY_HAND_FORMAT), rb.getLocale());
+				if (DateUtil.isValidISODate(editedISODate)) {
+					displayDateRevise = DateUtil.parseISODate(editedISODate);
 				}
 				else {
-					throw new ParseException("Invalid displayDate stored in selectedPodcast", 0);
+					throw new DateTimeParseException("Invalid displayDate stored in selectedPodcast", editedISODate, 0);
 				}
 			}
-			catch (ParseException e) {
-					throw new ParseException("Invalid displayDate entered while revising podcast " + selectedPodcast.filename, 0);
+			catch (DateTimeParseException e) {
+					throw new DateTimeParseException("Invalid displayDate entered while revising podcast " + selectedPodcast.filename, editedISODate, 0);
 			}
 
 			if (filenameChange) {
@@ -1503,8 +1474,8 @@ public class podHomeBean {
 			}
 */			
 		} 
-		catch (ParseException e1) {
-			LOG.error("ParseException attempting to convert date for " + selectedPodcast.title
+		catch (DateTimeParseException e1) {
+			LOG.error("DateTimeParseException attempting to convert date for " + selectedPodcast.title
 							+ " for site " + podcastService.getSiteId() + ". " + e1.getMessage(), e1);
 			date = "";
 			displayInvalidDateErrMsg = true;
@@ -1731,6 +1702,10 @@ public class podHomeBean {
 		
 		}
 
+
+		Map<String, String> params = FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
+		date = params.get(POD_ADD_ISO_HIDDEN_DATE);
+
 		if (date == null) {
 			displayNoDateErrMsg = true;
 			OKtoAdd = false;
@@ -1744,7 +1719,7 @@ public class podHomeBean {
 		else {
 			displayNoDateErrMsg = false;
 
-			if (DateUtil.isValidDate(date, getErrorMessageString(DATE_BY_HAND_FORMAT), rb.getLocale())) {
+			if (DateUtil.isValidISODate(date)) {
 				displayInvalidDateErrMsg = false;
 			} 
 			else {

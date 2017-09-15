@@ -23,7 +23,7 @@
               parseFormat: 'YYYY-MM-DD HH:mm:ss',
               allowEmptyDate: false,
               val: '<h:outputText value="#{podHomeBean.selectedPodcast.displayDateRevise}"><f:convertDateTime pattern="yyyy-MM-dd HH:mm:ss"/></h:outputText>',
-              ashidden: { iso8601: 'poddateISO8601' }
+              ashidden: { iso8601: 'podReviseISO8601' }
           });
         });
       </script>

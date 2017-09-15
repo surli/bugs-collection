@@ -21,8 +21,8 @@
               useTime: 1,
               parseFormat: 'YYYY-MM-DD HH:mm:ss',
               allowEmptyDate: true,
-              val: '<h:outputText value="#{podHomeBean.date}"><f:convertDateTime pattern="yyyy-MM-dd HH:mm:ss"/></h:outputText>',
-              ashidden: { iso8601: 'addDateISO8601' }
+              val: '',
+              ashidden: { iso8601: 'podAddISO8601' }
           });
         });
       </script>
