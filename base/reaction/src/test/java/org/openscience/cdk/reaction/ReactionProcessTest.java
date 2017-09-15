@@ -83,12 +83,11 @@ public abstract class ReactionProcessTest extends CDKTestCase {
         return smigen.create(copy);
     }
 
-    protected void assertReaction(String smiles, IReactionProcess process)
+    protected void assertReaction(String smiles)
         throws CDKException {
         final SmilesParser smipar = new SmilesParser(builder);
         final IReaction reaction = smipar.parseReactionSmiles(smiles);
-        // remove agents
-        final IReactionSet reactions = process.initiate(reaction.getReactants(), null);
+        final IReactionSet reactions = this.reaction.initiate(reaction.getReactants(), null);
         final String expected = cansmi(reaction);
         assertThat(reactions.getReactionCount(), is(not(0)));
         for (IReaction actual : reactions.reactions()) {

@@ -107,8 +107,7 @@ public class RadicalSiteRrAlphaReactionTest extends ReactionProcessTest {
 
     @Test
     public void testExampleSmiles() throws Exception {
-        assertReaction("[CH](CCC)CCC>>[CH2]CC(C)CCC |^1:0,7|",
-                       new RadicalSiteRrAlphaReaction());
+        assertReaction("[CH](CCC)CCC>>[CH2]CC(C)CCC |^1:0,7|");
     }
 
     /**
