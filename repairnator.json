@@ -1,0 +1,44 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "PebbleTemplates/pebble",
+  "bugCommit": "https://github.com/PebbleTemplates/pebble/compare/44ad9a6a33cb...ba40ddfc2e24",
+  "failingModule": "/root/workspace/PebbleTemplates/pebble/225231496",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 444,
+  "failing-test-cases": [
+    {
+      "className": "com.mitchellbosecke.pebble.node.ForNodeTest",
+      "failingMethods": [
+        "com.mitchellbosecke.pebble.node.ForNodeTest#testVariableScope",
+        "com.mitchellbosecke.pebble.node.ForNodeTest#testNestedLoop",
+        "com.mitchellbosecke.pebble.node.ForNodeTest#testLoopIndex"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...0 i\u003d2 j\u003d1 i\u003d2 j\u003d2 i\u003d[] j\u003d \u003e but was:\u003c...0 i\u003d2 j\u003d1 i\u003d2 j\u003d2 i\u003d[2] j\u003d \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ooValueFoo1 value : []Foo2 value : fooValu...\u003e but was:\u003c...ooValueFoo1 value : [fooValue]Foo2 value : fooValu...\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...uter\u003d2 outside loop\u003d[] \u003e but was:\u003c...uter\u003d2 outside loop\u003d[2] \u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}
