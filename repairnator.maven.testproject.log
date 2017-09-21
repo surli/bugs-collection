@@ -23,216 +23,91 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pebble ---
 [INFO] Surefire report directory: /root/workspace/PebbleTemplates/pebble/225231496/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 88.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 680.3 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.mitchellbosecke.pebble.ExtendingPebbleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec
 Running com.mitchellbosecke.pebble.WhitespaceControlTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running com.mitchellbosecke.pebble.CoreOperatorsTest
-Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
 Running com.mitchellbosecke.pebble.AttributeSubscriptSyntaxTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running com.mitchellbosecke.pebble.LoaderTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
 Running com.mitchellbosecke.pebble.ArgumentsNodeTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.mitchellbosecke.pebble.WritingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.411 sec
 Running com.mitchellbosecke.pebble.EnumEqualsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.mitchellbosecke.pebble.node.ForNodeTest
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE!
-testNestedLoop(com.mitchellbosecke.pebble.node.ForNodeTest)  Time elapsed: 0.009 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...0 i=2 j=1 i=2 j=2 i=[] j= > but was:<...0 i=2 j=1 i=2 j=2 i=[2] j= >
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mitchellbosecke.pebble.node.ForNodeTest.testNestedLoop(ForNodeTest.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testVariableScope(com.mitchellbosecke.pebble.node.ForNodeTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...ooValueFoo1 value : []Foo2 value : fooValu...> but was:<...ooValueFoo1 value : [fooValue]Foo2 value : fooValu...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mitchellbosecke.pebble.node.ForNodeTest.testVariableScope(ForNodeTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testLoopIndex(com.mitchellbosecke.pebble.node.ForNodeTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...uter=2 outside loop=[] > but was:<...uter=2 outside loop=[2] >
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mitchellbosecke.pebble.node.ForNodeTest.testLoopIndex(ForNodeTest.java:81)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running com.mitchellbosecke.pebble.ConcurrencyTest
-2017-09-21 00:11:30 INFO  ParallelNode:54 - The parallel tag was used [template:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
-2017-09-21 00:11:30 INFO  ParallelNode:54 - The parallel tag was used [{% for i in [1,2,3,4,5,6,7,8,9,10] %}{% parallel %}{{test(i)}}{% endparallel %}{% endfor %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.971 sec
+2017-09-21 07:22:26 INFO  ParallelNode:54 - The parallel tag was used [template:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+2017-09-21 07:22:26 INFO  ParallelNode:54 - The parallel tag was used [{% for i in [1,2,3,4,5,6,7,8,9,10] %}{% parallel %}{{test(i)}}{% endparallel %}{% endfor %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.443 sec
 Running com.mitchellbosecke.pebble.ScopeChainTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.mitchellbosecke.pebble.InheritanceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running com.mitchellbosecke.pebble.ParsingOdditiesTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running com.mitchellbosecke.pebble.MapSyntaxTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
 Running com.mitchellbosecke.pebble.CompilerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running com.mitchellbosecke.pebble.CacheTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.539 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.791 sec
 Running com.mitchellbosecke.pebble.NewlineTrimmingTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running com.mitchellbosecke.pebble.CoreFunctionsTest
 Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running com.mitchellbosecke.pebble.CoreTagsTest
-2017-09-21 00:11:32 INFO  ParallelNode:54 - The parallel tag was used [beginning {% parallel %}{{ slowObject.first }}{% endparallel %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+2017-09-21 07:22:28 INFO  ParallelNode:54 - The parallel tag was used [beginning {% parallel %}{{ slowObject.first }}{% endparallel %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
 Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.091 sec
 Running com.mitchellbosecke.pebble.CoreTestsTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running com.mitchellbosecke.pebble.EscaperExtensionTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running com.mitchellbosecke.pebble.I18nExtensionTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running com.mitchellbosecke.pebble.utils.PathUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.mitchellbosecke.pebble.GetAttributeTest
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running com.mitchellbosecke.pebble.ContextTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running com.mitchellbosecke.pebble.TernaryExpressionTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running com.mitchellbosecke.pebble.ArraySyntaxTest
-Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running com.mitchellbosecke.pebble.TestParallelParsing
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec
 Running com.mitchellbosecke.pebble.IncludeWithParameterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running com.mitchellbosecke.pebble.TestRelativePath
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running com.mitchellbosecke.pebble.CoreFiltersTest
-Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 65, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running com.mitchellbosecke.pebble.extension.escaper.RawFilterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running com.mitchellbosecke.pebble.ErrorReportingTest
 :7)
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running com.mitchellbosecke.pebble.StrictModeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 
 Results :
 
-Failed tests:   testNestedLoop(com.mitchellbosecke.pebble.node.ForNodeTest): expected:<...0 i=2 j=1 i=2 j=2 i=[] j= > but was:<...0 i=2 j=1 i=2 j=2 i=[2] j= >
-  testVariableScope(com.mitchellbosecke.pebble.node.ForNodeTest): expected:<...ooValueFoo1 value : []Foo2 value : fooValu...> but was:<...ooValueFoo1 value : [fooValue]Foo2 value : fooValu...>
-  testLoopIndex(com.mitchellbosecke.pebble.node.ForNodeTest): expected:<...uter=2 outside loop=[] > but was:<...uter=2 outside loop=[2] >
-
-Tests run: 444, Failures: 3, Errors: 0, Skipped: 0
+Tests run: 444, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.079 s
-[INFO] Finished at: 2017-09-21T00:11:34+02:00
-[INFO] Final Memory: 15M/302M
+[INFO] Total time: 5.616 s
+[INFO] Finished at: 2017-09-21T07:22:29+02:00
+[INFO] Final Memory: 12M/304M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project pebble: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/PebbleTemplates/pebble/225231496/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
