@@ -66,7 +66,7 @@ class JavaslangCollections {
 				return ((javaslang.collection.Set<?>) source).toJavaSet();
 			}
 
-			throw new IllegalArgumentException("Unsupported Javaslang collection " + source);
+			throw new IllegalArgumentException("Unsupported Javaslang collection " + source.getClass());
 		}
 	}
 
