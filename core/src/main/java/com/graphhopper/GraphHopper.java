@@ -24,6 +24,8 @@ import com.graphhopper.reader.dem.CGIARProvider;
 import com.graphhopper.reader.dem.ElevationProvider;
 import com.graphhopper.reader.dem.SRTMProvider;
 import com.graphhopper.reader.dem.TunnelElevationInterpolator;
+import com.graphhopper.routing.util.spatialrules.EmptySpatialRuleLookup;
+import com.graphhopper.routing.util.spatialrules.SpatialRuleLookup;
 import com.graphhopper.storage.change.ChangeGraphHelper;
 import com.graphhopper.storage.change.ChangeGraphResponse;
 import com.graphhopper.routing.*;
@@ -113,11 +115,13 @@ public class GraphHopper implements GraphHopperAPI {
     // for data reader
     private String dataReaderFile;
     private double dataReaderWayPointMaxDistance = 1;
-    private int dataReaderWorkerThreads = -1;
+    private int dataReaderWorkerThreads = 2;
     private boolean calcPoints = true;
     private ElevationProvider eleProvider = ElevationProvider.NOOP;
     private FlagEncoderFactory flagEncoderFactory = FlagEncoderFactory.DEFAULT;
     private final ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+
+    private SpatialRuleLookup spatialRuleLookup = new EmptySpatialRuleLookup();
 
     public GraphHopper() {
         chFactoryDecorator.setEnabled(true);
@@ -1073,7 +1077,7 @@ public class GraphHopper implements GraphHopperAPI {
                     return Collections.emptyList();
 
                 RoutingAlgorithmFactory tmpAlgoFactory = getAlgorithmFactory(hints);
-                Weighting weighting = null;
+                Weighting weighting;
                 QueryGraph queryGraph;
 
                 boolean forceFlexibleMode = hints.getBool(CH.DISABLE, false);
@@ -1151,12 +1155,16 @@ public class GraphHopper implements GraphHopperAPI {
         Lock writeLock = readWriteLock.writeLock();
         writeLock.lock();
         try {
-            ChangeGraphHelper overlay = new ChangeGraphHelper(ghStorage, locationIndex);
+            ChangeGraphHelper overlay = createChangeGraphHelper(ghStorage, locationIndex);
             long updateCount = overlay.applyChanges(encodingManager, collection);
             return new ChangeGraphResponse(updateCount);
         } finally {
             writeLock.unlock();
         }
+    }
+
+    protected ChangeGraphHelper createChangeGraphHelper(Graph graph, LocationIndex locationIndex) {
+        return new ChangeGraphHelper(graph, locationIndex);
     }
 
     private void checkIfPointsAreInBounds(List<GHPoint> points) {
@@ -1309,4 +1317,13 @@ public class GraphHopper implements GraphHopperAPI {
         this.nonChMaxWaypointDistance = nonChMaxWaypointDistance;
     }
 
+    public void setSpatialRuleLookup(SpatialRuleLookup spatialRuleLookup) {
+        this.spatialRuleLookup = spatialRuleLookup;
+        if(encodingManager.supports("generic")){
+            DataFlagEncoder encoder = (DataFlagEncoder) encodingManager.getEncoder("generic");
+            encoder.setSpatialRuleLookup(spatialRuleLookup);
+        }
+
+
+    }
 }
