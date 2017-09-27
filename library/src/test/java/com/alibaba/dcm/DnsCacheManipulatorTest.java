@@ -62,10 +62,12 @@ public class DnsCacheManipulatorTest {
 
     @Test
     public void test_loadDnsCacheConfig_from_D_Option() throws Exception {
-        System.setProperty("dcm.config.file", "customized-dns-cache.properties");
+        final String key = "dcm.config.file";
+        System.setProperty(key, "customized-dns-cache.properties");
         DnsCacheManipulator.loadDnsCacheConfig();
         final String ip = InetAddress.getByName(DOMAIN_CUSTOMIZED).getHostAddress();
         assertEquals(IP_CUSTOMIZED, ip);
+        System.clearProperty(key);
     }
 
     @Test
