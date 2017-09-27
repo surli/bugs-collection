@@ -1,0 +1,82 @@
+{
+  "totalNumberSkippingTests": 17,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "geotools/geotools",
+  "bugCommit": "https://github.com/geotools/geotools/compare/86ad0da859d5...3979aa17b8b8",
+  "failingModule": "/root/workspace/geotools/geotools/224002137/modules/plugin/imagemosaic",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 6,
+  "error-types": [
+    "java.lang.AssertionError:",
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 6050,
+  "failing-test-cases": [
+    {
+      "className": "org.geotools.gce.imagemosaic.HeterogenousCRSTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.HeterogenousCRSTest#testHarvestHeteroUTM",
+        "org.geotools.gce.imagemosaic.HeterogenousCRSTest#testHeterogeneousCRS",
+        "org.geotools.gce.imagemosaic.HeterogenousCRSTest#testHeteroUTM"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cEPSG:[26713]\u003e but was:\u003cEPSG:[3587]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.geotools.gce.imagemosaic.ImageMosaicEgrTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.ImageMosaicEgrTest#testLeftRightOnTopRaster",
+        "org.geotools.gce.imagemosaic.ImageMosaicEgrTest#testLeftRightOnTopVector"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 2147483647 different pixels, against a threshold of 300\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Images are visibly different, found 2147483647 different pixels, against a threshold of 300\nYou can add -Dorg.geotools.image.test.interactive\u003dtrue to show a dialog comparing them (requires GUI support)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.geotools.gce.imagemosaic.ImageMosaicReaderTest",
+      "failingMethods": [
+        "org.geotools.gce.imagemosaic.ImageMosaicReaderTest#testFilteredGranuleFootprint"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c9.242876557335812\u003e but was:\u003c6.346174908474391\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}
