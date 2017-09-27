@@ -1,0 +1,56 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 5,
+  "repo": "spring-cloud/spring-cloud-aws",
+  "bugCommit": "https://github.com/spring-cloud/spring-cloud-aws/compare/046588e31458...1b9755a033e5",
+  "failingModule": "/root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-messaging",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.springframework.beans.factory.UnsatisfiedDependencyException"
+  ],
+  "totalNumberRunningTests": 506,
+  "failing-test-cases": [
+    {
+      "className": "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest#messageHandler_withFactoryConfiguration_shouldUseCustomValues",
+        "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest#configuration_withoutAwsCredentials_shouldCreateAClientWithDefaultCredentialsProvider",
+        "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest#configuration_withCustomSendToMessageTemplate_shouldUseTheConfiguredTemplate",
+        "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest#configuration_withMinimalBeans_shouldStartSqsListenerContainer",
+        "org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest#queueMessageHandlerBeanMustBeSetOnContainer"
+      ],
+      "failures": [
+        {
+          "failureName": "org.springframework.beans.factory.UnsatisfiedDependencyException",
+          "failureDetail": "Error creating bean with name \u0027simpleMessageListenerContainer\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method \u0027simpleMessageListenerContainer\u0027 parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name \u0027amazonSQS\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method \u0027amazonSQS\u0027 threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.",
+          "isError": true
+        },
+        {
+          "failureName": "org.springframework.beans.factory.UnsatisfiedDependencyException",
+          "failureDetail": "Error creating bean with name \u0027simpleMessageListenerContainer\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method \u0027simpleMessageListenerContainer\u0027 parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name \u0027amazonSQS\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method \u0027amazonSQS\u0027 threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.",
+          "isError": true
+        },
+        {
+          "failureName": "org.springframework.beans.factory.UnsatisfiedDependencyException",
+          "failureDetail": "Error creating bean with name \u0027simpleMessageListenerContainer\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method \u0027simpleMessageListenerContainer\u0027 parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name \u0027amazonSQS\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method \u0027amazonSQS\u0027 threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.",
+          "isError": true
+        },
+        {
+          "failureName": "org.springframework.beans.factory.UnsatisfiedDependencyException",
+          "failureDetail": "Error creating bean with name \u0027simpleMessageListenerContainer\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method \u0027simpleMessageListenerContainer\u0027 parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name \u0027amazonSQS\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method \u0027amazonSQS\u0027 threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.",
+          "isError": true
+        },
+        {
+          "failureName": "org.springframework.beans.factory.UnsatisfiedDependencyException",
+          "failureDetail": "Error creating bean with name \u0027simpleMessageListenerContainer\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method \u0027simpleMessageListenerContainer\u0027 parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name \u0027amazonSQS\u0027 defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method \u0027amazonSQS\u0027 threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    }
+  ]
+}

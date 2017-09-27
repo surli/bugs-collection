@@ -1,0 +1,1151 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.springframework.cloud:spring-cloud-aws-docs:pom:1.2.0.BUILD-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ org.springframework.cloud:spring-cloud-aws-docs:[unknown-version], /root/workspace/spring-cloud/spring-cloud-aws/207100553/docs/pom.xml, line 36, column 18
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-cloud-aws-dependencies
+[INFO] Spring Cloud AWS
+[INFO] Spring Cloud AWS Core Module
+[INFO] Spring Cloud AWS Context Module
+[INFO] Spring Cloud AWS Jdbc Module
+[INFO] Spring Cloud AWS Messaging Module
+[INFO] spring-cloud-aws-actuator
+[INFO] Spring Cloud AWS Autoconfigure
+[INFO] spring-cloud-starter-aws
+[INFO] spring-cloud-starter-aws-jdbc
+[INFO] spring-cloud-starter-aws-messaging
+[INFO] Spring Cloud AWS Docs
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-cloud-aws-dependencies 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud AWS 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-aws ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud AWS Core Module 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-aws-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-aws-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-aws-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-aws-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-aws-core ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-core/target/surefire-reports
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 22.2 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 91.7 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 751.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.aws.core.region.Ec2MetadataRegionProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec
+Running org.springframework.cloud.aws.core.region.StaticRegionProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.springframework.cloud.aws.core.naming.AmazonResourceNameTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.springframework.cloud.aws.core.config.AmazonWebserviceClientFactoryBeanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 sec
+Running org.springframework.cloud.aws.core.config.AmazonWebserviceClientConfigurationUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 sec
+Running org.springframework.cloud.aws.core.credentials.CredentialsProviderFactoryBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Running org.springframework.cloud.aws.core.io.s3.AmazonS3ProxyFactoryTest
+2017-09-27 12:39:59,315 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final com.amazonaws.internal.auth.SignerProvider com.amazonaws.services.s3.AmazonS3Client.createSignerProvider(com.amazonaws.auth.Signer)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,316 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final com.amazonaws.services.s3.model.InitiateMultipartUploadRequest com.amazonaws.services.s3.AmazonS3Client.newInitiateMultipartUploadRequest(com.amazonaws.services.s3.model.UploadObjectRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.configureRegion(com.amazonaws.regions.Regions)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final com.amazonaws.AmazonWebServiceRequest com.amazonaws.AmazonWebServiceClient.beforeMarshalling(com.amazonaws.AmazonWebServiceRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final com.amazonaws.http.ExecutionContext com.amazonaws.AmazonWebServiceClient.createExecutionContext(com.amazonaws.Request)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final boolean com.amazonaws.AmazonWebServiceClient.isRequestMetricsEnabled(com.amazonaws.AmazonWebServiceRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [private final com.amazonaws.metrics.RequestMetricCollector com.amazonaws.AmazonWebServiceClient.findRequestMetricCollector(com.amazonaws.metrics.RequestMetricCollector)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,317 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.endClientExecution(com.amazonaws.util.AWSRequestMetrics,com.amazonaws.Request,com.amazonaws.Response,boolean)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.endClientExecution(com.amazonaws.util.AWSRequestMetrics,com.amazonaws.Request,com.amazonaws.Response)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.setServiceNameIntern(java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final java.lang.String com.amazonaws.AmazonWebServiceClient.getSignerRegionOverride()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.setSignerRegionOverride(java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.makeImmutable()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+2017-09-27 12:39:59,318 [main] INFO org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.checkMutability()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance. 
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 sec
+Running org.springframework.cloud.aws.core.io.s3.SimpleStorageResourceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.95 sec
+Running org.springframework.cloud.aws.core.io.s3.SimpleStorageNameUtilsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.springframework.cloud.aws.core.io.s3.SimpleStorageResourceLoaderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.springframework.cloud.aws.core.io.s3.PathMatchingSimpleStorageResourcePatternResolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec
+Running org.springframework.cloud.aws.core.env.ec2.AmazonEc2InstanceDataPropertySourceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.823 sec
+Running org.springframework.cloud.aws.core.env.ec2.AmazonEc2InstanceUserTagsFactoryBeanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec
+Running org.springframework.cloud.aws.core.env.StackResourceRegistryDetectingResourceIdResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.springframework.cloud.aws.core.env.stack.config.StackResourceRegistryFactoryBeanTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running org.springframework.cloud.aws.core.env.stack.config.StackResourceUserTagsFactoryBeanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 90, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-aws-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud AWS Context Module 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-aws-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-aws-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-aws-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 47 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-aws-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-aws-context ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-context/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.aws.mail.config.xml.MailSchemaWithoutVersionTest
+12:40:14.455 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/mail/config/xml/MailSchemaWithoutVersionTest.xml]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec
+Running org.springframework.cloud.aws.mail.config.xml.SimpleEmailServiceBeanDefinitionParserTest
+12:40:14.626 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7a30d1e6: startup date [Wed Sep 27 12:40:14 CEST 2017]; root of context hierarchy
+12:40:14.628 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/mail/config/xml/SimpleEmailServiceBeanDefinitionParserTest-ses-client.xml]
+12:40:15.640 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@51bf5add: startup date [Wed Sep 27 12:40:15 CEST 2017]; root of context hierarchy
+12:40:15.641 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/mail/config/xml/SimpleEmailServiceBeanDefinitionParserTest-regionProvider.xml]
+12:40:15.869 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2812b107: startup date [Wed Sep 27 12:40:15 CEST 2017]; root of context hierarchy
+12:40:15.870 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/mail/config/xml/SimpleEmailServiceBeanDefinitionParserTest-region.xml]
+12:40:15.931 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5965be2d: startup date [Wed Sep 27 12:40:15 CEST 2017]; root of context hierarchy
+12:40:15.932 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/mail/config/xml/SimpleEmailServiceBeanDefinitionParserTest-context.xml]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.378 sec
+Running org.springframework.cloud.aws.mail.simplemail.SimpleEmailServiceJavaMailSenderTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec
+Running org.springframework.cloud.aws.mail.simplemail.SimpleEmailServiceMailSenderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.springframework.cloud.aws.context.config.AmazonEc2InstanceDataPropertySourcePostProcessorTest
+12:40:16.479 [main] INFO  org.springframework.context.support.StaticApplicationContext  - Refreshing org.springframework.context.support.StaticApplicationContext@40f70521: startup date [Wed Sep 27 12:40:16 CEST 2017]; root of context hierarchy
+12:40:23.106 [main] WARN  org.springframework.cloud.aws.core.env.ec2.AmazonEc2InstanceDataPropertySource  - Error getting instance user-data error message is 'Unable to contact EC2 metadata service.'
+12:40:23.115 [main] WARN  org.springframework.cloud.aws.context.config.AmazonEc2InstanceDataPropertySourcePostProcessor  - Environment is not of type 'org.springframework.core.env.ConfigurableEnvironment' property source with instance data is not available
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.64 sec
+Running org.springframework.cloud.aws.context.config.xml.StackConfigurationBeanDefinitionParserTest
+12:40:23.119 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-custom-region.xml]
+12:40:23.223 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-staticStackName.xml]
+12:40:23.250 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@305f7627: startup date [Wed Sep 27 12:40:23 CEST 2017]; root of context hierarchy
+12:40:23.427 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-custom-region-provider.xml]
+12:40:23.487 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-autoDetectStackName.xml]
+12:40:23.529 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@3574e198: startup date [Wed Sep 27 12:40:23 CEST 2017]; root of context hierarchy
+12:40:33.583 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-staticStackName.xml]
+12:40:33.646 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@2af616d3: startup date [Wed Sep 27 12:40:33 CEST 2017]; root of context hierarchy
+12:40:33.692 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-autoDetectStackName.xml]
+12:40:33.731 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@c00fff0: startup date [Wed Sep 27 12:40:33 CEST 2017]; root of context hierarchy
+12:40:43.781 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-staticStackName.xml]
+12:40:43.801 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@c1fca1e: startup date [Wed Sep 27 12:40:43 CEST 2017]; root of context hierarchy
+12:40:43.828 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-staticStackName.xml]
+12:40:43.884 [main] INFO  org.springframework.context.support.GenericXmlApplicationContext  - Refreshing org.springframework.context.support.GenericXmlApplicationContext@32f61a31: startup date [Wed Sep 27 12:40:43 CEST 2017]; root of context hierarchy
+12:40:43.905 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/StackConfigurationBeanDefinitionParserTest-withCustomCloudFormationClient.xml]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.904 sec
+Running org.springframework.cloud.aws.context.config.xml.ContextInstanceDataPropertySourceBeanDefinitionParserTest
+12:40:44.029 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextInstanceDataPropertySourceBeanDefinitionParserTest-context.xml]
+12:40:54.122 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextInstanceDataPropertySourceBeanDefinitionParserTest-customEc2Client.xml]
+12:40:57.141 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextInstanceDataPropertySourceBeanDefinitionParserTest-context.xml]
+12:41:08.190 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextInstanceDataPropertySourceBeanDefinitionParserTest-customAttributeAndValueSeparator.xml]
+12:41:08.225 [main] INFO  org.springframework.context.support.GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1af1347d: startup date [Wed Sep 27 12:41:08 CEST 2017]; root of context hierarchy
+12:41:18.279 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextInstanceDataPropertySourceBeanDefinitionParserTest-userTagsMap.xml]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.279 sec
+Running org.springframework.cloud.aws.context.config.xml.ContextSchemaWithoutVersionTest
+12:41:21.303 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextSchemaWithoutVersionTest.xml]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.springframework.cloud.aws.context.config.xml.ContextResourceLoaderBeanDefinitionParserTest
+12:41:21.330 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e63cad: startup date [Wed Sep 27 12:41:21 CEST 2017]; root of context hierarchy
+12:41:21.331 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextResourceLoaderBeanDefinitionParserTest-withCustomRegionProvider.xml]
+12:41:21.611 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final com.amazonaws.internal.auth.SignerProvider com.amazonaws.services.s3.AmazonS3Client.createSignerProvider(com.amazonaws.auth.Signer)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.611 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final com.amazonaws.services.s3.model.InitiateMultipartUploadRequest com.amazonaws.services.s3.AmazonS3Client.newInitiateMultipartUploadRequest(com.amazonaws.services.s3.model.UploadObjectRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.617 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.setServiceNameIntern(java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.617 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final com.amazonaws.http.ExecutionContext com.amazonaws.AmazonWebServiceClient.createExecutionContext(com.amazonaws.Request)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.617 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final com.amazonaws.AmazonWebServiceRequest com.amazonaws.AmazonWebServiceClient.beforeMarshalling(com.amazonaws.AmazonWebServiceRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.618 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.endClientExecution(com.amazonaws.util.AWSRequestMetrics,com.amazonaws.Request,com.amazonaws.Response,boolean)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.618 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.endClientExecution(com.amazonaws.util.AWSRequestMetrics,com.amazonaws.Request,com.amazonaws.Response)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.618 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.configureRegion(com.amazonaws.regions.Regions)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.618 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final boolean com.amazonaws.AmazonWebServiceClient.isRequestMetricsEnabled(com.amazonaws.AmazonWebServiceRequest)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.618 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [private final com.amazonaws.metrics.RequestMetricCollector com.amazonaws.AmazonWebServiceClient.findRequestMetricCollector(com.amazonaws.metrics.RequestMetricCollector)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.619 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [public final java.lang.String com.amazonaws.AmazonWebServiceClient.getSignerRegionOverride()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.619 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.setSignerRegionOverride(java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.619 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [public final void com.amazonaws.AmazonWebServiceClient.makeImmutable()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:21.619 [main] INFO  org.springframework.aop.framework.CglibAopProxy  - Unable to proxy method [protected final void com.amazonaws.AmazonWebServiceClient.checkMutability()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+12:41:22.184 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@51ec2df1: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.185 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextResourceLoaderBeanDefinitionParserTest-withCustomS3Client.xml]
+12:41:22.269 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5754de72: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.272 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextResourceLoaderBeanDefinitionParserTest-withCustomTaskExecutor.xml]
+12:41:22.389 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  - Initializing ExecutorService 
+12:41:22.401 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a6482a9: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.402 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextResourceLoaderBeanDefinitionParserTest-context.xml]
+12:41:22.474 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@66c83fc8: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.475 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextResourceLoaderBeanDefinitionParserTest-withRegionConfigured.xml]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.208 sec
+Running org.springframework.cloud.aws.context.config.xml.GlobalBeanDefinitionUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.springframework.cloud.aws.context.config.xml.ContextCredentialsBeanDefinitionParserTest
+12:41:22.553 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b3315a5: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.554 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-profileCredentialsProvider.xml]
+12:41:22.620 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f63e3c7: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.620 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-testWithEmptySecretKey.xml]
+12:41:22.666 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-profileCredentialsProviderWithFile.xml]
+12:41:22.734 [main] INFO  org.springframework.context.support.GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@35636217: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.801 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c904f1e: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.801 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-testWithPlaceHolder.xml]
+12:41:22.994 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6de0f580: startup date [Wed Sep 27 12:41:22 CEST 2017]; root of context hierarchy
+12:41:22.994 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-testWithExpressions.xml]
+12:41:23.303 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71cb3139: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.306 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-context.xml]
+12:41:23.383 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ff90645: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.384 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-testMultipleElements.xml]
+12:41:23.447 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@30e6a763: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.448 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextCredentialsBeanDefinitionParserTest-testWithEmptyAccessKey.xml]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.929 sec
+Running org.springframework.cloud.aws.context.config.xml.ContextRegionBeanDefinitionParserTest
+12:41:23.478 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2324bfe7: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.478 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testTwoRegionProviderConfigured.xml]
+12:41:23.500 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c551ad4: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.501 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testNoValidRegionProviderConfigurationSpecified.xml]
+12:41:23.521 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50d951e7: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.522 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testAutoDetection.xml]
+12:41:23.540 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12ffd1de: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.540 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testWithExpression.xml]
+12:41:23.563 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@782bf610: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.563 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testWithPlaceHolder.xml]
+12:41:23.594 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4acb2510: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.594 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testCustomRegionProvider.xml]
+12:41:23.611 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40712ee9: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.611 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-context.xml]
+12:41:23.628 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c42f2a1: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:23.628 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/context/config/xml/ContextRegionBeanDefinitionParserTest-testAutoDetectionWithConfiguredRegion.xml]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
+Running org.springframework.cloud.aws.context.config.annotation.ContextCredentialsConfigurationRegistrarTest
+12:41:23.738 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10cd6753: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:24.130 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@10cd6753: startup date [Wed Sep 27 12:41:23 CEST 2017]; root of context hierarchy
+12:41:24.144 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@716e431d: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.222 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@716e431d: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.227 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26b95b0b: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.276 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26b95b0b: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.281 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@665522c2: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.326 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@665522c2: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.354 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@73fb1d7f: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.393 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@73fb1d7f: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.405 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ecdbab8: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.468 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ecdbab8: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.472 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@212dfd39: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.521 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@212dfd39: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.529 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c6c82aa: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.585 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@c6c82aa: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.595 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cd4a4d7: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.663 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cd4a4d7: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.014 sec
+Running org.springframework.cloud.aws.context.config.annotation.ContextStackConfigurationTest
+12:41:24.706 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@339a3670: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.768 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonCloudFormation' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.context.config.annotation.ContextStackConfiguration; factoryMethodName=amazonCloudFormation; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.context.config.annotation.ContextStackConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=contextStackConfigurationTest.ManualConfigurationStackRegistryTestConfiguration; factoryMethodName=amazonCloudFormation; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.context.config.annotation.ContextStackConfigurationTest$ManualConfigurationStackRegistryTestConfiguration]
+12:41:24.980 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@339a3670: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.990 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@30364216: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+12:41:24.998 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonCloudFormation' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.context.config.annotation.ContextStackConfiguration; factoryMethodName=amazonCloudFormation; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.context.config.annotation.ContextStackConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=contextStackConfigurationTest.ApplicationConfigurationWithEmptyStackName; factoryMethodName=amazonCloudFormation; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.context.config.annotation.ContextStackConfigurationTest$ApplicationConfigurationWithEmptyStackName]
+12:41:25.147 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@30364216: startup date [Wed Sep 27 12:41:24 CEST 2017]; root of context hierarchy
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.495 sec
+Running org.springframework.cloud.aws.context.config.annotation.ContextResourceLoaderConfigurationTest
+12:41:35.193 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6eb17ec8: startup date [Wed Sep 27 12:41:35 CEST 2017]; root of context hierarchy
+12:41:35.347 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6eb17ec8: startup date [Wed Sep 27 12:41:35 CEST 2017]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec
+Running org.springframework.cloud.aws.context.config.annotation.ContextInstanceDataConfigurationTest
+12:41:35.360 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35c12c7a: startup date [Wed Sep 27 12:41:35 CEST 2017]; root of context hierarchy
+12:41:42.016 [main] WARN  org.springframework.cloud.aws.core.env.ec2.AmazonEc2InstanceDataPropertySource  - Error getting instance user-data error message is 'Unable to contact EC2 metadata service.'
+12:41:42.016 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@35c12c7a: startup date [Wed Sep 27 12:41:35 CEST 2017]; root of context hierarchy
+12:41:42.029 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f353d99: startup date [Wed Sep 27 12:41:42 CEST 2017]; root of context hierarchy
+12:41:42.114 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f353d99: startup date [Wed Sep 27 12:41:42 CEST 2017]; root of context hierarchy
+12:41:52.135 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e5cbff2: startup date [Wed Sep 27 12:41:52 CEST 2017]; root of context hierarchy
+12:41:52.179 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@e5cbff2: startup date [Wed Sep 27 12:41:52 CEST 2017]; root of context hierarchy
+12:42:02.231 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1effd53c: startup date [Wed Sep 27 12:42:02 CEST 2017]; root of context hierarchy
+12:42:02.265 [main] WARN  com.amazonaws.util.EC2MetadataUtils  - Unable to retrieve the requested metadata.
+12:42:02.269 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1effd53c: startup date [Wed Sep 27 12:42:02 CEST 2017]; root of context hierarchy
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.926 sec
+Running org.springframework.cloud.aws.context.config.annotation.ContextRegionConfigurationRegistrarTest
+12:42:12.283 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@43045f9f: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.313 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@43045f9f: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.317 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26c47874: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.319 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26c47874: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.320 [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.context.annotation.AnnotationConfigApplicationContext@26c47874: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.cloud.aws.context.config.annotation.ContextRegionConfigurationRegistrarTest.tearDown(ContextRegionConfigurationRegistrarTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+12:42:12.328 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@cdb2d95: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.346 [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'regionProvider': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.aws.core.region.StaticRegionProvider]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: The region 'eu-wast-1' is not a valid region!
+12:42:12.350 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c6007fb: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.382 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c6007fb: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.387 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68a4dcc6: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.417 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@68a4dcc6: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.422 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22a6e998: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.425 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@22a6e998: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.426 [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.context.annotation.AnnotationConfigApplicationContext@22a6e998: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.cloud.aws.context.config.annotation.ContextRegionConfigurationRegistrarTest.tearDown(ContextRegionConfigurationRegistrarTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+12:42:12.435 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b6e1c0: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.465 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b6e1c0: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec
+Running org.springframework.cloud.aws.context.support.io.ResourceLoaderTestBeanPostProcessorTest
+12:42:12.516 [main] INFO  org.springframework.context.support.StaticApplicationContext  - Refreshing org.springframework.context.support.StaticApplicationContext@277b8fa4: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.668 [main] INFO  org.springframework.context.support.StaticApplicationContext  - Refreshing org.springframework.context.support.StaticApplicationContext@3ee0b4f7: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.734 [main] INFO  org.springframework.context.support.StaticApplicationContext  - Refreshing org.springframework.context.support.StaticApplicationContext@25ad4f71: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.773 [main] INFO  org.springframework.context.support.StaticApplicationContext  - Refreshing org.springframework.context.support.StaticApplicationContext@53e800f9: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 sec
+Running org.springframework.cloud.aws.context.annotation.OnMissingAmazonClientConditionTest
+12:42:12.805 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2924f1d8: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+12:42:12.846 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7baf1f5a: startup date [Wed Sep 27 12:42:12 CEST 2017]; root of context hierarchy
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
+Running org.springframework.cloud.aws.cache.config.xml.CacheBeanDefinitionParserTest
+12:42:14.245 [main] INFO  com.thimbleware.jmemcached.MemCacheDaemon  - Listening on 0.0.0.0:10958
+12:42:14.268 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-cacheConfigWithExpiration.xml]
+12:42:14.825 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:14.866 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for foo.
+12:42:14.880 [New I/O server worker #1-1] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:16.889 [New I/O server worker #1-1] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - GET com.thimbleware.jmemcached.Key@20125
+12:42:17.083 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@606f81b5: startup date [Wed Sep 27 12:42:17 CEST 2017]; root of context hierarchy
+12:42:17.083 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-customCache.xml]
+12:42:17.146 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.152 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for foo.
+12:42:17.162 [New I/O server worker #1-2] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:17.167 [New I/O server worker #1-2] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - DELETE com.thimbleware.jmemcached.Key@20125
+12:42:17.169 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-mixedCacheConfig.xml]
+12:42:17.228 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.265 [New I/O server worker #1-3] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:17.282 [New I/O server worker #1-3] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - DELETE com.thimbleware.jmemcached.Key@20125
+12:42:17.284 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-elastiCacheConfigStackConfigured.xml]
+12:42:17.308 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.333 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for foo.
+12:42:17.341 [New I/O server worker #1-4] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:17.345 [New I/O server worker #1-4] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - DELETE com.thimbleware.jmemcached.Key@20125
+12:42:17.357 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-elastiCacheConfigWithCustomElastiCacheClient.xml]
+12:42:17.425 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.429 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for foo.
+12:42:17.457 [New I/O server worker #1-5] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:17.465 [New I/O server worker #1-5] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - DELETE com.thimbleware.jmemcached.Key@20125
+12:42:17.467 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-elastiCacheConfigRegionConfigured.xml]
+12:42:17.493 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheBeanDefinitionParserTest-elastiCacheConfig.xml]
+12:42:17.543 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:10958, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.581 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for foo.
+12:42:17.589 [New I/O server worker #1-6] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@20125
+12:42:17.597 [New I/O server worker #1-6] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - DELETE com.thimbleware.jmemcached.Key@20125
+12:42:17.606 [main] INFO  com.thimbleware.jmemcached.MemCacheDaemon  - terminating daemon; closing all channels
+12:42:17.622 [main] INFO  com.thimbleware.jmemcached.MemCacheDaemon  - channels closed, freeing cache storage
+12:42:17.667 [main] INFO  com.thimbleware.jmemcached.MemCacheDaemon  - successfully shut down
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.771 sec
+Running org.springframework.cloud.aws.cache.config.xml.CacheSchemaWithoutVersionTest
+12:42:17.670 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/cloud/aws/cache/config/xml/CacheSchemaWithoutVersionTest.xml]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest
+12:42:17.758 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@134ff8f8: startup date [Wed Sep 27 12:42:17 CEST 2017]; root of context hierarchy
+12:42:17.790 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonElastiCache' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=elastiCacheCachingConfigurationTest.ApplicationConfigurationWithNoExplicitStackConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest$ApplicationConfigurationWithNoExplicitStackConfiguration]
+12:42:17.908 [main] INFO  com.thimbleware.jmemcached.MemCacheDaemon  - Listening on 0.0.0.0:62115
+12:42:17.961 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:17.962 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:17.963 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.073 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.075 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.078 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@134ff8f8: startup date [Wed Sep 27 12:42:17 CEST 2017]; root of context hierarchy
+12:42:18.080 [New I/O server worker #2-1] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+12:42:18.119 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@28369db0: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.119 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:18.166 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonElastiCache' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=elastiCacheCachingConfigurationTest.ApplicationConfigurationWithExplicitStackConfigurationAndExpiryTime; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest$ApplicationConfigurationWithExplicitStackConfigurationAndExpiryTime]
+12:42:18.238 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.243 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:18.245 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.302 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.303 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.303 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@28369db0: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.305 [New I/O server worker #2-2] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+12:42:18.320 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@75156240: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.329 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:18.339 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonElastiCache' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=elastiCacheCachingConfigurationTest.ApplicationConfigurationWithExplicitStackConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest$ApplicationConfigurationWithExplicitStackConfiguration]
+12:42:18.429 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.431 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:18.432 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.477 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.478 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.478 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@75156240: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.479 [New I/O server worker #2-3] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+12:42:18.521 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2acdcce8: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.528 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:18.543 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonElastiCache' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=elastiCacheCachingConfigurationTest.ApplicationConfigurationWithExplicitStackConfigurationAndMixedExpiryTime; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest$ApplicationConfigurationWithExplicitStackConfigurationAndMixedExpiryTime]
+12:42:18.642 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.643 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:18.653 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.691 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.691 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.692 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2acdcce8: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.721 [New I/O server worker #2-4] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+12:42:18.737 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76d72b5b: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.765 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:18.784 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'amazonElastiCache' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=elastiCacheCachingConfigurationTest.ApplicationConfigurationWithNoExplicitStackConfigurationAndDefaultExpiration; factoryMethodName=amazonElastiCache; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.cloud.aws.cache.config.annotation.ElastiCacheCachingConfigurationTest$ApplicationConfigurationWithNoExplicitStackConfigurationAndDefaultExpiration]
+12:42:18.868 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.877 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:18.897 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.930 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.939 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+12:42:18.939 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext  - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@76d72b5b: startup date [Wed Sep 27 12:42:18 CEST 2017]; root of context hierarchy
+12:42:18.941 [New I/O server worker #2-5] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.24 sec
+Running org.springframework.cloud.aws.cache.ElastiCacheFactoryBeanTest
+12:42:18.976 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:19.019 [main] WARN  org.springframework.cloud.aws.cache.ElastiCacheFactoryBean  - Cache cluster is not available now. Connection may fail during cache access. Current status is null
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.springframework.cloud.aws.cache.memcached.SimpleSpringMemcachedTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running org.springframework.cloud.aws.cache.memcached.MemcachedCacheFactoryTest
+12:42:19.097 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:19.108 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for testWithTimeOut.
+12:42:19.112 [New I/O server worker #2-6] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@b6de645e
+12:42:21.117 [New I/O server worker #2-6] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - GET com.thimbleware.jmemcached.Key@b6de645e
+12:42:21.118 [New I/O server worker #2-6] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+12:42:21.126 [main] INFO  net.spy.memcached.MemcachedConnection  - Added {QA sa=/127.0.0.1:62115, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+12:42:21.126 [main] WARN  net.spy.memcached.MemcachedConnection  - Could not redistribute to another node, retrying primary node for test.
+12:42:21.128 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+12:42:21.128 [New I/O server worker #2-7] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - ADD com.thimbleware.jmemcached.Key@74657393
+12:42:21.134 [New I/O server worker #2-7] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - GET com.thimbleware.jmemcached.Key@74657393
+12:42:21.141 [New I/O server worker #2-7] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - FLUSH_ALL
+12:42:21.157 [New I/O server worker #2-7] INFO  com.thimbleware.jmemcached.protocol.MemcachedCommandHandler  - VERSION
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.107 sec
+Running org.springframework.cloud.aws.cache.redis.RedisCacheFactoryTest
+12:42:21.208 [Memcached IO over {MemcachedConnection to /127.0.0.1:62115} - SHUTTING DOWN (informed client)] INFO  net.spy.memcached.MemcachedConnection  - Shut down memcached client
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Results :
+
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-aws-context ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud AWS Jdbc Module 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-aws-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-aws-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-aws-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-aws-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-aws-jdbc ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-jdbc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.aws.jdbc.rds.AmazonRdsReadReplicaAwareDataSourceFactoryBeanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 sec
+Running org.springframework.cloud.aws.jdbc.rds.AmazonRdsDataSourceFactoryBeanTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.springframework.cloud.aws.jdbc.rds.AmazonRdsDataSourceUserTagsFactoryBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.506 sec
+Running org.springframework.cloud.aws.jdbc.config.xml.JdbcSchemaWithoutVersionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec
+Running org.springframework.cloud.aws.jdbc.config.xml.AmazonRdsDataSourceBeanDefinitionParserTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.257 sec
+Running org.springframework.cloud.aws.jdbc.config.xml.AmazonRdsRetryInterceptorBeanDefinitionParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 sec
+Running org.springframework.cloud.aws.jdbc.config.annotation.AmazonRdsInstanceConfigurationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.985 sec
+Running org.springframework.cloud.aws.jdbc.datasource.TomcatJdbcDataSourceFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running org.springframework.cloud.aws.jdbc.datasource.ReadOnlyRoutingDataSourceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.springframework.cloud.aws.jdbc.datasource.support.MapBasedDatabasePlatformSupportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.springframework.cloud.aws.jdbc.retry.DatabaseInstanceStatusRetryPolicyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.springframework.cloud.aws.jdbc.retry.SqlRetryPolicyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.cloud.aws.jdbc.retry.RdbmsRetryOperationsInterceptorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Results :
+
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-aws-jdbc ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud AWS Messaging Module 1.2.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-aws-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-aws-messaging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-aws-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 41 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-aws-messaging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-aws-messaging ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-messaging/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.aws.messaging.core.NotificationMessagingTemplateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 sec
+Running org.springframework.cloud.aws.messaging.core.QueueMessageChannelTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec
+Running org.springframework.cloud.aws.messaging.core.QueueMessagingTemplateTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.springframework.cloud.aws.messaging.core.TopicMessageChannelTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.springframework.cloud.aws.messaging.config.xml.NotificationArgumentResolverBeanDefinitionParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.139 sec
+Running org.springframework.cloud.aws.messaging.config.xml.SqsAsyncClientBeanDefinitionParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec
+Running org.springframework.cloud.aws.messaging.config.xml.MessagingSchemaWithoutSchemaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.springframework.cloud.aws.messaging.config.xml.QueueMessagingTemplateBeanDefinitionParserTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+Running org.springframework.cloud.aws.messaging.config.xml.NotificationMessagingTemplateBeanDefinitionParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running org.springframework.cloud.aws.messaging.config.xml.AnnotationDrivenQueueListenerBeanDefinitionParserTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 sec
+Running org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest
+Tests run: 8, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 31.566 sec <<< FAILURE!
+configuration_withoutAwsCredentials_shouldCreateAClientWithDefaultCredentialsProvider(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest)  Time elapsed: 6.905 sec  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest.configuration_withoutAwsCredentials_shouldCreateAClientWithDefaultCredentialsProvider(SqsConfigurationTest.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 45 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 more
+Caused by: com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at com.amazonaws.client.builder.AwsClientBuilder.setRegion(AwsClientBuilder.java:371)
+	at com.amazonaws.client.builder.AwsClientBuilder.configureMutableProperties(AwsClientBuilder.java:337)
+	at com.amazonaws.client.builder.AwsAsyncClientBuilder.build(AwsAsyncClientBuilder.java:80)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration.amazonSQS(SqsClientConfiguration.java:58)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.CGLIB$amazonSQS$0(<generated>)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf$$FastClassBySpringCGLIB$$c1348255.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.amazonSQS(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 more
+
+queueMessageHandlerBeanMustBeSetOnContainer(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest)  Time elapsed: 6.652 sec  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest.queueMessageHandlerBeanMustBeSetOnContainer(SqsConfigurationTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 45 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 more
+Caused by: com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at com.amazonaws.client.builder.AwsClientBuilder.setRegion(AwsClientBuilder.java:371)
+	at com.amazonaws.client.builder.AwsClientBuilder.configureMutableProperties(AwsClientBuilder.java:337)
+	at com.amazonaws.client.builder.AwsAsyncClientBuilder.build(AwsAsyncClientBuilder.java:80)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration.amazonSQS(SqsClientConfiguration.java:58)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.CGLIB$amazonSQS$0(<generated>)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf$$FastClassBySpringCGLIB$$c1348255.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.amazonSQS(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 more
+
+messageHandler_withFactoryConfiguration_shouldUseCustomValues(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest)  Time elapsed: 6.622 sec  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest.messageHandler_withFactoryConfiguration_shouldUseCustomValues(SqsConfigurationTest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 45 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 more
+Caused by: com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at com.amazonaws.client.builder.AwsClientBuilder.setRegion(AwsClientBuilder.java:371)
+	at com.amazonaws.client.builder.AwsClientBuilder.configureMutableProperties(AwsClientBuilder.java:337)
+	at com.amazonaws.client.builder.AwsAsyncClientBuilder.build(AwsAsyncClientBuilder.java:80)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration.amazonSQS(SqsClientConfiguration.java:58)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.CGLIB$amazonSQS$0(<generated>)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf$$FastClassBySpringCGLIB$$c1348255.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.amazonSQS(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 more
+
+configuration_withMinimalBeans_shouldStartSqsListenerContainer(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest)  Time elapsed: 4.379 sec  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest.configuration_withMinimalBeans_shouldStartSqsListenerContainer(SqsConfigurationTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 45 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 more
+Caused by: com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at com.amazonaws.client.builder.AwsClientBuilder.setRegion(AwsClientBuilder.java:371)
+	at com.amazonaws.client.builder.AwsClientBuilder.configureMutableProperties(AwsClientBuilder.java:337)
+	at com.amazonaws.client.builder.AwsAsyncClientBuilder.build(AwsAsyncClientBuilder.java:80)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration.amazonSQS(SqsClientConfiguration.java:58)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.CGLIB$amazonSQS$0(<generated>)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf$$FastClassBySpringCGLIB$$c1348255.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.amazonSQS(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 more
+
+configuration_withCustomSendToMessageTemplate_shouldUseTheConfiguredTemplate(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest)  Time elapsed: 6.633 sec  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest.configuration_withCustomSendToMessageTemplate_shouldUseTheConfiguredTemplate(SqsConfigurationTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 45 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 58 more
+Caused by: com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+	at com.amazonaws.client.builder.AwsClientBuilder.setRegion(AwsClientBuilder.java:371)
+	at com.amazonaws.client.builder.AwsClientBuilder.configureMutableProperties(AwsClientBuilder.java:337)
+	at com.amazonaws.client.builder.AwsAsyncClientBuilder.build(AwsAsyncClientBuilder.java:80)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration.amazonSQS(SqsClientConfiguration.java:58)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.CGLIB$amazonSQS$0(<generated>)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf$$FastClassBySpringCGLIB$$c1348255.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration$$EnhancerBySpringCGLIB$$dce55aaf.amazonSQS(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 59 more
+
+Running org.springframework.cloud.aws.messaging.config.annotation.SnsConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.718 sec
+Running org.springframework.cloud.aws.messaging.endpoint.config.NotificationHandlerMethodArgumentResolverFactoryBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.springframework.cloud.aws.messaging.endpoint.NotificationSubjectHandlerMethodArgumentResolverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 sec
+Running org.springframework.cloud.aws.messaging.endpoint.BaseNotificationMessageHandlerMethodArgumentResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.springframework.cloud.aws.messaging.endpoint.NotificationEndpointControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.842 sec
+Running org.springframework.cloud.aws.messaging.endpoint.ComplexNotificationEndpointControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec
+Running org.springframework.cloud.aws.messaging.endpoint.NotificationStatusHandlerMethodArgumentResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.cloud.aws.messaging.endpoint.NotificationMessageHandlerMethodArgumentResolverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.springframework.cloud.aws.messaging.support.NotificationSubjectArgumentResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.cloud.aws.messaging.support.converter.NotificationRequestConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.springframework.cloud.aws.messaging.support.converter.ObjectMessageConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.springframework.cloud.aws.messaging.support.destination.DynamicQueueUrlDestinationResolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.springframework.cloud.aws.messaging.support.destination.DynamicTopicDestinationResolverTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.springframework.cloud.aws.messaging.support.NotificationMessageArgumentResolverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.springframework.cloud.aws.messaging.listener.MessageListenerContainerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec
+Running org.springframework.cloud.aws.messaging.listener.SimpleMessageListenerContainerTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec
+Running org.springframework.cloud.aws.messaging.listener.support.AcknowledgmentHandlerMethodArgumentResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.springframework.cloud.aws.messaging.listener.SendToHandlerMethodReturnValueHandlerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec
+Running org.springframework.cloud.aws.messaging.listener.QueueMessageHandlerTest
+2017-09-27 12:43:12,259 [main] WARN org.springframework.cloud.aws.messaging.listener.QueueMessageHandler - Listener method 'receive' in type 'org.springframework.cloud.aws.messaging.listener.QueueMessageHandlerTest$SqsListenerDeletionPolicyNeverNoAcknowledgment' has deletion policy 'NEVER' but does not have a parameter of type Acknowledgment. 
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec
+
+Results :
+
+Tests in error: 
+  configuration_withoutAwsCredentials_shouldCreateAClientWithDefaultCredentialsProvider(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest): Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+  queueMessageHandlerBeanMustBeSetOnContainer(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest): Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+  messageHandler_withFactoryConfiguration_shouldUseCustomValues(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest): Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+  configuration_withMinimalBeans_shouldStartSqsListenerContainer(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest): Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+  configuration_withCustomSendToMessageTemplate_shouldUseTheConfiguredTemplate(org.springframework.cloud.aws.messaging.config.annotation.SqsConfigurationTest): Error creating bean with name 'simpleMessageListenerContainer' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsConfiguration: Unsatisfied dependency expressed through method 'simpleMessageListenerContainer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonSQS' defined in org.springframework.cloud.aws.messaging.config.annotation.SqsClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.sqs.AmazonSQSAsync]: Factory method 'amazonSQS' threw exception; nested exception is com.amazonaws.SdkClientException: Unable to find a region via the region provider chain. Must provide an explicit region in the builder or setup environment to supply a region.
+
+Tests run: 217, Failures: 0, Errors: 5, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-cloud-aws-dependencies ...................... SUCCESS [  0.002 s]
+[INFO] Spring Cloud AWS ................................... SUCCESS [  0.990 s]
+[INFO] Spring Cloud AWS Core Module ....................... SUCCESS [ 19.200 s]
+[INFO] Spring Cloud AWS Context Module .................... SUCCESS [02:09 min]
+[INFO] Spring Cloud AWS Jdbc Module ....................... SUCCESS [  7.172 s]
+[INFO] Spring Cloud AWS Messaging Module .................. FAILURE [ 42.295 s]
+[INFO] spring-cloud-aws-actuator .......................... SKIPPED
+[INFO] Spring Cloud AWS Autoconfigure ..................... SKIPPED
+[INFO] spring-cloud-starter-aws ........................... SKIPPED
+[INFO] spring-cloud-starter-aws-jdbc ...................... SKIPPED
+[INFO] spring-cloud-starter-aws-messaging ................. SKIPPED
+[INFO] Spring Cloud AWS Docs .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:20 min
+[INFO] Finished at: 2017-09-27T12:43:12+02:00
+[INFO] Final Memory: 59M/425M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project spring-cloud-aws-messaging: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/spring-cloud/spring-cloud-aws/207100553/spring-cloud-aws-messaging/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :spring-cloud-aws-messaging
